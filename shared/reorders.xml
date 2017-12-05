@@ -1,5 +1,5 @@
 <keyboard>
-    <resorders>
+    <reorders>
         <!-- When mapping from USE, use the following values as a basis:
             O B IND N GB    0
             SUB H HN        5
@@ -82,7 +82,7 @@
         <reorder from="\u1A60\u1A45" before="\u1A6B" order="10"/>
         <reorder from="\u1A60\u1A45" before="[\u1A20-\u1A57\u1A6B][\u1A75-\u1A7C]" order="10"/>
         <reorder from="\u1A60[\u1A75-\u1A7C]\u1A45" before="[\u1A20-\u1A57\u1A6B]" order="10 55 10"/>
-    </resorders>
+    </reorders>
 
     <transforms type="final">
         <!-- Devanagari -->
