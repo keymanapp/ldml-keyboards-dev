@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<keyboard locale="my-zawgyione">
+<keyboard locale="mm-sil-visualorder1">
     <version platform="1" number="$Revision$"/>
     <import path="../../../../shared/default.xml"/>
     <names>
