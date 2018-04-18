@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ldmlkeytests layout="">
+  <test-sequence id="bonus10a">
+    <event key="[shift D05]" output="ទ"/>
+    <event key="[C07]" output="ទ្"/>
+    <event key="[shift C04]" output="ទ្ធ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus10b">
+    <event key="[shift D05]" output="ទ"/>
+    <event key="[C07]" output="ទ្"/>
+    <event key="[B01]" output="ទ្ធ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus1a">
+    <event key="[shift C09]" output="ឡ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus1b">
+    <event key="[shift D05]" output="ទ"/>
+    <event key="[C07]" output="ទ្"/>
+    <event key="[B05]" output="ឡ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus2a">
+    <event key="[altR D04]" output="ឫ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus2b">
+    <event key="[B05]" output="ប"/>
+    <event key="[C07]" output="ប្"/>
+    <event key="[shift C07]" output="ឫ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus3a">
+    <event key="[shift D04]" output="ឬ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus3b">
+    <event key="[B05]" output="ប"/>
+    <event key="[C07]" output="ប្"/>
+    <event key="[shift C07]" output="ឫ"/>
+    <event key="[D07]" output="ឬ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus4a">
+    <event key="[shift C07]" output="ញ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus4b">
+    <event key="[shift B00]" output="ឭ"/>
+    <event key="[C01]" output="ញ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus4c">
+    <event key="[B00]" output="ឮ"/>
+    <event key="[C01]" output="ញ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus4d">
+    <event key="[shift B05]" output="ព"/>
+    <event key="[C07]" output="ព្"/>
+    <event key="[shift C07]" output="ឭ"/>
+    <event key="[C01]" output="ញ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus5a">
+    <event key="[shift B00]" output="ឭ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus5b">
+    <event key="[shift B05]" output="ព"/>
+    <event key="[C07]" output="ព្"/>
+    <event key="[shift C07]" output="ឭ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus6a">
+    <event key="[B00]" output="ឮ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus6b">
+    <event key="[shift B05]" output="ព"/>
+    <event key="[C07]" output="ព្"/>
+    <event key="[shift C07]" output="ឭ"/>
+    <event key="[D07]" output="ឮ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus6c">
+    <event key="[shift B00]" output="ឭ"/>
+    <event key="[D07]" output="ឮ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus7a">
+    <event key="[altR D10]" output="ឰ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus7b">
+    <event key="[shift B05]" output="ព"/>
+    <event key="[C07]" output="ព្"/>
+    <event key="[B01]" output="ឰ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus8a">
+    <event key="[altR D09]" output="ឱ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus8b">
+    <event key="[shift D12]" output="ឧ"/>
+    <event key="[D08]" output="ឱ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus8c">
+    <event key="[shift D12]" output="ឧ"/>
+    <event key="[shift E11]" output="ឱ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus8d">
+    <event key="[shift D12]" output="ឧ"/>
+    <event key="[shift E06]" output="ឱ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus9a">
+    <event key="[C03]" output="ដ"/>
+    <event key="[C07]" output="ដ្"/>
+    <event key="[B01]" output="ដ្ឋ"/>
+  </test-sequence>
+
+  <test-sequence id="bonus9b">
+    <event key="[C03]" output="ដ"/>
+    <event key="[C07]" output="ដ្"/>
+    <event key="[shift C04]" output="ដ្ឋ"/>
+  </test-sequence>
+
+</ldmlkeytests>

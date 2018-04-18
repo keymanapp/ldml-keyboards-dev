@@ -180,7 +180,7 @@
         <!-- ` deadkey is same as ctrl+alt -->
         <transform from="`\u1041" to="\u100D"/>
         <transform from="`\u1042" to="\u1039\u100C"/>
-        <transform from="`\U{1043}" to="\u100B"/>
+        <transform from="`\u1043" to="\u100B"/>
         <transform from="`\u1044" to="\u104E\u1004\u103A\u1038"/>
         <transform from="`\u1045" to="\u1029"/>
         <transform from="`\u1047" to="\u101B"/>
@@ -238,11 +238,11 @@
         <transform from="~\u1030" to="\u1004\u103A\u1039\u102E"/>
         <transform from="~\u1038" to="\u1037"/>
         <transform from="~\u1012" to="\u1039\u1013"/>
-        <transform from="~\u1016" to="\u1039\u1007}"/>
-        <transform from="~\u1011" to="\u1039\u100C}"/>
-        <transform from="~\u1001" to="\u1039\u1003}"/>
-        <transform from="~\u101A" to="\u100D\u1039\u100E}"/>
-        <transform from="~." to="\u1039\u1008}"/>
+        <transform from="~\u1016" to="\u1039\u1007"/>
+        <transform from="~\u1011" to="\u1039\u100C"/>
+        <transform from="~\u1001" to="\u1039\u1003"/>
+        <transform from="~\u101A" to="\u100D\u1039\u100E"/>
+        <transform from="~." to="\u1039\u1008"/>
     </transforms>
 
     <import path="../../../../shared/reorders.xml"/>

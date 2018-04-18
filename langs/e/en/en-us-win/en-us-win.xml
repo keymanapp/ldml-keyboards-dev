@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <keyboard locale="en-us-win">
     <version platform="10" number="$Revision$"/>
-    <import path="../../../shared/default.xml"/>
+    <import path="shared/default.xml"/>
 	<names>
 		<name value="US"/>
 	</names>
