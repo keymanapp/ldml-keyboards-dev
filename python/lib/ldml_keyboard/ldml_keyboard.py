@@ -50,12 +50,12 @@ class Keyboard(object):
         self.context = ""
         self.parse(path)
 
-    def _addrules(self, element, transform):
+    def _addrules(self, element, transform, onlyifin=None):
         if transform not in self.transforms:
             self.transforms[transform] = Rules(transform)
         rules = self.transforms[transform]
         for m in element:
-            rules.append(m)
+            rules.append(m, onlyifin)
 
     def parse(self, fname):
         '''Read and parse an LDML keyboard layout file'''
@@ -75,7 +75,8 @@ class Keyboard(object):
             elif c.tag == 'transforms':
                 self._addrules(c, c.get('type'))
             elif c.tag == 'reorders':
-                self._addrules(c, 'reorder')
+                testset = set(x for m in self.keyboards for v in m.values() for x in v)
+                self._addrules(c, 'reorder', onlyifin=testset)
             elif c.tag == 'backspaces':
                 self._addrules(c, 'backspace')
             elif c.tag == 'settings':
@@ -310,13 +311,15 @@ class Rules(object):
         self.rules = Rule()
         self.reverse = ruletype == 'backspace'      # work backwards
 
-    def append(self, transform):
+    def append(self, transform, onlyifin=None):
         '''Insert or merge a rule into this set of rules'''
         f = transform.get('from')
         if self.reverse:
             chars = UnicodeSets.parse(f).reverse()
         else:
             chars = UnicodeSets.parse(f)
+        if onlyifin is not None:
+            chars = [c for c in chars if all(x in onlyifin for x in c)] 
         jobs = set([self.rules])
         for i, k in enumerate(chars):
             isFinal = i + 1 == len(chars)

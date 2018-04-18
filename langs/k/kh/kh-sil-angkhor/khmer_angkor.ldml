@@ -355,6 +355,7 @@
 		<switch iso="numlock" layer="numeric" display="១២៣"/>
 		<switch iso="lcontrol" layer="default" display="កខគ"/>
 	</layer>
+    <import path="shared/reorders.xml"/>
 	<transforms type="final">
 		<transform from="ង\u17B6\u17C6\u17BB" to="ង\u17C9\u17B6\u17C6"/>
 		<transform from="ញ\u17B6\u17C6\u17BB" to="ញ\u17C9\u17B6\u17C6"/>
