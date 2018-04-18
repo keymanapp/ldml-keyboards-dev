@@ -1,0 +1,46 @@
+#!/usr/bin/python
+
+import argparse, sys
+from xml.etree import ElementTree as et
+try:
+    from ldml_keyboard.ldml_keyboard import Keyboard
+except:
+    import os
+    sys.path.append(os.path.join(os.path.dirname(__file__), '../lib'))
+    from ldml_keyboard.ldml_keyboard import Keyboard
+
+def parse_key(k):
+    if k.startswith("[") and k.endswith("]"):
+        k = k[1:-1].strip()
+    subs = k.split(" ")
+    key = subs.pop()
+    return (key, subs)
+
+parser = argparse.ArgumentParser()
+parser.add_argument('kbdfile',help='Keyboard LDML file')
+parser.add_argument('infile', help='Input test .xml file')
+parser.add_argument('-q','--quiet',action='store_true', help="Minimise output")
+parser.add_argument('--usvs', action="store_true", help="Output USVs in error messages")
+args = parser.parse_args()
+
+kbd = Keyboard(args.kbdfile)
+doc = et.parse(args.infile)
+errors = 0
+for t in doc.findall('.//test-sequence'):
+    tid = t.get('id', "Unknown")
+    if not args.quiet:
+        print tid
+    kbd.initstring()
+    for i, e in enumerate(t.findall('.//event')):
+        (key, modifiers) = parse_key(e.get('key'))
+        test = e.get('output', "")
+        iserror = e.get('error', 0)
+        res = kbd.process(key, modifiers)
+        if unicode(res) != test or res.error != iserror:
+            print u"Failed event {} in test {}: {} should be {} with error {} which should be {}".\
+                    format(i, tid, res, test, res.error, iserror)
+            if args.usvs:
+                print " ".join("U+{:04X}".format(ord(x)) for x in unicode(res)) + " should be " + \
+                      " ".join("U+{:04X}".format(ord(x)) for x in test)
+            errors += 1
+sys.exit(errors)
