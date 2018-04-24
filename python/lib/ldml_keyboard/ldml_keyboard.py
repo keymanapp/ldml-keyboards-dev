@@ -37,12 +37,12 @@ except ValueError:
 
 CharCode = namedtuple('CharCode', ['primary', 'tertiary_base', 'tertiary', 'prebase'])
 SortKey = namedtuple('SortKey', ['primary', 'index', 'tertiary', 'tiebreak'])
-        
 
 class Keyboard(object):
 
     def __init__(self, path):
         self.keyboards = []
+        self.fallbacks = []
         self.modifiers = {}
         self.transforms = {}
         self.settings = {}
@@ -62,16 +62,29 @@ class Keyboard(object):
         doc = et.parse(fname)
         for c in doc.getroot():
             if c.tag == 'keyMap':
-                kind = len(self.keyboards)
-                maps = {}
-                self.keyboards.append(maps)
+                kind = None
                 if 'modifiers' in c.attrib:
                     for m in self.parse_modifiers(c.get('modifiers')):
-                        self.modifiers[" ".join(m)] = kind
+                        mod = " ".join(m)
+                        testkind = self.modifiers.get(mod, None)
+                        if kind == None:
+                            kind = testkind
+                        elif kind != testkind:
+                            raise SyntaxError("Unmergeable keyMaps found for modifier: {}".format(m))
                 else:
-                    self.modifiers[""] = kind
+                    kind = self.modifiers.get("", None)
+                if kind is None:
+                    kind = len(self.keyboards)
+                    self.keyboards.append({})
+                    if 'modifiers' in c.attrib:
+                        for m in self.parse_modifiers(c.get('modifiers')):
+                            self.modifiers[" ".join(m)] = kind
+                    else:
+                        self.modifiers[""] = kind
+                maps = self.keyboards[kind]
                 for m in c:
-                    maps[m.get('iso')] = m.get('to')
+                    maps[m.get('iso')] = UnicodeSets.struni(m.get('to'))
+                self.fallbacks.append(c.get('fallback', "").split(' '))
             elif c.tag == 'transforms':
                 self._addrules(c, c.get('type'))
             elif c.tag == 'reorders':
@@ -154,11 +167,17 @@ class Keyboard(object):
     def map_key(self, k, mods):
         '''Apply the appropriate keyMap to a keystroke to get some chars'''
         modstr = " ".join(sorted(mods))
-        try:
-            res = self.keyboards[self.modifiers[modstr]][k]
-        except KeyError:
+        if modstr not in self.modifiers:
             return ""
-        return UnicodeSets.struni(res)
+        kind = self.modifiers[modstr]
+        if k in self.keyboards[kind]:
+            return UnicodeSets.struni(self.keyboards[kind][k])
+        for f in self.fallbacks[kind]:
+            if f in self.modifiers:
+                find = self.modifiers[f]
+                if k in self.keyboards[find]:
+                    return UnicodeSets.struni(self.keyboards[find][k])
+        return ""
 
     def _process_empty(self, context, ruleset):
         '''Copy layer input to output'''
@@ -202,7 +221,7 @@ class Keyboard(object):
         k = keys[:end-begin]
         # if there is no base, insert one
         if (0, 0) not in [(x.primary, x.tertiary) for x in k]:
-            s += u"\u25CC"
+            s += u"\u200B"
             k += SortKey(0, 0, 0, 0)  # push this to the front
         # sort key is (primary, secondary, string index)
         return u"".join(s[y] for y in sorted(range(len(s)), key=lambda x:k[x]))
@@ -216,7 +235,7 @@ class Keyboard(object):
 
     def _get_charcodes(self, instr, curr, trans):
         '''Returns a list of some CharCodes, 1 per char, for the string at curr''' 
-        r = trans.match(instr[curr:])
+        r = trans.match(instr, ind=curr)
         if r[0] is not None:
             orders = [int(x) for x in self._padlist(getattr(r[0], 'order', "0"), r[1])]
             bases = [bool(x) for x in self._padlist(getattr(r[0], 'tertiary_base', "false"), r[1])]
@@ -314,12 +333,20 @@ class Rules(object):
     def append(self, transform, onlyifin=None):
         '''Insert or merge a rule into this set of rules'''
         f = transform.get('from')
+        if f is None:
+            raise SyntaxError("Missing from attribute in rule")
         if self.reverse:
             chars = UnicodeSets.parse(f).reverse()
         else:
             chars = UnicodeSets.parse(f)
         if onlyifin is not None:
-            chars = [c for c in chars if all(x in onlyifin for x in c)] 
+            newchars = []
+            for cset in chars:
+                newcset = UnicodeSets.UnicodeSet([c for c in cset if c in onlyifin])
+                newcset.negative = cset.negative
+                if not len(newcset): return
+                newchars.append(newcset)
+            chars = newchars
         jobs = set([self.rules])
         for i, k in enumerate(chars):
             isFinal = i + 1 == len(chars)
@@ -388,8 +415,8 @@ class Rule(dict):
 
     def merge(self, e):
         if 'before' in e or 'after' in e:
-            before = UnicodeSets.flatten(e.get('before', ""))
-            after = UnicodeSets.flatten(e.get('after', ""))
+            before = list(UnicodeSets.flatten(e.get('before', "")))
+            after = list(UnicodeSets.flatten(e.get('after', "")))
             for b in before or [""]:
                 for a in after or [""]:
                     k = (b, a)
@@ -421,7 +448,7 @@ class Rule(dict):
         for m, r in self.contexts.items():
             if self._matchcontext(m, s, beg, end):
                 return r
-        return None
+        return self
 
 class Context(object):
     '''Holds the processed state of each layer after a keystroke'''

@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<ldmlkeytests layout="test1">
+    <test-sequence id="1">
+        <event key="[D03]" output="&#x200B;e"/>
+        <event key="[shift C01]" output="Ae"/>
+        <event key="[C01]" output="Aae"/>
+        <event key="[D06]" output="Ayae"/>
+        <event key="[B05]" output="Ayabe"/>
+        <event key="[B02]" output="Axyabe"/>
+        <event key="[B03]" output="Axyabce"/>
+        <event key="[B01]" output="Axyabcze"/>
+        <event key="[C03]" output="Axyabczde"/>
+        <event key="[D06]" output="Axyabcyzde"/>
+    </test-sequence>
+
+    <test-sequence id="2">
+        <event key="[shift B05]" output="B"/>
+        <event key="[B02]" output="Bx"/>
+        <event key="[D06]" output="Byx"/>
+        <event key="[C04]" output="Byxf"/>
+        <event key="[shift C05]" output="ByxfG"/>
+        <event key="[C06]" output="ByxfGh"/>
+        <event key="[C01]" output="ByxafGh"/>
+        <event key="[D06]" output="ByxafGyh"/>
+        <event key="[B02]" output="ByxafGxyh"/>
+    </test-sequence>
+
+    <test-sequence id="3">
+        <event key="[D03]" output="&#x200B;e"/>
+        <event key="[B02]" output="&#x200B;xe"/>
+        <event key="[shift B03]" output="&#x200B;xeC"/>
+    </test-sequence>
+
+    <test-sequence id="4">
+        <event key="[shift B03]" output="C"/>
+        <event key="[D03]" output="C&#x200B;e"/>
+        <event key="[shift C03]" output="CDe"/>
+    </test-sequence> 
+</ldmlkeytests>

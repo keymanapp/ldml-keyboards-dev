@@ -19,6 +19,7 @@ def parse_key(k):
 parser = argparse.ArgumentParser()
 parser.add_argument('kbdfile',help='Keyboard LDML file')
 parser.add_argument('infile', help='Input test .xml file')
+parser.add_argument('-d','--id',help='Only run this given test')
 parser.add_argument('-q','--quiet',action='store_true', help="Minimise output")
 parser.add_argument('--usvs', action="store_true", help="Output USVs in error messages")
 args = parser.parse_args()
@@ -28,6 +29,7 @@ doc = et.parse(args.infile)
 errors = 0
 for t in doc.findall('.//test-sequence'):
     tid = t.get('id', "Unknown")
+    if args.id and args.id != tid: continue
     if not args.quiet:
         print tid
     kbd.initstring()
@@ -38,7 +40,7 @@ for t in doc.findall('.//test-sequence'):
         res = kbd.process(key, modifiers)
         if unicode(res) != test or res.error != iserror:
             print u"Failed event {} in test {}: {} should be {} with error {} which should be {}".\
-                    format(i, tid, res, test, res.error, iserror)
+                    format(i+1, tid, res, test, res.error, iserror)
             if args.usvs:
                 print " ".join("U+{:04X}".format(ord(x)) for x in unicode(res)) + " should be " + \
                       " ".join("U+{:04X}".format(ord(x)) for x in test)

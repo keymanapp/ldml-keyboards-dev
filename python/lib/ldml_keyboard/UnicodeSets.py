@@ -135,7 +135,8 @@ class UnicodeSetSequence(list):
 
 class UnicodeSet(set):
     '''A UnicodeSet is a simple set of characters also a negative attribute'''
-    def __init__(self):
+    def __init__(self, *a):
+        super(UnicodeSet, self).__init__(*a)
         self.negative = False
         self.isclass = False
         self.startgroup = False
@@ -162,6 +163,8 @@ def flatten(s):
     lens = map(len, vals)
     num = len(vals)
     indices = [0] * num
+    if num:
+        yield u"".join(_expand(p, vals, i, x) for i, x in enumerate(indices))
     while True:
         for i in range(num):
             if indices[i] == lens[i] - 1:

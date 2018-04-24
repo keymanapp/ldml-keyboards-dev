@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<keyboard>
+    <import path="shared/en-us-win.xml"/>
+    <reorders>
+        <reorder from="x" tertiary="1"/>
+        <reorder from="y" tertiary="2"/>
+        <reorder from="z" tertiary="3"/>
+        <reorder from="a" order="1"/>
+        <reorder from="b" order="2"/>
+        <reorder from="c" order="3" tertiary_base="true"/>
+        <reorder from="d" order="4"/>
+        <reorder from="e" order="5" prebase="true"/>
+        <reorder from="h" order="7"/>
+
+        <reorder from="x" before="B" tertiary="3"/>
+        <reorder from="fG" order="6" tertiary_base="true"/>
+    </reorders>
+</keyboard>
