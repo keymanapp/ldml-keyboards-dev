@@ -36,7 +36,7 @@ for t in doc.findall('.//test-sequence'):
     for i, e in enumerate(t.findall('.//event')):
         (key, modifiers) = parse_key(e.get('key'))
         test = e.get('output', "")
-        iserror = e.get('error', 0)
+        iserror = e.get('error', '') == 'fail'
         res = kbd.process(key, modifiers)
         if unicode(res) != test or res.error != iserror:
             print u"Failed event {} in test {}: {} should be {} with error {} which should be {}".\

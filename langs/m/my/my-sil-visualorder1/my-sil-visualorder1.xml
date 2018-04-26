@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <keyboard locale="my-sil-visualorder1">
     <version platform="1" number="$Revision$"/>
-    <import path="../../../../shared/default.xml"/>
+    <import path="shared/default.xml"/>
     <names>
         <name value="SIL Visual Order 1"/>
     </names>
@@ -245,7 +245,7 @@
         <transform from="~." to="\u1039\u1008"/>
     </transforms>
 
-    <import path="../../../../shared/reorders.xml"/>
+    <import path="shared/reorders.xml"/>
     <reorders>
         <!-- only add information or override not replace -->
         <reorder from="\u1031" prebase="1"/>
@@ -261,10 +261,16 @@
         <backspace from="[\u103A-\u103F\u105E-\u1060\u1082]\u1031" to="\u1031"/>
         <backspace from="[\u103A-\u103B\u105E-\u105F]\u103C" to="\u103C"/>
         <backspace from="\u1039[\u1000-\u101C\u101E\u1020\u1021\u1050\u1051\u105A-\u105D]\u1031" to="\u1031"/>
-        <backspace from="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D]\u1031" to="\u25CC\u1031"/>
+        <backspace from="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D]\u1031" to="\uFDD1\u1031"/>
         <backspace from="\u1039[\u1000-\u101C\u101E\u1020\u1021\u1050\u1051\u105A-\u105D]\u103C" to="\u103C"/>
-        <backspace from="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D]\u103C" to="\u25CC\u103C"/>
-        <backspace from="\u25CC[\u1031\u103C]"/>
+        <backspace from="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D]\u103C" to="\uFDD1\u103C"/>
+        <backspace from="\uFDD1[\u1031\u103C]"/>
     </backspaces>
+
+    <transforms type="final">
+        <transform from="\u1037\u1037" to="\u1037" error="fail"/>
+        <transform from="\u103A\u1037\u1037" to="\u1037\u103A" error="fail"/>
+    </transforms>
+
 
 </keyboard>

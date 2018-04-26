@@ -276,7 +276,7 @@ def parseitem(s, ind, lastitem, end):
                     lastitem = None
                 # char range
                 elif lastitem and item and len(lastitem) == 1 and len(item) == 1:
-                    for x in range(ord(lastitem.pop()), ord(item.pop())):
+                    for x in range(ord(lastitem.pop()), ord(item.pop())+1):
                         res.add(unichr(x))
                     lastitem = None
                 else:

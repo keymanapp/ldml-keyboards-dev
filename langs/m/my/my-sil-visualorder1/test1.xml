@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ldmlkeytests>
+    <test-sequence id="1">
+	<event key="[C01]" output="&#x200B;&#x1031;"/>
+	<event key="[D07]" output="ကေ"/>
+	<event key="[shift C05]" output="ကွေ"/>
+    </test-sequence>
+
+    <test-sequence id="2">
+	<event key="[C07]" output="&#x200B;&#x103C;"/>
+	<event key="[D07]" output="ကြ"/>
+	<event key="[C08]" output="ကြု"/>
+	<event key="[C03]" output="ကြို"/>
+    </test-sequence>
+
+    <test-sequence id="3">
+	<event key="[D07]" output="က"/>
+	<event key="[C01]" output="က&#x200B;&#x1031;"/>
+	<event key="[D07]" output="ကကေ"/>
+	<event key="[shift C05]" output="ကကွေ"/>
+    </test-sequence>
+
+    <test-sequence id="4">
+	<event key="[D07]" output="က"/>
+	<event key="[E00]" output="က"/>
+	<event key="[D07]" output="က္က"/>
+	<event key="[C08]" output="က္ကု"/>
+	<event key="[C03]" output="က္ကို"/>
+    </test-sequence>
+
+    <test-sequence id="5">
+	<event key="[C01]" output="&#x200B;&#x1031;"/>
+	<event key="[C07]" output="&#x200B;&#x103C;&#x1031;"/>
+	<event key="[D01]" output="ဆြေ"/>
+	<event key="[C02]" output="ဆျြေ"/>
+    </test-sequence>
+
+    <test-sequence id="6">
+	<event key="[B03]" output="ခ"/>
+	<event key="[shift ctrl alt C04]" output="င်္ခိ"/>
+	<event key="[C02]" output="င်္ချိ"/>
+    </test-sequence>
+
+    <test-sequence id="7">
+	<event key="[D03]" output="န"/>
+	<event key="[C04]" output="န်"/>
+	<event key="[C06]" output="န့်"/>
+	<event key="[C06]" output="န့်" error="fail"/>
+    </test-sequence>
+
+    <test-sequence id="8">
+	<event key="[D03]" output="န"/>
+	<event key="[C04]" output="န်"/>
+	<event key="[C06]" output="န့်"/>
+	<event key="[BKSP]" output="န့"/>
+	<event key="[C09]" output="&#x1014;&#x1030;&#x1037;"/>
+    </test-sequence>
+</ldmlkeytests>
+
