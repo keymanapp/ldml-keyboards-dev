@@ -10,7 +10,7 @@
 	<event key="[C07]" output="&#x200B;&#x103C;"/>
 	<event key="[D07]" output="ကြ"/>
 	<event key="[C08]" output="ကြု"/>
-	<event key="[C03]" output="ကြို"/>
+	<event key="[C03]" output="ကြို" skip="bksp"/>
     </test-sequence>
 
     <test-sequence id="3">
@@ -23,9 +23,9 @@
     <test-sequence id="4">
 	<event key="[D07]" output="က"/>
 	<event key="[E00]" output="က"/>
-	<event key="[D07]" output="က္က"/>
+	<event key="[D07]" output="က္က" skip="bksp"/>
 	<event key="[C08]" output="က္ကု"/>
-	<event key="[C03]" output="က္ကို"/>
+	<event key="[C03]" output="က္ကို" skip="bksp"/>
     </test-sequence>
 
     <test-sequence id="5">
@@ -37,23 +37,23 @@
 
     <test-sequence id="6">
 	<event key="[B03]" output="ခ"/>
-	<event key="[shift ctrl alt C04]" output="င်္ခိ"/>
-	<event key="[C02]" output="င်္ချိ"/>
+	<event key="[shift ctrl alt C04]" output="င်္ခိ" skip="bksp"/>
+	<event key="[C02]" output="င်္ချိ" skip="bksp"/>
     </test-sequence>
 
     <test-sequence id="7">
 	<event key="[D03]" output="န"/>
 	<event key="[C04]" output="န်"/>
 	<event key="[C06]" output="န့်"/>
-	<event key="[C06]" output="န့်" error="fail"/>
+	<event key="[C06]" output="န့်" error="fail" skip="bksp"/>
     </test-sequence>
 
     <test-sequence id="8">
 	<event key="[D03]" output="န"/>
 	<event key="[C04]" output="န်"/>
 	<event key="[C06]" output="န့်"/>
-	<event key="[BKSP]" output="န့"/>
-	<event key="[C09]" output="&#x1014;&#x1030;&#x1037;"/>
+	<event key="[BKSP]" output="&#x1014;&#x103A;"/>
+	<event key="[C09]" output="&#x1014;&#x103A;&#x1030;"/>
     </test-sequence>
 </ldmlkeytests>
 

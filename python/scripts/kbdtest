@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import argparse, sys
+import argparse, sys, re
 from xml.etree import ElementTree as et
 try:
     from ldml_keyboard.ldml_keyboard import Keyboard
@@ -9,40 +9,101 @@ except:
     sys.path.append(os.path.join(os.path.dirname(__file__), '../lib'))
     from ldml_keyboard.ldml_keyboard import Keyboard
 
-def parse_key(k):
-    if k.startswith("[") and k.endswith("]"):
-        k = k[1:-1].strip()
-    subs = k.split(" ")
-    key = subs.pop()
-    return (key, subs)
+def parse_key(keys):
+    res = []
+    for k in re.split(ur"\[(.*?)\]\s*", keys)[1::2]:
+        subs = k.split(" ")
+        key = subs.pop()
+        res.append((key, subs))
+    return res
+
+def askey(k):
+    return "[" + " ".join(k[1] + [k[0]]) + "]" 
+
+class TestError(BaseException):
+    pass
+
+class KeyTest():
+    def __init__(self, kbd, fname, args):
+        self.kbd = kbd
+        self.fname = fname
+        self.history = []
+        self.args = args
+        self.bksp_end = 0
+
+    def reset(self):
+        self.history = []
+        self.bksp_end = 0
+        self.kbd.initstring()
+
+    def reset_bksp_end(self):
+        self.bksp_end = len(self.history)
+
+    def test(self, testid, tid, eid, res, test, iserror):
+        if unicode(res) != test or res.error != iserror:
+            s = u"{} {}: Failed event {} in test {}: {} should be {} with error {} to be {}".\
+                format(self.fname, testid, eid, tid, res, test, res.error, iserror)
+            if self.args.full:
+                s += "\n    " + " ".join("U+{:04X}".format(ord(x)) for x in unicode(res)) \
+                    + " should be " + " ".join("U+{:04X}".format(ord(x)) for x in test)
+                s += "\n    Keys pressed: " + " ".join(askey(x) for x in \
+                                reduce(lambda x,y: x+y, self.history, []))
+            raise TestError(s)
+
+    def basetest(self, keys, test, iserror, tid=0, eid=0):
+        self.history.append(keys)
+        for k in keys:
+            res = kbd.process(*k)
+        self.test('Base', tid, eid, res, test, iserror)
+
+    def bksptest(self, test, iserror, tid=0, eid=0):
+        for i in range(len(self.history)-self.bksp_end):
+            numback = sum(map(len, self.history[-i-1:]))
+            for j in range(numback):
+                res = self.kbd.process("BKSP", [])
+            actions = reduce(lambda x,y: x+y, self.history[-i-1:], [])
+            for a in actions:
+                res = self.kbd.process(*a)
+            try:
+                self.test("BKSP({})".format(i+1), tid, eid, res, test, iserror)
+                self.kbd.undo(2 * numback)
+            except TestError as e:
+                self.kbd.undo(2 * numback)
+                raise e
+
 
 parser = argparse.ArgumentParser()
 parser.add_argument('kbdfile',help='Keyboard LDML file')
 parser.add_argument('infile', help='Input test .xml file')
 parser.add_argument('-d','--id',help='Only run this given test')
 parser.add_argument('-q','--quiet',action='store_true', help="Minimise output")
-parser.add_argument('--usvs', action="store_true", help="Output USVs in error messages")
+parser.add_argument('-F','--full', action="store_true", help="Output full error messages")
 args = parser.parse_args()
 
 kbd = Keyboard(args.kbdfile)
 doc = et.parse(args.infile)
+tester = KeyTest(kbd, args.infile, args)
 errors = 0
 for t in doc.findall('.//test-sequence'):
     tid = t.get('id', "Unknown")
     if args.id and args.id != tid: continue
     if not args.quiet:
         print tid
-    kbd.initstring()
+    tester.reset()
     for i, e in enumerate(t.findall('.//event')):
-        (key, modifiers) = parse_key(e.get('key'))
+        keys = parse_key(e.get('key'))
         test = e.get('output', "")
         iserror = e.get('error', '') == 'fail'
-        res = kbd.process(key, modifiers)
-        if unicode(res) != test or res.error != iserror:
-            print u"Failed event {} in test {}: {} should be {} with error {} which should be {}".\
-                    format(i+1, tid, res, test, res.error, iserror)
-            if args.usvs:
-                print " ".join("U+{:04X}".format(ord(x)) for x in unicode(res)) + " should be " + \
-                      " ".join("U+{:04X}".format(ord(x)) for x in test)
+        skips = e.get('skip', '').split(' ')
+        try:
+            if 'base' not in skips:
+                tester.basetest(keys, test, iserror, tid, i+1)
+            if 'bksp' not in skips and "[BKSP]" not in e.get('key'):
+                tester.bksptest(test, iserror, tid, i+1)
+            else:
+                tester.reset_bksp_end()
+        except TestError as e:
+            print unicode(e)
             errors += 1
+
 sys.exit(errors)

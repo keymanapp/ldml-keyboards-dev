@@ -56,6 +56,8 @@ class Trie(object):
         if len(beforec) == 0 and len(afterc) == 0 and len(frc) == 1:
             m = Match(0, 1, rule)
             for c in frc[0]:
+                if c == u'\uFDD1':
+                    c = u'\u200B'
                 if c in self.singles:
                     self.singles[c] = Match(m.offset, m.length, \
                                             self.singles[c].rule._newmerge(rule))
@@ -75,6 +77,8 @@ class Trie(object):
                 newjobs = []
                 for j in jobs:
                     for c in cset:
+                        if c == u'\uFDD1':
+                            c = u'\u200B'
                         newjobs.append(j.setdefault(c, Node()))
                 jobs = newjobs
             for j in jobs:
@@ -96,6 +100,8 @@ class Trie(object):
             jobs = [self.backwards[len(beforec)]]
 
     def match(self, s, ind, skipbefore=False, base=None):
+        if not len(s):
+            return [0, 0, None, False]
         if base is None:
             base = self.forwards
         firstc = s[ind]

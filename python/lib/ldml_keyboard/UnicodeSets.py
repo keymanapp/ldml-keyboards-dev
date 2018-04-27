@@ -180,6 +180,7 @@ def flatten(s):
 
 def struni(s, groups=None):
     s = hexescre.sub(lambda m:escapechar(unichr(int(m.group(m.lastindex), 16))), s)
+    s = s.replace(u"\ufdd1", u"\u200b")
     s = simpleescsre.sub(lambda m:simpleescs.get(m.group(1), m.group(1)), s)
     if groups is not None:
         s = groupsre.sub(lambda m:groups[int(m.group(1)) - 1], s)

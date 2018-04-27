@@ -67,7 +67,15 @@ class Keyboard(object):
         self.history = []
         self.context = ""
         self.fname = path
+        self.prebases = set()
         self.parse(path)
+
+    def _add_prebases(self, e, onlyifin):
+        f = e.get('from')
+        if f is None: return
+        s = UnicodeSets.parse(f)
+        for c in s[0]:
+            self.prebases.add(c)
 
     def _addrules(self, element, transform, onlyifin=None, context=None):
         if transform not in self.transforms:
@@ -78,6 +86,8 @@ class Keyboard(object):
         else:
             e = SyntaxError("")
         for m in element:
+            if 'prebase' in m.attrib and transform == 'reorder':
+                self._add_prebases(m, onlyifin)
             rules.append(m, onlyifin, error=e)
 
     def parse(self, fname):
@@ -157,6 +167,12 @@ class Keyboard(object):
     def initstring(self):
         '''Prepare to start processing a sequence of keystrokes'''
         self.history = []
+
+    def undo(self, num=1):
+        if num < len(self.history):
+            self.history = self.history[:-num]
+        else:
+            self.history = []
 
     def process(self, k, mods):
         '''Process and record the results of a single keystroke given previous history'''
@@ -244,15 +260,22 @@ class Keyboard(object):
                 break
         return True
 
-    def _sort(self, begin, end, chars, keys):
+    def _sort(self, begin, end, chars, keys, rev=False):
         s = chars[begin:end]
         k = keys[:end-begin]
+        if not len(s):
+            return u""
         # if there is no base, insert one
-        if (0, 0) not in [(x.primary, x.tertiary) for x in k]:
+        if not rev and (0, 0) not in [(x.primary, x.tertiary) for x in k]:
             s += u"\u200B"
             k += SortKey(0, 0, 0, 0)  # push this to the front
         # sort key is (primary, secondary, string index)
-        return u"".join(s[y] for y in sorted(range(len(s)), key=lambda x:k[x]))
+        res = u"".join(s[y] for y in sorted(range(len(s)), key=lambda x:k[x]))
+        if rev:
+            keys = sorted(k)
+            if keys[-1].primary == 0 and keys[-1].tertiary == 0 and res[-1] == u"\u200B":
+                res = res[:-1]
+        return chars[:begin] + res + chars[end:]
 
     def _padlist(self, val, num):
         boolmap = {'false' : 0, 'true': 1}
@@ -270,7 +293,7 @@ class Keyboard(object):
             orders = [int(x) for x in self._padlist(getattr(r.rule, 'order', "0"), r.length)]
             bases = [bool(x) for x in self._padlist(getattr(r.rule, 'tertiary_base', "false"), r.length)]
             tertiaries = [int(x) for x in self._padlist(getattr(r.rule, 'tertiary', "0"), r.length)]
-            prebases = [bool(x) for x in self._padlist(getattr(r.rule, 'prebase', "false"), r.length)]
+            prebases = [int(x) for x in self._padlist(getattr(r.rule, 'prebase', "0"), r.length)]
             return [CharCode(orders[i], bases[i], tertiaries[i], prebases[i]) for i in range(r.length)]
         else:
             return [CharCode(0, 0, 0, False)]
@@ -324,7 +347,7 @@ class Keyboard(object):
                 if not isinit and ((key.primary == 0 and key.tertiary == 0) or c.prebase):
                     # output sorted run and reset for new run
                     context.results(ruleset, curr + i - startrun,
-                                    self._sort(startrun, curr + i, instr, keys))
+                                    self._sort(0, curr + i - startrun, instr[startrun:curr+i], keys))
                     startrun = curr + i
                     keys = [None] * (len(instr) - startrun)
                     isinit = True
@@ -332,33 +355,45 @@ class Keyboard(object):
             curr += len(codes)
         if curr > startrun:
             # output but don't store any residue. Reprocess it next time.
-            context.outputs[context.index(ruleset)] += self._sort(startrun, curr, instr, keys)
+            context.outputs[context.index(ruleset)] += self._sort(0, curr-startrun, instr[startrun:], keys)
 
     def _unreorder(self, instr):
+        ''' Create a string that when reordered gives the input string.
+            This relies on well designed reorders, but is generally what happens.'''
         end = 0
         trans = self.transforms['reorder']
         hitbase = False
         keys = []
         tertiaries = []
         while end < len(instr):
+            # work backwards from the end of the string
             codes = self._get_charcodes(instr, end, trans, rev=True)
             for c in codes:
-                if c.primary == 0 and c.tertiary == 0:
+                # having hit a cluster prefix do we now hit the end of the last cluster?
+                if hitbase and not c.prebase and c.primary >= 0 and c.tertiary == 0:
+                    break
+                # hit the end of a cluster prefix
+                elif c.primary == 0 and c.tertiary == 0:
                     hitbase = True
                     keys.append(SortKey(0, -end, 0, -end))
+                    # bases are always tertiary_bases so update tertiary references
                     for e in tertiaries:
                         keys[e] = SortKey(keys[e].primary, -end, keys[e].tertiary, keys[e].tiebreak)
                     tertiaries = []
-                elif hitbase and not c.prebase and c.primary >= 0 and c.tertiary == 0:
-                    break
+                # tertiary characters get given a key and a reference to update
                 elif c.tertiary != 0:
                     tertiaries.append(end)
                     keys.append(SortKey(0, -end, c.tertiary, -end))
+                # normal case
                 else:
+                    # if this is reordered before the start of a cluster, reorder it to the end
+                    # doesn't really matter where it ends up, it'll get sorted back
                     v = c.primary + (127 if c.primary < 0 else 0)
+                    # sort prebases before base
                     if c.prebase:
-                        v = -c.prebase
-                    keys.append(SortKey(c.primary, -end, c.tertiary, -end))
+                        v = c.prebase - 10
+                    keys.append(SortKey(v, -end, c.tertiary, -end))
+                    # update tertiary references
                     if c.tertiary_base:
                         for e in tertiaries:
                             keys[e] = SortKey(keys[e].primary, -end, keys[e].tertiary, keys[e].tiebreak)
@@ -368,7 +403,7 @@ class Keyboard(object):
                 continue
             break
         keys = list(reversed(keys))
-        res = self._sort(len(instr) - len(keys), len(instr), instr, keys)
+        res = self._sort(len(instr) - len(keys), len(instr), instr, keys, rev=True)
         return res
 
     def _process_backspace(self, context, ruleset='backspace'):
@@ -376,21 +411,24 @@ class Keyboard(object):
         if ruleset not in self.transforms:
             self.chomp(context)
         trans = self.transforms[ruleset]
-        # reverse the string
-        instr = context.outputs[-1][::-1]
+        instr = context.outputs[-1]
         origlen = len(instr)
         # find and process one rule
         r = trans.revmatch(instr)
         if r.rule is not None:
             if getattr(r.rule, 'error', 0): return False
-            instr[:rlength] = getattr(r.rule, 'to', "")
+            instr = instr[:-r.length] + UnicodeSets.struni(getattr(r.rule, 'to', ""))
+#        elif len(instr) and instr[-1] in self.prebases: # if a prebase, then delete it and preceding zwsp
+#            instr = instr[:-1]
+#            if instr[-1] == u"\u200B":
+#                instr = instr[:-1]
         else:       # no rule, so just remove a single character
-            instr = instr[1:]
-        # and reverse back again
-        instr = instr[::-1]
+            instr = instr[:-1]
+        # create an input string that can be sorted into our output
         unorderedstr = self._unreorder(instr)
+        # replace the various between pass strings
         for x in ('base', 'simple'):
-            context.replace_end(x, len(unorderedstr) + origlen - len(instr), unorderedstr)
+            context.replace_end(x, origlen, unorderedstr)
         for x in ('reorder', 'final'):
             context.replace_end(x, origlen, instr)
         return True
@@ -414,9 +452,10 @@ class Rules(object):
 
     def match(self, s, ind=0):
         '''Finds the merged rule for the given passed in string.
-            Returns (offset, length, rule, morep) as a MatchRule where length is how far to advance the cursor.
-            Offset is how far to skip before replacing. Rule is the Rule object and morep
-            is a boolean that says whether if given more characters in the string, further
+            Returns (offset, length, rule, morep) as a MatchRule where length
+            is how far to advance the cursor. Offset is how far to skip before
+            replacing. Rule is the Rule object and morep is a boolean that 
+            says whether if given more characters in the string, further
             matching may have occurred (see settings/@transformPartial.
         '''
         return MatchResult(*self.trie.match(s, ind))
