@@ -275,7 +275,7 @@ class Keyboard(object):
             keys = sorted(k)
             if keys[-1].primary == 0 and keys[-1].tertiary == 0 and res[-1] == u"\u200B":
                 res = res[:-1]
-        return chars[:begin] + res + chars[end:]
+        return (chars[:begin], res, chars[end:])
 
     def _padlist(self, val, num):
         boolmap = {'false' : 0, 'true': 1}
@@ -347,7 +347,7 @@ class Keyboard(object):
                 if not isinit and ((key.primary == 0 and key.tertiary == 0) or c.prebase):
                     # output sorted run and reset for new run
                     context.results(ruleset, curr + i - startrun,
-                                    self._sort(0, curr + i - startrun, instr[startrun:curr+i], keys))
+                                    u"".join(self._sort(0, curr + i - startrun, instr[startrun:curr+i], keys)))
                     startrun = curr + i
                     keys = [None] * (len(instr) - startrun)
                     isinit = True
@@ -355,7 +355,7 @@ class Keyboard(object):
             curr += len(codes)
         if curr > startrun:
             # output but don't store any residue. Reprocess it next time.
-            context.outputs[context.index(ruleset)] += self._sort(0, curr-startrun, instr[startrun:], keys)
+            context.outputs[context.index(ruleset)] += u"".join(self._sort(0, curr-startrun, instr[startrun:], keys))
 
     def _unreorder(self, instr):
         ''' Create a string that when reordered gives the input string.
@@ -403,27 +403,25 @@ class Keyboard(object):
                 continue
             break
         keys = list(reversed(keys))
-        res = self._sort(len(instr) - len(keys), len(instr), instr, keys, rev=True)
+        res = u"".join(self._sort(len(instr) - len(keys), len(instr), instr, keys, rev=True))
         return res
 
     def _process_backspace(self, context, ruleset='backspace'):
         '''Handle the backspace transforms in response to bksp key'''
-        if ruleset not in self.transforms:
-            self.chomp(context)
-        trans = self.transforms[ruleset]
         instr = context.outputs[-1]
         origlen = len(instr)
-        # find and process one rule
-        r = trans.revmatch(instr)
-        if r.rule is not None:
-            if getattr(r.rule, 'error', 0): return False
-            instr = instr[:-r.length] + UnicodeSets.struni(getattr(r.rule, 'to', ""))
-#        elif len(instr) and instr[-1] in self.prebases: # if a prebase, then delete it and preceding zwsp
-#            instr = instr[:-1]
-#            if instr[-1] == u"\u200B":
-#                instr = instr[:-1]
-        else:       # no rule, so just remove a single character
+        if ruleset not in self.transforms:
+            unorderedstr = self._unreorder(instr)
             instr = instr[:-1]
+        else:
+            trans = self.transforms[ruleset]
+            # find and process one rule
+            r = trans.revmatch(instr)
+            if r.rule is not None:
+                if getattr(r.rule, 'error', 0): return False
+                instr = instr[:-r.length] + UnicodeSets.struni(getattr(r.rule, 'to', ""))
+            else:       # no rule, so just remove a single character
+                instr = instr[:-1]
         # create an input string that can be sorted into our output
         unorderedstr = self._unreorder(instr)
         # replace the various between pass strings
@@ -564,6 +562,7 @@ class Context(object):
         if diff > 0:
             self.stables[ind] = self.stables[ind][:-diff]
             self.offsets[ind] = newstart
+
 
 def main():
     '''Process a testfile of key sequences, one sequence per line,

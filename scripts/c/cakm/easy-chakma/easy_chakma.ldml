@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
+<keyboard locale="ccp-Cakm">
+	<version number="1" platform="1"/>
+	<import path="langs/e/en/en-us-win/en-us-win.xml"/>
+	<names>
+		<name value="Easy Chakma"/>
+	</names>
+	<keyMap modifiers="">
+		<map iso="B00" to="𑅂"/>
+		<map iso="B01" to="𑄄"/>
+		<map iso="B02" to="𑄮"/>
+		<map iso="B03" to="\U0001112C"/>
+		<map iso="B04" to="𑄢"/>
+		<map iso="B05" to="𑄚"/>
+		<map iso="B06" to="𑄥"/>
+		<map iso="B07" to="𑄟"/>
+		<map iso="B08" to=","/>
+		<map iso="B09" to="."/>
+		<map iso="B10" to="/"/>
+		<map iso="C01" to="𑄭"/>
+		<map iso="C02" to="𑄪"/>
+		<map iso="C03" to="𑄨"/>
+		<map iso="C04" to="𑄧"/>
+		<map iso="C05" to="𑄳"/>
+		<map iso="C06" to="𑄝"/>
+		<map iso="C07" to="𑄇"/>
+		<map iso="C08" to="𑄖"/>
+		<map iso="C09" to="𑄘"/>
+		<map iso="C10" to="𑄴"/>
+		<map iso="C11" to="'"/>
+		<map iso="D01" to="𑄋"/>
+		<map iso="D02" to="𑄡"/>
+		<map iso="D03" to="𑄓"/>
+		<map iso="D04" to="𑄛"/>
+		<map iso="D05" to="𑄑"/>
+		<map iso="D06" to="𑄌"/>
+		<map iso="D07" to="𑄎"/>
+		<map iso="D08" to="𑄦"/>
+		<map iso="D09" to="𑄉"/>
+		<map iso="D10" to="𑄤"/>
+		<map iso="D11" to="["/>
+		<map iso="D12" to="]"/>
+		<map iso="E00" to="`"/>
+		<map iso="E01" to="𑄷"/>
+		<map iso="E02" to="𑄸"/>
+		<map iso="E03" to="𑄹"/>
+		<map iso="E04" to="𑄺"/>
+		<map iso="E05" to="𑄻"/>
+		<map iso="E06" to="𑄼"/>
+		<map iso="E07" to="𑄽"/>
+		<map iso="E08" to="𑄾"/>
+		<map iso="E09" to="𑄿"/>
+		<map iso="E10" to="𑄶"/>
+		<map iso="E11" to="-"/>
+		<map iso="E12" to="="/>
+	</keyMap>
+	<keyMap modifiers="shift">
+		<map iso="B00" to="𑄂"/>
+		<map iso="B01" to="𑅀"/>
+		<map iso="B02" to="𑄯"/>
+		<map iso="B03" to="𑄰"/>
+		<map iso="B04" to="𑄣"/>
+		<map iso="B05" to="𑄕"/>
+		<map iso="B06" to="𑄲"/>
+		<map iso="B07" to="𑄆"/>
+		<map iso="B08" to="&lt;"/>
+		<map iso="B09" to="&gt;"/>
+		<map iso="B10" to="𑅃"/>
+		<map iso="C01" to="𑄱"/>
+		<map iso="C02" to="𑄫"/>
+		<map iso="C03" to="𑄩"/>
+		<map iso="C04" to="𑄃"/>
+		<map iso="C05" to="𑅁"/>
+		<map iso="C06" to="𑄞"/>
+		<map iso="C07" to="𑄈"/>
+		<map iso="C08" to="𑄗"/>
+		<map iso="C09" to="𑄙"/>
+		<map iso="C10" to=":"/>
+		<map iso="C11" to="&quot;"/>
+		<map iso="D01" to="𑄁"/>
+		<map iso="D02" to="𑄠"/>
+		<map iso="D03" to="𑄔"/>
+		<map iso="D04" to="𑄜"/>
+		<map iso="D05" to="𑄒"/>
+		<map iso="D06" to="𑄍"/>
+		<map iso="D07" to="𑄏"/>
+		<map iso="D08" to="𑄐"/>
+		<map iso="D09" to="𑄊"/>
+		<map iso="D10" to="𑄅"/>
+		<map iso="D11" to="{"/>
+		<map iso="D12" to="}"/>
+		<map iso="E00" to="~"/>
+		<map iso="E01" to="!"/>
+		<map iso="E02" to="@"/>
+		<map iso="E03" to="#"/>
+		<map iso="E04" to="$"/>
+		<map iso="E05" to="%"/>
+		<map iso="E06" to="^"/>
+		<map iso="E07" to="𑄀"/>
+		<map iso="E08" to="*"/>
+		<map iso="E09" to="("/>
+		<map iso="E10" to=")"/>
+		<map iso="E11" to="_"/>
+		<map iso="E12" to="+"/>
+	</keyMap>
+	<import path="shared/reorders.xml"/>
+    <reorders>
+        <reorder from="\U0001112C" prebase="1"/>
+    </reorders>
+    <backspaces>
+        <backspace from="[\U00011100-\U0001114F]\U0001112C\U0001112C" to="\U0001112C\U0001112C"/>
+        <backspace from="[\U00011100-\U0001114F]\U0001112C" to="\U0001112C"/>
+        <backspace from="\uFDD0\U0001112C"/>
+    </backspaces>
+</keyboard>
