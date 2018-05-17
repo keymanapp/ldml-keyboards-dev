@@ -4,25 +4,25 @@
         <event key="[D03]" output="&#x200B;e"/>
         <event key="[shift C01]" output="Ae"/>
         <event key="[C01]" output="Aae"/>
-        <event key="[D06]" output="Ayae"/>
+        <event key="[D06]" output="Ayae" skip="bksp"/>
         <event key="[B05]" output="Ayabe"/>
-        <event key="[B02]" output="Axyabe"/>
+        <event key="[B02]" output="Axyabe" skip="bksp"/>
         <event key="[B03]" output="Axyabce"/>
         <event key="[B01]" output="Axyabcze"/>
         <event key="[C03]" output="Axyabczde"/>
-        <event key="[D06]" output="Axyabcyzde"/>
+        <event key="[D06]" output="Axyabcyzde" skip="bksp"/>
     </test-sequence>
 
     <test-sequence id="2">
         <event key="[shift B05]" output="B"/>
         <event key="[B02]" output="Bx"/>
-        <event key="[D06]" output="Byx"/>
+        <event key="[D06]" output="Byx" skip="bksp"/>
         <event key="[C04]" output="Byxf"/>
-        <event key="[shift C05]" output="ByxfG"/>
+        <event key="[shift C05]" output="ByxfG" skip="bksp"/>
         <event key="[C06]" output="ByxfGh"/>
-        <event key="[C01]" output="ByxafGh"/>
-        <event key="[D06]" output="ByxafGyh"/>
-        <event key="[B02]" output="ByxafGxyh"/>
+        <event key="[C01]" output="ByxafGh" skip="bksp"/>
+        <event key="[D06]" output="ByxafGyh" skip="bksp"/>
+        <event key="[B02]" output="ByxafGxyh" skip="bksp"/>
     </test-sequence>
 
     <test-sequence id="3">

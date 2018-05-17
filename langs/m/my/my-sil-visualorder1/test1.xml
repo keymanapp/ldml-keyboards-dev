@@ -22,7 +22,7 @@
 
     <test-sequence id="4">
 	<event key="[D07]" output="က"/>
-	<event key="[E00]" output="က"/>
+	<event key="[E00]" output="က" skip="bksp"/>
 	<event key="[D07]" output="က္က" skip="bksp"/>
 	<event key="[C08]" output="က္ကု"/>
 	<event key="[C03]" output="က္ကို" skip="bksp"/>

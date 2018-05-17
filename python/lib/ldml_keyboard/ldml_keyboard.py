@@ -264,7 +264,7 @@ class Keyboard(object):
         s = chars[begin:end]
         k = keys[:end-begin]
         if not len(s):
-            return u""
+            return (chars[:begin], u"", chars[end:])
         # if there is no base, insert one
         if not rev and (0, 0) not in [(x.primary, x.tertiary) for x in k]:
             s += u"\u200B"
@@ -272,9 +272,11 @@ class Keyboard(object):
         # sort key is (primary, secondary, string index)
         res = u"".join(s[y] for y in sorted(range(len(s)), key=lambda x:k[x]))
         if rev:
-            keys = sorted(k)
-            if keys[-1].primary == 0 and keys[-1].tertiary == 0 and res[-1] == u"\u200B":
-                res = res[:-1]
+            for i, key in enumerate(sorted(k)):
+                if key.primary > 0: break
+                if key.primary == 0 and res[i] == u"\u200B":
+                    res = res[:i] + res[i+1:]
+                    break
         return (chars[:begin], res, chars[end:])
 
     def _padlist(self, val, num):
@@ -322,12 +324,21 @@ class Keyboard(object):
         if curr > startrun:     # just copy the odd characters across
             context.results(ruleset, curr - startrun, instr[startrun:curr])
 
-        startrun = curr
+        for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), ruleset=ruleset):
+            if len(post):
+                context.results(ruleset, len(ordered), ordered)
+            else:
+                context.outputs[context.index(ruleset)] += ordered
+
+    def _reorder(self, instr, startrun=0, end=0, ruleset='reorder'):
+        '''Presumes we are at the start of a cluster'''
+        trans = self.transforms[ruleset]
+        curr = startrun
         keys = [None] * (len(instr) - startrun)
         isinit = True           # inside the start of a run (.{prebase}* .{order==0 && tertiary==0})
         currprimary = 0
         currbaseindex = curr
-        while curr < context.len(ruleset):
+        while curr < end:
             codes = self._get_charcodes(instr, curr, trans)
             for i, c in enumerate(codes):               # calculate sort key for each character in turn
                 if c.tertiary and curr + i > startrun:      # can't start with tertiary, treat as primary 0
@@ -346,8 +357,7 @@ class Keyboard(object):
                 # identify a run boundary
                 if not isinit and ((key.primary == 0 and key.tertiary == 0) or c.prebase):
                     # output sorted run and reset for new run
-                    context.results(ruleset, curr + i - startrun,
-                                    u"".join(self._sort(0, curr + i - startrun, instr[startrun:curr+i], keys)))
+                    yield self._sort(0, curr + i - startrun, instr[startrun:], keys)
                     startrun = curr + i
                     keys = [None] * (len(instr) - startrun)
                     isinit = True
@@ -355,7 +365,9 @@ class Keyboard(object):
             curr += len(codes)
         if curr > startrun:
             # output but don't store any residue. Reprocess it next time.
-            context.outputs[context.index(ruleset)] += u"".join(self._sort(0, curr-startrun, instr[startrun:], keys))
+            yield self._sort(0, curr-startrun, instr[startrun:], keys)
+        else:
+            yield ("", "", "")
 
     def _unreorder(self, instr):
         ''' Create a string that when reordered gives the input string.
@@ -370,7 +382,7 @@ class Keyboard(object):
             codes = self._get_charcodes(instr, end, trans, rev=True)
             for c in codes:
                 # having hit a cluster prefix do we now hit the end of the last cluster?
-                if hitbase and not c.prebase and c.primary >= 0 and c.tertiary == 0:
+                if hitbase and (c.primary >= 0 or c.tertiary > 0):
                     break
                 # hit the end of a cluster prefix
                 elif c.primary == 0 and c.tertiary == 0:
@@ -378,7 +390,7 @@ class Keyboard(object):
                     keys.append(SortKey(0, -end, 0, -end))
                     # bases are always tertiary_bases so update tertiary references
                     for e in tertiaries:
-                        keys[e] = SortKey(keys[e].primary, -end, keys[e].tertiary, keys[e].tiebreak)
+                        keys[e] = SortKey(0, -end, keys[e].tertiary, keys[e].tiebreak)
                     tertiaries = []
                 # tertiary characters get given a key and a reference to update
                 elif c.tertiary != 0:
@@ -396,39 +408,59 @@ class Keyboard(object):
                     # update tertiary references
                     if c.tertiary_base:
                         for e in tertiaries:
-                            keys[e] = SortKey(keys[e].primary, -end, keys[e].tertiary, keys[e].tiebreak)
+                            keys[e] = SortKey(v, -end, keys[e].tertiary, keys[e].tiebreak)
                         tertiaries = []
                 end += 1
             else:
                 continue
             break
         keys = list(reversed(keys))
-        res = u"".join(self._sort(len(instr) - len(keys), len(instr), instr, keys, rev=True))
+        res = self._sort(len(instr) - len(keys), len(instr), instr, keys, rev=True)
         return res
+
+    def _default_backspace(self, instr):
+        """ Consume one character from the pre-reordered text.
+            Returns replacement output string, length of output consumed,
+            replacement pre reordered text, length of pre reordered text consumed."""
+        if 'reorder' not in self.transforms:
+            return ("", 1, "", instr[:-1])
+        # derive a possible input string to reorder
+        (orig, simple, _) = self._unreorder(instr)
+        slen = len(simple)
+        # delete one char from it
+        simple = simple[:-1]
+        # recalculate output as a result
+        (pref, res, post) = list(self._reorder(simple, end=len(simple), ruleset='reorder'))[0]
+        length = len(instr) - len(orig)
+        return (res, length, simple, slen)
 
     def _process_backspace(self, context, ruleset='backspace'):
         '''Handle the backspace transforms in response to bksp key'''
         instr = context.outputs[-1]
-        origlen = len(instr)
+        instrlen = len(instr)
         if ruleset not in self.transforms:
-            unorderedstr = self._unreorder(instr)
-            instr = instr[:-1]
+            (res, length, simple, slen) = self._default_backspace(instr)
         else:
             trans = self.transforms[ruleset]
             # find and process one rule
             r = trans.revmatch(instr)
             if r.rule is not None:
                 if getattr(r.rule, 'error', 0): return False
-                instr = instr[:-r.length] + UnicodeSets.struni(getattr(r.rule, 'to', ""))
+                length = r.length
+                res = UnicodeSets.struni(getattr(r.rule, 'to', ""))
+                # derive possible input string to lead to desired result
+                (orig, simple, _) = self._unreorder(instr[:-length]+res)
+                # if a filler was deleted take that into account
+                slen = instrlen - len(orig) - (1 if u"\u200B" in instr[-length:] else 0)
             else:       # no rule, so just remove a single character
-                instr = instr[:-1]
-        # create an input string that can be sorted into our output
-        unorderedstr = self._unreorder(instr)
+                (res, length, simple, slen) = self._default_backspace(instr)
         # replace the various between pass strings
         for x in ('base', 'simple'):
-            context.replace_end(x, origlen, unorderedstr)
+            context.replace_end(x, len(context.outputs[context.index(x)]) - slen, simple)
+            # reset offset to start of replaced text (i.e. newly reordering text)
+            context.offsets[context.index(x)] = len(context.outputs[context.index('simple')]) - len(simple)
         for x in ('reorder', 'final'):
-            context.replace_end(x, origlen, instr)
+            context.replace_end(x, instrlen - length, res)
         return True
 
 
@@ -496,9 +528,7 @@ class Context(object):
         'final' : 3
     }
     def __init__(self, chars=""):
-        self.stables = [""] * len(self.slotnames)   # stuff we don't need to reprocess
         self.outputs = [""] * len(self.slotnames)   # stuff to pass to next layer
-        self.stables[0] = chars                     # basic input is always stable
         self.outputs[0] = chars                     # and copy it to its output
         self.offsets = [0] * len(self.slotnames)    # pointer into last layer output
                                                     # corresponding to end of stables
@@ -508,17 +538,13 @@ class Context(object):
     def clone(self, chars=""):
         '''Copy a context and add some more input to the result'''
         res = Context("")
-        res.stables = self.stables[:]
         res.outputs = self.outputs[:]
         res.offsets = self.offsets[:]
-        res.stables[0] += chars
         res.outputs[0] += chars
         res.offsets[0] += len(chars)
         return res
 
     def __str__(self):
-#        if self.error:
-#            return "*"+self.outputs[-1]+"*"         # how we show an error state
         return self.outputs[-1]
 
     def index(self, name='base'):
@@ -539,7 +565,7 @@ class Context(object):
     def reset_output(self, name):
         '''Prepare output based on stables ready for more output to be added'''
         ind = self.index(name)
-        self.outputs[ind] = self.stables[ind]
+        self.outputs[ind] = self.outputs[ind][:self.offsets[ind]]
 
     def results(self, name, length, res):
         '''Remove from input, in effect, and put result into stables'''
@@ -547,21 +573,15 @@ class Context(object):
         leftlen = len(self.outputs[ind-1]) - self.offsets[ind] - length
         prevleft = len(self.outputs[ind-2]) - self.offsets[ind-1] if ind > 1 else 0
         self.outputs[ind] += res
-        # only add to stables if everything to be consumed is already in the stables
-        # of the previous layer. Otherwise, our results can only be temporary.
         if leftlen > prevleft:
-            self.stables[ind] += res
-            self.offsets[ind] += length
+            self.offsets[ind] += len(res)
 
-    def replace_end(self, name, length, res):
+    def replace_end(self, name, start, res):
         ind = self.index(name)
-        newlen = len(res)
-        newstart = len(self.outputs[ind]) - newlen
-        self.outputs[ind] = self.outputs[ind][:-length] + res
-        diff = self.offsets[ind] - newstart
+        self.outputs[ind] = self.outputs[ind][:start] + res
+        diff = self.offsets[ind] - start
         if diff > 0:
-            self.stables[ind] = self.stables[ind][:-diff]
-            self.offsets[ind] = newstart
+            self.offsets[ind] -= diff
 
 
 def main():

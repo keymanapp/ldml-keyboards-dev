@@ -108,9 +108,11 @@
     <reorders>
         <reorder from="\U0001112C" prebase="1"/>
     </reorders>
+<!--
     <backspaces>
         <backspace from="[\U00011100-\U0001114F]\U0001112C\U0001112C" to="\U0001112C\U0001112C"/>
         <backspace from="[\U00011100-\U0001114F]\U0001112C" to="\U0001112C"/>
         <backspace from="\uFDD0\U0001112C"/>
     </backspaces>
+-->
 </keyboard>
