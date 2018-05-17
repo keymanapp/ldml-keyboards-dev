@@ -1,6 +1,8 @@
 #!/usr/bin/python
 
-import argparse, sys, re
+from __future__ import print_function
+import argparse, sys, re, os
+from glob import glob
 from xml.etree import ElementTree as et
 try:
     from ldml_keyboard.ldml_keyboard import Keyboard
@@ -74,36 +76,51 @@ class KeyTest():
 
 parser = argparse.ArgumentParser()
 parser.add_argument('kbdfile',help='Keyboard LDML file')
-parser.add_argument('infile', help='Input test .xml file')
+parser.add_argument('infile',nargs='?',help='Input test .xml file')
 parser.add_argument('-d','--id',help='Only run this given test')
 parser.add_argument('-q','--quiet',action='store_true', help="Minimise output")
 parser.add_argument('-F','--full', action="store_true", help="Output full error messages")
 args = parser.parse_args()
 
+# a fun way to run this program: find -name \*.ldml -exec python/scripts/kbdtest -F \{\} \;
+
 kbd = Keyboard(args.kbdfile)
-doc = et.parse(args.infile)
-tester = KeyTest(kbd, args.infile, args)
+if args.infile is None:
+    path = os.path.dirname(args.kbdfile)
+    fnames = glob(os.path.join(path, '*.xml'))
+else:
+    fnames = [args.infile]
+
 errors = 0
-for t in doc.findall('.//test-sequence'):
-    tid = t.get('id', "Unknown")
-    if args.id and args.id != tid: continue
-    if not args.quiet:
-        print tid
-    tester.reset()
-    for i, e in enumerate(t.findall('.//event')):
-        keys = parse_key(e.get('key'))
-        test = e.get('output', "")
-        iserror = e.get('error', '') == 'fail'
-        skips = e.get('skip', '').split(' ')
-        try:
-            if 'base' not in skips:
-                tester.basetest(keys, test, iserror, tid, i+1)
-            if 'bksp' not in skips and "[BKSP]" not in e.get('key'):
-                tester.bksptest(test, iserror, tid, i+1)
-            else:
-                tester.reset_bksp_end()
-        except TestError as e:
-            print unicode(e)
-            errors += 1
+for fn in fnames:
+    doc = et.parse(fn)
+    print(fn, end=": ")
+    sys.stdout.flush()
+    tester = KeyTest(kbd, args.infile, args)
+    for t in doc.findall('.//test-sequence'):
+        tid = t.get('id', "Unknown")
+        if args.id and args.id != tid: continue
+        if not args.quiet:
+            print(tid, end=" ")
+            sys.stdout.flush()
+        tester.reset()
+        for i, e in enumerate(t.findall('.//event')):
+            keys = parse_key(e.get('key'))
+            test = e.get('output', "")
+            iserror = e.get('error', '') == 'fail'
+            skips = e.get('skip', '').split(' ')
+            try:
+                if 'base' not in skips:
+                    tester.basetest(keys, test, iserror, tid, i+1)
+                if 'bksp' not in skips and "[BKSP]" not in e.get('key'):
+                    tester.bksptest(test, iserror, tid, i+1)
+                else:
+                    tester.reset_bksp_end()
+            except TestError as e:
+                print(unicode(e))
+                errors += 1
+    print()
+    if errors > 0:
+        break
 
 sys.exit(errors)

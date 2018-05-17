@@ -326,8 +326,10 @@ class Keyboard(object):
 
         for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), ruleset=ruleset):
             if len(post):
+                # append and update processed marker
                 context.results(ruleset, len(ordered), ordered)
             else:
+                # just append, ready to reprocess again
                 context.outputs[context.index(ruleset)] += ordered
 
     def _reorder(self, instr, startrun=0, end=0, ruleset='reorder'):
@@ -363,8 +365,8 @@ class Keyboard(object):
                     isinit = True
                 keys[curr+i-startrun] = key
             curr += len(codes)
+        # yield a final result with the residue and no post text
         if curr > startrun:
-            # output but don't store any residue. Reprocess it next time.
             yield self._sort(0, curr-startrun, instr[startrun:], keys)
         else:
             yield ("", "", "")
@@ -450,17 +452,17 @@ class Keyboard(object):
                 res = UnicodeSets.struni(getattr(r.rule, 'to', ""))
                 # derive possible input string to lead to desired result
                 (orig, simple, _) = self._unreorder(instr[:-length]+res)
-                # if a filler was deleted take that into account
-                slen = instrlen - len(orig) - (1 if u"\u200B" in instr[-length:] else 0)
+                # this doesn't have to be accurate since we reset offsets
+                slen = instrlen - len(orig)
             else:       # no rule, so just remove a single character
                 (res, length, simple, slen) = self._default_backspace(instr)
         # replace the various between pass strings
         for x in ('base', 'simple'):
-            context.replace_end(x, len(context.outputs[context.index(x)]) - slen, simple)
+            context.replace_end(x, slen, simple)
             # reset offset to start of replaced text (i.e. newly reordering text)
             context.offsets[context.index(x)] = len(context.outputs[context.index('simple')]) - len(simple)
         for x in ('reorder', 'final'):
-            context.replace_end(x, instrlen - length, res)
+            context.replace_end(x, length, res)
         return True
 
 
@@ -568,7 +570,7 @@ class Context(object):
         self.outputs[ind] = self.outputs[ind][:self.offsets[ind]]
 
     def results(self, name, length, res):
-        '''Remove from input, in effect, and put result into stables'''
+        '''Remove from input, in effect, and update offsets'''
         ind = self.index(name)
         leftlen = len(self.outputs[ind-1]) - self.offsets[ind] - length
         prevleft = len(self.outputs[ind-2]) - self.offsets[ind-1] if ind > 1 else 0
@@ -576,12 +578,13 @@ class Context(object):
         if leftlen > prevleft:
             self.offsets[ind] += len(res)
 
-    def replace_end(self, name, start, res):
+    def replace_end(self, name, backup, res):
         ind = self.index(name)
-        self.outputs[ind] = self.outputs[ind][:start] + res
-        diff = self.offsets[ind] - start
-        if diff > 0:
-            self.offsets[ind] -= diff
+        out = self.outputs[ind]
+        start = len(out) - backup
+        self.outputs[ind] = out[:-backup] + res
+        if start < self.offsets[ind]:
+            self.offsets[ind] = start
 
 
 def main():
