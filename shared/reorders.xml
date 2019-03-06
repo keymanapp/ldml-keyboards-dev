@@ -1,103 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard>
     <reorders>
-        <!-- Unknowns \u00B2 \u00B3 \u0315 \u031A \u0345 \u034F \u0358 \u035C \u035D \u035E \u035F \u0360 \u0361 \u0362 \u059A \u05AD \u05AE \u0D4E \u0F35 \u0F37 \u0FC6 \u18A9 \u193B \u1A7B \u1A7C \u1A7F \u1B3B \u1C36 \u1CF2 \u1CF3 \u1DCD \u1DF6 \u1DF7 \u1DF8 \u1DFB \u1DFC \u2074 \u2082 \u2083 \u2084 \u302B \u302C \u302D \uA926 \uA927 \uA928 \uA929 \uA92A \uA9BF \u10A3A \u111C2 \u111C3 \u11300 \u1171E \u11A33 \u11A3A \u11A86 \u11A87 \u11A88 \u11A89 \u11D46 \u1D16D -->
+        <!-- Unknowns \u00B2 \u00B3 \u0315 \u031A \u0345 \u034F \u0358 \u035C \u035D \u035E \u035F \u0360 \u0361 \u0362 \u059A \u05AD \u05AE \u09FE \u0D4E \u0F35 \u0F37 \u0FC6 \u17D3 \u18A9 \u193B \u1A7B \u1A7C \u1A7F \u1B3B \u1C36 \u1DCD \u1DF6 \u1DF7 \u1DF8 \u1DFB \u1DFC \u2074 \u2082 \u2083 \u2084 \u302B \u302C \u302D \uA926 \uA927 \uA928 \uA929 \uA92A \uA9BF \u10A3A \u111C2 \u111C3 \u111C9 \u1145E \u1171E \u11A33 \u11A3A \u11A84 \u11A85 \u11A86 \u11A87 \u11A88 \u11A89 \u11D46 \u1D16D -->
 
         <!-- Adlam -->
         <reorder from="\u{1E94A}" tertiary="3"/>
-        <reorder from="[\u{1E944}-\u{1E949}]" order="55"/>
+        <reorder from="\u{1E944}-\u{1E949}" order="55"/>
 
         <!-- Ahom -->
         <reorder from="\u{1172B}" order="11"/>
         <reorder from="\u{1171D}" order="50"/>
         <reorder from="\u{1171F}" order="55"/>
         <reorder from="\u{11726}" order="60"/>
-        <reorder from="[\u{11722}-\u{11723}\u{11727}\u{11729}-\u{1172A}]" order="65"/>
-        <reorder from="[\u{11724}-\u{11725}\u{11728}]" order="70"/>
-        <reorder from="[\u{11720}-\u{11721}]" order="75"/>
+        <reorder from="\u{11722}-\u{11723}\u{11727}\u{11729}-\u{1172A}" order="65"/>
+        <reorder from="\u{11724}-\u{11725}\u{11728}" order="70"/>
+        <reorder from="\u{11720}-\u{11721}" order="75"/>
 
         <!-- Arabic -->
         <reorder from="\u08F0" order="20"/>
-        <reorder from="[\u0618\u08F1]" order="21"/>
+        <reorder from="\u0618\u08F1" order="21"/>
         <reorder from="\u08F2" order="22"/>
         <reorder from="\u0619" order="24"/>
         <reorder from="\u061A" order="25"/>
-        <reorder from="[\u0656\u065C\u065F\u06E3\u06EA\u06ED\u08E3\u08E6\u08E9\u08ED-\u08EF\u08F6\u08F9-\u08FA]" order="50"/>
-        <reorder from="[\u0610-\u0617\u0657-\u065B\u065D-\u065E\u06D6-\u06DC\u06DF-\u06E2\u06E4\u06E7-\u06E8\u06EB-\u06EC\u08D4-\u08E1\u08E4-\u08E5\u08E7-\u08E8\u08EA-\u08EC\u08F3-\u08F5\u08F7-\u08F8\u08FB-\u08FF]" order="55"/>
+        <reorder from="\u0656\u065C\u065F\u06E3\u06EA\u06ED\u08D3\u08E3\u08E6\u08E9\u08ED-\u08EF\u08F6\u08F9-\u08FA" order="50"/>
+        <reorder from="\u0610-\u0617\u0657-\u065B\u065D-\u065E\u06D6-\u06DC\u06DF-\u06E2\u06E4\u06E7-\u06E8\u06EB-\u06EC\u08D4-\u08E1\u08E4-\u08E5\u08E7-\u08E8\u08EA-\u08EC\u08F3-\u08F5\u08F7-\u08F8\u08FB-\u08FF" order="55"/>
 
         <!-- Balinese -->
         <reorder from="\u1B34" tertiary="3"/>
-        <reorder before="[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" from="\u1B44[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" from="\u1B44[\u200C\u200D][\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59][\uFE00-\uFE0F]" from="\u1B44[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59][\uFE00-\uFE0F]" from="\u1B44[\u200C\u200D][\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]\u1B34" from="\u1B44[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]\u1B34" from="\u1B44[\u200C\u200D][\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59][\uFE00-\uFE0F]\u1B34" from="\u1B44[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59][\uFE00-\uFE0F]\u1B34" from="\u1B44[\u200C\u200D][\u1B05-\u1B33\u1B45-\u1B4B\u1B50-\u1B59]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" from="\u1B44[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" from="\u1B44[\u200C\u200D][\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43][\uFE00-\uFE0F]" from="\u1B44[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43][\uFE00-\uFE0F]" from="\u1B44[\u200C\u200D][\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]\u1B34" from="\u1B44[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]\u1B34" from="\u1B44[\u200C\u200D][\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43][\uFE00-\uFE0F]\u1B34" from="\u1B44[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43][\uFE00-\uFE0F]\u1B34" from="\u1B44[\u200C\u200D][\u1B00-\u1B02\u1B04\u1B35-\u1B3A\u1B3C-\u1B43]" order="10" tertiary_base="true"/>
         <reorder from="\u1B44" order="120" tertiary_base="true"/>
         <reorder from="\u1B6C" order="50"/>
-        <reorder from="[\u1B6B\u1B6D-\u1B73]" order="55"/>
-        <reorder from="[\u1B3E-\u1B3F]" order="60"/>
-        <reorder from="[\u1B36-\u1B37\u1B3C-\u1B3D\u1B42-\u1B43]" order="65"/>
-        <reorder from="[\u1B38-\u1B3A]" order="70"/>
-        <reorder from="[\u1B35\u1B40-\u1B41]" order="75"/>
-        <reorder from="[\u1B00-\u1B02]" order="85"/>
+        <reorder from="\u1B6B\u1B6D-\u1B73" order="55"/>
+        <reorder from="\u1B3E-\u1B3F" order="60"/>
+        <reorder from="\u1B36-\u1B37\u1B3C-\u1B3D\u1B42-\u1B43" order="65"/>
+        <reorder from="\u1B38-\u1B3A" order="70"/>
+        <reorder from="\u1B35\u1B40-\u1B41" order="75"/>
+        <reorder from="\u1B00-\u1B02" order="85"/>
         <reorder from="\u1B04" order="95"/>
         <reorder from="\u1B03" order="105"/>
 
         <!-- Bamum -->
-        <reorder from="[\uA6F0-\uA6F1]" order="55"/>
+        <reorder from="\uA6F0-\uA6F1" order="55"/>
 
         <!-- Bassa_Vah -->
-        <reorder from="[\u{16AF0}-\u{16AF4}]" tertiary="2"/>
+        <reorder from="\u{16AF0}-\u{16AF4}" tertiary="2"/>
 
         <!-- Batak -->
         <reorder from="\u1BE6" tertiary="3"/>
-        <reorder from="[\u1BF2-\u1BF3]" order="11"/>
-        <reorder from="[\u1BE8-\u1BE9\u1BED\u1BEF]" order="65"/>
-        <reorder from="[\u1BE7\u1BEA-\u1BEC\u1BEE]" order="75"/>
-        <reorder from="[\u1BF0-\u1BF1]" order="105"/>
+        <reorder from="\u1BF2-\u1BF3" order="11"/>
+        <reorder from="\u1BE8-\u1BE9\u1BED\u1BEF" order="65"/>
+        <reorder from="\u1BE7\u1BEA-\u1BEC\u1BEE" order="75"/>
+        <reorder from="\u1BF0-\u1BF1" order="105"/>
 
         <!-- Bengali -->
         <reorder from="\u09BC" tertiary="3"/>
-        <reorder before="[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" from="\u09CD[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" from="\u09CD[\u200C\u200D][\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC][\uFE00-\uFE0F]" from="\u09CD[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC][\uFE00-\uFE0F]" from="\u09CD[\u200C\u200D][\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]\u09BC" from="\u09CD[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]\u09BC" from="\u09CD[\u200C\u200D][\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC][\uFE00-\uFE0F]\u09BC" from="\u09CD[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC][\uFE00-\uFE0F]\u09BC" from="\u09CD[\u200C\u200D][\u0985-\u098C\u098F-\u0990\u0993-\u09A8\u09AA-\u09B0\u09B2\u09B6-\u09B9\u09BD\u09DC-\u09DD\u09DF-\u09E1\u09E6-\u09F1\u09FC]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" from="\u09CD[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" from="\u09CD[\u200C\u200D][\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3][\uFE00-\uFE0F]" from="\u09CD[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3][\uFE00-\uFE0F]" from="\u09CD[\u200C\u200D][\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]\u09BC" from="\u09CD[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]\u09BC" from="\u09CD[\u200C\u200D][\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3][\uFE00-\uFE0F]\u09BC" from="\u09CD[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3][\uFE00-\uFE0F]\u09BC" from="\u09CD[\u200C\u200D][\u0981-\u0983\u09BE-\u09C4\u09C7-\u09C8\u09CB-\u09CC\u09D7\u09E2-\u09E3]" order="10" tertiary_base="true"/>
         <reorder from="\u09CD" order="120" tertiary_base="true"/>
-        <reorder from="[\u09BF\u09C7-\u09C8]" order="60"/>
-        <reorder from="[\u09C1-\u09C4\u09E2-\u09E3]" order="70"/>
-        <reorder from="[\u09BE\u09C0\u09CB-\u09CC\u09D7]" order="75"/>
+        <reorder from="\u09BF\u09C7-\u09C8" order="60"/>
+        <reorder from="\u09C1-\u09C4\u09E2-\u09E3" order="70"/>
+        <reorder from="\u09BE\u09C0\u09CB-\u09CC\u09D7" order="75"/>
         <reorder from="\u0981" order="85"/>
-        <reorder from="[\u0982-\u0983]" order="95"/>
+        <reorder from="\u0982-\u0983" order="95"/>
 
         <!-- Bhaiksuki -->
-        <reorder before="[\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}]" from="\u{11C3F}[\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}]" from="\u{11C3F}[\u200C\u200D][\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}][\uFE00-\uFE0F]" from="\u{11C3F}[\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}][\uFE00-\uFE0F]" from="\u{11C3F}[\u200C\u200D][\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11C2F}-\u{11C36}\u{11C38}-\u{11C3E}]" from="\u{11C3F}[\u{11C2F}-\u{11C36}\u{11C38}-\u{11C3E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11C2F}-\u{11C36}\u{11C38}-\u{11C3E}]" from="\u{11C3F}[\u200C\u200D][\u{11C2F}-\u{11C36}\u{11C38}-\u{11C3E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11C2F}-\u{11C36}\u{11C38}-\u{11C3E}][\uFE00-\uFE0F]" from="\u{11C3F}[\u{11C2F}-\u{11C36}\u{11C38}-\u{11C3E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11C2F}-\u{11C36}\u{11C38}-\u{11C3E}][\uFE00-\uFE0F]" from="\u{11C3F}[\u200C\u200D][\u{11C2F}-\u{11C36}\u{11C38}-\u{11C3E}]" order="10" tertiary_base="true"/>
         <reorder from="\u{11C3F}" order="120" tertiary_base="true"/>
-        <reorder from="[\u{11C30}-\u{11C31}\u{11C38}-\u{11C3B}]" order="65"/>
-        <reorder from="[\u{11C32}-\u{11C36}]" order="70"/>
+        <reorder from="\u{11C30}-\u{11C31}\u{11C38}-\u{11C3B}" order="65"/>
+        <reorder from="\u{11C32}-\u{11C36}" order="70"/>
         <reorder from="\u{11C2F}" order="75"/>
-        <reorder from="[\u{11C3C}-\u{11C3D}]" order="85"/>
+        <reorder from="\u{11C3C}-\u{11C3D}" order="85"/>
         <reorder from="\u{11C3E}" order="95"/>
 
         <!-- Brahmi -->
-        <reorder before="[\u{11005}-\u{11037}\u{11066}-\u{1106F}]" from="[\u{11046}\u{1107F}][\u{11005}-\u{11037}\u{11066}-\u{1106F}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11005}-\u{11037}\u{11066}-\u{1106F}]" from="[\u{11046}\u{1107F}][\u200C\u200D][\u{11005}-\u{11037}\u{11066}-\u{1106F}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11005}-\u{11037}\u{11066}-\u{1106F}][\uFE00-\uFE0F]" from="[\u{11046}\u{1107F}][\u{11005}-\u{11037}\u{11066}-\u{1106F}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11005}-\u{11037}\u{11066}-\u{1106F}][\uFE00-\uFE0F]" from="[\u{11046}\u{1107F}][\u200C\u200D][\u{11005}-\u{11037}\u{11066}-\u{1106F}]" order="10" tertiary_base="true"/>
-        <reorder from="[\u{11046}\u{1107F}]" order="120" tertiary_base="true"/>
-        <reorder from="[\u{11038}-\u{1103B}\u{11042}-\u{11045}]" order="65"/>
-        <reorder from="[\u{1103C}-\u{11041}]" order="70"/>
+        <reorder before="[\u{11000}-\u{11002}\u{11038}-\u{11045}]" from="\u{11046}\u{1107F}[\u{11000}-\u{11002}\u{11038}-\u{11045}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11000}-\u{11002}\u{11038}-\u{11045}]" from="\u{11046}\u{1107F}[\u200C\u200D][\u{11000}-\u{11002}\u{11038}-\u{11045}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11000}-\u{11002}\u{11038}-\u{11045}][\uFE00-\uFE0F]" from="\u{11046}\u{1107F}[\u{11000}-\u{11002}\u{11038}-\u{11045}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11000}-\u{11002}\u{11038}-\u{11045}][\uFE00-\uFE0F]" from="\u{11046}\u{1107F}[\u200C\u200D][\u{11000}-\u{11002}\u{11038}-\u{11045}]" order="10" tertiary_base="true"/>
+        <reorder from="\u{11046}\u{1107F}" order="120" tertiary_base="true"/>
+        <reorder from="\u{11038}-\u{1103B}\u{11042}-\u{11045}" order="65"/>
+        <reorder from="\u{1103C}-\u{11041}" order="70"/>
         <reorder from="\u{11001}" order="85"/>
-        <reorder from="[\u{11000}\u{11002}]" order="95"/>
+        <reorder from="\u{11000}\u{11002}" order="95"/>
 
         <!-- Buginese -->
         <reorder from="\u1A18" order="50"/>
@@ -111,128 +111,162 @@
         <reorder from="\u1753" order="70"/>
 
         <!-- Chakma -->
-        <reorder before="[\u{11103}-\u{11126}\u{11136}-\u{1113F}]" from="\u{11133}[\u{11103}-\u{11126}\u{11136}-\u{1113F}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11103}-\u{11126}\u{11136}-\u{1113F}]" from="\u{11133}[\u200C\u200D][\u{11103}-\u{11126}\u{11136}-\u{1113F}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11103}-\u{11126}\u{11136}-\u{1113F}][\uFE00-\uFE0F]" from="\u{11133}[\u{11103}-\u{11126}\u{11136}-\u{1113F}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11103}-\u{11126}\u{11136}-\u{1113F}][\uFE00-\uFE0F]" from="\u{11133}[\u200C\u200D][\u{11103}-\u{11126}\u{11136}-\u{1113F}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11127}-\u{11132}\u{11145}-\u{11146}]" from="\u{11133}[\u{11127}-\u{11132}\u{11145}-\u{11146}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11127}-\u{11132}\u{11145}-\u{11146}]" from="\u{11133}[\u200C\u200D][\u{11127}-\u{11132}\u{11145}-\u{11146}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11127}-\u{11132}\u{11145}-\u{11146}][\uFE00-\uFE0F]" from="\u{11133}[\u{11127}-\u{11132}\u{11145}-\u{11146}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11127}-\u{11132}\u{11145}-\u{11146}][\uFE00-\uFE0F]" from="\u{11133}[\u200C\u200D][\u{11127}-\u{11132}\u{11145}-\u{11146}]" order="10" tertiary_base="true"/>
         <reorder from="\u{11133}" order="120" tertiary_base="true"/>
         <reorder from="\u{11134}" order="11"/>
-        <reorder from="[\u{11100}-\u{11102}]" order="55"/>
+        <reorder from="\u{11100}-\u{11102}" order="55"/>
         <reorder from="\u{1112C}" order="60"/>
-        <reorder from="[\u{11127}-\u{11129}\u{1112D}-\u{11130}]" order="65"/>
-        <reorder from="[\u{1112A}-\u{1112B}\u{11131}-\u{11132}]" order="70"/>
+        <reorder from="\u{11127}-\u{11129}\u{1112D}-\u{11130}" order="65"/>
+        <reorder from="\u{1112A}-\u{1112B}\u{11131}-\u{11132}" order="70"/>
+        <reorder from="\u{11145}-\u{11146}" order="75"/>
 
         <!-- Cham -->
         <reorder from="\uAA34" order="40"/>
-        <reorder from="[\uAA35-\uAA36]" order="50"/>
+        <reorder from="\uAA35-\uAA36" order="50"/>
         <reorder from="\uAA33" order="59"/>
-        <reorder from="[\uAA2F-\uAA30]" order="60"/>
-        <reorder from="[\uAA29-\uAA2C\uAA2E\uAA31]" order="65"/>
-        <reorder from="[\uAA2D\uAA32]" order="70"/>
-        <reorder from="[\uAA43\uAA4C]" order="105"/>
+        <reorder from="\uAA2F-\uAA30" order="60"/>
+        <reorder from="\uAA29-\uAA2C\uAA2E\uAA31" order="65"/>
+        <reorder from="\uAA2D\uAA32" order="70"/>
+        <reorder from="\uAA43\uAA4C" order="105"/>
         <reorder from="\uAA4D" order="115"/>
 
         <!-- Common -->
-        <reorder from="[\u{1D165}-\u{1D166}\u{1D16E}-\u{1D172}]" order="56"/>
-        <reorder from="[\u1CE1\u1CF7]" order="95"/>
+        <reorder from="\u{1D165}-\u{1D166}\u{1D16E}-\u{1D172}" order="56"/>
+        <reorder from="\u1CE1\u1CF7" order="95"/>
         <reorder from="\u2060" order="125"/>
 
         <!-- Coptic -->
-        <reorder from="[\u2CEF-\u2CF1]" order="55"/>
+        <reorder from="\u2CEF-\u2CF1" order="55"/>
 
         <!-- Cyrillic -->
-        <reorder from="[\u0483-\u0484\u0487\u2DE0-\u2DFF\uA66F\uA674-\uA67D\uA69E-\uA69F\uFE2E-\uFE2F]" order="55"/>
+        <reorder from="\u0483-\u0484\u0487\u2DE0-\u2DFF\uA66F\uA674-\uA67D\uA69E-\uA69F\uFE2E-\uFE2F" order="55"/>
 
         <!-- Devanagari -->
         <reorder from="\u093C" tertiary="3"/>
-        <reorder before="[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" from="\u094D[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" from="\u094D[\u200C\u200D][\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3][\uFE00-\uFE0F]" from="\u094D[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3][\uFE00-\uFE0F]" from="\u094D[\u200C\u200D][\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]\u093C" from="\u094D[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]\u093C" from="\u094D[\u200C\u200D][\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3][\uFE00-\uFE0F]\u093C" from="\u094D[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3][\uFE00-\uFE0F]\u093C" from="\u094D[\u200C\u200D][\u0904-\u0939\u093D\u0958-\u0961\u0966-\u096F\u0972-\u097F\uA8F2-\uA8F3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" from="\u094D[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" from="\u094D[\u200C\u200D][\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF][\uFE00-\uFE0F]" from="\u094D[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF][\uFE00-\uFE0F]" from="\u094D[\u200C\u200D][\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]\u093C" from="\u094D[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]\u093C" from="\u094D[\u200C\u200D][\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF][\uFE00-\uFE0F]\u093C" from="\u094D[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF][\uFE00-\uFE0F]\u093C" from="\u094D[\u200C\u200D][\u0900-\u0903\u093A-\u093B\u093E-\u094C\u094E-\u094F\u0955-\u0957\u0962-\u0963\uA8FF]" order="10" tertiary_base="true"/>
         <reorder from="\u094D" order="120" tertiary_base="true"/>
-        <reorder from="[\u0953-\u0954\uA8E0-\uA8F1]" order="55"/>
-        <reorder from="[\u093F\u094E]" order="60"/>
-        <reorder from="[\u093A\u0945-\u0948\u0955]" order="65"/>
-        <reorder from="[\u0941-\u0944\u0956-\u0957\u0962-\u0963]" order="70"/>
-        <reorder from="[\u093B\u093E\u0940\u0949-\u094C\u094F]" order="75"/>
-        <reorder from="[\u0900-\u0902]" order="85"/>
+        <reorder from="\uA8E0-\uA8F1" order="55"/>
+        <reorder from="\u093F\u094E" order="60"/>
+        <reorder from="\u093A\u0945-\u0948\u0955\uA8FF" order="65"/>
+        <reorder from="\u0941-\u0944\u0956-\u0957\u0962-\u0963" order="70"/>
+        <reorder from="\u093B\u093E\u0940\u0949-\u094C\u094F" order="75"/>
+        <reorder from="\u0900-\u0902" order="85"/>
         <reorder from="\u0903" order="95"/>
+
+        <!-- Dogra -->
+        <reorder from="\u{1183A}" tertiary="3"/>
+        <reorder before="[\u{1182C}-\u{11838}]" from="\u{11839}[\u{1182C}-\u{11838}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1182C}-\u{11838}]" from="\u{11839}[\u200C\u200D][\u{1182C}-\u{11838}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1182C}-\u{11838}][\uFE00-\uFE0F]" from="\u{11839}[\u{1182C}-\u{11838}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1182C}-\u{11838}][\uFE00-\uFE0F]" from="\u{11839}[\u200C\u200D][\u{1182C}-\u{11838}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1182C}-\u{11838}]\u{1183A}" from="\u{11839}[\u{1182C}-\u{11838}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1182C}-\u{11838}]\u{1183A}" from="\u{11839}[\u200C\u200D][\u{1182C}-\u{11838}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1182C}-\u{11838}][\uFE00-\uFE0F]\u{1183A}" from="\u{11839}[\u{1182C}-\u{11838}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1182C}-\u{11838}][\uFE00-\uFE0F]\u{1183A}" from="\u{11839}[\u200C\u200D][\u{1182C}-\u{11838}]" order="10" tertiary_base="true"/>
+        <reorder from="\u{11839}" order="120" tertiary_base="true"/>
+        <reorder from="\u{1182D}" order="60"/>
+        <reorder from="\u{11833}-\u{11836}" order="65"/>
+        <reorder from="\u{1182F}-\u{11832}" order="70"/>
+        <reorder from="\u{1182C}\u{1182E}" order="75"/>
+        <reorder from="\u{11837}" order="85"/>
+        <reorder from="\u{11838}" order="95"/>
 
         <!-- Duployan -->
         <reorder from="\u{1BC9E}" tertiary="2"/>
 
         <!-- Ethiopic -->
-        <reorder from="[\u135D-\u135F]" order="55"/>
+        <reorder from="\u135D-\u135F" order="55"/>
 
         <!-- Glagolitic -->
-        <reorder from="[\u{1E000}-\u{1E006}\u{1E008}-\u{1E018}\u{1E01B}-\u{1E021}\u{1E023}-\u{1E024}\u{1E026}-\u{1E02A}]" order="55"/>
+        <reorder from="\u{1E000}-\u{1E006}\u{1E008}-\u{1E018}\u{1E01B}-\u{1E021}\u{1E023}-\u{1E024}\u{1E026}-\u{1E02A}" order="55"/>
 
         <!-- Grantha -->
         <reorder from="\u{1133C}" tertiary="3"/>
-        <reorder before="[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" from="\u{1134D}[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" from="\u{1134D}[\u200C\u200D][\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}][\uFE00-\uFE0F]" from="\u{1134D}[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}][\uFE00-\uFE0F]" from="\u{1134D}[\u200C\u200D][\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]\u{1133C}" from="\u{1134D}[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]\u{1133C}" from="\u{1134D}[\u200C\u200D][\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}][\uFE00-\uFE0F]\u{1133C}" from="\u{1134D}[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}][\uFE00-\uFE0F]\u{1133C}" from="\u{1134D}[\u200C\u200D][\u{11305}-\u{1130C}\u{1130F}-\u{11310}\u{11313}-\u{11328}\u{1132A}-\u{11330}\u{11332}-\u{11333}\u{11335}-\u{11339}\u{1133D}\u{1135E}-\u{11361}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" from="\u{1134D}[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" from="\u{1134D}[\u200C\u200D][\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}][\uFE00-\uFE0F]" from="\u{1134D}[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}][\uFE00-\uFE0F]" from="\u{1134D}[\u200C\u200D][\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]\u{1133C}" from="\u{1134D}[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]\u{1133C}" from="\u{1134D}[\u200C\u200D][\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}][\uFE00-\uFE0F]\u{1133C}" from="\u{1134D}[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}][\uFE00-\uFE0F]\u{1133C}" from="\u{1134D}[\u200C\u200D][\u{11300}-\u{11303}\u{1133E}-\u{11344}\u{11347}-\u{11348}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="10" tertiary_base="true"/>
         <reorder from="\u{1134D}" order="120" tertiary_base="true"/>
-        <reorder from="[\u{11366}-\u{1136C}\u{11370}-\u{11374}]" order="55"/>
-        <reorder from="[\u{11347}-\u{11348}]" order="60"/>
+        <reorder from="\u{11366}-\u{1136C}\u{11370}-\u{11374}" order="55"/>
+        <reorder from="\u{11347}-\u{11348}" order="60"/>
         <reorder from="\u{11340}" order="65"/>
-        <reorder from="[\u{1133E}-\u{1133F}\u{11341}-\u{11344}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}]" order="75"/>
-        <reorder from="\u{11301}" order="85"/>
-        <reorder from="[\u{11302}-\u{11303}]" order="95"/>
+        <reorder from="\u{1133E}-\u{1133F}\u{11341}-\u{11344}\u{1134B}-\u{1134C}\u{11357}\u{11362}-\u{11363}" order="75"/>
+        <reorder from="\u{11300}-\u{11301}" order="85"/>
+        <reorder from="\u{11302}-\u{11303}" order="95"/>
 
         <!-- Greek -->
-        <reorder from="[\u{1D242}-\u{1D244}]" order="55"/>
+        <reorder from="\u{1D242}-\u{1D244}" order="55"/>
 
         <!-- Gujarati -->
         <reorder from="\u0ABC" tertiary="3"/>
-        <reorder from="[\u0AFD-\u0AFF]" tertiary="2"/>
-        <reorder before="[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" from="\u0ACD[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" from="\u0ACD[\u200C\u200D][\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9][\uFE00-\uFE0F]" from="\u0ACD[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9][\uFE00-\uFE0F]" from="\u0ACD[\u200C\u200D][\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9][\u0AFD-\u0AFF\u0ABC]" from="\u0ACD[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9][\u0AFD-\u0AFF\u0ABC]" from="\u0ACD[\u200C\u200D][\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9][\uFE00-\uFE0F][\u0AFD-\u0AFF\u0ABC]" from="\u0ACD[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9][\uFE00-\uFE0F][\u0AFD-\u0AFF\u0ABC]" from="\u0ACD[\u200C\u200D][\u0A85-\u0A8D\u0A8F-\u0A91\u0A93-\u0AA8\u0AAA-\u0AB0\u0AB2-\u0AB3\u0AB5-\u0AB9\u0ABD\u0AE0-\u0AE1\u0AE6-\u0AEF\u0AF9]" order="10" tertiary_base="true"/>
+        <reorder from="\u0AFD-\u0AFF" tertiary="2"/>
+        <reorder before="[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" from="\u0ACD[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" from="\u0ACD[\u200C\u200D][\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC][\uFE00-\uFE0F]" from="\u0ACD[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC][\uFE00-\uFE0F]" from="\u0ACD[\u200C\u200D][\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]\u0ABC\u0AFD-\u0AFF" from="\u0ACD[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]\u0ABC\u0AFD-\u0AFF" from="\u0ACD[\u200C\u200D][\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC][\uFE00-\uFE0F]\u0ABC\u0AFD-\u0AFF" from="\u0ACD[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC][\uFE00-\uFE0F]\u0ABC\u0AFD-\u0AFF" from="\u0ACD[\u200C\u200D][\u0A81-\u0A83\u0ABE-\u0AC5\u0AC7-\u0AC9\u0ACB-\u0ACC\u0AE2-\u0AE3\u0AFA-\u0AFC]" order="10" tertiary_base="true"/>
         <reorder from="\u0ACD" order="120" tertiary_base="true"/>
         <reorder from="\u0ABF" order="60"/>
-        <reorder from="[\u0AC5\u0AC7-\u0AC9]" order="65"/>
-        <reorder from="[\u0AC1-\u0AC4\u0AE2-\u0AE3]" order="70"/>
-        <reorder from="[\u0ABE\u0AC0\u0ACB-\u0ACC]" order="75"/>
-        <reorder from="[\u0A81-\u0A82\u0AFA-\u0AFC]" order="85"/>
+        <reorder from="\u0AC5\u0AC7-\u0AC9" order="65"/>
+        <reorder from="\u0AC1-\u0AC4\u0AE2-\u0AE3" order="70"/>
+        <reorder from="\u0ABE\u0AC0\u0ACB-\u0ACC" order="75"/>
+        <reorder from="\u0A81-\u0A82\u0AFA-\u0AFC" order="85"/>
         <reorder from="\u0A83" order="95"/>
+
+        <!-- Gunjala_Gondi -->
+        <reorder before="[\u{11D8A}-\u{11D8E}\u{11D90}-\u{11D91}\u{11D93}-\u{11D96}]" from="\u{11D97}[\u{11D8A}-\u{11D8E}\u{11D90}-\u{11D91}\u{11D93}-\u{11D96}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D8A}-\u{11D8E}\u{11D90}-\u{11D91}\u{11D93}-\u{11D96}]" from="\u{11D97}[\u200C\u200D][\u{11D8A}-\u{11D8E}\u{11D90}-\u{11D91}\u{11D93}-\u{11D96}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D8A}-\u{11D8E}\u{11D90}-\u{11D91}\u{11D93}-\u{11D96}][\uFE00-\uFE0F]" from="\u{11D97}[\u{11D8A}-\u{11D8E}\u{11D90}-\u{11D91}\u{11D93}-\u{11D96}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D8A}-\u{11D8E}\u{11D90}-\u{11D91}\u{11D93}-\u{11D96}][\uFE00-\uFE0F]" from="\u{11D97}[\u200C\u200D][\u{11D8A}-\u{11D8E}\u{11D90}-\u{11D91}\u{11D93}-\u{11D96}]" order="10" tertiary_base="true"/>
+        <reorder from="\u{11D97}" order="120" tertiary_base="true"/>
+        <reorder from="\u{11D90}-\u{11D91}" order="65"/>
+        <reorder from="\u{11D8A}-\u{11D8E}\u{11D93}-\u{11D94}" order="75"/>
+        <reorder from="\u{11D95}" order="85"/>
+        <reorder from="\u{11D96}" order="95"/>
 
         <!-- Gurmukhi -->
         <reorder from="\u0A3C" tertiary="3"/>
         <reorder from="\u0A71" tertiary="2"/>
-        <reorder before="[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" from="\u0A4D[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" from="\u0A4D[\u200C\u200D][\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73][\uFE00-\uFE0F]" from="\u0A4D[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73][\uFE00-\uFE0F]" from="\u0A4D[\u200C\u200D][\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73][\u0A71\u0A3C]" from="\u0A4D[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73][\u0A71\u0A3C]" from="\u0A4D[\u200C\u200D][\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73][\uFE00-\uFE0F][\u0A71\u0A3C]" from="\u0A4D[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73][\uFE00-\uFE0F][\u0A71\u0A3C]" from="\u0A4D[\u200C\u200D][\u0A05-\u0A0A\u0A0F-\u0A10\u0A13-\u0A28\u0A2A-\u0A30\u0A32-\u0A33\u0A35-\u0A36\u0A38-\u0A39\u0A59-\u0A5C\u0A5E\u0A66-\u0A6F\u0A72-\u0A73]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" from="\u0A4D[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" from="\u0A4D[\u200C\u200D][\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70][\uFE00-\uFE0F]" from="\u0A4D[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70][\uFE00-\uFE0F]" from="\u0A4D[\u200C\u200D][\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]\u0A3C\u0A71" from="\u0A4D[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]\u0A3C\u0A71" from="\u0A4D[\u200C\u200D][\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70][\uFE00-\uFE0F]\u0A3C\u0A71" from="\u0A4D[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70][\uFE00-\uFE0F]\u0A3C\u0A71" from="\u0A4D[\u200C\u200D][\u0A01-\u0A03\u0A3E-\u0A42\u0A47-\u0A48\u0A4B-\u0A4C\u0A51\u0A70]" order="10" tertiary_base="true"/>
         <reorder from="\u0A4D" order="120" tertiary_base="true"/>
         <reorder from="\u0A75" order="50"/>
         <reorder from="\u0A3F" order="60"/>
-        <reorder from="[\u0A47-\u0A48\u0A4B-\u0A4C]" order="65"/>
-        <reorder from="[\u0A41-\u0A42]" order="70"/>
-        <reorder from="[\u0A3E\u0A40]" order="75"/>
-        <reorder from="[\u0A01-\u0A02\u0A70]" order="85"/>
+        <reorder from="\u0A47-\u0A48\u0A4B-\u0A4C" order="65"/>
+        <reorder from="\u0A41-\u0A42" order="70"/>
+        <reorder from="\u0A3E\u0A40" order="75"/>
+        <reorder from="\u0A01-\u0A02\u0A70" order="85"/>
+        <reorder from="\u0A51" order="90"/>
         <reorder from="\u0A03" order="95"/>
 
         <!-- Hangul -->
-        <reorder from="[\u302E-\u302F]" order="59"/>
+        <reorder from="\u302E-\u302F" order="59"/>
+
+        <!-- Hanifi_Rohingya -->
+        <reorder from="\u{10D24}-\u{10D27}" order="55"/>
 
         <!-- Hanunoo -->
         <reorder from="\u1734" order="11"/>
@@ -248,8 +282,8 @@
         <reorder from="\u05B5" order="25"/>
         <reorder from="\u05B6" order="26"/>
         <reorder from="\u05B7" order="27"/>
-        <reorder from="[\u05B8\u05C7]" order="28"/>
-        <reorder from="[\u05B9-\u05BA]" order="29"/>
+        <reorder from="\u05B8\u05C7" order="28"/>
+        <reorder from="\u05B9-\u05BA" order="29"/>
         <reorder from="\u05BB" order="30"/>
         <reorder from="\u05BC" order="31"/>
         <reorder from="\u05BD" order="32"/>
@@ -257,422 +291,451 @@
         <reorder from="\u05C1" order="34"/>
         <reorder from="\u05C2" order="35"/>
         <reorder from="\uFB1E" order="36"/>
-        <reorder from="[\u0591\u0596\u059B\u05A2-\u05A7\u05AA\u05C5]" order="50"/>
-        <reorder from="[\u0592-\u0595\u0597-\u0599\u059C-\u05A1\u05A8-\u05A9\u05AB-\u05AC\u05AF\u05C4]" order="55"/>
+        <reorder from="\u0591\u0596\u059B\u05A2-\u05A7\u05AA\u05C5" order="50"/>
+        <reorder from="\u0592-\u0595\u0597-\u0599\u059C-\u05A1\u05A8-\u05A9\u05AB-\u05AC\u05AF\u05C4" order="55"/>
 
         <!-- Inherited -->
-        <reorder from="[\u200C-\u200D]" tertiary="5"/>
-        <reorder from="[\u0334-\u0338\u1CD4\u1CE2-\u1CE8\u20D2-\u20D3\u20D8-\u20DA\u20E5-\u20E6\u20EA-\u20EB\u{1D167}-\u{1D169}]" tertiary="2"/>
-        <reorder from="[\uFE00-\uFE0F]" tertiary="1"/>
-        <reorder from="[\u3099-\u309A]" order="9"/>
+        <reorder from="\u200C-\u200D" tertiary="5"/>
+        <reorder from="\u{1133B}" tertiary="3"/>
+        <reorder from="\u0334-\u0338\u1CD4\u1CE2-\u1CE8\u20D2-\u20D3\u20D8-\u20DA\u20E5-\u20E6\u20EA-\u20EB\u{1D167}-\u{1D169}" tertiary="2"/>
+        <reorder from="\uFE00-\uFE0F" tertiary="1"/>
+        <reorder from="\u3099-\u309A" order="9"/>
         <reorder from="\u064B" order="20"/>
-        <reorder from="[\u064C\u064E]" order="21"/>
+        <reorder from="\u064C\u064E" order="21"/>
         <reorder from="\u064D" order="22"/>
         <reorder from="\u064F" order="24"/>
         <reorder from="\u0650" order="25"/>
         <reorder from="\u0651" order="26"/>
         <reorder from="\u0652" order="27"/>
         <reorder from="\u0670" order="28"/>
-        <reorder from="[\u0321-\u0322\u0327-\u0328\u1DD0]" order="48"/>
-        <reorder from="[\u0316-\u0319\u031C-\u0320\u0323-\u0326\u0329-\u0333\u0339-\u033C\u0347-\u0349\u034D-\u034E\u0353-\u0356\u0359-\u035A\u0655\u0952\u1AB5-\u1ABA\u1ABD\u1CD5-\u1CD9\u1CDC-\u1CDF\u1CED\u1DC2\u1DCA\u1DCF\u1DF9\u1DFD\u1DFF\u20E8\u20EC-\u20EF\uFE27-\uFE2D\u{101FD}\u{102E0}\u{1D17B}-\u{1D182}\u{1D18A}-\u{1D18B}]" order="50"/>
-        <reorder from="[\u0300-\u0314\u033D-\u0344\u0346\u034A-\u034C\u0350-\u0352\u0357\u035B\u0363-\u036F\u0485-\u0486\u0653-\u0654\u0951\u1AB0-\u1AB4\u1ABB-\u1ABC\u1CD0-\u1CD2\u1CDA-\u1CDB\u1CE0\u1CF4\u1CF8-\u1CF9\u1DC0-\u1DC1\u1DC3-\u1DC9\u1DCB-\u1DCC\u1DCE\u1DD1-\u1DF5\u1DFE\u20D0-\u20D1\u20D4-\u20D7\u20DB-\u20DC\u20E1\u20E7\u20E9\u20F0\uFE20-\uFE26\u{1D185}-\u{1D189}\u{1D1AA}-\u{1D1AD}]" order="55"/>
+        <reorder from="\u0321-\u0322\u0327-\u0328\u1DD0" order="48"/>
+        <reorder from="\u0316-\u0319\u031C-\u0320\u0323-\u0326\u0329-\u0333\u0339-\u033C\u0347-\u0349\u034D-\u034E\u0353-\u0356\u0359-\u035A\u0655\u0952\u1AB5-\u1ABA\u1ABD\u1CD5-\u1CD9\u1CDC-\u1CDF\u1CED\u1DC2\u1DCA\u1DCF\u1DF9\u1DFD\u1DFF\u20E8\u20EC-\u20EF\uFE27-\uFE2D\u{101FD}\u{102E0}\u{1D17B}-\u{1D182}\u{1D18A}-\u{1D18B}" order="50"/>
+        <reorder from="\u0300-\u0314\u033D-\u0344\u0346\u034A-\u034C\u0350-\u0352\u0357\u035B\u0363-\u036F\u0485-\u0486\u0653-\u0654\u0951\u0953-\u0954\u1AB0-\u1AB4\u1ABB-\u1ABC\u1CD0-\u1CD2\u1CDA-\u1CDB\u1CE0\u1CF4\u1CF8-\u1CF9\u1DC0-\u1DC1\u1DC3-\u1DC9\u1DCB-\u1DCC\u1DCE\u1DD1-\u1DF5\u1DFE\u20D0-\u20D1\u20D4-\u20D7\u20DB-\u20DC\u20E1\u20E7\u20E9\u20F0\uFE20-\uFE26\u{1D185}-\u{1D189}\u{1D1AA}-\u{1D1AD}" order="55"/>
         <reorder from="\u031B" order="56"/>
         <reorder from="\u302A" order="58"/>
 
         <!-- Javanese -->
         <reorder from="\uA9B3" tertiary="3"/>
-        <reorder before="[\uA984-\uA9B2\uA9D0-\uA9D9]" from="\uA9C0[\uA984-\uA9B2\uA9D0-\uA9D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA984-\uA9B2\uA9D0-\uA9D9]" from="\uA9C0[\u200C\u200D][\uA984-\uA9B2\uA9D0-\uA9D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA984-\uA9B2\uA9D0-\uA9D9][\uFE00-\uFE0F]" from="\uA9C0[\uA984-\uA9B2\uA9D0-\uA9D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA984-\uA9B2\uA9D0-\uA9D9][\uFE00-\uFE0F]" from="\uA9C0[\u200C\u200D][\uA984-\uA9B2\uA9D0-\uA9D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA984-\uA9B2\uA9D0-\uA9D9]\uA9B3" from="\uA9C0[\uA984-\uA9B2\uA9D0-\uA9D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA984-\uA9B2\uA9D0-\uA9D9]\uA9B3" from="\uA9C0[\u200C\u200D][\uA984-\uA9B2\uA9D0-\uA9D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA984-\uA9B2\uA9D0-\uA9D9][\uFE00-\uFE0F]\uA9B3" from="\uA9C0[\uA984-\uA9B2\uA9D0-\uA9D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA984-\uA9B2\uA9D0-\uA9D9][\uFE00-\uFE0F]\uA9B3" from="\uA9C0[\u200C\u200D][\uA984-\uA9B2\uA9D0-\uA9D9]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA980-\uA981\uA983\uA9B4-\uA9BC]" from="\uA9C0[\uA980-\uA981\uA983\uA9B4-\uA9BC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA980-\uA981\uA983\uA9B4-\uA9BC]" from="\uA9C0[\u200C\u200D][\uA980-\uA981\uA983\uA9B4-\uA9BC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA980-\uA981\uA983\uA9B4-\uA9BC][\uFE00-\uFE0F]" from="\uA9C0[\uA980-\uA981\uA983\uA9B4-\uA9BC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA980-\uA981\uA983\uA9B4-\uA9BC][\uFE00-\uFE0F]" from="\uA9C0[\u200C\u200D][\uA980-\uA981\uA983\uA9B4-\uA9BC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA980-\uA981\uA983\uA9B4-\uA9BC]\uA9B3" from="\uA9C0[\uA980-\uA981\uA983\uA9B4-\uA9BC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA980-\uA981\uA983\uA9B4-\uA9BC]\uA9B3" from="\uA9C0[\u200C\u200D][\uA980-\uA981\uA983\uA9B4-\uA9BC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA980-\uA981\uA983\uA9B4-\uA9BC][\uFE00-\uFE0F]\uA9B3" from="\uA9C0[\uA980-\uA981\uA983\uA9B4-\uA9BC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA980-\uA981\uA983\uA9B4-\uA9BC][\uFE00-\uFE0F]\uA9B3" from="\uA9C0[\u200C\u200D][\uA980-\uA981\uA983\uA9B4-\uA9BC]" order="10" tertiary_base="true"/>
         <reorder from="\uA9C0" order="120" tertiary_base="true"/>
-        <reorder from="\uA9BD" order="11"/>
+        <reorder from="\uA9BD" order="50"/>
         <reorder from="\uA9BE" order="59"/>
-        <reorder from="[\uA9BA-\uA9BB]" order="60"/>
-        <reorder from="[\uA9B6-\uA9B7\uA9BC]" order="65"/>
-        <reorder from="[\uA9B8-\uA9B9]" order="70"/>
-        <reorder from="[\uA9B4-\uA9B5]" order="75"/>
-        <reorder from="[\uA980-\uA981]" order="85"/>
+        <reorder from="\uA9BA-\uA9BB" order="60"/>
+        <reorder from="\uA9B6-\uA9B7\uA9BC" order="65"/>
+        <reorder from="\uA9B8-\uA9B9" order="70"/>
+        <reorder from="\uA9B4-\uA9B5" order="75"/>
+        <reorder from="\uA980-\uA981" order="85"/>
         <reorder from="\uA983" order="95"/>
         <reorder from="\uA982" order="105"/>
 
         <!-- Kaithi -->
         <reorder from="\u{110BA}" tertiary="3"/>
-        <reorder before="[\u{11083}-\u{110AF}]" from="\u{110B9}[\u{11083}-\u{110AF}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11083}-\u{110AF}]" from="\u{110B9}[\u200C\u200D][\u{11083}-\u{110AF}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11083}-\u{110AF}][\uFE00-\uFE0F]" from="\u{110B9}[\u{11083}-\u{110AF}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11083}-\u{110AF}][\uFE00-\uFE0F]" from="\u{110B9}[\u200C\u200D][\u{11083}-\u{110AF}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11083}-\u{110AF}]\u{110BA}" from="\u{110B9}[\u{11083}-\u{110AF}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11083}-\u{110AF}]\u{110BA}" from="\u{110B9}[\u200C\u200D][\u{11083}-\u{110AF}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11083}-\u{110AF}][\uFE00-\uFE0F]\u{110BA}" from="\u{110B9}[\u{11083}-\u{110AF}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11083}-\u{110AF}][\uFE00-\uFE0F]\u{110BA}" from="\u{110B9}[\u200C\u200D][\u{11083}-\u{110AF}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" from="\u{110B9}[\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" from="\u{110B9}[\u200C\u200D][\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11080}-\u{11082}\u{110B0}-\u{110B8}][\uFE00-\uFE0F]" from="\u{110B9}[\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11080}-\u{11082}\u{110B0}-\u{110B8}][\uFE00-\uFE0F]" from="\u{110B9}[\u200C\u200D][\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11080}-\u{11082}\u{110B0}-\u{110B8}]\u{110BA}" from="\u{110B9}[\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11080}-\u{11082}\u{110B0}-\u{110B8}]\u{110BA}" from="\u{110B9}[\u200C\u200D][\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11080}-\u{11082}\u{110B0}-\u{110B8}][\uFE00-\uFE0F]\u{110BA}" from="\u{110B9}[\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11080}-\u{11082}\u{110B0}-\u{110B8}][\uFE00-\uFE0F]\u{110BA}" from="\u{110B9}[\u200C\u200D][\u{11080}-\u{11082}\u{110B0}-\u{110B8}]" order="10" tertiary_base="true"/>
         <reorder from="\u{110B9}" order="120" tertiary_base="true"/>
         <reorder from="\u{110B1}" order="60"/>
-        <reorder from="[\u{110B5}-\u{110B6}]" order="65"/>
-        <reorder from="[\u{110B3}-\u{110B4}]" order="70"/>
-        <reorder from="[\u{110B0}\u{110B2}\u{110B7}-\u{110B8}]" order="75"/>
-        <reorder from="[\u{11080}-\u{11081}]" order="85"/>
+        <reorder from="\u{110B5}-\u{110B6}" order="65"/>
+        <reorder from="\u{110B3}-\u{110B4}" order="70"/>
+        <reorder from="\u{110B0}\u{110B2}\u{110B7}-\u{110B8}" order="75"/>
+        <reorder from="\u{11080}-\u{11081}" order="85"/>
         <reorder from="\u{11082}" order="95"/>
 
         <!-- Kannada -->
         <reorder from="\u0CBC" tertiary="3"/>
-        <reorder before="[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" from="\u0CCD[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" from="\u0CCD[\u200C\u200D][\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF][\uFE00-\uFE0F]" from="\u0CCD[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF][\uFE00-\uFE0F]" from="\u0CCD[\u200C\u200D][\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]\u0CBC" from="\u0CCD[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]\u0CBC" from="\u0CCD[\u200C\u200D][\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF][\uFE00-\uFE0F]\u0CBC" from="\u0CCD[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF][\uFE00-\uFE0F]\u0CBC" from="\u0CCD[\u200C\u200D][\u0C85-\u0C8C\u0C8E-\u0C90\u0C92-\u0CA8\u0CAA-\u0CB3\u0CB5-\u0CB9\u0CBD\u0CDE\u0CE0-\u0CE1\u0CE6-\u0CEF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" from="\u0CCD[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" from="\u0CCD[\u200C\u200D][\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3][\uFE00-\uFE0F]" from="\u0CCD[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3][\uFE00-\uFE0F]" from="\u0CCD[\u200C\u200D][\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]\u0CBC" from="\u0CCD[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]\u0CBC" from="\u0CCD[\u200C\u200D][\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3][\uFE00-\uFE0F]\u0CBC" from="\u0CCD[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3][\uFE00-\uFE0F]\u0CBC" from="\u0CCD[\u200C\u200D][\u0C81-\u0C83\u0CBE-\u0CC4\u0CC6-\u0CC8\u0CCA-\u0CCC\u0CD5-\u0CD6\u0CE2-\u0CE3]" order="10" tertiary_base="true"/>
         <reorder from="\u0CCD" order="120" tertiary_base="true"/>
-        <reorder from="[\u0CBF-\u0CC0\u0CC6-\u0CC8\u0CCA-\u0CCC]" order="65"/>
-        <reorder from="[\u0CE2-\u0CE3]" order="70"/>
-        <reorder from="[\u0CBE\u0CC1-\u0CC4\u0CD5-\u0CD6]" order="75"/>
+        <reorder from="\u0CBF-\u0CC0\u0CC6-\u0CC8\u0CCA-\u0CCC" order="65"/>
+        <reorder from="\u0CE2-\u0CE3" order="70"/>
+        <reorder from="\u0CBE\u0CC1-\u0CC4\u0CD5-\u0CD6" order="75"/>
         <reorder from="\u0C81" order="85"/>
-        <reorder from="[\u0C82-\u0C83]" order="95"/>
+        <reorder from="\u0C82-\u0C83" order="95"/>
 
         <!-- Kayah_Li -->
-        <reorder from="[\uA92B-\uA92D]" order="50"/>
+        <reorder from="\uA92B-\uA92D" order="50"/>
 
         <!-- Kharoshthi -->
-        <reorder from="[\u{10A38}-\u{10A39}]" tertiary="2"/>
-        <reorder before="[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" from="\u{10A3F}[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" from="\u{10A3F}[\u200C\u200D][\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}][\uFE00-\uFE0F]" from="\u{10A3F}[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}][\uFE00-\uFE0F]" from="\u{10A3F}[\u200C\u200D][\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}][\u{10A38}-\u{10A39}]" from="\u{10A3F}[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}][\u{10A38}-\u{10A39}]" from="\u{10A3F}[\u200C\u200D][\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}][\uFE00-\uFE0F][\u{10A38}-\u{10A39}]" from="\u{10A3F}[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}][\uFE00-\uFE0F][\u{10A38}-\u{10A39}]" from="\u{10A3F}[\u200C\u200D][\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A33}\u{10A40}-\u{10A47}]" order="10" tertiary_base="true"/>
+        <reorder from="\u{10A38}-\u{10A39}" tertiary="2"/>
+        <reorder before="[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" from="\u{10A3F}[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" from="\u{10A3F}[\u200C\u200D][\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}][\uFE00-\uFE0F]" from="\u{10A3F}[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}][\uFE00-\uFE0F]" from="\u{10A3F}[\u200C\u200D][\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]\u{10A38}-\u{10A39}" from="\u{10A3F}[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]\u{10A38}-\u{10A39}" from="\u{10A3F}[\u200C\u200D][\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}][\uFE00-\uFE0F]\u{10A38}-\u{10A39}" from="\u{10A3F}[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}][\uFE00-\uFE0F]\u{10A38}-\u{10A39}" from="\u{10A3F}[\u200C\u200D][\u{10A01}-\u{10A03}\u{10A05}-\u{10A06}\u{10A0C}\u{10A0E}]" order="10" tertiary_base="true"/>
         <reorder from="\u{10A3F}" order="120" tertiary_base="true"/>
         <reorder from="\u{10A0D}" order="50"/>
         <reorder from="\u{10A0F}" order="55"/>
         <reorder from="\u{10A05}" order="65"/>
-        <reorder from="[\u{10A01}-\u{10A03}\u{10A06}\u{10A0C}]" order="70"/>
+        <reorder from="\u{10A01}-\u{10A03}\u{10A06}\u{10A0C}" order="70"/>
         <reorder from="\u{10A0E}" order="90"/>
 
         <!-- Khmer -->
-        <reorder from="[\u17C9-\u17CA]" tertiary="2"/>
-        <reorder from="\u17CC" order="9"/>
-        <reorder before="[\u1780-\u17B3\u17DC\u17E0-\u17E9]" from="\u17D2[\u1780-\u17B3\u17DC\u17E0-\u17E9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1780-\u17B3\u17DC\u17E0-\u17E9]" from="\u17D2[\u200C\u200D][\u1780-\u17B3\u17DC\u17E0-\u17E9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1780-\u17B3\u17DC\u17E0-\u17E9][\uFE00-\uFE0F]" from="\u17D2[\u1780-\u17B3\u17DC\u17E0-\u17E9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1780-\u17B3\u17DC\u17E0-\u17E9][\uFE00-\uFE0F]" from="\u17D2[\u200C\u200D][\u1780-\u17B3\u17DC\u17E0-\u17E9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1780-\u17B3\u17DC\u17E0-\u17E9][\u17C9-\u17CA]" from="\u17D2[\u1780-\u17B3\u17DC\u17E0-\u17E9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1780-\u17B3\u17DC\u17E0-\u17E9][\u17C9-\u17CA]" from="\u17D2[\u200C\u200D][\u1780-\u17B3\u17DC\u17E0-\u17E9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1780-\u17B3\u17DC\u17E0-\u17E9][\uFE00-\uFE0F][\u17C9-\u17CA]" from="\u17D2[\u1780-\u17B3\u17DC\u17E0-\u17E9]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1780-\u17B3\u17DC\u17E0-\u17E9][\uFE00-\uFE0F][\u17C9-\u17CA]" from="\u17D2[\u200C\u200D][\u1780-\u17B3\u17DC\u17E0-\u17E9]" order="10" tertiary_base="true"/>
+        <reorder from="\u17C9-\u17CA" tertiary="2"/>
+        <reorder before="[\u17B6-\u17C5\u17CE\u17D0]" from="\u17D2[\u17B6-\u17C5\u17CE\u17D0]" order="10" tertiary_base="true"/>
+        <reorder before="[\u17B6-\u17C5\u17CE\u17D0]" from="\u17D2[\u200C\u200D][\u17B6-\u17C5\u17CE\u17D0]" order="10" tertiary_base="true"/>
+        <reorder before="[\u17B6-\u17C5\u17CE\u17D0][\uFE00-\uFE0F]" from="\u17D2[\u17B6-\u17C5\u17CE\u17D0]" order="10" tertiary_base="true"/>
+        <reorder before="[\u17B6-\u17C5\u17CE\u17D0][\uFE00-\uFE0F]" from="\u17D2[\u200C\u200D][\u17B6-\u17C5\u17CE\u17D0]" order="10" tertiary_base="true"/>
+        <reorder before="[\u17B6-\u17C5\u17CE\u17D0]\u17C9-\u17CA" from="\u17D2[\u17B6-\u17C5\u17CE\u17D0]" order="10" tertiary_base="true"/>
+        <reorder before="[\u17B6-\u17C5\u17CE\u17D0]\u17C9-\u17CA" from="\u17D2[\u200C\u200D][\u17B6-\u17C5\u17CE\u17D0]" order="10" tertiary_base="true"/>
+        <reorder before="[\u17B6-\u17C5\u17CE\u17D0][\uFE00-\uFE0F]\u17C9-\u17CA" from="\u17D2[\u17B6-\u17C5\u17CE\u17D0]" order="10" tertiary_base="true"/>
+        <reorder before="[\u17B6-\u17C5\u17CE\u17D0][\uFE00-\uFE0F]\u17C9-\u17CA" from="\u17D2[\u200C\u200D][\u17B6-\u17C5\u17CE\u17D0]" order="10" tertiary_base="true"/>
         <reorder from="\u17D2" order="120" tertiary_base="true"/>
-        <reorder from="[\u17BE-\u17C5]" order="60"/>
-        <reorder from="[\u17B7-\u17BA\u17DD]" order="65"/>
-        <reorder from="[\u17BB-\u17BD]" order="70"/>
+        <reorder from="\u17CC" order="20"/>
+        <reorder from="\u17BE-\u17C5" order="60"/>
+        <reorder from="\u17B7-\u17BA" order="65"/>
+        <reorder from="\u17BB-\u17BD\u17D0" order="70"/>
         <reorder from="\u17B6" order="75"/>
-        <reorder from="[\u17C6\u17CB\u17CD-\u17D1\u17D3]" order="105"/>
-        <reorder from="[\u17C7-\u17C8]" order="115"/>
+        <reorder from="\u17CE" order="80"/>
+        <reorder from="\u17C6\u17CB\u17CD\u17CF\u17D1\u17DD" order="105"/>
+        <reorder from="\u17C7-\u17C8" order="115"/>
         <reorder from="[\u200C\u200D][\u17C9\u17CA]" tertiary="2"/>
 
         <!-- Khojki -->
         <reorder from="\u{11236}" tertiary="3"/>
         <reorder from="\u{11237}" tertiary="2"/>
-        <reorder before="[\u{11200}-\u{11211}\u{11213}-\u{1122B}]" from="\u{11235}[\u{11200}-\u{11211}\u{11213}-\u{1122B}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11200}-\u{11211}\u{11213}-\u{1122B}]" from="\u{11235}[\u200C\u200D][\u{11200}-\u{11211}\u{11213}-\u{1122B}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11200}-\u{11211}\u{11213}-\u{1122B}][\uFE00-\uFE0F]" from="\u{11235}[\u{11200}-\u{11211}\u{11213}-\u{1122B}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11200}-\u{11211}\u{11213}-\u{1122B}][\uFE00-\uFE0F]" from="\u{11235}[\u200C\u200D][\u{11200}-\u{11211}\u{11213}-\u{1122B}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11200}-\u{11211}\u{11213}-\u{1122B}][\u{11237}\u{11236}]" from="\u{11235}[\u{11200}-\u{11211}\u{11213}-\u{1122B}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11200}-\u{11211}\u{11213}-\u{1122B}][\u{11237}\u{11236}]" from="\u{11235}[\u200C\u200D][\u{11200}-\u{11211}\u{11213}-\u{1122B}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11200}-\u{11211}\u{11213}-\u{1122B}][\uFE00-\uFE0F][\u{11237}\u{11236}]" from="\u{11235}[\u{11200}-\u{11211}\u{11213}-\u{1122B}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11200}-\u{11211}\u{11213}-\u{1122B}][\uFE00-\uFE0F][\u{11237}\u{11236}]" from="\u{11235}[\u200C\u200D][\u{11200}-\u{11211}\u{11213}-\u{1122B}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1122C}-\u{11234}\u{1123E}]" from="\u{11235}[\u{1122C}-\u{11234}\u{1123E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1122C}-\u{11234}\u{1123E}]" from="\u{11235}[\u200C\u200D][\u{1122C}-\u{11234}\u{1123E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1122C}-\u{11234}\u{1123E}][\uFE00-\uFE0F]" from="\u{11235}[\u{1122C}-\u{11234}\u{1123E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1122C}-\u{11234}\u{1123E}][\uFE00-\uFE0F]" from="\u{11235}[\u200C\u200D][\u{1122C}-\u{11234}\u{1123E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1122C}-\u{11234}\u{1123E}]\u{11236}-\u{11237}" from="\u{11235}[\u{1122C}-\u{11234}\u{1123E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1122C}-\u{11234}\u{1123E}]\u{11236}-\u{11237}" from="\u{11235}[\u200C\u200D][\u{1122C}-\u{11234}\u{1123E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1122C}-\u{11234}\u{1123E}][\uFE00-\uFE0F]\u{11236}-\u{11237}" from="\u{11235}[\u{1122C}-\u{11234}\u{1123E}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{1122C}-\u{11234}\u{1123E}][\uFE00-\uFE0F]\u{11236}-\u{11237}" from="\u{11235}[\u200C\u200D][\u{1122C}-\u{11234}\u{1123E}]" order="10" tertiary_base="true"/>
         <reorder from="\u{11235}" order="120" tertiary_base="true"/>
-        <reorder from="[\u{11230}-\u{11233}]" order="65"/>
+        <reorder from="\u{11230}-\u{11233}" order="65"/>
         <reorder from="\u{1122F}" order="70"/>
-        <reorder from="[\u{1122C}-\u{1122E}]" order="75"/>
-        <reorder from="[\u{11234}\u{1123E}]" order="85"/>
+        <reorder from="\u{1122C}-\u{1122E}" order="75"/>
+        <reorder from="\u{11234}\u{1123E}" order="85"/>
 
         <!-- Khudawadi -->
         <reorder from="\u{112E9}" tertiary="3"/>
         <reorder from="\u{112EA}" order="11"/>
         <reorder from="\u{112E1}" order="60"/>
-        <reorder from="[\u{112E5}-\u{112E8}]" order="65"/>
-        <reorder from="[\u{112E3}-\u{112E4}]" order="70"/>
-        <reorder from="[\u{112E0}\u{112E2}]" order="75"/>
+        <reorder from="\u{112E5}-\u{112E8}" order="65"/>
+        <reorder from="\u{112E3}-\u{112E4}" order="70"/>
+        <reorder from="\u{112E0}\u{112E2}" order="75"/>
         <reorder from="\u{112DF}" order="85"/>
 
         <!-- Lao -->
+        <reorder from="\u0EBA" order="11"/>
         <reorder from="\u0EBC" order="50"/>
-        <reorder from="[\u0EB1\u0EB4-\u0EB7\u0EBB]" order="65"/>
-        <reorder from="[\u0EB8-\u0EB9]" order="70"/>
+        <reorder from="\u0EB1\u0EB4-\u0EB7\u0EBB" order="65"/>
+        <reorder from="\u0EB8-\u0EB9" order="70"/>
         <reorder from="\u0ECD" order="84"/>
-        <reorder from="[\u0EC8-\u0ECB]" order="85"/>
+        <reorder from="\u0EC8-\u0ECB" order="85"/>
 
         <!-- Lepcha -->
         <reorder from="\u1C37" tertiary="3"/>
-        <reorder from="[\u1C24-\u1C25]" order="11"/>
-        <reorder from="[\u1C27-\u1C28]" order="60"/>
+        <reorder from="\u1C24-\u1C25" order="11"/>
+        <reorder from="\u1C27-\u1C28" order="60"/>
         <reorder from="\u1C2C" order="70"/>
-        <reorder from="[\u1C26\u1C29-\u1C2B]" order="75"/>
-        <reorder from="[\u1C34-\u1C35]" order="80"/>
-        <reorder from="[\u1C2D-\u1C33]" order="105"/>
+        <reorder from="\u1C26\u1C29-\u1C2B" order="75"/>
+        <reorder from="\u1C34-\u1C35" order="80"/>
+        <reorder from="\u1C2D-\u1C33" order="105"/>
 
         <!-- Limbu -->
-        <reorder from="[\u1929-\u192B]" order="11"/>
+        <reorder from="\u1929-\u192B" order="11"/>
         <reorder from="\u193A" order="55"/>
-        <reorder from="[\u1920-\u1921\u1925-\u1928]" order="65"/>
+        <reorder from="\u1920-\u1921\u1925-\u1928" order="65"/>
         <reorder from="\u1922" order="70"/>
-        <reorder from="[\u1923-\u1924]" order="75"/>
+        <reorder from="\u1923-\u1924" order="75"/>
         <reorder from="\u1932" order="90"/>
         <reorder from="\u1939" order="110"/>
-        <reorder from="[\u1930-\u1931\u1933-\u1938]" order="115"/>
+        <reorder from="\u1930-\u1931\u1933-\u1938" order="115"/>
 
         <!-- Mahajani -->
         <reorder from="\u{11173}" tertiary="3"/>
 
+        <!-- Makasar -->
+        <reorder from="\u{11EF5}" order="60"/>
+        <reorder from="\u{11EF3}" order="65"/>
+        <reorder from="\u{11EF4}" order="70"/>
+        <reorder from="\u{11EF6}" order="75"/>
+
         <!-- Malayalam -->
-        <reorder before="[\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D5F-\u0D61\u0D66-\u0D6F]" from="\u0D4D[\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D5F-\u0D61\u0D66-\u0D6F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D5F-\u0D61\u0D66-\u0D6F]" from="\u0D4D[\u200C\u200D][\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D5F-\u0D61\u0D66-\u0D6F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D5F-\u0D61\u0D66-\u0D6F][\uFE00-\uFE0F]" from="\u0D4D[\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D5F-\u0D61\u0D66-\u0D6F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D5F-\u0D61\u0D66-\u0D6F][\uFE00-\uFE0F]" from="\u0D4D[\u200C\u200D][\u0D05-\u0D0C\u0D0E-\u0D10\u0D12-\u0D3A\u0D3D\u0D5F-\u0D61\u0D66-\u0D6F]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0D00-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4C\u0D57\u0D62-\u0D63]" from="\u0D4D[\u0D00-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4C\u0D57\u0D62-\u0D63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0D00-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4C\u0D57\u0D62-\u0D63]" from="\u0D4D[\u200C\u200D][\u0D00-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4C\u0D57\u0D62-\u0D63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0D00-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4C\u0D57\u0D62-\u0D63][\uFE00-\uFE0F]" from="\u0D4D[\u0D00-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4C\u0D57\u0D62-\u0D63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0D00-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4C\u0D57\u0D62-\u0D63][\uFE00-\uFE0F]" from="\u0D4D[\u200C\u200D][\u0D00-\u0D03\u0D3E-\u0D44\u0D46-\u0D48\u0D4A-\u0D4C\u0D57\u0D62-\u0D63]" order="10" tertiary_base="true"/>
         <reorder from="\u0D4D" order="120" tertiary_base="true"/>
-        <reorder from="[\u0D3B-\u0D3C]" order="11"/>
-        <reorder from="[\u0D46-\u0D48]" order="60"/>
-        <reorder from="[\u0D43-\u0D44\u0D62-\u0D63]" order="70"/>
-        <reorder from="[\u0D3E-\u0D42\u0D4A-\u0D4C\u0D57]" order="75"/>
-        <reorder from="[\u0D00-\u0D01]" order="85"/>
-        <reorder from="[\u0D02-\u0D03]" order="95"/>
+        <reorder from="\u0D3B-\u0D3C" order="11"/>
+        <reorder from="\u0D46-\u0D48" order="60"/>
+        <reorder from="\u0D43-\u0D44\u0D62-\u0D63" order="70"/>
+        <reorder from="\u0D3E-\u0D42\u0D4A-\u0D4C\u0D57" order="75"/>
+        <reorder from="\u0D00-\u0D01" order="85"/>
+        <reorder from="\u0D02-\u0D03" order="95"/>
 
         <!-- Mandaic -->
-        <reorder from="[\u0859-\u085B]" order="50"/>
+        <reorder from="\u0859-\u085B" order="50"/>
 
         <!-- Manichaean -->
         <reorder from="\u{10AE6}" order="50"/>
         <reorder from="\u{10AE5}" order="55"/>
 
         <!-- Marchen -->
-        <reorder from="[\u{11C92}-\u{11CA7}\u{11CA9}-\u{11CAF}]" order="11"/>
+        <reorder from="\u{11C92}-\u{11CA7}\u{11CA9}-\u{11CAF}" order="11"/>
         <reorder from="\u{11CB1}" order="60"/>
         <reorder from="\u{11CB3}" order="65"/>
-        <reorder from="[\u{11CB0}\u{11CB2}]" order="70"/>
+        <reorder from="\u{11CB0}\u{11CB2}" order="70"/>
         <reorder from="\u{11CB4}" order="75"/>
-        <reorder from="[\u{11CB5}-\u{11CB6}]" order="85"/>
+        <reorder from="\u{11CB5}-\u{11CB6}" order="85"/>
 
         <!-- Masaram_Gondi -->
         <reorder from="\u{11D42}" tertiary="3"/>
-        <reorder before="[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" from="\u{11D45}[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" from="\u{11D45}[\u200C\u200D][\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}][\uFE00-\uFE0F]" from="\u{11D45}[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}][\uFE00-\uFE0F]" from="\u{11D45}[\u200C\u200D][\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]\u{11D42}" from="\u{11D45}[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]\u{11D42}" from="\u{11D45}[\u200C\u200D][\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}][\uFE00-\uFE0F]\u{11D42}" from="\u{11D45}[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}][\uFE00-\uFE0F]\u{11D42}" from="\u{11D45}[\u200C\u200D][\u{11D00}-\u{11D06}\u{11D08}-\u{11D09}\u{11D0B}-\u{11D30}\u{11D50}-\u{11D59}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" from="\u{11D45}[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" from="\u{11D45}[\u200C\u200D][\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}][\uFE00-\uFE0F]" from="\u{11D45}[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}][\uFE00-\uFE0F]" from="\u{11D45}[\u200C\u200D][\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]\u{11D42}" from="\u{11D45}[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]\u{11D42}" from="\u{11D45}[\u200C\u200D][\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}][\uFE00-\uFE0F]\u{11D42}" from="\u{11D45}[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}][\uFE00-\uFE0F]\u{11D42}" from="\u{11D45}[\u200C\u200D][\u{11D31}-\u{11D36}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}-\u{11D41}\u{11D43}]" order="10" tertiary_base="true"/>
         <reorder from="\u{11D45}" order="120" tertiary_base="true"/>
         <reorder from="\u{11D44}" order="11"/>
         <reorder from="\u{11D47}" order="50"/>
-        <reorder from="[\u{11D31}-\u{11D35}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}\u{11D43}]" order="65"/>
+        <reorder from="\u{11D31}-\u{11D35}\u{11D3A}\u{11D3C}-\u{11D3D}\u{11D3F}\u{11D43}" order="65"/>
         <reorder from="\u{11D36}" order="70"/>
-        <reorder from="[\u{11D40}-\u{11D41}]" order="85"/>
+        <reorder from="\u{11D40}-\u{11D41}" order="85"/>
 
         <!-- Meetei_Mayek -->
-        <reorder before="[\uAAE0-\uAAEA\uABC0-\uABE2\uABF0-\uABF9]" from="\uAAF6[\uAAE0-\uAAEA\uABC0-\uABE2\uABF0-\uABF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uAAE0-\uAAEA\uABC0-\uABE2\uABF0-\uABF9]" from="\uAAF6[\u200C\u200D][\uAAE0-\uAAEA\uABC0-\uABE2\uABF0-\uABF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uAAE0-\uAAEA\uABC0-\uABE2\uABF0-\uABF9][\uFE00-\uFE0F]" from="\uAAF6[\uAAE0-\uAAEA\uABC0-\uABE2\uABF0-\uABF9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uAAE0-\uAAEA\uABC0-\uABE2\uABF0-\uABF9][\uFE00-\uFE0F]" from="\uAAF6[\u200C\u200D][\uAAE0-\uAAEA\uABC0-\uABE2\uABF0-\uABF9]" order="10" tertiary_base="true"/>
+        <reorder before="[\uAAEB-\uAAEF\uAAF5\uABE3-\uABEA\uABEC]" from="\uAAF6[\uAAEB-\uAAEF\uAAF5\uABE3-\uABEA\uABEC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uAAEB-\uAAEF\uAAF5\uABE3-\uABEA\uABEC]" from="\uAAF6[\u200C\u200D][\uAAEB-\uAAEF\uAAF5\uABE3-\uABEA\uABEC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uAAEB-\uAAEF\uAAF5\uABE3-\uABEA\uABEC][\uFE00-\uFE0F]" from="\uAAF6[\uAAEB-\uAAEF\uAAF5\uABE3-\uABEA\uABEC]" order="10" tertiary_base="true"/>
+        <reorder before="[\uAAEB-\uAAEF\uAAF5\uABE3-\uABEA\uABEC][\uFE00-\uFE0F]" from="\uAAF6[\u200C\u200D][\uAAEB-\uAAEF\uAAF5\uABE3-\uABEA\uABEC]" order="10" tertiary_base="true"/>
         <reorder from="\uAAF6" order="120" tertiary_base="true"/>
         <reorder from="\uABED" order="11"/>
-        <reorder from="[\uAAEB\uAAEE]" order="60"/>
-        <reorder from="[\uAAED\uABE5]" order="65"/>
-        <reorder from="[\uAAEC\uABE8]" order="70"/>
-        <reorder from="[\uAAEF\uABE3-\uABE4\uABE6-\uABE7\uABE9-\uABEA]" order="75"/>
-        <reorder from="[\uAAF5\uABEC]" order="95"/>
+        <reorder from="\uAAEB\uAAEE" order="60"/>
+        <reorder from="\uAAED\uABE5" order="65"/>
+        <reorder from="\uAAEC\uABE8" order="70"/>
+        <reorder from="\uAAEF\uABE3-\uABE4\uABE6-\uABE7\uABE9-\uABEA" order="75"/>
+        <reorder from="\uAAF5\uABEC" order="95"/>
 
         <!-- Mende_Kikakui -->
-        <reorder from="[\u{1E8D0}-\u{1E8D6}]" order="50"/>
+        <reorder from="\u{1E8D0}-\u{1E8D6}" order="50"/>
 
         <!-- Modi -->
-        <reorder before="[\u{11600}-\u{1162F}\u{11650}-\u{11659}]" from="\u{1163F}[\u{11600}-\u{1162F}\u{11650}-\u{11659}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11600}-\u{1162F}\u{11650}-\u{11659}]" from="\u{1163F}[\u200C\u200D][\u{11600}-\u{1162F}\u{11650}-\u{11659}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11600}-\u{1162F}\u{11650}-\u{11659}][\uFE00-\uFE0F]" from="\u{1163F}[\u{11600}-\u{1162F}\u{11650}-\u{11659}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11600}-\u{1162F}\u{11650}-\u{11659}][\uFE00-\uFE0F]" from="\u{1163F}[\u200C\u200D][\u{11600}-\u{1162F}\u{11650}-\u{11659}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11630}-\u{1163E}\u{11640}]" from="\u{1163F}[\u{11630}-\u{1163E}\u{11640}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11630}-\u{1163E}\u{11640}]" from="\u{1163F}[\u200C\u200D][\u{11630}-\u{1163E}\u{11640}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11630}-\u{1163E}\u{11640}][\uFE00-\uFE0F]" from="\u{1163F}[\u{11630}-\u{1163E}\u{11640}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11630}-\u{1163E}\u{11640}][\uFE00-\uFE0F]" from="\u{1163F}[\u200C\u200D][\u{11630}-\u{1163E}\u{11640}]" order="10" tertiary_base="true"/>
         <reorder from="\u{1163F}" order="120" tertiary_base="true"/>
-        <reorder from="[\u{11639}-\u{1163A}\u{11640}]" order="65"/>
-        <reorder from="[\u{11633}-\u{11638}]" order="70"/>
-        <reorder from="[\u{11630}-\u{11632}\u{1163B}-\u{1163C}]" order="75"/>
+        <reorder from="\u{11639}-\u{1163A}\u{11640}" order="65"/>
+        <reorder from="\u{11633}-\u{11638}" order="70"/>
+        <reorder from="\u{11630}-\u{11632}\u{1163B}-\u{1163C}" order="75"/>
         <reorder from="\u{1163D}" order="85"/>
         <reorder from="\u{1163E}" order="95"/>
 
         <!-- Multani -->
 
         <!-- Myanmar -->
-        <reorder before="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D\u1061\u1065-\u1066\u106E-\u1070\u1075-\u1081\u108E\u1090-\u1099\uA9E0-\uA9E4\uA9E7-\uA9FE\uAA60-\uAA6F\uAA71-\uAA76\uAA7A\uAA7E-\uAA7F]" from="\u1039[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D\u1061\u1065-\u1066\u106E-\u1070\u1075-\u1081\u108E\u1090-\u1099\uA9E0-\uA9E4\uA9E7-\uA9FE\uAA60-\uAA6F\uAA71-\uAA76\uAA7A\uAA7E-\uAA7F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D\u1061\u1065-\u1066\u106E-\u1070\u1075-\u1081\u108E\u1090-\u1099\uA9E0-\uA9E4\uA9E7-\uA9FE\uAA60-\uAA6F\uAA71-\uAA76\uAA7A\uAA7E-\uAA7F]" from="\u1039[\u200C\u200D][\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D\u1061\u1065-\u1066\u106E-\u1070\u1075-\u1081\u108E\u1090-\u1099\uA9E0-\uA9E4\uA9E7-\uA9FE\uAA60-\uAA6F\uAA71-\uAA76\uAA7A\uAA7E-\uAA7F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D\u1061\u1065-\u1066\u106E-\u1070\u1075-\u1081\u108E\u1090-\u1099\uA9E0-\uA9E4\uA9E7-\uA9FE\uAA60-\uAA6F\uAA71-\uAA76\uAA7A\uAA7E-\uAA7F][\uFE00-\uFE0F]" from="\u1039[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D\u1061\u1065-\u1066\u106E-\u1070\u1075-\u1081\u108E\u1090-\u1099\uA9E0-\uA9E4\uA9E7-\uA9FE\uAA60-\uAA6F\uAA71-\uAA76\uAA7A\uAA7E-\uAA7F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D\u1061\u1065-\u1066\u106E-\u1070\u1075-\u1081\u108E\u1090-\u1099\uA9E0-\uA9E4\uA9E7-\uA9FE\uAA60-\uAA6F\uAA71-\uAA76\uAA7A\uAA7E-\uAA7F][\uFE00-\uFE0F]" from="\u1039[\u200C\u200D][\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D\u1061\u1065-\u1066\u106E-\u1070\u1075-\u1081\u108E\u1090-\u1099\uA9E0-\uA9E4\uA9E7-\uA9FE\uAA60-\uAA6F\uAA71-\uAA76\uAA7A\uAA7E-\uAA7F]" order="10" tertiary_base="true"/>
+        <reorder before="[\u102B-\u1038\u1056-\u1059\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1083-\u108D\u108F\u109A-\u109D\uA9E5\uAA7B-\uAA7D]" from="\u1039[\u102B-\u1038\u1056-\u1059\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1083-\u108D\u108F\u109A-\u109D\uA9E5\uAA7B-\uAA7D]" order="10" tertiary_base="true"/>
+        <reorder before="[\u102B-\u1038\u1056-\u1059\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1083-\u108D\u108F\u109A-\u109D\uA9E5\uAA7B-\uAA7D]" from="\u1039[\u200C\u200D][\u102B-\u1038\u1056-\u1059\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1083-\u108D\u108F\u109A-\u109D\uA9E5\uAA7B-\uAA7D]" order="10" tertiary_base="true"/>
+        <reorder before="[\u102B-\u1038\u1056-\u1059\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1083-\u108D\u108F\u109A-\u109D\uA9E5\uAA7B-\uAA7D][\uFE00-\uFE0F]" from="\u1039[\u102B-\u1038\u1056-\u1059\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1083-\u108D\u108F\u109A-\u109D\uA9E5\uAA7B-\uAA7D]" order="10" tertiary_base="true"/>
+        <reorder before="[\u102B-\u1038\u1056-\u1059\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1083-\u108D\u108F\u109A-\u109D\uA9E5\uAA7B-\uAA7D][\uFE00-\uFE0F]" from="\u1039[\u200C\u200D][\u102B-\u1038\u1056-\u1059\u1062-\u1064\u1067-\u106D\u1071-\u1074\u1083-\u108D\u108F\u109A-\u109D\uA9E5\uAA7B-\uAA7D]" order="10" tertiary_base="true"/>
         <reorder from="\u1039" order="120" tertiary_base="true"/>
         <reorder from="\u103A" order="35"/>
-        <reorder from="[\u103B\u105E-\u105F]" order="40"/>
+        <reorder from="\u103B\u105E-\u105F" order="40"/>
         <reorder from="\u103C" order="45"/>
-        <reorder from="[\u103D\u1082]" order="50"/>
-        <reorder from="[\u103E\u1060]" order="55"/>
-        <reorder from="[\u1031\u1084]" order="60"/>
-        <reorder from="[\u102D-\u102E\u1033-\u1035\u1071-\u1074\u1085\u109D\uA9E5]" order="65"/>
-        <reorder from="[\u102F-\u1030\u1058-\u1059]" order="70" tertiary_base="true"/>
-        <reorder from="[\u102B-\u102C\u1056-\u1057\u1062\u1067-\u1068\u1083\u109C]" order="75" tertiary_base="true"/>
+        <reorder from="\u103D\u1082" order="50"/>
+        <reorder from="\u103E\u1060" order="55"/>
+        <reorder from="\u1031\u1084" order="60"/>
+        <reorder from="\u102D-\u102E\u1033-\u1035\u1071-\u1074\u1085\u109D\uA9E5" order="65"/>
+        <reorder from="\u102F-\u1030\u1058-\u1059" order="70" tertiary_base="true"/>
+        <reorder from="\u102B-\u102C\u1056-\u1057\u1062\u1067-\u1068\u1083\u109C" order="75" tertiary_base="true"/>
         <reorder from="\u1086" order="80" tertiary_base="true"/>
-        <reorder from="[\u1032\u1036]" order="85" tertiary_base="true"/>
+        <reorder from="\u1032\u1036" order="85" tertiary_base="true"/>
         <reorder from="\u1037" order="87"/>
-        <reorder from="[\u1038\u1063-\u1064\u1069-\u106D\u1087-\u108D\u108F\u109A-\u109B\uAA7B-\uAA7D]" order="95"/>
-        <reorder from="[\uA9E6\uAA70]" order="105"/>
+        <reorder from="\u1038\u1063-\u1064\u1069-\u106D\u1087-\u108D\u108F\u109A-\u109B\uAA7B-\uAA7D" order="95"/>
+        <reorder from="\uA9E6\uAA70" order="105"/>
         <reorder from="[\u103D\u1082]\u103A" order="50"/>
+        <reorder from="[\u1004\u101B]\u103A\u1039" order="-1"/>
+
+        <!-- Nandinagari -->
+        <reorder before="[\u{119D1}-\u{119D7}\u{119DA}-\u{119DF}\u{119E4}]" from="\u{119E0}[\u{119D1}-\u{119D7}\u{119DA}-\u{119DF}\u{119E4}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{119D1}-\u{119D7}\u{119DA}-\u{119DF}\u{119E4}]" from="\u{119E0}[\u200C\u200D][\u{119D1}-\u{119D7}\u{119DA}-\u{119DF}\u{119E4}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{119D1}-\u{119D7}\u{119DA}-\u{119DF}\u{119E4}][\uFE00-\uFE0F]" from="\u{119E0}[\u{119D1}-\u{119D7}\u{119DA}-\u{119DF}\u{119E4}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{119D1}-\u{119D7}\u{119DA}-\u{119DF}\u{119E4}][\uFE00-\uFE0F]" from="\u{119E0}[\u200C\u200D][\u{119D1}-\u{119D7}\u{119DA}-\u{119DF}\u{119E4}]" order="10" tertiary_base="true"/>
+        <reorder from="\u{119E0}" order="120" tertiary_base="true"/>
+        <reorder from="\u{119D2}\u{119E4}" order="60"/>
+        <reorder from="\u{119DA}-\u{119DB}" order="65"/>
+        <reorder from="\u{119D4}-\u{119D7}" order="70"/>
+        <reorder from="\u{119D1}\u{119D3}\u{119DC}-\u{119DD}" order="75"/>
+        <reorder from="\u{119DE}-\u{119DF}" order="95"/>
 
         <!-- New_Tai_Lue -->
-        <reorder from="[\u19C8-\u19C9]" order="95"/>
+        <reorder from="\u19C8-\u19C9" order="95"/>
 
         <!-- Newa -->
         <reorder from="\u{11446}" tertiary="3"/>
-        <reorder before="[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" from="\u{11442}[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" from="\u{11442}[\u200C\u200D][\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}][\uFE00-\uFE0F]" from="\u{11442}[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}][\uFE00-\uFE0F]" from="\u{11442}[\u200C\u200D][\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]\u{11446}" from="\u{11442}[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]\u{11446}" from="\u{11442}[\u200C\u200D][\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}][\uFE00-\uFE0F]\u{11446}" from="\u{11442}[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}][\uFE00-\uFE0F]\u{11446}" from="\u{11442}[\u200C\u200D][\u{11400}-\u{11434}\u{11447}\u{11450}-\u{11459}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11435}-\u{11441}\u{11443}-\u{11445}]" from="\u{11442}[\u{11435}-\u{11441}\u{11443}-\u{11445}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11435}-\u{11441}\u{11443}-\u{11445}]" from="\u{11442}[\u200C\u200D][\u{11435}-\u{11441}\u{11443}-\u{11445}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11435}-\u{11441}\u{11443}-\u{11445}][\uFE00-\uFE0F]" from="\u{11442}[\u{11435}-\u{11441}\u{11443}-\u{11445}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11435}-\u{11441}\u{11443}-\u{11445}][\uFE00-\uFE0F]" from="\u{11442}[\u200C\u200D][\u{11435}-\u{11441}\u{11443}-\u{11445}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11435}-\u{11441}\u{11443}-\u{11445}]\u{11446}" from="\u{11442}[\u{11435}-\u{11441}\u{11443}-\u{11445}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11435}-\u{11441}\u{11443}-\u{11445}]\u{11446}" from="\u{11442}[\u200C\u200D][\u{11435}-\u{11441}\u{11443}-\u{11445}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11435}-\u{11441}\u{11443}-\u{11445}][\uFE00-\uFE0F]\u{11446}" from="\u{11442}[\u{11435}-\u{11441}\u{11443}-\u{11445}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11435}-\u{11441}\u{11443}-\u{11445}][\uFE00-\uFE0F]\u{11446}" from="\u{11442}[\u200C\u200D][\u{11435}-\u{11441}\u{11443}-\u{11445}]" order="10" tertiary_base="true"/>
         <reorder from="\u{11442}" order="120" tertiary_base="true"/>
         <reorder from="\u{11436}" order="60"/>
-        <reorder from="[\u{1143E}-\u{1143F}]" order="65"/>
-        <reorder from="[\u{11438}-\u{1143D}]" order="70"/>
-        <reorder from="[\u{11435}\u{11437}\u{11440}-\u{11441}]" order="75"/>
-        <reorder from="[\u{11443}-\u{11444}]" order="85"/>
+        <reorder from="\u{1143E}-\u{1143F}" order="65"/>
+        <reorder from="\u{11438}-\u{1143D}" order="70"/>
+        <reorder from="\u{11435}\u{11437}\u{11440}-\u{11441}" order="75"/>
+        <reorder from="\u{11443}-\u{11444}" order="85"/>
         <reorder from="\u{11445}" order="95"/>
 
         <!-- Nko -->
-        <reorder from="\u07F2" order="50"/>
-        <reorder from="[\u07EB-\u07F1\u07F3]" order="55"/>
+        <reorder from="\u07F2\u07FD" order="50"/>
+        <reorder from="\u07EB-\u07F1\u07F3" order="55"/>
+
+        <!-- Nyiakeng_Puachue_Hmong -->
+        <reorder from="\u{1E130}-\u{1E136}" order="55"/>
 
         <!-- Old_Permic -->
-        <reorder from="[\u{10376}-\u{1037A}]" order="55"/>
+        <reorder from="\u{10376}-\u{1037A}" order="55"/>
 
         <!-- Oriya -->
         <reorder from="\u0B3C" tertiary="3"/>
-        <reorder before="[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" from="\u0B4D[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" from="\u0B4D[\u200C\u200D][\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71][\uFE00-\uFE0F]" from="\u0B4D[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71][\uFE00-\uFE0F]" from="\u0B4D[\u200C\u200D][\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]\u0B3C" from="\u0B4D[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]\u0B3C" from="\u0B4D[\u200C\u200D][\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71][\uFE00-\uFE0F]\u0B3C" from="\u0B4D[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71][\uFE00-\uFE0F]\u0B3C" from="\u0B4D[\u200C\u200D][\u0B05-\u0B0C\u0B0F-\u0B10\u0B13-\u0B28\u0B2A-\u0B30\u0B32-\u0B33\u0B35-\u0B39\u0B3D\u0B5C-\u0B5D\u0B5F-\u0B61\u0B66-\u0B6F\u0B71]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" from="\u0B4D[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" from="\u0B4D[\u200C\u200D][\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63][\uFE00-\uFE0F]" from="\u0B4D[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63][\uFE00-\uFE0F]" from="\u0B4D[\u200C\u200D][\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]\u0B3C" from="\u0B4D[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]\u0B3C" from="\u0B4D[\u200C\u200D][\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63][\uFE00-\uFE0F]\u0B3C" from="\u0B4D[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63][\uFE00-\uFE0F]\u0B3C" from="\u0B4D[\u200C\u200D][\u0B01-\u0B03\u0B3E-\u0B44\u0B47-\u0B48\u0B4B-\u0B4C\u0B56-\u0B57\u0B62-\u0B63]" order="10" tertiary_base="true"/>
         <reorder from="\u0B4D" order="120" tertiary_base="true"/>
         <reorder from="\u0B47" order="60"/>
-        <reorder from="[\u0B3F\u0B56-\u0B57]" order="65"/>
-        <reorder from="[\u0B41-\u0B44\u0B62-\u0B63]" order="70"/>
-        <reorder from="[\u0B3E\u0B40\u0B48\u0B4B-\u0B4C]" order="75"/>
+        <reorder from="\u0B3F\u0B56-\u0B57" order="65"/>
+        <reorder from="\u0B41-\u0B44\u0B62-\u0B63" order="70"/>
+        <reorder from="\u0B3E\u0B40\u0B48\u0B4B-\u0B4C" order="75"/>
         <reorder from="\u0B01" order="85"/>
-        <reorder from="[\u0B02-\u0B03]" order="95"/>
+        <reorder from="\u0B02-\u0B03" order="95"/>
 
         <!-- Pahawh_Hmong -->
-        <reorder from="[\u{16B30}-\u{16B36}]" order="55"/>
+        <reorder from="\u{16B30}-\u{16B36}" order="55"/>
 
         <!-- Phags_Pa -->
 
         <!-- Rejang -->
         <reorder from="\uA953" order="11"/>
         <reorder from="\uA94A" order="65"/>
-        <reorder from="[\uA947-\uA949\uA94B-\uA94E]" order="70"/>
-        <reorder from="[\uA94F-\uA951]" order="105"/>
+        <reorder from="\uA947-\uA949\uA94B-\uA94E" order="70"/>
+        <reorder from="\uA94F-\uA951" order="105"/>
         <reorder from="\uA952" order="115"/>
 
         <!-- Samaritan -->
-        <reorder from="[\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D]" order="55"/>
+        <reorder from="\u0816-\u0819\u081B-\u0823\u0825-\u0827\u0829-\u082D" order="55"/>
 
         <!-- Saurashtra -->
-        <reorder before="[\uA882-\uA8B3\uA8D0-\uA8D9]" from="\uA8C4[\uA882-\uA8B3\uA8D0-\uA8D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA882-\uA8B3\uA8D0-\uA8D9]" from="\uA8C4[\u200C\u200D][\uA882-\uA8B3\uA8D0-\uA8D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA882-\uA8B3\uA8D0-\uA8D9][\uFE00-\uFE0F]" from="\uA8C4[\uA882-\uA8B3\uA8D0-\uA8D9]" order="10" tertiary_base="true"/>
-        <reorder before="[\uA882-\uA8B3\uA8D0-\uA8D9][\uFE00-\uFE0F]" from="\uA8C4[\u200C\u200D][\uA882-\uA8B3\uA8D0-\uA8D9]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA880-\uA881\uA8B5-\uA8C3\uA8C5]" from="\uA8C4[\uA880-\uA881\uA8B5-\uA8C3\uA8C5]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA880-\uA881\uA8B5-\uA8C3\uA8C5]" from="\uA8C4[\u200C\u200D][\uA880-\uA881\uA8B5-\uA8C3\uA8C5]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA880-\uA881\uA8B5-\uA8C3\uA8C5][\uFE00-\uFE0F]" from="\uA8C4[\uA880-\uA881\uA8B5-\uA8C3\uA8C5]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA880-\uA881\uA8B5-\uA8C3\uA8C5][\uFE00-\uFE0F]" from="\uA8C4[\u200C\u200D][\uA880-\uA881\uA8B5-\uA8C3\uA8C5]" order="10" tertiary_base="true"/>
         <reorder from="\uA8C4" order="120" tertiary_base="true"/>
-        <reorder from="[\uA8B5-\uA8C3]" order="75"/>
+        <reorder from="\uA8B4" order="59"/>
+        <reorder from="\uA8B5-\uA8C3" order="75"/>
         <reorder from="\uA8C5" order="85"/>
-        <reorder from="[\uA880-\uA881]" order="95"/>
-        <reorder from="\uA8B4" order="115"/>
+        <reorder from="\uA880-\uA881" order="95"/>
 
         <!-- Sharada -->
         <reorder from="\u{111CA}" tertiary="3"/>
-        <reorder before="[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" from="\u{111C0}[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" from="\u{111C0}[\u200C\u200D][\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}][\uFE00-\uFE0F]" from="\u{111C0}[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}][\uFE00-\uFE0F]" from="\u{111C0}[\u200C\u200D][\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]\u{111CA}" from="\u{111C0}[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]\u{111CA}" from="\u{111C0}[\u200C\u200D][\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}][\uFE00-\uFE0F]\u{111CA}" from="\u{111C0}[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}][\uFE00-\uFE0F]\u{111CA}" from="\u{111C0}[\u200C\u200D][\u{11183}-\u{111B2}\u{111C1}\u{111D0}-\u{111D9}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" from="\u{111C0}[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" from="\u{111C0}[\u200C\u200D][\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}][\uFE00-\uFE0F]" from="\u{111C0}[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}][\uFE00-\uFE0F]" from="\u{111C0}[\u200C\u200D][\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]\u{111CA}" from="\u{111C0}[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]\u{111CA}" from="\u{111C0}[\u200C\u200D][\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}][\uFE00-\uFE0F]\u{111CA}" from="\u{111C0}[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}][\uFE00-\uFE0F]\u{111CA}" from="\u{111C0}[\u200C\u200D][\u{11180}-\u{11182}\u{111B3}-\u{111BF}\u{111CB}-\u{111CC}]" order="10" tertiary_base="true"/>
         <reorder from="\u{111C0}" order="120" tertiary_base="true"/>
         <reorder from="\u{111B4}" order="60"/>
-        <reorder from="[\u{111BC}-\u{111BF}\u{111CB}]" order="65"/>
-        <reorder from="[\u{111B6}-\u{111BB}\u{111CC}]" order="70"/>
-        <reorder from="[\u{111B3}\u{111B5}]" order="75"/>
-        <reorder from="[\u{11180}-\u{11181}]" order="85"/>
+        <reorder from="\u{111BC}-\u{111BF}\u{111CB}" order="65"/>
+        <reorder from="\u{111B6}-\u{111BB}\u{111CC}" order="70"/>
+        <reorder from="\u{111B3}\u{111B5}" order="75"/>
+        <reorder from="\u{11180}-\u{11181}" order="85"/>
         <reorder from="\u{11182}" order="95"/>
 
         <!-- Siddham -->
         <reorder from="\u{115C0}" tertiary="3"/>
-        <reorder before="[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" from="\u{115BF}[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" from="\u{115BF}[\u200C\u200D][\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}][\uFE00-\uFE0F]" from="\u{115BF}[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}][\uFE00-\uFE0F]" from="\u{115BF}[\u200C\u200D][\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]\u{115C0}" from="\u{115BF}[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]\u{115C0}" from="\u{115BF}[\u200C\u200D][\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}][\uFE00-\uFE0F]\u{115C0}" from="\u{115BF}[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11580}-\u{115AE}\u{115D8}-\u{115DB}][\uFE00-\uFE0F]\u{115C0}" from="\u{115BF}[\u200C\u200D][\u{11580}-\u{115AE}\u{115D8}-\u{115DB}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" from="\u{115BF}[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" from="\u{115BF}[\u200C\u200D][\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}][\uFE00-\uFE0F]" from="\u{115BF}[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}][\uFE00-\uFE0F]" from="\u{115BF}[\u200C\u200D][\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]\u{115C0}" from="\u{115BF}[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]\u{115C0}" from="\u{115BF}[\u200C\u200D][\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}][\uFE00-\uFE0F]\u{115C0}" from="\u{115BF}[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}][\uFE00-\uFE0F]\u{115C0}" from="\u{115BF}[\u200C\u200D][\u{115AF}-\u{115B5}\u{115B8}-\u{115BE}\u{115DC}-\u{115DD}]" order="10" tertiary_base="true"/>
         <reorder from="\u{115BF}" order="120" tertiary_base="true"/>
-        <reorder from="[\u{115B0}\u{115B8}]" order="60"/>
-        <reorder from="[\u{115B2}-\u{115B5}\u{115DC}-\u{115DD}]" order="70"/>
-        <reorder from="[\u{115AF}\u{115B1}\u{115B9}-\u{115BB}]" order="75"/>
-        <reorder from="[\u{115BC}-\u{115BD}]" order="85"/>
+        <reorder from="\u{115B0}\u{115B8}" order="60"/>
+        <reorder from="\u{115B2}-\u{115B5}\u{115DC}-\u{115DD}" order="70"/>
+        <reorder from="\u{115AF}\u{115B1}\u{115B9}-\u{115BB}" order="75"/>
+        <reorder from="\u{115BC}-\u{115BD}" order="85"/>
         <reorder from="\u{115BE}" order="95"/>
 
         <!-- Sinhala -->
-        <reorder before="[\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DE6-\u0DEF\u{111E1}-\u{111F4}]" from="\u0DCA[\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DE6-\u0DEF\u{111E1}-\u{111F4}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DE6-\u0DEF\u{111E1}-\u{111F4}]" from="\u0DCA[\u200C\u200D][\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DE6-\u0DEF\u{111E1}-\u{111F4}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DE6-\u0DEF\u{111E1}-\u{111F4}][\uFE00-\uFE0F]" from="\u0DCA[\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DE6-\u0DEF\u{111E1}-\u{111F4}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DE6-\u0DEF\u{111E1}-\u{111F4}][\uFE00-\uFE0F]" from="\u0DCA[\u200C\u200D][\u0D85-\u0D96\u0D9A-\u0DB1\u0DB3-\u0DBB\u0DBD\u0DC0-\u0DC6\u0DE6-\u0DEF\u{111E1}-\u{111F4}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0D82-\u0D83\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2-\u0DF3]" from="\u0DCA[\u0D82-\u0D83\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2-\u0DF3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0D82-\u0D83\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2-\u0DF3]" from="\u0DCA[\u200C\u200D][\u0D82-\u0D83\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2-\u0DF3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0D82-\u0D83\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2-\u0DF3][\uFE00-\uFE0F]" from="\u0DCA[\u0D82-\u0D83\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2-\u0DF3]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0D82-\u0D83\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2-\u0DF3][\uFE00-\uFE0F]" from="\u0DCA[\u200C\u200D][\u0D82-\u0D83\u0DCF-\u0DD4\u0DD6\u0DD8-\u0DDF\u0DF2-\u0DF3]" order="10" tertiary_base="true"/>
         <reorder from="\u0DCA" order="120" tertiary_base="true"/>
-        <reorder from="[\u0DD9\u0DDB]" order="60"/>
-        <reorder from="[\u0DD2-\u0DD3]" order="65"/>
-        <reorder from="[\u0DD4\u0DD6]" order="70"/>
-        <reorder from="[\u0DCF-\u0DD1\u0DD8\u0DDA\u0DDC-\u0DDF\u0DF2-\u0DF3]" order="75"/>
-        <reorder from="[\u0D82-\u0D83]" order="95"/>
+        <reorder from="\u0DD9\u0DDB" order="60"/>
+        <reorder from="\u0DD2-\u0DD3" order="65"/>
+        <reorder from="\u0DD4\u0DD6" order="70"/>
+        <reorder from="\u0DCF-\u0DD1\u0DD8\u0DDA\u0DDC-\u0DDF\u0DF2-\u0DF3" order="75"/>
+        <reorder from="\u0D82-\u0D83" order="95"/>
+
+        <!-- Sogdian -->
+        <reorder from="\u{10F46}-\u{10F47}\u{10F4B}\u{10F4D}-\u{10F50}" order="50"/>
+        <reorder from="\u{10F48}-\u{10F4A}\u{10F4C}" order="55"/>
 
         <!-- Soyombo -->
         <reorder from="\u{11A98}" tertiary="2"/>
-        <reorder before="[\u{11A50}\u{11A5C}-\u{11A83}]" from="\u{11A99}[\u{11A50}\u{11A5C}-\u{11A83}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A50}\u{11A5C}-\u{11A83}]" from="\u{11A99}[\u200C\u200D][\u{11A50}\u{11A5C}-\u{11A83}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A50}\u{11A5C}-\u{11A83}][\uFE00-\uFE0F]" from="\u{11A99}[\u{11A50}\u{11A5C}-\u{11A83}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A50}\u{11A5C}-\u{11A83}][\uFE00-\uFE0F]" from="\u{11A99}[\u200C\u200D][\u{11A50}\u{11A5C}-\u{11A83}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A50}\u{11A5C}-\u{11A83}]\u{11A98}" from="\u{11A99}[\u{11A50}\u{11A5C}-\u{11A83}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A50}\u{11A5C}-\u{11A83}]\u{11A98}" from="\u{11A99}[\u200C\u200D][\u{11A50}\u{11A5C}-\u{11A83}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A50}\u{11A5C}-\u{11A83}][\uFE00-\uFE0F]\u{11A98}" from="\u{11A99}[\u{11A50}\u{11A5C}-\u{11A83}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A50}\u{11A5C}-\u{11A83}][\uFE00-\uFE0F]\u{11A98}" from="\u{11A99}[\u200C\u200D][\u{11A50}\u{11A5C}-\u{11A83}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" from="\u{11A99}[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" from="\u{11A99}[\u200C\u200D][\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}][\uFE00-\uFE0F]" from="\u{11A99}[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}][\uFE00-\uFE0F]" from="\u{11A99}[\u200C\u200D][\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]\u{11A98}" from="\u{11A99}[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]\u{11A98}" from="\u{11A99}[\u200C\u200D][\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}][\uFE00-\uFE0F]\u{11A98}" from="\u{11A99}[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}][\uFE00-\uFE0F]\u{11A98}" from="\u{11A99}[\u200C\u200D][\u{11A51}-\u{11A5B}\u{11A96}-\u{11A97}]" order="10" tertiary_base="true"/>
         <reorder from="\u{11A99}" order="120" tertiary_base="true"/>
-        <reorder from="[\u{11A51}\u{11A54}-\u{11A56}]" order="65"/>
-        <reorder from="[\u{11A52}-\u{11A53}\u{11A59}-\u{11A5B}]" order="70"/>
-        <reorder from="[\u{11A57}-\u{11A58}]" order="75"/>
+        <reorder from="\u{11A51}\u{11A54}-\u{11A56}" order="65"/>
+        <reorder from="\u{11A52}-\u{11A53}\u{11A59}-\u{11A5B}" order="70"/>
+        <reorder from="\u{11A57}-\u{11A58}" order="75"/>
         <reorder from="\u{11A96}" order="85"/>
         <reorder from="\u{11A97}" order="95"/>
-        <reorder from="[\u{11A8A}-\u{11A95}]" order="110"/>
+        <reorder from="\u{11A8A}-\u{11A95}" order="110"/>
 
         <!-- Sundanese -->
-        <reorder before="[\u1B83-\u1BA0\u1BAE-\u1BBF]" from="\u1BAB[\u1B83-\u1BA0\u1BAE-\u1BBF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B83-\u1BA0\u1BAE-\u1BBF]" from="\u1BAB[\u200C\u200D][\u1B83-\u1BA0\u1BAE-\u1BBF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B83-\u1BA0\u1BAE-\u1BBF][\uFE00-\uFE0F]" from="\u1BAB[\u1B83-\u1BA0\u1BAE-\u1BBF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1B83-\u1BA0\u1BAE-\u1BBF][\uFE00-\uFE0F]" from="\u1BAB[\u200C\u200D][\u1B83-\u1BA0\u1BAE-\u1BBF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B80\u1B82\u1BA4-\u1BA9]" from="\u1BAB[\u1B80\u1B82\u1BA4-\u1BA9]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B80\u1B82\u1BA4-\u1BA9]" from="\u1BAB[\u200C\u200D][\u1B80\u1B82\u1BA4-\u1BA9]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B80\u1B82\u1BA4-\u1BA9][\uFE00-\uFE0F]" from="\u1BAB[\u1B80\u1B82\u1BA4-\u1BA9]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1B80\u1B82\u1BA4-\u1BA9][\uFE00-\uFE0F]" from="\u1BAB[\u200C\u200D][\u1B80\u1B82\u1BA4-\u1BA9]" order="10" tertiary_base="true"/>
         <reorder from="\u1BAB" order="120" tertiary_base="true"/>
-        <reorder from="[\u1BA1-\u1BA3\u1BAA\u1BAC-\u1BAD]" order="11"/>
+        <reorder from="\u1BA1-\u1BA3\u1BAA\u1BAC-\u1BAD" order="11"/>
         <reorder from="\u1BA6" order="60"/>
-        <reorder from="[\u1BA4\u1BA8-\u1BA9]" order="65"/>
+        <reorder from="\u1BA4\u1BA8-\u1BA9" order="65"/>
         <reorder from="\u1BA5" order="70"/>
         <reorder from="\u1BA7" order="75"/>
         <reorder from="\u1B80" order="85"/>
@@ -680,16 +743,20 @@
         <reorder from="\u1B81" order="105"/>
 
         <!-- Syloti_Nagri -->
-        <reorder from="\uA806" order="11"/>
-        <reorder from="\uA826" order="65"/>
+        <reorder before="[\uA802\uA80B\uA823-\uA827]" from="\uA806[\uA802\uA80B\uA823-\uA827]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA802\uA80B\uA823-\uA827]" from="\uA806[\u200C\u200D][\uA802\uA80B\uA823-\uA827]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA802\uA80B\uA823-\uA827][\uFE00-\uFE0F]" from="\uA806[\uA802\uA80B\uA823-\uA827]" order="10" tertiary_base="true"/>
+        <reorder before="[\uA802\uA80B\uA823-\uA827][\uFE00-\uFE0F]" from="\uA806[\u200C\u200D][\uA802\uA80B\uA823-\uA827]" order="10" tertiary_base="true"/>
+        <reorder from="\uA806" order="120" tertiary_base="true"/>
+        <reorder from="\uA802\uA826" order="65"/>
         <reorder from="\uA825" order="70"/>
-        <reorder from="[\uA823-\uA824\uA827]" order="75"/>
+        <reorder from="\uA823-\uA824\uA827" order="75"/>
         <reorder from="\uA80B" order="85"/>
 
         <!-- Syriac -->
         <reorder from="\u0711" order="29"/>
-        <reorder from="[\u0731\u0734\u0737-\u0739\u073B-\u073C\u073E\u0742\u0744\u0746\u0748]" order="50"/>
-        <reorder from="[\u0730\u0732-\u0733\u0735-\u0736\u073A\u073D\u073F-\u0741\u0743\u0745\u0747\u0749-\u074A]" order="55"/>
+        <reorder from="\u0731\u0734\u0737-\u0739\u073B-\u073C\u073E\u0742\u0744\u0746\u0748" order="50"/>
+        <reorder from="\u0730\u0732-\u0733\u0735-\u0736\u073A\u073D\u073F-\u0741\u0743\u0745\u0747\u0749-\u074A" order="55"/>
 
         <!-- Tagalog -->
         <reorder from="\u1714" order="11"/>
@@ -703,123 +770,142 @@
         <!-- Tai_Le -->
 
         <!-- Tai_Tham -->
-        <reorder before="[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" from="\u1A60[\u200C\u200D][\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99][\uFE00-\uFE0F]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99][\uFE00-\uFE0F]" from="\u1A60[\u200C\u200D][\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1A61-\u1A74]" from="\u1A60[\u1A61-\u1A74]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1A61-\u1A74]" from="\u1A60[\u200C\u200D][\u1A61-\u1A74]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1A61-\u1A74][\uFE00-\uFE0F]" from="\u1A60[\u1A61-\u1A74]" order="10" tertiary_base="true"/>
+        <reorder before="[\u1A61-\u1A74][\uFE00-\uFE0F]" from="\u1A60[\u200C\u200D][\u1A61-\u1A74]" order="10" tertiary_base="true"/>
         <reorder from="\u1A60" order="120" tertiary_base="true"/>
-        <reorder from="[\u1A57\u1A5B-\u1A5E]" order="11"/>
+        <reorder from="\u1A57\u1A5B-\u1A5E" order="11"/>
         <reorder from="\u1A55" order="40"/>
         <reorder from="\u1A56" order="50"/>
-        <reorder from="[\u1A75-\u1A7A]" order="55"/>
-        <reorder from="[\u1A6E-\u1A72]" order="60"/>
-        <reorder from="[\u1A62\u1A65-\u1A68\u1A6B\u1A73]" order="65"/>
-        <reorder from="[\u1A69-\u1A6A\u1A6C]" order="70"/>
-        <reorder from="[\u1A61\u1A63-\u1A64\u1A6D]" order="75"/>
+        <reorder from="\u1A75-\u1A7A" order="55"/>
+        <reorder from="\u1A6E-\u1A72" order="60"/>
+        <reorder from="\u1A62\u1A65-\u1A68\u1A6B\u1A73" order="65"/>
+        <reorder from="\u1A69-\u1A6A\u1A6C" order="70"/>
+        <reorder from="\u1A61\u1A63-\u1A64\u1A6D" order="75"/>
         <reorder from="\u1A74" order="85"/>
-        <reorder from="[\u1A58-\u1A5A]" order="105"/>
+        <reorder from="\u1A58-\u1A59" order="105"/>
 
         <!-- Tai_Viet -->
         <reorder from="\uAAB4" order="50"/>
-        <reorder from="[\uAAB0\uAAB2-\uAAB3\uAAB7-\uAAB8\uAABE-\uAABF\uAAC1]" order="55"/>
+        <reorder from="\uAAB0\uAAB2-\uAAB3\uAAB7-\uAAB8\uAABE-\uAABF\uAAC1" order="55"/>
 
         <!-- Takri -->
         <reorder from="\u{116B7}" tertiary="3"/>
-        <reorder before="[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" from="\u{116B6}[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" from="\u{116B6}[\u200C\u200D][\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}][\uFE00-\uFE0F]" from="\u{116B6}[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}][\uFE00-\uFE0F]" from="\u{116B6}[\u200C\u200D][\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]\u{116B7}" from="\u{116B6}[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]\u{116B7}" from="\u{116B6}[\u200C\u200D][\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}][\uFE00-\uFE0F]\u{116B7}" from="\u{116B6}[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11680}-\u{116AA}\u{116C0}-\u{116C9}][\uFE00-\uFE0F]\u{116B7}" from="\u{116B6}[\u200C\u200D][\u{11680}-\u{116AA}\u{116C0}-\u{116C9}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{116AB}-\u{116B5}]" from="\u{116B6}[\u{116AB}-\u{116B5}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{116AB}-\u{116B5}]" from="\u{116B6}[\u200C\u200D][\u{116AB}-\u{116B5}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{116AB}-\u{116B5}][\uFE00-\uFE0F]" from="\u{116B6}[\u{116AB}-\u{116B5}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{116AB}-\u{116B5}][\uFE00-\uFE0F]" from="\u{116B6}[\u200C\u200D][\u{116AB}-\u{116B5}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{116AB}-\u{116B5}]\u{116B7}" from="\u{116B6}[\u{116AB}-\u{116B5}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{116AB}-\u{116B5}]\u{116B7}" from="\u{116B6}[\u200C\u200D][\u{116AB}-\u{116B5}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{116AB}-\u{116B5}][\uFE00-\uFE0F]\u{116B7}" from="\u{116B6}[\u{116AB}-\u{116B5}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{116AB}-\u{116B5}][\uFE00-\uFE0F]\u{116B7}" from="\u{116B6}[\u200C\u200D][\u{116AB}-\u{116B5}]" order="10" tertiary_base="true"/>
         <reorder from="\u{116B6}" order="120" tertiary_base="true"/>
         <reorder from="\u{116AE}" order="60"/>
-        <reorder from="[\u{116AD}\u{116B2}-\u{116B5}]" order="65"/>
-        <reorder from="[\u{116B0}-\u{116B1}]" order="70"/>
+        <reorder from="\u{116AD}\u{116B2}-\u{116B5}" order="65"/>
+        <reorder from="\u{116B0}-\u{116B1}" order="70"/>
         <reorder from="\u{116AF}" order="75"/>
         <reorder from="\u{116AB}" order="85"/>
         <reorder from="\u{116AC}" order="95"/>
 
         <!-- Tamil -->
-        <reorder before="[\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99-\u0B9A\u0B9C\u0B9E-\u0B9F\u0BA3-\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BE6-\u0BEF]" from="\u0BCD[\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99-\u0B9A\u0B9C\u0B9E-\u0B9F\u0BA3-\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BE6-\u0BEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99-\u0B9A\u0B9C\u0B9E-\u0B9F\u0BA3-\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BE6-\u0BEF]" from="\u0BCD[\u200C\u200D][\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99-\u0B9A\u0B9C\u0B9E-\u0B9F\u0BA3-\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BE6-\u0BEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99-\u0B9A\u0B9C\u0B9E-\u0B9F\u0BA3-\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BE6-\u0BEF][\uFE00-\uFE0F]" from="\u0BCD[\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99-\u0B9A\u0B9C\u0B9E-\u0B9F\u0BA3-\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BE6-\u0BEF]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99-\u0B9A\u0B9C\u0B9E-\u0B9F\u0BA3-\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BE6-\u0BEF][\uFE00-\uFE0F]" from="\u0BCD[\u200C\u200D][\u0B85-\u0B8A\u0B8E-\u0B90\u0B92-\u0B95\u0B99-\u0B9A\u0B9C\u0B9E-\u0B9F\u0BA3-\u0BA4\u0BA8-\u0BAA\u0BAE-\u0BB9\u0BE6-\u0BEF]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCC\u0BD7]" from="\u0BCD[\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCC\u0BD7]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCC\u0BD7]" from="\u0BCD[\u200C\u200D][\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCC\u0BD7]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCC\u0BD7][\uFE00-\uFE0F]" from="\u0BCD[\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCC\u0BD7]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCC\u0BD7][\uFE00-\uFE0F]" from="\u0BCD[\u200C\u200D][\u0B82\u0BBE-\u0BC2\u0BC6-\u0BC8\u0BCA-\u0BCC\u0BD7]" order="10" tertiary_base="true"/>
         <reorder from="\u0BCD" order="120" tertiary_base="true"/>
-        <reorder from="[\u0BC6-\u0BC8]" order="60"/>
+        <reorder from="\u0BC6-\u0BC8" order="60"/>
         <reorder from="\u0BC0" order="65"/>
-        <reorder from="[\u0BBE-\u0BBF\u0BC1-\u0BC2\u0BCA-\u0BCC\u0BD7]" order="75"/>
+        <reorder from="\u0BBE-\u0BBF\u0BC1-\u0BC2\u0BCA-\u0BCC\u0BD7" order="75"/>
         <reorder from="\u0B82" order="85"/>
 
         <!-- Telugu -->
-        <reorder before="[\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60-\u0C61\u0C66-\u0C6F]" from="\u0C4D[\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60-\u0C61\u0C66-\u0C6F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60-\u0C61\u0C66-\u0C6F]" from="\u0C4D[\u200C\u200D][\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60-\u0C61\u0C66-\u0C6F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60-\u0C61\u0C66-\u0C6F][\uFE00-\uFE0F]" from="\u0C4D[\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60-\u0C61\u0C66-\u0C6F]" order="10" tertiary_base="true"/>
-        <reorder before="[\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60-\u0C61\u0C66-\u0C6F][\uFE00-\uFE0F]" from="\u0C4D[\u200C\u200D][\u0C05-\u0C0C\u0C0E-\u0C10\u0C12-\u0C28\u0C2A-\u0C39\u0C3D\u0C58-\u0C5A\u0C60-\u0C61\u0C66-\u0C6F]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4C\u0C55-\u0C56\u0C62-\u0C63]" from="\u0C4D[\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4C\u0C55-\u0C56\u0C62-\u0C63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4C\u0C55-\u0C56\u0C62-\u0C63]" from="\u0C4D[\u200C\u200D][\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4C\u0C55-\u0C56\u0C62-\u0C63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4C\u0C55-\u0C56\u0C62-\u0C63][\uFE00-\uFE0F]" from="\u0C4D[\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4C\u0C55-\u0C56\u0C62-\u0C63]" order="10" tertiary_base="true"/>
+        <reorder before="[\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4C\u0C55-\u0C56\u0C62-\u0C63][\uFE00-\uFE0F]" from="\u0C4D[\u200C\u200D][\u0C00-\u0C04\u0C3E-\u0C44\u0C46-\u0C48\u0C4A-\u0C4C\u0C55-\u0C56\u0C62-\u0C63]" order="10" tertiary_base="true"/>
         <reorder from="\u0C4D" order="120" tertiary_base="true"/>
-        <reorder from="[\u0C3E-\u0C40\u0C46-\u0C48\u0C4A-\u0C4C\u0C55]" order="65"/>
-        <reorder from="[\u0C62-\u0C63]" order="70"/>
-        <reorder from="[\u0C41-\u0C44]" order="75"/>
-        <reorder from="[\u0C00\u0C56]" order="85"/>
-        <reorder from="[\u0C01-\u0C03]" order="95"/>
+        <reorder from="\u0C3E-\u0C40\u0C46-\u0C48\u0C4A-\u0C4C\u0C55" order="65"/>
+        <reorder from="\u0C62-\u0C63" order="70"/>
+        <reorder from="\u0C41-\u0C44" order="75"/>
+        <reorder from="\u0C00\u0C04\u0C56" order="85"/>
+        <reorder from="\u0C01-\u0C03" order="95"/>
 
         <!-- Thai -->
         <reorder from="\u0E3A" order="11"/>
         <reorder from="\u0E4E" order="62"/>
-        <reorder from="[\u0E31\u0E34-\u0E37\u0E47]" order="65"/>
-        <reorder from="[\u0E38-\u0E39]" order="70"/>
+        <reorder from="\u0E31\u0E34-\u0E37\u0E47" order="65"/>
+        <reorder from="\u0E38-\u0E39" order="70"/>
         <reorder from="\u0E4D" order="84"/>
-        <reorder from="[\u0E48-\u0E4B]" order="85"/>
+        <reorder from="\u0E48-\u0E4B" order="85"/>
         <reorder from="\u0E4C" order="105"/>
 
         <!-- Tibetan -->
-        <reorder from="[\u0F84\u0F8D-\u0F97\u0F99-\u0FBC]" order="11"/>
-        <reorder from="[\u0F18-\u0F19]" order="50"/>
-        <reorder from="[\u0F82-\u0F83\u0F86-\u0F87]" order="55"/>
+        <reorder from="\u0F84\u0F8D-\u0F97\u0F99-\u0FBC" order="11"/>
+        <reorder from="\u0F18-\u0F19" order="50"/>
+        <reorder from="\u0F82-\u0F83\u0F86-\u0F87" order="55"/>
         <reorder from="\u0F39" order="56"/>
-        <reorder from="[\u0F72-\u0F73\u0F76-\u0F7D\u0F80-\u0F81]" order="65"/>
-        <reorder from="[\u0F71\u0F74-\u0F75]" order="70"/>
+        <reorder from="\u0F72-\u0F73\u0F76-\u0F7D\u0F80-\u0F81" order="65"/>
+        <reorder from="\u0F71\u0F74-\u0F75" order="70"/>
         <reorder from="\u0F7E" order="85"/>
         <reorder from="\u0F7F" order="95"/>
 
         <!-- Tifinagh -->
+        <reorder before="[]" from="\u2D7F[]" order="10" tertiary_base="true"/>
+        <reorder before="[]" from="\u2D7F[\u200C\u200D][]" order="10" tertiary_base="true"/>
+        <reorder before="[][\uFE00-\uFE0F]" from="\u2D7F[]" order="10" tertiary_base="true"/>
+        <reorder before="[][\uFE00-\uFE0F]" from="\u2D7F[\u200C\u200D][]" order="10" tertiary_base="true"/>
         <reorder from="\u2D7F" order="120" tertiary_base="true"/>
 
         <!-- Tirhuta -->
         <reorder from="\u{114C3}" tertiary="3"/>
-        <reorder before="[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" from="\u{114C2}[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" from="\u{114C2}[\u200C\u200D][\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}][\uFE00-\uFE0F]" from="\u{114C2}[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}][\uFE00-\uFE0F]" from="\u{114C2}[\u200C\u200D][\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]\u{114C3}" from="\u{114C2}[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]\u{114C3}" from="\u{114C2}[\u200C\u200D][\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}][\uFE00-\uFE0F]\u{114C3}" from="\u{114C2}[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}][\uFE00-\uFE0F]\u{114C3}" from="\u{114C2}[\u200C\u200D][\u{11481}-\u{114AF}\u{114C4}\u{114D0}-\u{114D9}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{114B0}-\u{114C1}]" from="\u{114C2}[\u{114B0}-\u{114C1}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{114B0}-\u{114C1}]" from="\u{114C2}[\u200C\u200D][\u{114B0}-\u{114C1}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{114B0}-\u{114C1}][\uFE00-\uFE0F]" from="\u{114C2}[\u{114B0}-\u{114C1}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{114B0}-\u{114C1}][\uFE00-\uFE0F]" from="\u{114C2}[\u200C\u200D][\u{114B0}-\u{114C1}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{114B0}-\u{114C1}]\u{114C3}" from="\u{114C2}[\u{114B0}-\u{114C1}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{114B0}-\u{114C1}]\u{114C3}" from="\u{114C2}[\u200C\u200D][\u{114B0}-\u{114C1}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{114B0}-\u{114C1}][\uFE00-\uFE0F]\u{114C3}" from="\u{114C2}[\u{114B0}-\u{114C1}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{114B0}-\u{114C1}][\uFE00-\uFE0F]\u{114C3}" from="\u{114C2}[\u200C\u200D][\u{114B0}-\u{114C1}]" order="10" tertiary_base="true"/>
         <reorder from="\u{114C2}" order="120" tertiary_base="true"/>
-        <reorder from="[\u{114B1}\u{114B9}]" order="60"/>
+        <reorder from="\u{114B1}\u{114B9}" order="60"/>
         <reorder from="\u{114BA}" order="65"/>
-        <reorder from="[\u{114B3}-\u{114B8}]" order="70"/>
-        <reorder from="[\u{114B0}\u{114B2}\u{114BB}-\u{114BE}]" order="75"/>
-        <reorder from="[\u{114BF}-\u{114C0}]" order="85"/>
+        <reorder from="\u{114B3}-\u{114B8}" order="70"/>
+        <reorder from="\u{114B0}\u{114B2}\u{114BB}-\u{114BE}" order="75"/>
+        <reorder from="\u{114BF}-\u{114C0}" order="85"/>
         <reorder from="\u{114C1}" order="95"/>
 
+        <!-- Wancho -->
+        <reorder from="\u{1E2EC}-\u{1E2EF}" order="55"/>
+
         <!-- Zanabazar_Square -->
-        <reorder before="[\u{11A00}\u{11A0B}-\u{11A32}\u{11A3F}\u{11A45}]" from="\u{11A47}[\u{11A00}\u{11A0B}-\u{11A32}\u{11A3F}\u{11A45}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A00}\u{11A0B}-\u{11A32}\u{11A3F}\u{11A45}]" from="\u{11A47}[\u200C\u200D][\u{11A00}\u{11A0B}-\u{11A32}\u{11A3F}\u{11A45}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A00}\u{11A0B}-\u{11A32}\u{11A3F}\u{11A45}][\uFE00-\uFE0F]" from="\u{11A47}[\u{11A00}\u{11A0B}-\u{11A32}\u{11A3F}\u{11A45}]" order="10" tertiary_base="true"/>
-        <reorder before="[\u{11A00}\u{11A0B}-\u{11A32}\u{11A3F}\u{11A45}][\uFE00-\uFE0F]" from="\u{11A47}[\u200C\u200D][\u{11A00}\u{11A0B}-\u{11A32}\u{11A3F}\u{11A45}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A01}-\u{11A0A}\u{11A35}-\u{11A39}]" from="\u{11A47}[\u{11A01}-\u{11A0A}\u{11A35}-\u{11A39}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A01}-\u{11A0A}\u{11A35}-\u{11A39}]" from="\u{11A47}[\u200C\u200D][\u{11A01}-\u{11A0A}\u{11A35}-\u{11A39}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A01}-\u{11A0A}\u{11A35}-\u{11A39}][\uFE00-\uFE0F]" from="\u{11A47}[\u{11A01}-\u{11A0A}\u{11A35}-\u{11A39}]" order="10" tertiary_base="true"/>
+        <reorder before="[\u{11A01}-\u{11A0A}\u{11A35}-\u{11A39}][\uFE00-\uFE0F]" from="\u{11A47}[\u200C\u200D][\u{11A01}-\u{11A0A}\u{11A35}-\u{11A39}]" order="10" tertiary_base="true"/>
         <reorder from="\u{11A47}" order="120" tertiary_base="true"/>
         <reorder from="\u{11A34}" order="11"/>
-        <reorder from="[\u{11A3B}-\u{11A3E}]" order="50"/>
-        <reorder from="[\u{11A01}\u{11A04}-\u{11A09}]" order="65"/>
-        <reorder from="[\u{11A02}-\u{11A03}\u{11A0A}]" order="70"/>
-        <reorder from="[\u{11A35}-\u{11A38}]" order="85"/>
+        <reorder from="\u{11A3B}-\u{11A3E}" order="50"/>
+        <reorder from="\u{11A01}\u{11A04}-\u{11A09}" order="65"/>
+        <reorder from="\u{11A02}-\u{11A03}\u{11A0A}" order="70"/>
+        <reorder from="\u{11A35}-\u{11A38}" order="85"/>
         <reorder from="\u{11A39}" order="95"/>
     </reorders>
+
     <transforms type="final">
 
         <!-- Myanmar -->
         <transform from="\u103A\u1037" to="\u1037\u103A"/>
+
+        <!-- Tai_Tham -->
+        <transform from="\u1A75\u1A60" to="\u1A60\u1A75"/>
+        <transform from="\u1A76\u1A60" to="\u1A60\u1A76"/>
+        <transform from="\u1A77\u1A60" to="\u1A60\u1A77"/>
+        <transform from="\u1A78\u1A60" to="\u1A60\u1A78"/>
+        <transform from="\u1A79\u1A60" to="\u1A60\u1A79"/>
+        <transform from="\u1A7A\u1A60" to="\u1A60\u1A7A"/>
+        <transform from="\u1A7B\u1A60" to="\u1A60\u1A7B"/>
+        <transform from="\u1A7C\u1A60" to="\u1A60\u1A7C"/>
+        <transform from="\u1A7F\u1A60" to="\u1A60\u1A7F"/>
     </transforms>
 </keyboard>
