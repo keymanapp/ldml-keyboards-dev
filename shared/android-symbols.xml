@@ -72,7 +72,7 @@
         <row keys="C01-C09"/>
         <row keys="shift B01-B07 bksp"/>
         <row keys="base A03 numpad A02 A04 enter"/>
-        <switch iso="shift" layer="sym+shift" keycap="=\<"/>
+        <switch iso="shift" layer="sym+shift" keycap="=\&lt;"/>
         <switch iso="base" layer="none" keycap="ABC"/>
         <vkeys type="windows">
             <vkey iso="D01" vkey="1"/>

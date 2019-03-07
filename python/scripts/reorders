@@ -1,0 +1,285 @@
+#!/usr/bin/python
+
+import argparse, os, sys
+
+try:
+    from ldml_keyboard import ucd
+except ImportError:
+    sys.path.append(os.path.join(os.path.dirname(__file__), '../lib'))
+    from ldml_keyboard import ucd
+    
+
+# -ve numbers are tertiary orders
+cccmap = (
+    0, -2, 0, 0, 0, 0, 0, -3, 9, 10, 20, 21, 22, 23, 24, 25,
+    26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 20, 21, 22, 21, 24,
+    25, 26, 27, 28, 29, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 85, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 20, 0, 0, 0, 85, 0, 0, 0, 0, 0,
+    0, 20, 21, 0, 22, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+    0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 41, 0, 42, 0, 0, 0,
+    43, 0, 44, 0, 45, 0, 46, 0, 47, 0, 48, 0, 50, 0, 51, 0,
+    52, 0, 53, 0, 54, 0, 55, 0, 56, 57, 58, 0, 0, 0, 0, 0,
+    59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
+
+subcatmap = {
+    'FAbv': 105, 'FBlw': 110, 'FPst': 115, 'FM': 117,
+    'MAbv': 55, 'MBlw': 50, 'MPre': 40, 'MPst': 59,
+    'VPre': 60, 'VAbv': 65, 'VBlw': 70, 'VPst': 75,
+    'VMAbv': 85, 'VMBlw': 90, 'VMPre': 80, 'VMPst': 95,
+    'CMAbv': -2}
+
+catmap = {
+    'SUB': 11, 'VS': -1, 'ZWJ': -5, 'ZWNJ': -5, 'WJ': 125}
+
+codemap = {
+    # Arabic
+    # Common
+    # Cyrillic
+    # Greek
+    # Khmer
+    0x17BE: 60,     # was VPst make VPre
+    0x17BF: 60,
+    0x17C0: 60,
+    0x17C4: 60,
+    0x17C5: 60,
+    0x17C6: 105,    # Finals
+    0x17C7: 115,
+    0x17C8: 115,
+    0x17C9: 15,     # Registry shifter treat as CMAbv
+    0x17CA: 15,
+    0x17CB: 105,
+    0x17CC: 20,      # Rhobat is subjoined r
+    0x17CD: 105,
+    0x17CE: 80,
+    0x17CF: 105,
+    0x17D0: 65,
+    0x17D1: 105,
+    0x17D3: 0,
+    0x17DD: 105,     # treat as vowel not as final
+    
+    # Thai / Lao
+    0x0E4C: 105,    # karan comes at the end of the syllable after the vowels
+    0x0E4D: 84,     # nikhahit is a final consonant between vowels and tones
+    0x0E4E: 62,     # yamakkan is like kinzi but stored after the consonant and before vowels (after general combining marks)
+    0x0ECD: 84,     # Lao follows Thai
+    # Myanmar
+    0x1031: 60,     # prevowel
+    0x1032: 85,     # vowel modifier
+    0x1036: 85,
+    0x1037: 87,
+    0x103A: 35,     # default killer position
+    0x103B: 40,     # Y First medial group
+    0x103C: 45,     # R Second medial group
+    0x103D: 50,     # W Third medial group
+    0x103E: 55,     # H Fourth medial group
+    0x105E: 40,     # First medial group
+    0x105F: 40,
+    0x1060: 55,     # Fourth medial group
+    0x1082: 50,     # Third medial group
+    0x1084: 60,     # prevowel
+    0x1086: 80,     # vowel modifier
+    0x108D: 95,     # VMPst
+    0xA9E6: 105,    # Final above
+    0xAA70: 105,
+    0xAA7C: 95,     # VMPst rather than above
+
+    # Tai Tham
+    0x1A75: 100,
+    0x1A76: 100,
+    0x1A77: 100,
+    0x1A78: 100,
+    0x1A79: 100,
+}
+
+tertiary_bases = set([0x102B, 0x102C, 0x102F, 0x1030, 0x1036, 0x1032, 0x1056, 0x1057, 0x1058, 0x1059, 0x1062,
+                      0x1063, 0x1064, 0x1067, 0x1068, 0x1069, 0x106A, 0x106B, 0x106C, 0x106D, 0x1083, 0x1086])
+
+# Parameters:
+#  z        Halant sequences can include preceding ZW(N)J
+#  nukta    The nukta in this script (not used)
+#  av       Halant may occur following a vowel where it does not join with a consonant
+#  rules    list of extra reorder rules
+#  hbefores Extra before contexts for halant+C reorder rules
+scriptmap = {
+    'Devanagari': {'z': True, 'nukta': u"\u093C"},
+    'Bengali': {'z': True, 'nukta': u"\u09BC"}, 
+    'Gurmukhi': {'z': True, 'nukta': u"\u0A3C"},
+    'Gujarati': {'z': True, 'nukta': u"\u0ABC"},
+    'Khmer': {'rules': (
+        r'from="\u17D2\u179A" order="11" tertiary_base="true"',),
+              'z': True, 'av': False },
+#    'Mongolian' : { 'vs': "[\\u180B-\\u180D]" },
+    'Myanmar': {'rules': (
+        r'from="[\u103D\u1082]\u103A" order="50"',
+        r'from="[\u1004\u101B]\u103A\u1039" order="-1"'),
+                'vs': "\\uFE00", 'av': False},
+    'Tai_Tham' : {'hbefores': {'[\\u1A63\\u1A64\\u1A6D]' : 80,
+                               '[\\u1A63\\u1A64\\u1A6D][\\u1A55-\\u1A79]' : 80,},
+                'av': False},
+}
+
+finals = {
+    # mostly ugly hacks for broken CCC numbers
+    'Myanmar': (
+        r'from="\u103A\u1037" to="\u1037\u103A"',
+        r'from="[\u102F\u1030\u1058\u1059][\u102F\u1030\u1058\u1059]" error="fail"'),
+    'Tai_Tham': (
+        r'from="\u1A75\u1A60" to="\u1A60\u1A75"',
+        r'from="\u1A76\u1A60" to="\u1A60\u1A76"',
+        r'from="\u1A77\u1A60" to="\u1A60\u1A77"',
+        r'from="\u1A78\u1A60" to="\u1A60\u1A78"',
+        r'from="\u1A79\u1A60" to="\u1A60\u1A79"',
+        r'from="\u1A7A\u1A60" to="\u1A60\u1A7A"',
+        r'from="\u1A7B\u1A60" to="\u1A60\u1A7B"',
+        r'from="\u1A7C\u1A60" to="\u1A60\u1A7C"',
+        r'from="\u1A7F\u1A60" to="\u1A60\u1A7F"'),
+    'Khmer' : (
+        r'from="\u17C1\u17B8" to="\u17BE"',
+        r'from="\u17C1\u17B6" to="\u17C4"')
+}
+
+def getorder(i, ccc, cat, subcat):
+    res = codemap.get(i, 0)
+    res = res or (cccmap[ccc] if ccc < len(cccmap) else 0)
+    res = res or subcatmap.get(subcat, 0)
+    res = res or catmap.get(cat, 0)
+    return res
+    
+def makeclass(vals):
+    def rangestr(f, l):
+        if l > 0xFFFF:
+            def mod(s):
+                return s.replace("{", "{{{").replace("}", "}}}")
+        else:
+            def mod(s):
+                return s
+        if f == l - 1:
+            return mod("\\u{:04X}\\u{:04X}").format(f, l)
+        elif f == l:
+            return mod("\\u{:04X}").format(l)
+        else:
+            return mod("\\u{:04X}-\\u{:04X}").format(f, l)
+
+    res = ""
+    count = 0
+    last = -2
+    for v in sorted(reduce(lambda x,y: x + y, vals, [])):
+        if v != last + 1:
+            if last >= 0:
+                res += rangestr(first, last)
+                count += last - first + 1
+            first = v
+            last = v
+        else:
+            last = v
+    if last >= 0:
+        res += rangestr(first, last)
+        count += last - first + 1
+    if count > 1:
+        return "[" + res + "]"
+    else:
+        return res
+
+parser = argparse.ArgumentParser()
+parser.add_argument('path',help='Path to ucd')
+args = parser.parse_args()
+
+unidb = ucd.UnicodeData(os.path.join(args.path, 'UnicodeData.txt'))
+scripts = ucd.CategoryFile(os.path.join(args.path, 'Scripts.txt'))
+indicSyllable = ucd.CategoryFile(os.path.join(args.path, 'IndicSyllabicCategory.txt'))
+indicPosition = ucd.CategoryFile(os.path.join(args.path, 'IndicPositionalCategory.txt'))
+results = {}
+unknowns = []
+for i in xrange(0x20000):
+    u = unidb[i]
+    if u is None:
+        continue
+    c = int(u.ccc)
+    s = scripts[i]
+    syl = indicSyllable[i]
+    pos = indicPosition[i]
+    (cat, subcat) = ucd.getuse_class(i, u, syl, pos, s) 
+    o = getorder(i, c, cat, subcat)
+    if o == 10 and syl == 'Pure_Killer':
+        o = 11
+    if o == 0 and (c != 0 or cat not in (None, 'B', 'GB', 'CS', 'IND', 'O', 'N', 'S', 'SM') or subcat):
+        unknowns.append(i)
+    elif o == 0 and cat not in ('B', 'GB'):
+        pass
+    else:
+        results.setdefault(s, {}).setdefault(o, []).append(i)
+
+print("""<?xml version="1.0" encoding="utf-8"?>
+<keyboard>
+    <reorders>""")
+print("        <!-- Unknowns {} -->".format(" ".join("\u{:04X}".format(x) for x in unknowns)))
+for k, v in sorted(results.items()):
+    print("")
+    print("        <!-- {} -->".format(k))
+    smap = scriptmap.get(k, {})
+    hasvs = smap.get('vs', None)
+    hasz = smap.get('z', False)
+    afterv = smap.get('av', True)
+    hbefores = dict(((" before=\"{}\" ".format(x) if x else " "), y) for x, y in smap.get('hbefores', {}).items())
+    for i, l in sorted(v.items()):
+        if i == 0:
+            continue
+        tertiary_base = False
+        s = makeclass([l])
+        if i == 10:     # halant
+            tertiary_base = True
+            t = makeclass([v.get(0, [])])
+            i = 120
+            #t = makeclass([v.get(x, []) for x in range(60, 100)])
+            if afterv:
+                constraint = [' before="{1}" ']
+                if hasvs is not None:
+                    constraint.append(' before="{{1}}{}" '.format(hasvs))
+            else:
+                constraint = [' ']
+            hbefores.update((x, 10) for x in constraint)
+            if len(t):
+                for c, o in hbefores.items():
+                    print('        <reorder{}from="{{0}}{{1}}" order="{{2:d}}" tertiary_base="true"/>'.format(c).format(s, t, o))
+                    if hasz:
+                        print('        <reorder{}from="{{0}}[\\u200C\\u200D]{{1}}" order="{{2:d}}" tertiary_base="true"/>'.format(c).format(s, t, o))
+                n = v.get(-2, []) + v.get(-3, [])
+                nc = makeclass([n])
+                if len(nc) > 2 and afterv:
+                    print('        <reorder before="{1}{3}" from="{0}{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10, nc))
+                    if hasz:
+                        print('        <reorder before="{1}{3}" from="{0}[\\u200C\\u200D]{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10, nc))
+                    if hasvs is not None:
+                        print('        <reorder before="{1}{4}{3}" from="{0}{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10, nc, hasvs))
+                        if hasz:
+                            print('        <reorder before="{1}{4}{3}" from="{0}[\\u200C\\u200D]{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10, nc, vs))
+        else:
+            tertiary_base = l[0] in tertiary_bases
+
+        if i < 0:
+            print('        <reorder from="{}" tertiary="{:d}"/>'.format(s, -i))
+        elif tertiary_base:
+            print('        <reorder from="{}" order="{:d}" tertiary_base="true"/>'.format(s, i))
+        else:
+            print('        <reorder from="{}" order="{:d}"/>'.format(s, i))
+    if k in scriptmap:
+        for t in scriptmap[k].get('rules', []):
+            print('        <reorder {}/>'.format(t))
+
+print("""    </reorders>
+
+    <transforms type="final">""")
+
+for k,v in sorted(finals.items()):
+    print("\n        <!-- {} -->".format(k))
+    for t in v:
+        print("        <transform {}/>".format(t))
+
+print("""    </transforms>
+</keyboard>""")

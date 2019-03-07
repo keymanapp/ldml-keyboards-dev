@@ -42,10 +42,10 @@ class Trie(object):
         self.backwards = [Node()]
         self.singles = {}
 
-    def append(self, fr, before, after, rule, filterlist=None):
-        frc = parse(fr) if fr is not None else UnicodeSetSequence()
-        beforec = parse(before) if before is not None else UnicodeSetSequence()
-        afterc = parse(after) if after is not None else UnicodeSetSequence()
+    def append(self, fr, before, after, rule, filterlist=None, normal=None):
+        frc = parse(fr, normal=normal) if fr is not None else UnicodeSetSequence()
+        beforec = parse(before, normal=normal) if before is not None else UnicodeSetSequence()
+        afterc = parse(after, normal=normal) if after is not None else UnicodeSetSequence()
         if filterlist is not None:
             frc = filterset(frc, filterlist)
             beforec = filterset(beforec, filterlist)

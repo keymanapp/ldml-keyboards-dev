@@ -11,7 +11,7 @@
     <event key="[shift C04]" output="ធ"/>
     <event key="[C10]" output="ធើ"/>
     <event key="[C07]" output="ធើ្"/>
-    <event key="[B04]" output="ធ្វើ"/>
+    <event key="[B04]" output="ធ្វើ" skip="bksp"/>
   </test-sequence>
 
   <test-sequence id="10c">
@@ -19,7 +19,7 @@
     <event key="[C07]" output="ធ្"/>
     <event key="[B04]" output="ធ្វ"/>
     <event key="[D03]" output="ធ្វេ"/>
-    <event key="[shift D08]" output="ធ្វើ"/>
+    <event key="[shift D08]" output="ធ្វើ" skip="bksp"/>
   </test-sequence>
 
   <test-sequence id="10d">
@@ -27,7 +27,7 @@
     <event key="[C07]" output="ធ្"/>
     <event key="[B04]" output="ធ្វ"/>
     <event key="[shift D08]" output="ធ្វី"/>
-    <event key="[D03]" output="ធ្វើ"/>
+    <event key="[D03]" output="ធ្វើ" skip="bksp"/>
   </test-sequence>
 
   <test-sequence id="11a">
@@ -43,7 +43,7 @@
     <event key="[B07]" output="ម"/>
     <event key="[shift C11]" output="ម៉"/>
     <event key="[C07]" output="ម៉្"/>
-    <event key="[D06]" output="ម្យ៉"/>
+    <event key="[D06]" output="ម្យ៉" skip="bksp"/>
     <event key="[C01]" output="ម្យ៉ា"/>
     <event key="[C05]" output="ម្យ៉ាង"/>
   </test-sequence>
@@ -60,7 +60,7 @@
     <event key="[C02]" output="ស"/>
     <event key="[B10]" output="ស៊"/>
     <event key="[C07]" output="ស៊្"/>
-    <event key="[D04]" output="ស្រ៊"/>
+    <event key="[D04]" output="ស្រ៊" skip="bksp"/>
     <event key="[shift D08]" output="ស្រ៊ី"/>
   </test-sequence>
 
@@ -115,7 +115,7 @@
     <event key="[C02]" output="ស"/>
     <event key="[B10]" output="ស៊"/>
     <event key="[D03]" output="ស៊េ"/>
-    <event key="[shift D08]" output="ស៊ើ"/>
+    <event key="[shift D08]" output="ស៊ើ" skip="bksp"/>
     <event key="[B05]" output="ស៊ើប"/>
   </test-sequence>
 
@@ -123,7 +123,7 @@
     <event key="[C02]" output="ស"/>
     <event key="[B10]" output="ស៊"/>
     <event key="[shift D08]" output="ស៊ី"/>
-    <event key="[D03]" output="ស៊ើ"/>
+    <event key="[D03]" output="ស៊ើ" skip="bksp"/>
     <event key="[B05]" output="ស៊ើប"/>
   </test-sequence>
 
@@ -144,7 +144,7 @@
   <test-sequence id="13f">
     <event key="[C02]" output="ស"/>
     <event key="[D07]" output="សុ"/>
-    <event key="[D03]" output="សេ"/>
+    <event key="[D03]" output="សេ" skip="bksp"/>
     <event key="[shift D08]" output="សើ"/>
     <event key="[B05]" output="ស៊ើប"/>
   </test-sequence>
@@ -168,7 +168,7 @@
   <test-sequence id="13i">
     <event key="[C02]" output="ស"/>
     <event key="[shift D08]" output="សី"/>
-    <event key="[D03]" output="សើ"/>
+    <event key="[D03]" output="សើ" skip="bksp"/>
     <event key="[D07]" output="ស៊ើ"/>
     <event key="[B05]" output="ស៊ើប"/>
   </test-sequence>
@@ -176,7 +176,7 @@
   <test-sequence id="13j">
     <event key="[C02]" output="ស"/>
     <event key="[D03]" output="សេ"/>
-    <event key="[D07]" output="សុ"/>
+    <event key="[D07]" output="សុ" skip="bksp"/>
     <event key="[shift D08]" output="ស៊ី"/>
     <event key="[B05]" output="ស៊ើប"/>
   </test-sequence>
@@ -184,7 +184,7 @@
   <test-sequence id="13k">
     <event key="[C02]" output="ស"/>
     <event key="[D03]" output="សេ"/>
-    <event key="[shift D08]" output="សើ"/>
+    <event key="[shift D08]" output="សើ" skip="bksp"/>
     <event key="[D07]" output="ស៊ើ"/>
     <event key="[B05]" output="ស៊ើប"/>
   </test-sequence>
@@ -208,7 +208,7 @@
   <test-sequence id="14a">
     <event key="[C02]" output="ស"/>
     <event key="[B10]" output="ស៊"/>
-    <event key="[shift C01]" output="ស៊ាំ"/>
+    <event key="[shift C01]" output="ស៊ាំ" skip="bksp"/>
   </test-sequence>
 
   <test-sequence id="14b">

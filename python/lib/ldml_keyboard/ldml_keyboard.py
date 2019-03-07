@@ -27,6 +27,7 @@ from xml.etree import ElementTree as et
 import itertools, re, os, sys
 from collections import namedtuple
 from copy import copy
+import unicodedata as ud
 
 try:
     from . import UnicodeSets, trie
@@ -48,9 +49,9 @@ class EXMLParser(et.XMLParser):
 
 class ESyntaxError(SyntaxError):
     def __init__(self, context, msg, fname=None):
-        self.lineno, self.offset = context.error_pos
-        if fname is not None:
-            self.filename = fname
+        lineno, offset = context.error_pos
+        filename = fname
+        super(ESyntaxError, self).__init__(msg, (filename, lineno, offset, msg))
 
 CharCode = namedtuple('CharCode', ['primary', 'tertiary_base', 'tertiary', 'prebase'])
 SortKey = namedtuple('SortKey', ['primary', 'index', 'tertiary', 'tiebreak'])
@@ -58,7 +59,7 @@ MatchResult = namedtuple('MatchResult', ['offset', 'length', 'rule', 'morep'])
 
 class Keyboard(object):
 
-    def __init__(self, path):
+    def __init__(self, path, imported=False):
         self.keyboards = []
         self.fallbacks = []
         self.modifiers = {}
@@ -69,6 +70,8 @@ class Keyboard(object):
         self.fname = path
         self.prebases = set()
         self.parse(path)
+        self.tracing = False
+        self.imported = imported
 
     def _add_prebases(self, e, onlyifin):
         f = e.get('from')
@@ -88,9 +91,10 @@ class Keyboard(object):
         for m in element:
             if 'prebase' in m.attrib and transform == 'reorder':
                 self._add_prebases(m, onlyifin)
-            rules.append(m, onlyifin, error=e)
+            em = ESyntaxError(m, "", self.fname)
+            rules.append(m, onlyifin, error=em)
 
-    def parse(self, fname):
+    def parse(self, fname, imported=False):
         '''Read and parse an LDML keyboard layout file'''
         self.fname = fname
         doc = et.parse(fname, parser=EXMLParser())
@@ -120,20 +124,24 @@ class Keyboard(object):
                     maps[m.get('iso')] = UnicodeSets.struni(m.get('to'))
                 self.fallbacks.append(c.get('fallback', "").split(' '))
             elif c.tag == 'transforms':
-                self._addrules(c, c.get('type'), context=c)
+                t = c.get('type')
+                if t == 'simple' and t in self.transforms:  # allow a second simple transforms
+                    t = 'simple2'
+                self._addrules(c, t, context=c)
             elif c.tag == 'reorders':
                 testset = set(x for m in self.keyboards for v in m.values() for x in v)
                 self._addrules(c, 'reorder', onlyifin=testset, context=c)
             elif c.tag == 'backspaces':
                 self._addrules(c, 'backspace', context=c)
-            elif c.tag == 'settings':
+            elif c.tag == 'settings' and not imported:
                 self.settings.update(c.attrib)
             elif c.tag == 'import':
                 for base in (os.path.dirname(fname),
                         os.path.join(os.path.dirname(__file__), '../../..')):
                     newfname = os.path.join(base, c.get('path'))
                     if os.path.exists(newfname):
-                        self.parse(newfname)
+                        self.parse(newfname, imported=True)
+                        self.fname = fname
                         break
                 else:
                     raise ImportError("Can't import {}".format(c.get('path')))
@@ -174,13 +182,17 @@ class Keyboard(object):
         else:
             self.history = []
 
-    def process(self, k, mods):
+    def process(self, k, mods, context=None):
         '''Process and record the results of a single keystroke given previous history'''
         chars = self.map_key(k, mods)
-        if not len(self.history):
-            ctxt = Context(chars)
+        if isinstance(context, Context):
+            ctxt = context
+        elif context is not None:
+            ctxt = self._ContextFromString(ud.normalize('NFD', context+chars))
+        elif not len(self.history):
+            ctxt = Context(chars, tracing=self.tracing)
         else:
-            ctxt = self.history[-1].clone(chars)
+            ctxt = self.history[-1].clone(chars, tracing=self.tracing)
         
         if k == 'BKSP':
             # normally we would simply undo, but test the backspace transforms
@@ -189,16 +201,20 @@ class Keyboard(object):
         else:
             if not self._process_simple(ctxt):
                 return self.error()
+            if 'simple2' in self.transforms:
+                if not self._process_simple(ctxt, 'simple2', handleSettings=False):
+                    return self.error()
             self._process_reorder(ctxt)
             if not self._process_simple(ctxt, 'final', handleSettings=False):
                 return self.error()
-        self.history.append(ctxt)
+        if context is None:
+            self.history.append(ctxt)
         return ctxt
 
     def error(self):
         '''Set error state'''
         if not len(self.history):
-            res = Context()
+            res = Context(tracing=self.tracing)
         else:
             res = self.history[-1].clone()
         res.error = 1
@@ -218,6 +234,20 @@ class Keyboard(object):
                 if k in self.keyboards[find]:
                     return UnicodeSets.struni(self.keyboards[find][k])
         return ""
+
+    def _ContextFromString(self, s):
+        res = Context(tracing=self.tracing)
+        for t in ('reorder', 'final'):
+            res.output[res.index(t)] = s
+        (before, changed, _) = self._unreorder(s)
+        olds = before + changed
+        for t in ('base', 'simple'):
+            res.output[res.index(t)] = olds
+            res.offset[res.index(t)] = len(olds)
+        res.offset[2] = len(before)
+        res.offset[3] = len(before)
+        res.trace("Initialise with string " + repr(s))
+        return res
 
     def _process_empty(self, context, ruleset):
         '''Copy layer input to output'''
@@ -247,14 +277,14 @@ class Keyboard(object):
             r = trans.match(instr, curr)
             if r.rule is not None:
                 if getattr(r.rule, 'error', 0): return False
-                if r.offset > 0:
-                    context.results(ruleset, r.offset, instr[curr:curr+r.offset])
+                if r.offset > 0:    # begin context
+                    context.results(ruleset, r.offset, instr[curr:curr+r.offset], rule=r.rule)
                     r.length -= r.offset
                     curr += r.offset
-                context.results(ruleset, r.length, UnicodeSets.struni(getattr(r.rule, 'to', "")))
+                context.results(ruleset, r.length, UnicodeSets.struni(getattr(r.rule, 'to', "")), rule=r.rule)
                 curr += r.length
             elif r.length == 0 and not fallback and (not r.morep or not partial):     # abject failure
-                context.results(ruleset, 1, instr[curr:curr+1])
+                context.results(ruleset, 1, instr[curr:curr+1], comment="Fallthrough")
                 curr += 1
             else:               # partial match waiting for more input
                 break
@@ -272,9 +302,14 @@ class Keyboard(object):
         # sort key is (primary, secondary, string index)
         res = u"".join(s[y] for y in sorted(range(len(s)), key=lambda x:k[x]))
         if rev:
+            # remove a \u200B if the cluster start after a prevowel
+            foundpre = False
             for i, key in enumerate(sorted(k)):
-                if key.primary > 0: break
-                if key.primary == 0 and res[i] == u"\u200B":
+                if key.primary < 0:
+                    foundpre = True
+                elif key.primary > 0:
+                    break
+                elif foundpre and res[i] == u"\u200B":
                     res = res[:i] + res[i+1:]
                     break
         return (chars[:begin], res, chars[end:])
@@ -324,7 +359,7 @@ class Keyboard(object):
         if curr > startrun:     # just copy the odd characters across
             context.results(ruleset, curr - startrun, instr[startrun:curr])
 
-        for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), ruleset=ruleset):
+        for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), ruleset=ruleset, ctxt=context):
             if len(post):
                 # append and update processed marker
                 context.results(ruleset, len(ordered), ordered)
@@ -332,7 +367,7 @@ class Keyboard(object):
                 # just append, ready to reprocess again
                 context.outputs[context.index(ruleset)] += ordered
 
-    def _reorder(self, instr, startrun=0, end=0, ruleset='reorder'):
+    def _reorder(self, instr, startrun=0, end=0, ruleset='reorder', ctxt=None):
         '''Presumes we are at the start of a cluster'''
         trans = self.transforms[ruleset]
         curr = startrun
@@ -342,6 +377,8 @@ class Keyboard(object):
         currbaseindex = curr
         while curr < end:
             codes = self._get_charcodes(instr, curr, trans)
+            if ctxt is not None:
+                ctxt.trace('Reorder codes({}) for "{}" {}'.format(len(codes), instr[curr:curr+len(codes)].encode("utf-8"), codes))
             for i, c in enumerate(codes):               # calculate sort key for each character in turn
                 if c.tertiary and curr + i > startrun:      # can't start with tertiary, treat as primary 0
                     key = SortKey(currprimary, currbaseindex, c.tertiary, curr + i)
@@ -373,7 +410,8 @@ class Keyboard(object):
 
     def _unreorder(self, instr):
         ''' Create a string that when reordered gives the input string.
-            This relies on well designed reorders, but is generally what happens.'''
+            This relies on well designed reorders, but is generally what happens.
+            Returns (unchanged prefix string, unreordered single cluster, "")'''
         end = 0
         trans = self.transforms['reorder']
         hitbase = False
@@ -440,6 +478,7 @@ class Keyboard(object):
         '''Handle the backspace transforms in response to bksp key'''
         instr = context.outputs[-1]
         instrlen = len(instr)
+        rule = None
         if ruleset not in self.transforms:
             (res, length, simple, slen) = self._default_backspace(instr)
         else:
@@ -452,17 +491,18 @@ class Keyboard(object):
                 res = UnicodeSets.struni(getattr(r.rule, 'to', ""))
                 # derive possible input string to lead to desired result
                 (orig, simple, _) = self._unreorder(instr[:-length]+res)
+                rule = r.rule
                 # this doesn't have to be accurate since we reset offsets
                 slen = instrlen - len(orig)
             else:       # no rule, so just remove a single character
                 (res, length, simple, slen) = self._default_backspace(instr)
         # replace the various between pass strings
         for x in ('base', 'simple'):
-            context.replace_end(x, slen, simple)
+            context.replace_end(x, slen, simple, rule=rule)
             # reset offset to start of replaced text (i.e. newly reordering text)
             context.offsets[context.index(x)] = len(context.outputs[context.index('simple')]) - len(simple)
         for x in ('reorder', 'final'):
-            context.replace_end(x, length, res)
+            context.replace_end(x, length, res, rule=rule)
         return True
 
 
@@ -479,8 +519,11 @@ class Rules(object):
             error.msg = "Missing @from attribute in rule"
             raise error
 
+        r = Rule(transform)
+        if error is not None:
+            r.context = (error.filename, error.lineno, error.offset)
         self.trie.append(f, transform.get('before', ''), \
-                transform.get('after', ''), Rule(transform), filterlist=onlyifin)
+                transform.get('after', ''), r, filterlist=onlyifin, normal="NFD")
 
     def match(self, s, ind=0):
         '''Finds the merged rule for the given passed in string.
@@ -529,21 +572,28 @@ class Context(object):
         'reorder' : 2,
         'final' : 3
     }
-    def __init__(self, chars=""):
+    def __init__(self, chars="", tracing=False):
         self.outputs = [""] * len(self.slotnames)   # stuff to pass to next layer
         self.outputs[0] = chars                     # and copy it to its output
         self.offsets = [0] * len(self.slotnames)    # pointer into last layer output
                                                     # corresponding to end of stables
         self.offsets[0] = len(chars)
         self.error = 0                              # are we in an error state?
+        self.enable_tracing = tracing
+        self.tracing_events = []
+        self.trace("Initialise with {}".format(repr(chars)))
 
-    def clone(self, chars=""):
+    def clone(self, chars="", tracing=False):
         '''Copy a context and add some more input to the result'''
         res = Context("")
         res.outputs = self.outputs[:]
         res.offsets = self.offsets[:]
         res.outputs[0] += chars
         res.offsets[0] += len(chars)
+        res.enable_tracing = self.enable_tracing
+        res.tracing_events = []
+        res.tracing = tracing
+        res.trace("Cloning as {}".format(repr(res.outputs[0])))
         return res
 
     def __str__(self):
@@ -568,8 +618,9 @@ class Context(object):
         '''Prepare output based on stables ready for more output to be added'''
         ind = self.index(name)
         self.outputs[ind] = self.outputs[ind][:self.offsets[ind]]
+        self.trace("Resetting {}, probably on transform entry".format(name))
 
-    def results(self, name, length, res):
+    def results(self, name, length, res, rule=None, comment=None):
         '''Remove from input, in effect, and update offsets'''
         ind = self.index(name)
         leftlen = len(self.outputs[ind-1]) - self.offsets[ind] - length
@@ -577,15 +628,29 @@ class Context(object):
         self.outputs[ind] += res
         if leftlen > prevleft:
             self.offsets[ind] += len(res)
+        self.trace_replacement("Consumed", length, name, res, rule=rule, comment=comment)
 
-    def replace_end(self, name, backup, res):
+    def replace_end(self, name, backup, res, rule=None, comment=None):
         ind = self.index(name)
         out = self.outputs[ind]
         start = len(out) - backup
         self.outputs[ind] = out[:-backup] + res
         if start < self.offsets[ind]:
             self.offsets[ind] = start
+        self.trace_replacement("Truncated", backup, name, res, rule=rule, comment=comment)
 
+    def trace_replacement(self, txt, length, name, res, rule=None, comment=None):
+        if self.enable_tracing:
+            extra = ""
+            if comment is not None:
+                extra += " " + comment
+            if rule is not None and hasattr(rule, 'context'):
+                extra += " in rule {}:{} col {}".format(*rule.context)
+            self.trace("{}({}) from {}, replaced with {}{}".format(txt, length, name, repr(res), extra))
+
+    def trace(self, txt):
+        if self.enable_tracing:
+            self.tracing_events.append(txt)
 
 def main():
     '''Process a testfile of key sequences, one sequence per line,

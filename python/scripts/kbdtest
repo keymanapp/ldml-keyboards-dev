@@ -1,15 +1,40 @@
 #!/usr/bin/python
+# Redistribution and use in source and binary forms, with or without
+# modification, are permitted provided that the following conditions
+# are met:
+# 1. Redistributions of source code must retain the above copyright
+#    notice, this list of conditions and the following disclaimer.
+# 2. Redistributions in binary form must reproduce the above copyright
+#    notice, this list of conditions and the following disclaimer in the
+#    documentation and/or other materials provided with the distribution.
+# 3. Neither the name of the University nor the names of its contributors
+#    may be used to endorse or promote products derived from this software
+#    without specific prior written permission.
+# 
+# THIS SOFTWARE IS PROVIDED BY THE REGENTS AND CONTRIBUTORS ``AS IS'' AND
+# ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+# IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+# ARE DISCLAIMED.  IN NO EVENT SHALL THE REGENTS OR CONTRIBUTORS BE LIABLE
+# FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL
+# DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS
+# OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+# HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT
+# LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
+# OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+# SUCH DAMAGE.
 
 from __future__ import print_function
 import argparse, sys, re, os
 from glob import glob
 from xml.etree import ElementTree as et
+import unicodedata as ud
+
 try:
-    from ldml_keyboard.ldml_keyboard import Keyboard
+    from ldml_keyboard.ldml_keyboard import Keyboard, Context
 except:
     import os
     sys.path.append(os.path.join(os.path.dirname(__file__), '../lib'))
-    from ldml_keyboard.ldml_keyboard import Keyboard
+    from ldml_keyboard.ldml_keyboard import Keyboard, Context
 
 def parse_key(keys):
     res = []
@@ -22,6 +47,12 @@ def parse_key(keys):
 def askey(k):
     return "[" + " ".join(k[1] + [k[0]]) + "]" 
 
+def asFull(s, full=False):
+    if full:
+        return " ".join("U+{:04X}".format(ord(x)) for x in s)
+    else:
+        return s.encode('utf-8')
+
 class TestError(BaseException):
     pass
 
@@ -29,12 +60,12 @@ class KeyTest():
     def __init__(self, kbd, fname, args):
         self.kbd = kbd
         self.fname = fname
-        self.history = []
         self.args = args
-        self.bksp_end = 0
+        self.reset()
 
     def reset(self):
         self.history = []
+        self.test_history = [""]
         self.bksp_end = 0
         self.kbd.initstring()
 
@@ -42,36 +73,53 @@ class KeyTest():
         self.bksp_end = len(self.history)
 
     def test(self, testid, tid, eid, res, test, iserror):
-        if unicode(res) != test or res.error != iserror:
+        failed = unicode(res) != test or res.error != iserror
+        if self.args.traceall or (self.args.tracing and failed):
+            print("Test: {}".format(testid))
+            print("    " + ("\n    ".join(res.tracing_events)))
+        if failed:
             s = u"{} {}: Failed event {} in test {}: {} should be {} with error {} to be {}".\
                 format(self.fname, testid, eid, tid, res, test, res.error, iserror)
             if self.args.full:
-                s += "\n    " + " ".join("U+{:04X}".format(ord(x)) for x in unicode(res)) \
-                    + " should be " + " ".join("U+{:04X}".format(ord(x)) for x in test)
+                s += "\n    " + asFull(unicode(res), True) + " should be " + asFull(test, True)
                 s += "\n    Keys pressed: " + " ".join(askey(x) for x in \
                                 reduce(lambda x,y: x+y, self.history, []))
             raise TestError(s)
 
     def basetest(self, keys, test, iserror, tid=0, eid=0):
         self.history.append(keys)
+        self.test_history.append(test)
         for k in keys:
-            res = kbd.process(*k)
+            res = self.kbd.process(*k)
         self.test('Base', tid, eid, res, test, iserror)
 
-    def bksptest(self, test, iserror, tid=0, eid=0):
+    def bksptest(self, test, iserror, tid=0, eid=0, info=""):
         for i in range(len(self.history)-self.bksp_end):
             numback = sum(map(len, self.history[-i-1:]))
             for j in range(numback):
                 res = self.kbd.process("BKSP", [])
+                if 'diff' not in info:
+                    self.test("BKSP({}/{})".format(i+1, j+1), tid, eid, res, self.test_history[-j-2], iserror)
             actions = reduce(lambda x,y: x+y, self.history[-i-1:], [])
             for a in actions:
                 res = self.kbd.process(*a)
             try:
-                self.test("BKSP({})".format(i+1), tid, eid, res, test, iserror)
+                self.test("BKSP_redo({})".format(i+1), tid, eid, res, test, iserror)
                 self.kbd.undo(2 * numback)
             except TestError as e:
                 self.kbd.undo(2 * numback)
                 raise e
+
+    def normaltest(self, test, iserror, tid=0, eid=0):
+        for form in ('NFC', 'NFD'):
+            if ud.normalize(form, test) != test:
+                s = unicode(self.kbd.history[-2]) if len(self.kbd.history) > 1 else u""
+                s = ud.normalize(form, s)
+                for k in self.history[-1]:
+                    res = self.kbd.process(*k, context=s)
+                rstr = Context(ud.normalize(form, unicode(res)), tracing=(self.args.tracing or self.args.traceall))
+                rstr.error = res.error
+                self.test(form, tid, eid, rstr, ud.normalize(form, test), iserror)
 
 
 parser = argparse.ArgumentParser()
@@ -80,14 +128,19 @@ parser.add_argument('infile',nargs='?',help='Input test .xml file')
 parser.add_argument('-d','--id',help='Only run this given test')
 parser.add_argument('-q','--quiet',action='store_true', help="Minimise output")
 parser.add_argument('-F','--full', action="store_true", help="Output full error messages")
+parser.add_argument('-t','--tracing', action='store_true', help="Give tracing info on failure")
+parser.add_argument('-T','--traceall', action='store_true', help='Trace all test phases')
 args = parser.parse_args()
 
 # a fun way to run this program: find -name \*.ldml -exec python/scripts/kbdtest -F \{\} \;
 
 kbd = Keyboard(args.kbdfile)
+if args.tracing or args.traceall:
+    kbd.tracing = True
 if args.infile is None:
     path = os.path.dirname(args.kbdfile)
-    fnames = glob(os.path.join(path, '*.xml'))
+    fnames = [x for x in glob(os.path.join(path, '*.xml')) \
+                if not os.path.samefile(x, args.kbdfile)]
 else:
     fnames = [args.infile]
 
@@ -106,18 +159,20 @@ for fn in fnames:
         tester.reset()
         for i, e in enumerate(t.findall('.//event')):
             keys = parse_key(e.get('key'))
-            test = e.get('output', "")
+            test = re.sub(r"\\u([0-9A-Fa-f]{4,6})", lambda m: unichr(int(m.group(1), 16)), e.get('output', ""))
             iserror = e.get('error', '') == 'fail'
             skips = e.get('skip', '').split(' ')
+            bksp = e.get('bksp', '')
             try:
-                if 'base' not in skips:
-                    tester.basetest(keys, test, iserror, tid, i+1)
+                tester.basetest(keys, test, iserror, tid, i+1)
                 if 'bksp' not in skips and "[BKSP]" not in e.get('key'):
-                    tester.bksptest(test, iserror, tid, i+1)
+                    tester.bksptest(test, iserror, tid, i+1, bksp)
                 else:
                     tester.reset_bksp_end()
+                if 'normal' not in skips:
+                    tester.normaltest(test, iserror, tid, i+1)
             except TestError as e:
-                print(unicode(e))
+                print(unicode(e).encode("utf-8"))
                 errors += 1
     print()
     if errors > 0:

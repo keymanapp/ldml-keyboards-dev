@@ -24,10 +24,11 @@
 # SUCH DAMAGE.
 
 
-import re
+import re, sys
+import unicodedata
 
-hexescre = re.compile(ur"(?:\\(?:ux)\{([0-9a-fA-F]+)\}|\\u([0-9a-fA-F]{4})|\\U([0-9a-fA-F]{8})|\\x([0-9a-fA-F]{2}))")
-hexgre = re.compile(ur"\\u\{([0-9a-fA-F]+)\}")
+hexescre = re.compile(r"(?:\\(?:[ux])\{([0-9a-fA-F]+)\}|\\u([0-9a-fA-F]{4})|\\U([0-9a-fA-F]{8})|\\x([0-9a-fA-F]{2}))")
+hexgre = re.compile(r"\\u\{([0-9a-fA-F]+)\}")
 simpleescs = {
     'a' : u"\u0007",
     'b' : u"\u0008",
@@ -38,9 +39,11 @@ simpleescs = {
     'r' : u"\u000D",
     '\\' : u"\u005C"
 }
-simpleescsre = re.compile(ur"\\([^0-9])")
-groupsre = re.compile(ur"\\([0-9]+)")
+simpleescsre = re.compile(r"\\([^0-9])")
+groupsre = re.compile(r"\\([0-9]+)")
 
+if sys.version_info.major > 2:
+    unichr = chr
 
 def us2list(text):
     """Convert a string of Unicode Sets into a list of strings."""
@@ -159,8 +162,8 @@ def _expand(p, vals, ind, indval):
 
 def flatten(s):
     p = parse(s)
-    vals = map(sorted, p)
-    lens = map(len, vals)
+    vals = [sorted(x) for x in p]
+    lens = [len(x) for x in vals]
     num = len(vals)
     indices = [0] * num
     if num:
@@ -187,7 +190,7 @@ def struni(s, groups=None):
     return s
 
 
-def parse(s):
+def parse(s, normal=None):
     '''Returns a sequence of UnicodeSet'''
     # convert escapes
     s = hexescre.sub(lambda m:escapechar(unichr(int(m.group(m.lastindex), 16))), s)
@@ -206,6 +209,8 @@ def parse(s):
             res.groups.append((currgroup, len(res)))
         if len(nextitem):
             res.append(nextitem)
+    if normal is not None:
+        res = [UnicodeSet(unicodedata.normalize(normal, c) for c in s) for s in res]
     return res
 
 
