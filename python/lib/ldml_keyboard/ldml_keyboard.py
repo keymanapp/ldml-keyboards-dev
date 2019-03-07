@@ -514,7 +514,7 @@ class Rules(object):
 
     def append(self, transform, onlyifin=None, error=None):
         '''Insert or transform element into this set of rules'''
-        f = transform.get('from')
+        f = unicode(transform.get('from'))
         if f is None and error is not None:
             error.msg = "Missing @from attribute in rule"
             raise error

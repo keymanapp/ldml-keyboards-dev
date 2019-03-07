@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <keyboard locale="my-sil-visualorder1">
     <version platform="1" number="$Revision$"/>
     <import path="shared/default.xml"/>
