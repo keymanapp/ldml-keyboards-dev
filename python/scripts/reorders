@@ -1,6 +1,6 @@
 #!/usr/bin/python
 
-import argparse, os, sys
+import argparse, os, sys, codecs
 
 try:
     from ldml_keyboard import ucd
@@ -104,7 +104,8 @@ tertiary_bases = set([0x102B, 0x102C, 0x102F, 0x1030, 0x1036, 0x1032, 0x1056, 0x
 # Parameters:
 #  z        Halant sequences can include preceding ZW(N)J
 #  nukta    The nukta in this script (not used)
-#  av       Halant may occur following a vowel where it does not join with a consonant
+#  av       Halant may occur after any of these chars (as vowels).
+#  avskip   List of string insertions for halant after vowel skipping
 #  rules    list of extra reorder rules
 #  hbefores Extra before contexts for halant+C reorder rules
 scriptmap = {
@@ -112,17 +113,19 @@ scriptmap = {
     'Bengali': {'z': True, 'nukta': u"\u09BC"}, 
     'Gurmukhi': {'z': True, 'nukta': u"\u0A3C"},
     'Gujarati': {'z': True, 'nukta': u"\u0ABC"},
+    'Kannada': {'av': u"\u0CBF\u0CC0\u0CC1\u0CC2\u0CC6\u0CC7\u0CCA\u0CCB"},
     'Khmer': {'rules': (
         r'from="\u17D2\u179A" order="11" tertiary_base="true"',),
-              'z': True, 'av': False },
+              'z': True},
 #    'Mongolian' : { 'vs': "[\\u180B-\\u180D]" },
+    'Malayalam': {'av': u"\u0D3F\u0D40\u0D41\u0D42\u0D46\u0D47\u0D4A\u0D4B"},
     'Myanmar': {'rules': (
         r'from="[\u103D\u1082]\u103A" order="50"',
         r'from="[\u1004\u101B]\u103A\u1039" order="-1"'),
-                'vs': "\\uFE00", 'av': False},
-    'Tai_Tham' : {'hbefores': {'[\\u1A63\\u1A64\\u1A6D]' : 80,
-                               '[\\u1A63\\u1A64\\u1A6D][\\u1A55-\\u1A79]' : 80,},
-                'av': False},
+                'vs': "\\uFE00"},
+    'Tai_Tham' : {'av': u"\u1A63\u1A64\u1A6D", 'avskip': ["[\\u1A75-\\u1A79]"], 'avcorder': 80},
+    'Tamil': {'av': u"\u0BBF\u0BC0\u0BC1\u0BC2\u0BC6\u0BC7\u0BCA\u0BCB"},
+    'Telugu': {'av': u"\u0C3F\u0C40\u0C41\u0C42\u0C46\u0C47\u0C4A\u0C4B"},
 }
 
 # Extra final rules by script
@@ -190,7 +193,12 @@ def makeclass(vals):
 
 parser = argparse.ArgumentParser()
 parser.add_argument('path',help='Path to ucd')
+parser.add_argument('outfile', help='Output file')
 args = parser.parse_args()
+
+outf = codecs.open(args.outfile, "w", encoding="utf-8")
+def printf(s):
+    outf.write(s + "\n")
 
 unidb = ucd.UnicodeData(os.path.join(args.path, 'UnicodeData.txt'))
 scripts = ucd.CategoryFile(os.path.join(args.path, 'Scripts.txt'))
@@ -217,17 +225,17 @@ for i in xrange(0x20000):
     else:
         results.setdefault(s, {}).setdefault(o, []).append(i)
 
-print("""<?xml version="1.0" encoding="utf-8"?>
+printf("""<?xml version="1.0" encoding="utf-8"?>
 <keyboard>
     <reorders>""")
-print("        <!-- Unknowns {} -->".format(" ".join("\u{:04X}".format(x) for x in unknowns)))
+printf("        <!-- Unknowns {} -->".format(" ".join("\u{:04X}".format(x) for x in unknowns)))
 for k, v in sorted(results.items()):
-    print("")
-    print("        <!-- {} -->".format(k))
+    printf("")
+    printf("        <!-- {} -->".format(k))
     smap = scriptmap.get(k, {})
     hasvs = smap.get('vs', None)
     hasz = smap.get('z', False)
-    afterv = smap.get('av', True)
+    afterv = smap.get('av', None)
     hbefores = dict(((" before=\"{}\" ".format(x) if x else " "), y) for x, y in smap.get('hbefores', {}).items())
     for i, l in sorted(v.items()):
         if i == 0:
@@ -239,49 +247,38 @@ for k, v in sorted(results.items()):
             t = makeclass([v.get(0, [])])
             i = 120
             #t = makeclass([v.get(x, []) for x in range(60, 100)])
-            if afterv:
-                constraint = [' before="{1}" ']
-                if hasvs is not None:
-                    constraint.append(' before="{{1}}{}" '.format(hasvs))
-            else:
-                constraint = [' ']
-            hbefores.update((x, 10) for x in constraint)
+            if afterv is not None:
+                constraint = ' before="{}{{3}}" '.format(makeclass([ord(x)] for x in afterv))
+                i = 80
             if len(t):
-                for c, o in hbefores.items():
-                    print('        <reorder{}from="{{0}}{{1}}" order="{{2:d}}" tertiary_base="true"/>'.format(c).format(s, t, o))
-                    if hasz:
-                        print('        <reorder{}from="{{0}}[\\u200C\\u200D]{{1}}" order="{{2:d}}" tertiary_base="true"/>'.format(c).format(s, t, o))
-                n = v.get(-2, []) + v.get(-3, [])
-                nc = makeclass([n])
-                if len(nc) > 2 and afterv:
-                    print('        <reorder before="{1}{3}" from="{0}{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10, nc))
-                    if hasz:
-                        print('        <reorder before="{1}{3}" from="{0}[\\u200C\\u200D]{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10, nc))
-                    if hasvs is not None:
-                        print('        <reorder before="{1}{4}{3}" from="{0}{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10, nc, hasvs))
-                        if hasz:
-                            print('        <reorder before="{1}{4}{3}" from="{0}[\\u200C\\u200D]{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10, nc, vs))
+                printf('        <reorder from="{0}{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10))
+                if afterv is not None:
+                    printf('        <reorder{}from="{{0}}{{1}}" order="{{2}}" tertiary_base="true"/>'.format(constraint).format(s, t, "{:d} {:d}".format(i, smap.get('avcorder', 120)), ""))
+                    for sk in smap.get('avskip', []):
+                        printf('        <reorder{}from="{{0}}{{1}}" order="{{2}}" tertiary_base="true"/>'.format(constraint).format(s, t, "{:d} {:d}".format(i, smap.get('avcorder', 120)), sk))
+                if hasz:
+                    printf('        <reorder from="{0}[\\u200C\\u200D]{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10))
         else:
             tertiary_base = l[0] in tertiary_bases
 
         if i < 0:
-            print('        <reorder from="{}" tertiary="{:d}"/>'.format(s, -i))
+            printf('        <reorder from="{}" tertiary="{:d}"/>'.format(s, -i))
         elif tertiary_base:
-            print('        <reorder from="{}" order="{:d}" tertiary_base="true"/>'.format(s, i))
+            printf('        <reorder from="{}" order="{:d}" tertiary_base="true"/>'.format(s, i))
         else:
-            print('        <reorder from="{}" order="{:d}"/>'.format(s, i))
+            printf('        <reorder from="{}" order="{:d}"/>'.format(s, i))
     if k in scriptmap:
         for t in scriptmap[k].get('rules', []):
-            print('        <reorder {}/>'.format(t))
+            printf('        <reorder {}/>'.format(t))
 
-print("""    </reorders>
+printf("""    </reorders>
 
     <transforms type="final">""")
 
 for k,v in sorted(finals.items()):
-    print("\n        <!-- {} -->".format(k))
+    printf("\n        <!-- {} -->".format(k))
     for t in v:
-        print("        <transform {}/>".format(t))
+        printf("        <transform {}/>".format(t))
 
-print("""    </transforms>
+printf("""    </transforms>
 </keyboard>""")

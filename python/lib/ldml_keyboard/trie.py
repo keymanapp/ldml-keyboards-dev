@@ -30,8 +30,15 @@ Match = namedtuple('Match', ['offset', 'length', 'rule'])
 
 class Node(dict):
     def __init__(self, *a, **kw):
+        parent = None
+        if len(a) > 0:
+            parent = a[0]
+            a = a[1:]
         super(Node, self).__init__(*a, **kw)
         self.match = None
+        self.parent = parent
+        self.negmatch = None
+        self.negset = set()
 
 def filterset(seq, filterlist):
     return filter(len, (UnicodeSet([c for c in y if c in filterlist]) for y in seq))
@@ -67,7 +74,7 @@ class Trie(object):
 
         while len(self.forwards) <= len(beforec):
             self.forwards.append(Node())
-        jobs = [self.forwards[len(beforec)]]
+        jobs = [(self.forwards[len(beforec)], None)]
         for i in range(2):
             ocount = len(beforec)
             length = len(frc)
@@ -75,21 +82,31 @@ class Trie(object):
 
             for cset in beforec + frc + afterc:
                 newjobs = []
-                for j in jobs:
+                newnjobs = []
+                for j, n in jobs:
+                    if cset.negative:
+                        newnjobs.append((j, cset))
                     for c in cset:
                         if c == u'\uFDD1':
                             c = u'\u200B'
-                        newjobs.append(j.setdefault(c, Node()))
+                        newjobs.append((j.setdefault(c, Node(j)), c))
                 jobs = newjobs
-            for j in jobs:
+            for j, c in jobs:
                 if j.match is not None:
-                    if j.match.offset == ocount and j.match.length == length + ocount:
-                        j.match = Match(j.match.offset, j.match.length, \
-                                        j.match.rule._newmerge(rule))
-                    elif j.match.length < length:
-                        j.match = m
+                    j.match = self._override(j.match, m)
+                elif j.parent is not None and j.parent.negmatch is not None and c in j.parent.negset:
+                    j.match = self._override(j.parent.negmatch, m)
                 else:
                     j.match = m
+            for j, cset in newnjobs:
+                for c, sub in j.items():
+                    if c in cset or sub.match is None:
+                        continue
+                    if sub.match.offset == ocount and sub.match.length == length + ocount:
+                        sub.match = Match(ocount, length + ocount, \
+                                          sub.match.rule._newmerge(rule))
+                    elif sub.match.length < length:
+                        sub.match = m
 
             temp = afterc
             while len(self.backwards) <= len(afterc):
@@ -97,7 +114,15 @@ class Trie(object):
             afterc = list(reversed(beforec))
             beforec = list(reversed(temp))
             frc = list(reversed(frc))
-            jobs = [self.backwards[len(beforec)]]
+            jobs = [(self.backwards[len(beforec)], None)]
+
+    def _override(self, base, other):
+        if base.offset == other.offset and base.length == other.length:
+            return Match(base.offset, base.length, other.rule._newmerge(base.rule))
+        elif base.length < other.length:
+            return other
+        else:
+            return base
 
     def match(self, s, ind, skipbefore=False, base=None):
         if not len(s):
