@@ -104,7 +104,7 @@ class Trie(object):
                         continue
                     if sub.match.offset == ocount and sub.match.length == length + ocount:
                         sub.match = Match(ocount, length + ocount, \
-                                          sub.match.rule._newmerge(rule))
+                                          rule._newmerge(sub.match.rule))
                     elif sub.match.length < length:
                         sub.match = m
 
@@ -118,7 +118,7 @@ class Trie(object):
 
     def _override(self, base, other):
         if base.offset == other.offset and base.length == other.length:
-            return Match(base.offset, base.length, other.rule._newmerge(base.rule))
+            return Match(base.offset, base.length, base.rule._newmerge(other.rule))
         elif base.length < other.length:
             return other
         else:

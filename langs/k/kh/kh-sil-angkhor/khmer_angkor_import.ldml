@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard>
+    <reorders>
+        <reorder from="\u17D2\u179A" order="11" tertiary_base="true"/>
+    </reorders>
+    <transforms type="final">
+        <transform from="\u17C1\u17B8\u17BB" to="\u17CA\u17BE"/>
+        <transform from="\u17C1\u17B6\u17BB" to="\u17CA\u17C4"/>
+    </transforms>
+</keyboard>
