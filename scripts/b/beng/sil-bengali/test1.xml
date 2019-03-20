@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ldmlkeytests>
+    <test-sequence id="1">
+            <event key="[D01]" output=""/>
+            <event key="[shift C01]" output="&#x0986;" skip="bksp"/>
+    </test-sequence>
+
+    <test-sequence id="2">
+            <event key="[D01]" output=""/>
+            <event key="[shift C08]" output="&#x0996;" skip="bksp"/>
+    </test-sequence>
+</ldmlkeytests>
+

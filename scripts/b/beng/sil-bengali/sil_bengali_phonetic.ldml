@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
+<keyboard locale="und-Zyyy">
+	<version number="1" platform="1"/>
+	<import path="shared/en-us-win.xml"/>
+	<names>
+		<name value="Unknown"/>
+	</names>
+	<keyMap modifiers="">
+		<map iso="B01" to="শ"/>
+		<map iso="B02" to="\u{09CD}"/>
+		<map iso="B03" to="চ"/>
+		<map iso="B04" to="ড"/>
+		<map iso="B05" to="ব"/>
+		<map iso="B06" to="ন"/>
+		<map iso="B07" to="ম"/>
+		<map iso="B09" to="।"/>
+		<map iso="C01" to="\u{09BE}"/>
+		<map iso="C02" to="স"/>
+		<map iso="C03" to="দ"/>
+		<map iso="C04" to="ট"/>
+		<map iso="C05" to="গ"/>
+		<map iso="C06" to="হ"/>
+		<map iso="C07" to="জ"/>
+		<map iso="C08" to="ক"/>
+		<map iso="C09" to="ল"/>
+		<map iso="D01" to="\u{FDD2}"/>
+		<map iso="D02" to="ৱ"/>
+		<map iso="D03" to="\u{09C7}"/>
+		<map iso="D04" to="র"/>
+		<map iso="D05" to="ত"/>
+		<map iso="D06" to="য"/>
+		<map iso="D07" to="\u{09C1}"/>
+		<map iso="D08" to="\u{09BF}"/>
+		<map iso="D09" to="\u{09CB}"/>
+		<map iso="D10" to="প"/>
+		<map iso="E00" to="\u{0981}"/>
+		<map iso="E01" to="১"/>
+		<map iso="E02" to="২"/>
+		<map iso="E03" to="৩"/>
+		<map iso="E04" to="৪"/>
+		<map iso="E05" to="৫"/>
+		<map iso="E06" to="৬"/>
+		<map iso="E07" to="৭"/>
+		<map iso="E08" to="৮"/>
+		<map iso="E09" to="৯"/>
+		<map iso="E10" to="০"/>
+	</keyMap>
+	<keyMap modifiers="shift">
+		<map iso="B03" to="ছ"/>
+		<map iso="B04" to="ঢ"/>
+		<map iso="B05" to="ভ"/>
+		<map iso="B06" to="ণ"/>
+		<map iso="B07" to="ঙ"/>
+		<map iso="B09" to="\u{09BC}"/>
+		<map iso="C01" to="\u{09D7}"/>
+		<map iso="C02" to="ষ"/>
+		<map iso="C03" to="ধ"/>
+		<map iso="C04" to="ঠ"/>
+		<map iso="C05" to="ঘ"/>
+		<map iso="C07" to="ঝ"/>
+		<map iso="C08" to="খ"/>
+		<map iso="D02" to="ঞ"/>
+		<map iso="D03" to="\u{09C8}"/>
+		<map iso="D04" to="\u{09C3}"/>
+		<map iso="D05" to="থ"/>
+		<map iso="D07" to="\u{09C2}"/>
+		<map iso="D08" to="\u{09C0}"/>
+		<map iso="D09" to="\u{09CC}"/>
+		<map iso="D10" to="ফ"/>
+		<map iso="E00" to="\u{0982}"/>
+	</keyMap>
+	<transforms type="simple">
+		<transform from="\u{FDD2}:" to="\u{0983}"/>
+		<transform from="\u{FDD2}L" to="ৡ"/>
+		<transform from="\u{FDD2}।" to="৷"/>
+		<transform from="\u{FDD2}ড" to="ড়"/>
+		<transform from="\u{FDD2}ঢ" to="ঢ়"/>
+		<transform from="\u{FDD2}ত" to="ৎ"/>
+		<transform from="\u{FDD2}য" to="য়"/>
+		<transform from="\u{FDD2}র" to="ৰ"/>
+		<transform from="\u{FDD2}ল" to="ঌ"/>
+		<transform from="\u{FDD2}\u{09BE}" to="অ"/>
+		<transform from="\u{FDD2}\u{09BF}" to="ই"/>
+		<transform from="\u{FDD2}\u{09C0}" to="ঈ"/>
+		<transform from="\u{FDD2}\u{09C1}" to="উ"/>
+		<transform from="\u{FDD2}\u{09C2}" to="ঊ"/>
+		<transform from="\u{FDD2}\u{09C3}" to="ৠ"/>
+		<transform from="\u{FDD2}\u{09C7}" to="এ"/>
+		<transform from="\u{FDD2}\u{09C8}" to="ঐ"/>
+		<transform from="\u{FDD2}\u{09CB}" to="ও"/>
+		<transform from="\u{FDD2}\u{09CC}" to="ঔ"/>
+		<transform from="\u{FDD2}\u{09D7}" to="আ"/>
+	</transforms>
+	<transforms type="final">
+		<transform before="" from="\u{FDD2}" to=""/>
+	</transforms>
+</keyboard>

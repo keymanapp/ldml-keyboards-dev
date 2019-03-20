@@ -169,7 +169,7 @@ for fn in fnames:
                     tester.bksptest(test, iserror, tid, i+1, bksp)
                 else:
                     tester.reset_bksp_end()
-                if 'normal' not in skips:
+                if 'normal' not in skips and len(test):
                     tester.normaltest(test, iserror, tid, i+1)
             except TestError as e:
                 print(unicode(e).encode("utf-8"))

@@ -463,7 +463,7 @@ class Keyboard(object):
             Returns replacement output string, length of output consumed,
             replacement pre reordered text, length of pre reordered text consumed."""
         if 'reorder' not in self.transforms:
-            return ("", 1, "", instr[:-1])
+            return ("", 1, "", 0)
         # derive a possible input string to reorder
         (orig, simple, _) = self._unreorder(instr)
         slen = len(simple)
