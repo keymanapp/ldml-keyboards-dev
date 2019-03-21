@@ -284,7 +284,8 @@ class Keyboard(object):
                 context.results(ruleset, r.length, UnicodeSets.struni(getattr(r.rule, 'to', "")), rule=r.rule)
                 curr += r.length
             elif r.length == 0 and not fallback and (not r.morep or not partial):     # abject failure
-                context.results(ruleset, 1, instr[curr:curr+1], comment="Fallthrough")
+                #context.results(ruleset, 1, instr[curr:curr+1], comment="Fallthrough")
+                context.outputs[context.index(ruleset)] += instr[curr:curr+1]
                 curr += 1
             else:               # partial match waiting for more input
                 break
@@ -463,7 +464,7 @@ class Keyboard(object):
             Returns replacement output string, length of output consumed,
             replacement pre reordered text, length of pre reordered text consumed."""
         if 'reorder' not in self.transforms:
-            return ("", 1, "", 0)
+            return ("", 1, "", 1)
         # derive a possible input string to reorder
         (orig, simple, _) = self._unreorder(instr)
         slen = len(simple)

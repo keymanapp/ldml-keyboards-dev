@@ -159,7 +159,7 @@ for fn in fnames:
         tester.reset()
         for i, e in enumerate(t.findall('.//event')):
             keys = parse_key(e.get('key'))
-            test = re.sub(r"\\u([0-9A-Fa-f]{4,6})", lambda m: unichr(int(m.group(1), 16)), e.get('output', ""))
+            test = unicode(re.sub(r"\\u([0-9A-Fa-f]{4,6})", lambda m: unichr(int(m.group(1), 16)), e.get('output', "")))
             iserror = e.get('error', '') == 'fail'
             skips = e.get('skip', '').split(' ')
             bksp = e.get('bksp', '')
