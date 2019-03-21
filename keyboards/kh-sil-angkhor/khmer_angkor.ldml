@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
-<keyboard locale="und-Zyyy">
+<keyboard locale="kh-Khmr">
 	<version number="1" platform="1"/>
-	<import path="../../../../shared/en-us-win.xml"/>
+	<import path="shared/en-us-win.xml"/>
 	<names>
-		<name value="Unknown"/>
+		<name value="Khmer Angkor"/>
 	</names>
 	<keyMap modifiers="">
 		<map iso="B00" to="ឮ"/>
@@ -246,15 +246,15 @@
 		<map iso="space" to=" "/>
 	</keyMap>
 	<transforms type="simple">
-		<transform before="[ឆឈតទបផមលស]\u{17D2}អ\u{17C9}" from="" to="" comment="[any(c_combo_qa), u'\u17d2', u'\u17a2'] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
-		<transform before="[មល]\u{17D2}[ងបមយរលវ]\u{17CA}" from="" to="" comment="[u'\u1798', u'\u17d2', any(c_2nd_combo_mo)] + [slash] &gt; [Token('KEYWORD', u'context'), u'\u17ca', Token('KEYWORD', u'beep')]" error="fail"/>
-		<transform before="[មលវឣ]\u{17D2}[សហ]\u{17C9}" from="" to="" comment="[u'\u1798', u'\u17d2', any(c_1st_combo_mo)] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
-		<transform before="[លសអ]\u{17D2}[បមយរលវ]\u{17C9}" from="" to="" comment="[u'\u179b', u'\u17d2', any(c_1st_combo_lo)] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
-		<transform before="[សអ]\u{17D2}[ងញន]\u{17C9}" from="" to="" comment="[u'\u179f', u'\u17d2', any(c_combo_sa)] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
-		<transform before="\u{17D2}[កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ]\u{17CB}" from="" to="" comment="[u'\u17d2', any(c_out)] + [quote] &gt; [Token('KEYWORD', u'context'), Token('KEYWORD', u'beep')]" error="fail"/>
-		<transform before="[ងញមយរវ\u{17C9}\u{17CA}][\u{17CA}\u{17CB}]" from="" to="" comment="[any(shiftable_c_2nd)] + [slash] &gt; [Token('KEYWORD', u'context'), u'\u17ca', Token('KEYWORD', u'beep')]" error="fail"/>
-		<transform before="[សហអ\u{17CA}]\u{17C9}" from="" to="" comment="[any(shiftable_c_1st)] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
-		<transform before="[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}\u{17C6}\u{17C7}\u{17C8}]\u{17CB}" from="" to="" comment="[any(v_gen)] + [quote] &gt; [Token('KEYWORD', u'context'), Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="[ឆឈតទបផមលស]\u{17D2}អ" from="\u{17C9}" to="\u{17C9}" comment="[any(c_combo_qa), u'\u17d2', u'\u17a2'] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="[មល]\u{17D2}[ងបមយរលវ]" from="\u{17CA}" to="\u{17CA}" comment="[u'\u1798', u'\u17d2', any(c_2nd_combo_mo)] + [slash] &gt; [Token('KEYWORD', u'context'), u'\u17ca', Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="[មលវឣ]\u{17D2}[សហ]" from="\u{17C9}" to="\u{17C9}" comment="[u'\u1798', u'\u17d2', any(c_1st_combo_mo)] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="[លសអ]\u{17D2}[បមយរលវ]" from="\u{17C9}" to="\u{17C9}" comment="[u'\u179b', u'\u17d2', any(c_1st_combo_lo)] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="[សអ]\u{17D2}[ងញន]" from="\u{17C9}" to="\u{17C9}" comment="[u'\u179f', u'\u17d2', any(c_combo_sa)] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="\u{17D2}[កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ]" from="\u{17CB}" to="\u{17CB}" comment="[u'\u17d2', any(c_out)] + [quote] &gt; [Token('KEYWORD', u'context'), Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="[ងញមយរវ\u{17C9}\u{17CA}]" from="set([u'\u17cb', u'\u17ca'])" to="set([u'\u17cb', u'\u17ca'])" comment="[any(shiftable_c_2nd)] + [slash] &gt; [Token('KEYWORD', u'context'), u'\u17ca', Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="[សហអ\u{17CA}]" from="\u{17C9}" to="\u{17C9}" comment="[any(shiftable_c_1st)] + [shift quote] &gt; [Token('KEYWORD', u'context'), u'\u17c9', Token('KEYWORD', u'beep')]" error="fail"/>
+		<transform before="[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}\u{17C6}\u{17C7}\u{17C8}]" from="\u{17CB}" to="\u{17CB}" comment="[any(v_gen)] + [quote] &gt; [Token('KEYWORD', u'context'), Token('KEYWORD', u'beep')]" error="fail"/>
 		<transform before="[ងញមយរវ]" from="\u{17B6}\u{17C6}\u{17BB}" to="\u{17C9}\u{17B6}\u{17C6}" comment="[any(shiftable_c_2nd), u'\u17b6', u'\u17c6'] + [u] &gt; [(Token('KEYWORD', u'context'), 1), u'\u17c9', (Token('KEYWORD', u'context'), 2), (Token('KEYWORD', u'context'), 3)]"/>
 		<transform before="[សហអ]" from="\u{17B6}\u{17C6}\u{17BB}" to="\u{17CA}\u{17B6}\u{17C6}" comment="[any(shiftable_c_1st), u'\u17b6', u'\u17c6'] + [u] &gt; [(Token('KEYWORD', u'context'), 1), u'\u17ca', (Token('KEYWORD', u'context'), 2), (Token('KEYWORD', u'context'), 3)]"/>
 		<transform from="\u{17C7}\u{17C7}" to="\u{17C8}" comment="[u'\u17c7'] + [shift h] &gt; [u'\u17c8']"/>
@@ -262,27 +262,27 @@
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<transforms type="final">
-		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}][\u{17C6}\u{17C7}\u{17C8}]" from="" to="" comment="[u'\u17d2', any(shiftable_c_2nd), u'\u17ca', any(v_gen), any(v_pseudo)] + None &gt; [Token('KEYWORD', u'context')]"/>
-		<transform before="[ឆស]\u{17D2}ប[\u{17C9}\u{17CA}]" from="" to="" comment="[u'\u1786', u'\u17d2', u'\u1794', any(c_shifter)] + None &gt; [Token('KEYWORD', u'context')]"/>
-		<transform before="ប\u{17D2}យ[\u{17C9}\u{17CA}]" from="" to="" comment="[u'\u1794', u'\u17d2', u'\u1799', any(c_shifter)] + None &gt; [Token('KEYWORD', u'context')]"/>
-		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}[\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BE}]" from="" to="" comment="[u'\u17d2', any(shiftable_c_2nd), u'\u17ca', any(v_above)] + None &gt; [Token('KEYWORD', u'context')]"/>
-		<transform before="\u{17D2}រ\u{17D2}រ" from="" to="" comment="[u'\u17d2', u'\u179a', u'\u17d2', any(subcons)] + None &gt; [(Token('KEYWORD', u'context'), 3), (Token('KEYWORD', u'context'), 4), (Token('KEYWORD', u'context'), 1), (Token('KEYWORD', u'context'), 2)]"/>
-		<transform before="\u{17B6}[\u{17C6}\u{17C7}\u{17C8}]\u{17B6}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17B7}[\u{17C6}\u{17C7}\u{17C8}]\u{17B7}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17B8}[\u{17C6}\u{17C7}\u{17C8}]\u{17B8}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17B9}[\u{17C6}\u{17C7}\u{17C8}]\u{17B9}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17BA}[\u{17C6}\u{17C7}\u{17C8}]\u{17BA}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17BB}[\u{17C6}\u{17C7}\u{17C8}]\u{17BB}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17BC}[\u{17C6}\u{17C7}\u{17C8}]\u{17BC}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17BD}[\u{17C6}\u{17C7}\u{17C8}]\u{17BD}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17BE}[\u{17C6}\u{17C7}\u{17C8}]\u{17BE}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17BF}[\u{17C6}\u{17C7}\u{17C8}]\u{17BF}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17C0}[\u{17C6}\u{17C7}\u{17C8}]\u{17C0}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17C1}[\u{17C6}\u{17C7}\u{17C8}]\u{17C1}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17C2}[\u{17C6}\u{17C7}\u{17C8}]\u{17C2}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17C3}[\u{17C6}\u{17C7}\u{17C8}]\u{17C3}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17C4}[\u{17C6}\u{17C7}\u{17C8}]\u{17C4}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
-		<transform before="\u{17C5}[\u{17C6}\u{17C7}\u{17C8}]\u{17C5}" from="" to="" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}]" from="set([u'\u17c8', u'\u17c7', u'\u17c6'])" to="set([u'\u17c8', u'\u17c7', u'\u17c6'])" comment="[u'\u17d2', any(shiftable_c_2nd), u'\u17ca', any(v_gen), any(v_pseudo)] + None &gt; [Token('KEYWORD', u'context')]"/>
+		<transform before="[ឆស]\u{17D2}ប" from="set([u'\u17c9', u'\u17ca'])" to="set([u'\u17c9', u'\u17ca'])" comment="[u'\u1786', u'\u17d2', u'\u1794', any(c_shifter)] + None &gt; [Token('KEYWORD', u'context')]"/>
+		<transform before="ប\u{17D2}យ" from="set([u'\u17c9', u'\u17ca'])" to="set([u'\u17c9', u'\u17ca'])" comment="[u'\u1794', u'\u17d2', u'\u1799', any(c_shifter)] + None &gt; [Token('KEYWORD', u'context')]"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}" from="set([u'\u17b9', u'\u17b8', u'\u17ba', u'\u17b7', u'\u17be'])" to="set([u'\u17b9', u'\u17b8', u'\u17ba', u'\u17b7', u'\u17be'])" comment="[u'\u17d2', any(shiftable_c_2nd), u'\u17ca', any(v_above)] + None &gt; [Token('KEYWORD', u'context')]"/>
+		<transform before="\u{17D2}រ\u{17D2}" from="រ" to="រ" comment="[u'\u17d2', u'\u179a', u'\u17d2', any(subcons)] + None &gt; [(Token('KEYWORD', u'context'), 3), (Token('KEYWORD', u'context'), 4), (Token('KEYWORD', u'context'), 1), (Token('KEYWORD', u'context'), 2)]"/>
+		<transform before="\u{17B6}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17B6}" to="\u{17B6}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17B7}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17B7}" to="\u{17B7}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17B8}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17B8}" to="\u{17B8}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17B9}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17B9}" to="\u{17B9}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17BA}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BA}" to="\u{17BA}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17BB}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BB}" to="\u{17BB}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17BC}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BC}" to="\u{17BC}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17BD}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BD}" to="\u{17BD}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17BE}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BE}" to="\u{17BE}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17BF}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BF}" to="\u{17BF}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17C0}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C0}" to="\u{17C0}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17C1}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C1}" to="\u{17C1}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17C2}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C2}" to="\u{17C2}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17C3}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C3}" to="\u{17C3}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17C4}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C4}" to="\u{17C4}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
+		<transform before="\u{17C5}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C5}" to="\u{17C5}" comment="[any(v_gen), any(v_pseudo), any(v_gen)] + None &gt; [(Token('KEYWORD', u'context'), 3)]"/>
 		<transform before="ន\u{17D2}" from="ដ" to="ត" comment="[u'\u1793', u'\u17d2', u'\u178a'] + None &gt; [(Token('KEYWORD', u'context'), 1), (Token('KEYWORD', u'context'), 2), u'\u178f']"/>
 		<transform before="\u{17D2}" from="ដ\u{17B6}\u{17C6}\u{17D2}រ" to="ត\u{17D2}រ\u{17B6}\u{17C6}" comment="[u'\u17d2', u'\u178a', any(v_combo_n), u'\u17c6', u'\u17d2', u'\u179a'] + None &gt; [(Token('KEYWORD', u'context'), 1), u'\u178f', (Token('KEYWORD', u'context'), 5), (Token('KEYWORD', u'context'), 6), (Token('KEYWORD', u'context'), 3), (Token('KEYWORD', u'context'), 4)]"/>
 		<transform before="\u{17D2}" from="ដ\u{17B6}\u{17D2}រ" to="ត\u{17D2}រ\u{17B6}" comment="[u'\u17d2', u'\u178a', any(v_any), u'\u17d2', u'\u179a'] + None &gt; [(Token('KEYWORD', u'context'), 1), u'\u178f', (Token('KEYWORD', u'context'), 4), (Token('KEYWORD', u'context'), 5), (Token('KEYWORD', u'context'), 3)]"/>
@@ -5064,8 +5064,8 @@
 		<transform from="\u{17D2}\u{17C8}" to="\u{17C8}" comment="[u'\u17d2', any(v_any)] + None &gt; [(Token('KEYWORD', u'context'), 2)]"/>
 	</transforms>
 	<backspaces>
-		<backspace before="[\u{17B6}\u{17BB}\u{17C1}\u{17C2}\u{17C4}][\u{17C6}\u{17C7}]" from="" to="" comment="[any(v_combo_n), u'\u17c6'] + [bksp] &gt; [Token('KEYWORD', u'nul')]"/>
-		<backspace before="[\u{17B7}\u{17B8}\u{17B9}]\u{17C7}" from="" to="" comment="[any(v_combo_r), u'\u17c7'] + [bksp] &gt; [Token('KEYWORD', u'nul')]"/>
+		<backspace before="[\u{17B6}\u{17BB}\u{17C1}\u{17C2}\u{17C4}]" from="set([u'\u17c7', u'\u17c6'])" to="set([u'\u17c7', u'\u17c6'])" comment="[any(v_combo_n), u'\u17c6'] + [bksp] &gt; [Token('KEYWORD', u'nul')]"/>
+		<backspace before="[\u{17B7}\u{17B8}\u{17B9}]" from="\u{17C7}" to="\u{17C7}" comment="[any(v_combo_r), u'\u17c7'] + [bksp] &gt; [Token('KEYWORD', u'nul')]"/>
 	</backspaces>
 	<import path="khmer_angkor_import.ldml"/>
 </keyboard>

@@ -200,25 +200,27 @@ class Keyboard(object):
                 return self.error(ctxt)
         else:
             if not self._process_simple(ctxt):
-                return self.error()
+                self.error(ctxt)
             if 'simple2' in self.transforms:
                 if not self._process_simple(ctxt, 'simple2', handleSettings=False):
-                    return self.error()
+                    self.error(ctxt)
             self._process_reorder(ctxt)
             if not self._process_simple(ctxt, 'final', handleSettings=False):
-                return self.error()
+                self.error(ctxt)
         if context is None:
             self.history.append(ctxt)
         return ctxt
 
-    def error(self):
+    def error(self, ctxt = None):
         '''Set error state'''
-        if not len(self.history):
-            res = Context(tracing=self.tracing)
+        if ctxt is not None:
+            pass
+        elif not len(self.history):
+            ctxt = Context(tracing=self.tracing)
         else:
-            res = self.history[-1].clone()
-        res.error = 1
-        return res
+            ctxt = self.history[-1].clone()
+        ctxt.error = 1
+        return ctxt
 
     def map_key(self, k, mods):
         '''Apply the appropriate keyMap to a keystroke to get some chars'''
@@ -276,13 +278,14 @@ class Keyboard(object):
         while curr < len(instr):
             r = trans.match(instr, curr)
             if r.rule is not None:
-                if getattr(r.rule, 'error', 0): return False
                 if r.offset > 0:    # begin context
                     context.results(ruleset, r.offset, instr[curr:curr+r.offset], rule=r.rule)
                     r.length -= r.offset
                     curr += r.offset
                 context.results(ruleset, r.length, UnicodeSets.struni(getattr(r.rule, 'to', "")), rule=r.rule)
                 curr += r.length
+                if getattr(r.rule, 'error', 0):
+                    context.error = True
             elif r.length == 0 and not fallback and (not r.morep or not partial):     # abject failure
                 #context.results(ruleset, 1, instr[curr:curr+1], comment="Fallthrough")
                 context.outputs[context.index(ruleset)] += instr[curr:curr+1]
@@ -501,7 +504,7 @@ class Keyboard(object):
         for x in ('base', 'simple'):
             context.replace_end(x, slen, simple, rule=rule)
             # reset offset to start of replaced text (i.e. newly reordering text)
-            context.offsets[context.index(x)] = len(context.outputs[context.index('simple')]) - len(simple)
+            # context.offsets[context.index(x)] = len(context.outputs[context.index('simple')]) - len(simple)
         for x in ('reorder', 'final'):
             context.replace_end(x, length, res, rule=rule)
         return True

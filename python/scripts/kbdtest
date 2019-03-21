@@ -73,7 +73,9 @@ class KeyTest():
         self.bksp_end = len(self.history)
 
     def test(self, testid, tid, eid, res, test, iserror):
-        failed = unicode(res) != test or res.error != iserror
+        failed = unicode(res) != test
+        if iserror != -1:
+            failed = failed or res.error != iserror
         if self.args.traceall or (self.args.tracing and failed):
             print("Test: {}".format(testid))
             print("    " + ("\n    ".join(res.tracing_events)))
@@ -99,7 +101,7 @@ class KeyTest():
             for j in range(numback):
                 res = self.kbd.process("BKSP", [])
                 if 'diff' not in info:
-                    self.test("BKSP({}/{})".format(i+1, j+1), tid, eid, res, self.test_history[-j-2], iserror)
+                    self.test("BKSP({}/{})".format(i+1, j+1), tid, eid, res, self.test_history[-j-2], -1)
             actions = reduce(lambda x,y: x+y, self.history[-i-1:], [])
             for a in actions:
                 res = self.kbd.process(*a)

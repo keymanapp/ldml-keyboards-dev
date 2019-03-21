@@ -100,8 +100,8 @@
     <event key="[C02]" output="ស"/>
     <event key="[C07]" output="ស្"/>
     <event key="[D04]" output="ស្រ"/>
-    <event key="[shift C11]" output="ស្រ៉"/>
-    <event key="[shift D08]" output="ស្រ៊ី" skip="bksp"/>
+    <event key="[shift C11]" output="ស្រ៉" error="fail"/>
+    <event key="[shift D08]" output="ស្រ៊ី" skip="bksp" error="fail"/>
   </test-sequence>
 
   <test-sequence id="13a">
@@ -188,16 +188,16 @@
 
   <test-sequence id="13l">
     <event key="[C02]" output="ស"/>
-    <event key="[shift C11]" output="ស៉"/>
-    <event key="[D03]" output="ស៉េ"/>
+    <event key="[shift C11]" output="ស៉" error="fail"/>
+    <event key="[D03]" output="ស៉េ" error="fail"/>
     <event key="[shift D08]" output="ស៊ើ" skip="bksp"/>
     <event key="[B05]" output="ស៊ើប"/>
   </test-sequence>
 
   <test-sequence id="13m">
     <event key="[C02]" output="ស"/>
-    <event key="[shift C11]" output="ស៉"/>
-    <event key="[shift D08]" output="ស៊ី" skip="bksp"/>
+    <event key="[shift C11]" output="ស៉" error="fail"/>
+    <event key="[shift D08]" output="ស៊ី" skip="bksp" error="fail"/>
     <event key="[D03]" output="ស៊ើ" skip="bksp"/>
     <event key="[B05]" output="ស៊ើប"/>
   </test-sequence>
@@ -243,8 +243,8 @@
 
   <test-sequence id="14g">
     <event key="[C02]" output="ស"/>
-    <event key="[shift C11]" output="ស៉"/>
-    <event key="[shift C01]" output="ស៊ាំ" skip="bksp"/>
+    <event key="[shift C11]" output="ស៉" error="fail"/>
+    <event key="[shift C01]" output="ស៊ាំ" skip="bksp" error="fail"/>
   </test-sequence>
 
   <test-sequence id="1a">
@@ -267,8 +267,8 @@
 
   <test-sequence id="1d">
     <event key="[C02]" output="ស"/>
-    <event key="[shift C11]" output="ស៉"/>
-    <event key="[shift D08]" output="ស៊ី" skip="bksp"/>
+    <event key="[shift C11]" output="ស៉" error="fail"/>
+    <event key="[shift D08]" output="ស៊ី" skip="bksp" error="fail"/>
   </test-sequence>
 
   <test-sequence id="2a">
