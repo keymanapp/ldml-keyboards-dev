@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<keyboard>
+    <reorders>
+        <reorder from="\u1031" prebase="1"/>
+        <reorder from="\u1084" prebase="1"/>
+    </reorders>
+    <keyMap modifiers="">
+        <map iso="C01" to="\u1031"/>
+        <map iso="C02" to="\u1084"/>
+    </keyMap>
+</keyboard>
+

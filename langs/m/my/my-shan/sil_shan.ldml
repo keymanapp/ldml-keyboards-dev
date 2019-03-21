@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
+<keyboard locale="shn-Mymr">
+	<version number="1" platform="1"/>
+	<import path="shared/en-us-win.xml"/>
+	<names>
+		<name value="Shan (SIL)"/>
+	</names>
+	<keyMap modifiers="">
+		<map iso="B01" to="ၽ"/>
+		<map iso="B02" to="ထ"/>
+		<map iso="B03" to="ၶ"/>
+		<map iso="B04" to="လ"/>
+		<map iso="B05" to="ယ"/>
+		<map iso="B06" to="ၺ"/>
+		<map iso="B07" to="\u{1062}"/>
+		<map iso="C01" to="\u{200B}\u{1031}"/>
+		<map iso="C02" to="\u{200B}\u{1084}"/>
+		<map iso="C03" to="\u{102D}"/>
+		<map iso="C04" to="\u{103A}"/>
+		<map iso="C05" to="\u{103D}"/>
+		<map iso="C06" to="\u{1089}"/>
+		<map iso="C07" to="\u{1087}"/>
+		<map iso="C08" to="\u{102F}"/>
+		<map iso="C09" to="\u{1030}"/>
+		<map iso="C10" to="\u{1088}"/>
+		<map iso="D01" to="ၸ"/>
+		<map iso="D02" to="တ"/>
+		<map iso="D03" to="ၼ"/>
+		<map iso="D04" to="မ"/>
+		<map iso="D05" to="ဢ"/>
+		<map iso="D06" to="ပ"/>
+		<map iso="D07" to="ၵ"/>
+		<map iso="D08" to="င"/>
+		<map iso="D09" to="ဝ"/>
+		<map iso="D10" to="ႁ"/>
+	</keyMap>
+	<keyMap modifiers="altR">
+		<map iso="B01" to="\u{A9E4}"/>
+		<map iso="B02" to="ꩧ"/>
+		<map iso="C02" to="ဝ\u{A9E5}"/>
+		<map iso="C06" to="\u{FDD2}"/>
+		<map iso="D01" to="ၹ"/>
+		<map iso="D02" to="ꩦ"/>
+		<map iso="D09" to="\u{A9E1}"/>
+		<map iso="E01" to="၁"/>
+		<map iso="E02" to="၂"/>
+		<map iso="E03" to="၃"/>
+		<map iso="E04" to="၄"/>
+		<map iso="E05" to="၅"/>
+		<map iso="E06" to="၆"/>
+		<map iso="E07" to="၇"/>
+		<map iso="E08" to="၈"/>
+		<map iso="E09" to="၉"/>
+		<map iso="E10" to="၀"/>
+	</keyMap>
+	<keyMap modifiers="altR+shift">
+		<map iso="B02" to="ꩩ"/>
+		<map iso="D02" to="ꩨ"/>
+		<map iso="D09" to="\u{A9E2}"/>
+		<map iso="E01" to="႑"/>
+		<map iso="E02" to="႒"/>
+		<map iso="E03" to="႓"/>
+		<map iso="E04" to="႔"/>
+		<map iso="E05" to="႕"/>
+		<map iso="E06" to="႖"/>
+		<map iso="E07" to="႗"/>
+		<map iso="E08" to="႘"/>
+		<map iso="E09" to="႙"/>
+		<map iso="E10" to="႐"/>
+	</keyMap>
+	<keyMap modifiers="shift">
+		<map iso="B02" to="ꩪ"/>
+		<map iso="B03" to="\u{A9E0}"/>
+		<map iso="B04" to="ꩮ"/>
+		<map iso="B05" to="\u{103B}"/>
+		<map iso="B06" to="႟"/>
+		<map iso="B07" to="\u{1083}"/>
+		<map iso="B08" to="၊"/>
+		<map iso="B09" to="။"/>
+		<map iso="C01" to="\u{1035}"/>
+		<map iso="C02" to="\u{1085}"/>
+		<map iso="C03" to="\u{102E}"/>
+		<map iso="C04" to="\u{1082}\u{103A}"/>
+		<map iso="C05" to="\u{1082}"/>
+		<map iso="C06" to="\u{1037}"/>
+		<map iso="C07" to="\u{1086}"/>
+		<map iso="C08" to="ၾ"/>
+		<map iso="C09" to="\u{108A}"/>
+		<map iso="C10" to="\u{1038}"/>
+		<map iso="C11" to="“"/>
+		<map iso="D01" to="ꩡ"/>
+		<map iso="D02" to="ၻ"/>
+		<map iso="D03" to="\u{A9E3}"/>
+		<map iso="D04" to="႞"/>
+		<map iso="D05" to="\u{103C}"/>
+		<map iso="D06" to="ၿ"/>
+		<map iso="D07" to="ၷ"/>
+		<map iso="D08" to="ရ"/>
+		<map iso="D09" to="သ"/>
+		<map iso="D10" to="ႀ"/>
+	</keyMap>
+	<transforms type="simple">
+		<transform before="\u{1082}" from="\u{103A}" to=""/>
+		<transform from="\u{1037}\u{FDD2}" to="\u{1036}\u{1037}"/>
+		<transform from="\u{1086}\u{1037}\u{FDD2}" to="\u{1036}\u{1086}\u{1037}"/>
+	</transforms>
+	<import path="shared/reorders.xml"/>
+	<import path="sil_shan_reorder.xml"/>
+	<transforms type="final">
+		<transform from="\u{FDD2}" to=""/>
+	</transforms>
+	<backspaces>
+		<backspace before="\u{200B}" from="[\u{1031}\u{1084}]" to=""/>
+		<backspace from="င\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="င\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="တ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="တ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ထ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ထ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ပ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ပ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="မ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="မ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ယ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ယ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ရ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ရ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="လ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="လ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ဝ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ဝ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="သ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="သ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ဢ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ဢ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၵ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၵ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၶ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၶ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၷ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၷ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၸ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၸ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၺ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၺ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၻ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၻ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၼ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၼ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၽ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၽ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၾ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၾ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ၿ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၿ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ႀ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ႀ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ႁ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ႁ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="႞\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="႞\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="႟\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="႟\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="\u{A9E0}\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="\u{A9E0}\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="\u{A9E3}\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="\u{A9E3}\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ꩡ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ꩡ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ꩪ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ꩪ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="ꩮ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ꩮ\u{1084}" to="\u{FDDF}\u{1084}"/>
+	</backspaces>
+</keyboard>

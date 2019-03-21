@@ -41,7 +41,10 @@ class Node(dict):
         self.negset = set()
 
 def filterset(seq, filterlist):
-    return filter(len, (UnicodeSet([c for c in y if c in filterlist]) for y in seq))
+    return [UnicodeSet([c for c in y if c in filterlist]) for y in seq]
+
+def isempty(seq):
+    return any(len(x) == 0 for x in seq)
 
 class Trie(object):
     def __init__(self):
@@ -55,8 +58,11 @@ class Trie(object):
         afterc = parse(after, normal=normal) if after is not None else UnicodeSetSequence()
         if filterlist is not None:
             frc = filterset(frc, filterlist)
+            if isempty(frc): return
             beforec = filterset(beforec, filterlist)
+            if isempty(beforec): return
             afterc = filterset(afterc, filterlist)
+            if isempty(afterc): return
         if len(frc) == 0:
             return
 
