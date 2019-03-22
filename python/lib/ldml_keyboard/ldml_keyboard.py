@@ -204,6 +204,10 @@ class Keyboard(object):
             if 'simple2' in self.transforms:
                 if not self._process_simple(ctxt, 'simple2', handleSettings=False):
                     self.error(ctxt)
+            else:
+                ctxt.outputs[2] = ctxt.outputs[1][:]
+                ctxt.partials[2] = ctxt.partials[1]
+                ctxt.offsets[2] = ctxt.offsets[3]
             self._process_reorder(ctxt)
             if not self._process_simple(ctxt, 'final', handleSettings=False):
                 self.error(ctxt)
@@ -523,7 +527,7 @@ class Keyboard(object):
             else:       # no rule, so just remove a single character
                 (res, length, simple, slen) = self._default_backspace(instr)
         # replace the various between pass strings
-        for x in ('base', 'simple'):
+        for x in ('base', 'simple', 'simple2'):
             context.replace_end(x, slen, simple, rule=rule)
             # reset offset to start of replaced text (i.e. newly reordering text)
             # context.offsets[context.index(x)] = len(context.outputs[context.index('simple')]) - len(simple)
@@ -595,8 +599,9 @@ class Context(object):
     slotnames = {
         'base' : 0,
         'simple' : 1,
-        'reorder' : 2,
-        'final' : 3
+        'simple2' : 2,
+        'reorder' : 3,
+        'final' : 4
     }
     def __init__(self, chars="", tracing=False):
         self.outputs = [""] * len(self.slotnames)   # stuff to pass to next layer

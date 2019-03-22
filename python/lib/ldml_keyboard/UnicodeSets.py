@@ -210,7 +210,7 @@ def parse(s, normal=None):
         if len(nextitem):
             res.append(nextitem)
     if normal is not None:
-        res = [UnicodeSet(unicodedata.normalize(normal, c) for c in s) for s in res]
+        res = [UnicodeSet(unicodedata.normalize(normal, unicode(c)) for c in x) for x in res]
     return res
 
 

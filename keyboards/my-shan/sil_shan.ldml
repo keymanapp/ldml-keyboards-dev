@@ -101,17 +101,17 @@
 		<map iso="D10" to="ႀ"/>
 	</keyMap>
 	<transforms type="simple">
-		<transform before="\u{1082}" from="\u{103A}" to=""/>
+		<transform before="\u{1082}" from="\u{103A}" to="\u{103A}"/>
 		<transform from="\u{1037}\u{FDD2}" to="\u{1036}\u{1037}"/>
 		<transform from="\u{1086}\u{1037}\u{FDD2}" to="\u{1036}\u{1086}\u{1037}"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<import path="sil_shan_reorder.xml"/>
 	<transforms type="final">
-		<transform from="\u{FDD2}" to=""/>
+		<transform from="\u{FDD2}" to="\u{FDD2}"/>
 	</transforms>
 	<backspaces>
-		<backspace before="\u{200B}" from="[\u{1031}\u{1084}]" to=""/>
+		<backspace before="\u{200B}" from="set([u'\u1031', u'\u1084'])" to="set([u'\u1031', u'\u1084'])"/>
 		<backspace from="င\u{1031}" to="\u{FDDF}\u{1031}"/>
 		<backspace from="င\u{1084}" to="\u{FDDF}\u{1084}"/>
 		<backspace from="တ\u{1031}" to="\u{FDDF}\u{1031}"/>
