@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
+<keyboard locale="lep-Lepc">
+	<version number="1" platform="1"/>
+	<import path="shared/en-us-win.xml"/>
+	<names>
+		<name value="SIL Lepcha"/>
+	</names>
+	<keyMap modifiers="">
+		<map iso="B01" to="ᰙ"/>
+		<map iso="B02" to="ᰄ"/>
+		<map iso="B03" to="ᰆ"/>
+		<map iso="B04" to="ᰟ"/>
+		<map iso="B05" to="ᰓ"/>
+		<map iso="B06" to="ᰍ"/>
+		<map iso="B07" to="ᰕ"/>
+		<map iso="B09" to="\u{1C37}"/>
+		<map iso="C01" to="ᰣ"/>
+		<map iso="C02" to="ᰠ"/>
+		<map iso="C03" to="ᰌ"/>
+		<map iso="C04" to="ᰑ"/>
+		<map iso="C05" to="ᰃ"/>
+		<map iso="C06" to="ᰝ"/>
+		<map iso="C07" to="ᰈ"/>
+		<map iso="C08" to="ᰀ"/>
+		<map iso="C09" to="ᰜ"/>
+		<map iso="C11" to="᰻"/>
+		<map iso="D01" to="ᰗ"/>
+		<map iso="D02" to="ᰢ"/>
+		<map iso="D03" to="\u{1C2C}"/>
+		<map iso="D04" to="ᰛ"/>
+		<map iso="D05" to="ᰊ"/>
+		<map iso="D06" to="ᰚ"/>
+		<map iso="D07" to="\u{1C2A}"/>
+		<map iso="D08" to="\u{1C27}"/>
+		<map iso="D09" to="\u{1C28}"/>
+		<map iso="D10" to="ᰎ"/>
+		<map iso="E01" to="᱁"/>
+		<map iso="E02" to="᱂"/>
+		<map iso="E03" to="᱃"/>
+		<map iso="E04" to="᱄"/>
+		<map iso="E05" to="᱅"/>
+		<map iso="E06" to="᱆"/>
+		<map iso="E07" to="᱇"/>
+		<map iso="E08" to="᱈"/>
+		<map iso="E09" to="᱉"/>
+		<map iso="E10" to="᱀"/>
+		<map iso="E12" to="᰽"/>
+	</keyMap>
+	<keyMap modifiers="shift">
+		<map iso="B01" to="᰿"/>
+		<map iso="B02" to="ᱏ"/>
+		<map iso="B04" to="ᱍ"/>
+		<map iso="B06" to="\u{1C30}"/>
+		<map iso="B07" to="\u{1C2E}"/>
+		<map iso="C01" to="\u{1C26}"/>
+		<map iso="C03" to="\u{1C34}"/>
+		<map iso="C05" to="\u{1C35}"/>
+		<map iso="C08" to="\u{1C2D}"/>
+		<map iso="C09" to="\u{1C2F}"/>
+		<map iso="C11" to="᰼"/>
+		<map iso="D01" to="\u{1C25}"/>
+		<map iso="D02" to="ᱎ"/>
+		<map iso="D04" to="\u{1C32}"/>
+		<map iso="D05" to="\u{1C33}"/>
+		<map iso="D06" to="\u{1C24}"/>
+		<map iso="D07" to="\u{1C2B}"/>
+		<map iso="D09" to="\u{1C29}"/>
+		<map iso="D10" to="\u{1C31}"/>
+		<map iso="E11" to="\u{1C36}"/>
+		<map iso="E12" to="᰾"/>
+	</keyMap>
+	<transforms type="simple">
+		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="[\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" to="" error="fail"/>
+		<transform before="[\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C26}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="[\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" to="" error="fail"/>
+		<transform before="[\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C2D}" to="" error="fail"/>
+		<transform from="ᰀᰜ" to="ᰁ"/>
+		<transform from="ᰀᰝ" to="ᰂ"/>
+		<transform from="ᰃᰜ" to="ᰄ"/>
+		<transform from="ᰆᰝ" to="ᰇ"/>
+		<transform from="ᰊᰝ" to="ᰋ"/>
+		<transform from="ᰍᰃ" to="ᰅ"/>
+		<transform from="ᰍᰚ" to="ᰉ"/>
+		<transform from="ᰎᰜ" to="ᰏ"/>
+		<transform from="ᰎᰝ" to="ᰐ"/>
+		<transform from="ᰑᰜ" to="ᰒ"/>
+		<transform from="ᰓᰜ" to="ᰔ"/>
+		<transform from="ᰕᰜ" to="ᰖ"/>
+		<transform from="ᰗᰝ" to="ᰘ"/>
+		<transform from="ᰝᰜ" to="ᰞ"/>
+		<transform from="ᰠᰝ" to="ᰡ"/>
+	</transforms>
+	<import path="shared/reorders.xml"/>
+	<import path="sil-lepcha_reorder.xml"/>
+</keyboard>

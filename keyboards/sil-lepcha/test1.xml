@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ldmlkeytests>
+    <test-sequence id="1">
+        <event key="[B05]" output="&#x1C13;"/>
+        <event key="[C09]" output="&#x1C14;" skip="bksp"/>
+        <event key="[B09]" output="&#x1C14;&#x1C37;"/>
+        <event key="[D03]" output="&#x1C14;&#x1C37;&#x1C2C;"/>
+    </test-sequence>
+
+    <test-sequence id="2">
+        <event key="[D09]" output="&#x200B;&#x1C28;"/>
+        <event key="[C08]" output="&#x1C00;&#x1C28;" skip="bksp"/>
+        <event key="[C06]" output="&#x1C02;&#x1C28;" skip="bksp"/>
+        <event key="[shift B07]" output="&#x1C02;&#x1C28;&#x1C2E;" skip="bksp"/>
+        <event key="[shift C01]" output="&#x1C02;&#x1C28;&#x1C26;&#x1C2E;" skip="bksp"/>
+    </test-sequence>
+</ldmlkeytests>

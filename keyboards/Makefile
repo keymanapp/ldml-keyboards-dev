@@ -1,4 +1,8 @@
-subdirs = easy-chakma my-shan sil-yi kh-sil-angkhor
+subdirs = easy-chakma \
+        kh-sil-angkhor \
+        my-shan \
+        sil-lepcha \
+        sil-yi 
 
 .PHONY: all
 

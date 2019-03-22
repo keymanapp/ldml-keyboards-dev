@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<keyboard>
+    <reorders>
+        <reorder from="[\u1C27\u1C28\u1C29]" prebase="1"/>
+    </reorders>
+</keyboard>
