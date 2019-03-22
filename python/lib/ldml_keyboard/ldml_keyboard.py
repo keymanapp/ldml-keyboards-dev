@@ -255,7 +255,7 @@ class Keyboard(object):
         '''Copy layer input to output'''
         context.reset_output(ruleset)
         output = context.input(ruleset)[context.offset(ruleset):]
-        context.results(ruleset, len(output), output)
+        context.results(ruleset, context.offset(ruleset), len(output), output)
 
     def _process_simple(self, context, ruleset='simple', handleSettings=True):
         '''Handle a simple replacement transforms type'''
@@ -264,9 +264,9 @@ class Keyboard(object):
             return True
         trans = self.transforms[ruleset]
         if handleSettings:
-            partial = self.settings.get('transformPartial', "") == "hide"
-            fail = self.settings.get('transformFailure', "") == 'omit'
-            fallback = self.settings.get('fallback', "") == 'omit'
+            partial = self.settings.get('transformPartial', "") == "hide"   # partial match
+            fail = self.settings.get('transformFailure', "") == 'omit'      # unmatched sequence
+            fallback = self.settings.get('fallback', "") == 'omit'          # unmatched first char
         else:
             partial = False
             fail = False
@@ -279,17 +279,23 @@ class Keyboard(object):
             r = trans.match(instr, curr)
             if r.rule is not None:
                 if r.offset > 0:    # begin context
-                    context.results(ruleset, r.offset, instr[curr:curr+r.offset], rule=r.rule)
+                    context.results(ruleset, curr, r.offset, instr[curr:curr+r.offset], rule=r.rule)
                     r.length -= r.offset
                     curr += r.offset
-                context.results(ruleset, r.length, UnicodeSets.struni(getattr(r.rule, 'to', "")), rule=r.rule)
+                context.results(ruleset, curr, r.length, UnicodeSets.struni(getattr(r.rule, 'to', "")), rule=r.rule)
                 curr += r.length
                 if getattr(r.rule, 'error', 0):
                     context.error = True
-            elif r.length == 0 and not fallback and (not r.morep or not partial):     # abject failure
-                #context.results(ruleset, 1, instr[curr:curr+1], comment="Fallthrough")
-                context.outputs[context.index(ruleset)] += instr[curr:curr+1]
+            elif r.length == 0 and not r.morep and not fallback:     # abject failure
+                context.results(ruleset, curr, 1, instr[curr:curr+1], comment="Fallthrough")
                 curr += 1
+            elif r.morep and not partial:
+                l = r.length or 1
+                context.partial_results(ruleset, l, instr[curr:curr+l], comment="Partial")
+                curr += l
+            elif r.length != 0 and not r.morep and not fail:
+                context.results(ruleset, curr, r.length, instr[curr:curr+r.length], comment="Fail")
+                curr += r.length
             else:               # partial match waiting for more input
                 break
         return True
@@ -361,15 +367,15 @@ class Keyboard(object):
                 continue        # if didn't break inner loop, don't break outer loop
             break               # if we broke in the inner loop, break the outer loop
         if curr > startrun:     # just copy the odd characters across
-            context.results(ruleset, curr - startrun, instr[startrun:curr])
+            context.results(ruleset, curr, curr - startrun, instr[startrun:curr])
 
         for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), ruleset=ruleset, ctxt=context):
             if len(post):
                 # append and update processed marker
-                context.results(ruleset, len(ordered), ordered)
+                context.results(ruleset, curr, len(ordered), ordered, comment="Reordered")
             else:
                 # just append, ready to reprocess again
-                context.outputs[context.index(ruleset)] += ordered
+                context.partial_results(ruleset, len(ordered), ordered, comment="Partial reorder")
 
     def _reorder(self, instr, startrun=0, end=0, ruleset='reorder', ctxt=None):
         '''Presumes we are at the start of a cluster'''
@@ -470,13 +476,29 @@ class Keyboard(object):
             return ("", 1, "", 1)
         # derive a possible input string to reorder
         (orig, simple, _) = self._unreorder(instr)
+        olen = len(orig)
         slen = len(simple)
         # delete one char from it
         simple = simple[:-1]
         # recalculate output as a result
         (pref, res, post) = list(self._reorder(simple, end=len(simple), ruleset='reorder'))[0]
-        length = len(instr) - len(orig)
-        return (res, length, simple, slen)
+        for i in range(slen-1):
+            if simple[i] != instr[olen + i]:
+                slen += i
+                simple = simple[i:]
+                break
+        else:
+            slen = 1
+            simple = u""
+        length = len(res)
+        for i in range(len(res)):
+            if res[i] != instr[olen + i]:
+                length = i
+                res = res[i:]
+                break
+        else:
+            res = u""
+        return (res, len(instr) - olen - length, simple, slen)
 
     def _process_backspace(self, context, ruleset='backspace'):
         '''Handle the backspace transforms in response to bksp key'''
@@ -581,6 +603,7 @@ class Context(object):
         self.outputs[0] = chars                     # and copy it to its output
         self.offsets = [0] * len(self.slotnames)    # pointer into last layer output
                                                     # corresponding to end of stables
+        self.partials = [0] * len(self.slotnames)   # how much of my output is partial
         self.offsets[0] = len(chars)
         self.error = 0                              # are we in an error state?
         self.enable_tracing = tracing
@@ -592,6 +615,7 @@ class Context(object):
         res = Context("")
         res.outputs = self.outputs[:]
         res.offsets = self.offsets[:]
+        res.partials = self.partials[:]
         res.outputs[0] += chars
         res.offsets[0] += len(chars)
         res.enable_tracing = self.enable_tracing
@@ -621,26 +645,42 @@ class Context(object):
     def reset_output(self, name):
         '''Prepare output based on stables ready for more output to be added'''
         ind = self.index(name)
-        self.outputs[ind] = self.outputs[ind][:self.offsets[ind]]
-        self.trace("Resetting {}, probably on transform entry".format(name))
+        if self.partials[ind]:
+            self.outputs[ind] = self.outputs[ind][:-self.partials[ind]]
+            self.partials[ind] = 0
+        self.trace("Resetting {} by {} to {}, probably on transform entry".format(name, self.partials[ind], unicode(self.outputs[ind]).encode('unicode_escape')))
 
-    def results(self, name, length, res, rule=None, comment=None):
+    def partial_results(self, name, length, res, rule=None, comment=None):
+        ind = self.index(name)
+        self.outputs[ind] += res
+        self.partials[ind] += length
+        self.trace_replacement("Add Partial", length, name, res, rule=rule, comment=comment)
+
+    def results(self, name, start, length, res, rule=None, comment=None):
         '''Remove from input, in effect, and update offsets'''
         ind = self.index(name)
-        leftlen = len(self.outputs[ind-1]) - self.offsets[ind] - length
-        prevleft = len(self.outputs[ind-2]) - self.offsets[ind-1] if ind > 1 else 0
+        leftlen = len(self.outputs[ind-1]) - start - length
         self.outputs[ind] += res
-        if leftlen > prevleft:
-            self.offsets[ind] += len(res)
+        if leftlen >= self.partials[ind-1]:
+            self.offsets[ind] = start + length
+            self.partials[ind] = 0
+        else:
+            self.partials[ind] += len(res)
         self.trace_replacement("Consumed", length, name, res, rule=rule, comment=comment)
 
     def replace_end(self, name, backup, res, rule=None, comment=None):
         ind = self.index(name)
         out = self.outputs[ind]
-        start = len(out) - backup
         self.outputs[ind] = out[:-backup] + res
-        if start < self.offsets[ind]:
-            self.offsets[ind] = start
+        if ind < len(self.outputs) - 1:
+            if len(self.outputs[ind]) < self.offsets[ind+1]:
+                self.offsets[ind+1] = len(self.outputs[ind])
+        if self.partials[ind] >= backup:
+            self.partials[ind] += len(res) - backup
+        elif self.partials[ind] != 0:
+            self.partials[ind] = len(res)
+        if ind == 0:
+            self.offsets[ind] = len(self.outputs[ind])
         self.trace_replacement("Truncated", backup, name, res, rule=rule, comment=comment)
 
     def trace_replacement(self, txt, length, name, res, rule=None, comment=None):

@@ -106,7 +106,7 @@ class KeyTest():
             for a in actions:
                 res = self.kbd.process(*a)
             try:
-                self.test("BKSP_redo({})".format(i+1), tid, eid, res, test, iserror)
+                self.test("BKSP_redo({})".format(i+1), tid, eid, res, test, -1)
                 self.kbd.undo(2 * numback)
             except TestError as e:
                 self.kbd.undo(2 * numback)
