@@ -54,11 +54,11 @@
 		<map iso="E10" to="០"/>
 		<map iso="E11" to="ឥ"/>
 		<map iso="E12" to="ឲ"/>
-		<map iso="npdot" to="."/>
+		<map iso="npdot" to="\."/>
 		<map iso="npminus" to="-"/>
-		<map iso="npplus" to="+"/>
+		<map iso="npplus" to="\+"/>
 		<map iso="npslash" to="/"/>
-		<map iso="npstar" to="*"/>
+		<map iso="npstar" to="\*"/>
 		<map iso="space" to="\u{200B}"/>
 		<map iso="t17d21780" to="\u{17D2}ក"/>
 		<map iso="t17d21781" to="\u{17D2}ខ"/>
@@ -97,18 +97,18 @@
 		<map iso="t17d217a2" to="\u{17D2}អ"/>
 	</keyMap>
 	<keyMap modifiers="altR">
-		<map iso="B00" to="\"/>
+		<map iso="B00" to="\\"/>
 		<map iso="B01" to="&lt;"/>
 		<map iso="B02" to="&gt;"/>
 		<map iso="B03" to="#"/>
-		<map iso="B04" to="&amp;"/>
+		<map iso="B04" to="\&amp;"/>
 		<map iso="B05" to="ឞ"/>
 		<map iso="B06" to=";"/>
 		<map iso="B07" to="\u{17D3}"/>
 		<map iso="B08" to=","/>
-		<map iso="B09" to="."/>
+		<map iso="B09" to="\."/>
 		<map iso="B10" to="/"/>
-		<map iso="C01" to="+"/>
+		<map iso="C01" to="\+"/>
 		<map iso="C02" to="-"/>
 		<map iso="C03" to="×"/>
 		<map iso="C04" to="÷"/>
@@ -124,8 +124,8 @@
 		<map iso="D03" to="ឯ"/>
 		<map iso="D04" to="ឫ"/>
 		<map iso="D05" to="ឨ"/>
-		<map iso="D06" to="["/>
-		<map iso="D07" to="]"/>
+		<map iso="D06" to="\["/>
+		<map iso="D07" to="\]"/>
 		<map iso="D08" to="ឦ"/>
 		<map iso="D09" to="ឱ"/>
 		<map iso="D10" to="ឰ"/>
@@ -135,13 +135,13 @@
 		<map iso="E01" to="\u{200C}"/>
 		<map iso="E02" to="@"/>
 		<map iso="E03" to="\u{17D1}"/>
-		<map iso="E04" to="$"/>
+		<map iso="E04" to="\$"/>
 		<map iso="E05" to="€"/>
 		<map iso="E06" to="៙"/>
 		<map iso="E07" to="៚"/>
-		<map iso="E08" to="*"/>
-		<map iso="E09" to="{"/>
-		<map iso="E10" to="}"/>
+		<map iso="E08" to="\*"/>
+		<map iso="E09" to="\{"/>
+		<map iso="E10" to="\}"/>
 		<map iso="E11" to="≈"/>
 		<map iso="E12" to="\u{17CE}"/>
 		<map iso="space" to=" "/>
@@ -201,7 +201,7 @@
 		<map iso="B07" to="\u{17C6}"/>
 		<map iso="B08" to="\u{17BB}\u{17C7}"/>
 		<map iso="B09" to="៕"/>
-		<map iso="B10" to="?"/>
+		<map iso="B10" to="\?"/>
 		<map iso="C01" to="\u{17B6}\u{17C6}"/>
 		<map iso="C02" to="\u{17C3}"/>
 		<map iso="C03" to="ឌ"/>
@@ -234,15 +234,15 @@
 		<map iso="E06" to="\u{17CD}"/>
 		<map iso="E07" to="\u{17D0}"/>
 		<map iso="E08" to="\u{17CF}"/>
-		<map iso="E09" to="("/>
-		<map iso="E10" to=")"/>
+		<map iso="E09" to="\("/>
+		<map iso="E10" to="\)"/>
 		<map iso="E11" to="\u{17CC}"/>
 		<map iso="E12" to="="/>
-		<map iso="npdot" to="."/>
+		<map iso="npdot" to="\."/>
 		<map iso="npminus" to="-"/>
-		<map iso="npplus" to="+"/>
+		<map iso="npplus" to="\+"/>
 		<map iso="npslash" to="/"/>
-		<map iso="npstar" to="*"/>
+		<map iso="npstar" to="\*"/>
 		<map iso="space" to=" "/>
 	</keyMap>
 	<transforms type="simple">
@@ -251,38 +251,32 @@
 		<transform before="[មលវឣ]\u{17D2}[សហ]" from="\u{17C9}" to="\u{17C9}" error="fail"/>
 		<transform before="[លសអ]\u{17D2}[បមយរលវ]" from="\u{17C9}" to="\u{17C9}" error="fail"/>
 		<transform before="[សអ]\u{17D2}[ងញន]" from="\u{17C9}" to="\u{17C9}" error="fail"/>
-		<transform before="\u{17D2}[កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ]" from="\u{17CB}" to="\u{17CB}" error="fail"/>
-		<transform before="[ងញមយរវ\u{17C9}\u{17CA}]" from="set([u'\u17cb', u'\u17ca'])" to="set([u'\u17cb', u'\u17ca'])" error="fail"/>
-		<transform before="[សហអ\u{17CA}]" from="\u{17C9}" to="\u{17C9}" error="fail"/>
-		<transform before="[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}\u{17C6}\u{17C7}\u{17C8}]" from="\u{17CB}" to="\u{17CB}" error="fail"/>
+		<transform before="[ងញមយរវ]" from="\u{17CA}" to="\u{17CA}" error="fail"/>
+		<transform before="[សហអ]" from="\u{17C9}" to="\u{17C9}" error="fail"/>
 		<transform before="[ងញមយរវ]" from="\u{17B6}\u{17C6}\u{17BB}" to="\u{17C9}\u{17B6}\u{17C6}"/>
 		<transform before="[សហអ]" from="\u{17B6}\u{17C6}\u{17BB}" to="\u{17CA}\u{17B6}\u{17C6}"/>
 		<transform from="\u{17C7}\u{17C7}" to="\u{17C8}"/>
 		<transform from="\u{17C8}\u{17C7}" to="\u{17C7}"/>
+		<transform before="\u{17CA}" from="\u{17C9}" to="" error="fail"/>
+		<transform before="\u{17C9}" from="\u{17CA}" to="" error="fail"/>
+		<transform before="\u{17D2}[កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ]" from="\u{17CB}" to="" error="fail"/>
+		<transform before="[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}\u{17C6}\u{17C7}\u{17C8}\u{17C9}\u{17CA}]" from="\u{17CB}" to="" error="fail"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<transforms type="final">
-		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}]" from="set([u'\u17c8', u'\u17c7', u'\u17c6'])" to="set([u'\u17c8', u'\u17c7', u'\u17c6'])"/>
-		<transform before="[ឆស]\u{17D2}ប" from="set([u'\u17c9', u'\u17ca'])" to="set([u'\u17c9', u'\u17ca'])"/>
-		<transform before="ប\u{17D2}យ" from="set([u'\u17c9', u'\u17ca'])" to="set([u'\u17c9', u'\u17ca'])"/>
-		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}" from="set([u'\u17b9', u'\u17b8', u'\u17ba', u'\u17b7', u'\u17be'])" to="set([u'\u17b9', u'\u17b8', u'\u17ba', u'\u17b7', u'\u17be'])"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}]" from="\u{17C8}" to="\u{17C8}"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}]" from="\u{17C7}" to="\u{17C7}"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}]" from="\u{17C6}" to="\u{17C6}"/>
+		<transform before="[ឆស]\u{17D2}ប" from="\u{17C9}" to="\u{17C9}"/>
+		<transform before="[ឆស]\u{17D2}ប" from="\u{17CA}" to="\u{17CA}"/>
+		<transform before="ប\u{17D2}យ" from="\u{17C9}" to="\u{17C9}"/>
+		<transform before="ប\u{17D2}យ" from="\u{17CA}" to="\u{17CA}"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}" from="\u{17B9}" to="\u{17B9}"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}" from="\u{17B8}" to="\u{17B8}"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}" from="\u{17BA}" to="\u{17BA}"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}" from="\u{17B7}" to="\u{17B7}"/>
+		<transform before="\u{17D2}[ងញមយរវ]\u{17CA}" from="\u{17BE}" to="\u{17BE}"/>
 		<transform before="\u{17D2}រ\u{17D2}" from="រ" to="រ"/>
-		<transform before="\u{17B6}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17B6}" to="\u{17B6}"/>
-		<transform before="\u{17B7}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17B7}" to="\u{17B7}"/>
-		<transform before="\u{17B8}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17B8}" to="\u{17B8}"/>
-		<transform before="\u{17B9}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17B9}" to="\u{17B9}"/>
-		<transform before="\u{17BA}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BA}" to="\u{17BA}"/>
-		<transform before="\u{17BB}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BB}" to="\u{17BB}"/>
-		<transform before="\u{17BC}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BC}" to="\u{17BC}"/>
-		<transform before="\u{17BD}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BD}" to="\u{17BD}"/>
-		<transform before="\u{17BE}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BE}" to="\u{17BE}"/>
-		<transform before="\u{17BF}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17BF}" to="\u{17BF}"/>
-		<transform before="\u{17C0}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C0}" to="\u{17C0}"/>
-		<transform before="\u{17C1}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C1}" to="\u{17C1}"/>
-		<transform before="\u{17C2}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C2}" to="\u{17C2}"/>
-		<transform before="\u{17C3}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C3}" to="\u{17C3}"/>
-		<transform before="\u{17C4}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C4}" to="\u{17C4}"/>
-		<transform before="\u{17C5}[\u{17C6}\u{17C7}\u{17C8}]" from="\u{17C5}" to="\u{17C5}"/>
 		<transform before="ន\u{17D2}" from="ដ" to="ត"/>
 		<transform before="\u{17D2}" from="ដ\u{17B6}\u{17C6}\u{17D2}រ" to="ត\u{17D2}រ\u{17B6}\u{17C6}"/>
 		<transform before="\u{17D2}" from="ដ\u{17B6}\u{17D2}រ" to="ត\u{17D2}រ\u{17B6}"/>
@@ -4420,198 +4414,246 @@
 		<transform from="\u{17C5}\u{17C8}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C5}\u{17C8}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C5}\u{17C8}\u{17C8}" to="\u{17C8}"/>
+		<transform before="\u{17B6}" from="\u{17C6}\u{17B6}" to=""/>
 		<transform before="\u{17B6}" from="\u{17C6}\u{17B6}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17B6}\u{17C7}" to="\u{17B6}\u{17C7}"/>
 		<transform before="\u{17B6}" from="\u{17C6}\u{17B6}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17B6}\u{17C8}" to="\u{17B6}\u{17C8}"/>
+		<transform before="\u{17B7}" from="\u{17C6}\u{17B7}" to=""/>
 		<transform before="\u{17B7}" from="\u{17C6}\u{17B7}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17B7}\u{17C7}" to="\u{17B7}\u{17C7}"/>
 		<transform before="\u{17B7}" from="\u{17C6}\u{17B7}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17B7}\u{17C8}" to="\u{17B7}\u{17C8}"/>
+		<transform before="\u{17B8}" from="\u{17C6}\u{17B8}" to=""/>
 		<transform before="\u{17B8}" from="\u{17C6}\u{17B8}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17B8}\u{17C7}" to="\u{17B8}\u{17C7}"/>
 		<transform before="\u{17B8}" from="\u{17C6}\u{17B8}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17B8}\u{17C8}" to="\u{17B8}\u{17C8}"/>
+		<transform before="\u{17B9}" from="\u{17C6}\u{17B9}" to=""/>
 		<transform before="\u{17B9}" from="\u{17C6}\u{17B9}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17B9}\u{17C7}" to="\u{17B9}\u{17C7}"/>
 		<transform before="\u{17B9}" from="\u{17C6}\u{17B9}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17B9}\u{17C8}" to="\u{17B9}\u{17C8}"/>
+		<transform before="\u{17BA}" from="\u{17C6}\u{17BA}" to=""/>
 		<transform before="\u{17BA}" from="\u{17C6}\u{17BA}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17BA}\u{17C7}" to="\u{17BA}\u{17C7}"/>
 		<transform before="\u{17BA}" from="\u{17C6}\u{17BA}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17BA}\u{17C8}" to="\u{17BA}\u{17C8}"/>
+		<transform before="\u{17BB}" from="\u{17C6}\u{17BB}" to=""/>
 		<transform before="\u{17BB}" from="\u{17C6}\u{17BB}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17BB}\u{17C7}" to="\u{17BB}\u{17C7}"/>
 		<transform before="\u{17BB}" from="\u{17C6}\u{17BB}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17BB}\u{17C8}" to="\u{17BB}\u{17C8}"/>
+		<transform before="\u{17BC}" from="\u{17C6}\u{17BC}" to=""/>
 		<transform before="\u{17BC}" from="\u{17C6}\u{17BC}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17BC}\u{17C7}" to="\u{17BC}\u{17C7}"/>
 		<transform before="\u{17BC}" from="\u{17C6}\u{17BC}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17BC}\u{17C8}" to="\u{17BC}\u{17C8}"/>
+		<transform before="\u{17BD}" from="\u{17C6}\u{17BD}" to=""/>
 		<transform before="\u{17BD}" from="\u{17C6}\u{17BD}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17BD}\u{17C7}" to="\u{17BD}\u{17C7}"/>
 		<transform before="\u{17BD}" from="\u{17C6}\u{17BD}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17BD}\u{17C8}" to="\u{17BD}\u{17C8}"/>
+		<transform before="\u{17BE}" from="\u{17C6}\u{17BE}" to=""/>
 		<transform before="\u{17BE}" from="\u{17C6}\u{17BE}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17BE}\u{17C7}" to="\u{17BE}\u{17C7}"/>
 		<transform before="\u{17BE}" from="\u{17C6}\u{17BE}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17BE}\u{17C8}" to="\u{17BE}\u{17C8}"/>
+		<transform before="\u{17BF}" from="\u{17C6}\u{17BF}" to=""/>
 		<transform before="\u{17BF}" from="\u{17C6}\u{17BF}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17BF}\u{17C7}" to="\u{17BF}\u{17C7}"/>
 		<transform before="\u{17BF}" from="\u{17C6}\u{17BF}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17BF}\u{17C8}" to="\u{17BF}\u{17C8}"/>
+		<transform before="\u{17C0}" from="\u{17C6}\u{17C0}" to=""/>
 		<transform before="\u{17C0}" from="\u{17C6}\u{17C0}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17C0}\u{17C7}" to="\u{17C0}\u{17C7}"/>
 		<transform before="\u{17C0}" from="\u{17C6}\u{17C0}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17C0}\u{17C8}" to="\u{17C0}\u{17C8}"/>
+		<transform before="\u{17C1}" from="\u{17C6}\u{17C1}" to=""/>
 		<transform before="\u{17C1}" from="\u{17C6}\u{17C1}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17C1}\u{17C7}" to="\u{17C1}\u{17C7}"/>
 		<transform before="\u{17C1}" from="\u{17C6}\u{17C1}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17C1}\u{17C8}" to="\u{17C1}\u{17C8}"/>
+		<transform before="\u{17C2}" from="\u{17C6}\u{17C2}" to=""/>
 		<transform before="\u{17C2}" from="\u{17C6}\u{17C2}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17C2}\u{17C7}" to="\u{17C2}\u{17C7}"/>
 		<transform before="\u{17C2}" from="\u{17C6}\u{17C2}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17C2}\u{17C8}" to="\u{17C2}\u{17C8}"/>
+		<transform before="\u{17C3}" from="\u{17C6}\u{17C3}" to=""/>
 		<transform before="\u{17C3}" from="\u{17C6}\u{17C3}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17C3}\u{17C7}" to="\u{17C3}\u{17C7}"/>
 		<transform before="\u{17C3}" from="\u{17C6}\u{17C3}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17C3}\u{17C8}" to="\u{17C3}\u{17C8}"/>
+		<transform before="\u{17C4}" from="\u{17C6}\u{17C4}" to=""/>
 		<transform before="\u{17C4}" from="\u{17C6}\u{17C4}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17C4}\u{17C7}" to="\u{17C4}\u{17C7}"/>
 		<transform before="\u{17C4}" from="\u{17C6}\u{17C4}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17C4}\u{17C8}" to="\u{17C4}\u{17C8}"/>
+		<transform before="\u{17C5}" from="\u{17C6}\u{17C5}" to=""/>
 		<transform before="\u{17C5}" from="\u{17C6}\u{17C5}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17C5}\u{17C7}" to="\u{17C5}\u{17C7}"/>
 		<transform before="\u{17C5}" from="\u{17C6}\u{17C5}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C6}\u{17C5}\u{17C8}" to="\u{17C5}\u{17C8}"/>
 		<transform from="\u{17C6}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C6}\u{17C8}" to="\u{17C8}"/>
+		<transform before="\u{17B6}" from="\u{17C7}\u{17B6}" to=""/>
 		<transform before="\u{17B6}" from="\u{17C7}\u{17B6}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17B6}\u{17C6}" to="\u{17B6}\u{17C6}"/>
 		<transform before="\u{17B6}" from="\u{17C7}\u{17B6}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17B6}\u{17C8}" to="\u{17B6}\u{17C8}"/>
+		<transform before="\u{17B7}" from="\u{17C7}\u{17B7}" to=""/>
 		<transform before="\u{17B7}" from="\u{17C7}\u{17B7}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17B7}\u{17C6}" to="\u{17B7}\u{17C6}"/>
 		<transform before="\u{17B7}" from="\u{17C7}\u{17B7}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17B7}\u{17C8}" to="\u{17B7}\u{17C8}"/>
+		<transform before="\u{17B8}" from="\u{17C7}\u{17B8}" to=""/>
 		<transform before="\u{17B8}" from="\u{17C7}\u{17B8}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17B8}\u{17C6}" to="\u{17B8}\u{17C6}"/>
 		<transform before="\u{17B8}" from="\u{17C7}\u{17B8}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17B8}\u{17C8}" to="\u{17B8}\u{17C8}"/>
+		<transform before="\u{17B9}" from="\u{17C7}\u{17B9}" to=""/>
 		<transform before="\u{17B9}" from="\u{17C7}\u{17B9}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17B9}\u{17C6}" to="\u{17B9}\u{17C6}"/>
 		<transform before="\u{17B9}" from="\u{17C7}\u{17B9}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17B9}\u{17C8}" to="\u{17B9}\u{17C8}"/>
+		<transform before="\u{17BA}" from="\u{17C7}\u{17BA}" to=""/>
 		<transform before="\u{17BA}" from="\u{17C7}\u{17BA}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17BA}\u{17C6}" to="\u{17BA}\u{17C6}"/>
 		<transform before="\u{17BA}" from="\u{17C7}\u{17BA}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17BA}\u{17C8}" to="\u{17BA}\u{17C8}"/>
+		<transform before="\u{17BB}" from="\u{17C7}\u{17BB}" to=""/>
 		<transform before="\u{17BB}" from="\u{17C7}\u{17BB}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17BB}\u{17C6}" to="\u{17BB}\u{17C6}"/>
 		<transform before="\u{17BB}" from="\u{17C7}\u{17BB}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17BB}\u{17C8}" to="\u{17BB}\u{17C8}"/>
+		<transform before="\u{17BC}" from="\u{17C7}\u{17BC}" to=""/>
 		<transform before="\u{17BC}" from="\u{17C7}\u{17BC}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17BC}\u{17C6}" to="\u{17BC}\u{17C6}"/>
 		<transform before="\u{17BC}" from="\u{17C7}\u{17BC}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17BC}\u{17C8}" to="\u{17BC}\u{17C8}"/>
+		<transform before="\u{17BD}" from="\u{17C7}\u{17BD}" to=""/>
 		<transform before="\u{17BD}" from="\u{17C7}\u{17BD}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17BD}\u{17C6}" to="\u{17BD}\u{17C6}"/>
 		<transform before="\u{17BD}" from="\u{17C7}\u{17BD}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17BD}\u{17C8}" to="\u{17BD}\u{17C8}"/>
+		<transform before="\u{17BE}" from="\u{17C7}\u{17BE}" to=""/>
 		<transform before="\u{17BE}" from="\u{17C7}\u{17BE}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17BE}\u{17C6}" to="\u{17BE}\u{17C6}"/>
 		<transform before="\u{17BE}" from="\u{17C7}\u{17BE}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17BE}\u{17C8}" to="\u{17BE}\u{17C8}"/>
+		<transform before="\u{17BF}" from="\u{17C7}\u{17BF}" to=""/>
 		<transform before="\u{17BF}" from="\u{17C7}\u{17BF}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17BF}\u{17C6}" to="\u{17BF}\u{17C6}"/>
 		<transform before="\u{17BF}" from="\u{17C7}\u{17BF}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17BF}\u{17C8}" to="\u{17BF}\u{17C8}"/>
+		<transform before="\u{17C0}" from="\u{17C7}\u{17C0}" to=""/>
 		<transform before="\u{17C0}" from="\u{17C7}\u{17C0}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17C0}\u{17C6}" to="\u{17C0}\u{17C6}"/>
 		<transform before="\u{17C0}" from="\u{17C7}\u{17C0}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17C0}\u{17C8}" to="\u{17C0}\u{17C8}"/>
+		<transform before="\u{17C1}" from="\u{17C7}\u{17C1}" to=""/>
 		<transform before="\u{17C1}" from="\u{17C7}\u{17C1}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17C1}\u{17C6}" to="\u{17C1}\u{17C6}"/>
 		<transform before="\u{17C1}" from="\u{17C7}\u{17C1}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17C1}\u{17C8}" to="\u{17C1}\u{17C8}"/>
+		<transform before="\u{17C2}" from="\u{17C7}\u{17C2}" to=""/>
 		<transform before="\u{17C2}" from="\u{17C7}\u{17C2}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17C2}\u{17C6}" to="\u{17C2}\u{17C6}"/>
 		<transform before="\u{17C2}" from="\u{17C7}\u{17C2}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17C2}\u{17C8}" to="\u{17C2}\u{17C8}"/>
+		<transform before="\u{17C3}" from="\u{17C7}\u{17C3}" to=""/>
 		<transform before="\u{17C3}" from="\u{17C7}\u{17C3}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17C3}\u{17C6}" to="\u{17C3}\u{17C6}"/>
 		<transform before="\u{17C3}" from="\u{17C7}\u{17C3}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17C3}\u{17C8}" to="\u{17C3}\u{17C8}"/>
+		<transform before="\u{17C4}" from="\u{17C7}\u{17C4}" to=""/>
 		<transform before="\u{17C4}" from="\u{17C7}\u{17C4}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17C4}\u{17C6}" to="\u{17C4}\u{17C6}"/>
 		<transform before="\u{17C4}" from="\u{17C7}\u{17C4}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17C4}\u{17C8}" to="\u{17C4}\u{17C8}"/>
+		<transform before="\u{17C5}" from="\u{17C7}\u{17C5}" to=""/>
 		<transform before="\u{17C5}" from="\u{17C7}\u{17C5}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17C5}\u{17C6}" to="\u{17C5}\u{17C6}"/>
 		<transform before="\u{17C5}" from="\u{17C7}\u{17C5}\u{17C8}" to="\u{17C8}"/>
 		<transform from="\u{17C7}\u{17C5}\u{17C8}" to="\u{17C5}\u{17C8}"/>
 		<transform from="\u{17C7}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C7}\u{17C8}" to="\u{17C8}"/>
+		<transform before="\u{17B6}" from="\u{17C8}\u{17B6}" to=""/>
 		<transform before="\u{17B6}" from="\u{17C8}\u{17B6}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17B6}\u{17C6}" to="\u{17B6}\u{17C6}"/>
 		<transform before="\u{17B6}" from="\u{17C8}\u{17B6}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17B6}\u{17C7}" to="\u{17B6}\u{17C7}"/>
+		<transform before="\u{17B7}" from="\u{17C8}\u{17B7}" to=""/>
 		<transform before="\u{17B7}" from="\u{17C8}\u{17B7}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17B7}\u{17C6}" to="\u{17B7}\u{17C6}"/>
 		<transform before="\u{17B7}" from="\u{17C8}\u{17B7}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17B7}\u{17C7}" to="\u{17B7}\u{17C7}"/>
+		<transform before="\u{17B8}" from="\u{17C8}\u{17B8}" to=""/>
 		<transform before="\u{17B8}" from="\u{17C8}\u{17B8}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17B8}\u{17C6}" to="\u{17B8}\u{17C6}"/>
 		<transform before="\u{17B8}" from="\u{17C8}\u{17B8}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17B8}\u{17C7}" to="\u{17B8}\u{17C7}"/>
+		<transform before="\u{17B9}" from="\u{17C8}\u{17B9}" to=""/>
 		<transform before="\u{17B9}" from="\u{17C8}\u{17B9}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17B9}\u{17C6}" to="\u{17B9}\u{17C6}"/>
 		<transform before="\u{17B9}" from="\u{17C8}\u{17B9}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17B9}\u{17C7}" to="\u{17B9}\u{17C7}"/>
+		<transform before="\u{17BA}" from="\u{17C8}\u{17BA}" to=""/>
 		<transform before="\u{17BA}" from="\u{17C8}\u{17BA}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17BA}\u{17C6}" to="\u{17BA}\u{17C6}"/>
 		<transform before="\u{17BA}" from="\u{17C8}\u{17BA}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17BA}\u{17C7}" to="\u{17BA}\u{17C7}"/>
+		<transform before="\u{17BB}" from="\u{17C8}\u{17BB}" to=""/>
 		<transform before="\u{17BB}" from="\u{17C8}\u{17BB}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17BB}\u{17C6}" to="\u{17BB}\u{17C6}"/>
 		<transform before="\u{17BB}" from="\u{17C8}\u{17BB}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17BB}\u{17C7}" to="\u{17BB}\u{17C7}"/>
+		<transform before="\u{17BC}" from="\u{17C8}\u{17BC}" to=""/>
 		<transform before="\u{17BC}" from="\u{17C8}\u{17BC}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17BC}\u{17C6}" to="\u{17BC}\u{17C6}"/>
 		<transform before="\u{17BC}" from="\u{17C8}\u{17BC}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17BC}\u{17C7}" to="\u{17BC}\u{17C7}"/>
+		<transform before="\u{17BD}" from="\u{17C8}\u{17BD}" to=""/>
 		<transform before="\u{17BD}" from="\u{17C8}\u{17BD}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17BD}\u{17C6}" to="\u{17BD}\u{17C6}"/>
 		<transform before="\u{17BD}" from="\u{17C8}\u{17BD}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17BD}\u{17C7}" to="\u{17BD}\u{17C7}"/>
+		<transform before="\u{17BE}" from="\u{17C8}\u{17BE}" to=""/>
 		<transform before="\u{17BE}" from="\u{17C8}\u{17BE}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17BE}\u{17C6}" to="\u{17BE}\u{17C6}"/>
 		<transform before="\u{17BE}" from="\u{17C8}\u{17BE}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17BE}\u{17C7}" to="\u{17BE}\u{17C7}"/>
+		<transform before="\u{17BF}" from="\u{17C8}\u{17BF}" to=""/>
 		<transform before="\u{17BF}" from="\u{17C8}\u{17BF}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17BF}\u{17C6}" to="\u{17BF}\u{17C6}"/>
 		<transform before="\u{17BF}" from="\u{17C8}\u{17BF}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17BF}\u{17C7}" to="\u{17BF}\u{17C7}"/>
+		<transform before="\u{17C0}" from="\u{17C8}\u{17C0}" to=""/>
 		<transform before="\u{17C0}" from="\u{17C8}\u{17C0}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17C0}\u{17C6}" to="\u{17C0}\u{17C6}"/>
 		<transform before="\u{17C0}" from="\u{17C8}\u{17C0}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17C0}\u{17C7}" to="\u{17C0}\u{17C7}"/>
+		<transform before="\u{17C1}" from="\u{17C8}\u{17C1}" to=""/>
 		<transform before="\u{17C1}" from="\u{17C8}\u{17C1}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17C1}\u{17C6}" to="\u{17C1}\u{17C6}"/>
 		<transform before="\u{17C1}" from="\u{17C8}\u{17C1}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17C1}\u{17C7}" to="\u{17C1}\u{17C7}"/>
+		<transform before="\u{17C2}" from="\u{17C8}\u{17C2}" to=""/>
 		<transform before="\u{17C2}" from="\u{17C8}\u{17C2}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17C2}\u{17C6}" to="\u{17C2}\u{17C6}"/>
 		<transform before="\u{17C2}" from="\u{17C8}\u{17C2}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17C2}\u{17C7}" to="\u{17C2}\u{17C7}"/>
+		<transform before="\u{17C3}" from="\u{17C8}\u{17C3}" to=""/>
 		<transform before="\u{17C3}" from="\u{17C8}\u{17C3}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17C3}\u{17C6}" to="\u{17C3}\u{17C6}"/>
 		<transform before="\u{17C3}" from="\u{17C8}\u{17C3}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17C3}\u{17C7}" to="\u{17C3}\u{17C7}"/>
+		<transform before="\u{17C4}" from="\u{17C8}\u{17C4}" to=""/>
 		<transform before="\u{17C4}" from="\u{17C8}\u{17C4}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17C4}\u{17C6}" to="\u{17C4}\u{17C6}"/>
 		<transform before="\u{17C4}" from="\u{17C8}\u{17C4}\u{17C7}" to="\u{17C7}"/>
 		<transform from="\u{17C8}\u{17C4}\u{17C7}" to="\u{17C4}\u{17C7}"/>
+		<transform before="\u{17C5}" from="\u{17C8}\u{17C5}" to=""/>
 		<transform before="\u{17C5}" from="\u{17C8}\u{17C5}\u{17C6}" to="\u{17C6}"/>
 		<transform from="\u{17C8}\u{17C5}\u{17C6}" to="\u{17C5}\u{17C6}"/>
 		<transform before="\u{17C5}" from="\u{17C8}\u{17C5}\u{17C7}" to="\u{17C7}"/>
@@ -5064,8 +5106,15 @@
 		<transform from="\u{17D2}\u{17C8}" to="\u{17C8}"/>
 	</transforms>
 	<backspaces>
-		<backspace before="[\u{17B6}\u{17BB}\u{17C1}\u{17C2}\u{17C4}]" from="set([u'\u17c7', u'\u17c6'])" to="set([u'\u17c7', u'\u17c6'])"/>
-		<backspace before="[\u{17B7}\u{17B8}\u{17B9}]" from="\u{17C7}" to="\u{17C7}"/>
+		<backspace from="\u{17B6}\u{17C6}" to=""/>
+		<backspace from="\u{17B7}\u{17C7}" to=""/>
+		<backspace from="\u{17B8}\u{17C7}" to=""/>
+		<backspace from="\u{17B9}\u{17C7}" to=""/>
+		<backspace from="\u{17BB}\u{17C6}" to=""/>
+		<backspace from="\u{17BB}\u{17C7}" to=""/>
+		<backspace from="\u{17C1}\u{17C7}" to=""/>
+		<backspace from="\u{17C2}\u{17C7}" to=""/>
+		<backspace from="\u{17C4}\u{17C7}" to=""/>
 	</backspaces>
 	<import path="khmer_angkor_import.ldml"/>
 </keyboard>

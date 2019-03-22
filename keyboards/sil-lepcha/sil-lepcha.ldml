@@ -71,10 +71,6 @@
 		<map iso="E12" to="᰾"/>
 	</keyMap>
 	<transforms type="simple">
-		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="set([u'\u1c27', u'\u1c29', u'\u1c28', u'\u1c2b', u'\u1c2a', u'\u1c2c'])" to="set([u'\u1c27', u'\u1c29', u'\u1c28', u'\u1c2b', u'\u1c2a', u'\u1c2c'])" error="fail"/>
-		<transform before="[\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C26}" to="\u{1C26}" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="set([u'\u1c2f', u'\u1c2e', u'\u1c31', u'\u1c30', u'\u1c33', u'\u1c32', u'\u1c35', u'\u1c34'])" to="set([u'\u1c2f', u'\u1c2e', u'\u1c31', u'\u1c30', u'\u1c33', u'\u1c32', u'\u1c35', u'\u1c34'])" error="fail"/>
-		<transform before="[\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C2D}" to="\u{1C2D}" error="fail"/>
 		<transform from="ᰀᰜ" to="ᰁ"/>
 		<transform from="ᰀᰝ" to="ᰂ"/>
 		<transform from="ᰃᰜ" to="ᰄ"/>
@@ -90,6 +86,22 @@
 		<transform from="ᰗᰝ" to="ᰘ"/>
 		<transform from="ᰝᰜ" to="ᰞ"/>
 		<transform from="ᰠᰝ" to="ᰡ"/>
+		<transform before="[\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C26}" to="" error="fail"/>
+		<transform before="[\u{1C26}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C27}" to="" error="fail"/>
+		<transform before="[\u{1C26}\u{1C27}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C28}" to="" error="fail"/>
+		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C29}" to="" error="fail"/>
+		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2B}\u{1C2C}]" from="\u{1C2A}" to="" error="fail"/>
+		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2C}]" from="\u{1C2B}" to="" error="fail"/>
+		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}]" from="\u{1C2C}" to="" error="fail"/>
+		<transform before="[\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C2D}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C2E}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C2F}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C30}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C31}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C32}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C34}\u{1C35}]" from="\u{1C33}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C35}]" from="\u{1C34}" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}]" from="\u{1C35}" to="" error="fail"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<import path="sil-lepcha_reorder.xml"/>

@@ -52,7 +52,7 @@
     <event key="[C02]" output="ស"/>
     <event key="[C07]" output="ស្"/>
     <event key="[D04]" output="ស្រ"/>
-    <event key="[B10]" output="ស្រ៊"/>
+    <event key="[B10]" output="ស្រ៊" error="fail"/>
     <event key="[shift D08]" output="ស្រ៊ី"/>
   </test-sequence>
 
@@ -291,7 +291,7 @@
 
   <test-sequence id="2d">
     <event key="[B07]" output="ម"/>
-    <event key="[B10]" output="ម៊"/>
+    <event key="[B10]" output="ម៊" error="fail"/>
     <event key="[shift D08]" output="ម៉ី" skip="bksp"/>
   </test-sequence>
 

@@ -108,10 +108,9 @@
 	<import path="shared/reorders.xml"/>
 	<import path="sil_shan_reorder.xml"/>
 	<transforms type="final">
-		<transform from="\u{FDD2}" to="\u{FDD2}"/>
+		<transform from="\u{FDD2}" to=""/>
 	</transforms>
 	<backspaces>
-		<backspace before="\u{200B}" from="set([u'\u1031', u'\u1084'])" to="set([u'\u1031', u'\u1084'])"/>
 		<backspace from="င\u{1031}" to="\u{FDDF}\u{1031}"/>
 		<backspace from="င\u{1084}" to="\u{FDDF}\u{1084}"/>
 		<backspace from="တ\u{1031}" to="\u{FDDF}\u{1031}"/>
@@ -162,6 +161,8 @@
 		<backspace from="႞\u{1084}" to="\u{FDDF}\u{1084}"/>
 		<backspace from="႟\u{1031}" to="\u{FDDF}\u{1031}"/>
 		<backspace from="႟\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="\u{200B}\u{1031}" to=""/>
+		<backspace from="\u{200B}\u{1084}" to=""/>
 		<backspace from="\u{A9E0}\u{1031}" to="\u{FDDF}\u{1031}"/>
 		<backspace from="\u{A9E0}\u{1084}" to="\u{FDDF}\u{1084}"/>
 		<backspace from="\u{A9E3}\u{1031}" to="\u{FDDF}\u{1031}"/>
