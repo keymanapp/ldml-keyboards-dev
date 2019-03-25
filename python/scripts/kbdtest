@@ -53,14 +53,18 @@ def asFull(s, full=False):
     else:
         return s.encode('utf-8')
 
+def protect(s):
+    return "".join(x if ord(x) < 0x100 else "\\u{:04x}".format(ord(x)) for x in s)
+
 class TestError(BaseException):
     pass
 
 class KeyTest():
-    def __init__(self, kbd, fname, args):
+    def __init__(self, kbd, fname, gen, args):
         self.kbd = kbd
         self.fname = fname
         self.args = args
+        self.generate = gen
         self.reset()
 
     def reset(self):
@@ -72,10 +76,25 @@ class KeyTest():
     def reset_bksp_end(self):
         self.bksp_end = len(self.history)
 
-    def test(self, testid, tid, eid, res, test, iserror):
+    def setTo(self, el, res, iserror):
+        el.set('output', protect(res))
+        if iserror:
+            el.set('error', 'fail')
+
+    def setSkip(self, el, val):
+        el.set('skip', val)
+
+    def test(self, testid, tid, el, eid, res, test, iserror):
         failed = unicode(res) != test
         if iserror != -1:
             failed = failed or res.error != iserror
+        if self.generate is not None and failed:
+            if testid.startswith('Base'):
+                self.setTo(el, unicode(res), res.error)
+            elif testid.startswith('BKSP'):
+                self.setSkip(el, 'bksp')
+                self.reset_bksp_end()
+            return unicode(res)
         if self.args.traceall or (self.args.tracing and failed):
             print("Test: {}".format(testid))
             print("    " + ("\n    ".join(res.tracing_events)))
@@ -87,26 +106,29 @@ class KeyTest():
                 s += "\n    Keys pressed: " + " ".join(askey(x) for x in \
                                 reduce(lambda x,y: x+y, self.history, []))
             raise TestError(s)
+        return test
 
-    def basetest(self, keys, test, iserror, tid=0, eid=0):
+    def basetest(self, keys, test, iserror, tid=0, el=None, eid=0):
         self.history.append(keys)
         self.test_history.append(test)
         for k in keys:
             res = self.kbd.process(*k)
-        self.test('Base', tid, eid, res, test, iserror)
+        return self.test('Base', tid, el, eid, res, test, iserror)
 
-    def bksptest(self, test, iserror, tid=0, eid=0, info=""):
+    def bksptest(self, test, iserror, tid=0, el=None, eid=0, info=""):
         for i in range(len(self.history)-self.bksp_end):
             numback = sum(map(len, self.history[-i-1:]))
             for j in range(numback):
                 res = self.kbd.process("BKSP", [])
                 if 'diff' not in info:
-                    self.test("BKSP({}/{})".format(i+1, j+1), tid, eid, res, self.test_history[-j-2], -1)
+                    if self.test("BKSP({}/{})".format(i+1, j+1), tid, el, eid, res, self.test_history[-j-2], -1) != unicode(self.test_history[-j-2]):
+                        self.kbd.undo(numback - j)
+                        return
             actions = reduce(lambda x,y: x+y, self.history[-i-1:], [])
             for a in actions:
                 res = self.kbd.process(*a)
             try:
-                self.test("BKSP_redo({})".format(i+1), tid, eid, res, test, -1)
+                self.test("BKSP_redo({})".format(i+1), tid, el, eid, res, test, -1)
                 self.kbd.undo(2 * numback)
             except TestError as e:
                 self.kbd.undo(2 * numback)
@@ -121,7 +143,7 @@ class KeyTest():
                     res = self.kbd.process(*k, context=s)
                 rstr = Context(ud.normalize(form, unicode(res)), tracing=(self.args.tracing or self.args.traceall))
                 rstr.error = res.error
-                self.test(form, tid, eid, rstr, ud.normalize(form, test), iserror)
+                self.test(form, tid, None, eid, rstr, ud.normalize(form, test), iserror)
 
 
 parser = argparse.ArgumentParser()
@@ -132,6 +154,7 @@ parser.add_argument('-q','--quiet',action='store_true', help="Minimise output")
 parser.add_argument('-F','--full', action="store_true", help="Output full error messages")
 parser.add_argument('-t','--tracing', action='store_true', help="Give tracing info on failure")
 parser.add_argument('-T','--traceall', action='store_true', help='Trace all test phases')
+parser.add_argument('-o','--output', help='Merge test results into input file')
 args = parser.parse_args()
 
 # a fun way to run this program: find -name \*.ldml -exec python/scripts/kbdtest -F \{\} \;
@@ -151,7 +174,7 @@ for fn in fnames:
     doc = et.parse(fn)
     print(fn, end=": ")
     sys.stdout.flush()
-    tester = KeyTest(kbd, args.infile, args)
+    tester = KeyTest(kbd, args.infile, args.output, args)
     for t in doc.findall('.//test-sequence'):
         tid = t.get('id', "Unknown")
         if args.id and args.id != tid: continue
@@ -166,9 +189,9 @@ for fn in fnames:
             skips = e.get('skip', '').split(' ')
             bksp = e.get('bksp', '')
             try:
-                tester.basetest(keys, test, iserror, tid, i+1)
+                test = tester.basetest(keys, test, iserror, tid, e, i+1)
                 if 'bksp' not in skips and "[BKSP]" not in e.get('key'):
-                    tester.bksptest(test, iserror, tid, i+1, bksp)
+                    tester.bksptest(test, iserror, tid, e, i+1, bksp)
                 else:
                     tester.reset_bksp_end()
                 if 'normal' not in skips and len(test):
@@ -176,6 +199,8 @@ for fn in fnames:
             except TestError as e:
                 print(unicode(e).encode("utf-8"))
                 errors += 1
+    if args.output:
+        doc.write(args.output)
     print()
     if errors > 0:
         break

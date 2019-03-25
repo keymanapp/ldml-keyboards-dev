@@ -680,7 +680,7 @@ class Context(object):
         if ind < len(self.outputs) - 1:
             if len(self.outputs[ind]) < self.offsets[ind+1]:
                 self.offsets[ind+1] = len(self.outputs[ind])
-        if self.partials[ind] >= backup:
+        if self.partials[ind] >= backup - len(res):
             self.partials[ind] += len(res) - backup
         elif self.partials[ind] != 0:
             self.partials[ind] = len(res)
