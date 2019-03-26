@@ -43,6 +43,10 @@
 		<map iso="E00" to="\u{EFFF6}"/>
 	</keyMap>
 	<transforms type="simple">
+		<transform from="ꘌꘌ" to="="/>
+		<transform from="꘍꘍" to=","/>
+		<transform from="꘎꘎" to="\."/>
+		<transform from="꘏꘏" to="\?"/>
 		<transform from="\u{FDD2}ꔀ" to="ꔇ"/>
 		<transform from="\u{FDD2}ꔤ" to="ꔬ"/>
 		<transform from="\u{FDD2}ꕉ" to="ꕒ"/>
@@ -303,12 +307,6 @@
 		<transform from="\u{EFFF6}ꖕ" to="ꖖ"/>
 		<transform from="\u{EFFF6}ꗡ" to="ꗢ"/>
 		<transform from="\u{EFFF6}\u{EFFF3}" to="ꖻ"/>
-	</transforms>
-	<transforms type="simple2">
-		<transform from="ꘌꘌ" to="="/>
-		<transform from="꘍꘍" to=","/>
-		<transform from="꘎꘎" to="\."/>
-		<transform from="꘏꘏" to="\?"/>
 	</transforms>
 	<transforms type="final">
 		<transform from="\u{FDD2}" to=""/>

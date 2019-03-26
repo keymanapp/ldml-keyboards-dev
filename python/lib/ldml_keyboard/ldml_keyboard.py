@@ -279,17 +279,33 @@ class Keyboard(object):
         context.reset_output(ruleset)
         curr = context.offset(ruleset)
         instr = context.input(ruleset)
+        ind = context.index(ruleset)
         while curr < len(instr):
             r = trans.match(instr, curr)
             if r.rule is not None:
-                if r.offset > 0:    # begin context
+                if r.offset > 0:    # @before context
                     context.results(ruleset, curr, r.offset, instr[curr:curr+r.offset], rule=r.rule)
                     r.length -= r.offset
                     curr += r.offset
-                context.results(ruleset, curr, r.length, UnicodeSets.struni(getattr(r.rule, 'to', "")), rule=r.rule)
-                curr += r.length
                 if getattr(r.rule, 'error', 0):
                     context.error = True
+                newout = UnicodeSets.struni(getattr(r.rule, 'to', ""))
+                context.results(ruleset, curr, r.length, newout, rule=r.rule)
+                if ruleset == 'final':
+                    curr += r.length
+                    continue
+                # allow reprocessing of input transforms only. This gives us rotors, for example.
+                for i in range(len(newout), 0, -1):
+                    t = trans.match(context.outputs[ind], len(context.outputs[ind]) - i)
+                    if t.morep:
+                        # context.partials[ind] += i
+                        context.offsets[ind] -= r.length
+                        instr = context.outputs[ind][-i:] + instr[curr + r.length:]
+                        context.outputs[ind] = context.outputs[ind][:-i]
+                        curr = 0
+                        break
+                else:
+                    curr += r.length
             elif r.length == 0 and not r.morep and not fallback:     # abject failure
                 context.results(ruleset, curr, 1, instr[curr:curr+1], comment="Fallthrough")
                 curr += 1
