@@ -5,6 +5,7 @@ subdirs = easy-chakma \
         sil-boonkit \
         sil-devanagari-phonetic \
         sil-lepcha \
+        sil-vai \
         sil-yi 
 
 .PHONY: all
