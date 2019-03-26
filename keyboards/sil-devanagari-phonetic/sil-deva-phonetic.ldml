@@ -49,7 +49,7 @@
 	</keyMap>
 	<keyMap modifiers="altR">
 		<map iso="B06" to="ञ"/>
-		<map iso="B09" to="\."/>
+		<map iso="B09" to="."/>
 		<map iso="C06" to="ऽ"/>
 		<map iso="C07" to="ज\u{094D}ञ"/>
 		<map iso="C09" to="\u{0943}"/>

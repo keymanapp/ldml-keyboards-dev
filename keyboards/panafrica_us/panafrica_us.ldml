@@ -20,12 +20,12 @@
 		<map iso="D03" to="ə"/>
 		<map iso="D04" to="ɽ"/>
 		<map iso="D05" to="ŧ"/>
-		<map iso="D11" to="\["/>
-		<map iso="D12" to="\]"/>
+		<map iso="D11" to="["/>
+		<map iso="D12" to="]"/>
 		<map iso="E00" to="`"/>
 	</keyMap>
 	<keyMap modifiers="altL+shift">
-		<map iso="B00" to="\|"/>
+		<map iso="B00" to="|"/>
 		<map iso="B01" to="Ƶ"/>
 		<map iso="B04" to="Ʌ"/>
 		<map iso="B08" to="&lt;"/>
@@ -35,11 +35,11 @@
 		<map iso="D03" to="Ə"/>
 		<map iso="D04" to="Ɽ"/>
 		<map iso="D05" to="Ŧ"/>
-		<map iso="D11" to="\{"/>
-		<map iso="D12" to="\}"/>
+		<map iso="D11" to="{"/>
+		<map iso="D12" to="}"/>
 		<map iso="E00" to="~"/>
 		<map iso="E02" to="@"/>
-		<map iso="E06" to="\^"/>
+		<map iso="E06" to="^"/>
 		<map iso="E11" to="_"/>
 	</keyMap>
 	<keyMap modifiers="altR">

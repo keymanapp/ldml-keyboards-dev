@@ -7,7 +7,7 @@
 		<name value="Boonkit"/>
 	</names>
 	<keyMap modifiers="">
-		<map iso="B00" to="\("/>
+		<map iso="B00" to="("/>
 		<map iso="B01" to="ᨹ"/>
 		<map iso="B02" to="ᨸ"/>
 		<map iso="B03" to="\u{200B}\u{1A6F}"/>

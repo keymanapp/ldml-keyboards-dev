@@ -16,7 +16,7 @@
 		<map iso="B06" to="ည"/>
 		<map iso="B07" to="\u{102C}"/>
 		<map iso="B08" to="ယ"/>
-		<map iso="B09" to="\."/>
+		<map iso="B09" to="."/>
 		<map iso="B10" to="။"/>
 		<map iso="C01" to="\u{200B}\u{1031}"/>
 		<map iso="C02" to="\u{103B}"/>

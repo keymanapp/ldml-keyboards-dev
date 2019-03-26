@@ -54,11 +54,11 @@
 		<map iso="E10" to="០"/>
 		<map iso="E11" to="ឥ"/>
 		<map iso="E12" to="ឲ"/>
-		<map iso="npdot" to="\."/>
+		<map iso="npdot" to="."/>
 		<map iso="npminus" to="-"/>
-		<map iso="npplus" to="\+"/>
+		<map iso="npplus" to="+"/>
 		<map iso="npslash" to="/"/>
-		<map iso="npstar" to="\*"/>
+		<map iso="npstar" to="*"/>
 		<map iso="space" to="\u{200B}"/>
 		<map iso="t17d21780" to="\u{17D2}ក"/>
 		<map iso="t17d21781" to="\u{17D2}ខ"/>
@@ -97,18 +97,18 @@
 		<map iso="t17d217a2" to="\u{17D2}អ"/>
 	</keyMap>
 	<keyMap modifiers="altR">
-		<map iso="B00" to="\\"/>
+		<map iso="B00" to="\"/>
 		<map iso="B01" to="&lt;"/>
 		<map iso="B02" to="&gt;"/>
 		<map iso="B03" to="#"/>
-		<map iso="B04" to="\&amp;"/>
+		<map iso="B04" to="&amp;"/>
 		<map iso="B05" to="ឞ"/>
 		<map iso="B06" to=";"/>
 		<map iso="B07" to="\u{17D3}"/>
 		<map iso="B08" to=","/>
-		<map iso="B09" to="\."/>
+		<map iso="B09" to="."/>
 		<map iso="B10" to="/"/>
-		<map iso="C01" to="\+"/>
+		<map iso="C01" to="+"/>
 		<map iso="C02" to="-"/>
 		<map iso="C03" to="×"/>
 		<map iso="C04" to="÷"/>
@@ -124,8 +124,8 @@
 		<map iso="D03" to="ឯ"/>
 		<map iso="D04" to="ឫ"/>
 		<map iso="D05" to="ឨ"/>
-		<map iso="D06" to="\["/>
-		<map iso="D07" to="\]"/>
+		<map iso="D06" to="["/>
+		<map iso="D07" to="]"/>
 		<map iso="D08" to="ឦ"/>
 		<map iso="D09" to="ឱ"/>
 		<map iso="D10" to="ឰ"/>
@@ -135,13 +135,13 @@
 		<map iso="E01" to="\u{200C}"/>
 		<map iso="E02" to="@"/>
 		<map iso="E03" to="\u{17D1}"/>
-		<map iso="E04" to="\$"/>
+		<map iso="E04" to="$"/>
 		<map iso="E05" to="€"/>
 		<map iso="E06" to="៙"/>
 		<map iso="E07" to="៚"/>
-		<map iso="E08" to="\*"/>
-		<map iso="E09" to="\{"/>
-		<map iso="E10" to="\}"/>
+		<map iso="E08" to="*"/>
+		<map iso="E09" to="{"/>
+		<map iso="E10" to="}"/>
 		<map iso="E11" to="≈"/>
 		<map iso="E12" to="\u{17CE}"/>
 		<map iso="space" to=" "/>
@@ -201,7 +201,7 @@
 		<map iso="B07" to="\u{17C6}"/>
 		<map iso="B08" to="\u{17BB}\u{17C7}"/>
 		<map iso="B09" to="៕"/>
-		<map iso="B10" to="\?"/>
+		<map iso="B10" to="?"/>
 		<map iso="C01" to="\u{17B6}\u{17C6}"/>
 		<map iso="C02" to="\u{17C3}"/>
 		<map iso="C03" to="ឌ"/>
@@ -234,15 +234,15 @@
 		<map iso="E06" to="\u{17CD}"/>
 		<map iso="E07" to="\u{17D0}"/>
 		<map iso="E08" to="\u{17CF}"/>
-		<map iso="E09" to="\("/>
-		<map iso="E10" to="\)"/>
+		<map iso="E09" to="("/>
+		<map iso="E10" to=")"/>
 		<map iso="E11" to="\u{17CC}"/>
 		<map iso="E12" to="="/>
-		<map iso="npdot" to="\."/>
+		<map iso="npdot" to="."/>
 		<map iso="npminus" to="-"/>
-		<map iso="npplus" to="\+"/>
+		<map iso="npplus" to="+"/>
 		<map iso="npslash" to="/"/>
-		<map iso="npstar" to="\*"/>
+		<map iso="npstar" to="*"/>
 		<map iso="space" to=" "/>
 	</keyMap>
 	<transforms type="simple">
