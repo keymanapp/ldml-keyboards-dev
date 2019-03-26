@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
+<keyboard locale="und-Latn">
+	<version number="1" platform="1"/>
+	<import path="shared/en-us-win.xml"/>
+	<names>
+		<name value="Pan Africa Positional (SIL)"/>
+	</names>
+	<keyMap modifiers="">
+		<map iso="B10" to="\u{0301}"/>
+		<map iso="D11" to="\u{FDD2}"/>
+		<map iso="D12" to="\u{FDD3}"/>
+		<map iso="E00" to="\u{0300}"/>
+	</keyMap>
+	<keyMap modifiers="altL">
+		<map iso="B01" to="ƶ"/>
+		<map iso="B04" to="ʌ"/>
+		<map iso="B10" to="/"/>
+		<map iso="C02" to="ʃ"/>
+		<map iso="D03" to="ə"/>
+		<map iso="D04" to="ɽ"/>
+		<map iso="D05" to="ŧ"/>
+		<map iso="D11" to="\["/>
+		<map iso="D12" to="\]"/>
+		<map iso="E00" to="`"/>
+	</keyMap>
+	<keyMap modifiers="altL+shift">
+		<map iso="B00" to="\|"/>
+		<map iso="B01" to="Ƶ"/>
+		<map iso="B04" to="Ʌ"/>
+		<map iso="B08" to="&lt;"/>
+		<map iso="B09" to="&gt;"/>
+		<map iso="B10" to="ʕ"/>
+		<map iso="C02" to="Ʃ"/>
+		<map iso="D03" to="Ə"/>
+		<map iso="D04" to="Ɽ"/>
+		<map iso="D05" to="Ŧ"/>
+		<map iso="D11" to="\{"/>
+		<map iso="D12" to="\}"/>
+		<map iso="E00" to="~"/>
+		<map iso="E02" to="@"/>
+		<map iso="E06" to="\^"/>
+		<map iso="E11" to="_"/>
+	</keyMap>
+	<keyMap modifiers="altR">
+		<map iso="B01" to="ʒ"/>
+		<map iso="B02" to="ɣ"/>
+		<map iso="B03" to="ƈ"/>
+		<map iso="B04" to="ʋ"/>
+		<map iso="B05" to="ɓ"/>
+		<map iso="B06" to="ŋ"/>
+		<map iso="B07" to="ɲ"/>
+		<map iso="B08" to="\u{0327}"/>
+		<map iso="B09" to="\u{0323}"/>
+		<map iso="C01" to="ɑ"/>
+		<map iso="C02" to="ɛ"/>
+		<map iso="C03" to="ɗ"/>
+		<map iso="C04" to="ƒ"/>
+		<map iso="C05" to="ɠ"/>
+		<map iso="C06" to="ɦ"/>
+		<map iso="C07" to="ɖ"/>
+		<map iso="C08" to="ƙ"/>
+		<map iso="C09" to="ɩ"/>
+		<map iso="C11" to="ʼ"/>
+		<map iso="D01" to="ø"/>
+		<map iso="D02" to="ⱳ"/>
+		<map iso="D03" to="ǝ"/>
+		<map iso="D04" to="ɍ"/>
+		<map iso="D05" to="ƭ"/>
+		<map iso="D06" to="ƴ"/>
+		<map iso="D07" to="ʉ"/>
+		<map iso="D08" to="ɨ"/>
+		<map iso="D09" to="ɔ"/>
+		<map iso="D10" to="ƥ"/>
+	</keyMap>
+	<keyMap modifiers="altR+shift">
+		<map iso="B00" to="\u{0329}"/>
+		<map iso="B01" to="Ʒ"/>
+		<map iso="B02" to="Ɣ"/>
+		<map iso="B03" to="Ƈ"/>
+		<map iso="B04" to="Ʋ"/>
+		<map iso="B05" to="Ɓ"/>
+		<map iso="B06" to="Ŋ"/>
+		<map iso="B07" to="Ɲ"/>
+		<map iso="B10" to="ʔ"/>
+		<map iso="C01" to="Ɑ"/>
+		<map iso="C02" to="Ɛ"/>
+		<map iso="C03" to="Ɗ"/>
+		<map iso="C04" to="Ƒ"/>
+		<map iso="C05" to="Ɠ"/>
+		<map iso="C06" to="Ȟ"/>
+		<map iso="C07" to="Ɖ"/>
+		<map iso="C08" to="Ƙ"/>
+		<map iso="C09" to="Ɩ"/>
+		<map iso="D01" to="Ø"/>
+		<map iso="D02" to="Ⱳ"/>
+		<map iso="D03" to="Ǝ"/>
+		<map iso="D04" to="Ɍ"/>
+		<map iso="D05" to="Ƭ"/>
+		<map iso="D06" to="Ƴ"/>
+		<map iso="D07" to="Ʉ"/>
+		<map iso="D08" to="Ɨ"/>
+		<map iso="D09" to="Ɔ"/>
+		<map iso="D10" to="Ƥ"/>
+		<map iso="E00" to="\u{0330}"/>
+		<map iso="E02" to="\u{0325}"/>
+		<map iso="E11" to="\u{0331}"/>
+	</keyMap>
+	<keyMap modifiers="shift">
+		<map iso="B00" to="\u{030D}"/>
+		<map iso="B08" to="‹"/>
+		<map iso="B09" to="›"/>
+		<map iso="C11" to="\u{0308}"/>
+		<map iso="D11" to="\u{030C}"/>
+		<map iso="D12" to="\u{0307}"/>
+		<map iso="E00" to="\u{0303}"/>
+		<map iso="E02" to="\u{030A}"/>
+		<map iso="E06" to="\u{0302}"/>
+		<map iso="E11" to="\u{0304}"/>
+	</keyMap>
+	<transforms type="simple">
+		<transform from="\u{FDD2}'" to="ʼ"/>
+		<transform from="\u{FDD2}," to="\u{0327}"/>
+		<transform from="\u{FDD2}\?" to="ʔ"/>
+		<transform from="\u{FDD2}A" to="Ɑ"/>
+		<transform from="\u{FDD2}B" to="Ɓ"/>
+		<transform from="\u{FDD2}C" to="Ƈ"/>
+		<transform from="\u{FDD2}D" to="Ɗ"/>
+		<transform from="\u{FDD2}E" to="Ǝ"/>
+		<transform from="\u{FDD2}F" to="Ƒ"/>
+		<transform from="\u{FDD2}G" to="Ɠ"/>
+		<transform from="\u{FDD2}H" to="Ȟ"/>
+		<transform from="\u{FDD2}I" to="Ɨ"/>
+		<transform from="\u{FDD2}J" to="Ɖ"/>
+		<transform from="\u{FDD2}K" to="Ƙ"/>
+		<transform from="\u{FDD2}L" to="Ɩ"/>
+		<transform from="\u{FDD2}M" to="Ɲ"/>
+		<transform from="\u{FDD2}N" to="Ŋ"/>
+		<transform from="\u{FDD2}O" to="Ɔ"/>
+		<transform from="\u{FDD2}P" to="Ƥ"/>
+		<transform from="\u{FDD2}Q" to="Ø"/>
+		<transform from="\u{FDD2}R" to="Ɍ"/>
+		<transform from="\u{FDD2}S" to="Ɛ"/>
+		<transform from="\u{FDD2}T" to="Ƭ"/>
+		<transform from="\u{FDD2}U" to="Ʉ"/>
+		<transform from="\u{FDD2}V" to="Ʋ"/>
+		<transform from="\u{FDD2}W" to="Ⱳ"/>
+		<transform from="\u{FDD2}X" to="Ɣ"/>
+		<transform from="\u{FDD2}Y" to="Ƴ"/>
+		<transform from="\u{FDD2}Z" to="Ʒ"/>
+		<transform from="\u{FDD2}a" to="ɑ"/>
+		<transform from="\u{FDD2}b" to="ɓ"/>
+		<transform from="\u{FDD2}c" to="ƈ"/>
+		<transform from="\u{FDD2}d" to="ɗ"/>
+		<transform from="\u{FDD2}e" to="ǝ"/>
+		<transform from="\u{FDD2}f" to="ƒ"/>
+		<transform from="\u{FDD2}g" to="ɠ"/>
+		<transform from="\u{FDD2}h" to="ɦ"/>
+		<transform from="\u{FDD2}i" to="ɨ"/>
+		<transform from="\u{FDD2}j" to="ɖ"/>
+		<transform from="\u{FDD2}k" to="ƙ"/>
+		<transform from="\u{FDD2}l" to="ɩ"/>
+		<transform from="\u{FDD2}m" to="ɲ"/>
+		<transform from="\u{FDD2}n" to="ŋ"/>
+		<transform from="\u{FDD2}o" to="ɔ"/>
+		<transform from="\u{FDD2}p" to="ƥ"/>
+		<transform from="\u{FDD2}q" to="ø"/>
+		<transform from="\u{FDD2}r" to="ɍ"/>
+		<transform from="\u{FDD2}s" to="ɛ"/>
+		<transform from="\u{FDD2}t" to="ƭ"/>
+		<transform from="\u{FDD2}u" to="ʉ"/>
+		<transform from="\u{FDD2}v" to="ʋ"/>
+		<transform from="\u{FDD2}w" to="ⱳ"/>
+		<transform from="\u{FDD2}x" to="ɣ"/>
+		<transform from="\u{FDD2}y" to="ƴ"/>
+		<transform from="\u{FDD2}z" to="ʒ"/>
+		<transform from="\u{FDD2}\u{0303}" to="\u{0330}"/>
+		<transform from="\u{FDD2}\u{0304}" to="\u{0331}"/>
+		<transform from="\u{FDD2}\u{0307}" to="\u{0323}"/>
+		<transform from="\u{FDD2}\u{030A}" to="\u{0325}"/>
+		<transform from="\u{FDD2}\u{030D}" to="\u{0329}"/>
+		<transform from="\u{FDD2}‹" to="‘"/>
+		<transform from="\u{FDD2}›" to="’"/>
+		<transform from="\u{FDD3}\?" to="ʕ"/>
+		<transform from="\u{FDD3}A" to="" error="fail"/>
+		<transform from="\u{FDD3}B" to="" error="fail"/>
+		<transform from="\u{FDD3}C" to="" error="fail"/>
+		<transform from="\u{FDD3}D" to="" error="fail"/>
+		<transform from="\u{FDD3}E" to="Ə"/>
+		<transform from="\u{FDD3}F" to="" error="fail"/>
+		<transform from="\u{FDD3}G" to="" error="fail"/>
+		<transform from="\u{FDD3}H" to="" error="fail"/>
+		<transform from="\u{FDD3}I" to="" error="fail"/>
+		<transform from="\u{FDD3}J" to="" error="fail"/>
+		<transform from="\u{FDD3}K" to="" error="fail"/>
+		<transform from="\u{FDD3}L" to="" error="fail"/>
+		<transform from="\u{FDD3}M" to="" error="fail"/>
+		<transform from="\u{FDD3}N" to="" error="fail"/>
+		<transform from="\u{FDD3}O" to="" error="fail"/>
+		<transform from="\u{FDD3}P" to="" error="fail"/>
+		<transform from="\u{FDD3}Q" to="" error="fail"/>
+		<transform from="\u{FDD3}R" to="Ɽ"/>
+		<transform from="\u{FDD3}S" to="Ʃ"/>
+		<transform from="\u{FDD3}T" to="Ŧ"/>
+		<transform from="\u{FDD3}U" to="" error="fail"/>
+		<transform from="\u{FDD3}V" to="Ʌ"/>
+		<transform from="\u{FDD3}W" to="" error="fail"/>
+		<transform from="\u{FDD3}X" to="" error="fail"/>
+		<transform from="\u{FDD3}Y" to="" error="fail"/>
+		<transform from="\u{FDD3}Z" to="Ƶ"/>
+		<transform from="\u{FDD3}a" to="" error="fail"/>
+		<transform from="\u{FDD3}b" to="" error="fail"/>
+		<transform from="\u{FDD3}c" to="" error="fail"/>
+		<transform from="\u{FDD3}d" to="" error="fail"/>
+		<transform from="\u{FDD3}e" to="ə"/>
+		<transform from="\u{FDD3}f" to="" error="fail"/>
+		<transform from="\u{FDD3}g" to="" error="fail"/>
+		<transform from="\u{FDD3}h" to="" error="fail"/>
+		<transform from="\u{FDD3}i" to="" error="fail"/>
+		<transform from="\u{FDD3}j" to="" error="fail"/>
+		<transform from="\u{FDD3}k" to="" error="fail"/>
+		<transform from="\u{FDD3}l" to="" error="fail"/>
+		<transform from="\u{FDD3}m" to="" error="fail"/>
+		<transform from="\u{FDD3}n" to="" error="fail"/>
+		<transform from="\u{FDD3}o" to="" error="fail"/>
+		<transform from="\u{FDD3}p" to="" error="fail"/>
+		<transform from="\u{FDD3}q" to="" error="fail"/>
+		<transform from="\u{FDD3}r" to="ɽ"/>
+		<transform from="\u{FDD3}s" to="ʃ"/>
+		<transform from="\u{FDD3}t" to="ŧ"/>
+		<transform from="\u{FDD3}u" to="" error="fail"/>
+		<transform from="\u{FDD3}v" to="ʌ"/>
+		<transform from="\u{FDD3}w" to="" error="fail"/>
+		<transform from="\u{FDD3}x" to="" error="fail"/>
+		<transform from="\u{FDD3}y" to="" error="fail"/>
+		<transform from="\u{FDD3}z" to="ƶ"/>
+		<transform from="\u{FDD3}\u{0300}" to="`"/>
+		<transform from="\u{FDD3}\u{0301}" to="/"/>
+		<transform from="\u{FDD3}\u{0302}" to="\^"/>
+		<transform from="\u{FDD3}\u{0303}" to="~"/>
+		<transform from="\u{FDD3}\u{0304}" to="_"/>
+		<transform from="\u{FDD3}\u{0307}" to="\}"/>
+		<transform from="\u{FDD3}\u{030A}" to="@"/>
+		<transform from="\u{FDD3}\u{030C}" to="\{"/>
+		<transform from="\u{FDD3}\u{030D}" to="\|"/>
+		<transform from="\u{FDD3}‹" to="&lt;"/>
+		<transform from="\u{FDD3}›" to="&gt;"/>
+		<transform from="\u{FDD3}\u{FDD2}" to="\["/>
+		<transform from="\u{FDD3}\u{FDD3}" to="\]"/>
+	</transforms>
+	<transforms type="final">
+		<transform from="\u{FDD2}" to=""/>
+		<transform from="\u{FDD3}" to=""/>
+	</transforms>
+	<backspaces>
+		<backspace from="À" to="A"/>
+		<backspace from="Á" to="A"/>
+		<backspace from="Â" to="A"/>
+		<backspace from="Ã" to="A"/>
+		<backspace from="Ä" to="A"/>
+		<backspace from="Å" to="A"/>
+		<backspace from="Ç" to="C"/>
+		<backspace from="È" to="E"/>
+		<backspace from="É" to="E"/>
+		<backspace from="Ê" to="E"/>
+		<backspace from="Ë" to="E"/>
+		<backspace from="Ì" to="I"/>
+		<backspace from="Í" to="I"/>
+		<backspace from="Î" to="I"/>
+		<backspace from="Ï" to="I"/>
+		<backspace from="Ñ" to="N"/>
+		<backspace from="Ò" to="O"/>
+		<backspace from="Ó" to="O"/>
+		<backspace from="Ô" to="O"/>
+		<backspace from="Õ" to="Ṏ"/>
+		<backspace from="Ö" to="O"/>
+		<backspace from="Ù" to="U"/>
+		<backspace from="Ú" to="U"/>
+		<backspace from="Ü" to="U"/>
+		<backspace from="Ý" to="Y"/>
+		<backspace from="à" to="a"/>
+		<backspace from="á" to="a"/>
+		<backspace from="â" to="a"/>
+		<backspace from="ã" to="a"/>
+		<backspace from="ä" to="a"/>
+		<backspace from="å" to="a"/>
+		<backspace from="ç" to="c"/>
+		<backspace from="è" to="e"/>
+		<backspace from="é" to="e"/>
+		<backspace from="ê" to="e"/>
+		<backspace from="ë" to="e"/>
+		<backspace from="ì" to="i"/>
+		<backspace from="í" to="i"/>
+		<backspace from="î" to="i"/>
+		<backspace from="ï" to="i"/>
+		<backspace from="ñ" to="n"/>
+		<backspace from="ò" to="o"/>
+		<backspace from="ó" to="o"/>
+		<backspace from="ô" to="o"/>
+		<backspace from="õ" to="ṏ"/>
+		<backspace from="ö" to="o"/>
+		<backspace from="ù" to="u"/>
+		<backspace from="ú" to="u"/>
+		<backspace from="û" to="u"/>
+		<backspace from="ü" to="u"/>
+		<backspace from="ý" to="y"/>
+		<backspace from="ÿ" to="y"/>
+		<backspace from="Ā" to="A"/>
+		<backspace from="ā" to="a"/>
+		<backspace from="Ć" to="C"/>
+		<backspace from="ć" to="c"/>
+		<backspace from="Ĉ" to="C"/>
+		<backspace from="ĉ" to="c"/>
+		<backspace from="Ċ" to="C"/>
+		<backspace from="ċ" to="c"/>
+		<backspace from="Č" to="C"/>
+		<backspace from="č" to="c"/>
+		<backspace from="Ď" to="D"/>
+		<backspace from="ď" to="d"/>
+		<backspace from="Ē" to="E"/>
+		<backspace from="ē" to="e"/>
+		<backspace from="Ė" to="E"/>
+		<backspace from="ė" to="e"/>
+		<backspace from="Ě" to="E"/>
+		<backspace from="ě" to="e"/>
+		<backspace from="Ĝ" to="G"/>
+		<backspace from="ĝ" to="g"/>
+		<backspace from="Ġ" to="G"/>
+		<backspace from="ġ" to="g"/>
+		<backspace from="Ĥ" to="H"/>
+		<backspace from="ĥ" to="h"/>
+		<backspace from="Ĩ" to="I"/>
+		<backspace from="ĩ" to="i"/>
+		<backspace from="Ī" to="I"/>
+		<backspace from="ī" to="i"/>
+		<backspace from="Ĵ" to="J"/>
+		<backspace from="ĵ" to="j"/>
+		<backspace from="Ĺ" to="L"/>
+		<backspace from="ĺ" to="l"/>
+		<backspace from="Ń" to="N"/>
+		<backspace from="ń" to="n"/>
+		<backspace from="Ň" to="N"/>
+		<backspace from="ň" to="n"/>
+		<backspace from="Ō" to="O"/>
+		<backspace from="ō" to="o"/>
+		<backspace from="Ŕ" to="R"/>
+		<backspace from="ŕ" to="r"/>
+		<backspace from="Ř" to="R"/>
+		<backspace from="ř" to="r"/>
+		<backspace from="Ś" to="S"/>
+		<backspace from="ś" to="s"/>
+		<backspace from="Ŝ" to="S"/>
+		<backspace from="ŝ" to="s"/>
+		<backspace from="Ş" to="S"/>
+		<backspace from="ş" to="s"/>
+		<backspace from="Š" to="S"/>
+		<backspace from="š" to="s"/>
+		<backspace from="Ţ" to="T"/>
+		<backspace from="ţ" to="t"/>
+		<backspace from="Ť" to="T"/>
+		<backspace from="ť" to="t"/>
+		<backspace from="Ũ" to="U"/>
+		<backspace from="ũ" to="u"/>
+		<backspace from="Ū" to="U"/>
+		<backspace from="ū" to="u"/>
+		<backspace from="Ů" to="U"/>
+		<backspace from="ů" to="u"/>
+		<backspace from="Ŵ" to="W"/>
+		<backspace from="ŵ" to="w"/>
+		<backspace from="Ŷ" to="Y"/>
+		<backspace from="ŷ" to="y"/>
+		<backspace from="Ÿ" to="Y"/>
+		<backspace from="Ź" to="Z"/>
+		<backspace from="ź" to="z"/>
+		<backspace from="Ż" to="Z"/>
+		<backspace from="ż" to="z"/>
+		<backspace from="Ž" to="Z"/>
+		<backspace from="ž" to="z"/>
+		<backspace from="Ǎ" to="A"/>
+		<backspace from="ǎ" to="a"/>
+		<backspace from="Ǐ" to="I"/>
+		<backspace from="ǐ" to="i"/>
+		<backspace from="Ǒ" to="O"/>
+		<backspace from="ǒ" to="o"/>
+		<backspace from="Ǔ" to="U"/>
+		<backspace from="ǔ" to="u"/>
+		<backspace from="Ǖ" to="Ü"/>
+		<backspace from="ǖ" to="ü"/>
+		<backspace from="Ǘ" to="Ü"/>
+		<backspace from="ǘ" to="ü"/>
+		<backspace from="Ǚ" to="Ü"/>
+		<backspace from="ǚ" to="ü"/>
+		<backspace from="Ǜ" to="Ü"/>
+		<backspace from="ǜ" to="ü"/>
+		<backspace from="Ǟ" to="Ä"/>
+		<backspace from="ǟ" to="ä"/>
+		<backspace from="Ǡ" to="Ȧ"/>
+		<backspace from="ǡ" to="ȧ"/>
+		<backspace from="Ǣ" to="Æ"/>
+		<backspace from="ǣ" to="æ"/>
+		<backspace from="Ǧ" to="G"/>
+		<backspace from="ǧ" to="g"/>
+		<backspace from="Ǩ" to="K"/>
+		<backspace from="ǩ" to="k"/>
+		<backspace from="Ǯ" to="Ʒ"/>
+		<backspace from="ǯ" to="ʒ"/>
+		<backspace from="Ǵ" to="G"/>
+		<backspace from="ǵ" to="g"/>
+		<backspace from="Ǹ" to="N"/>
+		<backspace from="ǹ" to="n"/>
+		<backspace from="Ǻ" to="Å"/>
+		<backspace from="ǻ" to="å"/>
+		<backspace from="Ǽ" to="Æ"/>
+		<backspace from="ǽ" to="æ"/>
+		<backspace from="Ǿ" to="Ø"/>
+		<backspace from="ǿ" to="ø"/>
+		<backspace from="Ȟ" to="H"/>
+		<backspace from="ȟ" to="h"/>
+		<backspace from="Ȧ" to="A"/>
+		<backspace from="ȧ" to="a"/>
+		<backspace from="Ȩ" to="E"/>
+		<backspace from="ȩ" to="e"/>
+		<backspace from="Ȫ" to="Ö"/>
+		<backspace from="ȫ" to="ö"/>
+		<backspace from="Ȭ" to="Õ"/>
+		<backspace from="ȭ" to="õ"/>
+		<backspace from="Ȯ" to="O"/>
+		<backspace from="ȯ" to="o"/>
+		<backspace from="Ȱ" to="Ȯ"/>
+		<backspace from="ȱ" to="ȯ"/>
+		<backspace from="Ȳ" to="Y"/>
+		<backspace from="ȳ" to="y"/>
+		<backspace from="Ḁ" to="A"/>
+		<backspace from="ḁ" to="a"/>
+		<backspace from="Ḃ" to="B"/>
+		<backspace from="ḃ" to="b"/>
+		<backspace from="Ḅ" to="B"/>
+		<backspace from="ḅ" to="b"/>
+		<backspace from="Ḇ" to="B"/>
+		<backspace from="ḇ" to="b"/>
+		<backspace from="Ḉ" to="Ç"/>
+		<backspace from="ḉ" to="ç"/>
+		<backspace from="Ḋ" to="D"/>
+		<backspace from="ḋ" to="d"/>
+		<backspace from="Ḍ" to="D"/>
+		<backspace from="ḍ" to="d"/>
+		<backspace from="Ḏ" to="D"/>
+		<backspace from="ḏ" to="d"/>
+		<backspace from="Ḕ" to="Ē"/>
+		<backspace from="ḕ" to="ē"/>
+		<backspace from="Ḗ" to="Ē"/>
+		<backspace from="ḗ" to="ē"/>
+		<backspace from="Ḛ" to="E"/>
+		<backspace from="ḛ" to="e"/>
+		<backspace from="Ḟ" to="F"/>
+		<backspace from="ḟ" to="f"/>
+		<backspace from="Ḡ" to="G"/>
+		<backspace from="ḡ" to="g"/>
+		<backspace from="Ḣ" to="H"/>
+		<backspace from="ḣ" to="h"/>
+		<backspace from="Ḥ" to="H"/>
+		<backspace from="ḥ" to="h"/>
+		<backspace from="Ḧ" to="H"/>
+		<backspace from="ḧ" to="h"/>
+		<backspace from="Ḩ" to="H"/>
+		<backspace from="ḩ" to="h"/>
+		<backspace from="Ḭ" to="I"/>
+		<backspace from="ḭ" to="i"/>
+		<backspace from="Ḯ" to="Ï"/>
+		<backspace from="ḯ" to="ï"/>
+		<backspace from="Ḱ" to="K"/>
+		<backspace from="ḱ" to="k"/>
+		<backspace from="Ḳ" to="K"/>
+		<backspace from="ḳ" to="k"/>
+		<backspace from="Ḵ" to="K"/>
+		<backspace from="ḵ" to="k"/>
+		<backspace from="Ḷ" to="L"/>
+		<backspace from="ḷ" to="l"/>
+		<backspace from="Ḻ" to="L"/>
+		<backspace from="ḻ" to="l"/>
+		<backspace from="Ḿ" to="M"/>
+		<backspace from="ḿ" to="m"/>
+		<backspace from="Ṁ" to="M"/>
+		<backspace from="ṁ" to="m"/>
+		<backspace from="Ṃ" to="M"/>
+		<backspace from="ṃ" to="m"/>
+		<backspace from="Ṅ" to="N"/>
+		<backspace from="ṅ" to="n"/>
+		<backspace from="Ṇ" to="N"/>
+		<backspace from="ṇ" to="n"/>
+		<backspace from="Ṉ" to="N"/>
+		<backspace from="ṉ" to="n"/>
+		<backspace from="Ṍ" to="Õ"/>
+		<backspace from="ṍ" to="õ"/>
+		<backspace from="Ṑ" to="Ō"/>
+		<backspace from="ṑ" to="ō"/>
+		<backspace from="Ṓ" to="Ō"/>
+		<backspace from="ṓ" to="ō"/>
+		<backspace from="Ṕ" to="P"/>
+		<backspace from="ṕ" to="p"/>
+		<backspace from="Ṗ" to="P"/>
+		<backspace from="ṗ" to="p"/>
+		<backspace from="Ṙ" to="R"/>
+		<backspace from="ṙ" to="r"/>
+		<backspace from="Ṛ" to="R"/>
+		<backspace from="ṛ" to="r"/>
+		<backspace from="Ṟ" to="R"/>
+		<backspace from="ṟ" to="r"/>
+		<backspace from="Ṡ" to="S"/>
+		<backspace from="ṡ" to="s"/>
+		<backspace from="Ṣ" to="S"/>
+		<backspace from="ṣ" to="s"/>
+		<backspace from="Ṫ" to="T"/>
+		<backspace from="ṫ" to="t"/>
+		<backspace from="Ṭ" to="T"/>
+		<backspace from="ṭ" to="t"/>
+		<backspace from="Ṯ" to="T"/>
+		<backspace from="ṯ" to="t"/>
+		<backspace from="Ṵ" to="U"/>
+		<backspace from="ṵ" to="u"/>
+		<backspace from="Ṹ" to="Ũ"/>
+		<backspace from="ṹ" to="ũ"/>
+		<backspace from="Ṻ" to="Ū"/>
+		<backspace from="ṻ" to="ū"/>
+		<backspace from="Ṽ" to="V"/>
+		<backspace from="ṽ" to="v"/>
+		<backspace from="Ṿ" to="V"/>
+		<backspace from="ṿ" to="v"/>
+		<backspace from="Ẁ" to="W"/>
+		<backspace from="ẁ" to="w"/>
+		<backspace from="Ẃ" to="W"/>
+		<backspace from="ẃ" to="w"/>
+		<backspace from="Ẅ" to="W"/>
+		<backspace from="ẅ" to="w"/>
+		<backspace from="Ẇ" to="W"/>
+		<backspace from="ẇ" to="w"/>
+		<backspace from="Ẉ" to="W"/>
+		<backspace from="ẉ" to="w"/>
+		<backspace from="Ẋ" to="X"/>
+		<backspace from="ẋ" to="x"/>
+		<backspace from="Ẍ" to="X"/>
+		<backspace from="ẍ" to="x"/>
+		<backspace from="Ẏ" to="Y"/>
+		<backspace from="ẏ" to="y"/>
+		<backspace from="Ẑ" to="Z"/>
+		<backspace from="ẑ" to="z"/>
+		<backspace from="Ẓ" to="Z"/>
+		<backspace from="ẓ" to="z"/>
+		<backspace from="Ẕ" to="Z"/>
+		<backspace from="ẕ" to="z"/>
+		<backspace from="Ạ" to="A"/>
+		<backspace from="ạ" to="a"/>
+		<backspace from="Ẫ" to="Â"/>
+		<backspace from="ẫ" to="â"/>
+		<backspace from="Ậ" to="Ạ"/>
+		<backspace from="ậ" to="ạ"/>
+		<backspace from="Ẹ" to="E"/>
+		<backspace from="ẹ" to="e"/>
+		<backspace from="Ẽ" to="E"/>
+		<backspace from="ẽ" to="e"/>
+		<backspace from="Ễ" to="Ê"/>
+		<backspace from="ễ" to="ê"/>
+		<backspace from="Ệ" to="Ẹ"/>
+		<backspace from="ệ" to="ẹ"/>
+		<backspace from="Ị" to="I"/>
+		<backspace from="ị" to="i"/>
+		<backspace from="Ọ" to="O"/>
+		<backspace from="ọ" to="o"/>
+		<backspace from="Ỗ" to="Ô"/>
+		<backspace from="ỗ" to="ô"/>
+		<backspace from="Ộ" to="Ọ"/>
+		<backspace from="ộ" to="ọ"/>
+		<backspace from="Ụ" to="U"/>
+		<backspace from="ụ" to="u"/>
+		<backspace from="Ỳ" to="Y"/>
+		<backspace from="ỳ" to="y"/>
+		<backspace from="Ỵ" to="Y"/>
+		<backspace from="ỵ" to="y"/>
+		<backspace from="Ỹ" to="Y"/>
+		<backspace from="ỹ" to="y"/>
+	</backspaces>
+</keyboard>
