@@ -1,4 +1,5 @@
 subdirs = easy-chakma \
+        gff-tigrinua-eritrea \
         kh-sil-angkhor \
         my-shan \
         panafrica_us \
@@ -9,7 +10,8 @@ subdirs = easy-chakma \
         sil-lepcha \
         sil-mywinext \
         sil-vai \
-        sil-yi 
+        sil-yi \
+        tainua
 
 .PHONY: all
 

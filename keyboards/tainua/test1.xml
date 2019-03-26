@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ldmlkeytests>
+    <test-sequence id="1">
+            <event key="[C01]" output="&#x1963;"/>
+    </test-sequence>
+</ldmlkeytests>

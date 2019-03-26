@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
+<keyboard locale="tdd-Tale">
+	<version number="1" platform="1"/>
+	<import path="shared/en-us-win.xml"/>
+	<names>
+		<name value="Tainua"/>
+	</names>
+	<keyMap modifiers="">
+		<map iso="B00" to="\\"/>
+		<map iso="B01" to="ᥒ"/>
+		<map iso="B02" to="ᥑ"/>
+		<map iso="B03" to="ᥓ"/>
+		<map iso="B04" to="ᥝ"/>
+		<map iso="B05" to="ᥙ"/>
+		<map iso="B06" to="ᥢ"/>
+		<map iso="B07" to="ᥛ"/>
+		<map iso="B08" to=","/>
+		<map iso="B09" to="\."/>
+		<map iso="B10" to="/"/>
+		<map iso="C01" to="ᥣ"/>
+		<map iso="C02" to="ᥔ"/>
+		<map iso="C03" to="ᥖ"/>
+		<map iso="C04" to="ᥜ"/>
+		<map iso="C05" to="ᥐ"/>
+		<map iso="C06" to="ᥞ"/>
+		<map iso="C07" to="ᥡ"/>
+		<map iso="C08" to="ᥠ"/>
+		<map iso="C09" to="ᥘ"/>
+		<map iso="C10" to=";"/>
+		<map iso="C11" to="'"/>
+		<map iso="D01" to="ᥟ"/>
+		<map iso="D02" to="ᥪ"/>
+		<map iso="D03" to="ᥫ"/>
+		<map iso="D04" to="ᥦ"/>
+		<map iso="D05" to="ᥗ"/>
+		<map iso="D06" to="ᥕ"/>
+		<map iso="D07" to="ᥧ"/>
+		<map iso="D08" to="ᥤ"/>
+		<map iso="D09" to="ᥩ"/>
+		<map iso="D10" to="ᥚ"/>
+		<map iso="D11" to="\["/>
+		<map iso="D12" to="\]"/>
+		<map iso="E01" to="1"/>
+		<map iso="E02" to="2"/>
+		<map iso="E03" to="3"/>
+		<map iso="E04" to="4"/>
+		<map iso="E05" to="5"/>
+		<map iso="E06" to="6"/>
+		<map iso="E07" to="7"/>
+		<map iso="E08" to="8"/>
+		<map iso="E09" to="9"/>
+		<map iso="E10" to="0"/>
+		<map iso="E11" to="-"/>
+		<map iso="E12" to="="/>
+	</keyMap>
+	<keyMap modifiers="shift">
+		<map iso="C04" to="ᥰ"/>
+		<map iso="C05" to="ᥱ"/>
+		<map iso="C06" to="ᥲ"/>
+		<map iso="C07" to="ᥳ"/>
+		<map iso="C08" to="ᥴ"/>
+		<map iso="D02" to="ᥬ"/>
+		<map iso="D03" to="ᥥ"/>
+		<map iso="D06" to="ᥭ"/>
+		<map iso="D09" to="ᥨ"/>
+	</keyMap>
+</keyboard>
