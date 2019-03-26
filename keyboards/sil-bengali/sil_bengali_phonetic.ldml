@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
-<keyboard locale="und-Zyyy">
+<keyboard locale="bn-Beng">
 	<version number="1" platform="1"/>
 	<import path="shared/en-us-win.xml"/>
 	<names>
-		<name value="Unknown"/>
+		<name value="SIL Bengali Phonetic"/>
 	</names>
 	<keyMap modifiers="">
 		<map iso="B01" to="শ"/>
@@ -92,7 +92,8 @@
 		<transform from="\u{FDD2}\u{09CC}" to="ঔ"/>
 		<transform from="\u{FDD2}\u{09D7}" to="আ"/>
 	</transforms>
+	<import path="shared/reorders.xml"/>
 	<transforms type="final">
-		<transform before="" from="\u{FDD2}" to=""/>
+		<transform from="\u{FDD2}" to=""/>
 	</transforms>
 </keyboard>
