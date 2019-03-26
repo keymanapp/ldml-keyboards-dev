@@ -1,0 +1,725 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
+<keyboard locale="my-Mymr">
+	<version number="1" platform="1"/>
+	<import path="shared/en-us-win.xml"/>
+	<names>
+		<name value="Myanmar Windows Extended (SIL)"/>
+	</names>
+	<keyMap modifiers="">
+		<map iso="B00" to="၏"/>
+		<map iso="B01" to="ဖ"/>
+		<map iso="B02" to="ထ"/>
+		<map iso="B03" to="ခ"/>
+		<map iso="B04" to="လ"/>
+		<map iso="B05" to="ဘ"/>
+		<map iso="B06" to="ည"/>
+		<map iso="B07" to="\u{102C}"/>
+		<map iso="B08" to="ယ"/>
+		<map iso="B09" to="\."/>
+		<map iso="B10" to="။"/>
+		<map iso="C01" to="\u{200B}\u{1031}"/>
+		<map iso="C02" to="\u{103B}"/>
+		<map iso="C03" to="\u{102D}"/>
+		<map iso="C04" to="\u{103A}"/>
+		<map iso="C05" to="\u{102B}"/>
+		<map iso="C06" to="\u{1037}"/>
+		<map iso="C07" to="\u{103C}"/>
+		<map iso="C08" to="\u{102F}"/>
+		<map iso="C09" to="\u{1030}"/>
+		<map iso="C10" to="\u{1038}"/>
+		<map iso="C11" to="ဒ"/>
+		<map iso="D01" to="ဆ"/>
+		<map iso="D02" to="တ"/>
+		<map iso="D03" to="န"/>
+		<map iso="D04" to="မ"/>
+		<map iso="D05" to="အ"/>
+		<map iso="D06" to="ပ"/>
+		<map iso="D07" to="က"/>
+		<map iso="D08" to="င"/>
+		<map iso="D09" to="သ"/>
+		<map iso="D10" to="စ"/>
+		<map iso="D11" to="ဟ"/>
+		<map iso="D12" to="‘"/>
+		<map iso="E00" to="◌"/>
+		<map iso="E01" to="၁"/>
+		<map iso="E02" to="၂"/>
+		<map iso="E03" to="၃"/>
+		<map iso="E04" to="၄"/>
+		<map iso="E05" to="၅"/>
+		<map iso="E06" to="၆"/>
+		<map iso="E07" to="၇"/>
+		<map iso="E08" to="၈"/>
+		<map iso="E09" to="၉"/>
+		<map iso="E10" to="၀"/>
+		<map iso="E11" to="\u{1062}"/>
+		<map iso="E12" to="\u{1064}"/>
+	</keyMap>
+	<keyMap modifiers="shift">
+		<map iso="B00" to="ၛ"/>
+		<map iso="B01" to="ဇ"/>
+		<map iso="B02" to="ဌ"/>
+		<map iso="B03" to="ဃ"/>
+		<map iso="B04" to="ဠ"/>
+		<map iso="B05" to="ဦ"/>
+		<map iso="B06" to="ဈ"/>
+		<map iso="B07" to="၎"/>
+		<map iso="B08" to="ၝ"/>
+		<map iso="B09" to="၎"/>
+		<map iso="B10" to="၊"/>
+		<map iso="C01" to="ဗ"/>
+		<map iso="C02" to="\u{103E}"/>
+		<map iso="C03" to="\u{102E}"/>
+		<map iso="C04" to="င\u{103A}\u{1039}"/>
+		<map iso="C05" to="\u{103D}"/>
+		<map iso="C06" to="\u{1036}"/>
+		<map iso="C07" to="\u{1032}"/>
+		<map iso="C08" to="\u{1034}"/>
+		<map iso="C09" to="\u{1033}"/>
+		<map iso="C10" to="\u{1035}"/>
+		<map iso="C11" to="ဓ"/>
+		<map iso="D01" to="ၚ\u{103A}\u{1039}"/>
+		<map iso="D02" to="ဝ"/>
+		<map iso="D03" to="ၚ"/>
+		<map iso="D04" to="ဣ"/>
+		<map iso="D05" to="ဤ"/>
+		<map iso="D06" to="၌"/>
+		<map iso="D07" to="ဉ"/>
+		<map iso="D08" to="၍"/>
+		<map iso="D09" to="ဥ"/>
+		<map iso="D10" to="ဏ"/>
+		<map iso="D11" to="ဧ"/>
+		<map iso="D12" to="’"/>
+		<map iso="E00" to="\u{2060}"/>
+		<map iso="E01" to="ဍ"/>
+		<map iso="E02" to="ဎ"/>
+		<map iso="E03" to="ဋ"/>
+		<map iso="E04" to="\u{105E}"/>
+		<map iso="E05" to="\u{105F}"/>
+		<map iso="E06" to="ဨ"/>
+		<map iso="E07" to="ရ"/>
+		<map iso="E08" to="ဂ"/>
+		<map iso="E09" to="ၜ"/>
+		<map iso="E10" to="ၡ"/>
+		<map iso="E11" to="\u{1060}"/>
+		<map iso="E12" to="\u{1063}\u{103A}"/>
+		<map iso="space" to="\u{200B}"/>
+	</keyMap>
+	<transforms type="simple">
+		<transform before="[၀၁၂၃၄၅၆၇၈၉][၀၁၂၃၄၅၆၇၈၉]" from="\u{102B}" to="\u{102B}"/>
+		<transform before="[၀၁၂၃၄၅၆၇၈၉][၀၁၂၃၄၅၆၇၈၉]" from="\u{1032}" to="\u{1032}"/>
+		<transform before="[၀၁၂၃၄၅၆၇၈၉][၀၁၂၃၄၅၆၇၈၉]" from="\u{102D}" to="\u{102D}"/>
+		<transform before="[၁၂၃၄၅၆၇၈၉]" from="\u{102B}" to="\u{102B}"/>
+		<transform before="[၁၂၃၄၅၆၇၈၉]" from="\u{1032}" to="\u{1032}"/>
+		<transform from="က◌" to="\u{1039}က"/>
+		<transform from="ခ◌" to="\u{1039}ခ"/>
+		<transform from="ဂ◌" to="\u{1039}ဂ"/>
+		<transform from="ဃ◌" to="\u{1039}ဃ"/>
+		<transform from="စ◌" to="\u{1039}စ"/>
+		<transform from="ဆ◌" to="\u{1039}ဆ"/>
+		<transform from="ဇ◌" to="\u{1039}ဇ"/>
+		<transform from="ဈ◌" to="\u{1039}ဈ"/>
+		<transform from="ဉ◌" to="\u{1039}ဉ"/>
+		<transform from="ည◌" to="\u{1039}ည"/>
+		<transform from="ဋ◌" to="\u{1039}ဋ"/>
+		<transform from="ဌ◌" to="\u{1039}ဌ"/>
+		<transform from="ဍ◌" to="\u{1039}ဍ"/>
+		<transform from="ဎ◌" to="\u{1039}ဎ"/>
+		<transform from="ဏ◌" to="\u{1039}ဏ"/>
+		<transform from="တ◌" to="\u{1039}တ"/>
+		<transform from="ထ◌" to="\u{1039}ထ"/>
+		<transform from="ဒ◌" to="\u{1039}ဒ"/>
+		<transform from="ဓ◌" to="\u{1039}ဓ"/>
+		<transform from="န◌" to="\u{1039}န"/>
+		<transform from="ပ◌" to="\u{1039}ပ"/>
+		<transform from="ဖ◌" to="\u{1039}ဖ"/>
+		<transform from="ဗ◌" to="\u{1039}ဗ"/>
+		<transform from="ဘ◌" to="\u{1039}ဘ"/>
+		<transform from="မ◌" to="\u{1039}မ"/>
+		<transform from="ယ◌" to="\u{1039}ယ"/>
+		<transform from="ရ◌" to="\u{1039}ရ"/>
+		<transform from="လ◌" to="\u{1039}လ"/>
+		<transform from="ဝ◌" to="\u{1039}ဝ"/>
+		<transform from="သသ◌" to="ဿ"/>
+		<transform from="သ\u{1039}ရ\u{1031}\u{102C}\u{103A}" to="ဪ"/>
+		<transform from="သ\u{103C}" to="ဩ"/>
+		<transform from="သ◌" to="\u{1039}သ"/>
+		<transform from="ဟ◌" to="\u{1039}ဟ"/>
+		<transform from="ဠ◌" to="\u{1039}ဠ"/>
+		<transform from="အ◌" to="\u{1039}အ"/>
+		<transform from="ဥက◌" to="ဉ\u{1039}က"/>
+		<transform from="ဥခ◌" to="ဉ\u{1039}ခ"/>
+		<transform from="ဥဂ◌" to="ဉ\u{1039}ဂ"/>
+		<transform from="ဥဃ◌" to="ဉ\u{1039}ဃ"/>
+		<transform from="ဥစ◌" to="ဉ\u{1039}စ"/>
+		<transform from="ဥဆ◌" to="ဉ\u{1039}ဆ"/>
+		<transform from="ဥဇ◌" to="ဉ\u{1039}ဇ"/>
+		<transform from="ဥဈ◌" to="ဉ\u{1039}ဈ"/>
+		<transform from="ဥဉ◌" to="ဉ\u{1039}ဉ"/>
+		<transform from="ဥည◌" to="ဉ\u{1039}ည"/>
+		<transform from="ဥဋ◌" to="ဉ\u{1039}ဋ"/>
+		<transform from="ဥဌ◌" to="ဉ\u{1039}ဌ"/>
+		<transform from="ဥဍ◌" to="ဉ\u{1039}ဍ"/>
+		<transform from="ဥဎ◌" to="ဉ\u{1039}ဎ"/>
+		<transform from="ဥဏ◌" to="ဉ\u{1039}ဏ"/>
+		<transform from="ဥတ◌" to="ဉ\u{1039}တ"/>
+		<transform from="ဥထ◌" to="ဉ\u{1039}ထ"/>
+		<transform from="ဥဒ◌" to="ဉ\u{1039}ဒ"/>
+		<transform from="ဥဓ◌" to="ဉ\u{1039}ဓ"/>
+		<transform from="ဥန◌" to="ဉ\u{1039}န"/>
+		<transform from="ဥပ◌" to="ဉ\u{1039}ပ"/>
+		<transform from="ဥဖ◌" to="ဉ\u{1039}ဖ"/>
+		<transform from="ဥဗ◌" to="ဉ\u{1039}ဗ"/>
+		<transform from="ဥဘ◌" to="ဉ\u{1039}ဘ"/>
+		<transform from="ဥမ◌" to="ဉ\u{1039}မ"/>
+		<transform from="ဥယ◌" to="ဉ\u{1039}ယ"/>
+		<transform from="ဥရ◌" to="ဉ\u{1039}ရ"/>
+		<transform from="ဥလ◌" to="ဉ\u{1039}လ"/>
+		<transform from="ဥဝ◌" to="ဉ\u{1039}ဝ"/>
+		<transform from="ဥသ◌" to="ဉ\u{1039}သ"/>
+		<transform from="ဥဟ◌" to="ဉ\u{1039}ဟ"/>
+		<transform from="ဥဠ◌" to="ဉ\u{1039}ဠ"/>
+		<transform from="ဥအ◌" to="ဉ\u{1039}အ"/>
+		<transform from="ဥ\u{102C}" to="ဉ\u{102C}"/>
+		<transform from="ဥ\u{102E}" to="ဦ"/>
+		<transform from="ဥ\u{1037}\u{103A}" to="ဉ\u{1037}\u{103A}"/>
+		<transform from="ဥ\u{103A}" to="ဉ\u{103A}"/>
+		<transform from="ဥ၀◌" to="ဉ\u{1039}၀"/>
+		<transform from="ဥ၇◌" to="ဉ\u{1039}၇"/>
+		<transform from="ဥ၈◌" to="ဉ\u{1039}၈"/>
+		<transform from="ဥၚ◌" to="ဉ\u{1039}ၚ"/>
+		<transform from="ဥၛ◌" to="ဉ\u{1039}ၛ"/>
+		<transform from="ဥၜ◌" to="ဉ\u{1039}ၜ"/>
+		<transform from="ဥၝ◌" to="ဉ\u{1039}ၝ"/>
+		<transform from="ဥ◌" after="◌" to="ဉ\u{1039}"/>
+		<transform from="\u{1031}က◌" to="\u{1039}က\u{1031}"/>
+		<transform from="\u{1031}ခ◌" to="\u{1039}ခ\u{1031}"/>
+		<transform from="\u{1031}ဂ◌" to="\u{1039}ဂ\u{1031}"/>
+		<transform from="\u{1031}ဃ◌" to="\u{1039}ဃ\u{1031}"/>
+		<transform from="\u{1031}စ◌" to="\u{1039}စ\u{1031}"/>
+		<transform from="\u{1031}ဆ◌" to="\u{1039}ဆ\u{1031}"/>
+		<transform from="\u{1031}ဇ◌" to="\u{1039}ဇ\u{1031}"/>
+		<transform from="\u{1031}ဈ◌" to="\u{1039}ဈ\u{1031}"/>
+		<transform from="\u{1031}ဉ◌" to="\u{1039}ဉ\u{1031}"/>
+		<transform from="\u{1031}ည◌" to="\u{1039}ည\u{1031}"/>
+		<transform from="\u{1031}ဋ◌" to="\u{1039}ဋ\u{1031}"/>
+		<transform from="\u{1031}ဌ◌" to="\u{1039}ဌ\u{1031}"/>
+		<transform from="\u{1031}ဍ◌" to="\u{1039}ဍ\u{1031}"/>
+		<transform from="\u{1031}ဎ◌" to="\u{1039}ဎ\u{1031}"/>
+		<transform from="\u{1031}ဏ◌" to="\u{1039}ဏ\u{1031}"/>
+		<transform from="\u{1031}တ◌" to="\u{1039}တ\u{1031}"/>
+		<transform from="\u{1031}ထ◌" to="\u{1039}ထ\u{1031}"/>
+		<transform from="\u{1031}ဒ◌" to="\u{1039}ဒ\u{1031}"/>
+		<transform from="\u{1031}ဓ◌" to="\u{1039}ဓ\u{1031}"/>
+		<transform from="\u{1031}န◌" to="\u{1039}န\u{1031}"/>
+		<transform from="\u{1031}ပ◌" to="\u{1039}ပ\u{1031}"/>
+		<transform from="\u{1031}ဖ◌" to="\u{1039}ဖ\u{1031}"/>
+		<transform from="\u{1031}ဗ◌" to="\u{1039}ဗ\u{1031}"/>
+		<transform from="\u{1031}ဘ◌" to="\u{1039}ဘ\u{1031}"/>
+		<transform from="\u{1031}မ◌" to="\u{1039}မ\u{1031}"/>
+		<transform from="\u{1031}ယ◌" to="\u{1039}ယ\u{1031}"/>
+		<transform from="\u{1031}ရ◌" to="\u{1039}ရ\u{1031}"/>
+		<transform from="\u{1031}လ◌" to="\u{1039}လ\u{1031}"/>
+		<transform from="\u{1031}ဝ◌" to="\u{1039}ဝ\u{1031}"/>
+		<transform from="\u{1031}သသ◌" to="ဿ\u{1031}"/>
+		<transform from="\u{1031}သ◌" to="\u{1039}သ\u{1031}"/>
+		<transform from="\u{1031}ဟ◌" to="\u{1039}ဟ\u{1031}"/>
+		<transform from="\u{1031}ဠ◌" to="\u{1039}ဠ\u{1031}"/>
+		<transform from="\u{1031}အ◌" to="\u{1039}အ\u{1031}"/>
+		<transform from="\u{1031}ၚ◌" to="\u{1039}ၚ\u{1031}"/>
+		<transform from="\u{1031}ၛ◌" to="\u{1039}ၛ\u{1031}"/>
+		<transform from="\u{1031}ၜ◌" to="\u{1039}ၜ\u{1031}"/>
+		<transform from="\u{1031}ၝ◌" to="\u{1039}ၝ\u{1031}"/>
+		<transform from="၀က\u{103A}" to="ဝက\u{103A}"/>
+		<transform from="၀က◌" to="ဝ\u{1039}က"/>
+		<transform from="၀ခ\u{103A}" to="ဝခ\u{103A}"/>
+		<transform from="၀ခ◌" to="ဝ\u{1039}ခ"/>
+		<transform from="၀ဂ\u{103A}" to="ဝဂ\u{103A}"/>
+		<transform from="၀ဂ◌" to="ဝ\u{1039}ဂ"/>
+		<transform from="၀ဃ\u{103A}" to="ဝဃ\u{103A}"/>
+		<transform from="၀ဃ◌" to="ဝ\u{1039}ဃ"/>
+		<transform from="၀င\u{103A}" to="ဝင\u{103A}"/>
+		<transform before="သ\u{102D}" from="၀င\u{103A}\u{1039}" to="င\u{103A}\u{1039}ဝ"/>
+		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၀င\u{103A}\u{1039}" to="င\u{103A}\u{1039}ဝ"/>
+		<transform from="၀စ\u{103A}" to="ဝစ\u{103A}"/>
+		<transform from="၀စ◌" to="ဝ\u{1039}စ"/>
+		<transform from="၀ဆ\u{103A}" to="ဝဆ\u{103A}"/>
+		<transform from="၀ဆ◌" to="ဝ\u{1039}ဆ"/>
+		<transform from="၀ဇ\u{103A}" to="ဝဇ\u{103A}"/>
+		<transform from="၀ဇ◌" to="ဝ\u{1039}ဇ"/>
+		<transform from="၀ဈ\u{103A}" to="ဝဈ\u{103A}"/>
+		<transform from="၀ဈ◌" to="ဝ\u{1039}ဈ"/>
+		<transform from="၀ဉ\u{103A}" to="ဝဉ\u{103A}"/>
+		<transform from="၀ဉ◌" to="ဝ\u{1039}ဉ"/>
+		<transform from="၀ည\u{103A}" to="ဝည\u{103A}"/>
+		<transform from="၀ည◌" to="ဝ\u{1039}ည"/>
+		<transform from="၀ဋ\u{103A}" to="ဝဋ\u{103A}"/>
+		<transform from="၀ဋ◌" to="ဝ\u{1039}ဋ"/>
+		<transform from="၀ဌ\u{103A}" to="ဝဌ\u{103A}"/>
+		<transform from="၀ဌ◌" to="ဝ\u{1039}ဌ"/>
+		<transform from="၀ဍ\u{103A}" to="ဝဍ\u{103A}"/>
+		<transform from="၀ဍ◌" to="ဝ\u{1039}ဍ"/>
+		<transform from="၀ဎ\u{103A}" to="ဝဎ\u{103A}"/>
+		<transform from="၀ဎ◌" to="ဝ\u{1039}ဎ"/>
+		<transform from="၀ဏ\u{103A}" to="ဝဏ\u{103A}"/>
+		<transform from="၀ဏ◌" to="ဝ\u{1039}ဏ"/>
+		<transform from="၀တ\u{103A}" to="ဝတ\u{103A}"/>
+		<transform from="၀တ◌" to="ဝ\u{1039}တ"/>
+		<transform from="၀ထ\u{103A}" to="ဝထ\u{103A}"/>
+		<transform from="၀ထ◌" to="ဝ\u{1039}ထ"/>
+		<transform from="၀ဒ\u{103A}" to="ဝဒ\u{103A}"/>
+		<transform from="၀ဒ◌" to="ဝ\u{1039}ဒ"/>
+		<transform from="၀ဓ\u{103A}" to="ဝဓ\u{103A}"/>
+		<transform from="၀ဓ◌" to="ဝ\u{1039}ဓ"/>
+		<transform from="၀န\u{103A}" to="ဝန\u{103A}"/>
+		<transform from="၀န◌" to="ဝ\u{1039}န"/>
+		<transform from="၀ပ\u{103A}" to="ဝပ\u{103A}"/>
+		<transform from="၀ပ◌" to="ဝ\u{1039}ပ"/>
+		<transform from="၀ဖ\u{103A}" to="ဝဖ\u{103A}"/>
+		<transform from="၀ဖ◌" to="ဝ\u{1039}ဖ"/>
+		<transform from="၀ဗ\u{103A}" to="ဝဗ\u{103A}"/>
+		<transform from="၀ဗ◌" to="ဝ\u{1039}ဗ"/>
+		<transform from="၀ဘ\u{103A}" to="ဝဘ\u{103A}"/>
+		<transform from="၀ဘ◌" to="ဝ\u{1039}ဘ"/>
+		<transform from="၀မ\u{103A}" to="ဝမ\u{103A}"/>
+		<transform from="၀မ◌" to="ဝ\u{1039}မ"/>
+		<transform from="၀ယ\u{103A}" to="ဝယ\u{103A}"/>
+		<transform from="၀ယ◌" to="ဝ\u{1039}ယ"/>
+		<transform from="၀ရ\u{103A}" to="ဝရ\u{103A}"/>
+		<transform from="၀ရ◌" to="ဝ\u{1039}ရ"/>
+		<transform from="၀လ\u{103A}" to="ဝလ\u{103A}"/>
+		<transform from="၀လ◌" to="ဝ\u{1039}လ"/>
+		<transform from="၀ဝ\u{103A}" to="ဝဝ\u{103A}"/>
+		<transform from="၀ဝ◌" to="ဝ\u{1039}ဝ"/>
+		<transform from="၀သ\u{103A}" to="ဝသ\u{103A}"/>
+		<transform from="၀သ◌" to="ဝ\u{1039}သ"/>
+		<transform from="၀ဟ\u{103A}" to="ဝဟ\u{103A}"/>
+		<transform from="၀ဟ◌" to="ဝ\u{1039}ဟ"/>
+		<transform from="၀ဠ\u{103A}" to="ဝဠ\u{103A}"/>
+		<transform from="၀ဠ◌" to="ဝ\u{1039}ဠ"/>
+		<transform from="၀အ\u{103A}" to="ဝအ\u{103A}"/>
+		<transform from="၀အ◌" to="ဝ\u{1039}အ"/>
+		<transform from="၀\u{102B}" to="ဝ\u{102B}"/>
+		<transform from="၀\u{102C}" to="ဝ\u{102C}"/>
+		<transform from="၀\u{102D}" to="ဝ\u{102D}"/>
+		<transform from="၀\u{102D}\u{103B}" to="ဝ\u{103B}\u{102D}"/>
+		<transform from="၀\u{102D}\u{103C}" to="ဝ\u{103C}\u{102D}"/>
+		<transform from="၀\u{102D}\u{103D}" to="ဝ\u{103D}\u{102D}"/>
+		<transform from="၀\u{102D}\u{103E}" to="ဝ\u{103E}\u{102D}"/>
+		<transform from="၀\u{102D}\u{1060}" to="ဝ\u{1060}\u{102D}"/>
+		<transform from="၀\u{102E}" to="ဝ\u{102E}"/>
+		<transform from="၀\u{102F}" to="ဝ\u{102F}"/>
+		<transform from="၀\u{1030}" to="ဝ\u{1030}"/>
+		<transform from="၀\u{1032}" to="ဝ\u{1032}"/>
+		<transform from="၀\u{1033}" to="ဝ\u{1033}"/>
+		<transform from="၀\u{1034}" to="ဝ\u{1034}"/>
+		<transform from="၀\u{1035}" to="ဝ\u{1035}"/>
+		<transform from="၀\u{1036}" to="ဝ\u{1036}"/>
+		<transform from="၀\u{103A}" to="ဝ\u{103A}"/>
+		<transform from="၀\u{103B}" to="ဝ\u{103B}"/>
+		<transform from="၀\u{103C}" to="ဝ\u{103C}"/>
+		<transform from="၀\u{103D}" to="ဝ\u{103D}"/>
+		<transform from="၀\u{103E}" to="ဝ\u{103E}"/>
+		<transform from="၀၀" after="\u{103A}" to="ဝဝ"/>
+		<transform from="၀၇" after="\u{103A}" to="ဝရ"/>
+		<transform from="၀၈" after="\u{103A}" to="ဝဂ"/>
+		<transform from="၀ၚ\u{103A}" to="ဝၚ\u{103A}"/>
+		<transform before="သ\u{102D}" from="၀ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ဝ"/>
+		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၀ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ဝ"/>
+		<transform from="၀ၚ◌" to="ဝ\u{1039}ၚ"/>
+		<transform from="၀ၛ\u{103A}" to="ဝၛ\u{103A}"/>
+		<transform from="၀ၛ◌" to="ဝ\u{1039}ၛ"/>
+		<transform from="၀ၜ\u{103A}" to="ဝၜ\u{103A}"/>
+		<transform from="၀ၜ◌" to="ဝ\u{1039}ၜ"/>
+		<transform from="၀ၝ\u{103A}" to="ဝၝ\u{103A}"/>
+		<transform from="၀ၝ◌" to="ဝ\u{1039}ၝ"/>
+		<transform from="၀\u{1060}" to="ဝ\u{1060}"/>
+		<transform from="၀◌" after="◌" to="ဝ\u{1039}"/>
+		<transform from="၀◌\u{103A}" to="ဝ◌\u{103A}"/>
+		<transform from="၄င\u{103A}\u{1038}" to="၎င\u{103A}\u{1038}"/>
+		<transform from="၇က\u{103A}" to="ရက\u{103A}"/>
+		<transform from="၇က◌" to="ရ\u{1039}က"/>
+		<transform from="၇ခ\u{103A}" to="ရခ\u{103A}"/>
+		<transform from="၇ခ◌" to="ရ\u{1039}ခ"/>
+		<transform from="၇ဂ\u{103A}" to="ရဂ\u{103A}"/>
+		<transform from="၇ဂ◌" to="ရ\u{1039}ဂ"/>
+		<transform from="၇ဃ\u{103A}" to="ရဃ\u{103A}"/>
+		<transform from="၇ဃ◌" to="ရ\u{1039}ဃ"/>
+		<transform from="၇င\u{103A}" to="ရင\u{103A}"/>
+		<transform before="သ\u{102D}" from="၇င\u{103A}\u{1039}" to="င\u{103A}\u{1039}ရ"/>
+		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၇င\u{103A}\u{1039}" to="င\u{103A}\u{1039}ရ"/>
+		<transform from="၇စ\u{103A}" to="ရစ\u{103A}"/>
+		<transform from="၇စ◌" to="ရ\u{1039}စ"/>
+		<transform from="၇ဆ\u{103A}" to="ရဆ\u{103A}"/>
+		<transform from="၇ဆ◌" to="ရ\u{1039}ဆ"/>
+		<transform from="၇ဇ\u{103A}" to="ရဇ\u{103A}"/>
+		<transform from="၇ဇ◌" to="ရ\u{1039}ဇ"/>
+		<transform from="၇ဈ\u{103A}" to="ရဈ\u{103A}"/>
+		<transform from="၇ဈ◌" to="ရ\u{1039}ဈ"/>
+		<transform from="၇ဉ\u{103A}" to="ရဉ\u{103A}"/>
+		<transform from="၇ဉ◌" to="ရ\u{1039}ဉ"/>
+		<transform from="၇ည\u{103A}" to="ရည\u{103A}"/>
+		<transform from="၇ည◌" to="ရ\u{1039}ည"/>
+		<transform from="၇ဋ\u{103A}" to="ရဋ\u{103A}"/>
+		<transform from="၇ဋ◌" to="ရ\u{1039}ဋ"/>
+		<transform from="၇ဌ\u{103A}" to="ရဌ\u{103A}"/>
+		<transform from="၇ဌ◌" to="ရ\u{1039}ဌ"/>
+		<transform from="၇ဍ\u{103A}" to="ရဍ\u{103A}"/>
+		<transform from="၇ဍ◌" to="ရ\u{1039}ဍ"/>
+		<transform from="၇ဎ\u{103A}" to="ရဎ\u{103A}"/>
+		<transform from="၇ဎ◌" to="ရ\u{1039}ဎ"/>
+		<transform from="၇ဏ\u{103A}" to="ရဏ\u{103A}"/>
+		<transform from="၇ဏ◌" to="ရ\u{1039}ဏ"/>
+		<transform from="၇တ\u{103A}" to="ရတ\u{103A}"/>
+		<transform from="၇တ◌" to="ရ\u{1039}တ"/>
+		<transform from="၇ထ\u{103A}" to="ရထ\u{103A}"/>
+		<transform from="၇ထ◌" to="ရ\u{1039}ထ"/>
+		<transform from="၇ဒ\u{103A}" to="ရဒ\u{103A}"/>
+		<transform from="၇ဒ◌" to="ရ\u{1039}ဒ"/>
+		<transform from="၇ဓ\u{103A}" to="ရဓ\u{103A}"/>
+		<transform from="၇ဓ◌" to="ရ\u{1039}ဓ"/>
+		<transform from="၇န\u{103A}" to="ရန\u{103A}"/>
+		<transform from="၇န◌" to="ရ\u{1039}န"/>
+		<transform from="၇ပ\u{103A}" to="ရပ\u{103A}"/>
+		<transform from="၇ပ◌" to="ရ\u{1039}ပ"/>
+		<transform from="၇ဖ\u{103A}" to="ရဖ\u{103A}"/>
+		<transform from="၇ဖ◌" to="ရ\u{1039}ဖ"/>
+		<transform from="၇ဗ\u{103A}" to="ရဗ\u{103A}"/>
+		<transform from="၇ဗ◌" to="ရ\u{1039}ဗ"/>
+		<transform from="၇ဘ\u{103A}" to="ရဘ\u{103A}"/>
+		<transform from="၇ဘ◌" to="ရ\u{1039}ဘ"/>
+		<transform from="၇မ\u{103A}" to="ရမ\u{103A}"/>
+		<transform from="၇မ◌" to="ရ\u{1039}မ"/>
+		<transform from="၇ယ\u{103A}" to="ရယ\u{103A}"/>
+		<transform from="၇ယ◌" to="ရ\u{1039}ယ"/>
+		<transform from="၇ရ\u{103A}" to="ရရ\u{103A}"/>
+		<transform from="၇ရ◌" to="ရ\u{1039}ရ"/>
+		<transform from="၇လ\u{103A}" to="ရလ\u{103A}"/>
+		<transform from="၇လ◌" to="ရ\u{1039}လ"/>
+		<transform from="၇ဝ\u{103A}" to="ရဝ\u{103A}"/>
+		<transform from="၇ဝ◌" to="ရ\u{1039}ဝ"/>
+		<transform from="၇သ\u{103A}" to="ရသ\u{103A}"/>
+		<transform from="၇သ◌" to="ရ\u{1039}သ"/>
+		<transform from="၇ဟ\u{103A}" to="ရဟ\u{103A}"/>
+		<transform from="၇ဟ◌" to="ရ\u{1039}ဟ"/>
+		<transform from="၇ဠ\u{103A}" to="ရဠ\u{103A}"/>
+		<transform from="၇ဠ◌" to="ရ\u{1039}ဠ"/>
+		<transform from="၇အ\u{103A}" to="ရအ\u{103A}"/>
+		<transform from="၇အ◌" to="ရ\u{1039}အ"/>
+		<transform from="၇\u{102C}" to="ရ\u{102C}"/>
+		<transform from="၇\u{102D}\u{103B}" to="ရ\u{103B}\u{102D}"/>
+		<transform from="၇\u{102D}\u{103C}" to="ရ\u{103C}\u{102D}"/>
+		<transform from="၇\u{102D}\u{103D}" to="ရ\u{103D}\u{102D}"/>
+		<transform from="၇\u{102D}\u{103E}" to="ရ\u{103E}\u{102D}"/>
+		<transform from="၇\u{102D}\u{1060}" to="ရ\u{1060}\u{102D}"/>
+		<transform from="၇\u{102F}" to="ရ\u{102F}"/>
+		<transform from="၇\u{1030}" to="ရ\u{1030}"/>
+		<transform from="၇\u{1036}" to="ရ\u{1036}"/>
+		<transform from="၇\u{103A}" to="ရ\u{103A}"/>
+		<transform from="၇\u{103B}" to="ရ\u{103B}"/>
+		<transform from="၇\u{103C}" to="ရ\u{103C}"/>
+		<transform from="၇\u{103D}" to="ရ\u{103D}"/>
+		<transform from="၇\u{103E}" to="ရ\u{103E}"/>
+		<transform from="၇၀" after="\u{103A}" to="ရဝ"/>
+		<transform from="၇၇" after="\u{103A}" to="ရရ"/>
+		<transform from="၇၈" after="\u{103A}" to="ရဂ"/>
+		<transform from="၇ၚ\u{103A}" to="ရၚ\u{103A}"/>
+		<transform before="သ\u{102D}" from="၇ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ရ"/>
+		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၇ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ရ"/>
+		<transform from="၇ၚ◌" to="ရ\u{1039}ၚ"/>
+		<transform from="၇ၛ\u{103A}" to="ရၛ\u{103A}"/>
+		<transform from="၇ၛ◌" to="ရ\u{1039}ၛ"/>
+		<transform from="၇ၜ\u{103A}" to="ရၜ\u{103A}"/>
+		<transform from="၇ၜ◌" to="ရ\u{1039}ၜ"/>
+		<transform from="၇ၝ\u{103A}" to="ရၝ\u{103A}"/>
+		<transform from="၇ၝ◌" to="ရ\u{1039}ၝ"/>
+		<transform from="၇\u{1060}" to="ရ\u{1060}"/>
+		<transform from="၇◌" after="◌" to="ရ\u{1039}"/>
+		<transform from="၇◌\u{103A}" to="ရ◌\u{103A}"/>
+		<transform from="၈က\u{103A}" to="ဂက\u{103A}"/>
+		<transform from="၈က◌" to="ဂ\u{1039}က"/>
+		<transform from="၈ခ\u{103A}" to="ဂခ\u{103A}"/>
+		<transform from="၈ခ◌" to="ဂ\u{1039}ခ"/>
+		<transform from="၈ဂ\u{103A}" to="ဂဂ\u{103A}"/>
+		<transform from="၈ဂ◌" to="ဂ\u{1039}ဂ"/>
+		<transform from="၈ဃ\u{103A}" to="ဂဃ\u{103A}"/>
+		<transform from="၈ဃ◌" to="ဂ\u{1039}ဃ"/>
+		<transform from="၈င\u{103A}" to="ဂင\u{103A}"/>
+		<transform before="သ\u{102D}" from="၈င\u{103A}\u{1039}" to="င\u{103A}\u{1039}ဂ"/>
+		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၈င\u{103A}\u{1039}" to="င\u{103A}\u{1039}ဂ"/>
+		<transform from="၈စ\u{103A}" to="ဂစ\u{103A}"/>
+		<transform from="၈စ◌" to="ဂ\u{1039}စ"/>
+		<transform from="၈ဆ\u{103A}" to="ဂဆ\u{103A}"/>
+		<transform from="၈ဆ◌" to="ဂ\u{1039}ဆ"/>
+		<transform from="၈ဇ\u{103A}" to="ဂဇ\u{103A}"/>
+		<transform from="၈ဇ◌" to="ဂ\u{1039}ဇ"/>
+		<transform from="၈ဈ\u{103A}" to="ဂဈ\u{103A}"/>
+		<transform from="၈ဈ◌" to="ဂ\u{1039}ဈ"/>
+		<transform from="၈ဉ\u{103A}" to="ဂဉ\u{103A}"/>
+		<transform from="၈ဉ◌" to="ဂ\u{1039}ဉ"/>
+		<transform from="၈ည\u{103A}" to="ဂည\u{103A}"/>
+		<transform from="၈ည◌" to="ဂ\u{1039}ည"/>
+		<transform from="၈ဋ\u{103A}" to="ဂဋ\u{103A}"/>
+		<transform from="၈ဋ◌" to="ဂ\u{1039}ဋ"/>
+		<transform from="၈ဌ\u{103A}" to="ဂဌ\u{103A}"/>
+		<transform from="၈ဌ◌" to="ဂ\u{1039}ဌ"/>
+		<transform from="၈ဍ\u{103A}" to="ဂဍ\u{103A}"/>
+		<transform from="၈ဍ◌" to="ဂ\u{1039}ဍ"/>
+		<transform from="၈ဎ\u{103A}" to="ဂဎ\u{103A}"/>
+		<transform from="၈ဎ◌" to="ဂ\u{1039}ဎ"/>
+		<transform from="၈ဏ\u{103A}" to="ဂဏ\u{103A}"/>
+		<transform from="၈ဏ◌" to="ဂ\u{1039}ဏ"/>
+		<transform from="၈တ\u{103A}" to="ဂတ\u{103A}"/>
+		<transform from="၈တ◌" to="ဂ\u{1039}တ"/>
+		<transform from="၈ထ\u{103A}" to="ဂထ\u{103A}"/>
+		<transform from="၈ထ◌" to="ဂ\u{1039}ထ"/>
+		<transform from="၈ဒ\u{103A}" to="ဂဒ\u{103A}"/>
+		<transform from="၈ဒ◌" to="ဂ\u{1039}ဒ"/>
+		<transform from="၈ဓ\u{103A}" to="ဂဓ\u{103A}"/>
+		<transform from="၈ဓ◌" to="ဂ\u{1039}ဓ"/>
+		<transform from="၈န\u{103A}" to="ဂန\u{103A}"/>
+		<transform from="၈န◌" to="ဂ\u{1039}န"/>
+		<transform from="၈ပ\u{103A}" to="ဂပ\u{103A}"/>
+		<transform from="၈ပ◌" to="ဂ\u{1039}ပ"/>
+		<transform from="၈ဖ\u{103A}" to="ဂဖ\u{103A}"/>
+		<transform from="၈ဖ◌" to="ဂ\u{1039}ဖ"/>
+		<transform from="၈ဗ\u{103A}" to="ဂဗ\u{103A}"/>
+		<transform from="၈ဗ◌" to="ဂ\u{1039}ဗ"/>
+		<transform from="၈ဘ\u{103A}" to="ဂဘ\u{103A}"/>
+		<transform from="၈ဘ◌" to="ဂ\u{1039}ဘ"/>
+		<transform from="၈မ\u{103A}" to="ဂမ\u{103A}"/>
+		<transform from="၈မ◌" to="ဂ\u{1039}မ"/>
+		<transform from="၈ယ\u{103A}" to="ဂယ\u{103A}"/>
+		<transform from="၈ယ◌" to="ဂ\u{1039}ယ"/>
+		<transform from="၈ရ\u{103A}" to="ဂရ\u{103A}"/>
+		<transform from="၈ရ◌" to="ဂ\u{1039}ရ"/>
+		<transform from="၈လ\u{103A}" to="ဂလ\u{103A}"/>
+		<transform from="၈လ◌" to="ဂ\u{1039}လ"/>
+		<transform from="၈ဝ\u{103A}" to="ဂဝ\u{103A}"/>
+		<transform from="၈ဝ◌" to="ဂ\u{1039}ဝ"/>
+		<transform from="၈သ\u{103A}" to="ဂသ\u{103A}"/>
+		<transform from="၈သ◌" to="ဂ\u{1039}သ"/>
+		<transform from="၈ဟ\u{103A}" to="ဂဟ\u{103A}"/>
+		<transform from="၈ဟ◌" to="ဂ\u{1039}ဟ"/>
+		<transform from="၈ဠ\u{103A}" to="ဂဠ\u{103A}"/>
+		<transform from="၈ဠ◌" to="ဂ\u{1039}ဠ"/>
+		<transform from="၈အ\u{103A}" to="ဂအ\u{103A}"/>
+		<transform from="၈အ◌" to="ဂ\u{1039}အ"/>
+		<transform from="၈\u{102C}" to="ဂ\u{102C}"/>
+		<transform from="၈\u{102D}\u{103B}" to="ဂ\u{103B}\u{102D}"/>
+		<transform from="၈\u{102D}\u{103C}" to="ဂ\u{103C}\u{102D}"/>
+		<transform from="၈\u{102D}\u{103D}" to="ဂ\u{103D}\u{102D}"/>
+		<transform from="၈\u{102D}\u{103E}" to="ဂ\u{103E}\u{102D}"/>
+		<transform from="၈\u{102D}\u{1060}" to="ဂ\u{1060}\u{102D}"/>
+		<transform from="၈\u{102F}" to="ဂ\u{102F}"/>
+		<transform from="၈\u{1030}" to="ဂ\u{1030}"/>
+		<transform from="၈\u{1036}" to="ဂ\u{1036}"/>
+		<transform from="၈\u{103A}" to="ဂ\u{103A}"/>
+		<transform from="၈\u{103B}" to="ဂ\u{103B}"/>
+		<transform from="၈\u{103C}" to="ဂ\u{103C}"/>
+		<transform from="၈\u{103D}" to="ဂ\u{103D}"/>
+		<transform from="၈\u{103E}" to="ဂ\u{103E}"/>
+		<transform from="၈၀" after="\u{103A}" to="ဂဝ"/>
+		<transform from="၈၇" after="\u{103A}" to="ဂရ"/>
+		<transform from="၈၈" after="\u{103A}" to="ဂဂ"/>
+		<transform from="၈ၚ\u{103A}" to="ဂၚ\u{103A}"/>
+		<transform before="သ\u{102D}" from="၈ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ဂ"/>
+		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၈ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ဂ"/>
+		<transform from="၈ၚ◌" to="ဂ\u{1039}ၚ"/>
+		<transform from="၈ၛ\u{103A}" to="ဂၛ\u{103A}"/>
+		<transform from="၈ၛ◌" to="ဂ\u{1039}ၛ"/>
+		<transform from="၈ၜ\u{103A}" to="ဂၜ\u{103A}"/>
+		<transform from="၈ၜ◌" to="ဂ\u{1039}ၜ"/>
+		<transform from="၈ၝ\u{103A}" to="ဂၝ\u{103A}"/>
+		<transform from="၈ၝ◌" to="ဂ\u{1039}ၝ"/>
+		<transform from="၈\u{1060}" to="ဂ\u{1060}"/>
+		<transform from="၈◌" after="◌" to="ဂ\u{1039}"/>
+		<transform from="၈◌\u{103A}" to="ဂ◌\u{103A}"/>
+		<transform from="ၚ◌" to="\u{1039}ၚ"/>
+		<transform from="ၛ◌" to="\u{1039}ၛ"/>
+		<transform from="ၜ◌" to="\u{1039}ၜ"/>
+		<transform from="ၝ◌" to="\u{1039}ၝ"/>
+		<transform from="\u{200B}\u{1031}၀" to="ဝ\u{1031}"/>
+		<transform from="\u{200B}\u{1031}၇" to="ရ\u{1031}"/>
+		<transform from="\u{200B}\u{1031}၈" to="ဂ\u{1031}"/>
+		<transform from="‘‘" to="“"/>
+		<transform from="’’" to="”"/>
+	</transforms>
+	<import path="shared/reorders.xml"/>
+	<import path="reorder.xml"/>
+	<backspaces>
+		<backspace from="\.\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="က\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="က\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ခ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ခ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဂ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဂ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဃ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဃ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="င\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="စ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="စ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဆ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဆ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဇ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဇ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဈ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဈ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဉ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဉ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ည\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ည\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဋ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဋ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဌ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဌ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဍ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဍ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဎ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဎ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဏ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဏ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="တ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="တ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ထ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ထ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဒ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဒ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဓ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဓ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="န\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="န\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ပ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ပ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဖ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဖ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဗ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဗ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဘ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဘ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="မ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="မ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ယ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ယ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ရ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ရ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="လ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="လ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဝ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဝ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="သ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="သ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဟ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဟ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ဠ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ဠ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="အ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="အ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ဣ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ဤ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ဥ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ဦ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ဧ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ဨ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="\u{1039}က" to=""/>
+		<backspace from="\u{1039}က\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ခ" to=""/>
+		<backspace from="\u{1039}ခ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဂ" to=""/>
+		<backspace from="\u{1039}ဂ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဃ" to=""/>
+		<backspace from="\u{1039}ဃ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}စ" to=""/>
+		<backspace from="\u{1039}စ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဆ" to=""/>
+		<backspace from="\u{1039}ဆ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဇ" to=""/>
+		<backspace from="\u{1039}ဇ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဈ" to=""/>
+		<backspace from="\u{1039}ဈ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဉ" to=""/>
+		<backspace from="\u{1039}ဉ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ည" to=""/>
+		<backspace from="\u{1039}ည\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဋ" to=""/>
+		<backspace from="\u{1039}ဋ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဌ" to=""/>
+		<backspace from="\u{1039}ဌ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဍ" to=""/>
+		<backspace from="\u{1039}ဍ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဎ" to=""/>
+		<backspace from="\u{1039}ဎ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဏ" to=""/>
+		<backspace from="\u{1039}ဏ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}တ" to=""/>
+		<backspace from="\u{1039}တ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ထ" to=""/>
+		<backspace from="\u{1039}ထ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဒ" to=""/>
+		<backspace from="\u{1039}ဒ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဓ" to=""/>
+		<backspace from="\u{1039}ဓ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}န" to=""/>
+		<backspace from="\u{1039}န\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ပ" to=""/>
+		<backspace from="\u{1039}ပ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဖ" to=""/>
+		<backspace from="\u{1039}ဖ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဗ" to=""/>
+		<backspace from="\u{1039}ဗ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဘ" to=""/>
+		<backspace from="\u{1039}ဘ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}မ" to=""/>
+		<backspace from="\u{1039}မ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ယ" to=""/>
+		<backspace from="\u{1039}ယ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ရ" to=""/>
+		<backspace from="\u{1039}ရ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}လ" to=""/>
+		<backspace from="\u{1039}လ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဝ" to=""/>
+		<backspace from="\u{1039}ဝ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}သ" to=""/>
+		<backspace from="\u{1039}သ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဟ" to=""/>
+		<backspace from="\u{1039}ဟ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ဠ" to=""/>
+		<backspace from="\u{1039}ဠ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}အ" to=""/>
+		<backspace from="\u{1039}အ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ၚ" to=""/>
+		<backspace from="\u{1039}ၚ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ၛ" to=""/>
+		<backspace from="\u{1039}ၛ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ၜ" to=""/>
+		<backspace from="\u{1039}ၜ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}ၝ" to=""/>
+		<backspace from="\u{1039}ၝ\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{1039}◌" to=""/>
+		<backspace from="\u{1039}◌\u{1031}" to="\u{1031}"/>
+		<backspace from="၊\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="။\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="၌\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="၍\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="၎\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="၏\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ၚ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ၚ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ၛ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ၛ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ၜ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ၜ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="ၝ\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="ၝ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="ၡ\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="\u{1062}\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="\u{1064}\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="\u{200B}\u{1031}" to=""/>
+		<backspace from="‘\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="’\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="\u{2060}\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="◌\u{1031}" to="\u{200B}\u{1031}"/>
+		<backspace from="◌\u{1031}" to="\u{FDDF}\u{1031}"/>
+	</backspaces>
+</keyboard>

@@ -7,6 +7,7 @@ subdirs = easy-chakma \
         sil-devanagari-phonetic \
         sil-ethiopic-powerg \
         sil-lepcha \
+        sil-mywinext \
         sil-vai \
         sil-yi 
 
