@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<keyboard locale="en-us-android">
-    <version number="1"/>
-    <import path="../en-us-win/en-us-win.xml"/>
-    <import path="../../../shared/android-default.xml"/>
-</keyboard>
