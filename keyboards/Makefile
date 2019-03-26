@@ -1,9 +1,11 @@
 subdirs = easy-chakma \
         kh-sil-angkhor \
         my-shan \
+        panafrica_us \
         sil-bengali \
         sil-boonkit \
         sil-devanagari-phonetic \
+        sil-ethiopic-powerg \
         sil-lepcha \
         sil-vai \
         sil-yi 
