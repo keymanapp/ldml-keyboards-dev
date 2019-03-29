@@ -68,17 +68,9 @@ class Keyboard(object):
         self.history = []
         self.context = ""
         self.fname = path
-        self.prebases = set()
         self.parse(path)
         self.tracing = False
         self.imported = imported
-
-    def _add_prebases(self, e, onlyifin):
-        f = e.get('from')
-        if f is None: return
-        s = UnicodeSets.parse(f)
-        for c in s[0]:
-            self.prebases.add(c)
 
     def _addrules(self, element, transform, onlyifin=None, context=None):
         if transform not in self.transforms:
@@ -89,8 +81,6 @@ class Keyboard(object):
         else:
             e = SyntaxError("")
         for m in element:
-            if 'prebase' in m.attrib and transform == 'reorder':
-                self._add_prebases(m, onlyifin)
             em = ESyntaxError(m, "", self.fname)
             rules.append(m, onlyifin, error=em)
 
@@ -125,8 +115,6 @@ class Keyboard(object):
                 self.fallbacks.append(c.get('fallback', "").split(' '))
             elif c.tag == 'transforms':
                 t = c.get('type')
-                if t == 'simple' and t in self.transforms:  # allow a second simple transforms
-                    t = 'simple2'
                 self._addrules(c, t, context=c)
             elif c.tag == 'reorders':
                 testset = set(x for m in self.keyboards for v in m.values() for x in v)
@@ -201,13 +189,6 @@ class Keyboard(object):
         else:
             if not self._process_simple(ctxt):
                 self.error(ctxt)
-            if 'simple2' in self.transforms:
-                if not self._process_simple(ctxt, 'simple2', handleSettings=False):
-                    self.error(ctxt)
-            else:
-                ctxt.outputs[2] = ctxt.outputs[1][:]
-                ctxt.partials[2] = ctxt.partials[1]
-                ctxt.offsets[2] = ctxt.offsets[3]
             self._process_reorder(ctxt)
             if not self._process_simple(ctxt, 'final', handleSettings=False):
                 self.error(ctxt)
@@ -283,28 +264,29 @@ class Keyboard(object):
         while curr < len(instr):
             r = trans.match(instr, curr)
             if r.rule is not None:
-                if r.offset > 0:    # @before context
+                if r.offset > 0:    # there is a @before context, output it
                     context.results(ruleset, curr, r.offset, instr[curr:curr+r.offset], rule=r.rule)
                     r.length -= r.offset
                     curr += r.offset
                 if getattr(r.rule, 'error', 0):
                     context.error = True
                 newout = UnicodeSets.struni(getattr(r.rule, 'to', ""))
+                # output replaced string
                 context.results(ruleset, curr, r.length, newout, rule=r.rule)
                 if ruleset == 'final':
                     curr += r.length
-                    continue
+                    continue    # no reprocessing of final type transforms
                 # allow reprocessing of input transforms only. This gives us rotors, for example.
                 for i in range(len(newout), 0, -1):
+                    # do a test match on the suffix
                     t = trans.match(context.outputs[ind], len(context.outputs[ind]) - i)
+                    # if the suffix is an incomplete match then remove that much from the output
+                    # and put back onto input.
                     if t.morep:
-                        # context.partials[ind] += i
-                        context.offsets[ind] -= r.length
-                        instr = context.outputs[ind][-i:] + instr[curr + r.length:]
-                        context.outputs[ind] = context.outputs[ind][:-i]
+                        instr = context.put_back(ruleset, instr, r.length, curr, i)
                         curr = 0
                         break
-                else:
+                else:   # if nothing put back, simply advance over what we have used
                     curr += r.length
             elif r.length == 0 and not r.morep and not fallback:     # abject failure
                 context.results(ruleset, curr, 1, instr[curr:curr+1], comment="Fallthrough")
@@ -321,6 +303,9 @@ class Keyboard(object):
         return True
 
     def _sort(self, begin, end, chars, keys, rev=False):
+        ''' Sort a list of chars based on a corresponding list of keys. If no base (key.primary==0)
+            in the sequence, insert a U+200B as a base character. If rev remove any U+200B
+            immediately preceding a prevowel (after sorting) '''
         s = chars[begin:end]
         k = keys[:end-begin]
         if not len(s):
@@ -345,6 +330,7 @@ class Keyboard(object):
         return (chars[:begin], res, chars[end:])
 
     def _padlist(self, val, num):
+        ''' fill out short value lists to full length of matched string '''
         boolmap = {'false' : 0, 'true': 1}
         res = [boolmap.get(x.lower(), x) for x in val.split()]
         if len(res) < num:
@@ -389,6 +375,7 @@ class Keyboard(object):
         if curr > startrun:     # just copy the odd characters across
             context.results(ruleset, curr, curr - startrun, instr[startrun:curr])
 
+        # iterate over sorted clusters
         for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), ruleset=ruleset, ctxt=context):
             if len(post):
                 # append and update processed marker
@@ -398,7 +385,7 @@ class Keyboard(object):
                 context.partial_results(ruleset, len(ordered), ordered, comment="Partial reorder")
 
     def _reorder(self, instr, startrun=0, end=0, ruleset='reorder', ctxt=None):
-        '''Presumes we are at the start of a cluster'''
+        '''Presumes we are at the start of a cluster. Analyses a single cluster and orders it.'''
         trans = self.transforms[ruleset]
         curr = startrun
         keys = [None] * (len(instr) - startrun)
@@ -543,7 +530,7 @@ class Keyboard(object):
             else:       # no rule, so just remove a single character
                 (res, length, simple, slen) = self._default_backspace(instr)
         # replace the various between pass strings
-        for x in ('base', 'simple', 'simple2'):
+        for x in ('base', 'simple'):
             context.replace_end(x, slen, simple, rule=rule)
             # reset offset to start of replaced text (i.e. newly reordering text)
             # context.offsets[context.index(x)] = len(context.outputs[context.index('simple')]) - len(simple)
@@ -615,9 +602,8 @@ class Context(object):
     slotnames = {
         'base' : 0,
         'simple' : 1,
-        'simple2' : 2,
-        'reorder' : 3,
-        'final' : 4
+        'reorder' : 2,
+        'final' : 3
     }
     def __init__(self, chars="", tracing=False):
         self.outputs = [""] * len(self.slotnames)   # stuff to pass to next layer
@@ -703,6 +689,16 @@ class Context(object):
         if ind == 0:
             self.offsets[ind] = len(self.outputs[ind])
         self.trace_replacement("Truncated", backup, name, res, rule=rule, comment=comment)
+
+    def put_back(self, name, instr, inlength, inoffset, outlength):
+        ''' Remove outlength chars from output and return them as a prefix to replace
+            inlength chars from the instr at the given inoffset. So the return is:
+            some_output + instr[inoffset+inlength:] '''
+        ind = self.index(name)
+        self.offsets[ind] -= inlength
+        instr = self.outputs[ind][-outlength:] + instr[inoffset + inlength:]
+        self.outputs[ind] = self.outputs[ind][:-outlength]
+        return instr
 
     def trace_replacement(self, txt, length, name, res, rule=None, comment=None):
         if self.enable_tracing:
