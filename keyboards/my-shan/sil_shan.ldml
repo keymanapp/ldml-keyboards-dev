@@ -14,8 +14,8 @@
 		<map iso="B05" to="ယ"/>
 		<map iso="B06" to="ၺ"/>
 		<map iso="B07" to="\u{1062}"/>
-		<map iso="C01" to="\u{200B}\u{1031}"/>
-		<map iso="C02" to="\u{200B}\u{1084}"/>
+		<map iso="C01" to="\u{1031}"/>
+		<map iso="C02" to="\u{1084}"/>
 		<map iso="C03" to="\u{102D}"/>
 		<map iso="C04" to="\u{103A}"/>
 		<map iso="C05" to="\u{103D}"/>
@@ -106,72 +106,16 @@
 		<transform from="\u{1086}\u{1037}\u{FDD2}" to="\u{1036}\u{1086}\u{1037}"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
-	<import path="sil_shan_reorder.xml"/>
+	<reorders>
+		<reorder from="\u{1031}" prebase="1"/>
+		<reorder from="\u{1084}" prebase="1"/>
+	</reorders>
 	<transforms type="final">
 		<transform from="\u{FDD2}" to=""/>
 	</transforms>
 	<backspaces>
-		<backspace from="င\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="င\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="တ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="တ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ထ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ထ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ပ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ပ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="မ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="မ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ယ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ယ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ရ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ရ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="လ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="လ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ဝ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ဝ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="သ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="သ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ဢ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ဢ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၵ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၵ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၶ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၶ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၷ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၷ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၸ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၸ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၺ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၺ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၻ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၻ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၼ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၼ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၽ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၽ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၾ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၾ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ၿ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၿ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ႀ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ႀ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ႁ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ႁ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="႞\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="႞\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="႟\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="႟\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="\u{200B}\u{1031}" to=""/>
-		<backspace from="\u{200B}\u{1084}" to=""/>
-		<backspace from="\u{A9E0}\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="\u{A9E0}\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="\u{A9E3}\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="\u{A9E3}\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ꩡ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ꩡ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ꩪ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ꩪ\u{1084}" to="\u{FDDF}\u{1084}"/>
-		<backspace from="ꩮ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ꩮ\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="[ငတထပမယရလဝသဢၵၶၷၸၺၻၼၽၾၿႀႁ႞႟\u{A9E0}\u{A9E3}ꩡꩪꩮ]\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="[ငတထပမယရလဝသဢၵၶၷၸၺၻၼၽၾၿႀႁ႞႟\u{A9E0}\u{A9E3}ꩡꩪꩮ]\u{1084}" to="\u{FDDF}\u{1084}"/>
+		<backspace from="\u{FDDF}[\u{1031}\u{1084}]" to=""/>
 	</backspaces>
 </keyboard>

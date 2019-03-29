@@ -18,7 +18,7 @@
 		<map iso="B08" to="ယ"/>
 		<map iso="B09" to="."/>
 		<map iso="B10" to="။"/>
-		<map iso="C01" to="\u{200B}\u{1031}"/>
+		<map iso="C01" to="\u{1031}"/>
 		<map iso="C02" to="\u{103B}"/>
 		<map iso="C03" to="\u{102D}"/>
 		<map iso="C04" to="\u{103A}"/>
@@ -192,44 +192,6 @@
 		<transform from="ဥၜ◌" to="ဉ\u{1039}ၜ"/>
 		<transform from="ဥၝ◌" to="ဉ\u{1039}ၝ"/>
 		<transform from="ဥ◌" after="◌" to="ဉ\u{1039}"/>
-		<transform from="\u{1031}က◌" to="\u{1039}က\u{1031}"/>
-		<transform from="\u{1031}ခ◌" to="\u{1039}ခ\u{1031}"/>
-		<transform from="\u{1031}ဂ◌" to="\u{1039}ဂ\u{1031}"/>
-		<transform from="\u{1031}ဃ◌" to="\u{1039}ဃ\u{1031}"/>
-		<transform from="\u{1031}စ◌" to="\u{1039}စ\u{1031}"/>
-		<transform from="\u{1031}ဆ◌" to="\u{1039}ဆ\u{1031}"/>
-		<transform from="\u{1031}ဇ◌" to="\u{1039}ဇ\u{1031}"/>
-		<transform from="\u{1031}ဈ◌" to="\u{1039}ဈ\u{1031}"/>
-		<transform from="\u{1031}ဉ◌" to="\u{1039}ဉ\u{1031}"/>
-		<transform from="\u{1031}ည◌" to="\u{1039}ည\u{1031}"/>
-		<transform from="\u{1031}ဋ◌" to="\u{1039}ဋ\u{1031}"/>
-		<transform from="\u{1031}ဌ◌" to="\u{1039}ဌ\u{1031}"/>
-		<transform from="\u{1031}ဍ◌" to="\u{1039}ဍ\u{1031}"/>
-		<transform from="\u{1031}ဎ◌" to="\u{1039}ဎ\u{1031}"/>
-		<transform from="\u{1031}ဏ◌" to="\u{1039}ဏ\u{1031}"/>
-		<transform from="\u{1031}တ◌" to="\u{1039}တ\u{1031}"/>
-		<transform from="\u{1031}ထ◌" to="\u{1039}ထ\u{1031}"/>
-		<transform from="\u{1031}ဒ◌" to="\u{1039}ဒ\u{1031}"/>
-		<transform from="\u{1031}ဓ◌" to="\u{1039}ဓ\u{1031}"/>
-		<transform from="\u{1031}န◌" to="\u{1039}န\u{1031}"/>
-		<transform from="\u{1031}ပ◌" to="\u{1039}ပ\u{1031}"/>
-		<transform from="\u{1031}ဖ◌" to="\u{1039}ဖ\u{1031}"/>
-		<transform from="\u{1031}ဗ◌" to="\u{1039}ဗ\u{1031}"/>
-		<transform from="\u{1031}ဘ◌" to="\u{1039}ဘ\u{1031}"/>
-		<transform from="\u{1031}မ◌" to="\u{1039}မ\u{1031}"/>
-		<transform from="\u{1031}ယ◌" to="\u{1039}ယ\u{1031}"/>
-		<transform from="\u{1031}ရ◌" to="\u{1039}ရ\u{1031}"/>
-		<transform from="\u{1031}လ◌" to="\u{1039}လ\u{1031}"/>
-		<transform from="\u{1031}ဝ◌" to="\u{1039}ဝ\u{1031}"/>
-		<transform from="\u{1031}သသ◌" to="ဿ\u{1031}"/>
-		<transform from="\u{1031}သ◌" to="\u{1039}သ\u{1031}"/>
-		<transform from="\u{1031}ဟ◌" to="\u{1039}ဟ\u{1031}"/>
-		<transform from="\u{1031}ဠ◌" to="\u{1039}ဠ\u{1031}"/>
-		<transform from="\u{1031}အ◌" to="\u{1039}အ\u{1031}"/>
-		<transform from="\u{1031}ၚ◌" to="\u{1039}ၚ\u{1031}"/>
-		<transform from="\u{1031}ၛ◌" to="\u{1039}ၛ\u{1031}"/>
-		<transform from="\u{1031}ၜ◌" to="\u{1039}ၜ\u{1031}"/>
-		<transform from="\u{1031}ၝ◌" to="\u{1039}ၝ\u{1031}"/>
 		<transform from="၀က\u{103A}" to="ဝက\u{103A}"/>
 		<transform from="၀က◌" to="ဝ\u{1039}က"/>
 		<transform from="၀ခ\u{103A}" to="ဝခ\u{103A}"/>
@@ -539,187 +501,17 @@
 		<transform from="ၛ◌" to="\u{1039}ၛ"/>
 		<transform from="ၜ◌" to="\u{1039}ၜ"/>
 		<transform from="ၝ◌" to="\u{1039}ၝ"/>
-		<transform from="\u{200B}\u{1031}၀" to="ဝ\u{1031}"/>
-		<transform from="\u{200B}\u{1031}၇" to="ရ\u{1031}"/>
-		<transform from="\u{200B}\u{1031}၈" to="ဂ\u{1031}"/>
 		<transform from="‘‘" to="“"/>
 		<transform from="’’" to="”"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
-	<import path="reorder.xml"/>
+	<reorders>
+		<reorder from="\u{1031}" prebase="1"/>
+	</reorders>
 	<backspaces>
-		<backspace from="\.\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="က\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="က\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ခ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ခ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဂ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဂ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဃ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဃ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="င\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="စ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="စ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဆ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဆ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဇ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဇ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဈ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဈ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဉ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဉ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ည\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ည\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဋ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဋ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဌ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဌ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဍ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဍ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဎ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဎ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဏ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဏ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="တ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="တ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ထ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ထ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဒ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဒ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဓ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဓ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="န\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="န\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ပ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ပ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဖ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဖ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဗ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဗ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဘ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဘ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="မ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="မ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ယ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ယ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ရ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ရ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="လ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="လ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဝ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဝ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="သ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="သ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဟ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဟ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ဠ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ဠ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="အ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="အ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ဣ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ဤ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ဥ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ဦ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ဧ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ဨ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="\u{1039}က" to=""/>
-		<backspace from="\u{1039}က\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ခ" to=""/>
-		<backspace from="\u{1039}ခ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဂ" to=""/>
-		<backspace from="\u{1039}ဂ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဃ" to=""/>
-		<backspace from="\u{1039}ဃ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}စ" to=""/>
-		<backspace from="\u{1039}စ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဆ" to=""/>
-		<backspace from="\u{1039}ဆ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဇ" to=""/>
-		<backspace from="\u{1039}ဇ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဈ" to=""/>
-		<backspace from="\u{1039}ဈ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဉ" to=""/>
-		<backspace from="\u{1039}ဉ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ည" to=""/>
-		<backspace from="\u{1039}ည\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဋ" to=""/>
-		<backspace from="\u{1039}ဋ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဌ" to=""/>
-		<backspace from="\u{1039}ဌ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဍ" to=""/>
-		<backspace from="\u{1039}ဍ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဎ" to=""/>
-		<backspace from="\u{1039}ဎ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဏ" to=""/>
-		<backspace from="\u{1039}ဏ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}တ" to=""/>
-		<backspace from="\u{1039}တ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ထ" to=""/>
-		<backspace from="\u{1039}ထ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဒ" to=""/>
-		<backspace from="\u{1039}ဒ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဓ" to=""/>
-		<backspace from="\u{1039}ဓ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}န" to=""/>
-		<backspace from="\u{1039}န\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ပ" to=""/>
-		<backspace from="\u{1039}ပ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဖ" to=""/>
-		<backspace from="\u{1039}ဖ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဗ" to=""/>
-		<backspace from="\u{1039}ဗ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဘ" to=""/>
-		<backspace from="\u{1039}ဘ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}မ" to=""/>
-		<backspace from="\u{1039}မ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ယ" to=""/>
-		<backspace from="\u{1039}ယ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ရ" to=""/>
-		<backspace from="\u{1039}ရ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}လ" to=""/>
-		<backspace from="\u{1039}လ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဝ" to=""/>
-		<backspace from="\u{1039}ဝ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}သ" to=""/>
-		<backspace from="\u{1039}သ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဟ" to=""/>
-		<backspace from="\u{1039}ဟ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ဠ" to=""/>
-		<backspace from="\u{1039}ဠ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}အ" to=""/>
-		<backspace from="\u{1039}အ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ၚ" to=""/>
-		<backspace from="\u{1039}ၚ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ၛ" to=""/>
-		<backspace from="\u{1039}ၛ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ၜ" to=""/>
-		<backspace from="\u{1039}ၜ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}ၝ" to=""/>
-		<backspace from="\u{1039}ၝ\u{1031}" to="\u{1031}"/>
-		<backspace from="\u{1039}◌" to=""/>
-		<backspace from="\u{1039}◌\u{1031}" to="\u{1031}"/>
-		<backspace from="၊\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="။\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="၌\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="၍\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="၎\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="၏\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ၚ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ၚ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ၛ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ၛ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ၜ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ၜ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="ၝ\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="ၝ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="ၡ\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="\u{1062}\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="\u{1064}\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="\u{200B}\u{1031}" to=""/>
-		<backspace from="‘\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="’\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace from="\u{2060}\u{1031}" to="\u{FDDF}\u{1031}"/>
-		<backspace before="င\u{103A}\u{1039}" from="◌\u{1031}" to="\u{200B}\u{1031}"/>
-		<backspace from="◌\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace before="င\u{103A}\u{1039}" from="[\.ကခဂဃငစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအဣဤဥဦဧဨ၊။၌၍၎၏ၚၛၜၝၡ\u{1062}\u{1064}‘’\u{2060}◌]\u{1031}" to="\u{FDDF}\u{1031}"/>
+		<backspace from="\u{1039}[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" to=""/>
+		<backspace from="\u{1039}[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]\u{1031}" to="\u{1031}"/>
+		<backspace from="\u{FDDF}\u{1031}" to=""/>
 	</backspaces>
 </keyboard>

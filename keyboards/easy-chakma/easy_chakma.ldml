@@ -10,7 +10,7 @@
 		<map iso="B00" to="\u{11142}"/>
 		<map iso="B01" to="\u{11104}"/>
 		<map iso="B02" to="\u{1112E}"/>
-		<map iso="B03" to="\u{200B}\u{1112C}"/>
+		<map iso="B03" to="\u{1112C}"/>
 		<map iso="B04" to="\u{11122}"/>
 		<map iso="B05" to="\u{1111A}"/>
 		<map iso="B06" to="\u{11125}"/>
@@ -104,6 +104,11 @@
 		<map iso="E11" to="_"/>
 		<map iso="E12" to="+"/>
 	</keyMap>
+	<transforms type="simple">
+		<transform before="\u{200B}\u{1112C}" from="\u{1112C}" to="\u{1112C}"/>
+	</transforms>
 	<import path="shared/reorders.xml"/>
-	<import path="easy_chakma_reorder.xml"/>
+	<reorders>
+		<reorder from="\u{1112C}" prebase="1"/>
+	</reorders>
 </keyboard>

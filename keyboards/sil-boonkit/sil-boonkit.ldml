@@ -10,7 +10,7 @@
 		<map iso="B00" to="("/>
 		<map iso="B01" to="ᨹ"/>
 		<map iso="B02" to="ᨸ"/>
-		<map iso="B03" to="\u{200B}\u{1A6F}"/>
+		<map iso="B03" to="\u{1A6F}"/>
 		<map iso="B04" to="ᩋ"/>
 		<map iso="B05" to="\u{1A65}"/>
 		<map iso="B06" to="\u{1A68}"/>
@@ -22,7 +22,7 @@
 		<map iso="C02" to="ᩉ"/>
 		<map iso="C03" to="ᨠ"/>
 		<map iso="C04" to="ᨯ"/>
-		<map iso="C05" to="\u{200B}\u{1A6E}"/>
+		<map iso="C05" to="\u{1A6E}"/>
 		<map iso="C06" to="\u{1A76}"/>
 		<map iso="C07" to="\u{1A75}"/>
 		<map iso="C08" to="\u{1A63}"/>
@@ -30,7 +30,7 @@
 		<map iso="C10" to="ᩅ"/>
 		<map iso="C11" to="ᨦ"/>
 		<map iso="D01" to="\u{1A7B}"/>
-		<map iso="D02" to="\u{200B}\u{1A71}"/>
+		<map iso="D02" to="\u{1A71}"/>
 		<map iso="D03" to="\u{1A63}\u{1A74}"/>
 		<map iso="D04" to="ᨻ"/>
 		<map iso="D05" to="\u{1A61}"/>
@@ -69,7 +69,7 @@
 		<map iso="C01" to="\u{1A60}ᨿ"/>
 		<map iso="C02" to="ᨥ"/>
 		<map iso="C03" to="ᨭ"/>
-		<map iso="C04" to="\u{200B}\u{1A70}"/>
+		<map iso="C04" to="\u{1A70}"/>
 		<map iso="C05" to="ᨫ"/>
 		<map iso="C06" to="\u{1A60}ᨫ"/>
 		<map iso="C07" to="\u{1A6B}"/>
@@ -143,8 +143,8 @@
 		<transform from="ᩋ`" to="\u{1A60}ᩋ"/>
 		<transform from="\u{1A60}ᨻ`" to="\u{1A5B}"/>
 		<transform from="\u{1A60}ᩃ`" to="\u{1A56}"/>
-		<transform before="[ᨣᨷᨸᨺᩈ]" from="\u{1A63}" to="\u{1A64}"/>
 		<transform from="\u{1A63}`" to="\u{1A64}"/>
+		<transform before="[ᨣᨷᨸᨺᩈ]" from="\u{1A63}" to="\u{1A64}"/>
 		<transform from="\u{1A64}`" to="\u{1A63}"/>
 		<transform from="᪀`" to="᪐"/>
 		<transform from="᪁`" to="᪑"/>
@@ -158,47 +158,14 @@
 		<transform from="᪉`" to="᪙"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
-	<import path="reorder.xml"/>
+	<reorders>
+		<reorder from="\u{1A71}" prebase="1"/>
+		<reorder from="\u{1A70}" prebase="1"/>
+		<reorder from="\u{1A6F}" prebase="1"/>
+		<reorder from="\u{1A6E}" prebase="1"/>
+	</reorders>
 	<backspaces>
-		<backspace from="\u{1A60}ᨠ" to=""/>
-		<backspace from="\u{1A60}ᨡ" to=""/>
-		<backspace from="\u{1A60}ᨣ" to=""/>
-		<backspace from="\u{1A60}ᨥ" to=""/>
-		<backspace from="\u{1A60}ᨦ" to=""/>
-		<backspace from="\u{1A60}ᨧ" to=""/>
-		<backspace from="\u{1A60}ᨨ" to=""/>
-		<backspace from="\u{1A60}ᨩ" to=""/>
-		<backspace from="\u{1A60}ᨫ" to=""/>
-		<backspace from="\u{1A60}ᨬ" to=""/>
-		<backspace from="\u{1A60}ᨭ" to=""/>
-		<backspace from="\u{1A60}ᨮ" to=""/>
-		<backspace from="\u{1A60}ᨯ" to=""/>
-		<backspace from="\u{1A60}ᨰ" to=""/>
-		<backspace from="\u{1A60}ᨱ" to=""/>
-		<backspace from="\u{1A60}ᨲ" to=""/>
-		<backspace from="\u{1A60}ᨳ" to=""/>
-		<backspace from="\u{1A60}ᨴ" to=""/>
-		<backspace from="\u{1A60}ᨵ" to=""/>
-		<backspace from="\u{1A60}ᨶ" to=""/>
-		<backspace from="\u{1A60}ᨷ" to=""/>
-		<backspace from="\u{1A60}ᨸ" to=""/>
-		<backspace from="\u{1A60}ᨹ" to=""/>
-		<backspace from="\u{1A60}ᨻ" to=""/>
-		<backspace from="\u{1A60}ᨽ" to=""/>
-		<backspace from="\u{1A60}ᨾ" to=""/>
-		<backspace from="\u{1A60}ᨿ" to=""/>
-		<backspace from="\u{1A60}ᩀ" to=""/>
-		<backspace from="\u{1A60}ᩁ" to=""/>
-		<backspace from="\u{1A60}ᩃ" to=""/>
-		<backspace from="\u{1A60}ᩅ" to=""/>
-		<backspace from="\u{1A60}ᩆ" to=""/>
-		<backspace from="\u{1A60}ᩇ" to=""/>
-		<backspace from="\u{1A60}ᩈ" to=""/>
-		<backspace from="\u{1A60}ᩉ" to=""/>
-		<backspace from="\u{1A60}ᩋ" to=""/>
-		<backspace from="\u{200B}\u{1A6E}" to=""/>
-		<backspace from="\u{200B}\u{1A6F}" to=""/>
-		<backspace from="\u{200B}\u{1A70}" to=""/>
-		<backspace from="\u{200B}\u{1A71}" to=""/>
+		<backspace from="\u{1A60}[ᨠᨡᨣᨥᨦᨧᨨᨩᨫᨬᨭᨮᨯᨰᨱᨲᨳᨴᨵᨶᨷᨸᨹᨻᨽᨾᨿᩀᩁᩃᩅᩆᩇᩈᩉᩋ]" to=""/>
+		<backspace from="\u{FDDF}[\u{1A6E}\u{1A6F}\u{1A70}\u{1A71}]" to=""/>
 	</backspaces>
 </keyboard>
