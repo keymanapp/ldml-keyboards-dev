@@ -47,6 +47,7 @@ class EXMLParser(et.XMLParser):
         res.error_pos = (self.parser.CurrentLineNumber, self.parser.CurrentColumnNumber)
         return res
 
+# A Syntax Error with positional context
 class ESyntaxError(SyntaxError):
     def __init__(self, context, msg, fname=None):
         lineno, offset = context.error_pos
@@ -98,7 +99,8 @@ class Keyboard(object):
                         if kind == None:
                             kind = testkind
                         elif kind != testkind:
-                            raise ESyntaxError(c, "Unmergeable keyMaps found for modifier: {}".format(m), fname=self.fname)
+                            raise ESyntaxError(c, "Unmergeable keyMaps found for modifier: {}".format(m), \
+                                               fname=self.fname)
                 else:
                     kind = self.modifiers.get("", None)
                 if kind is None:
@@ -160,9 +162,11 @@ class Keyboard(object):
             for c in itertools.combinations(reso, i):
                 yield sorted(resn + list(c))
 
-    def initstring(self):
+    def initstring(self, ctext=""):
         '''Prepare to start processing a sequence of keystrokes'''
         self.history = []
+        if ctext != "":
+            self.history.append(Context(ctext, tracing=self.tracing))
 
     def undo(self, num=1):
         if num < len(self.history):
@@ -223,6 +227,7 @@ class Keyboard(object):
         return ""
 
     def _ContextFromString(self, s):
+        ''' Create a new processing context from a string '''
         res = Context(tracing=self.tracing)
         for t in ('reorder', 'final'):
             res.output[res.index(t)] = s
@@ -314,10 +319,10 @@ class Keyboard(object):
         if not rev and (0, 0) not in [(x.primary, x.tertiary) for x in k]:
             s += u"\u200B"
             k += SortKey(0, 0, 0, 0)  # push this to the front
-        # sort key is (primary, secondary, string index)
+        # sort key is (primary, tertiary_base, tertiary, string index as tie break)
         res = u"".join(s[y] for y in sorted(range(len(s)), key=lambda x:k[x]))
         if rev:
-            # remove a \u200B if the cluster start after a prevowel
+            # remove a \u200B if the cluster start, after a prevowel
             foundpre = False
             for i, key in enumerate(sorted(k)):
                 if key.primary < 0:
@@ -376,7 +381,8 @@ class Keyboard(object):
             context.results(ruleset, curr, curr - startrun, instr[startrun:curr])
 
         # iterate over sorted clusters
-        for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), ruleset=ruleset, ctxt=context):
+        for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), \
+                                                ruleset=ruleset, ctxt=context):
             if len(post):
                 # append and update processed marker
                 context.results(ruleset, curr, len(ordered), ordered, comment="Reordered")
@@ -395,9 +401,10 @@ class Keyboard(object):
         while curr < end:
             codes = self._get_charcodes(instr, curr, trans)
             if ctxt is not None:
-                ctxt.trace('Reorder codes({}) for "{}" {}'.format(len(codes), instr[curr:curr+len(codes)].encode("utf-8"), codes))
+                ctxt.trace('Reorder codes({}) for "{}" {}'.format(len(codes), 
+                                    instr[curr:curr+len(codes)].encode("utf-8"), codes))
             for i, c in enumerate(codes):               # calculate sort key for each character in turn
-                if c.tertiary and curr + i > startrun:      # can't start with tertiary, treat as primary 0
+                if c.tertiary and curr + i > startrun:  # can't start with tertiary, treat as primary 0
                     key = SortKey(currprimary, currbaseindex, c.tertiary, curr + i)
                 else:
                     key = SortKey(c.primary, curr + i, 0, curr + i)
@@ -408,7 +415,7 @@ class Keyboard(object):
                 if ((key.primary != 0 or key.tertiary != 0) and not c.prebase) \
                         or (c.prebase and curr + i > startrun \
                             and keys[curr+i-startrun-1].primary == 0):  # prebase can't have tertiary
-                    isinit = False      # After the prefix, so any following prefix char starts a new run
+                    isinit = False  # After the prefix, so any following prefix char starts a new run
 
                 # identify a run boundary
                 if not isinit and ((key.primary == 0 and key.tertiary == 0) or c.prebase):
@@ -532,8 +539,6 @@ class Keyboard(object):
         # replace the various between pass strings
         for x in ('base', 'simple'):
             context.replace_end(x, slen, simple, rule=rule)
-            # reset offset to start of replaced text (i.e. newly reordering text)
-            # context.offsets[context.index(x)] = len(context.outputs[context.index('simple')]) - len(simple)
         for x in ('reorder', 'final'):
             context.replace_end(x, length, res, rule=rule)
         return True
@@ -655,7 +660,8 @@ class Context(object):
         if self.partials[ind]:
             self.outputs[ind] = self.outputs[ind][:-self.partials[ind]]
             self.partials[ind] = 0
-        self.trace("Resetting {} by {} to {}, probably on transform entry".format(name, self.partials[ind], unicode(self.outputs[ind]).encode('unicode_escape')))
+        self.trace("Resetting {} by {} to {}, probably on transform entry".format(name, \
+                    self.partials[ind], unicode(self.outputs[ind]).encode('unicode_escape')))
 
     def partial_results(self, name, length, res, rule=None, comment=None):
         ind = self.index(name)

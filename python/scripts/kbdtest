@@ -53,8 +53,18 @@ def asFull(s, full=False):
     else:
         return s.encode('utf-8')
 
+escapes = {
+    '<': '&lt;',
+    '>': '&gt;',
+    '&': '&amp;',
+}
 def protect(s):
-    return "".join(x if ord(x) < 0x100 else "\\u{:04X}".format(ord(x)) for x in s)
+    s1 = "".join(escapes.get(x, x) for x in s)
+    return "".join(x if ord(x) < 0x100 else "\\u{:04X}".format(ord(x)) for x in s1)
+
+def parsestr(s):
+    return re.sub(r"&#x([0-9a-fA-F]+);|\\u([0-9a-fA-F]{4,6})|\\u{([0-9a-fA-F]+)}",
+            lambda m: unichr(int(m.group(m.lastindex), 16)), s)
 
 class TestError(BaseException):
     pass
@@ -65,13 +75,13 @@ class KeyTest():
         self.fname = fname
         self.args = args
         self.generate = gen
-        self.reset()
+        self.reset("")
 
-    def reset(self):
+    def reset(self, text):
         self.history = []
         self.test_history = [""]
         self.bksp_end = 0
-        self.kbd.initstring()
+        self.kbd.initstring(text)
 
     def reset_bksp_end(self):
         self.bksp_end = len(self.history)
@@ -155,6 +165,7 @@ parser.add_argument('-F','--full', action="store_true", help="Output full error 
 parser.add_argument('-t','--tracing', action='store_true', help="Give tracing info on failure")
 parser.add_argument('-T','--traceall', action='store_true', help='Trace all test phases')
 parser.add_argument('-o','--output', help='Merge test results into input file')
+parser.add_argument('-b','--brk',action='store_true',help='Stop on first error')
 args = parser.parse_args()
 
 # a fun way to run this program: find -name \*.ldml -exec python/scripts/kbdtest -F \{\} \;
@@ -177,14 +188,15 @@ for fn in fnames:
     tester = KeyTest(kbd, args.infile, args.output, args)
     for t in doc.findall('.//test-sequence'):
         tid = t.get('id', "Unknown")
+        ctext = parsestr(t.get('context', ""))
         if args.id and args.id != tid: continue
         if not args.quiet:
             print(tid, end=" ")
             sys.stdout.flush()
-        tester.reset()
+        tester.reset(ctext)
         for i, e in enumerate(t.findall('.//event')):
             keys = parse_key(e.get('key'))
-            test = unicode(re.sub(r"\\u([0-9A-Fa-f]{4,6})", lambda m: unichr(int(m.group(1), 16)), e.get('output', "")))
+            test = parsestr(e.get('output', ''))
             iserror = e.get('error', '') == 'fail'
             skips = e.get('skip', '').split(' ')
             bksp = e.get('bksp', '')
@@ -199,6 +211,12 @@ for fn in fnames:
             except TestError as e:
                 print(unicode(e).encode("utf-8"))
                 errors += 1
+                if args.brk:
+                    break
+        else:
+            continue
+        if args.brk:
+            break
     if args.output:
         doc.write(args.output)
     print()

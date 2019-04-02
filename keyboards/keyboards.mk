@@ -2,6 +2,11 @@ KBDTEST ?= ../../python/scripts/kbdtest
 
 .PHONEY: all tests
 
+define execute-test
+	$(KBDTEST) -F -t $(TESTOPTIONS) $(LDML) $(1)
+
+endef
+
 all: tests
 
 ifneq (,$(wildcard $(KEYMAN)))
@@ -10,4 +15,4 @@ $(LDML): $(KEYMAN) Makefile $(REORDER) $(IMPORT)
 endif
 
 tests: $(LDML) $(TESTS)
-	- $(foreach t,$(TESTS),$(KBDTEST) -F -t $(LDML) $t)
+	- $(foreach t,$(TESTS),$(call execute-test,$t))

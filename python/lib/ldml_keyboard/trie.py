@@ -145,25 +145,30 @@ class Trie(object):
             if curlast is None:
                 curlast = last
         for i, b in enumerate(base[1:]):
-            if i + 1 <= ind:
-                if s[ind-i-1] in b:
-                    (res, reslen, respfit) = self._testmatch(s[ind-i-1:], b, skipbefore)
-                    if res is not None and (res[1] - res[0] > curlast[1] - curlast[0] or \
-                            (res[1]-res[0] == curlast[1]-curlast[0] and reslen >= curlen)):
-                        curlast = (res.offset - i - 1, res.length - i - 1, res.rule)
-                        curlen = reslen
-                        curpfit = respfit
+            if i >= ind:
+                break
+            if s[ind-i-1] in b:
+                (res, reslen, respfit) = self._testmatch(s[ind-i-1:], b, skipbefore)
+                if res is not None and (res[1] - res[0] > curlast[1] - curlast[0] or \
+                        (res[1]-res[0] == curlast[1]-curlast[0] and reslen >= curlen)):
+                    curlast = (res.offset - i - 1, res.length - i - 1, res.rule)
+                    curlen = reslen
+                    curpfit = respfit
+                elif respfit and reslen >= curlen:
+                    curlen = reslen
+                    curpfit = respfit
         return list(curlast) + [curpfit]
 
     def _testmatch(self, s, curr, skipbefore):
+        '''Walks a node trie to match s. Returns (Match, numchars matched, more_required).'''
         last = None
         curri = 0
         for i, c in enumerate(s):
             if c not in curr:
                 if curr.match is not None:
-                    return (curr.match, i, len(curr) != 0)
+                    return (curr.match, i, len(curr) != 0 and i+1 < len(s))
                 else:
-                    return (last, curri, True)
+                    return (last, curri, False)
             if curr.match is not None and (not skipbefore or curr.match.offset == 0):
                 last = curr.match
                 curri = i+1
