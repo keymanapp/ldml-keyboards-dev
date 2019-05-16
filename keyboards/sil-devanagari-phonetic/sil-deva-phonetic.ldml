@@ -103,9 +103,6 @@
 		<map iso="E02" to="" error="fail"/>
 	</keyMap>
 	<transforms type="simple">
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="R" to="R"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from=":" to=":"/>
-		<transform before="…" from="।" to="।"/>
 		<transform from="--" to="–"/>
 		<transform from="\.।" to="॥"/>
 		<transform from="1/2" to="½"/>
@@ -114,13 +111,128 @@
 		<transform before="र" from="R" to="\u{094D}र"/>
 		<transform from="\[\[" to="⌊"/>
 		<transform from="\]\]" to="⌋"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="R" to="R"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from=":" to=":"/>
+		<transform before="\[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~\]" from=":" to=":"/>
+		<transform before=":" from="R" to="R"/>
+		<transform before=";" from=":" to=":"/>
+		<transform before=";" from="R" to="R"/>
+		<transform before="A" from=":" to=":"/>
+		<transform before="A" from="R" to="R"/>
+		<transform before="B" from=":" to=":"/>
+		<transform before="B" from="R" to="R"/>
+		<transform before="C" from=":" to=":"/>
+		<transform before="C" from="R" to="R"/>
+		<transform before="D" from=":" to=":"/>
+		<transform before="D" from="R" to="R"/>
+		<transform before="E" from=":" to=":"/>
+		<transform before="E" from="R" to="R"/>
+		<transform before="F" from=":" to=":"/>
+		<transform before="F" from="R" to="R"/>
+		<transform before="G" from=":" to=":"/>
+		<transform before="G" from="R" to="R"/>
+		<transform before="H" from=":" to=":"/>
+		<transform before="H" from="R" to="R"/>
+		<transform before="I" from=":" to=":"/>
+		<transform before="I" from="R" to="R"/>
+		<transform before="J" from=":" to=":"/>
+		<transform before="J" from="R" to="R"/>
+		<transform before="K" from=":" to=":"/>
+		<transform before="K" from="R" to="R"/>
+		<transform before="L" from=":" to=":"/>
+		<transform before="L" from="R" to="R"/>
+		<transform before="M" from=":" to=":"/>
+		<transform before="M" from="R" to="R"/>
+		<transform before="N" from=":" to=":"/>
+		<transform before="N" from="R" to="R"/>
+		<transform before="O" from=":" to=":"/>
+		<transform before="O" from="R" to="R"/>
+		<transform before="P" from=":" to=":"/>
+		<transform before="P" from="R" to="R"/>
+		<transform before="Q" from=":" to=":"/>
+		<transform before="Q" from="R" to="R"/>
+		<transform before="R" from=":" to=":"/>
+		<transform before="R" from="R" to="R"/>
+		<transform before="S" from=":" to=":"/>
+		<transform before="S" from="R" to="R"/>
+		<transform before="T" from=":" to=":"/>
+		<transform before="T" from="R" to="R"/>
+		<transform before="U" from=":" to=":"/>
+		<transform before="U" from="R" to="R"/>
+		<transform before="V" from=":" to=":"/>
+		<transform before="V" from="R" to="R"/>
+		<transform before="W" from=":" to=":"/>
+		<transform before="W" from="R" to="R"/>
+		<transform before="X" from=":" to=":"/>
+		<transform before="X" from="R" to="R"/>
+		<transform before="Y" from=":" to=":"/>
+		<transform before="Y" from="R" to="R"/>
+		<transform before="Z" from=":" to=":"/>
+		<transform before="Z" from="R" to="R"/>
+		<transform before="`" from=":" to=":"/>
+		<transform before="`" from="R" to="R"/>
+		<transform before="a" from=":" to=":"/>
+		<transform before="a" from="R" to="R"/>
+		<transform before="b" from=":" to=":"/>
+		<transform before="b" from="R" to="R"/>
+		<transform before="c" from=":" to=":"/>
+		<transform before="c" from="R" to="R"/>
+		<transform before="d" from=":" to=":"/>
+		<transform before="d" from="R" to="R"/>
+		<transform before="e" from=":" to=":"/>
+		<transform before="e" from="R" to="R"/>
+		<transform before="f" from=":" to=":"/>
+		<transform before="f" from="R" to="R"/>
+		<transform before="g" from=":" to=":"/>
+		<transform before="g" from="R" to="R"/>
+		<transform before="h" from=":" to=":"/>
+		<transform before="h" from="R" to="R"/>
+		<transform before="i" from=":" to=":"/>
+		<transform before="i" from="R" to="R"/>
+		<transform before="j" from=":" to=":"/>
+		<transform before="j" from="R" to="R"/>
+		<transform before="k" from=":" to=":"/>
+		<transform before="k" from="R" to="R"/>
+		<transform before="l" from=":" to=":"/>
+		<transform before="l" from="R" to="R"/>
+		<transform before="m" from=":" to=":"/>
+		<transform before="m" from="R" to="R"/>
+		<transform before="n" from=":" to=":"/>
+		<transform before="n" from="R" to="R"/>
+		<transform before="o" from=":" to=":"/>
+		<transform before="o" from="R" to="R"/>
+		<transform before="p" from=":" to=":"/>
+		<transform before="p" from="R" to="R"/>
+		<transform before="q" from=":" to=":"/>
+		<transform before="q" from="R" to="R"/>
+		<transform before="r" from=":" to=":"/>
+		<transform before="r" from="R" to="R"/>
+		<transform before="s" from=":" to=":"/>
+		<transform before="s" from="R" to="R"/>
+		<transform before="t" from=":" to=":"/>
+		<transform before="t" from="R" to="R"/>
+		<transform before="u" from=":" to=":"/>
+		<transform before="u" from="R" to="R"/>
+		<transform before="v" from=":" to=":"/>
+		<transform before="v" from="R" to="R"/>
+		<transform before="w" from=":" to=":"/>
+		<transform before="w" from="R" to="R"/>
+		<transform before="x" from=":" to=":"/>
+		<transform before="x" from="R" to="R"/>
+		<transform before="y" from=":" to=":"/>
+		<transform before="y" from="R" to="R"/>
+		<transform before="z" from=":" to=":"/>
+		<transform before="z" from="R" to="R"/>
+		<transform before="~" from=":" to=":"/>
+		<transform before="~" from="R" to="R"/>
+		<transform before="…" from="।" to="।"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0901}" to="`"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0902}" to="~"/>
 		<transform from="अ\u{093E}" to="आ"/>
 		<transform from="आ\u{0945}" to="ऑ"/>
 		<transform from="ए\u{0945}" to="ऍ"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="क" to="k"/>
 		<transform from="कR" to="र\u{094D}क"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="क" to="k"/>
 		<transform from="क\u{093C}\u{093E}R" to="र\u{094D}क\u{093C}\u{093E}"/>
 		<transform from="क\u{093C}\u{093F}R" to="र\u{094D}क\u{093C}\u{093F}"/>
 		<transform from="क\u{093C}\u{0940}R" to="र\u{094D}क\u{093C}\u{0940}"/>
@@ -140,8 +252,8 @@
 		<transform from="क\u{094B}R" to="र\u{094D}क\u{094B}"/>
 		<transform from="क\u{094C}R" to="र\u{094D}क\u{094C}"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="क\u{094D}ष" to="Z"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ख" to="K"/>
 		<transform from="खR" to="र\u{094D}ख"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ख" to="K"/>
 		<transform from="ख\u{093C}\u{093E}R" to="र\u{094D}ख\u{093C}\u{093E}"/>
 		<transform from="ख\u{093C}\u{093F}R" to="र\u{094D}ख\u{093C}\u{093F}"/>
 		<transform from="ख\u{093C}\u{0940}R" to="र\u{094D}ख\u{093C}\u{0940}"/>
@@ -160,8 +272,8 @@
 		<transform from="ख\u{0948}R" to="र\u{094D}ख\u{0948}"/>
 		<transform from="ख\u{094B}R" to="र\u{094D}ख\u{094B}"/>
 		<transform from="ख\u{094C}R" to="र\u{094D}ख\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ग" to="g"/>
 		<transform from="गR" to="र\u{094D}ग"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ग" to="g"/>
 		<transform from="ग\u{093C}\u{093E}R" to="र\u{094D}ग\u{093C}\u{093E}"/>
 		<transform from="ग\u{093C}\u{093F}R" to="र\u{094D}ग\u{093C}\u{093F}"/>
 		<transform from="ग\u{093C}\u{0940}R" to="र\u{094D}ग\u{093C}\u{0940}"/>
@@ -180,8 +292,8 @@
 		<transform from="ग\u{0948}R" to="र\u{094D}ग\u{0948}"/>
 		<transform from="ग\u{094B}R" to="र\u{094D}ग\u{094B}"/>
 		<transform from="ग\u{094C}R" to="र\u{094D}ग\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="घ" to="G"/>
 		<transform from="घR" to="र\u{094D}घ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="घ" to="G"/>
 		<transform from="घ\u{093C}\u{093E}R" to="र\u{094D}घ\u{093C}\u{093E}"/>
 		<transform from="घ\u{093C}\u{093F}R" to="र\u{094D}घ\u{093C}\u{093F}"/>
 		<transform from="घ\u{093C}\u{0940}R" to="र\u{094D}घ\u{093C}\u{0940}"/>
@@ -200,8 +312,8 @@
 		<transform from="घ\u{0948}R" to="र\u{094D}घ\u{0948}"/>
 		<transform from="घ\u{094B}R" to="र\u{094D}घ\u{094B}"/>
 		<transform from="घ\u{094C}R" to="र\u{094D}घ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ङ" to="M"/>
 		<transform from="ङR" to="र\u{094D}ङ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ङ" to="M"/>
 		<transform from="ङ\u{093C}\u{093E}R" to="र\u{094D}ङ\u{093C}\u{093E}"/>
 		<transform from="ङ\u{093C}\u{093F}R" to="र\u{094D}ङ\u{093C}\u{093F}"/>
 		<transform from="ङ\u{093C}\u{0940}R" to="र\u{094D}ङ\u{093C}\u{0940}"/>
@@ -220,8 +332,8 @@
 		<transform from="ङ\u{0948}R" to="र\u{094D}ङ\u{0948}"/>
 		<transform from="ङ\u{094B}R" to="र\u{094D}ङ\u{094B}"/>
 		<transform from="ङ\u{094C}R" to="र\u{094D}ङ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="च" to="c"/>
 		<transform from="चR" to="र\u{094D}च"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="च" to="c"/>
 		<transform from="च\u{093C}\u{093E}R" to="र\u{094D}च\u{093C}\u{093E}"/>
 		<transform from="च\u{093C}\u{093F}R" to="र\u{094D}च\u{093C}\u{093F}"/>
 		<transform from="च\u{093C}\u{0940}R" to="र\u{094D}च\u{093C}\u{0940}"/>
@@ -240,8 +352,8 @@
 		<transform from="च\u{0948}R" to="र\u{094D}च\u{0948}"/>
 		<transform from="च\u{094B}R" to="र\u{094D}च\u{094B}"/>
 		<transform from="च\u{094C}R" to="र\u{094D}च\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="छ" to="C"/>
 		<transform from="छR" to="र\u{094D}छ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="छ" to="C"/>
 		<transform from="छ\u{093C}\u{093E}R" to="र\u{094D}छ\u{093C}\u{093E}"/>
 		<transform from="छ\u{093C}\u{093F}R" to="र\u{094D}छ\u{093C}\u{093F}"/>
 		<transform from="छ\u{093C}\u{0940}R" to="र\u{094D}छ\u{093C}\u{0940}"/>
@@ -260,8 +372,8 @@
 		<transform from="छ\u{0948}R" to="र\u{094D}छ\u{0948}"/>
 		<transform from="छ\u{094B}R" to="र\u{094D}छ\u{094B}"/>
 		<transform from="छ\u{094C}R" to="र\u{094D}छ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ज" to="j"/>
 		<transform from="जR" to="र\u{094D}ज"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ज" to="j"/>
 		<transform from="ज\u{093C}\u{093E}R" to="र\u{094D}ज\u{093C}\u{093E}"/>
 		<transform from="ज\u{093C}\u{093F}R" to="र\u{094D}ज\u{093C}\u{093F}"/>
 		<transform from="ज\u{093C}\u{0940}R" to="र\u{094D}ज\u{093C}\u{0940}"/>
@@ -280,8 +392,8 @@
 		<transform from="ज\u{0948}R" to="र\u{094D}ज\u{0948}"/>
 		<transform from="ज\u{094B}R" to="र\u{094D}ज\u{094B}"/>
 		<transform from="ज\u{094C}R" to="र\u{094D}ज\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="झ" to="J"/>
 		<transform from="झR" to="र\u{094D}झ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="झ" to="J"/>
 		<transform from="झ\u{093C}\u{093E}R" to="र\u{094D}झ\u{093C}\u{093E}"/>
 		<transform from="झ\u{093C}\u{093F}R" to="र\u{094D}झ\u{093C}\u{093F}"/>
 		<transform from="झ\u{093C}\u{0940}R" to="र\u{094D}झ\u{093C}\u{0940}"/>
@@ -319,8 +431,8 @@
 		<transform from="ञ\u{0948}R" to="र\u{094D}ञ\u{0948}"/>
 		<transform from="ञ\u{094B}R" to="र\u{094D}ञ\u{094B}"/>
 		<transform from="ञ\u{094C}R" to="र\u{094D}ञ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ट" to="f"/>
 		<transform from="टR" to="र\u{094D}ट"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ट" to="f"/>
 		<transform from="ट\u{093C}\u{093E}R" to="र\u{094D}ट\u{093C}\u{093E}"/>
 		<transform from="ट\u{093C}\u{093F}R" to="र\u{094D}ट\u{093C}\u{093F}"/>
 		<transform from="ट\u{093C}\u{0940}R" to="र\u{094D}ट\u{093C}\u{0940}"/>
@@ -339,8 +451,8 @@
 		<transform from="ट\u{0948}R" to="र\u{094D}ट\u{0948}"/>
 		<transform from="ट\u{094B}R" to="र\u{094D}ट\u{094B}"/>
 		<transform from="ट\u{094C}R" to="र\u{094D}ट\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ठ" to="F"/>
 		<transform from="ठR" to="र\u{094D}ठ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ठ" to="F"/>
 		<transform from="ठ\u{093C}\u{093E}R" to="र\u{094D}ठ\u{093C}\u{093E}"/>
 		<transform from="ठ\u{093C}\u{093F}R" to="र\u{094D}ठ\u{093C}\u{093F}"/>
 		<transform from="ठ\u{093C}\u{0940}R" to="र\u{094D}ठ\u{093C}\u{0940}"/>
@@ -359,8 +471,8 @@
 		<transform from="ठ\u{0948}R" to="र\u{094D}ठ\u{0948}"/>
 		<transform from="ठ\u{094B}R" to="र\u{094D}ठ\u{094B}"/>
 		<transform from="ठ\u{094C}R" to="र\u{094D}ठ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ड" to="v"/>
 		<transform from="डR" to="र\u{094D}ड"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ड" to="v"/>
 		<transform from="ड\u{093C}\u{093E}R" to="र\u{094D}ड\u{093C}\u{093E}"/>
 		<transform from="ड\u{093C}\u{093F}R" to="र\u{094D}ड\u{093C}\u{093F}"/>
 		<transform from="ड\u{093C}\u{0940}R" to="र\u{094D}ड\u{093C}\u{0940}"/>
@@ -379,8 +491,8 @@
 		<transform from="ड\u{0948}R" to="र\u{094D}ड\u{0948}"/>
 		<transform from="ड\u{094B}R" to="र\u{094D}ड\u{094B}"/>
 		<transform from="ड\u{094C}R" to="र\u{094D}ड\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ढ" to="V"/>
 		<transform from="ढR" to="र\u{094D}ढ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ढ" to="V"/>
 		<transform from="ढ\u{093C}\u{093E}R" to="र\u{094D}ढ\u{093C}\u{093E}"/>
 		<transform from="ढ\u{093C}\u{093F}R" to="र\u{094D}ढ\u{093C}\u{093F}"/>
 		<transform from="ढ\u{093C}\u{0940}R" to="र\u{094D}ढ\u{093C}\u{0940}"/>
@@ -399,8 +511,8 @@
 		<transform from="ढ\u{0948}R" to="र\u{094D}ढ\u{0948}"/>
 		<transform from="ढ\u{094B}R" to="र\u{094D}ढ\u{094B}"/>
 		<transform from="ढ\u{094C}R" to="र\u{094D}ढ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ण" to="N"/>
 		<transform from="णR" to="र\u{094D}ण"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ण" to="N"/>
 		<transform from="ण\u{093C}\u{093E}R" to="र\u{094D}ण\u{093C}\u{093E}"/>
 		<transform from="ण\u{093C}\u{093F}R" to="र\u{094D}ण\u{093C}\u{093F}"/>
 		<transform from="ण\u{093C}\u{0940}R" to="र\u{094D}ण\u{093C}\u{0940}"/>
@@ -419,8 +531,8 @@
 		<transform from="ण\u{0948}R" to="र\u{094D}ण\u{0948}"/>
 		<transform from="ण\u{094B}R" to="र\u{094D}ण\u{094B}"/>
 		<transform from="ण\u{094C}R" to="र\u{094D}ण\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="त" to="t"/>
 		<transform from="तR" to="र\u{094D}त"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="त" to="t"/>
 		<transform from="त\u{093C}\u{093E}R" to="र\u{094D}त\u{093C}\u{093E}"/>
 		<transform from="त\u{093C}\u{093F}R" to="र\u{094D}त\u{093C}\u{093F}"/>
 		<transform from="त\u{093C}\u{0940}R" to="र\u{094D}त\u{093C}\u{0940}"/>
@@ -439,8 +551,8 @@
 		<transform from="त\u{0948}R" to="र\u{094D}त\u{0948}"/>
 		<transform from="त\u{094B}R" to="र\u{094D}त\u{094B}"/>
 		<transform from="त\u{094C}R" to="र\u{094D}त\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="थ" to="T"/>
 		<transform from="थR" to="र\u{094D}थ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="थ" to="T"/>
 		<transform from="थ\u{093C}\u{093E}R" to="र\u{094D}थ\u{093C}\u{093E}"/>
 		<transform from="थ\u{093C}\u{093F}R" to="र\u{094D}थ\u{093C}\u{093F}"/>
 		<transform from="थ\u{093C}\u{0940}R" to="र\u{094D}थ\u{093C}\u{0940}"/>
@@ -459,8 +571,8 @@
 		<transform from="थ\u{0948}R" to="र\u{094D}थ\u{0948}"/>
 		<transform from="थ\u{094B}R" to="र\u{094D}थ\u{094B}"/>
 		<transform from="थ\u{094C}R" to="र\u{094D}थ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="द" to="d"/>
 		<transform from="दR" to="र\u{094D}द"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="द" to="d"/>
 		<transform from="द\u{093C}\u{093E}R" to="र\u{094D}द\u{093C}\u{093E}"/>
 		<transform from="द\u{093C}\u{093F}R" to="र\u{094D}द\u{093C}\u{093F}"/>
 		<transform from="द\u{093C}\u{0940}R" to="र\u{094D}द\u{093C}\u{0940}"/>
@@ -480,8 +592,8 @@
 		<transform from="द\u{094B}R" to="र\u{094D}द\u{094B}"/>
 		<transform from="द\u{094C}R" to="र\u{094D}द\u{094C}"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="द\u{094D}व" to="W"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ध" to="D"/>
 		<transform from="धR" to="र\u{094D}ध"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ध" to="D"/>
 		<transform from="ध\u{093C}\u{093E}R" to="र\u{094D}ध\u{093C}\u{093E}"/>
 		<transform from="ध\u{093C}\u{093F}R" to="र\u{094D}ध\u{093C}\u{093F}"/>
 		<transform from="ध\u{093C}\u{0940}R" to="र\u{094D}ध\u{093C}\u{0940}"/>
@@ -500,8 +612,8 @@
 		<transform from="ध\u{0948}R" to="र\u{094D}ध\u{0948}"/>
 		<transform from="ध\u{094B}R" to="र\u{094D}ध\u{094B}"/>
 		<transform from="ध\u{094C}R" to="र\u{094D}ध\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="न" to="n"/>
 		<transform from="नR" to="र\u{094D}न"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="न" to="n"/>
 		<transform from="न\u{093C}\u{093E}R" to="र\u{094D}न\u{093C}\u{093E}"/>
 		<transform from="न\u{093C}\u{093F}R" to="र\u{094D}न\u{093C}\u{093F}"/>
 		<transform from="न\u{093C}\u{0940}R" to="र\u{094D}न\u{093C}\u{0940}"/>
@@ -520,8 +632,8 @@
 		<transform from="न\u{0948}R" to="र\u{094D}न\u{0948}"/>
 		<transform from="न\u{094B}R" to="र\u{094D}न\u{094B}"/>
 		<transform from="न\u{094C}R" to="र\u{094D}न\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="प" to="p"/>
 		<transform from="पR" to="र\u{094D}प"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="प" to="p"/>
 		<transform from="प\u{093C}\u{093E}R" to="र\u{094D}प\u{093C}\u{093E}"/>
 		<transform from="प\u{093C}\u{093F}R" to="र\u{094D}प\u{093C}\u{093F}"/>
 		<transform from="प\u{093C}\u{0940}R" to="र\u{094D}प\u{093C}\u{0940}"/>
@@ -540,8 +652,8 @@
 		<transform from="प\u{0948}R" to="र\u{094D}प\u{0948}"/>
 		<transform from="प\u{094B}R" to="र\u{094D}प\u{094B}"/>
 		<transform from="प\u{094C}R" to="र\u{094D}प\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="फ" to="P"/>
 		<transform from="फR" to="र\u{094D}फ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="फ" to="P"/>
 		<transform from="फ\u{093C}\u{093E}R" to="र\u{094D}फ\u{093C}\u{093E}"/>
 		<transform from="फ\u{093C}\u{093F}R" to="र\u{094D}फ\u{093C}\u{093F}"/>
 		<transform from="फ\u{093C}\u{0940}R" to="र\u{094D}फ\u{093C}\u{0940}"/>
@@ -560,8 +672,8 @@
 		<transform from="फ\u{0948}R" to="र\u{094D}फ\u{0948}"/>
 		<transform from="फ\u{094B}R" to="र\u{094D}फ\u{094B}"/>
 		<transform from="फ\u{094C}R" to="र\u{094D}फ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ब" to="b"/>
 		<transform from="बR" to="र\u{094D}ब"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ब" to="b"/>
 		<transform from="ब\u{093C}\u{093E}R" to="र\u{094D}ब\u{093C}\u{093E}"/>
 		<transform from="ब\u{093C}\u{093F}R" to="र\u{094D}ब\u{093C}\u{093F}"/>
 		<transform from="ब\u{093C}\u{0940}R" to="र\u{094D}ब\u{093C}\u{0940}"/>
@@ -580,8 +692,8 @@
 		<transform from="ब\u{0948}R" to="र\u{094D}ब\u{0948}"/>
 		<transform from="ब\u{094B}R" to="र\u{094D}ब\u{094B}"/>
 		<transform from="ब\u{094C}R" to="र\u{094D}ब\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="भ" to="B"/>
 		<transform from="भR" to="र\u{094D}भ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="भ" to="B"/>
 		<transform from="भ\u{093C}\u{093E}R" to="र\u{094D}भ\u{093C}\u{093E}"/>
 		<transform from="भ\u{093C}\u{093F}R" to="र\u{094D}भ\u{093C}\u{093F}"/>
 		<transform from="भ\u{093C}\u{0940}R" to="र\u{094D}भ\u{093C}\u{0940}"/>
@@ -600,8 +712,8 @@
 		<transform from="भ\u{0948}R" to="र\u{094D}भ\u{0948}"/>
 		<transform from="भ\u{094B}R" to="र\u{094D}भ\u{094B}"/>
 		<transform from="भ\u{094C}R" to="र\u{094D}भ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="म" to="m"/>
 		<transform from="मR" to="र\u{094D}म"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="म" to="m"/>
 		<transform from="म\u{093C}\u{093E}R" to="र\u{094D}म\u{093C}\u{093E}"/>
 		<transform from="म\u{093C}\u{093F}R" to="र\u{094D}म\u{093C}\u{093F}"/>
 		<transform from="म\u{093C}\u{0940}R" to="र\u{094D}म\u{093C}\u{0940}"/>
@@ -620,8 +732,8 @@
 		<transform from="म\u{0948}R" to="र\u{094D}म\u{0948}"/>
 		<transform from="म\u{094B}R" to="र\u{094D}म\u{094B}"/>
 		<transform from="म\u{094C}R" to="र\u{094D}म\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="य" to="y"/>
 		<transform from="यR" to="र\u{094D}य"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="य" to="y"/>
 		<transform from="य\u{093C}\u{093E}R" to="र\u{094D}य\u{093C}\u{093E}"/>
 		<transform from="य\u{093C}\u{093F}R" to="र\u{094D}य\u{093C}\u{093F}"/>
 		<transform from="य\u{093C}\u{0940}R" to="र\u{094D}य\u{093C}\u{0940}"/>
@@ -642,8 +754,8 @@
 		<transform from="य\u{094C}R" to="र\u{094D}य\u{094C}"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="र" to="r"/>
 		<transform from="र\u{094D}\u{093F}" to="\u{0943}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ल" to="l"/>
 		<transform from="लR" to="र\u{094D}ल"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ल" to="l"/>
 		<transform from="ल\u{093C}\u{093E}R" to="र\u{094D}ल\u{093C}\u{093E}"/>
 		<transform from="ल\u{093C}\u{093F}R" to="र\u{094D}ल\u{093C}\u{093F}"/>
 		<transform from="ल\u{093C}\u{0940}R" to="र\u{094D}ल\u{093C}\u{0940}"/>
@@ -681,8 +793,8 @@
 		<transform from="ळ\u{0948}R" to="र\u{094D}ळ\u{0948}"/>
 		<transform from="ळ\u{094B}R" to="र\u{094D}ळ\u{094B}"/>
 		<transform from="ळ\u{094C}R" to="र\u{094D}ळ\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="व" to="w"/>
 		<transform from="वR" to="र\u{094D}व"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="व" to="w"/>
 		<transform from="व\u{093C}\u{093E}R" to="र\u{094D}व\u{093C}\u{093E}"/>
 		<transform from="व\u{093C}\u{093F}R" to="र\u{094D}व\u{093C}\u{093F}"/>
 		<transform from="व\u{093C}\u{0940}R" to="र\u{094D}व\u{093C}\u{0940}"/>
@@ -701,9 +813,9 @@
 		<transform from="व\u{0948}R" to="र\u{094D}व\u{0948}"/>
 		<transform from="व\u{094B}R" to="र\u{094D}व\u{094B}"/>
 		<transform from="व\u{094C}R" to="र\u{094D}व\u{094C}"/>
-		<transform before="क\u{094D}" from="श" to="ष"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="श" to="z"/>
 		<transform from="शR" to="र\u{094D}श"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="श" to="z"/>
+		<transform before="क\u{094D}" from="श" to="ष"/>
 		<transform from="श\u{093C}\u{093E}R" to="र\u{094D}श\u{093C}\u{093E}"/>
 		<transform from="श\u{093C}\u{093F}R" to="र\u{094D}श\u{093C}\u{093F}"/>
 		<transform from="श\u{093C}\u{0940}R" to="र\u{094D}श\u{093C}\u{0940}"/>
@@ -722,8 +834,8 @@
 		<transform from="श\u{0948}R" to="र\u{094D}श\u{0948}"/>
 		<transform from="श\u{094B}R" to="र\u{094D}श\u{094B}"/>
 		<transform from="श\u{094C}R" to="र\u{094D}श\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ष" to="S"/>
 		<transform from="षR" to="र\u{094D}ष"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ष" to="S"/>
 		<transform from="ष\u{093C}\u{093E}R" to="र\u{094D}ष\u{093C}\u{093E}"/>
 		<transform from="ष\u{093C}\u{093F}R" to="र\u{094D}ष\u{093C}\u{093F}"/>
 		<transform from="ष\u{093C}\u{0940}R" to="र\u{094D}ष\u{093C}\u{0940}"/>
@@ -742,8 +854,8 @@
 		<transform from="ष\u{0948}R" to="र\u{094D}ष\u{0948}"/>
 		<transform from="ष\u{094B}R" to="र\u{094D}ष\u{094B}"/>
 		<transform from="ष\u{094C}R" to="र\u{094D}ष\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="स" to="s"/>
 		<transform from="सR" to="र\u{094D}स"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="स" to="s"/>
 		<transform from="स\u{093C}\u{093E}R" to="र\u{094D}स\u{093C}\u{093E}"/>
 		<transform from="स\u{093C}\u{093F}R" to="र\u{094D}स\u{093C}\u{093F}"/>
 		<transform from="स\u{093C}\u{0940}R" to="र\u{094D}स\u{093C}\u{0940}"/>
@@ -762,8 +874,8 @@
 		<transform from="स\u{0948}R" to="र\u{094D}स\u{0948}"/>
 		<transform from="स\u{094B}R" to="र\u{094D}स\u{094B}"/>
 		<transform from="स\u{094C}R" to="र\u{094D}स\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ह" to="h"/>
 		<transform from="हR" to="र\u{094D}ह"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="ह" to="h"/>
 		<transform from="ह\u{093C}\u{093E}R" to="र\u{094D}ह\u{093C}\u{093E}"/>
 		<transform from="ह\u{093C}\u{093F}R" to="र\u{094D}ह\u{093C}\u{093F}"/>
 		<transform from="ह\u{093C}\u{0940}R" to="र\u{094D}ह\u{093C}\u{0940}"/>
@@ -791,25 +903,25 @@
 		<transform before="र" from="\u{093C}\u{0948}R" to="\u{094D}र\u{093C}\u{0948}"/>
 		<transform before="र" from="\u{093C}\u{094B}R" to="\u{094D}र\u{093C}\u{094B}"/>
 		<transform before="र" from="\u{093C}\u{094C}R" to="\u{094D}र\u{093C}\u{094C}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{093E}" to="a"/>
 		<transform before="र" from="\u{093E}R" to="\u{094D}र\u{093E}"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{093E}" to="a"/>
 		<transform from="\u{093E}\u{0945}" to="\u{0949}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{093F}" to="i"/>
 		<transform before="र" from="\u{093F}R" to="\u{094D}र\u{093F}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0940}" to="I"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{093F}" to="i"/>
 		<transform before="र" from="\u{0940}R" to="\u{094D}र\u{0940}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0941}" to="u"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0940}" to="I"/>
 		<transform before="र" from="\u{0941}R" to="\u{094D}र\u{0941}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0942}" to="U"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0941}" to="u"/>
 		<transform before="र" from="\u{0942}R" to="\u{094D}र\u{0942}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0947}" to="e"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0942}" to="U"/>
 		<transform before="र" from="\u{0947}R" to="\u{094D}र\u{0947}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0948}" to="E"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0947}" to="e"/>
 		<transform before="र" from="\u{0948}R" to="\u{094D}र\u{0948}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{094B}" to="o"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{0948}" to="E"/>
 		<transform before="र" from="\u{094B}R" to="\u{094D}र\u{094B}"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{094C}" to="O"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{094B}" to="o"/>
 		<transform before="र" from="\u{094C}R" to="\u{094D}र\u{094C}"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{094C}" to="O"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{094D}" to=";"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{094D}य" to="Y"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{094D}र" to="L"/>
@@ -870,9 +982,9 @@
 		<transform from="\u{FDD2}\u{0948}" to="ऐ"/>
 		<transform from="\u{FDD2}\u{094B}" to="ओ"/>
 		<transform from="\u{FDD2}\u{094C}" to="औ"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{FDD3}" to="Q"/>
 		<transform from="\u{FDD3}:" to=":"/>
 		<transform from="\u{FDD3}R" to="R"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{FDD3}" to="Q"/>
 		<transform from="\u{FDD3}\u{0901}" to="`"/>
 		<transform from="\u{FDD3}\u{0902}" to="~"/>
 		<transform from="\u{FDD3}क" to="k"/>
@@ -929,8 +1041,7 @@
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<transforms type="final">
-		<transform from="\u{FDD2}" to=""/>
-		<transform from="\u{FDD3}" to=""/>
+		<transform from="[\u{FDD2}\u{FDD3}]" to=""/>
 	</transforms>
 	<backspaces>
 		<backspace from="0" to="०"/>

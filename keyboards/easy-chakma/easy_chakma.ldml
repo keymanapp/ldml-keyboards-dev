@@ -106,6 +106,7 @@
 	</keyMap>
 	<transforms type="simple">
 		<transform before="\u{200B}\u{1112C}" from="\u{1112C}" to="\u{1112C}"/>
+		<transform before="\\u\{200B\}\\u\{1112C\}" from="\\u\{1112C\}" to="\\u\{1112C\}"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<reorders>

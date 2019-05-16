@@ -63,8 +63,8 @@ def protect(s):
     return "".join(x if ord(x) < 0x100 else "\\u{:04X}".format(ord(x)) for x in s1)
 
 def parsestr(s):
-    return re.sub(r"&#x([0-9a-fA-F]+);|\\u([0-9a-fA-F]{4,6})|\\u{([0-9a-fA-F]+)}",
-            lambda m: unichr(int(m.group(m.lastindex), 16)), s)
+    return unicode(re.sub(r"&#x([0-9a-fA-F]+);|\\u([0-9a-fA-F]{4,6})|\\u{([0-9a-fA-F]+)}",
+            lambda m: unichr(int(m.group(m.lastindex), 16)), s))
 
 class TestError(BaseException):
     pass

@@ -77,12 +77,10 @@
 		<transform from="7\*" to="፯"/>
 		<transform from="8\*" to="፰"/>
 		<transform from="9\*" to="፱"/>
-		<transform from="&lt;&quot;" to="«"/>
+		<transform from="&lt;[&quot;&lt;]" to="«"/>
 		<transform from="&lt;'" to="‹"/>
-		<transform from="&lt;&lt;" to="«"/>
-		<transform from="&gt;&quot;" to="»"/>
+		<transform from="&gt;[&quot;&gt;]" to="»"/>
 		<transform from="&gt;'" to="›"/>
-		<transform from="&gt;&gt;" to="»"/>
 		<transform from="ሀ\[" to="ኀ"/>
 		<transform from="ሀኡ" to="ሁ"/>
 		<transform from="ሀኢ" to="ሂ"/>
@@ -253,11 +251,9 @@
 		<transform from="አኧ" to="ኧ"/>
 		<transform from="አዖ" to="ⶊ"/>
 		<transform from="አ\u{FDD2}" to="ኤ"/>
-		<transform before="ሯ" from="ኡ" to=""/>
-		<transform before="ሯ" from="ኢ" to=""/>
-		<transform before="[ሟሯቋቛቧኋኳዃጓጟፏፗ]" from="ኣ" to=""/>
+		<transform before="ሯ" from="[ኡኢ]" to=""/>
+		<transform before="[ሟሯቋቛቧኋኳዃጓጟፏፗ]" from="[ኣኦዒ\u{FDD2}]" to=""/>
 		<transform before="[\u{AB05}\u{AB0D}\u{AB15}]" from="እ" to=""/>
-		<transform before="ሯ" from="ኦ" to=""/>
 		<transform before="[ሀወዐየፀⶠⶨⶰⶸⷀⷈⷐⷘ\u{AB05}\u{AB0D}\u{AB15}\u{AB20}\u{AB28}]" from="ኧ" to=""/>
 		<transform from="ከ#" to="ⷈ"/>
 		<transform from="ከኡ" to="ኩ"/>
@@ -297,7 +293,7 @@
 		<transform from="ዐእ" to="ዕ"/>
 		<transform from="ዐኦ" to="ዖ"/>
 		<transform from="ዐ\u{FDD2}" to="ዔ"/>
-		<transform before="[ቋቛቧኋኳዃጓጟፗ]" from="ዒ" to=""/>
+		<transform before="[ቛቧኋኳዃጓጟፗ]" from="ዒ" to=""/>
 		<transform before="[ሐሠቐቨኸዐዠጘጸፈⶠⶨⶰⶸⷀⷈⷐⷘ\u{AB05}\u{AB0D}\u{AB15}\u{AB20}\u{AB28}]" from="ዖ" to=""/>
 		<transform from="ዘ=" to="\u{AB15}"/>
 		<transform from="ዘኡ" to="ዙ"/>
@@ -547,12 +543,8 @@
 		<transform from="\u{AB28}ኦ" to="\u{AB2E}"/>
 		<transform from="\u{AB28}\u{FDD2}" to="\u{AB2C}"/>
 		<transform from="\u{E494}0" to="፼"/>
-		<transform before="ሯ" from="\u{FDD2}" to=""/>
 	</transforms>
 	<transforms type="final">
-		<transform from="\u{FDD2}" to=""/>
-		<transform from="\u{FDD3}" to=""/>
-		<transform from="\u{FDD4}" to=""/>
-		<transform from="\u{FDD5}" to=""/>
+		<transform from="[\u{FDD2}\u{FDD3}\u{FDD4}\u{FDD5}]" to=""/>
 	</transforms>
 </keyboard>

@@ -86,22 +86,20 @@
 		<transform from="ᰗᰝ" to="ᰘ"/>
 		<transform from="ᰝᰜ" to="ᰞ"/>
 		<transform from="ᰠᰝ" to="ᰡ"/>
-		<transform before="[\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C26}" to="" error="fail"/>
-		<transform before="[\u{1C26}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C27}" to="" error="fail"/>
-		<transform before="[\u{1C26}\u{1C27}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C28}" to="" error="fail"/>
-		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C2A}\u{1C2B}\u{1C2C}]" from="\u{1C29}" to="" error="fail"/>
-		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2B}\u{1C2C}]" from="\u{1C2A}" to="" error="fail"/>
-		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2C}]" from="\u{1C2B}" to="" error="fail"/>
-		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}]" from="\u{1C2C}" to="" error="fail"/>
-		<transform before="[\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C2D}" to="" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C2E}" to="" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2E}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C2F}" to="" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C30}" to="" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C31}" to="" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C33}\u{1C34}\u{1C35}]" from="\u{1C32}" to="" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C34}\u{1C35}]" from="\u{1C33}" to="" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C35}]" from="\u{1C34}" to="" error="fail"/>
-		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}]" from="\u{1C35}" to="" error="fail"/>
+		<transform before="[\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="[\u{1C26}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" to="" error="fail"/>
+		<transform before="[\u{1C26}\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="[\u{1C27}\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" to="" error="fail"/>
+		<transform before="[\u{1C2A}\u{1C2B}\u{1C2C}]" from="[\u{1C28}\u{1C2A}\u{1C2C}]" to="" error="fail"/>
+		<transform before="[\u{1C28}\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="[\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" to="" error="fail"/>
+		<transform before="\u{1C2C}" from="\u{1C2A}" to="" error="fail"/>
+		<transform before="[\u{1C29}\u{1C2A}\u{1C2B}\u{1C2C}]" from="[\u{1C2B}\u{1C2C}]" to="" error="fail"/>
+		<transform before="[\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="[\u{1C2D}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" to="" error="fail"/>
+		<transform before="[\u{1C2D}\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="[\u{1C2E}\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" to="" error="fail"/>
+		<transform before="[\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="[\u{1C2F}\u{1C31}\u{1C33}\u{1C34}\u{1C35}]" to="" error="fail"/>
+		<transform before="[\u{1C2F}\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="[\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" to="" error="fail"/>
+		<transform before="[\u{1C33}\u{1C34}\u{1C35}]" from="[\u{1C31}\u{1C33}\u{1C35}]" to="" error="fail"/>
+		<transform before="[\u{1C30}\u{1C31}\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="[\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" to="" error="fail"/>
+		<transform before="\u{1C35}" from="\u{1C33}" to="" error="fail"/>
+		<transform before="[\u{1C32}\u{1C33}\u{1C34}\u{1C35}]" from="[\u{1C34}\u{1C35}]" to="" error="fail"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<import path="sil-lepcha_reorder.xml"/>

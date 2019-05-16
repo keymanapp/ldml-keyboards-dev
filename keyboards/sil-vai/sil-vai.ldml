@@ -309,26 +309,6 @@
 		<transform from="\u{EFFF6}\u{EFFF3}" to="ꖻ"/>
 	</transforms>
 	<transforms type="final">
-		<transform from="\u{FDD2}" to=""/>
-		<transform from="\u{FDD3}" to=""/>
-		<transform from="\u{FDD4}" to=""/>
-		<transform from="\u{FDD5}" to=""/>
-		<transform from="\u{FDD6}" to=""/>
-		<transform from="\u{FDD7}" to=""/>
-		<transform from="\u{FDD8}" to=""/>
-		<transform from="\u{FDD9}" to=""/>
-		<transform from="\u{FDDA}" to=""/>
-		<transform from="\u{FDDB}" to=""/>
-		<transform from="\u{FDDC}" to=""/>
-		<transform from="\u{FDDD}" to=""/>
-		<transform from="\u{FDDE}" to=""/>
-		<transform from="\u{FDDF}" to=""/>
-		<transform from="\u{EFFF0}" to=""/>
-		<transform from="\u{EFFF1}" to=""/>
-		<transform from="\u{EFFF2}" to=""/>
-		<transform from="\u{EFFF3}" to=""/>
-		<transform from="\u{EFFF4}" to=""/>
-		<transform from="\u{EFFF5}" to=""/>
-		<transform from="\u{EFFF6}" to=""/>
+		<transform from="[\u{FDD2}\u{FDD3}\u{FDD4}\u{FDD5}\u{FDD6}\u{FDD7}\u{FDD8}\u{FDD9}\u{FDDA}\u{FDDB}\u{FDDC}\u{FDDD}\u{FDDE}\u{FDDF}\u{EFFF0}\u{EFFF1}\u{EFFF2}\u{EFFF3}\u{EFFF4}\u{EFFF5}\u{EFFF6}]" to=""/>
 	</transforms>
 </keyboard>

@@ -102,6 +102,7 @@
 	</keyMap>
 	<transforms type="simple">
 		<transform before="\u{1082}" from="\u{103A}" to="\u{103A}"/>
+		<transform before="\\u\{1082\}" from="\\u\{103A\}" to="\\u\{103A\}"/>
 		<transform from="\u{1037}\u{FDD2}" to="\u{1036}\u{1037}"/>
 		<transform from="\u{1086}\u{1037}\u{FDD2}" to="\u{1036}\u{1086}\u{1037}"/>
 	</transforms>
