@@ -27,6 +27,10 @@
 import re, sys
 import unicodedata
 
+try: unicode
+except NameError:
+    unicode = str
+
 hexescre = re.compile(r"(?:\\(?:[ux])\{([0-9a-fA-F]+)\}|\\u([0-9a-fA-F]{4})|\\U([0-9a-fA-F]{8})|\\x([0-9a-fA-F]{2}))")
 hexgre = re.compile(r"\\u\{([0-9a-fA-F]+)\}")
 simpleescs = {

@@ -1,4 +1,4 @@
-KBDTEST ?= python ../../python/scripts/kbdtest
+KBDTEST ?= python3 ../../python/scripts/kbdtest
 
 .PHONEY: all tests
 

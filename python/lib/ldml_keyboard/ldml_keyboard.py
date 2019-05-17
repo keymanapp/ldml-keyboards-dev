@@ -28,6 +28,7 @@ import itertools, re, os, sys
 from collections import namedtuple
 from copy import copy
 import unicodedata as ud
+from functools import reduce
 
 try:
     from . import UnicodeSets, trie
@@ -35,6 +36,10 @@ except ValueError:
     if __name__ == '__main__':
         sys.path.insert(0, os.path.dirname(__file__))
         import UnicodeSets, trie
+
+try: unicode
+except NameError:
+    unicode = str
 
 # Capture the start of each element for error reporting
 class EXMLParser(et.XMLParser):
@@ -50,7 +55,12 @@ class EXMLParser(et.XMLParser):
 # A Syntax Error with positional context
 class ESyntaxError(SyntaxError):
     def __init__(self, context, msg, fname=None):
-        lineno, offset = context.error_pos
+        try:
+            lineno, offset = context.error_pos
+        except AttributeError:
+            # python3 makes it nearly impossible to get at the expat parser info
+            # more work than a complete reimplementation of XMLParser!
+            lineno, offset = (0, 0)
         filename = fname
         super(ESyntaxError, self).__init__(msg, (filename, lineno, offset, msg))
 
@@ -140,7 +150,7 @@ class Keyboard(object):
         '''Process a sequence of keystrokes expressed textually into a list
             of contexts giving the output after each keystroke'''
         self.initstring()
-        keys = re.findall(ur'\[\s*(.*?)\s*\]', txt)
+        keys = re.findall(r'\[\s*(.*?)\s*\]', txt)
         res = []
         for k in keys:
             words = k.split()
@@ -318,7 +328,7 @@ class Keyboard(object):
         # if there is no base, insert one
         if not rev and (0, 0) not in [(x.primary, x.tertiary) for x in k]:
             s += u"\u200B"
-            k += SortKey(0, 0, 0, 0)  # push this to the front
+            k.append(SortKey(0, 0, 0, 0))  # push this to the front
         # sort key is (primary, tertiary_base, tertiary, string index as tie break)
         res = u"".join(s[y] for y in sorted(range(len(s)), key=lambda x:k[x]))
         if rev:

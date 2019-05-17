@@ -28,6 +28,7 @@ import argparse, sys, re, os
 from glob import glob
 from xml.etree import ElementTree as et
 import unicodedata as ud
+from functools import reduce
 
 try:
     from ldml_keyboard.ldml_keyboard import Keyboard, Context
@@ -36,9 +37,13 @@ except:
     sys.path.append(os.path.join(os.path.dirname(__file__), '../lib'))
     from ldml_keyboard.ldml_keyboard import Keyboard, Context
 
+try: unicode
+except NameError:
+    unicode = str
+
 def parse_key(keys):
     res = []
-    for k in re.split(ur"\[(.*?)\]\s*", keys)[1::2]:
+    for k in re.split(r"\[(.*?)\]\s*", keys)[1::2]:
         subs = k.split(" ")
         key = subs.pop()
         res.append((key, subs))
