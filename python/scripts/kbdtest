@@ -116,7 +116,7 @@ class KeyTest():
             print("    " + ("\n    ".join(res.tracing_events)))
         if failed:
             s = u"{} {}: Failed event {} in test {}: {} should be {} with error {} to be {}".\
-                format(self.fname, testid, eid, tid, res, test, res.error, iserror)
+                format(self.fname, testid, eid, tid, asFull(unicode(res), True), asFull(test, True), res.error, iserror)
             if self.args.full:
                 s += "\n    " + asFull(unicode(res), True) + " should be " + asFull(test, True)
                 s += "\n    Keys pressed: " + " ".join(askey(x) for x in \

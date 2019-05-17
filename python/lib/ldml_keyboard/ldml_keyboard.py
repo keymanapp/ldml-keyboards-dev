@@ -101,7 +101,8 @@ class Keyboard(object):
     def parse(self, fname, imported=False):
         '''Read and parse an LDML keyboard layout file'''
         self.fname = fname
-        self.xmlParser = EXMLParser()
+        xmlParser = EXMLParser()
+        self.xmlParser = xmlParser
         doc = et.parse(fname, parser=self.xmlParser)
         for c in doc.getroot():
             if c.tag == 'keyMap':
@@ -146,6 +147,7 @@ class Keyboard(object):
                     if os.path.exists(newfname):
                         self.parse(newfname, imported=True)
                         self.fname = fname
+                        self.xmlParser = xmlParser
                         break
                 else:
                     raise ImportError("Can't import {}".format(c.get('path')))
@@ -382,6 +384,21 @@ class Keyboard(object):
         # scan for start of sortable run. Normally empty
         startrun = context.offset(ruleset)
         curr = startrun
+        codes = self._get_charcodes(instr, curr, trans)
+        if curr and (codes[0].primary > 0 and not codes[0].prebase or codes[0].tertiary):
+            curr -=1
+            while curr > 0:
+                codes = self._get_charcodes(instr, len(instr) - 1 - curr, trans, rev=True)
+                curr -= len(codes)
+                if not codes[0].tertiary and (codes[0].primary == 0 or codes[0].prebase):
+                    break
+            while curr > 0:
+                codes = self._get_charcodes(instr, len(instr) - 1 - curr, trans, rev=True)
+                curr -= len(codes)
+                if codes[0].tertiary or (codes[0].primary and not codes[0].prebase):
+                    break
+            context.backup_to(ruleset, curr)
+
         while curr < len(instr):
             codes = self._get_charcodes(instr, curr, trans)
             for c in codes:
@@ -416,7 +433,7 @@ class Keyboard(object):
             codes = self._get_charcodes(instr, curr, trans)
             if ctxt is not None:
                 ctxt.trace('Reorder codes({}) for "{}" {}'.format(len(codes), 
-                                    instr[curr:curr+len(codes)].encode("utf-8"), codes))
+                                    instr[curr:curr+len(codes)].encode("unicode_escape"), codes))
             for i, c in enumerate(codes):               # calculate sort key for each character in turn
                 if c.tertiary and curr + i > startrun:  # can't start with tertiary, treat as primary 0
                     key = SortKey(currprimary, currbaseindex, c.tertiary, curr + i)
@@ -677,6 +694,16 @@ class Context(object):
         self.trace("Resetting {} by {} to {}, probably on transform entry".format(name, \
                     self.partials[ind], unicode(self.outputs[ind]).encode('unicode_escape')))
 
+    def backup_to(self, name, index):
+        '''Resets input and all subsequent outputs to given index'''
+        ind = self.index(name)
+        diff = self.offsets[ind] - index
+        for i in range(ind, len(self.outputs)):
+            self.offsets[i] -= diff
+            #self.partials[i-1] += diff
+            self.outputs[i] = self.outputs[i][:-diff]
+        #self.partials[len(self.outputs)-1] += diff
+
     def partial_results(self, name, length, res, rule=None, comment=None):
         ind = self.index(name)
         self.outputs[ind] += res
@@ -727,7 +754,7 @@ class Context(object):
                 extra += " " + comment
             if rule is not None and hasattr(rule, 'context'):
                 extra += " in rule {}:{} col {}".format(*rule.context)
-            self.trace("{}({}) from {}, replaced with {}{}".format(txt, length, name, repr(res), extra))
+            self.trace("{}({}) from {}, replaced with {}{}".format(txt, length, name, res.encode("unicode_escape"), extra))
 
     def trace(self, txt):
         if self.enable_tracing:
