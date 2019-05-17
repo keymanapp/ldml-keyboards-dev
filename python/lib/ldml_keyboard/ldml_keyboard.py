@@ -46,7 +46,7 @@ except NameError:
 try:
     from palaso.etree import XMLParser as EXMLParser
 except ImportError:
-    # Capture the start of each element for error reporting
+    # Capture the start of each element for error reporting. py2 only. Harmless in py3.
     class EXMLParser(et.XMLParser):
         def __init__(self, **kw):
             super(EXMLParser, self).__init__(**kw)

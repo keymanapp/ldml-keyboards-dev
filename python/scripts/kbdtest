@@ -40,6 +40,7 @@ except:
 try: unicode
 except NameError:
     unicode = str
+    unichr = chr
 
 def parse_key(keys):
     res = []
