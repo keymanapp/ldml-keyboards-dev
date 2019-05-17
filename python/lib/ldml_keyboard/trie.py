@@ -24,7 +24,7 @@
 # SUCH DAMAGE.
 
 from collections import namedtuple
-from UnicodeSets import UnicodeSetSequence, UnicodeSet, parse
+from .UnicodeSets import UnicodeSetSequence, UnicodeSet, parse
 
 Match = namedtuple('Match', ['offset', 'length', 'rule'])
 
