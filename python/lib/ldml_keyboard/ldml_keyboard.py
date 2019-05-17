@@ -41,26 +41,29 @@ try: unicode
 except NameError:
     unicode = str
 
-# Capture the start of each element for error reporting
-class EXMLParser(et.XMLParser):
-    def _start(self, tag, attrib_in):
-        res = super(EXMLParser, self)._start(tag, attrib_in)
-        res.error_pos = (self.parser.CurrentLineNumber, self.parser.CurrentColumnNumber)
-        return res
-    def _start_list(self, tag, attrib_in):
-        res = super(EXMLParser, self)._start_list(tag, attrib_in)
-        res.error_pos = (self.parser.CurrentLineNumber, self.parser.CurrentColumnNumber)
-        return res
+# python3 etree has no way to get context info during parsing
+# Use an external module if we want real error positions
+try:
+    from palaso.etree import XMLParser as EXMLParser
+except ImportError:
+    # Capture the start of each element for error reporting
+    class EXMLParser(et.XMLParser):
+        def __init__(self, **kw):
+            super(EXMLParser, self).__init__(**kw)
+            self.positions = {}
+        def _start(self, tag, attrib_in):
+            res = super(EXMLParser, self)._start(tag, attrib_in)
+            self.positions[id(res)] = (self.parser.CurrentLineNumber, self.parser.CurrentColumnNumber)
+            return res
+        def _start_list(self, tag, attrib_in):
+            res = super(EXMLParser, self)._start_list(tag, attrib_in)
+            self.positions[id(res)] = (self.parser.CurrentLineNumber, self.parser.CurrentColumnNumber)
+            return res
 
 # A Syntax Error with positional context
 class ESyntaxError(SyntaxError):
-    def __init__(self, context, msg, fname=None):
-        try:
-            lineno, offset = context.error_pos
-        except AttributeError:
-            # python3 makes it nearly impossible to get at the expat parser info
-            # more work than a complete reimplementation of XMLParser!
-            lineno, offset = (0, 0)
+    def __init__(self, context, msg, parser, fname=None):
+        lineno, offset = parser.positions.get(id(context), (0, 0))
         filename = fname
         super(ESyntaxError, self).__init__(msg, (filename, lineno, offset, msg))
 
@@ -88,17 +91,18 @@ class Keyboard(object):
             self.transforms[transform] = Rules(transform)
         rules = self.transforms[transform]
         if context is not None:
-            e = ESyntaxError(context, "", self.fname)
+            e = ESyntaxError(context, "", self.xmlParser, self.fname)
         else:
             e = SyntaxError("")
         for m in element:
-            em = ESyntaxError(m, "", self.fname)
+            em = ESyntaxError(m, "", self.xmlParser, self.fname)
             rules.append(m, onlyifin, error=em)
 
     def parse(self, fname, imported=False):
         '''Read and parse an LDML keyboard layout file'''
         self.fname = fname
-        doc = et.parse(fname, parser=EXMLParser())
+        self.xmlParser = EXMLParser()
+        doc = et.parse(fname, parser=self.xmlParser)
         for c in doc.getroot():
             if c.tag == 'keyMap':
                 kind = None
@@ -110,7 +114,7 @@ class Keyboard(object):
                             kind = testkind
                         elif kind != testkind:
                             raise ESyntaxError(c, "Unmergeable keyMaps found for modifier: {}".format(m), \
-                                               fname=self.fname)
+                                              self.xmlParser, fname=self.fname)
                 else:
                     kind = self.modifiers.get("", None)
                 if kind is None:
