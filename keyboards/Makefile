@@ -1,5 +1,5 @@
 subdirs = easy-chakma \
-        gff-tigrinua-eritrea \
+        gff-tigrinya-eritrea \
         kh-sil-angkhor \
         my-shan \
         panafrica_us \
