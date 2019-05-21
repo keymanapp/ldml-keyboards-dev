@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ldmlkeytests layout="">
+  <test-sequence id="1">
+    <event key="[E10]" output="0"/>
+    <event key="[E01]" output="01"/>
+    <event key="[E02]" output="012"/>
+    <event key="[E03]" output="0123"/>
+    <event key="[E04]" output="01234"/>
+    <event key="[E05]" output="012345"/>
+    <event key="[E06]" output="0123456"/>
+    <event key="[E07]" output="01234567"/>
+    <event key="[E08]" output="012345678"/>
+    <event key="[E09]" output="0123456789"/>
+    <event key="[C01]" output="0123456789ا"/>
+    <event key="[B05]" output="0123456789اب"/>
+    <event key="[B03]" output="0123456789ابچ"/>
+    <event key="[C03]" output="0123456789ابچد"/>
+    <event key="[D03]" output="0123456789ابچدے"/>
+    <event key="[C04]" output="0123456789ابچدےف"/>
+    <event key="[C05]" output="0123456789ابچدےفگ"/>
+    <event key="[C06]" output="0123456789ابچدےفگه"/>
+    <event key="[D08]" output="0123456789ابچدےفگهێ"/>
+    <event key="[C07]" output="0123456789ابچدےفگهێج"/>
+    <event key="[C08]" output="0123456789ابچدےفگهێجک"/>
+    <event key="[C09]" output="0123456789ابچدےفگهێجکل"/>
+    <event key="[B07]" output="0123456789ابچدےفگهێجکلم"/>
+    <event key="[B06]" output="0123456789ابچدےفگهێجکلمن"/>
+    <event key="[D09]" output="0123456789ابچدےفگهێجکلمنُ"/>
+    <event key="[D10]" output="0123456789ابچدےفگهێجکلمنُپ"/>
+  </test-sequence>
+</ldmlkeytests>

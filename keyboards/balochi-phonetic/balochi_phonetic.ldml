@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE keyboard SYSTEM "../dtd/ldmlKeyboard.dtd">
-<keyboard locale="und-Zyyy">
+<keyboard locale="bcc-Arab">
 	<version number="1" platform="1"/>
-	<import path="langs/e/en/en-us-win/en-us-win.xml"/>
+	<import path="shared/en-us-win.xml"/>
 	<names>
-		<name value="Unknown"/>
+		<name value="Balochi Phonetic"/>
 	</names>
 	<keyMap modifiers="">
 		<map iso="B00" to="﷐"/>
