@@ -1,8 +1,1110 @@
-<?xml version="1.0" encoding="utf-8"?>
 <ldmlkeytests>
-    <test-sequence id="1">
-            <event key="[C06]" output="&#x1205;"/>
-            <event key="[D07]" output="&#x1201;" skip="bksp"/>
-            <event key="[D07]" output="&#x128D;" skip="bksp"/>
-    </test-sequence>
+  <test-sequence id="1">
+    <event key="[C06]" output="ህ"/>
+    <event key="[D03]" output="ሀ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="2">
+    <event key="[C06]" output="ህ"/>
+    <event key="[D07]" output="ሁ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="3">
+    <event key="[C06]" output="ህ"/>
+    <event key="[D08]" output="ሂ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="4">
+    <event key="[C06]" output="ህ"/>
+    <event key="[C01]" output="ሃ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="5">
+    <event key="[C06]" output="ህ"/>
+    <event key="[D08]" output="ሂ" skip="bksp"/>
+    <event key="[D03]" output="ሄ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="6">
+    <event key="[C06]" output="ህ"/>
+  </test-sequence>
+  <test-sequence id="7">
+    <event key="[C06]" output="ህ"/>
+    <event key="[D09]" output="ሆ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="8">
+    <event key="[C09]" output="ል"/>
+    <event key="[D03]" output="ለ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="9">
+    <event key="[C09]" output="ል"/>
+    <event key="[D07]" output="ሉ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="10">
+    <event key="[C09]" output="ል"/>
+    <event key="[D08]" output="ሊ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="11">
+    <event key="[C09]" output="ል"/>
+    <event key="[C01]" output="ላ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="12">
+    <event key="[C09]" output="ል"/>
+    <event key="[D08]" output="ሊ" skip="bksp"/>
+    <event key="[D03]" output="ሌ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="13">
+    <event key="[C09]" output="ል"/>
+  </test-sequence>
+  <test-sequence id="14">
+    <event key="[C09]" output="ል"/>
+    <event key="[D09]" output="ሎ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="15">
+    <event key="[C09]" output="ል"/>
+    <event key="[D07]" output="ሉ" skip="bksp"/>
+    <event key="[C01]" output="ሏ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="16">
+    <event key="[shift C06]" output="ሕ"/>
+    <event key="[D03]" output="ሐ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="17">
+    <event key="[shift C06]" output="ሕ"/>
+    <event key="[D07]" output="ሑ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="18">
+    <event key="[shift C06]" output="ሕ"/>
+    <event key="[D08]" output="ሒ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="19">
+    <event key="[shift C06]" output="ሕ"/>
+    <event key="[C01]" output="ሓ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="20">
+    <event key="[shift C06]" output="ሕ"/>
+    <event key="[D08]" output="ሒ" skip="bksp"/>
+    <event key="[D03]" output="ሔ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="21">
+    <event key="[shift C06]" output="ሕ"/>
+  </test-sequence>
+  <test-sequence id="22">
+    <event key="[shift C06]" output="ሕ"/>
+    <event key="[D09]" output="ሖ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="23">
+    <event key="[shift C06]" output="ሕ"/>
+    <event key="[D07]" output="ሑ" skip="bksp"/>
+    <event key="[C01]" output="ሗ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="24">
+    <event key="[B07]" output="ም"/>
+    <event key="[D03]" output="መ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="25">
+    <event key="[B07]" output="ም"/>
+    <event key="[D07]" output="ሙ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="26">
+    <event key="[B07]" output="ም"/>
+    <event key="[D08]" output="ሚ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="27">
+    <event key="[B07]" output="ም"/>
+    <event key="[C01]" output="ማ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="28">
+    <event key="[B07]" output="ም"/>
+    <event key="[D08]" output="ሚ" skip="bksp"/>
+    <event key="[D03]" output="ሜ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="29">
+    <event key="[B07]" output="ም"/>
+  </test-sequence>
+  <test-sequence id="30">
+    <event key="[B07]" output="ም"/>
+    <event key="[D09]" output="ሞ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="31">
+    <event key="[B07]" output="ም"/>
+    <event key="[D07]" output="ሙ" skip="bksp"/>
+    <event key="[C01]" output="ሟ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="32">
+    <event key="[D04]" output="ር"/>
+    <event key="[D03]" output="ረ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="33">
+    <event key="[D04]" output="ር"/>
+    <event key="[D07]" output="ሩ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="34">
+    <event key="[D04]" output="ር"/>
+    <event key="[D08]" output="ሪ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="35">
+    <event key="[D04]" output="ር"/>
+    <event key="[C01]" output="ራ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="36">
+    <event key="[D04]" output="ር"/>
+    <event key="[D08]" output="ሪ" skip="bksp"/>
+    <event key="[D03]" output="ሬ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="37">
+    <event key="[D04]" output="ር"/>
+  </test-sequence>
+  <test-sequence id="38">
+    <event key="[D04]" output="ር"/>
+    <event key="[D09]" output="ሮ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="39">
+    <event key="[D04]" output="ር"/>
+    <event key="[D07]" output="ሩ" skip="bksp"/>
+    <event key="[C01]" output="ሯ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="40">
+    <event key="[C02]" output="ስ"/>
+    <event key="[D03]" output="ሰ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="41">
+    <event key="[C02]" output="ስ"/>
+    <event key="[D07]" output="ሱ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="42">
+    <event key="[C02]" output="ስ"/>
+    <event key="[D08]" output="ሲ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="43">
+    <event key="[C02]" output="ስ"/>
+    <event key="[C01]" output="ሳ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="44">
+    <event key="[C02]" output="ስ"/>
+    <event key="[D08]" output="ሲ" skip="bksp"/>
+    <event key="[D03]" output="ሴ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="45">
+    <event key="[C02]" output="ስ"/>
+  </test-sequence>
+  <test-sequence id="46">
+    <event key="[C02]" output="ስ"/>
+    <event key="[D09]" output="ሶ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="47">
+    <event key="[C02]" output="ስ"/>
+    <event key="[D07]" output="ሱ" skip="bksp"/>
+    <event key="[C01]" output="ሷ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="48">
+    <event key="[B02]" output="ሽ"/>
+    <event key="[D03]" output="ሸ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="49">
+    <event key="[B02]" output="ሽ"/>
+    <event key="[D07]" output="ሹ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="50">
+    <event key="[B02]" output="ሽ"/>
+    <event key="[D08]" output="ሺ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="51">
+    <event key="[B02]" output="ሽ"/>
+    <event key="[C01]" output="ሻ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="52">
+    <event key="[B02]" output="ሽ"/>
+    <event key="[D08]" output="ሺ" skip="bksp"/>
+    <event key="[D03]" output="ሼ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="53">
+    <event key="[B02]" output="ሽ"/>
+  </test-sequence>
+  <test-sequence id="54">
+    <event key="[B02]" output="ሽ"/>
+    <event key="[D09]" output="ሾ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="55">
+    <event key="[B02]" output="ሽ"/>
+    <event key="[D07]" output="ሹ" skip="bksp"/>
+    <event key="[C01]" output="ሿ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="56">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D03]" output="ቀ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="57">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D07]" output="ቁ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="58">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D08]" output="ቂ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="59">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[C01]" output="ቃ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="60">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D08]" output="ቂ" skip="bksp"/>
+    <event key="[D03]" output="ቄ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="61">
+    <event key="[D01]" output="ቅ"/>
+  </test-sequence>
+  <test-sequence id="62">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D09]" output="ቆ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="63">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D07]" output="ቁ" skip="bksp"/>
+    <event key="[D03]" output="ቈ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="64">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D07]" output="ቁ" skip="bksp"/>
+    <event key="[D08]" output="ቊ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="65">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D07]" output="ቁ" skip="bksp"/>
+    <event key="[D07]" output="ቍ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="66">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D07]" output="ቁ" skip="bksp"/>
+    <event key="[C01]" output="ቋ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="67">
+    <event key="[D01]" output="ቅ"/>
+    <event key="[D07]" output="ቁ" skip="bksp"/>
+    <event key="[D08]" output="ቊ" skip="bksp"/>
+    <event key="[D03]" output="ቌ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="68">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D03]" output="ቐ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="69">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D07]" output="ቑ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="70">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D08]" output="ቒ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="71">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[C01]" output="ቓ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="72">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D08]" output="ቒ" skip="bksp"/>
+    <event key="[D03]" output="ቔ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="73">
+    <event key="[shift D01]" output="ቕ"/>
+  </test-sequence>
+  <test-sequence id="74">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D09]" output="ቖ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="75">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D07]" output="ቑ" skip="bksp"/>
+    <event key="[D03]" output="ቘ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="76">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D07]" output="ቑ" skip="bksp"/>
+    <event key="[D07]" output="ቝ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="77">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D07]" output="ቑ" skip="bksp"/>
+    <event key="[D08]" output="ቚ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="78">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D07]" output="ቑ" skip="bksp"/>
+    <event key="[C01]" output="ቛ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="79">
+    <event key="[shift D01]" output="ቕ"/>
+    <event key="[D07]" output="ቑ" skip="bksp"/>
+    <event key="[D08]" output="ቚ" skip="bksp"/>
+    <event key="[D03]" output="ቜ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="80">
+    <event key="[B05]" output="ብ"/>
+    <event key="[D03]" output="በ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="81">
+    <event key="[B05]" output="ብ"/>
+    <event key="[D07]" output="ቡ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="82">
+    <event key="[B05]" output="ብ"/>
+    <event key="[D08]" output="ቢ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="83">
+    <event key="[B05]" output="ብ"/>
+    <event key="[C01]" output="ባ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="84">
+    <event key="[B05]" output="ብ"/>
+    <event key="[D08]" output="ቢ" skip="bksp"/>
+    <event key="[D03]" output="ቤ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="85">
+    <event key="[B05]" output="ብ"/>
+  </test-sequence>
+  <test-sequence id="86">
+    <event key="[B05]" output="ብ"/>
+    <event key="[D09]" output="ቦ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="87">
+    <event key="[B05]" output="ብ"/>
+    <event key="[D07]" output="ቡ" skip="bksp"/>
+    <event key="[C01]" output="ቧ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="88">
+    <event key="[B04]" output="ቭ"/>
+    <event key="[D03]" output="ቨ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="89">
+    <event key="[B04]" output="ቭ"/>
+    <event key="[D07]" output="ቩ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="90">
+    <event key="[B04]" output="ቭ"/>
+    <event key="[D08]" output="ቪ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="91">
+    <event key="[B04]" output="ቭ"/>
+    <event key="[C01]" output="ቫ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="92">
+    <event key="[B04]" output="ቭ"/>
+    <event key="[D08]" output="ቪ" skip="bksp"/>
+    <event key="[D03]" output="ቬ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="93">
+    <event key="[B04]" output="ቭ"/>
+  </test-sequence>
+  <test-sequence id="94">
+    <event key="[B04]" output="ቭ"/>
+    <event key="[D09]" output="ቮ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="95">
+    <event key="[B04]" output="ቭ"/>
+    <event key="[D07]" output="ቩ" skip="bksp"/>
+    <event key="[C01]" output="ቯ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="96">
+    <event key="[D05]" output="ት"/>
+    <event key="[D03]" output="ተ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="97">
+    <event key="[D05]" output="ት"/>
+    <event key="[D07]" output="ቱ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="98">
+    <event key="[D05]" output="ት"/>
+    <event key="[D08]" output="ቲ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="99">
+    <event key="[D05]" output="ት"/>
+    <event key="[C01]" output="ታ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="100">
+    <event key="[D05]" output="ት"/>
+    <event key="[D08]" output="ቲ" skip="bksp"/>
+    <event key="[D03]" output="ቴ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="101">
+    <event key="[D05]" output="ት"/>
+  </test-sequence>
+  <test-sequence id="102">
+    <event key="[D05]" output="ት"/>
+    <event key="[D09]" output="ቶ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="103">
+    <event key="[D05]" output="ት"/>
+    <event key="[D07]" output="ቱ" skip="bksp"/>
+    <event key="[C01]" output="ቷ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="104">
+    <event key="[B03]" output="ች"/>
+    <event key="[D03]" output="ቸ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="105">
+    <event key="[B03]" output="ች"/>
+    <event key="[D07]" output="ቹ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="106">
+    <event key="[B03]" output="ች"/>
+    <event key="[D08]" output="ቺ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="107">
+    <event key="[B03]" output="ች"/>
+    <event key="[C01]" output="ቻ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="108">
+    <event key="[B03]" output="ች"/>
+    <event key="[D08]" output="ቺ" skip="bksp"/>
+    <event key="[D03]" output="ቼ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="109">
+    <event key="[B03]" output="ች"/>
+  </test-sequence>
+  <test-sequence id="110">
+    <event key="[B03]" output="ች"/>
+    <event key="[D09]" output="ቾ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="111">
+    <event key="[B03]" output="ች"/>
+    <event key="[D07]" output="ቹ" skip="bksp"/>
+    <event key="[C01]" output="ቿ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="112">
+    <event key="[B06]" output="ን"/>
+    <event key="[D03]" output="ነ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="113">
+    <event key="[B06]" output="ን"/>
+    <event key="[D07]" output="ኑ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="114">
+    <event key="[B06]" output="ን"/>
+    <event key="[D08]" output="ኒ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="115">
+    <event key="[B06]" output="ን"/>
+    <event key="[C01]" output="ና" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="116">
+    <event key="[B06]" output="ን"/>
+    <event key="[D08]" output="ኒ" skip="bksp"/>
+    <event key="[D03]" output="ኔ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="117">
+    <event key="[B06]" output="ን"/>
+  </test-sequence>
+  <test-sequence id="118">
+    <event key="[B06]" output="ን"/>
+    <event key="[D09]" output="ኖ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="119">
+    <event key="[B06]" output="ን"/>
+    <event key="[D07]" output="ኑ" skip="bksp"/>
+    <event key="[C01]" output="ኗ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="120">
+    <event key="[shift B06]" output="ኝ"/>
+    <event key="[D03]" output="ኘ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="121">
+    <event key="[shift B06]" output="ኝ"/>
+    <event key="[D07]" output="ኙ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="122">
+    <event key="[shift B06]" output="ኝ"/>
+    <event key="[D08]" output="ኚ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="123">
+    <event key="[shift B06]" output="ኝ"/>
+    <event key="[C01]" output="ኛ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="124">
+    <event key="[shift B06]" output="ኝ"/>
+    <event key="[D08]" output="ኚ" skip="bksp"/>
+    <event key="[D03]" output="ኜ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="125">
+    <event key="[shift B06]" output="ኝ"/>
+  </test-sequence>
+  <test-sequence id="126">
+    <event key="[shift B06]" output="ኝ"/>
+    <event key="[D09]" output="ኞ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="127">
+    <event key="[shift B06]" output="ኝ"/>
+    <event key="[D07]" output="ኙ" skip="bksp"/>
+    <event key="[C01]" output="ኟ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="128">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D03]" output="ከ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="129">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D07]" output="ኩ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="130">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D08]" output="ኪ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="131">
+    <event key="[C08]" output="ክ"/>
+    <event key="[C01]" output="ካ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="132">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D08]" output="ኪ" skip="bksp"/>
+    <event key="[D03]" output="ኬ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="133">
+    <event key="[C08]" output="ክ"/>
+  </test-sequence>
+  <test-sequence id="134">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D09]" output="ኮ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="135">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D07]" output="ኩ" skip="bksp"/>
+    <event key="[D03]" output="ኰ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="136">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D07]" output="ኩ" skip="bksp"/>
+    <event key="[D08]" output="ኲ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="137">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D07]" output="ኩ" skip="bksp"/>
+    <event key="[D07]" output="ኵ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="138">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D07]" output="ኩ" skip="bksp"/>
+    <event key="[C01]" output="ኳ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="139">
+    <event key="[C08]" output="ክ"/>
+    <event key="[D07]" output="ኩ" skip="bksp"/>
+    <event key="[D08]" output="ኲ" skip="bksp"/>
+    <event key="[D03]" output="ኴ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="140">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D03]" output="ኸ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="141">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D07]" output="ኹ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="142">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D08]" output="ኺ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="143">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[C01]" output="ኻ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="144">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D08]" output="ኺ" skip="bksp"/>
+    <event key="[D03]" output="ኼ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="145">
+    <event key="[shift C08]" output="ኽ"/>
+  </test-sequence>
+  <test-sequence id="146">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D09]" output="ኾ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="147">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D07]" output="ኹ" skip="bksp"/>
+    <event key="[D03]" output="ዀ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="148">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D07]" output="ኹ" skip="bksp"/>
+    <event key="[D07]" output="ዅ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="149">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D07]" output="ኹ" skip="bksp"/>
+    <event key="[D08]" output="ዂ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="150">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D07]" output="ኹ" skip="bksp"/>
+    <event key="[C01]" output="ዃ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="151">
+    <event key="[shift C08]" output="ኽ"/>
+    <event key="[D07]" output="ኹ" skip="bksp"/>
+    <event key="[D08]" output="ዂ" skip="bksp"/>
+    <event key="[D03]" output="ዄ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="152">
+    <event key="[D02]" output="ው"/>
+    <event key="[D03]" output="ወ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="153">
+    <event key="[D02]" output="ው"/>
+    <event key="[D07]" output="ዉ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="154">
+    <event key="[D02]" output="ው"/>
+    <event key="[D08]" output="ዊ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="155">
+    <event key="[D02]" output="ው"/>
+    <event key="[C01]" output="ዋ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="156">
+    <event key="[D02]" output="ው"/>
+    <event key="[D08]" output="ዊ" skip="bksp"/>
+    <event key="[D03]" output="ዌ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="157">
+    <event key="[D02]" output="ው"/>
+  </test-sequence>
+  <test-sequence id="158">
+    <event key="[D02]" output="ው"/>
+    <event key="[D09]" output="ዎ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="159">
+    <event key="[shift C01]" output="ዐ"/>
+  </test-sequence>
+  <test-sequence id="160">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D07]" output="ዑ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="161">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D08]" output="ዒ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="162">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[C01]" output="ዓ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="163">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D08]" output="ዒ" skip="bksp"/>
+    <event key="[D03]" output="ዔ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="164">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D03]" output="ዕ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="165">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D09]" output="ዖ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="166">
+    <event key="[B01]" output="ዝ"/>
+    <event key="[D03]" output="ዘ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="167">
+    <event key="[B01]" output="ዝ"/>
+    <event key="[D07]" output="ዙ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="168">
+    <event key="[B01]" output="ዝ"/>
+    <event key="[D08]" output="ዚ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="169">
+    <event key="[B01]" output="ዝ"/>
+    <event key="[C01]" output="ዛ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="170">
+    <event key="[B01]" output="ዝ"/>
+    <event key="[D08]" output="ዚ" skip="bksp"/>
+    <event key="[D03]" output="ዜ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="171">
+    <event key="[B01]" output="ዝ"/>
+  </test-sequence>
+  <test-sequence id="172">
+    <event key="[B01]" output="ዝ"/>
+    <event key="[D09]" output="ዞ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="173">
+    <event key="[B01]" output="ዝ"/>
+    <event key="[D07]" output="ዙ" skip="bksp"/>
+    <event key="[C01]" output="ዟ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="174">
+    <event key="[shift B01]" output="ዥ"/>
+    <event key="[D03]" output="ዠ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="175">
+    <event key="[shift B01]" output="ዥ"/>
+    <event key="[D07]" output="ዡ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="176">
+    <event key="[shift B01]" output="ዥ"/>
+    <event key="[D08]" output="ዢ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="177">
+    <event key="[shift B01]" output="ዥ"/>
+    <event key="[C01]" output="ዣ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="178">
+    <event key="[shift B01]" output="ዥ"/>
+    <event key="[D08]" output="ዢ" skip="bksp"/>
+    <event key="[D03]" output="ዤ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="179">
+    <event key="[shift B01]" output="ዥ"/>
+  </test-sequence>
+  <test-sequence id="180">
+    <event key="[shift B01]" output="ዥ"/>
+    <event key="[D09]" output="ዦ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="181">
+    <event key="[shift B01]" output="ዥ"/>
+    <event key="[D07]" output="ዡ" skip="bksp"/>
+    <event key="[C01]" output="ዧ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="182">
+    <event key="[D06]" output="ይ"/>
+    <event key="[D03]" output="የ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="183">
+    <event key="[D06]" output="ይ"/>
+    <event key="[D07]" output="ዩ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="184">
+    <event key="[D06]" output="ይ"/>
+    <event key="[D08]" output="ዪ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="185">
+    <event key="[D06]" output="ይ"/>
+    <event key="[C01]" output="ያ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="186">
+    <event key="[D06]" output="ይ"/>
+    <event key="[D08]" output="ዪ" skip="bksp"/>
+    <event key="[D03]" output="ዬ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="187">
+    <event key="[D06]" output="ይ"/>
+  </test-sequence>
+  <test-sequence id="188">
+    <event key="[D06]" output="ይ"/>
+    <event key="[D09]" output="ዮ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="189">
+    <event key="[C03]" output="ድ"/>
+    <event key="[D03]" output="ደ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="190">
+    <event key="[C03]" output="ድ"/>
+    <event key="[D07]" output="ዱ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="191">
+    <event key="[C03]" output="ድ"/>
+    <event key="[D08]" output="ዲ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="192">
+    <event key="[C03]" output="ድ"/>
+    <event key="[C01]" output="ዳ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="193">
+    <event key="[C03]" output="ድ"/>
+    <event key="[D08]" output="ዲ" skip="bksp"/>
+    <event key="[D03]" output="ዴ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="194">
+    <event key="[C03]" output="ድ"/>
+  </test-sequence>
+  <test-sequence id="195">
+    <event key="[C03]" output="ድ"/>
+    <event key="[D09]" output="ዶ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="196">
+    <event key="[C03]" output="ድ"/>
+    <event key="[D07]" output="ዱ" skip="bksp"/>
+    <event key="[C01]" output="ዷ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="197">
+    <event key="[C07]" output="ጅ"/>
+    <event key="[D03]" output="ጀ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="198">
+    <event key="[C07]" output="ጅ"/>
+    <event key="[D07]" output="ጁ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="199">
+    <event key="[C07]" output="ጅ"/>
+    <event key="[D08]" output="ጂ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="200">
+    <event key="[C07]" output="ጅ"/>
+    <event key="[C01]" output="ጃ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="201">
+    <event key="[C07]" output="ጅ"/>
+    <event key="[D08]" output="ጂ" skip="bksp"/>
+    <event key="[D03]" output="ጄ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="202">
+    <event key="[C07]" output="ጅ"/>
+  </test-sequence>
+  <test-sequence id="203">
+    <event key="[C07]" output="ጅ"/>
+    <event key="[D09]" output="ጆ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="204">
+    <event key="[C07]" output="ጅ"/>
+    <event key="[D07]" output="ጁ" skip="bksp"/>
+    <event key="[C01]" output="ጇ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="205">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D03]" output="ገ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="206">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D07]" output="ጉ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="207">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D08]" output="ጊ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="208">
+    <event key="[C05]" output="ግ"/>
+    <event key="[C01]" output="ጋ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="209">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D08]" output="ጊ" skip="bksp"/>
+    <event key="[D03]" output="ጌ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="210">
+    <event key="[C05]" output="ግ"/>
+  </test-sequence>
+  <test-sequence id="211">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D09]" output="ጎ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="212">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D07]" output="ጉ" skip="bksp"/>
+    <event key="[D03]" output="ጐ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="213">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D07]" output="ጉ" skip="bksp"/>
+    <event key="[D08]" output="ጒ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="214">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D07]" output="ጉ" skip="bksp"/>
+    <event key="[D07]" output="ጕ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="215">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D07]" output="ጉ" skip="bksp"/>
+    <event key="[C01]" output="ጓ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="216">
+    <event key="[C05]" output="ግ"/>
+    <event key="[D07]" output="ጉ" skip="bksp"/>
+    <event key="[D08]" output="ጒ" skip="bksp"/>
+    <event key="[D03]" output="ጔ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="217">
+    <event key="[shift D05]" output="ጥ"/>
+    <event key="[D03]" output="ጠ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="218">
+    <event key="[shift D05]" output="ጥ"/>
+    <event key="[D07]" output="ጡ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="219">
+    <event key="[shift D05]" output="ጥ"/>
+    <event key="[D08]" output="ጢ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="220">
+    <event key="[shift D05]" output="ጥ"/>
+    <event key="[C01]" output="ጣ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="221">
+    <event key="[shift D05]" output="ጥ"/>
+    <event key="[D08]" output="ጢ" skip="bksp"/>
+    <event key="[D03]" output="ጤ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="222">
+    <event key="[shift D05]" output="ጥ"/>
+  </test-sequence>
+  <test-sequence id="223">
+    <event key="[shift D05]" output="ጥ"/>
+    <event key="[D09]" output="ጦ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="224">
+    <event key="[shift D05]" output="ጥ"/>
+    <event key="[D07]" output="ጡ" skip="bksp"/>
+    <event key="[C01]" output="ጧ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="225">
+    <event key="[shift B03]" output="ጭ"/>
+    <event key="[D03]" output="ጨ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="226">
+    <event key="[shift B03]" output="ጭ"/>
+    <event key="[D07]" output="ጩ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="227">
+    <event key="[shift B03]" output="ጭ"/>
+    <event key="[D08]" output="ጪ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="228">
+    <event key="[shift B03]" output="ጭ"/>
+    <event key="[C01]" output="ጫ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="229">
+    <event key="[shift B03]" output="ጭ"/>
+    <event key="[D08]" output="ጪ" skip="bksp"/>
+    <event key="[D03]" output="ጬ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="230">
+    <event key="[shift B03]" output="ጭ"/>
+  </test-sequence>
+  <test-sequence id="231">
+    <event key="[shift B03]" output="ጭ"/>
+    <event key="[D09]" output="ጮ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="232">
+    <event key="[shift B03]" output="ጭ"/>
+    <event key="[D07]" output="ጩ" skip="bksp"/>
+    <event key="[C01]" output="ጯ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="233">
+    <event key="[shift D10]" output="ጵ"/>
+    <event key="[D03]" output="ጰ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="234">
+    <event key="[shift D10]" output="ጵ"/>
+    <event key="[D07]" output="ጱ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="235">
+    <event key="[shift D10]" output="ጵ"/>
+    <event key="[D08]" output="ጲ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="236">
+    <event key="[shift D10]" output="ጵ"/>
+    <event key="[C01]" output="ጳ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="237">
+    <event key="[shift D10]" output="ጵ"/>
+    <event key="[D08]" output="ጲ" skip="bksp"/>
+    <event key="[D03]" output="ጴ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="238">
+    <event key="[shift D10]" output="ጵ"/>
+  </test-sequence>
+  <test-sequence id="239">
+    <event key="[shift D10]" output="ጵ"/>
+    <event key="[D09]" output="ጶ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="240">
+    <event key="[shift D10]" output="ጵ"/>
+    <event key="[D07]" output="ጱ" skip="bksp"/>
+    <event key="[C01]" output="ጷ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="241">
+    <event key="[shift C02]" output="ጽ"/>
+    <event key="[D03]" output="ጸ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="242">
+    <event key="[shift C02]" output="ጽ"/>
+    <event key="[D07]" output="ጹ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="243">
+    <event key="[shift C02]" output="ጽ"/>
+    <event key="[D08]" output="ጺ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="244">
+    <event key="[shift C02]" output="ጽ"/>
+    <event key="[C01]" output="ጻ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="245">
+    <event key="[shift C02]" output="ጽ"/>
+    <event key="[D08]" output="ጺ" skip="bksp"/>
+    <event key="[D03]" output="ጼ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="246">
+    <event key="[shift C02]" output="ጽ"/>
+  </test-sequence>
+  <test-sequence id="247">
+    <event key="[shift C02]" output="ጽ"/>
+    <event key="[D09]" output="ጾ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="248">
+    <event key="[shift C02]" output="ጽ"/>
+    <event key="[D07]" output="ጹ" skip="bksp"/>
+    <event key="[C01]" output="ጿ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="249">
+    <event key="[C04]" output="ፍ"/>
+    <event key="[D03]" output="ፈ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="250">
+    <event key="[C04]" output="ፍ"/>
+    <event key="[D07]" output="ፉ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="251">
+    <event key="[C04]" output="ፍ"/>
+    <event key="[D08]" output="ፊ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="252">
+    <event key="[C04]" output="ፍ"/>
+    <event key="[C01]" output="ፋ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="253">
+    <event key="[C04]" output="ፍ"/>
+    <event key="[D08]" output="ፊ" skip="bksp"/>
+    <event key="[D03]" output="ፌ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="254">
+    <event key="[C04]" output="ፍ"/>
+  </test-sequence>
+  <test-sequence id="255">
+    <event key="[C04]" output="ፍ"/>
+    <event key="[D09]" output="ፎ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="256">
+    <event key="[C04]" output="ፍ"/>
+    <event key="[D07]" output="ፉ" skip="bksp"/>
+    <event key="[C01]" output="ፏ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="257">
+    <event key="[D10]" output="ፕ"/>
+    <event key="[D03]" output="ፐ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="258">
+    <event key="[D10]" output="ፕ"/>
+    <event key="[D07]" output="ፑ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="259">
+    <event key="[D10]" output="ፕ"/>
+    <event key="[D08]" output="ፒ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="260">
+    <event key="[D10]" output="ፕ"/>
+    <event key="[C01]" output="ፓ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="261">
+    <event key="[D10]" output="ፕ"/>
+    <event key="[D08]" output="ፒ" skip="bksp"/>
+    <event key="[D03]" output="ፔ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="262">
+    <event key="[D10]" output="ፕ"/>
+  </test-sequence>
+  <test-sequence id="263">
+    <event key="[D10]" output="ፕ"/>
+    <event key="[D09]" output="ፖ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="264">
+    <event key="[D10]" output="ፕ"/>
+    <event key="[D07]" output="ፑ" skip="bksp"/>
+    <event key="[C01]" output="ፗ" skip="bksp"/>
+  </test-sequence>
 </ldmlkeytests>
