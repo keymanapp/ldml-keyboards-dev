@@ -16,4 +16,4 @@ subdirs = easy-chakma \
 .PHONY: all
 
 all:
-	@for d in $(subdirs); do $(MAKE) -C $$d; done
+	@for d in $(subdirs); do echo $$d; $(MAKE) -s -C $$d; done

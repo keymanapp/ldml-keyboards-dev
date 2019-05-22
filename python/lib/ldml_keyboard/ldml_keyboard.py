@@ -154,7 +154,7 @@ class Keyboard(object):
 
     def process_string(self, txt):
         '''Process a sequence of keystrokes expressed textually into a list
-            of contexts giving the output after each keystroke'''
+           of contexts giving the output after each keystroke'''
         self.initstring()
         keys = re.findall(r'\[\s*(.*?)\s*\]', txt)
         res = []
@@ -243,17 +243,16 @@ class Keyboard(object):
         return ""
 
     def _ContextFromString(self, s):
-        ''' Create a new processing context from a string '''
+        '''Create a new processing context from a string '''
         res = Context(tracing=self.tracing)
-        for t in ('reorder', 'final'):
-            res.outputs[res.index(t)] = s
         (before, changed, _) = self._unreorder(s)
+        for t in ('reorder', 'final'):
+            res.set_output(t, s)
+            res.set_offset(t, len(before))
         olds = before + changed
         for t in ('base', 'simple'):
-            res.outputs[res.index(t)] = olds
-            res.offsets[res.index(t)] = len(olds)
-        res.offsets[2] = len(before)
-        res.offsets[3] = len(before)
+            res.set_output(t, olds)
+            res.set_offset(t, len(olds))
         res.trace("Initialise with string " + repr(s))
         return res
 
@@ -300,7 +299,7 @@ class Keyboard(object):
                 # allow reprocessing of input transforms only. This gives us rotors, for example.
                 for i in range(len(newout), 0, -1):
                     # do a test match on the suffix
-                    t = trans.match(context.outputs[ind], len(context.outputs[ind]) - i)
+                    t = trans.match(context.output(ruleset), len(context.output(ruleset)) - i)
                     # if the suffix is an incomplete match then remove that much from the output
                     # and put back onto input.
                     if t.morep:
@@ -312,11 +311,11 @@ class Keyboard(object):
             elif r.length == 0 and not r.morep and not fallback:     # abject failure
                 context.results(ruleset, curr, 1, instr[curr:curr+1], comment="Fallthrough")
                 curr += 1
-            elif r.morep and not partial:
+            elif r.morep and not partial:       # if incomplete match then store partial results
                 l = r.length or 1
                 context.partial_results(ruleset, l, instr[curr:curr+l], comment="Partial")
                 curr += l
-            elif r.length != 0 and not r.morep and not fail:
+            elif r.length != 0 and not r.morep and not fail:        # matched but no rule, just copy
                 context.results(ruleset, curr, r.length, instr[curr:curr+r.length], comment="Fail")
                 curr += r.length
             else:               # partial match waiting for more input
@@ -324,9 +323,9 @@ class Keyboard(object):
         return True
 
     def _sort(self, begin, end, chars, keys, rev=False):
-        ''' Sort a list of chars based on a corresponding list of keys. If no base (key.primary==0)
-            in the sequence, insert a U+200B as a base character. If rev remove any U+200B
-            immediately preceding a prevowel (after sorting). Returns (prefix, sorted, suffix) '''
+        '''Sort a list of chars based on a corresponding list of keys. If no base (key.primary==0)
+           in the sequence, insert a U+200B as a base character. If rev remove any U+200B
+           immediately preceding a prevowel (after sorting). Returns (prefix, sorted, suffix)'''
         s = chars[begin:end]
         k = keys[:end-begin]
         if not len(s):
@@ -351,7 +350,7 @@ class Keyboard(object):
         return (chars[:begin], res, chars[end:])
 
     def _padlist(self, val, num):
-        ''' fill out short value lists to full length of matched string '''
+        '''Fill out short value lists to full length of matched string '''
         boolmap = {'false' : 0, 'true': 1}
         res = [boolmap.get(x.lower(), x) for x in val.split()]
         if len(res) < num:
@@ -385,24 +384,33 @@ class Keyboard(object):
         startrun = context.offset(ruleset)
         curr = startrun
         codes = self._get_charcodes(instr, curr, trans)
+        # if not at start of a run
         if curr and (codes[0].primary > 0 and not codes[0].prebase or codes[0].tertiary):
+            # walk backwards looking for the start of a run. May occur if the addition of a character
+            # changes the category of a preceding character from cluster start to cluster medial.
             curr -=1
             while curr > 0:
+                # scan back for charcodes, since whether something is primary may be contextual
                 codes = self._get_charcodes(instr, len(instr) - 1 - curr, trans, rev=True)
                 curr -= len(codes)
                 if not codes[0].tertiary and (codes[0].primary == 0 or codes[0].prebase):
+                    # found the start of a run, perhaps. Assumes primary is always at start of sequence.
                     break
             while curr > 0:
+                # now scan back to find the end of the previous cluster (e.g. there are prevowels)
                 codes = self._get_charcodes(instr, len(instr) - 1 - curr, trans, rev=True)
-                curr -= len(codes)
-                if codes[0].tertiary or (codes[0].primary and not codes[0].prebase):
+                if codes[-1].tertiary or (codes[-1].primary and not codes[-1].prebase):
+                    # found it
                     break
+                curr -= len(codes)
+            # rewind everything accordingly
             context.backup_to(ruleset, curr)
 
+        # now scan for start of cluster, e.g. if string doesn't start with cluster start
         while curr < len(instr):
             codes = self._get_charcodes(instr, curr, trans)
             for c in codes:
-                if c.prebase or c.primary == 0:
+                if not c.tertiary and (c.prebase or c.primary == 0):
                     break
                 curr += 1
             else:
@@ -436,13 +444,15 @@ class Keyboard(object):
                                     instr[curr:curr+len(codes)].encode("unicode_escape"), codes))
             for i, c in enumerate(codes):               # calculate sort key for each character in turn
                 if c.tertiary and curr + i > startrun:  # can't start with tertiary, treat as primary 0
+                    # use remembered values for primary and positions
                     key = SortKey(currprimary, currbaseindex, c.tertiary, curr + i)
                 else:
                     key = SortKey(c.primary, curr + i, 0, curr + i)
                     if c.primary == 0 or c.tertiary_base:   # primary 0 is always a tertiary base
-                        currprimary = c.primary
-                        currbaseindex = curr + i
+                        currprimary = c.primary             # track current primary for tertiaries
+                        currbaseindex = curr + i            # track position of primary
 
+                # are we past initials in a cluster (prebase and primaries)
                 if ((key.primary != 0 or key.tertiary != 0) and not c.prebase) \
                         or (c.prebase and curr + i > startrun \
                             and keys[curr+i-startrun-1].primary == 0):  # prebase can't have tertiary
@@ -461,12 +471,12 @@ class Keyboard(object):
         if curr > startrun:
             yield self._sort(0, curr-startrun, instr[startrun:], keys)
         else:
-            yield ("", "", "")
+            yield ("", "", "")      # indicates the end of a cluster
 
     def _unreorder(self, instr):
-        ''' Create a string that when reordered gives the input string.
-            This relies on well designed reorders, but is generally what happens.
-            Returns (unchanged prefix string, unreordered single cluster, "")'''
+        '''Create a string that when reordered gives the input string.
+           This relies on well designed reorders, but is generally what happens.
+           Returns (unchanged prefix string, unreordered single cluster, "")'''
         end = 0
         try:
             trans = self.transforms['reorder']
@@ -517,9 +527,9 @@ class Keyboard(object):
         return res
 
     def _default_backspace(self, instr):
-        """ Consume one character from the pre-reordered text.
-            Returns replacement output string, length of output consumed,
-            replacement pre reordered text, length of pre reordered text consumed."""
+        """Consume one character from the pre-reordered text.
+           Returns replacement output string, length of output consumed,
+           replacement pre reordered text, length of pre reordered text consumed."""
         if 'reorder' not in self.transforms:
             return ("", 1, "", 1)
         # derive a possible input string to reorder
@@ -530,6 +540,7 @@ class Keyboard(object):
         simple = simple[:-1]
         # recalculate output as a result
         (pref, res, post) = list(self._reorder(simple, end=len(simple), ruleset='reorder'))[0]
+        # Find the point at which a change occurred in unreordered text
         for i in range(slen-1):
             if simple[i] != instr[olen + i]:
                 slen += i
@@ -538,6 +549,7 @@ class Keyboard(object):
         else:
             slen = 1
             simple = u""
+        # Find the point at which the output differs from input
         length = len(res)
         for i in range(len(res)):
             if res[i] != instr[olen + i]:
@@ -546,11 +558,13 @@ class Keyboard(object):
                 break
         else:
             res = u""
+        # return the trimmed down reordered string, the length,
+        # the trimmed down string that needs to be reordered and length
         return (res, len(instr) - olen - length, simple, slen)
 
     def _process_backspace(self, context, ruleset='backspace'):
         '''Handle the backspace transforms in response to bksp key'''
-        instr = context.outputs[-1]
+        instr = context.output('final')
         instrlen = len(instr)
         rule = None
         if ruleset not in self.transforms:
@@ -599,21 +613,20 @@ class Rules(object):
 
     def match(self, s, ind=0):
         '''Finds the merged rule for the given passed in string.
-            Returns (offset, length, rule, morep) as a MatchRule where length
-            is how far to advance the cursor. Offset is how far to skip before
-            replacing. Rule is the Rule object and morep is a boolean that 
-            says whether if given more characters in the string, further
-            matching may have occurred (see settings/@transformPartial.
-        '''
+           Returns (offset, length, rule, morep) as a MatchRule where length
+           is how far to advance the cursor. Offset is how far to skip before
+           replacing. Rule is the Rule object and morep is a boolean that 
+           says whether if given more characters in the string, further
+           matching may have occurred (see settings/@transformPartial.'''
         return MatchResult(*self.trie.match(s, ind))
 
     def revmatch(self, s, ind=0):
+        '''Searches backwards from the end-ind for a match'''
         return MatchResult(*self.trie.revmatch(s, ind))
 
 class Rule(object):
     '''A trie element that might do something. Corresponds to a
-        flattened transform in LDML'''
-
+       flattened transform in LDML'''
     def __init__(self, transform):
         for k, v in transform.items():
             if k in ('from', 'before', 'after'):
@@ -636,8 +649,8 @@ class Rule(object):
         return res
 
 class Context(object):
-    '''Holds the processed state of each layer after a keystroke'''
-
+    '''Holds the processed state of each layer after a keystroke. Keeps track of
+       the currently processed strings after each pass.'''
     slotnames = {
         'base' : 0,
         'simple' : 1,
@@ -684,9 +697,18 @@ class Context(object):
         '''Return full input string to this layer'''
         return self.outputs[self.slotnames[name]-1]
 
+    def output(self, name='simple'):
+        return self.outputs[self.index(name)]
+
     def offset(self, name='simple'):
         '''Returns the offset into input string that isn't in stables'''
         return self.offsets[self.slotnames[name]]
+
+    def set_output(self, name, s):
+        self.outputs[self.index(name)] = s
+
+    def set_offset(self, name, i):
+        self.offsets[self.index(name)] = i
 
     def reset_output(self, name):
         '''Prepare output based on stables ready for more output to be added'''
@@ -703,9 +725,7 @@ class Context(object):
         diff = self.offsets[ind] - index
         for i in range(ind, len(self.outputs)):
             self.offsets[i] -= diff
-            #self.partials[i-1] += diff
             self.outputs[i] = self.outputs[i][:-diff]
-        #self.partials[len(self.outputs)-1] += diff
 
     def partial_results(self, name, length, res, rule=None, comment=None):
         ind = self.index(name)
@@ -726,6 +746,7 @@ class Context(object):
         self.trace_replacement("Consumed", length, name, res, rule=rule, comment=comment)
 
     def replace_end(self, name, backup, res, rule=None, comment=None):
+        '''Backup specified number of characters and replace with given string'''
         ind = self.index(name)
         out = self.outputs[ind]
         self.outputs[ind] = out[:-backup] + res
@@ -741,9 +762,9 @@ class Context(object):
         self.trace_replacement("Truncated", backup, name, res, rule=rule, comment=comment)
 
     def put_back(self, name, instr, inlength, inoffset, outlength):
-        ''' Remove outlength chars from output and return them as a prefix to replace
-            inlength chars from the instr at the given inoffset. So the return is:
-            some_output + instr[inoffset+inlength:] '''
+        '''Remove outlength chars from output and return them as a prefix to replace
+           inlength chars from the instr at the given inoffset. So the return is:
+           some_output + instr[inoffset+inlength:]'''
         ind = self.index(name)
         self.offsets[ind] -= inlength
         instr = self.outputs[ind][-outlength:] + instr[inoffset + inlength:]
@@ -765,8 +786,8 @@ class Context(object):
 
 def main():
     '''Process a testfile of key sequences, one sequence per line,
-        to give test results: comma separated for each keystroke,
-        one sequence per line'''
+       to give test results: comma separated for each keystroke,
+       one sequence per line'''
     import argparse, codecs, sys
 
     parser = argparse.ArgumentParser()
