@@ -102,11 +102,12 @@ class KeyTest():
 
     def test(self, testid, tid, el, eid, res, test, iserror):
         failed = unicode(res) != test
+        reserror = getattr(res, 'error', False)
         if iserror != -1:
-            failed = failed or res.error != iserror
+            failed = failed or reserror != iserror
         if self.generate is not None and failed:
             if testid.startswith('Base'):
-                self.setTo(el, unicode(res), res.error)
+                self.setTo(el, unicode(res), reserror)
             elif testid.startswith('BKSP'):
                 self.setSkip(el, 'bksp')
                 self.reset_bksp_end()
@@ -115,11 +116,11 @@ class KeyTest():
             print("Test: {}".format(testid))
             print("    " + ("\n    ".join(res.tracing_events)))
         if failed:
-            s = u"{} {}: Failed event {} in test {}: {} should be {} with error {} to be {}".\
-                format(self.fname, testid, eid, tid, asFull(unicode(res), True), asFull(test, True), res.error, iserror)
+            s = u"{} {}: Failed event {} in test {}: \"{}\" should be \"{}\" with error {} to be {}".\
+                format(self.fname, testid, eid, tid, unicode(res), test, reserror, iserror)
             if self.args.full:
-                s += "\n    " + asFull(unicode(res), True) + " should be " + asFull(test, True)
-                s += "\n    Keys pressed: " + " ".join(askey(x) for x in \
+                s += "\n    \"" + asFull(unicode(res), True) + "\" should be \"" + asFull(test, True)
+                s += "\"\n    Keys pressed: " + " ".join(askey(x) for x in \
                                 reduce(lambda x,y: x+y, self.history, []))
             raise TestError(s)
         return test
@@ -133,7 +134,8 @@ class KeyTest():
 
     def bksptest(self, test, iserror, tid=0, el=None, eid=0, info=""):
         for i in range(len(self.history)-self.bksp_end):
-            numback = sum(map(len, self.history[-i-1:]))
+            # numback = sum(map(len, self.history[-i-1:]))
+            numback = i + 1     # one backspace per rule only
             for j in range(numback):
                 res = self.kbd.process("BKSP", [])
                 if 'diff' not in info:
@@ -157,8 +159,7 @@ class KeyTest():
                 s = ud.normalize(form, s)
                 for k in self.history[-1]:
                     res = self.kbd.process(*k, context=s)
-                rstr = Context(ud.normalize(form, unicode(res)), tracing=(self.args.tracing or self.args.traceall))
-                rstr.error = res.error
+                rstr = ud.normalize(form, unicode(res))
                 self.test(form, tid, None, eid, rstr, ud.normalize(form, test), iserror)
 
 
@@ -215,7 +216,7 @@ for fn in fnames:
                 if 'normal' not in skips and len(test):
                     tester.normaltest(test, iserror, tid, i+1)
             except TestError as e:
-                print(unicode(e).encode("utf-8"))
+                print(e)
                 errors += 1
                 if args.brk:
                     break

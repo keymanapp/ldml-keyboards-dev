@@ -229,7 +229,7 @@ class Keyboard(object):
 
     def map_key(self, k, mods):
         '''Apply the appropriate keyMap to a keystroke to get some chars'''
-        modstr = " ".join(sorted(mods))
+        modstr = " ".join(sorted(x.lower() for x in mods))
         if modstr not in self.modifiers:
             return ""
         kind = self.modifiers[modstr]
@@ -246,14 +246,14 @@ class Keyboard(object):
         ''' Create a new processing context from a string '''
         res = Context(tracing=self.tracing)
         for t in ('reorder', 'final'):
-            res.output[res.index(t)] = s
+            res.outputs[res.index(t)] = s
         (before, changed, _) = self._unreorder(s)
         olds = before + changed
         for t in ('base', 'simple'):
-            res.output[res.index(t)] = olds
-            res.offset[res.index(t)] = len(olds)
-        res.offset[2] = len(before)
-        res.offset[3] = len(before)
+            res.outputs[res.index(t)] = olds
+            res.offsets[res.index(t)] = len(olds)
+        res.offsets[2] = len(before)
+        res.offsets[3] = len(before)
         res.trace("Initialise with string " + repr(s))
         return res
 
@@ -326,7 +326,7 @@ class Keyboard(object):
     def _sort(self, begin, end, chars, keys, rev=False):
         ''' Sort a list of chars based on a corresponding list of keys. If no base (key.primary==0)
             in the sequence, insert a U+200B as a base character. If rev remove any U+200B
-            immediately preceding a prevowel (after sorting) '''
+            immediately preceding a prevowel (after sorting). Returns (prefix, sorted, suffix) '''
         s = chars[begin:end]
         k = keys[:end-begin]
         if not len(s):
@@ -468,7 +468,10 @@ class Keyboard(object):
             This relies on well designed reorders, but is generally what happens.
             Returns (unchanged prefix string, unreordered single cluster, "")'''
         end = 0
-        trans = self.transforms['reorder']
+        try:
+            trans = self.transforms['reorder']
+        except KeyError:
+            return (instr, "", "")
         hitbase = False
         keys = []
         tertiaries = []

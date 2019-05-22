@@ -5,8 +5,8 @@
             <event key="[shift C01]" output="aA"/>
     </test-sequence>
     <test-sequence id="2">
-            <event key="[D11]" output=""/>
-            <event key="[C01]" output="ɑ" skip="bksp"/>
+            <!-- <event key="[D11]" output=""/> -->
+            <event key="[D11][C01]" output="ɑ"/>
     </test-sequence>
     <test-sequence id="3">
             <event key="[altR C01]" output="ɑ"/>
