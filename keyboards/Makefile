@@ -1,4 +1,5 @@
-subdirs = easy-chakma \
+subdirs = balochi-phonetic \
+        easy-chakma \
         gff-tigrinya-eritrea \
         kh-sil-angkhor \
         my-shan \

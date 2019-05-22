@@ -1,0 +1,113 @@
+<ldmlkeytests>
+  <test-sequence id="1">
+    <event key="[shift E10]" output="("/>
+  </test-sequence>
+  <test-sequence id="2">
+    <event key="[shift E06]" output="‌"/>
+  </test-sequence>
+  <test-sequence id="3">
+    <event key="[shift E09]" output=")"/>
+  </test-sequence>
+  <test-sequence id="4">
+    <event key="[shift C01]" output="آ"/>
+  </test-sequence>
+  <test-sequence id="5">
+    <event key="[shift B05]" output="ة"/>
+  </test-sequence>
+  <test-sequence id="6">
+    <event key="[shift B03]" output="ط"/>
+  </test-sequence>
+  <test-sequence id="7">
+    <event key="[shift C03]" output="ڈ"/>
+  </test-sequence>
+  <test-sequence id="8">
+    <event key="[shift D03]" output="ۓ"/>
+  </test-sequence>
+  <test-sequence id="9">
+    <event key="[shift C04]" output="ث"/>
+  </test-sequence>
+  <test-sequence id="10">
+    <event key="[shift C05]" output="ق"/>
+  </test-sequence>
+  <test-sequence id="11">
+    <event key="[shift C06]" output="ص"/>
+  </test-sequence>
+  <test-sequence id="12">
+    <event key="[shift D08]" output="ً"/>
+  </test-sequence>
+  <test-sequence id="13">
+    <event key="[shift C07]" output="ض"/>
+  </test-sequence>
+  <test-sequence id="14">
+    <event key="[shift C08]" output="]"/>
+  </test-sequence>
+  <test-sequence id="15">
+    <event key="[shift C09]" output="["/>
+  </test-sequence>
+  <test-sequence id="16">
+    <event key="[shift B07]" output="غ"/>
+  </test-sequence>
+  <test-sequence id="17">
+    <event key="[shift B06]" output="ع"/>
+  </test-sequence>
+  <test-sequence id="18">
+    <event key="[shift D09]" output="ْ"/>
+  </test-sequence>
+  <test-sequence id="19">
+    <event key="[shift D10]" output="ّ"/>
+  </test-sequence>
+  <test-sequence id="20">
+    <event key="[shift D01]" output="ي"/>
+  </test-sequence>
+  <test-sequence id="21">
+    <event key="[shift D04]" output="ڑ"/>
+  </test-sequence>
+  <test-sequence id="22">
+    <event key="[shift C02]" output="ش"/>
+  </test-sequence>
+  <test-sequence id="23">
+    <event key="[shift D05]" output="ٹ"/>
+  </test-sequence>
+  <test-sequence id="24">
+    <event key="[shift D07]" output="ۀ"/>
+  </test-sequence>
+  <test-sequence id="25">
+    <event key="[shift B04]" output="ظ"/>
+  </test-sequence>
+  <test-sequence id="26">
+    <event key="[shift D02]" output="أ"/>
+  </test-sequence>
+  <test-sequence id="27">
+    <event key="[shift B02]" output="خ"/>
+  </test-sequence>
+  <test-sequence id="28">
+    <event key="[shift B01]" output="ژ"/>
+  </test-sequence>
+  <test-sequence id="29">
+    <event key="[shift E00]" output="ٔ"/>
+  </test-sequence>
+  <test-sequence id="30">
+    <event key="[shift D13]" output="ں"/>
+  </test-sequence>
+  <test-sequence id="31">
+    <event key="[shift B08]" output="›"/>
+  </test-sequence>
+  <test-sequence id="32">
+    <event key="[shift E12]" output="«"/>
+  </test-sequence>
+  <test-sequence id="33">
+    <event key="[shift E11]" output="»"/>
+  </test-sequence>
+  <test-sequence id="34">
+    <event key="[shift D11]" output="}"/>
+  </test-sequence>
+  <test-sequence id="35">
+    <event key="[shift B09]" output="‹"/>
+  </test-sequence>
+  <test-sequence id="36">
+    <event key="[shift D12]" output="{"/>
+  </test-sequence>
+  <test-sequence id="37">
+    <event key="[shift B10]" output="؟"/>
+  </test-sequence>
+</ldmlkeytests>
