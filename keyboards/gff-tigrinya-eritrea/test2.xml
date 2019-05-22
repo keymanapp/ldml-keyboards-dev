@@ -1,0 +1,85 @@
+<ldmlkeytests>
+  <test-sequence id="1">
+    <event key="[C01]" output="ኣ"/>
+    <event key="[C01]" output="ዓ" skip="bksp"/>
+    <event key="[C01]" output="ዐ" skip="bksp"/>
+    <event key="[C01]" output="አ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="2">
+    <event key="[D07]" output="ኡ"/>
+  </test-sequence>
+  <test-sequence id="3">
+    <event key="[D08]" output="ኢ"/>
+  </test-sequence>
+  <test-sequence id="4">
+    <event key="[C01]" output="ኣ"/>
+  </test-sequence>
+  <test-sequence id="5">
+    <event key="[D08]" output="ኢ"/>
+    <event key="[D03]" output="ኤ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="6">
+    <event key="[D03]" output="እ"/>
+  </test-sequence>
+  <test-sequence id="7">
+    <event key="[D09]" output="ኦ"/>
+  </test-sequence>
+  <test-sequence id="8">
+    <event key="[C01]" output="ኣ"/>
+    <event key="[C01]" output="ዓ" skip="bksp"/>
+    <event key="[C01]" output="ዐ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="9">
+    <event key="[D07]" output="ኡ"/>
+    <event key="[D07]" output="ዑ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="10">
+    <event key="[D08]" output="ኢ"/>
+    <event key="[D08]" output="ዒ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="11">
+    <event key="[C01]" output="ኣ"/>
+    <event key="[C01]" output="ዓ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="12">
+    <event key="[D08]" output="ኢ"/>
+    <event key="[D08]" output="ዒ" skip="bksp"/>
+    <event key="[D03]" output="ዔ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="13">
+    <event key="[D03]" output="እ"/>
+    <event key="[D03]" output="ዕ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="14">
+    <event key="[D09]" output="ኦ"/>
+    <event key="[D09]" output="ዖ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="15">
+    <event key="[shift C01]" output="ዐ"/>
+  </test-sequence>
+  <test-sequence id="16">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D07]" output="ዑ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="17">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D08]" output="ዒ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="18">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[C01]" output="ዓ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="19">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D08]" output="ዒ" skip="bksp"/>
+    <event key="[D03]" output="ዔ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="20">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D03]" output="ዕ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="21">
+    <event key="[shift C01]" output="ዐ"/>
+    <event key="[D09]" output="ዖ" skip="bksp"/>
+  </test-sequence>
+</ldmlkeytests>

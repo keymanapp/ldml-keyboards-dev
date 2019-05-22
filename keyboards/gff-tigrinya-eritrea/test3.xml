@@ -1,0 +1,47 @@
+<ldmlkeytests>
+  <test-sequence id="1">
+    <event key="[shift C10]" output="፡"/>
+  </test-sequence>
+  <test-sequence id="2">
+    <event key="[B08]" output="፡"/>
+  </test-sequence>
+  <test-sequence id="3">
+    <event key="[shift C10]" output="፡"/>
+    <event key="[shift C10]" output="።" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="4">
+    <event key="[C10]" output="፣"/>
+  </test-sequence>
+  <test-sequence id="5">
+    <event key="[C10]" output="፣"/>
+    <event key="[C10]" output="፤" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="6">
+    <event key="[shift C10]" output="፡"/>
+    <event key="[E11]" output="፦" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="7">
+    <event key="[B08]" output="፡"/>
+    <event key="[B08]" output="፥" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="8">
+    <event key="[shift B10]" output="?"/>
+    <event key="[shift B10]" output="፧" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="9">
+    <event key="[shift C10]" output="፡"/>
+    <event key="[shift E12]" output="፠" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="10">
+    <event key="[shift C10]" output="፡"/>
+    <event key="[shift E03]" output="፨" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="11">
+    <event key="[shift B10]" output="?"/>
+  </test-sequence>
+  <test-sequence id="12">
+    <event key="[C10]" output="፣"/>
+    <event key="[C10]" output="፤" skip="bksp"/>
+    <event key="[C10]" output=";" skip="bksp"/>
+  </test-sequence>
+</ldmlkeytests>
