@@ -1,0 +1,203 @@
+<ldmlkeytests>
+  <test-sequence id="1">
+    <event key="[altR C01]" output="ɑ"/>
+  </test-sequence>
+  <test-sequence id="2">
+    <event key="[altL B04]" output="ʌ"/>
+  </test-sequence>
+  <test-sequence id="3">
+    <event key="[altR B05]" output="ɓ"/>
+  </test-sequence>
+  <test-sequence id="4">
+    <event key="[altR B03]" output="ƈ"/>
+  </test-sequence>
+  <test-sequence id="5">
+    <event key="[altR C07]" output="ɖ"/>
+  </test-sequence>
+  <test-sequence id="6">
+    <event key="[altR C03]" output="ɗ"/>
+  </test-sequence>
+  <test-sequence id="7">
+    <event key="[altR D03]" output="ǝ"/>
+  </test-sequence>
+  <test-sequence id="8">
+    <event key="[altR C02]" output="ɛ"/>
+  </test-sequence>
+  <test-sequence id="9">
+    <event key="[altL D03]" output="ə"/>
+  </test-sequence>
+  <test-sequence id="10">
+    <event key="[altR C04]" output="ƒ"/>
+  </test-sequence>
+  <test-sequence id="11">
+    <event key="[altR C05]" output="ɠ"/>
+  </test-sequence>
+  <test-sequence id="12">
+    <event key="[altR B02]" output="ɣ"/>
+  </test-sequence>
+  <test-sequence id="13">
+    <event key="[altR C06]" output="ɦ"/>
+  </test-sequence>
+  <test-sequence id="14">
+    <event key="[altR D08]" output="ɨ"/>
+  </test-sequence>
+  <test-sequence id="15">
+    <event key="[altR C09]" output="ɩ"/>
+  </test-sequence>
+  <test-sequence id="16">
+    <event key="[altR C08]" output="ƙ"/>
+  </test-sequence>
+  <test-sequence id="17">
+    <event key="[altR B07]" output="ɲ"/>
+  </test-sequence>
+  <test-sequence id="18">
+    <event key="[altR B06]" output="ŋ"/>
+  </test-sequence>
+  <test-sequence id="19">
+    <event key="[altR D01]" output="ø"/>
+  </test-sequence>
+  <test-sequence id="20">
+    <event key="[altR D09]" output="ɔ"/>
+  </test-sequence>
+  <test-sequence id="21">
+    <event key="[altR D10]" output="ƥ"/>
+  </test-sequence>
+  <test-sequence id="22">
+    <event key="[altR D04]" output="ɍ"/>
+  </test-sequence>
+  <test-sequence id="23">
+    <event key="[altL D04]" output="ɽ"/>
+  </test-sequence>
+  <test-sequence id="24">
+    <event key="[altL C02]" output="ʃ"/>
+  </test-sequence>
+  <test-sequence id="25">
+    <event key="[altR D05]" output="ƭ"/>
+  </test-sequence>
+  <test-sequence id="26">
+    <event key="[altL D05]" output="ŧ"/>
+  </test-sequence>
+  <test-sequence id="27">
+    <event key="[altR D07]" output="ʉ"/>
+  </test-sequence>
+  <test-sequence id="28">
+    <event key="[altR B04]" output="ʋ"/>
+  </test-sequence>
+  <test-sequence id="29">
+    <event key="[altR D02]" output="ⱳ"/>
+  </test-sequence>
+  <test-sequence id="30">
+    <event key="[altR D06]" output="ƴ"/>
+  </test-sequence>
+  <test-sequence id="31">
+    <event key="[altL B01]" output="ƶ"/>
+  </test-sequence>
+  <test-sequence id="32">
+    <event key="[altR B01]" output="ʒ"/>
+  </test-sequence>
+  <test-sequence id="33">
+    <event key="[altR C11]" output="ʼ"/>
+  </test-sequence>
+  <test-sequence id="34">
+    <event key="[altR shift C01]" output="Ɑ"/>
+  </test-sequence>
+  <test-sequence id="35">
+    <event key="[altL shift B04]" output="Ʌ"/>
+  </test-sequence>
+  <test-sequence id="36">
+    <event key="[altR shift B05]" output="Ɓ"/>
+  </test-sequence>
+  <test-sequence id="37">
+    <event key="[altR shift B03]" output="Ƈ"/>
+  </test-sequence>
+  <test-sequence id="38">
+    <event key="[altR shift C07]" output="Ɖ"/>
+  </test-sequence>
+  <test-sequence id="39">
+    <event key="[altR shift C03]" output="Ɗ"/>
+  </test-sequence>
+  <test-sequence id="40">
+    <event key="[altR shift C02]" output="Ɛ"/>
+  </test-sequence>
+  <test-sequence id="41">
+    <event key="[altR shift D03]" output="Ǝ"/>
+  </test-sequence>
+  <test-sequence id="42">
+    <event key="[altL shift D03]" output="Ə"/>
+  </test-sequence>
+  <test-sequence id="43">
+    <event key="[altR shift C04]" output="Ƒ"/>
+  </test-sequence>
+  <test-sequence id="44">
+    <event key="[altR shift C05]" output="Ɠ"/>
+  </test-sequence>
+  <test-sequence id="45">
+    <event key="[altR shift B02]" output="Ɣ"/>
+  </test-sequence>
+  <test-sequence id="46">
+    <event key="[altR shift C06]" output="Ȟ"/>
+  </test-sequence>
+  <test-sequence id="47">
+    <event key="[altR shift D08]" output="Ɨ"/>
+  </test-sequence>
+  <test-sequence id="48">
+    <event key="[altR shift C09]" output="Ɩ"/>
+  </test-sequence>
+  <test-sequence id="49">
+    <event key="[altR shift C08]" output="Ƙ"/>
+  </test-sequence>
+  <test-sequence id="50">
+    <event key="[altR shift B07]" output="Ɲ"/>
+  </test-sequence>
+  <test-sequence id="51">
+    <event key="[altR shift B06]" output="Ŋ"/>
+  </test-sequence>
+  <test-sequence id="52">
+    <event key="[altR shift D01]" output="Ø"/>
+  </test-sequence>
+  <test-sequence id="53">
+    <event key="[altR shift D09]" output="Ɔ"/>
+  </test-sequence>
+  <test-sequence id="54">
+    <event key="[altR shift D10]" output="Ƥ"/>
+  </test-sequence>
+  <test-sequence id="55">
+    <event key="[altR shift D04]" output="Ɍ"/>
+  </test-sequence>
+  <test-sequence id="56">
+    <event key="[altL shift D04]" output="Ɽ"/>
+  </test-sequence>
+  <test-sequence id="57">
+    <event key="[altL shift C02]" output="Ʃ"/>
+  </test-sequence>
+  <test-sequence id="58">
+    <event key="[altR shift D05]" output="Ƭ"/>
+  </test-sequence>
+  <test-sequence id="59">
+    <event key="[altL shift D05]" output="Ŧ"/>
+  </test-sequence>
+  <test-sequence id="60">
+    <event key="[altR shift D07]" output="Ʉ"/>
+  </test-sequence>
+  <test-sequence id="61">
+    <event key="[altR shift B04]" output="Ʋ"/>
+  </test-sequence>
+  <test-sequence id="62">
+    <event key="[altR shift D02]" output="Ⱳ"/>
+  </test-sequence>
+  <test-sequence id="63">
+    <event key="[altR shift D06]" output="Ƴ"/>
+  </test-sequence>
+  <test-sequence id="64">
+    <event key="[altL shift B01]" output="Ƶ"/>
+  </test-sequence>
+  <test-sequence id="65">
+    <event key="[altR shift B01]" output="Ʒ"/>
+  </test-sequence>
+  <test-sequence id="66">
+    <event key="[altL shift B10]" output="ʕ"/>
+  </test-sequence>
+  <test-sequence id="67">
+    <event key="[altR shift B10]" output="ʔ"/>
+  </test-sequence>
+</ldmlkeytests>
