@@ -87,7 +87,7 @@
     <event key="[shift E00]" output="ٔ"/>
   </test-sequence>
   <test-sequence id="30">
-    <event key="[shift D13]" output="ں"/>
+    <event key="[shift B00]" output="ں"/>
   </test-sequence>
   <test-sequence id="31">
     <event key="[shift B08]" output="›"/>
