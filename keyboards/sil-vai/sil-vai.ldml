@@ -7,8 +7,8 @@
 		<name value="SIL Vai"/>
 	</names>
 	<keyMap modifiers="">
-		<map iso="B01" to="\u{EFFF5}"/>
-		<map iso="B02" to="\u{EFFF3}"/>
+		<map iso="B01" to="\u{EFFF4}"/>
+		<map iso="B02" to="ꖺ"/>
 		<map iso="B03" to="\u{FDD3}"/>
 		<map iso="B04" to="\u{EFFF1}"/>
 		<map iso="B05" to="\u{FDD2}"/>
@@ -30,7 +30,7 @@
 		<map iso="D03" to="ꔀ"/>
 		<map iso="D04" to="\u{FDDE}"/>
 		<map iso="D05" to="\u{EFFF0}"/>
-		<map iso="D06" to="\u{EFFF4}"/>
+		<map iso="D06" to="\u{EFFF3}"/>
 		<map iso="D07" to="ꖕ"/>
 		<map iso="D08" to="ꔤ"/>
 		<map iso="D09" to="ꕱ"/>
@@ -40,7 +40,7 @@
 	<keyMap modifiers="shift">
 		<map iso="B02" to="ꘋ"/>
 		<map iso="B10" to="꘏"/>
-		<map iso="E00" to="\u{EFFF6}"/>
+		<map iso="E00" to="\u{EFFF5}"/>
 	</keyMap>
 	<transforms type="simple">
 		<transform from="ꘌꘌ" to="="/>
@@ -52,263 +52,263 @@
 		<transform from="\u{FDD2}ꕉ" to="ꕒ"/>
 		<transform from="\u{FDD2}ꕱ" to="ꕸ"/>
 		<transform from="\u{FDD2}ꖕ" to="ꖝ"/>
+		<transform from="\u{FDD2}ꖺ" to="ꗃ"/>
 		<transform from="\u{FDD2}ꗡ" to="ꗪ"/>
 		<transform from="\u{FDD2}\u{FDD7}ꔀ" to="ꔆ"/>
 		<transform from="\u{FDD2}\u{FDD7}ꔤ" to="ꔫ"/>
 		<transform from="\u{FDD2}\u{FDD7}ꕉ" to="ꕑ"/>
 		<transform from="\u{FDD2}\u{FDD7}ꕱ" to="ꕷ"/>
 		<transform from="\u{FDD2}\u{FDD7}ꖕ" to="ꖜ"/>
+		<transform from="\u{FDD2}\u{FDD7}ꖺ" to="ꗂ"/>
 		<transform from="\u{FDD2}\u{FDD7}ꗡ" to="ꗩ"/>
-		<transform from="\u{FDD2}\u{FDD7}\u{EFFF3}" to="ꗂ"/>
-		<transform from="\u{FDD2}\u{EFFF3}" to="ꗃ"/>
 		<transform from="\u{FDD3}ꔀ" to="ꔚ"/>
 		<transform from="\u{FDD3}ꔤ" to="ꔿ"/>
 		<transform from="\u{FDD3}ꕉ" to="ꕦ"/>
 		<transform from="\u{FDD3}ꕱ" to="ꖋ"/>
 		<transform from="\u{FDD3}ꖕ" to="ꖰ"/>
+		<transform from="\u{FDD3}ꖺ" to="ꗗ"/>
 		<transform from="\u{FDD3}ꗡ" to="ꗿ"/>
-		<transform from="\u{FDD3}\u{EFFF3}" to="ꗗ"/>
 		<transform from="\u{FDD4}ꔀ" to="ꔐ"/>
 		<transform from="\u{FDD4}ꔤ" to="ꔵ"/>
 		<transform from="\u{FDD4}ꕉ" to="ꕜ"/>
 		<transform from="\u{FDD4}ꕱ" to="ꖁ"/>
 		<transform from="\u{FDD4}ꖕ" to="ꖦ"/>
+		<transform from="\u{FDD4}ꖺ" to="ꗍ"/>
 		<transform from="\u{FDD4}ꗡ" to="ꗵ"/>
 		<transform from="\u{FDD4}\u{FDD7}ꔀ" to="ꔑ"/>
 		<transform from="\u{FDD4}\u{FDD7}ꔤ" to="ꔶ"/>
 		<transform from="\u{FDD4}\u{FDD7}ꕉ" to="ꕝ"/>
 		<transform from="\u{FDD4}\u{FDD7}ꕱ" to="ꖂ"/>
 		<transform from="\u{FDD4}\u{FDD7}ꖕ" to="ꖧ"/>
+		<transform from="\u{FDD4}\u{FDD7}ꖺ" to="ꗎ"/>
 		<transform from="\u{FDD4}\u{FDD7}ꗡ" to="ꗶ"/>
-		<transform from="\u{FDD4}\u{FDD7}\u{EFFF3}" to="ꗎ"/>
 		<transform from="\u{FDD4}\u{FDDA}ꔀ" to="ꔔ"/>
 		<transform from="\u{FDD4}\u{FDDA}ꔤ" to="ꔹ"/>
 		<transform from="\u{FDD4}\u{FDDA}ꕉ" to="ꕠ"/>
 		<transform from="\u{FDD4}\u{FDDA}ꕱ" to="ꖅ"/>
 		<transform from="\u{FDD4}\u{FDDA}ꖕ" to="ꖪ"/>
+		<transform from="\u{FDD4}\u{FDDA}ꖺ" to="ꗑ"/>
 		<transform from="\u{FDD4}\u{FDDA}ꗡ" to="ꗹ"/>
-		<transform from="\u{FDD4}\u{FDDA}\u{EFFF3}" to="ꗑ"/>
-		<transform from="\u{FDD4}\u{EFFF3}" to="ꗍ"/>
 		<transform from="\u{FDD5}ꔀ" to="ꔌ"/>
 		<transform from="\u{FDD5}ꔤ" to="ꔱ"/>
 		<transform from="\u{FDD5}ꕉ" to="ꕘ"/>
 		<transform from="\u{FDD5}ꕱ" to="ꕽ"/>
 		<transform from="\u{FDD5}ꖕ" to="ꖢ"/>
+		<transform from="\u{FDD5}ꖺ" to="ꗉ"/>
 		<transform from="\u{FDD5}ꗡ" to="ꗱ"/>
-		<transform from="\u{FDD5}\u{EFFF3}" to="ꗉ"/>
 		<transform from="\u{FDD6}ꔀ" to="ꔠ"/>
 		<transform from="\u{FDD6}ꔤ" to="ꕅ"/>
 		<transform from="\u{FDD6}ꕉ" to="ꕭ"/>
 		<transform from="\u{FDD6}ꕱ" to="ꖑ"/>
 		<transform from="\u{FDD6}ꖕ" to="ꖶ"/>
+		<transform from="\u{FDD6}ꖺ" to="ꗝ"/>
 		<transform from="\u{FDD6}ꗡ" to="ꘆ"/>
 		<transform from="\u{FDD6}\u{FDD2}ꔀ" to="ꔋ"/>
 		<transform from="\u{FDD6}\u{FDD2}ꔤ" to="ꔰ"/>
 		<transform from="\u{FDD6}\u{FDD2}ꕉ" to="ꕗ"/>
 		<transform from="\u{FDD6}\u{FDD2}ꕱ" to="ꕼ"/>
 		<transform from="\u{FDD6}\u{FDD2}ꖕ" to="ꖡ"/>
+		<transform from="\u{FDD6}\u{FDD2}ꖺ" to="ꗇ"/>
 		<transform from="\u{FDD6}\u{FDD2}ꗡ" to="ꗯ"/>
-		<transform from="\u{FDD6}\u{FDD2}\u{EFFF3}" to="ꗇ"/>
-		<transform from="\u{FDD6}\u{FDD2}\u{EFFF6}ꗡ" to="ꗰ"/>
-		<transform from="\u{FDD6}\u{FDD2}\u{EFFF6}\u{EFFF3}" to="ꗈ"/>
-		<transform from="\u{FDD6}\u{EFFF3}" to="ꗝ"/>
-		<transform from="\u{FDD6}\u{EFFF6}ꗡ" to="ꘇ"/>
+		<transform from="\u{FDD6}\u{FDD2}\u{EFFF5}ꖺ" to="ꗈ"/>
+		<transform from="\u{FDD6}\u{FDD2}\u{EFFF5}ꗡ" to="ꗰ"/>
+		<transform from="\u{FDD6}\u{EFFF5}ꗡ" to="ꘇ"/>
 		<transform from="\u{FDD7}ꔀ" to="ꔂ"/>
 		<transform from="\u{FDD7}ꔤ" to="ꔦ"/>
 		<transform from="\u{FDD7}ꕉ" to="ꕌ"/>
 		<transform from="\u{FDD7}ꕱ" to="ꕳ"/>
 		<transform from="\u{FDD7}ꖕ" to="ꖗ"/>
+		<transform from="\u{FDD7}ꖺ" to="ꖽ"/>
 		<transform from="\u{FDD7}ꗡ" to="ꗤ"/>
-		<transform from="\u{FDD7}\u{EFFF3}" to="ꖽ"/>
-		<transform from="\u{FDD7}\u{EFFF6}ꔤ" to="ꔧ"/>
-		<transform from="\u{FDD7}\u{EFFF6}ꕉ" to="ꕍ"/>
-		<transform from="\u{FDD7}\u{EFFF6}ꖕ" to="ꖘ"/>
-		<transform from="\u{FDD7}\u{EFFF6}ꗡ" to="ꗥ"/>
-		<transform from="\u{FDD7}\u{EFFF6}\u{EFFF3}" to="ꖾ"/>
+		<transform from="\u{FDD7}\u{EFFF5}ꔤ" to="ꔧ"/>
+		<transform from="\u{FDD7}\u{EFFF5}ꕉ" to="ꕍ"/>
+		<transform from="\u{FDD7}\u{EFFF5}ꖕ" to="ꖘ"/>
+		<transform from="\u{FDD7}\u{EFFF5}ꖺ" to="ꖾ"/>
+		<transform from="\u{FDD7}\u{EFFF5}ꗡ" to="ꗥ"/>
 		<transform from="\u{FDD8}ꔀ" to="ꔛ"/>
 		<transform from="\u{FDD8}ꔤ" to="ꕀ"/>
 		<transform from="\u{FDD8}ꕉ" to="ꕧ"/>
 		<transform from="\u{FDD8}ꕱ" to="ꖌ"/>
 		<transform from="\u{FDD8}ꖕ" to="ꖱ"/>
+		<transform from="\u{FDD8}ꖺ" to="ꗘ"/>
 		<transform from="\u{FDD8}ꗡ" to="ꘀ"/>
-		<transform from="\u{FDD8}\u{EFFF3}" to="ꗘ"/>
 		<transform from="\u{FDD9}ꔀ" to="ꔞ"/>
 		<transform from="\u{FDD9}ꔤ" to="ꕃ"/>
 		<transform from="\u{FDD9}ꕉ" to="ꕪ"/>
 		<transform from="\u{FDD9}ꕱ" to="ꖏ"/>
 		<transform from="\u{FDD9}ꖕ" to="ꖴ"/>
+		<transform from="\u{FDD9}ꖺ" to="ꗛ"/>
 		<transform from="\u{FDD9}ꗡ" to="ꘃ"/>
 		<transform from="\u{FDD9}\u{FDDD}ꔀ" to="ꔉ"/>
 		<transform from="\u{FDD9}\u{FDDD}ꔤ" to="ꔮ"/>
 		<transform from="\u{FDD9}\u{FDDD}ꕉ" to="ꕔ"/>
 		<transform from="\u{FDD9}\u{FDDD}ꕱ" to="ꕺ"/>
 		<transform from="\u{FDD9}\u{FDDD}ꖕ" to="ꖟ"/>
+		<transform from="\u{FDD9}\u{FDDD}ꖺ" to="ꗅ"/>
 		<transform from="\u{FDD9}\u{FDDD}ꗡ" to="ꗬ"/>
-		<transform from="\u{FDD9}\u{FDDD}\u{EFFF3}" to="ꗅ"/>
-		<transform from="\u{FDD9}\u{FDDD}\u{EFFF6}ꕉ" to="ꕕ"/>
-		<transform from="\u{FDD9}\u{FDDD}\u{EFFF6}ꗡ" to="ꗭ"/>
-		<transform from="\u{FDD9}\u{EFFF3}" to="ꗛ"/>
-		<transform from="\u{FDD9}\u{EFFF6}ꕉ" to="ꕫ"/>
+		<transform from="\u{FDD9}\u{FDDD}\u{EFFF5}ꕉ" to="ꕕ"/>
+		<transform from="\u{FDD9}\u{FDDD}\u{EFFF5}ꗡ" to="ꗭ"/>
+		<transform from="\u{FDD9}\u{EFFF5}ꕉ" to="ꕫ"/>
 		<transform from="\u{FDDA}ꔀ" to="ꔒ"/>
 		<transform from="\u{FDDA}ꔤ" to="ꔷ"/>
 		<transform from="\u{FDDA}ꕉ" to="ꕞ"/>
 		<transform from="\u{FDDA}ꕱ" to="ꖃ"/>
 		<transform from="\u{FDDA}ꖕ" to="ꖨ"/>
+		<transform from="\u{FDDA}ꖺ" to="ꗏ"/>
 		<transform from="\u{FDDA}ꗡ" to="ꗷ"/>
-		<transform from="\u{FDDA}\u{EFFF3}" to="ꗏ"/>
 		<transform from="\u{FDDB}ꔀ" to="ꔡ"/>
 		<transform from="\u{FDDB}ꔤ" to="ꕆ"/>
 		<transform from="\u{FDDB}ꕉ" to="ꕮ"/>
 		<transform from="\u{FDDB}ꕱ" to="ꖒ"/>
 		<transform from="\u{FDDB}ꖕ" to="ꖷ"/>
+		<transform from="\u{FDDB}ꖺ" to="ꗞ"/>
 		<transform from="\u{FDDB}ꗡ" to="ꘈ"/>
 		<transform from="\u{FDDB}\u{FDD2}ꔀ" to="ꔈ"/>
 		<transform from="\u{FDDB}\u{FDD2}ꔤ" to="ꔭ"/>
 		<transform from="\u{FDDB}\u{FDD2}ꕉ" to="ꕓ"/>
 		<transform from="\u{FDDB}\u{FDD2}ꕱ" to="ꕹ"/>
 		<transform from="\u{FDDB}\u{FDD2}ꖕ" to="ꖞ"/>
+		<transform from="\u{FDDB}\u{FDD2}ꖺ" to="ꗄ"/>
 		<transform from="\u{FDDB}\u{FDD2}ꗡ" to="ꗫ"/>
-		<transform from="\u{FDDB}\u{FDD2}\u{EFFF3}" to="ꗄ"/>
 		<transform from="\u{FDDB}\u{FDD6}\u{FDD2}ꔀ" to="ꔊ"/>
 		<transform from="\u{FDDB}\u{FDD6}\u{FDD2}ꔤ" to="ꔯ"/>
 		<transform from="\u{FDDB}\u{FDD6}\u{FDD2}ꕉ" to="ꕖ"/>
 		<transform from="\u{FDDB}\u{FDD6}\u{FDD2}ꕱ" to="ꕻ"/>
 		<transform from="\u{FDDB}\u{FDD6}\u{FDD2}ꖕ" to="ꖠ"/>
+		<transform from="\u{FDDB}\u{FDD6}\u{FDD2}ꖺ" to="ꗆ"/>
 		<transform from="\u{FDDB}\u{FDD6}\u{FDD2}ꗡ" to="ꗮ"/>
-		<transform from="\u{FDDB}\u{FDD6}\u{FDD2}\u{EFFF3}" to="ꗆ"/>
-		<transform from="\u{FDDB}\u{EFFF3}" to="ꗞ"/>
 		<transform from="\u{FDDC}ꔀ" to="ꔢ"/>
 		<transform from="\u{FDDC}ꔤ" to="ꕇ"/>
 		<transform from="\u{FDDC}ꕉ" to="ꕯ"/>
 		<transform from="\u{FDDC}ꕱ" to="ꖓ"/>
 		<transform from="\u{FDDC}ꖕ" to="ꖸ"/>
+		<transform from="\u{FDDC}ꖺ" to="ꗟ"/>
 		<transform from="\u{FDDC}ꗡ" to="ꘉ"/>
 		<transform from="\u{FDDC}\u{FDD4}ꔀ" to="ꔕ"/>
 		<transform from="\u{FDDC}\u{FDD4}ꔤ" to="ꔺ"/>
 		<transform from="\u{FDDC}\u{FDD4}ꕉ" to="ꕡ"/>
 		<transform from="\u{FDDC}\u{FDD4}ꕱ" to="ꖆ"/>
 		<transform from="\u{FDDC}\u{FDD4}ꖕ" to="ꖫ"/>
+		<transform from="\u{FDDC}\u{FDD4}ꖺ" to="ꗒ"/>
 		<transform from="\u{FDDC}\u{FDD4}ꗡ" to="ꗺ"/>
-		<transform from="\u{FDDC}\u{FDD4}\u{EFFF3}" to="ꗒ"/>
 		<transform from="\u{FDDC}\u{FDD6}ꔀ" to="ꔟ"/>
 		<transform from="\u{FDDC}\u{FDD6}ꔤ" to="ꕄ"/>
 		<transform from="\u{FDDC}\u{FDD6}ꕉ" to="ꕬ"/>
 		<transform from="\u{FDDC}\u{FDD6}ꕱ" to="ꖐ"/>
 		<transform from="\u{FDDC}\u{FDD6}ꖕ" to="ꖵ"/>
+		<transform from="\u{FDDC}\u{FDD6}ꖺ" to="ꗜ"/>
 		<transform from="\u{FDDC}\u{FDD6}ꗡ" to="ꘄ"/>
-		<transform from="\u{FDDC}\u{FDD6}\u{FDD6}\u{EFFF6}ꗡ" to="ꘅ"/>
-		<transform from="\u{FDDC}\u{FDD6}\u{EFFF3}" to="ꗜ"/>
-		<transform from="\u{FDDC}\u{FDD6}\u{EFFF6}ꕉ" to="ꕋ"/>
-		<transform from="\u{FDDC}\u{FDD6}\u{EFFF6}ꗡ" to="ꗣ"/>
-		<transform from="\u{FDDC}\u{FDD6}\u{EFFF6}\u{EFFF3}" to="ꖼ"/>
+		<transform from="\u{FDDC}\u{FDD6}\u{FDD6}\u{EFFF5}ꗡ" to="ꘅ"/>
+		<transform from="\u{FDDC}\u{FDD6}\u{EFFF5}ꕉ" to="ꕋ"/>
+		<transform from="\u{FDDC}\u{FDD6}\u{EFFF5}ꖺ" to="ꖼ"/>
+		<transform from="\u{FDDC}\u{FDD6}\u{EFFF5}ꗡ" to="ꗣ"/>
 		<transform from="\u{FDDC}\u{FDD8}ꔀ" to="ꔜ"/>
 		<transform from="\u{FDDC}\u{FDD8}ꔤ" to="ꕁ"/>
 		<transform from="\u{FDDC}\u{FDD8}ꕉ" to="ꕨ"/>
 		<transform from="\u{FDDC}\u{FDD8}ꕱ" to="ꖍ"/>
 		<transform from="\u{FDDC}\u{FDD8}ꖕ" to="ꖲ"/>
+		<transform from="\u{FDDC}\u{FDD8}ꖺ" to="ꗙ"/>
 		<transform from="\u{FDDC}\u{FDD8}ꗡ" to="ꘁ"/>
-		<transform from="\u{FDDC}\u{FDD8}\u{EFFF3}" to="ꗙ"/>
-		<transform from="\u{FDDC}\u{EFFF3}" to="ꗟ"/>
-		<transform from="\u{FDDC}\u{EFFF4}ꔀ" to="ꔣ"/>
-		<transform from="\u{FDDC}\u{EFFF4}ꔤ" to="ꕈ"/>
-		<transform from="\u{FDDC}\u{EFFF4}ꕉ" to="ꕰ"/>
-		<transform from="\u{FDDC}\u{EFFF4}ꕱ" to="ꖔ"/>
-		<transform from="\u{FDDC}\u{EFFF4}ꖕ" to="ꖹ"/>
-		<transform from="\u{FDDC}\u{EFFF4}ꗡ" to="ꘊ"/>
-		<transform from="\u{FDDC}\u{EFFF4}\u{EFFF3}" to="ꗠ"/>
+		<transform from="\u{FDDC}\u{EFFF3}ꔀ" to="ꔣ"/>
+		<transform from="\u{FDDC}\u{EFFF3}ꔤ" to="ꕈ"/>
+		<transform from="\u{FDDC}\u{EFFF3}ꕉ" to="ꕰ"/>
+		<transform from="\u{FDDC}\u{EFFF3}ꕱ" to="ꖔ"/>
+		<transform from="\u{FDDC}\u{EFFF3}ꖕ" to="ꖹ"/>
+		<transform from="\u{FDDC}\u{EFFF3}ꖺ" to="ꗠ"/>
+		<transform from="\u{FDDC}\u{EFFF3}ꗡ" to="ꘊ"/>
 		<transform from="\u{FDDD}ꔀ" to="ꔅ"/>
 		<transform from="\u{FDDD}ꔤ" to="ꔪ"/>
 		<transform from="\u{FDDD}ꕉ" to="ꕐ"/>
 		<transform from="\u{FDDD}ꕱ" to="ꕶ"/>
 		<transform from="\u{FDDD}ꖕ" to="ꖛ"/>
+		<transform from="\u{FDDD}ꖺ" to="ꗁ"/>
 		<transform from="\u{FDDD}ꗡ" to="ꗨ"/>
-		<transform from="\u{FDDD}\u{EFFF3}" to="ꗁ"/>
 		<transform from="\u{FDDE}ꔀ" to="ꔓ"/>
 		<transform from="\u{FDDE}ꔤ" to="ꔸ"/>
 		<transform from="\u{FDDE}ꕉ" to="ꕟ"/>
 		<transform from="\u{FDDE}ꕱ" to="ꖄ"/>
 		<transform from="\u{FDDE}ꖕ" to="ꖩ"/>
+		<transform from="\u{FDDE}ꖺ" to="ꗐ"/>
 		<transform from="\u{FDDE}ꗡ" to="ꗸ"/>
-		<transform from="\u{FDDE}\u{EFFF3}" to="ꗐ"/>
 		<transform from="\u{FDDF}ꔀ" to="ꔖ"/>
 		<transform from="\u{FDDF}ꔤ" to="ꔻ"/>
 		<transform from="\u{FDDF}ꕉ" to="ꕢ"/>
 		<transform from="\u{FDDF}ꕱ" to="ꖇ"/>
 		<transform from="\u{FDDF}ꖕ" to="ꖬ"/>
+		<transform from="\u{FDDF}ꖺ" to="ꗓ"/>
 		<transform from="\u{FDDF}ꗡ" to="ꗻ"/>
 		<transform from="\u{FDDF}\u{FDD7}ꔀ" to="ꔗ"/>
 		<transform from="\u{FDDF}\u{FDD7}ꔤ" to="ꔼ"/>
 		<transform from="\u{FDDF}\u{FDD7}ꕉ" to="ꕣ"/>
 		<transform from="\u{FDDF}\u{FDD7}ꕱ" to="ꖈ"/>
 		<transform from="\u{FDDF}\u{FDD7}ꖕ" to="ꖭ"/>
+		<transform from="\u{FDDF}\u{FDD7}ꖺ" to="ꗔ"/>
 		<transform from="\u{FDDF}\u{FDD7}ꗡ" to="ꗼ"/>
-		<transform from="\u{FDDF}\u{FDD7}\u{EFFF3}" to="ꗔ"/>
-		<transform from="\u{FDDF}\u{EFFF3}" to="ꗓ"/>
 		<transform from="\u{EFFF0}ꔀ" to="ꔎ"/>
 		<transform from="\u{EFFF0}ꔤ" to="ꔳ"/>
 		<transform from="\u{EFFF0}ꕉ" to="ꕚ"/>
 		<transform from="\u{EFFF0}ꕱ" to="ꕿ"/>
 		<transform from="\u{EFFF0}ꖕ" to="ꖤ"/>
+		<transform from="\u{EFFF0}ꖺ" to="ꗋ"/>
 		<transform from="\u{EFFF0}ꗡ" to="ꗳ"/>
 		<transform from="\u{EFFF0}\u{FDD7}ꔀ" to="ꔏ"/>
 		<transform from="\u{EFFF0}\u{FDD7}ꔤ" to="ꔴ"/>
 		<transform from="\u{EFFF0}\u{FDD7}ꕉ" to="ꕛ"/>
 		<transform from="\u{EFFF0}\u{FDD7}ꕱ" to="ꖀ"/>
 		<transform from="\u{EFFF0}\u{FDD7}ꖕ" to="ꖥ"/>
+		<transform from="\u{EFFF0}\u{FDD7}ꖺ" to="ꗌ"/>
 		<transform from="\u{EFFF0}\u{FDD7}ꗡ" to="ꗴ"/>
-		<transform from="\u{EFFF0}\u{FDD7}\u{EFFF3}" to="ꗌ"/>
-		<transform from="\u{EFFF0}\u{EFFF3}" to="ꗋ"/>
 		<transform from="\u{EFFF1}ꔀ" to="ꔍ"/>
 		<transform from="\u{EFFF1}ꔤ" to="ꔲ"/>
 		<transform from="\u{EFFF1}ꕉ" to="ꕙ"/>
 		<transform from="\u{EFFF1}ꕱ" to="ꕾ"/>
 		<transform from="\u{EFFF1}ꖕ" to="ꖣ"/>
+		<transform from="\u{EFFF1}ꖺ" to="ꗊ"/>
 		<transform from="\u{EFFF1}ꗡ" to="ꗲ"/>
-		<transform from="\u{EFFF1}\u{EFFF3}" to="ꗊ"/>
 		<transform from="\u{EFFF2}ꔀ" to="ꔃ"/>
 		<transform from="\u{EFFF2}ꔤ" to="ꔨ"/>
 		<transform from="\u{EFFF2}ꕉ" to="ꕎ"/>
 		<transform from="\u{EFFF2}ꕱ" to="ꕴ"/>
 		<transform from="\u{EFFF2}ꖕ" to="ꖙ"/>
+		<transform from="\u{EFFF2}ꖺ" to="ꖿ"/>
 		<transform from="\u{EFFF2}ꗡ" to="ꗦ"/>
-		<transform from="\u{EFFF2}\u{EFFF3}" to="ꖿ"/>
-		<transform from="\u{EFFF2}\u{EFFF6}ꔀ" to="ꔄ"/>
-		<transform from="\u{EFFF2}\u{EFFF6}ꔤ" to="ꔩ"/>
-		<transform from="\u{EFFF2}\u{EFFF6}ꕉ" to="ꕏ"/>
-		<transform from="\u{EFFF2}\u{EFFF6}ꕱ" to="ꕵ"/>
-		<transform from="\u{EFFF2}\u{EFFF6}ꖕ" to="ꖚ"/>
-		<transform from="\u{EFFF2}\u{EFFF6}ꗡ" to="ꗧ"/>
-		<transform from="\u{EFFF2}\u{EFFF6}\u{EFFF3}" to="ꗀ"/>
-		<transform from="\u{EFFF4}ꔀ" to="ꔝ"/>
-		<transform from="\u{EFFF4}ꔤ" to="ꕂ"/>
-		<transform from="\u{EFFF4}ꕉ" to="ꕩ"/>
-		<transform from="\u{EFFF4}ꕱ" to="ꖎ"/>
-		<transform from="\u{EFFF4}ꖕ" to="ꖳ"/>
-		<transform from="\u{EFFF4}ꗡ" to="ꘂ"/>
-		<transform from="\u{EFFF4}\u{EFFF3}" to="ꗚ"/>
-		<transform from="\u{EFFF5}ꔀ" to="ꔘ"/>
-		<transform from="\u{EFFF5}ꔤ" to="ꔽ"/>
-		<transform from="\u{EFFF5}ꕉ" to="ꕤ"/>
-		<transform from="\u{EFFF5}ꕱ" to="ꖉ"/>
-		<transform from="\u{EFFF5}ꖕ" to="ꖮ"/>
-		<transform from="\u{EFFF5}ꗡ" to="ꗽ"/>
-		<transform from="\u{EFFF5}\u{FDD7}ꔀ" to="ꔙ"/>
-		<transform from="\u{EFFF5}\u{FDD7}ꔤ" to="ꔾ"/>
-		<transform from="\u{EFFF5}\u{FDD7}ꕉ" to="ꕥ"/>
-		<transform from="\u{EFFF5}\u{FDD7}ꕱ" to="ꖊ"/>
-		<transform from="\u{EFFF5}\u{FDD7}ꖕ" to="ꖯ"/>
-		<transform from="\u{EFFF5}\u{FDD7}ꗡ" to="ꗾ"/>
-		<transform from="\u{EFFF5}\u{FDD7}\u{EFFF3}" to="ꗖ"/>
-		<transform from="\u{EFFF5}\u{EFFF3}" to="ꗕ"/>
-		<transform from="\u{EFFF6}ꔀ" to="ꔁ"/>
-		<transform from="\u{EFFF6}ꔤ" to="ꔥ"/>
-		<transform from="\u{EFFF6}ꕉ" to="ꕊ"/>
-		<transform from="\u{EFFF6}ꕱ" to="ꕲ"/>
-		<transform from="\u{EFFF6}ꖕ" to="ꖖ"/>
-		<transform from="\u{EFFF6}ꗡ" to="ꗢ"/>
-		<transform from="\u{EFFF6}\u{EFFF3}" to="ꖻ"/>
+		<transform from="\u{EFFF2}\u{EFFF5}ꔀ" to="ꔄ"/>
+		<transform from="\u{EFFF2}\u{EFFF5}ꔤ" to="ꔩ"/>
+		<transform from="\u{EFFF2}\u{EFFF5}ꕉ" to="ꕏ"/>
+		<transform from="\u{EFFF2}\u{EFFF5}ꕱ" to="ꕵ"/>
+		<transform from="\u{EFFF2}\u{EFFF5}ꖕ" to="ꖚ"/>
+		<transform from="\u{EFFF2}\u{EFFF5}ꖺ" to="ꗀ"/>
+		<transform from="\u{EFFF2}\u{EFFF5}ꗡ" to="ꗧ"/>
+		<transform from="\u{EFFF3}ꔀ" to="ꔝ"/>
+		<transform from="\u{EFFF3}ꔤ" to="ꕂ"/>
+		<transform from="\u{EFFF3}ꕉ" to="ꕩ"/>
+		<transform from="\u{EFFF3}ꕱ" to="ꖎ"/>
+		<transform from="\u{EFFF3}ꖕ" to="ꖳ"/>
+		<transform from="\u{EFFF3}ꖺ" to="ꗚ"/>
+		<transform from="\u{EFFF3}ꗡ" to="ꘂ"/>
+		<transform from="\u{EFFF4}ꔀ" to="ꔘ"/>
+		<transform from="\u{EFFF4}ꔤ" to="ꔽ"/>
+		<transform from="\u{EFFF4}ꕉ" to="ꕤ"/>
+		<transform from="\u{EFFF4}ꕱ" to="ꖉ"/>
+		<transform from="\u{EFFF4}ꖕ" to="ꖮ"/>
+		<transform from="\u{EFFF4}ꖺ" to="ꗕ"/>
+		<transform from="\u{EFFF4}ꗡ" to="ꗽ"/>
+		<transform from="\u{EFFF4}\u{FDD7}ꔀ" to="ꔙ"/>
+		<transform from="\u{EFFF4}\u{FDD7}ꔤ" to="ꔾ"/>
+		<transform from="\u{EFFF4}\u{FDD7}ꕉ" to="ꕥ"/>
+		<transform from="\u{EFFF4}\u{FDD7}ꕱ" to="ꖊ"/>
+		<transform from="\u{EFFF4}\u{FDD7}ꖕ" to="ꖯ"/>
+		<transform from="\u{EFFF4}\u{FDD7}ꖺ" to="ꗖ"/>
+		<transform from="\u{EFFF4}\u{FDD7}ꗡ" to="ꗾ"/>
+		<transform from="\u{EFFF5}ꔀ" to="ꔁ"/>
+		<transform from="\u{EFFF5}ꔤ" to="ꔥ"/>
+		<transform from="\u{EFFF5}ꕉ" to="ꕊ"/>
+		<transform from="\u{EFFF5}ꕱ" to="ꕲ"/>
+		<transform from="\u{EFFF5}ꖕ" to="ꖖ"/>
+		<transform from="\u{EFFF5}ꖺ" to="ꖻ"/>
+		<transform from="\u{EFFF5}ꗡ" to="ꗢ"/>
 	</transforms>
 	<transforms type="final">
-		<transform from="[\u{FDD2}\u{FDD3}\u{FDD4}\u{FDD5}\u{FDD6}\u{FDD7}\u{FDD8}\u{FDD9}\u{FDDA}\u{FDDB}\u{FDDC}\u{FDDD}\u{FDDE}\u{FDDF}\u{EFFF0}\u{EFFF1}\u{EFFF2}\u{EFFF3}\u{EFFF4}\u{EFFF5}\u{EFFF6}]" to=""/>
+		<transform from="[\u{FDD2}\u{FDD3}\u{FDD4}\u{FDD5}\u{FDD6}\u{FDD7}\u{FDD8}\u{FDD9}\u{FDDA}\u{FDDB}\u{FDDC}\u{FDDD}\u{FDDE}\u{FDDF}\u{EFFF0}\u{EFFF1}\u{EFFF2}\u{EFFF3}\u{EFFF4}\u{EFFF5}]" to=""/>
 	</transforms>
 </keyboard>
