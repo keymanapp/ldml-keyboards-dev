@@ -281,12 +281,10 @@
   <test-sequence id="79">
     <event key="[shift C06]" output="H"/>
   </test-sequence>
-<!--
   <test-sequence id="80">
     <event key="[D11]" output="" skip="bksp"/>
-    <event key="[shift C06]" output="Ȟ" skip="bksp"/>
+    <event key="[shift C06]" output="Ȟ" skip="normal bksp"/>
   </test-sequence>
--->
   <test-sequence id="81">
     <event key="[shift D08]" output="I"/>
   </test-sequence>

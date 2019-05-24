@@ -114,7 +114,7 @@ class KeyTest():
             return unicode(res)
         if self.args.traceall or (self.args.tracing and failed):
             print("Test: {}".format(testid))
-            print("    " + ("\n    ".join(res.tracing_events)))
+            print("    " + ("\n    ".join(getattr(res, 'tracing_events', ""))))
         if failed:
             s = u"{} {}: Failed event {} in test {}: \"{}\" should be \"{}\" with error {} to be {}".\
                 format(self.fname, testid, eid, tid, unicode(res), test, reserror, iserror)
@@ -153,6 +153,7 @@ class KeyTest():
                 raise e
 
     def normaltest(self, test, iserror, tid=0, eid=0):
+        '''Test if the string is normal, if not, normalise the prefix and retype the last key and test'''
         for form in ('NFC', 'NFD'):
             if ud.normalize(form, test) != test:
                 s = unicode(self.kbd.history[-2]) if len(self.kbd.history) > 1 else u""
@@ -174,8 +175,6 @@ parser.add_argument('-T','--traceall', action='store_true', help='Trace all test
 parser.add_argument('-o','--output', help='Merge test results into input file')
 parser.add_argument('-b','--brk',action='store_true',help='Stop on first error')
 args = parser.parse_args()
-
-# a fun way to run this program: find -name \*.ldml -exec python/scripts/kbdtest -F \{\} \;
 
 kbd = Keyboard(args.kbdfile)
 if args.tracing or args.traceall:
