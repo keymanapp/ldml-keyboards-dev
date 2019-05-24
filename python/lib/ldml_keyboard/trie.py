@@ -143,7 +143,10 @@ class Trie(object):
         if firstc in base[0]:
             (curlast, curlen, curpfit) = self._testmatch(s[ind:], base[0], skipbefore)
             if curlast is None:
-                curlast = last
+                if curlen >= last[1]:
+                    curlast = (last[0], curlen, last[2])
+                else:
+                    curlast = last
         for i, b in enumerate(base[1:]):
             if i >= ind:
                 break
