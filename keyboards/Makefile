@@ -1,3 +1,4 @@
+QUIET=t
 subdirs = balochi-phonetic \
         easy-chakma \
         gff-tigrinya-eritrea \
@@ -17,4 +18,4 @@ subdirs = balochi-phonetic \
 .PHONY: all
 
 all:
-	@for d in $(subdirs); do echo $$d; $(MAKE) -s -C $$d; done
+	@for d in $(subdirs); do echo -n "$$d: "; $(MAKE) QUIET="$(QUIET)" -s -C $$d; echo ""; done

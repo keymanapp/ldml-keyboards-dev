@@ -169,6 +169,7 @@ parser.add_argument('kbdfile',help='Keyboard LDML file')
 parser.add_argument('infile',nargs='?',help='Input test .xml file')
 parser.add_argument('-d','--id',help='Only run this given test')
 parser.add_argument('-q','--quiet',action='store_true', help="Minimise output")
+parser.add_argument('-c','--count',action='store_true', help='Print test count at the end')
 parser.add_argument('-F','--full', action="store_true", help="Output full error messages")
 parser.add_argument('-t','--tracing', action='store_true', help="Give tracing info on failure")
 parser.add_argument('-T','--traceall', action='store_true', help='Trace all test phases')
@@ -189,11 +190,14 @@ else:
 errors = 0
 for fn in fnames:
     doc = et.parse(fn)
-    print(fn, end=": ")
-    sys.stdout.flush()
+    if not args.quiet:
+        print(fn, end=": ")
+        sys.stdout.flush()
     tester = KeyTest(kbd, args.infile, args.output, args)
+    testcount = 0
     for t in doc.findall('.//test-sequence'):
         tid = t.get('id', "Unknown")
+        testcount += 1
         ctext = parsestr(t.get('context', ""))
         if args.id and args.id != tid: continue
         if not args.quiet:
@@ -225,7 +229,11 @@ for fn in fnames:
             break
     if args.output:
         doc.write(args.output)
-    print()
+    if args.count:
+        print(testcount, end=" ")
+        sys.stdout.flush()
+    if not args.quiet:
+        print()
     if errors > 0:
         break
 

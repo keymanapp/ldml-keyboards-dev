@@ -3,7 +3,7 @@ KBDTEST ?= python3 ../../python/scripts/kbdtest
 .PHONEY: all tests
 
 define execute-test
-	$(KBDTEST) -F -t $(TESTOPTIONS) $(LDML) $(1)
+	$(KBDTEST) -F -t $(if $(QUIET),-q -c) $(TESTOPTIONS) $(LDML) $(1)
 
 endef
 
