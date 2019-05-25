@@ -135,7 +135,7 @@
     <event key="[shift C05]" output="ᰵ"/>
   </test-sequence>
   <test-sequence id="41">
-    <event key="[D08]" output="ᰧ"/>
+    <event key="[D08]" output="&#x200B;&#x1C27;"/>
   </test-sequence>
   <test-sequence id="42">
     <event key="[shift C08]" output="ᰭ"/>
@@ -150,10 +150,10 @@
     <event key="[shift B06]" output="ᰰ"/>
   </test-sequence>
   <test-sequence id="46">
-    <event key="[D09]" output="ᰨ"/>
+    <event key="[D09]" output="&#x200B;&#x1C28;"/>
   </test-sequence>
   <test-sequence id="47">
-    <event key="[shift D09]" output="ᰩ"/>
+    <event key="[shift D09]" output="&#x200B;&#x1C29;"/>
   </test-sequence>
   <test-sequence id="48">
     <event key="[shift D10]" output="ᰱ"/>
