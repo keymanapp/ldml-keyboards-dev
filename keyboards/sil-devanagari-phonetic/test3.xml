@@ -1,0 +1,3682 @@
+<ldmlkeytests>
+  <test-sequence id="1">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="2">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D04]" output="र्क" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="3">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="4">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D04]" output="र्ख" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="5">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="6">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D04]" output="र्ग" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="7">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="8">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D04]" output="र्घ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="9">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="10">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D04]" output="र्ङ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="11">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="12">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D04]" output="र्च" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="13">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="14">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D04]" output="र्छ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="15">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="16">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D04]" output="र्ज" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="17">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="18">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D04]" output="र्झ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="19">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="20">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D04]" output="र्ट" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="21">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="22">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D04]" output="र्ठ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="23">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="24">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D04]" output="र्ड" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="25">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="26">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D04]" output="र्ढ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="27">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="28">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D04]" output="र्ण" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="29">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="30">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D04]" output="र्त" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="31">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="32">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D04]" output="र्थ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="33">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="34">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D04]" output="र्द" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="35">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="36">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D04]" output="र्ध" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="37">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="38">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D04]" output="र्न" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="39">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="40">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D04]" output="र्प" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="41">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="42">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D04]" output="र्फ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="43">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="44">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D04]" output="र्ब" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="45">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="46">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D04]" output="र्भ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="47">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="48">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D04]" output="र्म" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="49">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="50">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D04]" output="र्य" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="51">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="52">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D04]" output="र्र" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="53">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="54">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D04]" output="र्ल" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="55">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="56">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D04]" output="र्व" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="57">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="58">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D04]" output="र्श" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="59">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="60">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D04]" output="र्ष" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="61">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="62">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D04]" output="र्स" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="63">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="64">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D04]" output="र्ह" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="65">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="66">
+    <event key="[C08]" output="क"/>
+    <event key="[C01]" output="का" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="67">
+    <event key="[C08]" output="क"/>
+    <event key="[C01]" output="का" skip="bksp"/>
+    <event key="[shift D04]" output="र्का" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="68">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="69">
+    <event key="[C08]" output="क"/>
+    <event key="[D08]" output="कि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="70">
+    <event key="[C08]" output="क"/>
+    <event key="[D08]" output="कि" skip="bksp"/>
+    <event key="[shift D04]" output="र्कि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="71">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="72">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D08]" output="की" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="73">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D08]" output="की" skip="bksp"/>
+    <event key="[shift D04]" output="र्की" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="74">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="75">
+    <event key="[C08]" output="क"/>
+    <event key="[D07]" output="कु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="76">
+    <event key="[C08]" output="क"/>
+    <event key="[D07]" output="कु" skip="bksp"/>
+    <event key="[shift D04]" output="र्कु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="77">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="78">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D07]" output="कू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="79">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D07]" output="कू" skip="bksp"/>
+    <event key="[shift D04]" output="र्कू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="80">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="81">
+    <event key="[C08]" output="क"/>
+    <event key="[D03]" output="के" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="82">
+    <event key="[C08]" output="क"/>
+    <event key="[D03]" output="के" skip="bksp"/>
+    <event key="[shift D04]" output="र्के" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="83">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="84">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D03]" output="कै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="85">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D03]" output="कै" skip="bksp"/>
+    <event key="[shift D04]" output="र्कै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="86">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="87">
+    <event key="[C08]" output="क"/>
+    <event key="[D09]" output="को" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="88">
+    <event key="[C08]" output="क"/>
+    <event key="[D09]" output="को" skip="bksp"/>
+    <event key="[shift D04]" output="र्को" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="89">
+    <event key="[C08]" output="क"/>
+  </test-sequence>
+  <test-sequence id="90">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D09]" output="कौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="91">
+    <event key="[C08]" output="क"/>
+    <event key="[shift D09]" output="कौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्कौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="92">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="93">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[C01]" output="खा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="94">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[C01]" output="खा" skip="bksp"/>
+    <event key="[shift D04]" output="र्खा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="95">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="96">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[D08]" output="खि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="97">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[D08]" output="खि" skip="bksp"/>
+    <event key="[shift D04]" output="र्खि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="98">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="99">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D08]" output="खी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="100">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D08]" output="खी" skip="bksp"/>
+    <event key="[shift D04]" output="र्खी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="101">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="102">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[D07]" output="खु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="103">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[D07]" output="खु" skip="bksp"/>
+    <event key="[shift D04]" output="र्खु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="104">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="105">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D07]" output="खू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="106">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D07]" output="खू" skip="bksp"/>
+    <event key="[shift D04]" output="र्खू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="107">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="108">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[D03]" output="खे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="109">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[D03]" output="खे" skip="bksp"/>
+    <event key="[shift D04]" output="र्खे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="110">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="111">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D03]" output="खै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="112">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D03]" output="खै" skip="bksp"/>
+    <event key="[shift D04]" output="र्खै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="113">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="114">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[D09]" output="खो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="115">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[D09]" output="खो" skip="bksp"/>
+    <event key="[shift D04]" output="र्खो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="116">
+    <event key="[shift C08]" output="ख"/>
+  </test-sequence>
+  <test-sequence id="117">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D09]" output="खौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="118">
+    <event key="[shift C08]" output="ख"/>
+    <event key="[shift D09]" output="खौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्खौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="119">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="120">
+    <event key="[C05]" output="ग"/>
+    <event key="[C01]" output="गा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="121">
+    <event key="[C05]" output="ग"/>
+    <event key="[C01]" output="गा" skip="bksp"/>
+    <event key="[shift D04]" output="र्गा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="122">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="123">
+    <event key="[C05]" output="ग"/>
+    <event key="[D08]" output="गि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="124">
+    <event key="[C05]" output="ग"/>
+    <event key="[D08]" output="गि" skip="bksp"/>
+    <event key="[shift D04]" output="र्गि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="125">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="126">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D08]" output="गी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="127">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D08]" output="गी" skip="bksp"/>
+    <event key="[shift D04]" output="र्गी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="128">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="129">
+    <event key="[C05]" output="ग"/>
+    <event key="[D07]" output="गु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="130">
+    <event key="[C05]" output="ग"/>
+    <event key="[D07]" output="गु" skip="bksp"/>
+    <event key="[shift D04]" output="र्गु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="131">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="132">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D07]" output="गू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="133">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D07]" output="गू" skip="bksp"/>
+    <event key="[shift D04]" output="र्गू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="134">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="135">
+    <event key="[C05]" output="ग"/>
+    <event key="[D03]" output="गे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="136">
+    <event key="[C05]" output="ग"/>
+    <event key="[D03]" output="गे" skip="bksp"/>
+    <event key="[shift D04]" output="र्गे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="137">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="138">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D03]" output="गै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="139">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D03]" output="गै" skip="bksp"/>
+    <event key="[shift D04]" output="र्गै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="140">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="141">
+    <event key="[C05]" output="ग"/>
+    <event key="[D09]" output="गो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="142">
+    <event key="[C05]" output="ग"/>
+    <event key="[D09]" output="गो" skip="bksp"/>
+    <event key="[shift D04]" output="र्गो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="143">
+    <event key="[C05]" output="ग"/>
+  </test-sequence>
+  <test-sequence id="144">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D09]" output="गौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="145">
+    <event key="[C05]" output="ग"/>
+    <event key="[shift D09]" output="गौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्गौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="146">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="147">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[C01]" output="घा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="148">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[C01]" output="घा" skip="bksp"/>
+    <event key="[shift D04]" output="र्घा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="149">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="150">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[D08]" output="घि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="151">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[D08]" output="घि" skip="bksp"/>
+    <event key="[shift D04]" output="र्घि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="152">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="153">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D08]" output="घी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="154">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D08]" output="घी" skip="bksp"/>
+    <event key="[shift D04]" output="र्घी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="155">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="156">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[D07]" output="घु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="157">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[D07]" output="घु" skip="bksp"/>
+    <event key="[shift D04]" output="र्घु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="158">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="159">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D07]" output="घू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="160">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D07]" output="घू" skip="bksp"/>
+    <event key="[shift D04]" output="र्घू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="161">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="162">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[D03]" output="घे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="163">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[D03]" output="घे" skip="bksp"/>
+    <event key="[shift D04]" output="र्घे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="164">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="165">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D03]" output="घै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="166">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D03]" output="घै" skip="bksp"/>
+    <event key="[shift D04]" output="र्घै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="167">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="168">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[D09]" output="घो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="169">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[D09]" output="घो" skip="bksp"/>
+    <event key="[shift D04]" output="र्घो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="170">
+    <event key="[shift C05]" output="घ"/>
+  </test-sequence>
+  <test-sequence id="171">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D09]" output="घौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="172">
+    <event key="[shift C05]" output="घ"/>
+    <event key="[shift D09]" output="घौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्घौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="173">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="174">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[C01]" output="ङा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="175">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[C01]" output="ङा" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="176">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="177">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[D08]" output="ङि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="178">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[D08]" output="ङि" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="179">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="180">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D08]" output="ङी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="181">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D08]" output="ङी" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="182">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="183">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[D07]" output="ङु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="184">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[D07]" output="ङु" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="185">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="186">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D07]" output="ङू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="187">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D07]" output="ङू" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="188">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="189">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[D03]" output="ङे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="190">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[D03]" output="ङे" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="191">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="192">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D03]" output="ङै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="193">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D03]" output="ङै" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="194">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="195">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[D09]" output="ङो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="196">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[D09]" output="ङो" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="197">
+    <event key="[shift B07]" output="ङ"/>
+  </test-sequence>
+  <test-sequence id="198">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D09]" output="ङौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="199">
+    <event key="[shift B07]" output="ङ"/>
+    <event key="[shift D09]" output="ङौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्ङौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="200">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="201">
+    <event key="[B03]" output="च"/>
+    <event key="[C01]" output="चा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="202">
+    <event key="[B03]" output="च"/>
+    <event key="[C01]" output="चा" skip="bksp"/>
+    <event key="[shift D04]" output="र्चा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="203">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="204">
+    <event key="[B03]" output="च"/>
+    <event key="[D08]" output="चि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="205">
+    <event key="[B03]" output="च"/>
+    <event key="[D08]" output="चि" skip="bksp"/>
+    <event key="[shift D04]" output="र्चि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="206">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="207">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D08]" output="ची" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="208">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D08]" output="ची" skip="bksp"/>
+    <event key="[shift D04]" output="र्ची" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="209">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="210">
+    <event key="[B03]" output="च"/>
+    <event key="[D07]" output="चु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="211">
+    <event key="[B03]" output="च"/>
+    <event key="[D07]" output="चु" skip="bksp"/>
+    <event key="[shift D04]" output="र्चु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="212">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="213">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D07]" output="चू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="214">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D07]" output="चू" skip="bksp"/>
+    <event key="[shift D04]" output="र्चू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="215">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="216">
+    <event key="[B03]" output="च"/>
+    <event key="[D03]" output="चे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="217">
+    <event key="[B03]" output="च"/>
+    <event key="[D03]" output="चे" skip="bksp"/>
+    <event key="[shift D04]" output="र्चे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="218">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="219">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D03]" output="चै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="220">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D03]" output="चै" skip="bksp"/>
+    <event key="[shift D04]" output="र्चै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="221">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="222">
+    <event key="[B03]" output="च"/>
+    <event key="[D09]" output="चो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="223">
+    <event key="[B03]" output="च"/>
+    <event key="[D09]" output="चो" skip="bksp"/>
+    <event key="[shift D04]" output="र्चो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="224">
+    <event key="[B03]" output="च"/>
+  </test-sequence>
+  <test-sequence id="225">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D09]" output="चौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="226">
+    <event key="[B03]" output="च"/>
+    <event key="[shift D09]" output="चौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्चौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="227">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="228">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[C01]" output="छा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="229">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[C01]" output="छा" skip="bksp"/>
+    <event key="[shift D04]" output="र्छा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="230">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="231">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[D08]" output="छि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="232">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[D08]" output="छि" skip="bksp"/>
+    <event key="[shift D04]" output="र्छि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="233">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="234">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D08]" output="छी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="235">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D08]" output="छी" skip="bksp"/>
+    <event key="[shift D04]" output="र्छी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="236">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="237">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[D07]" output="छु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="238">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[D07]" output="छु" skip="bksp"/>
+    <event key="[shift D04]" output="र्छु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="239">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="240">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D07]" output="छू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="241">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D07]" output="छू" skip="bksp"/>
+    <event key="[shift D04]" output="र्छू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="242">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="243">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[D03]" output="छे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="244">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[D03]" output="छे" skip="bksp"/>
+    <event key="[shift D04]" output="र्छे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="245">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="246">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D03]" output="छै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="247">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D03]" output="छै" skip="bksp"/>
+    <event key="[shift D04]" output="र्छै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="248">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="249">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[D09]" output="छो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="250">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[D09]" output="छो" skip="bksp"/>
+    <event key="[shift D04]" output="र्छो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="251">
+    <event key="[shift B03]" output="छ"/>
+  </test-sequence>
+  <test-sequence id="252">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D09]" output="छौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="253">
+    <event key="[shift B03]" output="छ"/>
+    <event key="[shift D09]" output="छौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्छौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="254">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="255">
+    <event key="[C07]" output="ज"/>
+    <event key="[C01]" output="जा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="256">
+    <event key="[C07]" output="ज"/>
+    <event key="[C01]" output="जा" skip="bksp"/>
+    <event key="[shift D04]" output="र्जा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="257">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="258">
+    <event key="[C07]" output="ज"/>
+    <event key="[D08]" output="जि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="259">
+    <event key="[C07]" output="ज"/>
+    <event key="[D08]" output="जि" skip="bksp"/>
+    <event key="[shift D04]" output="र्जि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="260">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="261">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D08]" output="जी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="262">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D08]" output="जी" skip="bksp"/>
+    <event key="[shift D04]" output="र्जी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="263">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="264">
+    <event key="[C07]" output="ज"/>
+    <event key="[D07]" output="जु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="265">
+    <event key="[C07]" output="ज"/>
+    <event key="[D07]" output="जु" skip="bksp"/>
+    <event key="[shift D04]" output="र्जु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="266">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="267">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D07]" output="जू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="268">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D07]" output="जू" skip="bksp"/>
+    <event key="[shift D04]" output="र्जू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="269">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="270">
+    <event key="[C07]" output="ज"/>
+    <event key="[D03]" output="जे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="271">
+    <event key="[C07]" output="ज"/>
+    <event key="[D03]" output="जे" skip="bksp"/>
+    <event key="[shift D04]" output="र्जे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="272">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="273">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D03]" output="जै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="274">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D03]" output="जै" skip="bksp"/>
+    <event key="[shift D04]" output="र्जै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="275">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="276">
+    <event key="[C07]" output="ज"/>
+    <event key="[D09]" output="जो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="277">
+    <event key="[C07]" output="ज"/>
+    <event key="[D09]" output="जो" skip="bksp"/>
+    <event key="[shift D04]" output="र्जो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="278">
+    <event key="[C07]" output="ज"/>
+  </test-sequence>
+  <test-sequence id="279">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D09]" output="जौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="280">
+    <event key="[C07]" output="ज"/>
+    <event key="[shift D09]" output="जौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्जौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="281">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="282">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[C01]" output="झा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="283">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[C01]" output="झा" skip="bksp"/>
+    <event key="[shift D04]" output="र्झा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="284">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="285">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[D08]" output="झि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="286">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[D08]" output="झि" skip="bksp"/>
+    <event key="[shift D04]" output="र्झि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="287">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="288">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D08]" output="झी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="289">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D08]" output="झी" skip="bksp"/>
+    <event key="[shift D04]" output="र्झी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="290">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="291">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[D07]" output="झु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="292">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[D07]" output="झु" skip="bksp"/>
+    <event key="[shift D04]" output="र्झु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="293">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="294">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D07]" output="झू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="295">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D07]" output="झू" skip="bksp"/>
+    <event key="[shift D04]" output="र्झू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="296">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="297">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[D03]" output="झे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="298">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[D03]" output="झे" skip="bksp"/>
+    <event key="[shift D04]" output="र्झे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="299">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="300">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D03]" output="झै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="301">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D03]" output="झै" skip="bksp"/>
+    <event key="[shift D04]" output="र्झै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="302">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="303">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[D09]" output="झो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="304">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[D09]" output="झो" skip="bksp"/>
+    <event key="[shift D04]" output="र्झो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="305">
+    <event key="[shift C07]" output="झ"/>
+  </test-sequence>
+  <test-sequence id="306">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D09]" output="झौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="307">
+    <event key="[shift C07]" output="झ"/>
+    <event key="[shift D09]" output="झौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्झौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="308">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="309">
+    <event key="[C04]" output="ट"/>
+    <event key="[C01]" output="टा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="310">
+    <event key="[C04]" output="ट"/>
+    <event key="[C01]" output="टा" skip="bksp"/>
+    <event key="[shift D04]" output="र्टा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="311">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="312">
+    <event key="[C04]" output="ट"/>
+    <event key="[D08]" output="टि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="313">
+    <event key="[C04]" output="ट"/>
+    <event key="[D08]" output="टि" skip="bksp"/>
+    <event key="[shift D04]" output="र्टि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="314">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="315">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D08]" output="टी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="316">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D08]" output="टी" skip="bksp"/>
+    <event key="[shift D04]" output="र्टी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="317">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="318">
+    <event key="[C04]" output="ट"/>
+    <event key="[D07]" output="टु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="319">
+    <event key="[C04]" output="ट"/>
+    <event key="[D07]" output="टु" skip="bksp"/>
+    <event key="[shift D04]" output="र्टु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="320">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="321">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D07]" output="टू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="322">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D07]" output="टू" skip="bksp"/>
+    <event key="[shift D04]" output="र्टू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="323">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="324">
+    <event key="[C04]" output="ट"/>
+    <event key="[D03]" output="टे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="325">
+    <event key="[C04]" output="ट"/>
+    <event key="[D03]" output="टे" skip="bksp"/>
+    <event key="[shift D04]" output="र्टे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="326">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="327">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D03]" output="टै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="328">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D03]" output="टै" skip="bksp"/>
+    <event key="[shift D04]" output="र्टै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="329">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="330">
+    <event key="[C04]" output="ट"/>
+    <event key="[D09]" output="टो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="331">
+    <event key="[C04]" output="ट"/>
+    <event key="[D09]" output="टो" skip="bksp"/>
+    <event key="[shift D04]" output="र्टो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="332">
+    <event key="[C04]" output="ट"/>
+  </test-sequence>
+  <test-sequence id="333">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D09]" output="टौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="334">
+    <event key="[C04]" output="ट"/>
+    <event key="[shift D09]" output="टौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्टौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="335">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="336">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[C01]" output="ठा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="337">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[C01]" output="ठा" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="338">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="339">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[D08]" output="ठि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="340">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[D08]" output="ठि" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="341">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="342">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D08]" output="ठी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="343">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D08]" output="ठी" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="344">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="345">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[D07]" output="ठु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="346">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[D07]" output="ठु" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="347">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="348">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D07]" output="ठू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="349">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D07]" output="ठू" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="350">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="351">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[D03]" output="ठे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="352">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[D03]" output="ठे" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="353">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="354">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D03]" output="ठै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="355">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D03]" output="ठै" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="356">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="357">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[D09]" output="ठो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="358">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[D09]" output="ठो" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="359">
+    <event key="[shift C04]" output="ठ"/>
+  </test-sequence>
+  <test-sequence id="360">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D09]" output="ठौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="361">
+    <event key="[shift C04]" output="ठ"/>
+    <event key="[shift D09]" output="ठौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्ठौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="362">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="363">
+    <event key="[B04]" output="ड"/>
+    <event key="[C01]" output="डा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="364">
+    <event key="[B04]" output="ड"/>
+    <event key="[C01]" output="डा" skip="bksp"/>
+    <event key="[shift D04]" output="र्डा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="365">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="366">
+    <event key="[B04]" output="ड"/>
+    <event key="[D08]" output="डि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="367">
+    <event key="[B04]" output="ड"/>
+    <event key="[D08]" output="डि" skip="bksp"/>
+    <event key="[shift D04]" output="र्डि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="368">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="369">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D08]" output="डी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="370">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D08]" output="डी" skip="bksp"/>
+    <event key="[shift D04]" output="र्डी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="371">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="372">
+    <event key="[B04]" output="ड"/>
+    <event key="[D07]" output="डु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="373">
+    <event key="[B04]" output="ड"/>
+    <event key="[D07]" output="डु" skip="bksp"/>
+    <event key="[shift D04]" output="र्डु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="374">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="375">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D07]" output="डू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="376">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D07]" output="डू" skip="bksp"/>
+    <event key="[shift D04]" output="र्डू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="377">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="378">
+    <event key="[B04]" output="ड"/>
+    <event key="[D03]" output="डे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="379">
+    <event key="[B04]" output="ड"/>
+    <event key="[D03]" output="डे" skip="bksp"/>
+    <event key="[shift D04]" output="र्डे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="380">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="381">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D03]" output="डै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="382">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D03]" output="डै" skip="bksp"/>
+    <event key="[shift D04]" output="र्डै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="383">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="384">
+    <event key="[B04]" output="ड"/>
+    <event key="[D09]" output="डो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="385">
+    <event key="[B04]" output="ड"/>
+    <event key="[D09]" output="डो" skip="bksp"/>
+    <event key="[shift D04]" output="र्डो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="386">
+    <event key="[B04]" output="ड"/>
+  </test-sequence>
+  <test-sequence id="387">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D09]" output="डौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="388">
+    <event key="[B04]" output="ड"/>
+    <event key="[shift D09]" output="डौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्डौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="389">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="390">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[C01]" output="ढा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="391">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[C01]" output="ढा" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="392">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="393">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[D08]" output="ढि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="394">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[D08]" output="ढि" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="395">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="396">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D08]" output="ढी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="397">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D08]" output="ढी" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="398">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="399">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[D07]" output="ढु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="400">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[D07]" output="ढु" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="401">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="402">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D07]" output="ढू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="403">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D07]" output="ढू" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="404">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="405">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[D03]" output="ढे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="406">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[D03]" output="ढे" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="407">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="408">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D03]" output="ढै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="409">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D03]" output="ढै" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="410">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="411">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[D09]" output="ढो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="412">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[D09]" output="ढो" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="413">
+    <event key="[shift B04]" output="ढ"/>
+  </test-sequence>
+  <test-sequence id="414">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D09]" output="ढौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="415">
+    <event key="[shift B04]" output="ढ"/>
+    <event key="[shift D09]" output="ढौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्ढौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="416">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="417">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[C01]" output="णा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="418">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[C01]" output="णा" skip="bksp"/>
+    <event key="[shift D04]" output="र्णा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="419">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="420">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[D08]" output="णि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="421">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[D08]" output="णि" skip="bksp"/>
+    <event key="[shift D04]" output="र्णि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="422">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="423">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D08]" output="णी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="424">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D08]" output="णी" skip="bksp"/>
+    <event key="[shift D04]" output="र्णी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="425">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="426">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[D07]" output="णु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="427">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[D07]" output="णु" skip="bksp"/>
+    <event key="[shift D04]" output="र्णु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="428">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="429">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D07]" output="णू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="430">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D07]" output="णू" skip="bksp"/>
+    <event key="[shift D04]" output="र्णू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="431">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="432">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[D03]" output="णे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="433">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[D03]" output="णे" skip="bksp"/>
+    <event key="[shift D04]" output="र्णे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="434">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="435">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D03]" output="णै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="436">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D03]" output="णै" skip="bksp"/>
+    <event key="[shift D04]" output="र्णै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="437">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="438">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[D09]" output="णो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="439">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[D09]" output="णो" skip="bksp"/>
+    <event key="[shift D04]" output="र्णो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="440">
+    <event key="[shift B06]" output="ण"/>
+  </test-sequence>
+  <test-sequence id="441">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D09]" output="णौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="442">
+    <event key="[shift B06]" output="ण"/>
+    <event key="[shift D09]" output="णौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्णौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="443">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="444">
+    <event key="[D05]" output="त"/>
+    <event key="[C01]" output="ता" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="445">
+    <event key="[D05]" output="त"/>
+    <event key="[C01]" output="ता" skip="bksp"/>
+    <event key="[shift D04]" output="र्ता" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="446">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="447">
+    <event key="[D05]" output="त"/>
+    <event key="[D08]" output="ति" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="448">
+    <event key="[D05]" output="त"/>
+    <event key="[D08]" output="ति" skip="bksp"/>
+    <event key="[shift D04]" output="र्ति" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="449">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="450">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D08]" output="ती" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="451">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D08]" output="ती" skip="bksp"/>
+    <event key="[shift D04]" output="र्ती" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="452">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="453">
+    <event key="[D05]" output="त"/>
+    <event key="[D07]" output="तु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="454">
+    <event key="[D05]" output="त"/>
+    <event key="[D07]" output="तु" skip="bksp"/>
+    <event key="[shift D04]" output="र्तु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="455">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="456">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D07]" output="तू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="457">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D07]" output="तू" skip="bksp"/>
+    <event key="[shift D04]" output="र्तू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="458">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="459">
+    <event key="[D05]" output="त"/>
+    <event key="[D03]" output="ते" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="460">
+    <event key="[D05]" output="त"/>
+    <event key="[D03]" output="ते" skip="bksp"/>
+    <event key="[shift D04]" output="र्ते" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="461">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="462">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D03]" output="तै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="463">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D03]" output="तै" skip="bksp"/>
+    <event key="[shift D04]" output="र्तै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="464">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="465">
+    <event key="[D05]" output="त"/>
+    <event key="[D09]" output="तो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="466">
+    <event key="[D05]" output="त"/>
+    <event key="[D09]" output="तो" skip="bksp"/>
+    <event key="[shift D04]" output="र्तो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="467">
+    <event key="[D05]" output="त"/>
+  </test-sequence>
+  <test-sequence id="468">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D09]" output="तौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="469">
+    <event key="[D05]" output="त"/>
+    <event key="[shift D09]" output="तौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्तौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="470">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="471">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[C01]" output="था" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="472">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[C01]" output="था" skip="bksp"/>
+    <event key="[shift D04]" output="र्था" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="473">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="474">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[D08]" output="थि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="475">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[D08]" output="थि" skip="bksp"/>
+    <event key="[shift D04]" output="र्थि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="476">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="477">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D08]" output="थी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="478">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D08]" output="थी" skip="bksp"/>
+    <event key="[shift D04]" output="र्थी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="479">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="480">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[D07]" output="थु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="481">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[D07]" output="थु" skip="bksp"/>
+    <event key="[shift D04]" output="र्थु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="482">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="483">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D07]" output="थू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="484">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D07]" output="थू" skip="bksp"/>
+    <event key="[shift D04]" output="र्थू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="485">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="486">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[D03]" output="थे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="487">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[D03]" output="थे" skip="bksp"/>
+    <event key="[shift D04]" output="र्थे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="488">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="489">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D03]" output="थै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="490">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D03]" output="थै" skip="bksp"/>
+    <event key="[shift D04]" output="र्थै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="491">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="492">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[D09]" output="थो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="493">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[D09]" output="थो" skip="bksp"/>
+    <event key="[shift D04]" output="र्थो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="494">
+    <event key="[shift D05]" output="थ"/>
+  </test-sequence>
+  <test-sequence id="495">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D09]" output="थौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="496">
+    <event key="[shift D05]" output="थ"/>
+    <event key="[shift D09]" output="थौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्थौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="497">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="498">
+    <event key="[C03]" output="द"/>
+    <event key="[C01]" output="दा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="499">
+    <event key="[C03]" output="द"/>
+    <event key="[C01]" output="दा" skip="bksp"/>
+    <event key="[shift D04]" output="र्दा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="500">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="501">
+    <event key="[C03]" output="द"/>
+    <event key="[D08]" output="दि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="502">
+    <event key="[C03]" output="द"/>
+    <event key="[D08]" output="दि" skip="bksp"/>
+    <event key="[shift D04]" output="र्दि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="503">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="504">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D08]" output="दी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="505">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D08]" output="दी" skip="bksp"/>
+    <event key="[shift D04]" output="र्दी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="506">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="507">
+    <event key="[C03]" output="द"/>
+    <event key="[D07]" output="दु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="508">
+    <event key="[C03]" output="द"/>
+    <event key="[D07]" output="दु" skip="bksp"/>
+    <event key="[shift D04]" output="र्दु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="509">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="510">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D07]" output="दू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="511">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D07]" output="दू" skip="bksp"/>
+    <event key="[shift D04]" output="र्दू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="512">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="513">
+    <event key="[C03]" output="द"/>
+    <event key="[D03]" output="दे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="514">
+    <event key="[C03]" output="द"/>
+    <event key="[D03]" output="दे" skip="bksp"/>
+    <event key="[shift D04]" output="र्दे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="515">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="516">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D03]" output="दै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="517">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D03]" output="दै" skip="bksp"/>
+    <event key="[shift D04]" output="र्दै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="518">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="519">
+    <event key="[C03]" output="द"/>
+    <event key="[D09]" output="दो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="520">
+    <event key="[C03]" output="द"/>
+    <event key="[D09]" output="दो" skip="bksp"/>
+    <event key="[shift D04]" output="र्दो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="521">
+    <event key="[C03]" output="द"/>
+  </test-sequence>
+  <test-sequence id="522">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D09]" output="दौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="523">
+    <event key="[C03]" output="द"/>
+    <event key="[shift D09]" output="दौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्दौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="524">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="525">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[C01]" output="धा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="526">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[C01]" output="धा" skip="bksp"/>
+    <event key="[shift D04]" output="र्धा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="527">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="528">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[D08]" output="धि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="529">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[D08]" output="धि" skip="bksp"/>
+    <event key="[shift D04]" output="र्धि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="530">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="531">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D08]" output="धी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="532">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D08]" output="धी" skip="bksp"/>
+    <event key="[shift D04]" output="र्धी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="533">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="534">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[D07]" output="धु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="535">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[D07]" output="धु" skip="bksp"/>
+    <event key="[shift D04]" output="र्धु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="536">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="537">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D07]" output="धू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="538">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D07]" output="धू" skip="bksp"/>
+    <event key="[shift D04]" output="र्धू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="539">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="540">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[D03]" output="धे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="541">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[D03]" output="धे" skip="bksp"/>
+    <event key="[shift D04]" output="र्धे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="542">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="543">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D03]" output="धै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="544">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D03]" output="धै" skip="bksp"/>
+    <event key="[shift D04]" output="र्धै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="545">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="546">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[D09]" output="धो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="547">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[D09]" output="धो" skip="bksp"/>
+    <event key="[shift D04]" output="र्धो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="548">
+    <event key="[shift C03]" output="ध"/>
+  </test-sequence>
+  <test-sequence id="549">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D09]" output="धौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="550">
+    <event key="[shift C03]" output="ध"/>
+    <event key="[shift D09]" output="धौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्धौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="551">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="552">
+    <event key="[B06]" output="न"/>
+    <event key="[C01]" output="ना" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="553">
+    <event key="[B06]" output="न"/>
+    <event key="[C01]" output="ना" skip="bksp"/>
+    <event key="[shift D04]" output="र्ना" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="554">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="555">
+    <event key="[B06]" output="न"/>
+    <event key="[D08]" output="नि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="556">
+    <event key="[B06]" output="न"/>
+    <event key="[D08]" output="नि" skip="bksp"/>
+    <event key="[shift D04]" output="र्नि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="557">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="558">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D08]" output="नी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="559">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D08]" output="नी" skip="bksp"/>
+    <event key="[shift D04]" output="र्नी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="560">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="561">
+    <event key="[B06]" output="न"/>
+    <event key="[D07]" output="नु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="562">
+    <event key="[B06]" output="न"/>
+    <event key="[D07]" output="नु" skip="bksp"/>
+    <event key="[shift D04]" output="र्नु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="563">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="564">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D07]" output="नू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="565">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D07]" output="नू" skip="bksp"/>
+    <event key="[shift D04]" output="र्नू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="566">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="567">
+    <event key="[B06]" output="न"/>
+    <event key="[D03]" output="ने" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="568">
+    <event key="[B06]" output="न"/>
+    <event key="[D03]" output="ने" skip="bksp"/>
+    <event key="[shift D04]" output="र्ने" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="569">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="570">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D03]" output="नै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="571">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D03]" output="नै" skip="bksp"/>
+    <event key="[shift D04]" output="र्नै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="572">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="573">
+    <event key="[B06]" output="न"/>
+    <event key="[D09]" output="नो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="574">
+    <event key="[B06]" output="न"/>
+    <event key="[D09]" output="नो" skip="bksp"/>
+    <event key="[shift D04]" output="र्नो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="575">
+    <event key="[B06]" output="न"/>
+  </test-sequence>
+  <test-sequence id="576">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D09]" output="नौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="577">
+    <event key="[B06]" output="न"/>
+    <event key="[shift D09]" output="नौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्नौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="578">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="579">
+    <event key="[D10]" output="प"/>
+    <event key="[C01]" output="पा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="580">
+    <event key="[D10]" output="प"/>
+    <event key="[C01]" output="पा" skip="bksp"/>
+    <event key="[shift D04]" output="र्पा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="581">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="582">
+    <event key="[D10]" output="प"/>
+    <event key="[D08]" output="पि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="583">
+    <event key="[D10]" output="प"/>
+    <event key="[D08]" output="पि" skip="bksp"/>
+    <event key="[shift D04]" output="र्पि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="584">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="585">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D08]" output="पी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="586">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D08]" output="पी" skip="bksp"/>
+    <event key="[shift D04]" output="र्पी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="587">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="588">
+    <event key="[D10]" output="प"/>
+    <event key="[D07]" output="पु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="589">
+    <event key="[D10]" output="प"/>
+    <event key="[D07]" output="पु" skip="bksp"/>
+    <event key="[shift D04]" output="र्पु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="590">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="591">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D07]" output="पू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="592">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D07]" output="पू" skip="bksp"/>
+    <event key="[shift D04]" output="र्पू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="593">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="594">
+    <event key="[D10]" output="प"/>
+    <event key="[D03]" output="पे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="595">
+    <event key="[D10]" output="प"/>
+    <event key="[D03]" output="पे" skip="bksp"/>
+    <event key="[shift D04]" output="र्पे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="596">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="597">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D03]" output="पै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="598">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D03]" output="पै" skip="bksp"/>
+    <event key="[shift D04]" output="र्पै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="599">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="600">
+    <event key="[D10]" output="प"/>
+    <event key="[D09]" output="पो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="601">
+    <event key="[D10]" output="प"/>
+    <event key="[D09]" output="पो" skip="bksp"/>
+    <event key="[shift D04]" output="र्पो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="602">
+    <event key="[D10]" output="प"/>
+  </test-sequence>
+  <test-sequence id="603">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D09]" output="पौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="604">
+    <event key="[D10]" output="प"/>
+    <event key="[shift D09]" output="पौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्पौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="605">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="606">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[C01]" output="फा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="607">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[C01]" output="फा" skip="bksp"/>
+    <event key="[shift D04]" output="र्फा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="608">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="609">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[D08]" output="फि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="610">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[D08]" output="फि" skip="bksp"/>
+    <event key="[shift D04]" output="र्फि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="611">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="612">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D08]" output="फी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="613">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D08]" output="फी" skip="bksp"/>
+    <event key="[shift D04]" output="र्फी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="614">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="615">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[D07]" output="फु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="616">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[D07]" output="फु" skip="bksp"/>
+    <event key="[shift D04]" output="र्फु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="617">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="618">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D07]" output="फू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="619">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D07]" output="फू" skip="bksp"/>
+    <event key="[shift D04]" output="र्फू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="620">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="621">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[D03]" output="फे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="622">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[D03]" output="फे" skip="bksp"/>
+    <event key="[shift D04]" output="र्फे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="623">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="624">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D03]" output="फै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="625">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D03]" output="फै" skip="bksp"/>
+    <event key="[shift D04]" output="र्फै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="626">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="627">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[D09]" output="फो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="628">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[D09]" output="फो" skip="bksp"/>
+    <event key="[shift D04]" output="र्फो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="629">
+    <event key="[shift D10]" output="फ"/>
+  </test-sequence>
+  <test-sequence id="630">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D09]" output="फौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="631">
+    <event key="[shift D10]" output="फ"/>
+    <event key="[shift D09]" output="फौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्फौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="632">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="633">
+    <event key="[B05]" output="ब"/>
+    <event key="[C01]" output="बा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="634">
+    <event key="[B05]" output="ब"/>
+    <event key="[C01]" output="बा" skip="bksp"/>
+    <event key="[shift D04]" output="र्बा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="635">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="636">
+    <event key="[B05]" output="ब"/>
+    <event key="[D08]" output="बि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="637">
+    <event key="[B05]" output="ब"/>
+    <event key="[D08]" output="बि" skip="bksp"/>
+    <event key="[shift D04]" output="र्बि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="638">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="639">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D08]" output="बी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="640">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D08]" output="बी" skip="bksp"/>
+    <event key="[shift D04]" output="र्बी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="641">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="642">
+    <event key="[B05]" output="ब"/>
+    <event key="[D07]" output="बु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="643">
+    <event key="[B05]" output="ब"/>
+    <event key="[D07]" output="बु" skip="bksp"/>
+    <event key="[shift D04]" output="र्बु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="644">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="645">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D07]" output="बू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="646">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D07]" output="बू" skip="bksp"/>
+    <event key="[shift D04]" output="र्बू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="647">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="648">
+    <event key="[B05]" output="ब"/>
+    <event key="[D03]" output="बे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="649">
+    <event key="[B05]" output="ब"/>
+    <event key="[D03]" output="बे" skip="bksp"/>
+    <event key="[shift D04]" output="र्बे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="650">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="651">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D03]" output="बै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="652">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D03]" output="बै" skip="bksp"/>
+    <event key="[shift D04]" output="र्बै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="653">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="654">
+    <event key="[B05]" output="ब"/>
+    <event key="[D09]" output="बो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="655">
+    <event key="[B05]" output="ब"/>
+    <event key="[D09]" output="बो" skip="bksp"/>
+    <event key="[shift D04]" output="र्बो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="656">
+    <event key="[B05]" output="ब"/>
+  </test-sequence>
+  <test-sequence id="657">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D09]" output="बौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="658">
+    <event key="[B05]" output="ब"/>
+    <event key="[shift D09]" output="बौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्बौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="659">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="660">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[C01]" output="भा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="661">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[C01]" output="भा" skip="bksp"/>
+    <event key="[shift D04]" output="र्भा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="662">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="663">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[D08]" output="भि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="664">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[D08]" output="भि" skip="bksp"/>
+    <event key="[shift D04]" output="र्भि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="665">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="666">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D08]" output="भी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="667">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D08]" output="भी" skip="bksp"/>
+    <event key="[shift D04]" output="र्भी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="668">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="669">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[D07]" output="भु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="670">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[D07]" output="भु" skip="bksp"/>
+    <event key="[shift D04]" output="र्भु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="671">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="672">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D07]" output="भू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="673">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D07]" output="भू" skip="bksp"/>
+    <event key="[shift D04]" output="र्भू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="674">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="675">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[D03]" output="भे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="676">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[D03]" output="भे" skip="bksp"/>
+    <event key="[shift D04]" output="र्भे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="677">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="678">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D03]" output="भै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="679">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D03]" output="भै" skip="bksp"/>
+    <event key="[shift D04]" output="र्भै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="680">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="681">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[D09]" output="भो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="682">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[D09]" output="भो" skip="bksp"/>
+    <event key="[shift D04]" output="र्भो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="683">
+    <event key="[shift B05]" output="भ"/>
+  </test-sequence>
+  <test-sequence id="684">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D09]" output="भौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="685">
+    <event key="[shift B05]" output="भ"/>
+    <event key="[shift D09]" output="भौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्भौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="686">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="687">
+    <event key="[B07]" output="म"/>
+    <event key="[C01]" output="मा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="688">
+    <event key="[B07]" output="म"/>
+    <event key="[C01]" output="मा" skip="bksp"/>
+    <event key="[shift D04]" output="र्मा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="689">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="690">
+    <event key="[B07]" output="म"/>
+    <event key="[D08]" output="मि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="691">
+    <event key="[B07]" output="म"/>
+    <event key="[D08]" output="मि" skip="bksp"/>
+    <event key="[shift D04]" output="र्मि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="692">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="693">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D08]" output="मी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="694">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D08]" output="मी" skip="bksp"/>
+    <event key="[shift D04]" output="र्मी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="695">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="696">
+    <event key="[B07]" output="म"/>
+    <event key="[D07]" output="मु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="697">
+    <event key="[B07]" output="म"/>
+    <event key="[D07]" output="मु" skip="bksp"/>
+    <event key="[shift D04]" output="र्मु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="698">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="699">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D07]" output="मू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="700">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D07]" output="मू" skip="bksp"/>
+    <event key="[shift D04]" output="र्मू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="701">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="702">
+    <event key="[B07]" output="म"/>
+    <event key="[D03]" output="मे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="703">
+    <event key="[B07]" output="म"/>
+    <event key="[D03]" output="मे" skip="bksp"/>
+    <event key="[shift D04]" output="र्मे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="704">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="705">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D03]" output="मै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="706">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D03]" output="मै" skip="bksp"/>
+    <event key="[shift D04]" output="र्मै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="707">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="708">
+    <event key="[B07]" output="म"/>
+    <event key="[D09]" output="मो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="709">
+    <event key="[B07]" output="म"/>
+    <event key="[D09]" output="मो" skip="bksp"/>
+    <event key="[shift D04]" output="र्मो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="710">
+    <event key="[B07]" output="म"/>
+  </test-sequence>
+  <test-sequence id="711">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D09]" output="मौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="712">
+    <event key="[B07]" output="म"/>
+    <event key="[shift D09]" output="मौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्मौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="713">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="714">
+    <event key="[D06]" output="य"/>
+    <event key="[C01]" output="या" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="715">
+    <event key="[D06]" output="य"/>
+    <event key="[C01]" output="या" skip="bksp"/>
+    <event key="[shift D04]" output="र्या" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="716">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="717">
+    <event key="[D06]" output="य"/>
+    <event key="[D08]" output="यि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="718">
+    <event key="[D06]" output="य"/>
+    <event key="[D08]" output="यि" skip="bksp"/>
+    <event key="[shift D04]" output="र्यि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="719">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="720">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D08]" output="यी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="721">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D08]" output="यी" skip="bksp"/>
+    <event key="[shift D04]" output="र्यी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="722">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="723">
+    <event key="[D06]" output="य"/>
+    <event key="[D07]" output="यु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="724">
+    <event key="[D06]" output="य"/>
+    <event key="[D07]" output="यु" skip="bksp"/>
+    <event key="[shift D04]" output="र्यु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="725">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="726">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D07]" output="यू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="727">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D07]" output="यू" skip="bksp"/>
+    <event key="[shift D04]" output="र्यू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="728">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="729">
+    <event key="[D06]" output="य"/>
+    <event key="[D03]" output="ये" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="730">
+    <event key="[D06]" output="य"/>
+    <event key="[D03]" output="ये" skip="bksp"/>
+    <event key="[shift D04]" output="र्ये" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="731">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="732">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D03]" output="यै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="733">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D03]" output="यै" skip="bksp"/>
+    <event key="[shift D04]" output="र्यै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="734">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="735">
+    <event key="[D06]" output="य"/>
+    <event key="[D09]" output="यो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="736">
+    <event key="[D06]" output="य"/>
+    <event key="[D09]" output="यो" skip="bksp"/>
+    <event key="[shift D04]" output="र्यो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="737">
+    <event key="[D06]" output="य"/>
+  </test-sequence>
+  <test-sequence id="738">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D09]" output="यौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="739">
+    <event key="[D06]" output="य"/>
+    <event key="[shift D09]" output="यौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्यौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="740">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="741">
+    <event key="[D04]" output="र"/>
+    <event key="[C01]" output="रा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="742">
+    <event key="[D04]" output="र"/>
+    <event key="[C01]" output="रा" skip="bksp"/>
+    <event key="[shift D04]" output="र्रा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="743">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="744">
+    <event key="[D04]" output="र"/>
+    <event key="[D08]" output="रि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="745">
+    <event key="[D04]" output="र"/>
+    <event key="[D08]" output="रि" skip="bksp"/>
+    <event key="[shift D04]" output="र्रि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="746">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="747">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D08]" output="री" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="748">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D08]" output="री" skip="bksp"/>
+    <event key="[shift D04]" output="र्री" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="749">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="750">
+    <event key="[D04]" output="र"/>
+    <event key="[D07]" output="रु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="751">
+    <event key="[D04]" output="र"/>
+    <event key="[D07]" output="रु" skip="bksp"/>
+    <event key="[shift D04]" output="र्रु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="752">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="753">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D07]" output="रू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="754">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D07]" output="रू" skip="bksp"/>
+    <event key="[shift D04]" output="र्रू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="755">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="756">
+    <event key="[D04]" output="र"/>
+    <event key="[D03]" output="रे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="757">
+    <event key="[D04]" output="र"/>
+    <event key="[D03]" output="रे" skip="bksp"/>
+    <event key="[shift D04]" output="र्रे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="758">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="759">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D03]" output="रै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="760">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D03]" output="रै" skip="bksp"/>
+    <event key="[shift D04]" output="र्रै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="761">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="762">
+    <event key="[D04]" output="र"/>
+    <event key="[D09]" output="रो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="763">
+    <event key="[D04]" output="र"/>
+    <event key="[D09]" output="रो" skip="bksp"/>
+    <event key="[shift D04]" output="र्रो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="764">
+    <event key="[D04]" output="र"/>
+  </test-sequence>
+  <test-sequence id="765">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D09]" output="रौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="766">
+    <event key="[D04]" output="र"/>
+    <event key="[shift D09]" output="रौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्रौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="767">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="768">
+    <event key="[C09]" output="ल"/>
+    <event key="[C01]" output="ला" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="769">
+    <event key="[C09]" output="ल"/>
+    <event key="[C01]" output="ला" skip="bksp"/>
+    <event key="[shift D04]" output="र्ला" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="770">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="771">
+    <event key="[C09]" output="ल"/>
+    <event key="[D08]" output="लि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="772">
+    <event key="[C09]" output="ल"/>
+    <event key="[D08]" output="लि" skip="bksp"/>
+    <event key="[shift D04]" output="र्लि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="773">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="774">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D08]" output="ली" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="775">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D08]" output="ली" skip="bksp"/>
+    <event key="[shift D04]" output="र्ली" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="776">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="777">
+    <event key="[C09]" output="ल"/>
+    <event key="[D07]" output="लु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="778">
+    <event key="[C09]" output="ल"/>
+    <event key="[D07]" output="लु" skip="bksp"/>
+    <event key="[shift D04]" output="र्लु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="779">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="780">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D07]" output="लू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="781">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D07]" output="लू" skip="bksp"/>
+    <event key="[shift D04]" output="र्लू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="782">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="783">
+    <event key="[C09]" output="ल"/>
+    <event key="[D03]" output="ले" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="784">
+    <event key="[C09]" output="ल"/>
+    <event key="[D03]" output="ले" skip="bksp"/>
+    <event key="[shift D04]" output="र्ले" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="785">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="786">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D03]" output="लै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="787">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D03]" output="लै" skip="bksp"/>
+    <event key="[shift D04]" output="र्लै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="788">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="789">
+    <event key="[C09]" output="ल"/>
+    <event key="[D09]" output="लो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="790">
+    <event key="[C09]" output="ल"/>
+    <event key="[D09]" output="लो" skip="bksp"/>
+    <event key="[shift D04]" output="र्लो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="791">
+    <event key="[C09]" output="ल"/>
+  </test-sequence>
+  <test-sequence id="792">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D09]" output="लौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="793">
+    <event key="[C09]" output="ल"/>
+    <event key="[shift D09]" output="लौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्लौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="794">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="795">
+    <event key="[D02]" output="व"/>
+    <event key="[C01]" output="वा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="796">
+    <event key="[D02]" output="व"/>
+    <event key="[C01]" output="वा" skip="bksp"/>
+    <event key="[shift D04]" output="र्वा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="797">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="798">
+    <event key="[D02]" output="व"/>
+    <event key="[D08]" output="वि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="799">
+    <event key="[D02]" output="व"/>
+    <event key="[D08]" output="वि" skip="bksp"/>
+    <event key="[shift D04]" output="र्वि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="800">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="801">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D08]" output="वी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="802">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D08]" output="वी" skip="bksp"/>
+    <event key="[shift D04]" output="र्वी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="803">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="804">
+    <event key="[D02]" output="व"/>
+    <event key="[D07]" output="वु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="805">
+    <event key="[D02]" output="व"/>
+    <event key="[D07]" output="वु" skip="bksp"/>
+    <event key="[shift D04]" output="र्वु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="806">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="807">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D07]" output="वू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="808">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D07]" output="वू" skip="bksp"/>
+    <event key="[shift D04]" output="र्वू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="809">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="810">
+    <event key="[D02]" output="व"/>
+    <event key="[D03]" output="वे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="811">
+    <event key="[D02]" output="व"/>
+    <event key="[D03]" output="वे" skip="bksp"/>
+    <event key="[shift D04]" output="र्वे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="812">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="813">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D03]" output="वै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="814">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D03]" output="वै" skip="bksp"/>
+    <event key="[shift D04]" output="र्वै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="815">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="816">
+    <event key="[D02]" output="व"/>
+    <event key="[D09]" output="वो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="817">
+    <event key="[D02]" output="व"/>
+    <event key="[D09]" output="वो" skip="bksp"/>
+    <event key="[shift D04]" output="र्वो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="818">
+    <event key="[D02]" output="व"/>
+  </test-sequence>
+  <test-sequence id="819">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D09]" output="वौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="820">
+    <event key="[D02]" output="व"/>
+    <event key="[shift D09]" output="वौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्वौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="821">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="822">
+    <event key="[B01]" output="श"/>
+    <event key="[C01]" output="शा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="823">
+    <event key="[B01]" output="श"/>
+    <event key="[C01]" output="शा" skip="bksp"/>
+    <event key="[shift D04]" output="र्शा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="824">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="825">
+    <event key="[B01]" output="श"/>
+    <event key="[D08]" output="शि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="826">
+    <event key="[B01]" output="श"/>
+    <event key="[D08]" output="शि" skip="bksp"/>
+    <event key="[shift D04]" output="र्शि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="827">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="828">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D08]" output="शी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="829">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D08]" output="शी" skip="bksp"/>
+    <event key="[shift D04]" output="र्शी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="830">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="831">
+    <event key="[B01]" output="श"/>
+    <event key="[D07]" output="शु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="832">
+    <event key="[B01]" output="श"/>
+    <event key="[D07]" output="शु" skip="bksp"/>
+    <event key="[shift D04]" output="र्शु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="833">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="834">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D07]" output="शू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="835">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D07]" output="शू" skip="bksp"/>
+    <event key="[shift D04]" output="र्शू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="836">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="837">
+    <event key="[B01]" output="श"/>
+    <event key="[D03]" output="शे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="838">
+    <event key="[B01]" output="श"/>
+    <event key="[D03]" output="शे" skip="bksp"/>
+    <event key="[shift D04]" output="र्शे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="839">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="840">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D03]" output="शै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="841">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D03]" output="शै" skip="bksp"/>
+    <event key="[shift D04]" output="र्शै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="842">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="843">
+    <event key="[B01]" output="श"/>
+    <event key="[D09]" output="शो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="844">
+    <event key="[B01]" output="श"/>
+    <event key="[D09]" output="शो" skip="bksp"/>
+    <event key="[shift D04]" output="र्शो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="845">
+    <event key="[B01]" output="श"/>
+  </test-sequence>
+  <test-sequence id="846">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D09]" output="शौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="847">
+    <event key="[B01]" output="श"/>
+    <event key="[shift D09]" output="शौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्शौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="848">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="849">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[C01]" output="षा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="850">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[C01]" output="षा" skip="bksp"/>
+    <event key="[shift D04]" output="र्षा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="851">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="852">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[D08]" output="षि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="853">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[D08]" output="षि" skip="bksp"/>
+    <event key="[shift D04]" output="र्षि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="854">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="855">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D08]" output="षी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="856">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D08]" output="षी" skip="bksp"/>
+    <event key="[shift D04]" output="र्षी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="857">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="858">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[D07]" output="षु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="859">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[D07]" output="षु" skip="bksp"/>
+    <event key="[shift D04]" output="र्षु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="860">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="861">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D07]" output="षू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="862">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D07]" output="षू" skip="bksp"/>
+    <event key="[shift D04]" output="र्षू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="863">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="864">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[D03]" output="षे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="865">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[D03]" output="षे" skip="bksp"/>
+    <event key="[shift D04]" output="र्षे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="866">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="867">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D03]" output="षै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="868">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D03]" output="षै" skip="bksp"/>
+    <event key="[shift D04]" output="र्षै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="869">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="870">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[D09]" output="षो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="871">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[D09]" output="षो" skip="bksp"/>
+    <event key="[shift D04]" output="र्षो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="872">
+    <event key="[shift C02]" output="ष"/>
+  </test-sequence>
+  <test-sequence id="873">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D09]" output="षौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="874">
+    <event key="[shift C02]" output="ष"/>
+    <event key="[shift D09]" output="षौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्षौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="875">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="876">
+    <event key="[C02]" output="स"/>
+    <event key="[C01]" output="सा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="877">
+    <event key="[C02]" output="स"/>
+    <event key="[C01]" output="सा" skip="bksp"/>
+    <event key="[shift D04]" output="र्सा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="878">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="879">
+    <event key="[C02]" output="स"/>
+    <event key="[D08]" output="सि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="880">
+    <event key="[C02]" output="स"/>
+    <event key="[D08]" output="सि" skip="bksp"/>
+    <event key="[shift D04]" output="र्सि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="881">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="882">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D08]" output="सी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="883">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D08]" output="सी" skip="bksp"/>
+    <event key="[shift D04]" output="र्सी" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="884">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="885">
+    <event key="[C02]" output="स"/>
+    <event key="[D07]" output="सु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="886">
+    <event key="[C02]" output="स"/>
+    <event key="[D07]" output="सु" skip="bksp"/>
+    <event key="[shift D04]" output="र्सु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="887">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="888">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D07]" output="सू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="889">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D07]" output="सू" skip="bksp"/>
+    <event key="[shift D04]" output="र्सू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="890">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="891">
+    <event key="[C02]" output="स"/>
+    <event key="[D03]" output="से" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="892">
+    <event key="[C02]" output="स"/>
+    <event key="[D03]" output="से" skip="bksp"/>
+    <event key="[shift D04]" output="र्से" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="893">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="894">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D03]" output="सै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="895">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D03]" output="सै" skip="bksp"/>
+    <event key="[shift D04]" output="र्सै" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="896">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="897">
+    <event key="[C02]" output="स"/>
+    <event key="[D09]" output="सो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="898">
+    <event key="[C02]" output="स"/>
+    <event key="[D09]" output="सो" skip="bksp"/>
+    <event key="[shift D04]" output="र्सो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="899">
+    <event key="[C02]" output="स"/>
+  </test-sequence>
+  <test-sequence id="900">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D09]" output="सौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="901">
+    <event key="[C02]" output="स"/>
+    <event key="[shift D09]" output="सौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्सौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="902">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="903">
+    <event key="[C06]" output="ह"/>
+    <event key="[C01]" output="हा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="904">
+    <event key="[C06]" output="ह"/>
+    <event key="[C01]" output="हा" skip="bksp"/>
+    <event key="[shift D04]" output="र्हा" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="905">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="906">
+    <event key="[C06]" output="ह"/>
+    <event key="[D08]" output="हि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="907">
+    <event key="[C06]" output="ह"/>
+    <event key="[D08]" output="हि" skip="bksp"/>
+    <event key="[shift D04]" output="र्हि" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="908">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="909">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D08]" output="ही" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="910">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D08]" output="ही" skip="bksp"/>
+    <event key="[shift D04]" output="र्ही" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="911">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="912">
+    <event key="[C06]" output="ह"/>
+    <event key="[D07]" output="हु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="913">
+    <event key="[C06]" output="ह"/>
+    <event key="[D07]" output="हु" skip="bksp"/>
+    <event key="[shift D04]" output="र्हु" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="914">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="915">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D07]" output="हू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="916">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D07]" output="हू" skip="bksp"/>
+    <event key="[shift D04]" output="र्हू" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="917">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="918">
+    <event key="[C06]" output="ह"/>
+    <event key="[D03]" output="हे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="919">
+    <event key="[C06]" output="ह"/>
+    <event key="[D03]" output="हे" skip="bksp"/>
+    <event key="[shift D04]" output="र्हे" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="920">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="921">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D03]" output="है" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="922">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D03]" output="है" skip="bksp"/>
+    <event key="[shift D04]" output="र्है" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="923">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="924">
+    <event key="[C06]" output="ह"/>
+    <event key="[D09]" output="हो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="925">
+    <event key="[C06]" output="ह"/>
+    <event key="[D09]" output="हो" skip="bksp"/>
+    <event key="[shift D04]" output="र्हो" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="926">
+    <event key="[C06]" output="ह"/>
+  </test-sequence>
+  <test-sequence id="927">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D09]" output="हौ" skip="bksp"/>
+  </test-sequence>
+  <test-sequence id="928">
+    <event key="[C06]" output="ह"/>
+    <event key="[shift D09]" output="हौ" skip="bksp"/>
+    <event key="[shift D04]" output="र्हौ" skip="bksp"/>
+  </test-sequence>
+</ldmlkeytests>
