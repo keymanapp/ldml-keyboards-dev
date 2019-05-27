@@ -1,0 +1,281 @@
+<ldmlkeytests>
+  <test-sequence id="1">
+    <event key="[E10]" output="&#x11136;"/>
+  </test-sequence>
+  <test-sequence id="2">
+    <event key="[E01]" output="&#x11137;"/>
+  </test-sequence>
+  <test-sequence id="3">
+    <event key="[E02]" output="&#x11138;"/>
+  </test-sequence>
+  <test-sequence id="4">
+    <event key="[E03]" output="&#x11139;"/>
+  </test-sequence>
+  <test-sequence id="5">
+    <event key="[E04]" output="&#x1113A;"/>
+  </test-sequence>
+  <test-sequence id="6">
+    <event key="[E05]" output="&#x1113B;"/>
+  </test-sequence>
+  <test-sequence id="7">
+    <event key="[E06]" output="&#x1113C;"/>
+  </test-sequence>
+  <test-sequence id="8">
+    <event key="[E07]" output="&#x1113D;"/>
+  </test-sequence>
+  <test-sequence id="9">
+    <event key="[E08]" output="&#x1113E;"/>
+  </test-sequence>
+  <test-sequence id="10">
+    <event key="[E09]" output="&#x1113F;"/>
+  </test-sequence>
+  <test-sequence id="11">
+    <event key="[C01]" output="&#x1112D;"/>
+  </test-sequence>
+  <test-sequence id="12">
+    <event key="[B05]" output="&#x1111A;"/>
+  </test-sequence>
+  <test-sequence id="13">
+    <event key="[B03]" output="&#x1112C;"/>
+  </test-sequence>
+  <test-sequence id="14">
+    <event key="[C03]" output="&#x11128;"/>
+  </test-sequence>
+  <test-sequence id="15">
+    <event key="[D03]" output="&#x11113;"/>
+  </test-sequence>
+  <test-sequence id="16">
+    <event key="[C04]" output="&#x11127;"/>
+  </test-sequence>
+  <test-sequence id="17">
+    <event key="[C05]" output="&#x11133;"/>
+  </test-sequence>
+  <test-sequence id="18">
+    <event key="[C06]" output="&#x1111D;"/>
+  </test-sequence>
+  <test-sequence id="19">
+    <event key="[D08]" output="&#x11126;"/>
+  </test-sequence>
+  <test-sequence id="20">
+    <event key="[C07]" output="&#x11107;"/>
+  </test-sequence>
+  <test-sequence id="21">
+    <event key="[C08]" output="&#x11116;"/>
+  </test-sequence>
+  <test-sequence id="22">
+    <event key="[C09]" output="&#x11118;"/>
+  </test-sequence>
+  <test-sequence id="23">
+    <event key="[B07]" output="&#x1111F;"/>
+  </test-sequence>
+  <test-sequence id="24">
+    <event key="[B06]" output="&#x11125;"/>
+  </test-sequence>
+  <test-sequence id="25">
+    <event key="[D09]" output="&#x11109;"/>
+  </test-sequence>
+  <test-sequence id="26">
+    <event key="[D10]" output="&#x11124;"/>
+  </test-sequence>
+  <test-sequence id="27">
+    <event key="[D01]" output="&#x1110B;"/>
+  </test-sequence>
+  <test-sequence id="28">
+    <event key="[D04]" output="&#x1111B;"/>
+  </test-sequence>
+  <test-sequence id="29">
+    <event key="[C02]" output="&#x1112A;"/>
+  </test-sequence>
+  <test-sequence id="30">
+    <event key="[D05]" output="&#x11111;"/>
+  </test-sequence>
+  <test-sequence id="31">
+    <event key="[D07]" output="&#x1110E;"/>
+  </test-sequence>
+  <test-sequence id="32">
+    <event key="[B04]" output="&#x11122;"/>
+  </test-sequence>
+  <test-sequence id="33">
+    <event key="[D02]" output="&#x11121;"/>
+  </test-sequence>
+  <test-sequence id="34">
+    <event key="[B02]" output="&#x1112E;"/>
+  </test-sequence>
+  <test-sequence id="35">
+    <event key="[D06]" output="&#x1110C;"/>
+  </test-sequence>
+  <test-sequence id="36">
+    <event key="[B01]" output="&#x11104;"/>
+  </test-sequence>
+  <test-sequence id="37">
+    <event key="[E00]" output="`"/>
+  </test-sequence>
+  <test-sequence id="38">
+    <event key="[B00]" output="&#x11142;"/>
+  </test-sequence>
+  <test-sequence id="39">
+    <event key="[C10]" output="&#x11134;"/>
+  </test-sequence>
+  <test-sequence id="40">
+    <event key="[B08]" output=","/>
+  </test-sequence>
+  <test-sequence id="41">
+    <event key="[E12]" output="="/>
+  </test-sequence>
+  <test-sequence id="42">
+    <event key="[E11]" output="-"/>
+  </test-sequence>
+  <test-sequence id="43">
+    <event key="[D11]" output="["/>
+  </test-sequence>
+  <test-sequence id="44">
+    <event key="[B09]" output="."/>
+  </test-sequence>
+  <test-sequence id="45">
+    <event key="[C11]" output="\u0027"/>
+  </test-sequence>
+  <test-sequence id="46">
+    <event key="[D12]" output="]"/>
+  </test-sequence>
+  <test-sequence id="47">
+    <event key="[B10]" output="&#x11144;"/>
+  </test-sequence>
+  <test-sequence id="48">
+    <event key="[shift E10]" output=")"/>
+  </test-sequence>
+  <test-sequence id="49">
+    <event key="[shift E01]" output="!"/>
+  </test-sequence>
+  <test-sequence id="50">
+    <event key="[shift E02]" output="@"/>
+  </test-sequence>
+  <test-sequence id="51">
+    <event key="[shift E04]" output="$"/>
+  </test-sequence>
+  <test-sequence id="52">
+    <event key="[shift E05]" output="%"/>
+  </test-sequence>
+  <test-sequence id="53">
+    <event key="[shift E06]" output="&#x11140;"/>
+  </test-sequence>
+  <test-sequence id="54">
+    <event key="[shift E07]" output="&#x11100;"/>
+  </test-sequence>
+  <test-sequence id="55">
+    <event key="[shift E08]" output="*"/>
+  </test-sequence>
+  <test-sequence id="56">
+    <event key="[shift E09]" output="("/>
+  </test-sequence>
+  <test-sequence id="57">
+    <event key="[shift C01]" output="&#x11131;"/>
+  </test-sequence>
+  <test-sequence id="58">
+    <event key="[shift B05]" output="&#x11115;"/>
+  </test-sequence>
+  <test-sequence id="59">
+    <event key="[shift B03]" output="&#x11130;"/>
+  </test-sequence>
+  <test-sequence id="60">
+    <event key="[shift C03]" output="&#x11129;"/>
+  </test-sequence>
+  <test-sequence id="61">
+    <event key="[shift D03]" output="&#x11114;"/>
+  </test-sequence>
+  <test-sequence id="62">
+    <event key="[shift C04]" output="&#x11103;"/>
+  </test-sequence>
+  <test-sequence id="63">
+    <event key="[shift C05]" output="&#x11141;"/>
+  </test-sequence>
+  <test-sequence id="64">
+    <event key="[shift C06]" output="&#x1111E;"/>
+  </test-sequence>
+  <test-sequence id="65">
+    <event key="[shift D08]" output="&#x11110;"/>
+  </test-sequence>
+  <test-sequence id="66">
+    <event key="[shift C07]" output="&#x11108;"/>
+  </test-sequence>
+  <test-sequence id="67">
+    <event key="[shift C08]" output="&#x11117;"/>
+  </test-sequence>
+  <test-sequence id="68">
+    <event key="[shift C09]" output="&#x11119;"/>
+  </test-sequence>
+  <test-sequence id="69">
+    <event key="[shift B07]" output="&#x11106;"/>
+  </test-sequence>
+  <test-sequence id="70">
+    <event key="[shift B06]" output="&#x11132;"/>
+  </test-sequence>
+  <test-sequence id="71">
+    <event key="[shift D09]" output="&#x1110A;"/>
+  </test-sequence>
+  <test-sequence id="72">
+    <event key="[shift D10]" output="&#x11105;"/>
+  </test-sequence>
+  <test-sequence id="73">
+    <event key="[shift D01]" output="&#x11101;"/>
+  </test-sequence>
+  <test-sequence id="74">
+    <event key="[shift D04]" output="&#x1111C;"/>
+  </test-sequence>
+  <test-sequence id="75">
+    <event key="[shift C02]" output="&#x1112B;"/>
+  </test-sequence>
+  <test-sequence id="76">
+    <event key="[shift D05]" output="&#x11112;"/>
+  </test-sequence>
+  <test-sequence id="77">
+    <event key="[shift D07]" output="&#x1110F;"/>
+  </test-sequence>
+  <test-sequence id="78">
+    <event key="[shift B04]" output="&#x11123;"/>
+  </test-sequence>
+  <test-sequence id="79">
+    <event key="[shift D02]" output="&#x11120;"/>
+  </test-sequence>
+  <test-sequence id="80">
+    <event key="[shift B02]" output="&#x1112F;"/>
+  </test-sequence>
+  <test-sequence id="81">
+    <event key="[shift D06]" output="&#x1110D;"/>
+  </test-sequence>
+  <test-sequence id="82">
+    <event key="[shift B01]" output="&#x11146;"/>
+  </test-sequence>
+  <test-sequence id="83">
+    <event key="[shift E00]" output="~"/>
+  </test-sequence>
+  <test-sequence id="84">
+    <event key="[shift B00]" output="&#x11102;"/>
+  </test-sequence>
+  <test-sequence id="85">
+    <event key="[shift C10]" output="&#x11145;"/>
+  </test-sequence>
+  <test-sequence id="86">
+    <event key="[shift B08]" output="&lt;"/>
+  </test-sequence>
+  <test-sequence id="87">
+    <event key="[shift E12]" output=";"/>
+  </test-sequence>
+  <test-sequence id="88">
+    <event key="[shift E11]" output="_"/>
+  </test-sequence>
+  <test-sequence id="89">
+    <event key="[shift D11]" output="{"/>
+  </test-sequence>
+  <test-sequence id="90">
+    <event key="[shift B09]" output="&gt;"/>
+  </test-sequence>
+  <test-sequence id="91">
+    <event key="[shift C11]" output="&quot;"/>
+  </test-sequence>
+  <test-sequence id="92">
+    <event key="[shift D12]" output="}"/>
+  </test-sequence>
+  <test-sequence id="93">
+    <event key="[shift B10]" output="&#x11143;"/>
+  </test-sequence>
+</ldmlkeytests>
