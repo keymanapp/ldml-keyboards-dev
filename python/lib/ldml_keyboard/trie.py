@@ -66,7 +66,7 @@ class Trie(object):
         if len(frc) == 0:
             return
 
-        if len(beforec) == 0 and len(afterc) == 0 and len(frc) == 1:
+        if len(beforec) == 0 and len(afterc) == 0 and len(frc) == 1 and all(len(x) == 1 for x in frc[0]):
             m = Match(0, 1, rule)
             for c in frc[0]:
                 if c == u'\uFDD1':
@@ -80,7 +80,7 @@ class Trie(object):
 
         while len(self.forwards) <= len(beforec):
             self.forwards.append(Node())
-        jobs = [(self.forwards[len(beforec)], None)]
+        jobs = [(self.forwards[len(beforec)], None, 0)]
         for i in range(2):
             ocount = len(beforec)
             length = len(frc)
@@ -89,21 +89,27 @@ class Trie(object):
             for cset in beforec + frc + afterc:
                 newjobs = []
                 newnjobs = []
-                for j, n in jobs:
+                for j, n, l in jobs:
                     if cset.negative:
                         newnjobs.append((j, cset))
                     for c in cset:
                         if c == u'\uFDD1':
                             c = u'\u200B'
-                        newjobs.append((j.setdefault(c, Node(j)), c))
+                        for a in c[:-1]:
+                            j = j.setdefault(a, Node(j))
+                        newjobs.append((j.setdefault(c[-1], Node(j)), c[-1], len(c) - 1))
                 jobs = newjobs
-            for j, c in jobs:
-                if j.match is not None:
-                    j.match = self._override(j.match, m)
-                elif j.parent is not None and j.parent.negmatch is not None and c in j.parent.negset:
-                    j.match = self._override(j.parent.negmatch, m)
+            for j, c, l in jobs:
+                if l > 0:
+                    mn = Match(m.offset, m.length + 1, m.rule)
                 else:
-                    j.match = m
+                    mn = m
+                if j.match is not None:
+                    j.match = self._override(j.match, mn)
+                elif j.parent is not None and j.parent.negmatch is not None and c in j.parent.negset:
+                    j.match = self._override(j.parent.negmatch, mn)
+                else:
+                    j.match = mn
             for j, cset in newnjobs:
                 for c, sub in j.items():
                     if c in cset or sub.match is None:
@@ -120,7 +126,7 @@ class Trie(object):
             afterc = list(reversed(beforec))
             beforec = list(reversed(temp))
             frc = list(reversed(frc))
-            jobs = [(self.backwards[len(beforec)], None)]
+            jobs = [(self.backwards[len(beforec)], None, 0)]
 
     def _override(self, base, other):
         if base.offset == other.offset and base.length == other.length:

@@ -128,7 +128,7 @@ class Keyboard(object):
                         self.modifiers[""] = kind
                 maps = self.keyboards[kind]
                 for m in c:
-                    maps[m.get('iso')] = UnicodeSets.struni(m.get('to'))
+                    maps[m.get('iso')] = ud.normalize('NFD', UnicodeSets.struni(m.get('to')))
                 self.fallbacks.append(c.get('fallback', "").split(' '))
             elif c.tag == 'transforms':
                 t = c.get('type')
@@ -192,7 +192,7 @@ class Keyboard(object):
 
     def process(self, k, mods, context=None):
         '''Process and record the results of a single keystroke given previous history'''
-        chars = self.map_key(k, mods)
+        chars = ud.normalize('NFD', self.map_key(k, mods))
         if isinstance(context, Context):
             ctxt = context
         elif context is not None:
@@ -246,10 +246,11 @@ class Keyboard(object):
         '''Create a new processing context from a string '''
         res = Context(tracing=self.tracing)
         (before, changed, _) = self._unreorder(s)
-        for t in ('reorder', 'final'):
-            res.set_output(t, s)
-            res.set_offset(t, len(before))
         olds = before + changed
+        for t in ('reorder', 'final'):
+            res.set_output(t, olds)
+            res.set_offset(t, len(before))
+            res.set_partial(t, len(olds) - len(before))
         for t in ('base', 'simple'):
             res.set_output(t, olds)
             res.set_offset(t, len(olds))
@@ -290,7 +291,7 @@ class Keyboard(object):
                     curr += r.offset
                 if getattr(r.rule, 'error', 0):
                     context.error = True
-                newout = UnicodeSets.struni(getattr(r.rule, 'to', ""))
+                newout = ud.normalize('NFD', UnicodeSets.struni(getattr(r.rule, 'to', "")))
                 # output replaced string
                 context.results(ruleset, curr, r.length, newout, rule=r.rule)
                 if ruleset == 'final':
@@ -417,7 +418,7 @@ class Keyboard(object):
                 continue        # if didn't break inner loop, don't break outer loop
             break               # if we broke in the inner loop, break the outer loop
         if curr > startrun:     # just copy the odd characters across
-            context.results(ruleset, curr, curr - startrun, instr[startrun:curr])
+            context.replace_middle(ruleset, startrun, curr - startrun, instr[startrun:curr])
 
         # iterate over sorted clusters
         for pre, ordered, post in self._reorder(instr, startrun=curr, end=context.len(ruleset), \
@@ -530,24 +531,28 @@ class Keyboard(object):
         """Consume one character from the pre-reordered text.
            Returns replacement output string, length of output consumed,
            replacement pre reordered text, length of pre reordered text consumed."""
+        #instr = ud.normalize('NFD', instr)
         if 'reorder' not in self.transforms:
-            return ("", 1, "", 1)
+            shorter = ud.normalize('NFD', ud.normalize('NFC', instr)[:-1])
+            difflen = len(instr) - len(shorter)
+            return ("", difflen, "", difflen)
         # derive a possible input string to reorder
         (orig, simple, _) = self._unreorder(instr)
         olen = len(orig)
         slen = len(simple)
         # delete one char from it
-        simple = simple[:-1]
+        simple = ud.normalize('NFD', ud.normalize('NFC', simple)[:-1])
+        nslen = len(simple)
         # recalculate output as a result
         (pref, res, post) = list(self._reorder(simple, end=len(simple), ruleset='reorder'))[0]
         # Find the point at which a change occurred in unreordered text
-        for i in range(slen-1):
+        for i in range(nslen):
             if simple[i] != instr[olen + i]:
                 slen += i
                 simple = simple[i:]
                 break
         else:
-            slen = 1
+            slen -= nslen
             simple = u""
         # Find the point at which the output differs from input
         length = len(res)
@@ -576,7 +581,7 @@ class Keyboard(object):
             if r.rule is not None:
                 if getattr(r.rule, 'error', 0): return False
                 length = r.length
-                res = UnicodeSets.struni(getattr(r.rule, 'to', ""))
+                res = ud.normalize('NFD', UnicodeSets.struni(getattr(r.rule, 'to', "")))
                 # derive possible input string to lead to desired result
                 (orig, simple, _) = self._unreorder(instr[:-length]+res)
                 rule = r.rule
@@ -710,6 +715,9 @@ class Context(object):
     def set_offset(self, name, i):
         self.offsets[self.index(name)] = i
 
+    def set_partial(self, name, i):
+        self.partials[self.index(name)] = i
+
     def reset_output(self, name):
         '''Prepare output based on stables ready for more output to be added'''
         ind = self.index(name)
@@ -760,6 +768,17 @@ class Context(object):
         if ind == 0:
             self.offsets[ind] = len(self.outputs[ind])
         self.trace_replacement("Truncated", backup, name, res, rule=rule, comment=comment)
+
+    def replace_middle(self, name, start, length, res, rule=None, comment=None):
+        '''Replace in the middle of a string'''
+        ind = self.index(name)
+        out = self.outputs[ind]
+        self.outputs[ind] = out[:start] + res + out[start+length:]
+        if start < self.offsets[ind]:
+            self.offsets[ind] = start
+        if self.partials[ind] > len(out) - start - length:
+            self.partials[ind] += len(res) - length
+        self.trace_replacement("Middle", length, name, res, rule=rule, comment=comment)
 
     def put_back(self, name, instr, inlength, inoffset, outlength):
         '''Remove outlength chars from output and return them as a prefix to replace

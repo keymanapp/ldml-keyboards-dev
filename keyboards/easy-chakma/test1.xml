@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ldmlkeytests>
     <test-sequence id="1">
-	    <event key="[B03]" output="&#x200B;&#x1112C;"/>
-	    <event key="[C07]" output="&#x11107;&#x1112C;"/>
+	    <event key="[C07]" output="&#x11107;"/>
+	    <event key="[B03]" output="&#x11107;&#x1112C;"/>
     </test-sequence>
 
     <test-sequence id="2">
-	    <event key="[B03]" output="&#x200B;&#x1112C;"/>
-	    <event key="[B03]" output="&#x200B;&#x1112C;&#x1112C;"/>
-	    <event key="[C07]" output="&#x11107;&#x1112C;&#x1112C;"/>
+	    <event key="[C07]" output="&#x11107;"/>
+	    <event key="[B03]" output="&#x11107;&#x1112C;"/>
+	    <event key="[B03]" output="&#x11107;&#x1112C;&#x1112C;"/>
     </test-sequence>
 
     <test-sequence id="3">
-	    <event key="[B03]" output="&#x200B;&#x1112C;"/>
-	    <event key="[C07]" output="&#x11107;&#x1112C;"/>
+	    <event key="[C07]" output="&#x11107;"/>
+	    <event key="[B03]" output="&#x11107;&#x1112C;"/>
         <event key="[C05]" output="&#x11107;&#x1112C;&#x11133;"/>
-	    <event key="[C07]" output="&#x11107;&#x11133;&#x11107;&#x1112C;"/>
+	    <event key="[C07]" output="&#x11107;&#x11133;&#x11107;&#x1112C;" skip="bksp"/>
     </test-sequence>
 </ldmlkeytests>
 

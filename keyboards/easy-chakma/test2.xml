@@ -99,7 +99,7 @@
     <event key="[D02]" output="&#x11121;"/>
   </test-sequence>
   <test-sequence id="34">
-    <event key="[B02]" output="&#x1112E;"/>
+    <event key="[B02]" output="&#x1112E;" skip="normal"/>
   </test-sequence>
   <test-sequence id="35">
     <event key="[D06]" output="&#x1110C;"/>
@@ -237,7 +237,7 @@
     <event key="[shift D02]" output="&#x11120;"/>
   </test-sequence>
   <test-sequence id="80">
-    <event key="[shift B02]" output="&#x1112F;"/>
+    <event key="[shift B02]" output="&#x1112F;" skip="normal"/>
   </test-sequence>
   <test-sequence id="81">
     <event key="[shift D06]" output="&#x1110D;"/>

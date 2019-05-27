@@ -51,7 +51,7 @@
 		<map iso="B06" to="ञ"/>
 		<map iso="B09" to="."/>
 		<map iso="C06" to="ऽ"/>
-		<map iso="C07" to="ज\u{094D}ञ"/>
+		<map iso="C07" to="\u{FDD6}"/>
 		<map iso="C09" to="\u{0943}"/>
 		<map iso="C10" to="\u{0903}"/>
 		<map iso="D11" to="\u{093C}"/>
@@ -80,8 +80,8 @@
 		<map iso="B05" to="भ"/>
 		<map iso="B06" to="ण"/>
 		<map iso="B07" to="ङ"/>
-		<map iso="B09" to="\u{093C}"/>
-		<map iso="C01" to="\u{093E}"/>
+		<map iso="B09" to="\u{FDD5}"/>
+		<map iso="C01" to="\u{FDD4}"/>
 		<map iso="C02" to="ष"/>
 		<map iso="C03" to="ध"/>
 		<map iso="C04" to="ठ"/>
@@ -982,6 +982,7 @@
 		<transform from="\u{FDD2}\u{0948}" to="ऐ"/>
 		<transform from="\u{FDD2}\u{094B}" to="ओ"/>
 		<transform from="\u{FDD2}\u{094C}" to="औ"/>
+		<transform from="\u{FDD2}\u{FDD4}" to="आ"/>
 		<transform from="\u{FDD3}:" to=":"/>
 		<transform from="\u{FDD3}R" to="R"/>
 		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{FDD3}" to="Q"/>
@@ -1038,6 +1039,11 @@
 		<transform from="\u{FDD3}ॐ" to="H"/>
 		<transform from="\u{FDD3}\u{FDD2}" to="q"/>
 		<transform from="\u{FDD3}\u{FDD3}" to="Q"/>
+		<transform from="\u{FDD3}\u{FDD4}" to="A"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{FDD4}" to="A"/>
+		<transform from="\u{FDD4}" to="\u{093E}"/>
+		<transform from="\u{FDD5}" to="\u{093C}"/>
+		<transform from="\u{FDD6}" to="ज\u{094D}ञ"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<transforms type="final">

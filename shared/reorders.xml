@@ -97,8 +97,9 @@
         <reorder from="\u{11134}" order="11"/>
         <reorder from="[\u{11100}-\u{11102}]" order="55"/>
         <reorder from="\u{1112C}" order="60"/>
-        <reorder from="[\u{11127}-\u{11129}\u{1112D}-\u{11130}]" order="65"/>
+        <reorder from="[\u{11128}\u{11129}\u{1112D}-\u{11130}]" order="65"/>
         <reorder from="[\u{1112A}\u{1112B}\u{11131}\u{11132}]" order="70"/>
+        <reorder from="\u{11127}" order="71"/>
         <reorder from="[\u{11145}\u{11146}]" order="75"/>
 
         <!-- Cham -->

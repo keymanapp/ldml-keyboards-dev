@@ -17,7 +17,7 @@
 		<map iso="B07" to="\u{1111F}"/>
 		<map iso="B08" to=","/>
 		<map iso="B09" to="."/>
-		<map iso="B10" to="/"/>
+		<map iso="B10" to="\u{11144}"/>
 		<map iso="C01" to="\u{1112D}"/>
 		<map iso="C02" to="\u{1112A}"/>
 		<map iso="C03" to="\u{11128}"/>
@@ -57,7 +57,7 @@
 	</keyMap>
 	<keyMap modifiers="shift">
 		<map iso="B00" to="\u{11102}"/>
-		<map iso="B01" to="\u{11140}"/>
+		<map iso="B01" to="\u{11146}"/>
 		<map iso="B02" to="\u{1112F}"/>
 		<map iso="B03" to="\u{11130}"/>
 		<map iso="B04" to="\u{11123}"/>
@@ -76,7 +76,7 @@
 		<map iso="C07" to="\u{11108}"/>
 		<map iso="C08" to="\u{11117}"/>
 		<map iso="C09" to="\u{11119}"/>
-		<map iso="C10" to=":"/>
+		<map iso="C10" to="\u{11145}"/>
 		<map iso="C11" to="&quot;"/>
 		<map iso="D01" to="\u{11101}"/>
 		<map iso="D02" to="\u{11120}"/>
@@ -96,20 +96,13 @@
 		<map iso="E03" to="#"/>
 		<map iso="E04" to="$"/>
 		<map iso="E05" to="%"/>
-		<map iso="E06" to="^"/>
+		<map iso="E06" to="\u{11140}"/>
 		<map iso="E07" to="\u{11100}"/>
 		<map iso="E08" to="*"/>
 		<map iso="E09" to="("/>
 		<map iso="E10" to=")"/>
 		<map iso="E11" to="_"/>
-		<map iso="E12" to="+"/>
+		<map iso="E12" to=";"/>
 	</keyMap>
-	<transforms type="simple">
-		<transform before="\u{200B}\u{1112C}" from="\u{1112C}" to="\u{1112C}"/>
-		<transform before="\\u\{200B\}\\u\{1112C\}" from="\\u\{1112C\}" to="\\u\{1112C\}"/>
-	</transforms>
 	<import path="shared/reorders.xml"/>
-	<reorders>
-		<reorder from="\u{1112C}" prebase="1"/>
-	</reorders>
 </keyboard>
