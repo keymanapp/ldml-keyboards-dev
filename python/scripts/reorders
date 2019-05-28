@@ -29,7 +29,7 @@ cccmap = (
 
 subcatmap = {
     'FAbv': 105, 'FBlw': 110, 'FPst': 115, 'FM': 117,
-    'MAbv': 55, 'MBlw': 50, 'MPre': 40, 'MPst': 59,
+    'MAbv': 45, 'MBlw': 50, 'MPre': 40, 'MPst': 59,
     'VPre': 60, 'VAbv': 65, 'VBlw': 70, 'VPst': 75,
     'VMAbv': 85, 'VMBlw': 90, 'VMPre': 80, 'VMPst': 95,
     'CMAbv': -2}
@@ -96,8 +96,62 @@ codemap = {
     0x1A78: 100,
     0x1A79: 100,
 
+    # Coming from USE exceptions list Oct/2018
+    # found at: https://github.com/harfbuzz/harfbuzz/issues/1012
+    # Syllabic Category changes
+    0xAA29: 85,
+    0x0F71: -2,
+    0x1BF2: -2,
+    0x1BF3: -2,
+    0x1CED: 90,
+    0xA982: 85,
+    # 0x002D: 0,
+    0x0F7F: 0,
+    0x11134: -2,
+    0x1B6B: 64,     # SMAbv standard value
+    0x1B6C: 79,     # SMBlw standard value
+    0x1B6D: 64,
+    0x1B6E: 64,
+    0x1B6F: 64,
+    0x1B70: 64,
+    0x1B71: 64,
+    0x1B72: 64,
+    0x1B73: 64,
+    0x1CE2: 90,
+    0x1CE3: 90,
+    0x1CE4: 90,
+    0x1CE5: 90,
+    0x1CE6: 90,
+    0x1CE7: 90,
+    0x1CE8: 90,
+    # 0xA8F2..0xA8F7, 0xA8FB, 0xA8FD: 0     # consonant
+    0x0A51: 50,
+    # 0xA8B4: 59,
+    # 0x0C80, 0x2015, 0x2022, 0x25FB..0x25FE: 0     # consonant placeholder GB
+
+    # Position category changes
+    0x1C29: 60,
+    0x0F74: 65,
+    0x1A18: 45,
+    # 0x1B6B, 0x1B6D..0x1B73: 45,
+    0xAA35: 45,
+    # 0x0A51: 90,
+    0x0F72: 70,
+    0x0F7A: 70,
+    0x0F7B: 70,
+    0x0F7C: 70,
+    0x0F7D: 70,
+    0x0F80: 70,
+    # 0x01B6C: 50,
+    # 0x1BF2: -2,
+    # 0x1BF3: -2,
     0x11127: 71,    # hack around normalization bug. USE not happy though
+    0x11128: 71,
+    0x11129: 71,
+    0x1112D: 71,
+    0x11130: 71,
 }
+
 
 tertiary_bases = set([0x102B, 0x102C, 0x102F, 0x1030, 0x1036, 0x1032, 0x1056, 0x1057, 0x1058, 0x1059, 0x1062,
                       0x1063, 0x1064, 0x1067, 0x1068, 0x1069, 0x106A, 0x106B, 0x106C, 0x106D, 0x1083, 0x1086])
