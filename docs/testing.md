@@ -24,7 +24,7 @@ The most basic test is that given the context of the output of the previous even
 
 ### Backspace
 
-The backspace test tests the effect of pressing backspace. This is not done through undo, but exercises the backspace transforms and default backspace handling of the LDML engine. The test walks backwards through all the events. It presses backspace for each even it wants to go back and then retypes the keys for those events to try to recreate the current output.
+The backspace test tests the effect of pressing backspace. This is not done through undo, but exercises the backspace transforms and default backspace handling of the LDML engine. The test walks backwards through all the events. It presses backspace for each event it wants to go back and then retypes the keys for those events to try to recreate the current output.
 
 For example, in our test file, when testing the second event, the backspace test will first press backspace once and then retype the `[Shift C01]` and check the output. Then it will press backspace twice and retype `[C01] [Shift C01]` and check the output.
 
@@ -48,7 +48,7 @@ The default behaviour of the engine for backspace is to remove the last characte
 
 ### Normal Test
 
-The normalization test, tests that the output of an event, if normalized, is unchanged. It does this for both NFC and NFD. If for a normal form, the output of an event is not the same when normalized into a form, then a further test is done. The keystroke is undone (as opposed to hitting backspace) and the previous output is normalized. This is fed in as the context for the keystrokes for this event and the output compared against the normalized form of the test output.
+The normalization test tests that the output of an event, if normalized, is unchanged. It does this for both NFC and NFD. If for a normal form, the output of an event is not the same when normalized into a form, then a further test is done. The keystroke is undone (as opposed to hitting backspace) and the previous output is normalized. This is fed in as the context for the keystrokes for this event and the output compared against the normalized form of the test output.
 
 Notice that the engine runs in NFD and returns results in NFD.
 
