@@ -776,6 +776,8 @@ class Context(object):
         self.outputs[ind] = out[:start] + res + out[start+length:]
         if start < self.offsets[ind]:
             self.offsets[ind] = start
+        if ind > 0:
+            self.partials[ind] = max(self.partials[ind], self.partials[ind-1])
         if self.partials[ind] > len(out) - start - length:
             self.partials[ind] += len(res) - length
         self.trace_replacement("Middle", length, name, res, rule=rule, comment=comment)
