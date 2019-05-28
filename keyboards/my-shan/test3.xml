@@ -1,0 +1,89 @@
+<ldmlkeytests>
+  <test-sequence id="1">
+    <event key="[altR E01]" output="\u1041"/>
+  </test-sequence>
+  <test-sequence id="2">
+    <event key="[altR E02]" output="\u1042"/>
+  </test-sequence>
+  <test-sequence id="3">
+    <event key="[altR E03]" output="\u1043"/>
+  </test-sequence>
+  <test-sequence id="4">
+    <event key="[altR E04]" output="\u1044"/>
+  </test-sequence>
+  <test-sequence id="5">
+    <event key="[altR E05]" output="\u1045"/>
+  </test-sequence>
+  <test-sequence id="6">
+    <event key="[altR E06]" output="\u1046"/>
+  </test-sequence>
+  <test-sequence id="7">
+    <event key="[altR E07]" output="\u1047"/>
+  </test-sequence>
+  <test-sequence id="8">
+    <event key="[altR E08]" output="\u1048"/>
+  </test-sequence>
+  <test-sequence id="9">
+    <event key="[altR E09]" output="\u1049"/>
+  </test-sequence>
+  <test-sequence id="10">
+    <event key="[altR E10]" output="\u1040"/>
+  </test-sequence>
+  <test-sequence id="11">
+    <event key="[shift altR E01]" output="\u1091"/>
+  </test-sequence>
+  <test-sequence id="12">
+    <event key="[shift altR E02]" output="\u1092"/>
+  </test-sequence>
+  <test-sequence id="13">
+    <event key="[shift altR E03]" output="\u1093"/>
+  </test-sequence>
+  <test-sequence id="14">
+    <event key="[shift altR E04]" output="\u1094"/>
+  </test-sequence>
+  <test-sequence id="15">
+    <event key="[shift altR E05]" output="\u1095"/>
+  </test-sequence>
+  <test-sequence id="16">
+    <event key="[shift altR E06]" output="\u1096"/>
+  </test-sequence>
+  <test-sequence id="17">
+    <event key="[shift altR E07]" output="\u1097"/>
+  </test-sequence>
+  <test-sequence id="18">
+    <event key="[shift altR E08]" output="\u1098"/>
+  </test-sequence>
+  <test-sequence id="19">
+    <event key="[shift altR E09]" output="\u1099"/>
+  </test-sequence>
+  <test-sequence id="20">
+    <event key="[shift altR E10]" output="\u1090"/>
+  </test-sequence>
+  <test-sequence id="21">
+    <event key="[altR D01]" output="\u1079"/>
+  </test-sequence>
+  <test-sequence id="22">
+    <event key="[altR D02]" output="\uAA66"/>
+  </test-sequence>
+  <test-sequence id="23">
+    <event key="[altR shift D02]" output="\uAA68"/>
+  </test-sequence>
+  <test-sequence id="24">
+    <event key="[altR D09]" output="\uA9E1"/>
+  </test-sequence>
+  <test-sequence id="25">
+    <event key="[altR shift D09]" output="\uA9E2"/>
+  </test-sequence>
+  <test-sequence id="26">
+    <event key="[altR B01]" output="\uA9E4"/>
+  </test-sequence>
+  <test-sequence id="27">
+    <event key="[altR B02]" output="\uAA67"/>
+  </test-sequence>
+  <test-sequence id="28">
+    <event key="[altR shift B02]" output="\uAA69"/>
+  </test-sequence>
+  <test-sequence id="29">
+    <event key="[altR C02]" output="\u101D\uA9E5" skip="bksp"/>
+  </test-sequence>
+</ldmlkeytests>
