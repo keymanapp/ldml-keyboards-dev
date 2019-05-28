@@ -540,7 +540,7 @@ class Keyboard(object):
         (orig, simple, _) = self._unreorder(instr)
         olen = len(orig)
         slen = len(simple)
-        # delete one char from it
+        # delete one char from it. Treat as NFC.
         simple = ud.normalize('NFD', ud.normalize('NFC', simple)[:-1])
         nslen = len(simple)
         # recalculate output as a result
