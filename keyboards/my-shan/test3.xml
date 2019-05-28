@@ -86,4 +86,7 @@
   <test-sequence id="29">
     <event key="[altR C02]" output="\u101D\uA9E5" skip="bksp"/>
   </test-sequence>
+  <test-sequence id="30">
+    <event key="[shift C04]" output="\u1082\u103A" skip="bksp"/>
+  </test-sequence>
 </ldmlkeytests>
