@@ -4,6 +4,7 @@ subdirs = balochi-phonetic \
         gff-tigrinya-eritrea \
         kh-sil-angkhor \
         my-shan \
+        my-sil-visualorder1 \
         panafrica_us \
         sil-bengali \
         sil-boonkit \
