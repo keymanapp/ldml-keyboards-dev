@@ -6,4 +6,15 @@
         <event key="[C07]" output="\u1000\u103C\u1031"/>
         <event key="[B07]" output="\u1000\u103C\u1031\u102C"/>
     </test-sequence>
+    <test-sequence id="2">
+        <event key="[D09]" output="\u101E" skip="bksp"/>
+        <event key="[B03]" output="\u101E\u1001" skip="bksp"/>
+        <event key="[shift C04]" output="\u101E\u1004\u103A\u1039\u1001" skip="bksp"/>
+        <event key="[C02]" output="\u101E\u1004\u103A\u1039\u1001\u103B" skip="bksp"/>
+        <event key="[C03]" output="\u101E\u1004\u103A\u1039\u1001\u103B\u102D" skip="bksp"/>
+        <event key="[C08]" output="\u101E\u1004\u103A\u1039\u1001\u103B\u102D\u102F" skip="bksp"/>
+        <event key="[D08]" output="\u101E\u1004\u103A\u1039\u1001\u103B\u102D\u102F\u1004" skip="bksp"/>
+        <event key="[C04]" output="\u101E\u1004\u103A\u1039\u1001\u103B\u102D\u102F\u1004\u103A" skip="bksp"/>
+        <event key="[C10]" output="\u101E\u1004\u103A\u1039\u1001\u103B\u102D\u102F\u1004\u103A\u1038" skip="bksp"/>
+    </test-sequence>
 </ldmlkeytests>
