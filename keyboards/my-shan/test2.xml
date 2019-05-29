@@ -96,7 +96,7 @@
     <event key="[shift B09]" output="။"/>
   </test-sequence>
   <test-sequence id="33">
-    <event key="[shift C08]" output="”"/>
+    <event key="[C11]" output="”"/>
   </test-sequence>
   <test-sequence id="34">
     <event key="[shift C11]" output="“"/>

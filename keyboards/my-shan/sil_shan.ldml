@@ -24,6 +24,7 @@
 		<map iso="C08" to="\u{102F}"/>
 		<map iso="C09" to="\u{1030}"/>
 		<map iso="C10" to="\u{1088}"/>
+		<map iso="C11" to="”"/>
 		<map iso="D01" to="ၸ"/>
 		<map iso="D02" to="တ"/>
 		<map iso="D03" to="ၼ"/>

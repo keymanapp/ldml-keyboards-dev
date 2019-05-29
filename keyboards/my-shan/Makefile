@@ -1,4 +1,4 @@
-KEYMAN=shn_standard.kmn
+KEYMAN=sil_shan.kmn
 LDML=sil_shan.ldml
 HAS_REORDER = True
 #REORDER=sil_shan_reorder.xml
