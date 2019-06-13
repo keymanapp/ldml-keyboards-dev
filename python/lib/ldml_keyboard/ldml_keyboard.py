@@ -134,7 +134,10 @@ class Keyboard(object):
                 t = c.get('type')
                 self._addrules(c, t, context=c)
             elif c.tag == 'reorders':
-                testset = set(x for m in self.keyboards for v in m.values() for x in v)
+                if self.keyboards:
+                    testset = set(x for m in self.keyboards for v in m.values() for x in v)
+                else:
+                    testset = None
                 self._addrules(c, 'reorder', onlyifin=testset, context=c)
             elif c.tag == 'backspaces':
                 self._addrules(c, 'backspace', context=c)
@@ -204,13 +207,13 @@ class Keyboard(object):
         
         if k == 'BKSP':
             # normally we would simply undo, but test the backspace transforms
-            if not self._process_backspace(ctxt, 'backspace'):
+            if not self.process_backspace(ctxt, 'backspace'):
                 return self.error(ctxt)
         else:
-            if not self._process_simple(ctxt):
+            if not self.process_simple(ctxt):
                 self.error(ctxt)
-            self._process_reorder(ctxt)
-            if not self._process_simple(ctxt, 'final', handleSettings=False):
+            self.process_reorder(ctxt)
+            if not self.process_simple(ctxt, 'final', handleSettings=False):
                 self.error(ctxt)
         if context is None:
             self.history.append(ctxt)
@@ -257,16 +260,16 @@ class Keyboard(object):
         res.trace("Initialise with string " + repr(s))
         return res
 
-    def _process_empty(self, context, ruleset):
+    def process_empty(self, context, ruleset):
         '''Copy layer input to output'''
         context.reset_output(ruleset)
         output = context.input(ruleset)[context.offset(ruleset):]
         context.results(ruleset, context.offset(ruleset), len(output), output)
 
-    def _process_simple(self, context, ruleset='simple', handleSettings=True):
+    def process_simple(self, context, ruleset='simple', handleSettings=True):
         '''Handle a simple replacement transforms type'''
         if ruleset not in self.transforms:
-            self._process_empty(context, ruleset)
+            self.process_empty(context, ruleset)
             return True
         trans = self.transforms[ruleset]
         if handleSettings:
@@ -372,10 +375,10 @@ class Keyboard(object):
         else:
             return [CharCode(0, 0, 0, False)]
 
-    def _process_reorder(self, context, ruleset='reorder'):
+    def process_reorder(self, context, ruleset='reorder'):
         '''Handle the reorder transforms'''
         if ruleset not in self.transforms:
-            self._process_empty(context, ruleset)
+            self.process_empty(context, ruleset)
             return
         trans = self.transforms[ruleset]
         instr = context.input(ruleset)
@@ -567,7 +570,7 @@ class Keyboard(object):
         # the trimmed down string that needs to be reordered and length
         return (res, len(instr) - olen - length, simple, slen)
 
-    def _process_backspace(self, context, ruleset='backspace'):
+    def process_backspace(self, context, ruleset='backspace'):
         '''Handle the backspace transforms in response to bksp key'''
         instr = context.output('final')
         instrlen = len(instr)

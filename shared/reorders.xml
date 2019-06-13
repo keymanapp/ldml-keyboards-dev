@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard>
     <reorders>
-        <!-- Unknowns \u00B2 \u00B3 \u0315 \u031A \u0345 \u034F \u0358 \u035C \u035D \u035E \u035F \u0360 \u0361 \u0362 \u059A \u05AD \u05AE \u09FE \u0D4E \u0F35 \u0F37 \u0FC6 \u17D3 \u18A9 \u193B \u1A7B \u1A7C \u1A7F \u1B3B \u1C36 \u1DCD \u1DF6 \u1DF7 \u1DF8 \u1DFB \u1DFC \u2074 \u2082 \u2083 \u2084 \u302B \u302C \u302D \uA926 \uA927 \uA928 \uA929 \uA92A \uA9BF \u10A3A \u111C2 \u111C3 \u111C9 \u1145E \u1171E \u11A33 \u11A3A \u11A84 \u11A85 \u11A86 \u11A87 \u11A88 \u11A89 \u11D46 \u1D16D -->
+        <!-- Unknowns \u0315 \u031A \u0345 \u034F \u0358 \u035C \u035D \u035E \u035F \u0360 \u0361 \u0362 \u059A \u05AD \u05AE \u0D4E \u18A9 \u1B3B \u1DCD \u1DF6 \u1DF7 \u1DF8 \u1DFC \u302B \u302C \u302D \uA926 \uA927 \uA928 \uA929 \uA92A \uA9BF \u10A3A \u111C2 \u111C3 \u1171E \u11A3A \u11A84 \u11A85 \u11A86 \u11A87 \u11A88 \u11A89 \u11D46 \u1D16D -->
 
         <!-- Adlam -->
         <reorder from="\u{1E94A}" tertiary="3"/>
@@ -62,6 +62,7 @@
         <reorder from="[\u09BE\u09C0\u09CB\u09CC\u09D7]" order="75"/>
         <reorder from="\u0981" order="85"/>
         <reorder from="[\u0982\u0983]" order="95"/>
+        <reorder from="\u09FE" order="117"/>
 
         <!-- Bhaiksuki -->
         <reorder from="\u{11C3F}[\u{11C00}-\u{11C08}\u{11C0A}-\u{11C2E}\u{11C40}\u{11C50}-\u{11C6C}]" order="10" tertiary_base="true"/>
@@ -116,6 +117,7 @@
         <!-- Common -->
         <reorder from="[\u{1D165}\u{1D166}\u{1D16E}-\u{1D172}]" order="56"/>
         <reorder from="[\u1CE1\u1CF7]" order="95"/>
+        <reorder from="[\u00B2\u00B3\u2074\u2082-\u2084]" order="117"/>
         <reorder from="\u2060" order="125"/>
 
         <!-- Coptic -->
@@ -259,6 +261,7 @@
         <reorder from="\u031B" order="56"/>
         <reorder from="\u302A" order="58"/>
         <reorder from="[\u1CE2-\u1CE8\u1CED]" order="90"/>
+        <reorder from="\u1DFB" order="117"/>
 
         <!-- Javanese -->
         <reorder from="\uA9B3" tertiary="3"/>
@@ -321,6 +324,7 @@
         <reorder from="\u17CE" order="80"/>
         <reorder from="[\u17C6\u17CB\u17CD\u17CF\u17D1\u17DD]" order="105"/>
         <reorder from="[\u17C7\u17C8]" order="115"/>
+        <reorder from="\u17D3" order="117"/>
         <reorder from="\u17D2\u179A" order="11" tertiary_base="true"/>
 
         <!-- Khojki -->
@@ -358,6 +362,7 @@
         <reorder from="[\u1C26\u1C2A\u1C2B]" order="75"/>
         <reorder from="[\u1C34\u1C35]" order="80"/>
         <reorder from="[\u1C2D-\u1C33]" order="105"/>
+        <reorder from="\u1C36" order="117"/>
 
         <!-- Limbu -->
         <reorder from="[\u1929-\u192B]" order="11"/>
@@ -368,6 +373,7 @@
         <reorder from="\u1932" order="90"/>
         <reorder from="\u1939" order="110"/>
         <reorder from="[\u1930\u1931\u1933-\u1938]" order="115"/>
+        <reorder from="\u193B" order="117"/>
 
         <!-- Mahajani -->
         <reorder from="\u{11173}" tertiary="3"/>
@@ -480,6 +486,7 @@
         <reorder from="[\u{11435}\u{11437}\u{11440}\u{11441}]" order="75"/>
         <reorder from="[\u{11443}\u{11444}]" order="85"/>
         <reorder from="\u{11445}" order="95"/>
+        <reorder from="\u{1145E}" order="117"/>
 
         <!-- Nko -->
         <reorder from="[\u07EB-\u07F1\u07F3]" order="45"/>
@@ -535,6 +542,7 @@
         <reorder from="[\u{111B3}\u{111B5}]" order="75"/>
         <reorder from="[\u{11180}\u{11181}]" order="85"/>
         <reorder from="\u{11182}" order="95"/>
+        <reorder from="\u{111C9}" order="117"/>
 
         <!-- Siddham -->
         <reorder from="\u{115C0}" tertiary="3"/>
@@ -608,9 +616,9 @@
 
         <!-- Tai_Tham -->
         <reorder from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1A63\u1A64\u1A6D]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="80 80" tertiary_base="true"/>
-        <reorder before="[\u1A63\u1A64\u1A6D][\u1A75-\u1A79]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="80 80" tertiary_base="true"/>
-        <reorder from="\u1A60" order="80" tertiary_base="true"/>
+        <reorder before="[\u1A58\u1A63\u1A64\u1A6C\u1A6D]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="120 120" tertiary_base="true"/>
+        <reorder before="[\u1A58\u1A63\u1A64\u1A6C\u1A6D][\u1A75-\u1A79]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="120 120" tertiary_base="true"/>
+        <reorder from="\u1A60" order="120" tertiary_base="true"/>
         <reorder from="[\u1A57\u1A5B-\u1A5E]" order="11"/>
         <reorder from="\u1A55" order="40"/>
         <reorder from="\u1A7A" order="45"/>
@@ -622,6 +630,7 @@
         <reorder from="\u1A74" order="85"/>
         <reorder from="[\u1A75-\u1A79]" order="100"/>
         <reorder from="[\u1A58\u1A59]" order="105"/>
+        <reorder from="[\u1A7B\u1A7C\u1A7F]" order="117"/>
 
         <!-- Tai_Viet -->
         <reorder from="[\uAAB0\uAAB2\uAAB3\uAAB7\uAAB8\uAABE\uAABF\uAAC1]" order="45"/>
@@ -676,6 +685,7 @@
         <reorder from="[\u0F72\u0F75\u0F7A-\u0F7D\u0F80]" order="70"/>
         <reorder from="\u0F7E" order="85"/>
         <reorder from="\u0F7F" order="95"/>
+        <reorder from="[\u0F35\u0F37\u0FC6]" order="117"/>
 
         <!-- Tifinagh -->
         <reorder from="\u2D7F" order="120" tertiary_base="true"/>
@@ -703,6 +713,7 @@
         <reorder from="[\u{11A02}\u{11A03}\u{11A0A}]" order="70"/>
         <reorder from="[\u{11A35}-\u{11A38}]" order="85"/>
         <reorder from="\u{11A39}" order="95"/>
+        <reorder from="\u{11A33}" order="117"/>
     </reorders>
 
     <transforms type="final">

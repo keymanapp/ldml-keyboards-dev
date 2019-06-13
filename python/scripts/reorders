@@ -28,14 +28,14 @@ cccmap = (
     59, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0)
 
 subcatmap = {
-    'FAbv': 105, 'FBlw': 110, 'FPst': 115, 'FM': 117,
+    'FAbv': 105, 'FBlw': 110, 'FPst': 115,
     'MAbv': 45, 'MBlw': 50, 'MPre': 40, 'MPst': 59,
     'VPre': 60, 'VAbv': 65, 'VBlw': 70, 'VPst': 75,
     'VMAbv': 85, 'VMBlw': 90, 'VMPre': 80, 'VMPst': 95,
     'CMAbv': -2}
 
 catmap = {
-    'SUB': 11, 'VS': -1, 'ZWJ': -5, 'ZWNJ': -5, 'WJ': 125}
+    'FM': 117, 'SUB': 11, 'VS': -1, 'ZWJ': -5, 'ZWNJ': -5, 'WJ': 125}
 
 codemap = {
     # Arabic
@@ -162,6 +162,7 @@ tertiary_bases = set([0x102B, 0x102C, 0x102F, 0x1030, 0x1036, 0x1032, 0x1056, 0x
 #  nukta    The nukta in this script (not used)
 #  av       Halant may occur after any of these chars (as vowels).
 #  avskip   List of string insertions for halant after vowel skipping
+#  avcorder Order value to give the halant sequence in the after vowel context
 #  rules    list of extra reorder rules
 #  hbefores Extra before contexts for halant+C reorder rules
 scriptmap = {
@@ -179,7 +180,7 @@ scriptmap = {
         r'from="[\u103D\u1082]\u103A" order="50"',
         r'from="[\u1004\u101B]\u103A\u1039" order="-1"'),
                 'vs': "\\uFE00"},
-    'Tai_Tham' : {'av': u"\u1A63\u1A64\u1A6D", 'avskip': ["[\\u1A75-\\u1A79]"], 'avcorder': 80},
+    'Tai_Tham' : {'av': u"\u1A63\u1A64\u1A6C\u1A6D", 'avskip': ["[\\u1A75-\\u1A79]"], 'avcorder': 120},
     'Tamil': {'av': u"\u0BBF\u0BC0\u0BC1\u0BC2\u0BC6\u0BC7\u0BCA\u0BCB"},
     'Telugu': {'av': u"\u0C3F\u0C40\u0C41\u0C42\u0C46\u0C47\u0C4A\u0C4B"},
 }
@@ -305,7 +306,7 @@ for k, v in sorted(results.items()):
             #t = makeclass([v.get(x, []) for x in range(60, 100)])
             if afterv is not None:
                 constraint = ' before="{}{{3}}" '.format(makeclass([ord(x)] for x in afterv))
-                i = 80
+                i = smap.get('avcorder', 80)
             if len(t):
                 printf('        <reorder from="{0}{1}" order="{2:d}" tertiary_base="true"/>'.format(s, t, 10))
                 if afterv is not None:

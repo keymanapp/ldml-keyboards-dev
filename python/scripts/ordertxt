@@ -1,0 +1,69 @@
+#!/usr/bin/python3
+
+import argparse, sys
+
+try:
+    from ldml_keyboard.ldml_keyboard import Keyboard
+except:
+    import os
+    sys.path.append(os.path.join(os.path.dirname(__file__), '../lib'))
+    from ldml_keyboard.ldml_keyboard import Keyboard
+
+class StringContext:
+    def __init__(self, s):
+        self.instr = s
+        self.outstr = ""
+
+    def __str__(self):
+        return self.outstr
+
+    def len(self, name=None):
+        return len(self.instr)
+
+    def trace(self, s):
+        pass
+
+    def input(self, ruleset):
+        return self.instr
+
+    def reset_output(self, ruleset):
+        pass
+
+    def offset(self, ruleset):
+        return 0
+
+    def backup_to(self, ruleset, curr):
+        pass
+
+    def replace_middle(self, ruleset, start, length, s):
+        self.instr = self.instr[:start] + s + self.instr[start+length:]
+
+    def results(self, ruleset, start, length, s, comment=None):
+        if start >= len(self.outstr):
+            self.outstr += self.instr[start:len(self.outstr)]
+        self.outstr += s
+
+    def partial_results(self, ruleset, length, s, comment=None):
+        self.outstr += s
+
+
+parser = argparse.ArgumentParser()
+parser.add_argument("infile", nargs="?", help="File to process")
+parser.add_argument("outfile", nargs="?", help="File to output")
+parser.add_argument("-r","--reorders", help="reorders.xml with ordering information")
+parser.add_argument("-u","--unicodes", help="string of USVs as input text")
+args = parser.parse_args()
+
+kbd = Keyboard(args.reorders)
+if args.infile:
+    with open(args.infile, "r") as inf, open(args.outfile, "w") as outf:
+        for l in inf.readlines():
+            c = StringContext(l)
+            kbd.process_reorder(c)
+            outf.write(c.outstr)
+elif args.unicodes:
+    s = "".join(chr(int(x, 16)) for x in args.unicodes.split(' '))
+    c = StringContext(s)
+    kbd.process_reorder(c)
+    print(" ".join("{:04X}".format(ord(x)) for x in c.outstr))
+
