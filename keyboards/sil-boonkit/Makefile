@@ -1,4 +1,4 @@
-LDML = sil-boonkit.ldml
+LDML = und-Lana-t-k0-cldr-boonkit.ldml
 KEYMAN = boonkit.kmn
 HAS_REORDER = True
 #REORDER = reorder.xml

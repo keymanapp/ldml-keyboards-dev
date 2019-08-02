@@ -1,4 +1,4 @@
-LDML = sil-vai.ldml
+LDML = vai-t-k0-cldr-sil.ldml
 KEYMAN = sil_vai.kmn
 # HAS_REORDER = True
 # REORDER = reorder.xml

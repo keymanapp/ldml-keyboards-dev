@@ -54,11 +54,11 @@
 		<map iso="E10" to="០"/>
 		<map iso="E11" to="ឥ"/>
 		<map iso="E12" to="ឲ"/>
-		<map iso="npdot" to="."/>
-		<map iso="npminus" to="-"/>
-		<map iso="npplus" to="+"/>
-		<map iso="npslash" to="/"/>
-		<map iso="npstar" to="*"/>
+		<map iso="npdot" to="\u{FDD9}"/>
+		<map iso="npminus" to="\u{FDD7}"/>
+		<map iso="npplus" to="\u{FDD5}"/>
+		<map iso="npslash" to="\u{FDDB}"/>
+		<map iso="npstar" to="\u{FDD3}"/>
 		<map iso="space" to="\u{200B}"/>
 		<map iso="t17d21780" to="\u{17D2}ក"/>
 		<map iso="t17d21781" to="\u{17D2}ខ"/>
@@ -118,7 +118,7 @@
 		<map iso="C08" to="ឝ"/>
 		<map iso="C09" to="៘"/>
 		<map iso="C10" to="៖"/>
-		<map iso="C11" to="\u{17C8}"/>
+		<map iso="C11" to="\u{FDD2}"/>
 		<map iso="D01" to="ៜ"/>
 		<map iso="D02" to="\u{17DD}"/>
 		<map iso="D03" to="ឯ"/>
@@ -238,11 +238,11 @@
 		<map iso="E10" to=")"/>
 		<map iso="E11" to="\u{17CC}"/>
 		<map iso="E12" to="="/>
-		<map iso="npdot" to="."/>
-		<map iso="npminus" to="-"/>
-		<map iso="npplus" to="+"/>
-		<map iso="npslash" to="/"/>
-		<map iso="npstar" to="*"/>
+		<map iso="npdot" to="\u{FDDA}"/>
+		<map iso="npminus" to="\u{FDD8}"/>
+		<map iso="npplus" to="\u{FDD6}"/>
+		<map iso="npslash" to="\u{FDDC}"/>
+		<map iso="npstar" to="\u{FDD4}"/>
 		<map iso="space" to=" "/>
 	</keyMap>
 	<transforms type="simple">
@@ -300,6 +300,12 @@
 		<transform before="\u{17D2}[កខគឃងចឆជឈញដឋឌឍណតថទធនបផពភមយរលវឝឞសហឡអ]" from="\u{17CB}" to="" comment="\[u'\\u17d2', any\(c_out\)\] \+ \[quote\] &gt; \[Token\('KEYWORD', u'context'\), Token\('KEYWORD', u'beep'\)\]" error="fail"/>
 		<transform before="[\u{17B6}\u{17B7}\u{17B8}\u{17B9}\u{17BA}\u{17BB}\u{17BC}\u{17BD}\u{17BE}\u{17BF}\u{17C0}\u{17C1}\u{17C2}\u{17C3}\u{17C4}\u{17C5}\u{17C6}\u{17C7}\u{17C8}\u{17C9}\u{17CA}]" from="\u{17CB}" to="" comment="\[any\(v_gen\)\] \+ \[quote\] &gt; \[Token\('KEYWORD', u'context'\), Token\('KEYWORD', u'beep'\)\]" error="fail"/>
 		<transform from="\u{200B}\u{200B}" to=" " comment="\[u'\\u200b'\] \+ \[space\] &gt; \[u' '\]"/>
+		<transform from="\u{FDD2}" to="\u{17C8}"/>
+		<transform from="[\u{FDD3}\u{FDD4}]" to="\*"/>
+		<transform from="[\u{FDD5}\u{FDD6}]" to="\+"/>
+		<transform from="[\u{FDD7}\u{FDD8}]" to="-"/>
+		<transform from="[\u{FDD9}\u{FDDA}]" to="\."/>
+		<transform from="[\u{FDDB}\u{FDDC}]" to="/"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<transforms type="final">

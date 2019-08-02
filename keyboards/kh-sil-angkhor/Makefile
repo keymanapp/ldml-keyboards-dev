@@ -1,4 +1,4 @@
-LDML = khmer_angkor.ldml
+LDML = kh-t-k0-cldr-angkor.ldml
 KEYMAN = khmer_angkor.kmn
 IMPORT = khmer_angkor_import.ldml
 HAS_REORDER = True

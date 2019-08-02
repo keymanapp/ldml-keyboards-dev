@@ -32,7 +32,7 @@ subcatmap = {
     'MAbv': 45, 'MBlw': 50, 'MPre': 40, 'MPst': 59,
     'VPre': 60, 'VAbv': 65, 'VBlw': 70, 'VPst': 75,
     'VMAbv': 85, 'VMBlw': 90, 'VMPre': 80, 'VMPst': 95,
-    'CMAbv': -2}
+    'CMAbv': -2, 'CMBlw': -3}
 
 catmap = {
     'FM': 117, 'SUB': 11, 'VS': -1, 'ZWJ': -5, 'ZWNJ': -5, 'WJ': 125}

@@ -1,4 +1,4 @@
-LDML = gff-tigrinya-eritrea.ldml
+LDML = ti-ER-t-k0-cldr-gff.ldml
 KEYMAN = gff_tigrinya_eritrea.kmn
 # HAS_REORDER = True
 # REORDER = reorder.xml

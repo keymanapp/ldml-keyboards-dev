@@ -1,5 +1,5 @@
+LDML=bcc-Arab-t-k0-cldr-phonetic.ldml
 KEYMAN=balochi_phonetic.kmn
-LDML=balochi_phonetic.ldml
 #HAS_REORDER=True
 #REORDER=reorder.xml
 BASE=shared/en-us-win.xml

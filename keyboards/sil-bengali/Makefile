@@ -1,5 +1,5 @@
+LDML=bn-t-k0-cldr-phonetic.ldml
 KEYMAN=sil_bengali_phonetic.kmn
-LDML=sil_bengali_phonetic.ldml
 HAS_REORDER = True
 # REORDER=
 BASE=shared/en-us-win.xml

@@ -1,4 +1,4 @@
-LDML = sil-mywinext.ldml
+LDML = my-t-k0-cldr-mywinext.ldml
 KEYMAN = sil_myanmar_mywinext.kmn
 HAS_REORDER = True
 # REORDER = reorder.xml

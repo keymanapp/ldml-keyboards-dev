@@ -1,4 +1,4 @@
-LDML = tainua.ldml
+LDML = tdd-t-k0-cldr-sil.ldml
 KEYMAN = tainua.kmn
 # HAS_REORDER = True
 # REORDER = reorder.xml

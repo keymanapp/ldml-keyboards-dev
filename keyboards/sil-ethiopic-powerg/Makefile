@@ -1,4 +1,4 @@
-LDML = sil-ethiopic-powerg.ldml
+LDML = und-Ethi-ET-t-k0-cldr-powerg.ldml
 KEYMAN = sil_ethiopic_power_g.kmn
 # HAS_REORDER = True
 # REORDER = reorder.xml

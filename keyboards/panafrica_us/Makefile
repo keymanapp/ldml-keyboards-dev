@@ -1,4 +1,4 @@
-LDML = panafrica_us.ldml
+LDML = und-Latn-t-k0-cldr-panafrica-us.ldml
 KEYMAN = sil_pan_africa_positional.kmn
 # HAS_REORDER = True
 # REORDER = reorder.xml

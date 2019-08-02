@@ -1,5 +1,5 @@
+LDML=ccp-t-k0-cldr-easy.ldml
 KEYMAN=easy_chakma.kmn
-LDML=easy_chakma.ldml
 HAS_REORDER=True
 #REORDER=easy_chakma_reorder.xml
 BASE=shared/en-us-win.xml

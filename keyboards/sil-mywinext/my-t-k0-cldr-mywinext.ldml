@@ -19,12 +19,12 @@
 		<map iso="B09" to="."/>
 		<map iso="B10" to="။"/>
 		<map iso="C01" to="\u{1031}"/>
-		<map iso="C02" to="\u{103B}"/>
+		<map iso="C02" to="\u{FDD3}"/>
 		<map iso="C03" to="\u{102D}"/>
 		<map iso="C04" to="\u{103A}"/>
 		<map iso="C05" to="\u{102B}"/>
 		<map iso="C06" to="\u{1037}"/>
-		<map iso="C07" to="\u{103C}"/>
+		<map iso="C07" to="\u{FDD4}"/>
 		<map iso="C08" to="\u{102F}"/>
 		<map iso="C09" to="\u{1030}"/>
 		<map iso="C10" to="\u{1038}"/>
@@ -65,14 +65,14 @@
 		<map iso="B06" to="ဈ"/>
 		<map iso="B07" to="၎"/>
 		<map iso="B08" to="ၝ"/>
-		<map iso="B09" to="၎"/>
+		<map iso="B09" to="\u{FDD2}"/>
 		<map iso="B10" to="၊"/>
 		<map iso="C01" to="ဗ"/>
-		<map iso="C02" to="\u{103E}"/>
+		<map iso="C02" to="\u{FDD5}"/>
 		<map iso="C03" to="\u{102E}"/>
 		<map iso="C04" to="င\u{103A}\u{1039}"/>
-		<map iso="C05" to="\u{103D}"/>
-		<map iso="C06" to="\u{1036}"/>
+		<map iso="C05" to="\u{FDD6}"/>
+		<map iso="C06" to="\u{FDD7}"/>
 		<map iso="C07" to="\u{1032}"/>
 		<map iso="C08" to="\u{1034}"/>
 		<map iso="C09" to="\u{1033}"/>
@@ -459,8 +459,8 @@
 		<transform from="ဝ◌" to="\u{1039}ဝ"/>
 		<transform from="သသ◌" to="ဿ"/>
 		<transform from="သ\u{1039}ရ\u{1031}\u{102C}\u{103A}" to="ဪ"/>
-		<transform from="သ\u{103C}" to="ဩ"/>
 		<transform from="သ◌" to="\u{1039}သ"/>
+		<transform from="သ\u{FDD4}" to="ဩ"/>
 		<transform from="ဟ◌" to="\u{1039}ဟ"/>
 		<transform from="ဠ◌" to="\u{1039}ဠ"/>
 		<transform from="အ◌" to="\u{1039}အ"/>
@@ -509,6 +509,193 @@
 		<transform from="ဥၜ◌" to="ဉ\u{1039}ၜ"/>
 		<transform from="ဥၝ◌" to="ဉ\u{1039}ၝ"/>
 		<transform from="ဥ◌◌" to="ဉ\u{1039}◌"/>
+		<transform from="\u{102D}\u{102F}\u{FDD3}" to="\u{103B}\u{102D}\u{102F}"/>
+		<transform from="\u{102D}\u{102F}\u{FDD4}" to="\u{103C}\u{102D}\u{102F}"/>
+		<transform from="\u{102D}\u{102F}\u{FDD5}" to="\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{102D}\u{102F}\u{FDD6}" to="\u{103D}\u{102D}\u{102F}"/>
+		<transform from="\u{102D}\u{1036}\u{FDD3}" to="\u{103B}\u{102D}\u{1036}"/>
+		<transform from="\u{102D}\u{1036}\u{FDD4}" to="\u{103C}\u{102D}\u{1036}"/>
+		<transform from="\u{102D}\u{1036}\u{FDD5}" to="\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{102D}\u{1036}\u{FDD6}" to="\u{103D}\u{102D}\u{1036}"/>
+		<transform from="\u{102D}\u{1037}\u{FDD3}" to="\u{103B}\u{102D}\u{1037}"/>
+		<transform from="\u{102D}\u{1037}\u{FDD4}" to="\u{103C}\u{102D}\u{1037}"/>
+		<transform from="\u{102D}\u{1037}\u{FDD5}" to="\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{102D}\u{1037}\u{FDD6}" to="\u{103D}\u{102D}\u{1037}"/>
+		<transform from="\u{102D}\u{FDD3}" to="\u{103B}\u{102D}"/>
+		<transform from="\u{102D}\u{FDD4}" to="\u{103C}\u{102D}"/>
+		<transform from="\u{102D}\u{FDD5}" to="\u{103E}\u{102D}"/>
+		<transform from="\u{102D}\u{FDD6}" to="\u{103D}\u{102D}"/>
+		<transform from="\u{102F}\u{102F}\u{FDD3}" to="\u{103B}\u{102F}\u{102F}"/>
+		<transform from="\u{102F}\u{102F}\u{FDD4}" to="\u{103C}\u{102F}\u{102F}"/>
+		<transform from="\u{102F}\u{102F}\u{FDD5}" to="\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{102F}\u{102F}\u{FDD6}" to="\u{103D}\u{102F}\u{102F}"/>
+		<transform from="\u{102F}\u{1036}\u{FDD3}" to="\u{103B}\u{102F}\u{1036}"/>
+		<transform from="\u{102F}\u{1036}\u{FDD4}" to="\u{103C}\u{102F}\u{1036}"/>
+		<transform from="\u{102F}\u{1036}\u{FDD5}" to="\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{102F}\u{1036}\u{FDD6}" to="\u{103D}\u{102F}\u{1036}"/>
+		<transform from="\u{102F}\u{1037}\u{FDD3}" to="\u{103B}\u{102F}\u{1037}"/>
+		<transform from="\u{102F}\u{1037}\u{FDD4}" to="\u{103C}\u{102F}\u{1037}"/>
+		<transform from="\u{102F}\u{1037}\u{FDD5}" to="\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{102F}\u{1037}\u{FDD6}" to="\u{103D}\u{102F}\u{1037}"/>
+		<transform from="\u{102F}\u{FDD3}" to="\u{103B}\u{102F}"/>
+		<transform from="\u{102F}\u{FDD4}" to="\u{103C}\u{102F}"/>
+		<transform from="\u{102F}\u{FDD5}" to="\u{103E}\u{102F}"/>
+		<transform from="\u{102F}\u{FDD6}" to="\u{103D}\u{102F}"/>
+		<transform from="\u{1030}\u{FDD3}" to="\u{103B}\u{1030}"/>
+		<transform from="\u{1030}\u{FDD4}" to="\u{103C}\u{1030}"/>
+		<transform from="\u{1030}\u{FDD5}" to="\u{103E}\u{1030}"/>
+		<transform from="\u{1030}\u{FDD6}" to="\u{103D}\u{1030}"/>
+		<transform from="\u{1031}\u{102F}\u{FDD3}" to="\u{103B}\u{1031}\u{102F}"/>
+		<transform from="\u{1031}\u{102F}\u{FDD4}" to="\u{103C}\u{1031}\u{102F}"/>
+		<transform from="\u{1031}\u{102F}\u{FDD5}" to="\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{1031}\u{102F}\u{FDD6}" to="\u{103D}\u{1031}\u{102F}"/>
+		<transform from="\u{1031}\u{1036}\u{FDD3}" to="\u{103B}\u{1031}\u{1036}"/>
+		<transform from="\u{1031}\u{1036}\u{FDD4}" to="\u{103C}\u{1031}\u{1036}"/>
+		<transform from="\u{1031}\u{1036}\u{FDD5}" to="\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{1031}\u{1036}\u{FDD6}" to="\u{103D}\u{1031}\u{1036}"/>
+		<transform from="\u{1031}\u{1037}\u{FDD3}" to="\u{103B}\u{1031}\u{1037}"/>
+		<transform from="\u{1031}\u{1037}\u{FDD4}" to="\u{103C}\u{1031}\u{1037}"/>
+		<transform from="\u{1031}\u{1037}\u{FDD5}" to="\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{1031}\u{1037}\u{FDD6}" to="\u{103D}\u{1031}\u{1037}"/>
+		<transform from="\u{1032}\u{102F}\u{FDD3}" to="\u{103B}\u{1032}\u{102F}"/>
+		<transform from="\u{1032}\u{102F}\u{FDD4}" to="\u{103C}\u{1032}\u{102F}"/>
+		<transform from="\u{1032}\u{102F}\u{FDD5}" to="\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{1032}\u{102F}\u{FDD6}" to="\u{103D}\u{1032}\u{102F}"/>
+		<transform from="\u{1032}\u{1036}\u{FDD3}" to="\u{103B}\u{1032}\u{1036}"/>
+		<transform from="\u{1032}\u{1036}\u{FDD4}" to="\u{103C}\u{1032}\u{1036}"/>
+		<transform from="\u{1032}\u{1036}\u{FDD5}" to="\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{1032}\u{1036}\u{FDD6}" to="\u{103D}\u{1032}\u{1036}"/>
+		<transform from="\u{1032}\u{1037}\u{FDD3}" to="\u{103B}\u{1032}\u{1037}"/>
+		<transform from="\u{1032}\u{1037}\u{FDD4}" to="\u{103C}\u{1032}\u{1037}"/>
+		<transform from="\u{1032}\u{1037}\u{FDD5}" to="\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{1032}\u{1037}\u{FDD6}" to="\u{103D}\u{1032}\u{1037}"/>
+		<transform from="\u{1032}\u{FDD3}" to="\u{103B}\u{1032}"/>
+		<transform from="\u{1032}\u{FDD4}" to="\u{103C}\u{1032}"/>
+		<transform from="\u{1032}\u{FDD5}" to="\u{103E}\u{1032}"/>
+		<transform from="\u{1032}\u{FDD6}" to="\u{103D}\u{1032}"/>
+		<transform from="\u{1036}\u{FDD3}" to="\u{103B}\u{1036}"/>
+		<transform from="\u{1036}\u{FDD4}" to="\u{103C}\u{1036}"/>
+		<transform from="\u{1036}\u{FDD5}" to="\u{103E}\u{1036}"/>
+		<transform from="\u{1036}\u{FDD6}" to="\u{103D}\u{1036}"/>
+		<transform from="\u{1037}\u{FDD3}" to="\u{103B}\u{1037}"/>
+		<transform from="\u{1037}\u{FDD4}" to="\u{103C}\u{1037}"/>
+		<transform from="\u{1037}\u{FDD5}" to="\u{103E}\u{1037}"/>
+		<transform from="\u{1037}\u{FDD6}" to="\u{103D}\u{1037}"/>
+		<transform from="\u{1037}\u{FDD7}" to="\u{1036}\u{1037}"/>
+		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="\u{103A}\u{1031}\u{FDD5}" to="\u{103E}\u{103A}\u{1031}"/>
+		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအ\u{102C}ၚၛၜၝ◌]" from="\u{103A}\u{FDD5}" to="\u{103E}\u{103A}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{102F}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{1036}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{1037}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{102F}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{1036}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{1037}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{102F}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{1036}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{1037}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{102F}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{1036}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{1037}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}"/>
+		<transform from="\u{103C}\u{1060}\u{103D}\u{103E}\u{FDD3}" to="\u{103B}\u{103C}\u{1060}\u{103D}\u{103E}"/>
+		<transform from="\u{103D}\u{102D}\u{FDD3}" to="\u{103B}\u{103D}\u{102D}"/>
+		<transform from="\u{103D}\u{102D}\u{FDD4}" to="\u{103C}\u{103D}\u{102D}"/>
+		<transform from="\u{103D}\u{102F}\u{FDD3}" to="\u{103B}\u{103D}\u{102F}"/>
+		<transform from="\u{103D}\u{102F}\u{FDD4}" to="\u{103C}\u{103D}\u{102F}"/>
+		<transform from="\u{103D}\u{1031}\u{FDD3}" to="\u{103B}\u{103D}\u{1031}"/>
+		<transform from="\u{103D}\u{1031}\u{FDD4}" to="\u{103C}\u{103D}\u{1031}"/>
+		<transform from="\u{103D}\u{1032}\u{FDD3}" to="\u{103B}\u{103D}\u{1032}"/>
+		<transform from="\u{103D}\u{1032}\u{FDD4}" to="\u{103C}\u{103D}\u{1032}"/>
+		<transform from="\u{103D}\u{103E}\u{102D}\u{102F}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{102D}\u{102F}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{102D}\u{1036}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{103D}\u{103E}\u{102D}\u{1036}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{103D}\u{103E}\u{102D}\u{1037}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{103D}\u{103E}\u{102D}\u{1037}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{103D}\u{103E}\u{102D}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{102D}"/>
+		<transform from="\u{103D}\u{103E}\u{102D}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{102D}"/>
+		<transform from="\u{103D}\u{103E}\u{102F}\u{102F}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{102F}\u{102F}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{102F}\u{1036}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{103D}\u{103E}\u{102F}\u{1036}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{103D}\u{103E}\u{102F}\u{1037}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{103D}\u{103E}\u{102F}\u{1037}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{103D}\u{103E}\u{102F}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{102F}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{1031}\u{102F}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{1031}\u{102F}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{1031}\u{1036}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{103D}\u{103E}\u{1031}\u{1036}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{103D}\u{103E}\u{1031}\u{1037}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{103D}\u{103E}\u{1031}\u{1037}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{103D}\u{103E}\u{1031}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{1031}"/>
+		<transform from="\u{103D}\u{103E}\u{1031}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{1031}"/>
+		<transform from="\u{103D}\u{103E}\u{1032}\u{102F}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{1032}\u{102F}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{103D}\u{103E}\u{1032}\u{1036}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{103D}\u{103E}\u{1032}\u{1036}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{103D}\u{103E}\u{1032}\u{1037}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{103D}\u{103E}\u{1032}\u{1037}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{103D}\u{103E}\u{1032}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}\u{1032}"/>
+		<transform from="\u{103D}\u{103E}\u{1032}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}\u{1032}"/>
+		<transform from="\u{103D}\u{103E}\u{FDD3}" to="\u{103B}\u{103D}\u{103E}"/>
+		<transform from="\u{103D}\u{103E}\u{FDD4}" to="\u{103C}\u{103D}\u{103E}"/>
+		<transform from="\u{103D}\u{FDD3}" to="\u{103B}\u{103D}"/>
+		<transform from="\u{103D}\u{FDD4}" to="\u{103C}\u{103D}"/>
+		<transform from="\u{103E}\u{102D}\u{102F}\u{FDD3}" to="\u{103B}\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{103E}\u{102D}\u{102F}\u{FDD4}" to="\u{103C}\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{103E}\u{102D}\u{102F}\u{FDD6}" to="\u{103D}\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{103E}\u{102D}\u{1036}\u{FDD3}" to="\u{103B}\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{103E}\u{102D}\u{1036}\u{FDD4}" to="\u{103C}\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{103E}\u{102D}\u{1036}\u{FDD6}" to="\u{103D}\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{103E}\u{102D}\u{1037}\u{FDD3}" to="\u{103B}\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{103E}\u{102D}\u{1037}\u{FDD4}" to="\u{103C}\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{103E}\u{102D}\u{1037}\u{FDD6}" to="\u{103D}\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{103E}\u{102D}\u{FDD3}" to="\u{103B}\u{103E}\u{102D}"/>
+		<transform from="\u{103E}\u{102D}\u{FDD4}" to="\u{103C}\u{103E}\u{102D}"/>
+		<transform from="\u{103E}\u{102D}\u{FDD6}" to="\u{103D}\u{103E}\u{102D}"/>
+		<transform from="\u{103E}\u{102F}\u{102F}\u{FDD3}" to="\u{103B}\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{103E}\u{102F}\u{102F}\u{FDD4}" to="\u{103C}\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{103E}\u{102F}\u{102F}\u{FDD6}" to="\u{103D}\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{103E}\u{102F}\u{1036}\u{FDD3}" to="\u{103B}\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{103E}\u{102F}\u{1036}\u{FDD4}" to="\u{103C}\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{103E}\u{102F}\u{1036}\u{FDD6}" to="\u{103D}\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{103E}\u{102F}\u{1037}\u{FDD3}" to="\u{103B}\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{103E}\u{102F}\u{1037}\u{FDD4}" to="\u{103C}\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{103E}\u{102F}\u{1037}\u{FDD6}" to="\u{103D}\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{103E}\u{102F}\u{FDD3}" to="\u{103B}\u{103E}\u{102F}"/>
+		<transform from="\u{103E}\u{102F}\u{FDD4}" to="\u{103C}\u{103E}\u{102F}"/>
+		<transform from="\u{103E}\u{102F}\u{FDD6}" to="\u{103D}\u{103E}\u{102F}"/>
+		<transform from="\u{103E}\u{1031}\u{102F}\u{FDD3}" to="\u{103B}\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{103E}\u{1031}\u{102F}\u{FDD4}" to="\u{103C}\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{103E}\u{1031}\u{102F}\u{FDD6}" to="\u{103D}\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{103E}\u{1031}\u{1036}\u{FDD3}" to="\u{103B}\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{103E}\u{1031}\u{1036}\u{FDD4}" to="\u{103C}\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{103E}\u{1031}\u{1036}\u{FDD6}" to="\u{103D}\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{103E}\u{1031}\u{1037}\u{FDD3}" to="\u{103B}\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{103E}\u{1031}\u{1037}\u{FDD4}" to="\u{103C}\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{103E}\u{1031}\u{1037}\u{FDD6}" to="\u{103D}\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{103E}\u{1031}\u{FDD3}" to="\u{103B}\u{103E}\u{1031}"/>
+		<transform from="\u{103E}\u{1031}\u{FDD4}" to="\u{103C}\u{103E}\u{1031}"/>
+		<transform from="\u{103E}\u{1031}\u{FDD6}" to="\u{103D}\u{103E}\u{1031}"/>
+		<transform from="\u{103E}\u{1032}\u{102F}\u{FDD3}" to="\u{103B}\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{103E}\u{1032}\u{102F}\u{FDD4}" to="\u{103C}\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{103E}\u{1032}\u{102F}\u{FDD6}" to="\u{103D}\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{103E}\u{1032}\u{1036}\u{FDD3}" to="\u{103B}\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{103E}\u{1032}\u{1036}\u{FDD4}" to="\u{103C}\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{103E}\u{1032}\u{1036}\u{FDD6}" to="\u{103D}\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{103E}\u{1032}\u{1037}\u{FDD3}" to="\u{103B}\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{103E}\u{1032}\u{1037}\u{FDD4}" to="\u{103C}\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{103E}\u{1032}\u{1037}\u{FDD6}" to="\u{103D}\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{103E}\u{1032}\u{FDD3}" to="\u{103B}\u{103E}\u{1032}"/>
+		<transform from="\u{103E}\u{1032}\u{FDD4}" to="\u{103C}\u{103E}\u{1032}"/>
+		<transform from="\u{103E}\u{1032}\u{FDD6}" to="\u{103D}\u{103E}\u{1032}"/>
+		<transform from="\u{103E}\u{FDD3}" to="\u{103B}\u{103E}"/>
+		<transform from="\u{103E}\u{FDD4}" to="\u{103C}\u{103E}"/>
+		<transform from="\u{103E}\u{FDD6}" to="\u{103D}\u{103E}"/>
 		<transform from="၀က\u{103A}" to="ဝက\u{103A}"/>
 		<transform from="၀က◌" to="ဝ\u{1039}က"/>
 		<transform from="၀ခ\u{103A}" to="ဝခ\u{103A}"/>
@@ -581,11 +768,11 @@
 		<transform from="၀\u{102B}" to="ဝ\u{102B}"/>
 		<transform from="၀\u{102C}" to="ဝ\u{102C}"/>
 		<transform from="၀\u{102D}" to="ဝ\u{102D}"/>
-		<transform from="၀\u{102D}\u{103B}" to="ဝ\u{103B}\u{102D}"/>
-		<transform from="၀\u{102D}\u{103C}" to="ဝ\u{103C}\u{102D}"/>
-		<transform from="၀\u{102D}\u{103D}" to="ဝ\u{103D}\u{102D}"/>
-		<transform from="၀\u{102D}\u{103E}" to="ဝ\u{103E}\u{102D}"/>
 		<transform from="၀\u{102D}\u{1060}" to="ဝ\u{1060}\u{102D}"/>
+		<transform from="၀\u{102D}\u{FDD3}" to="ဝ\u{103B}\u{102D}"/>
+		<transform from="၀\u{102D}\u{FDD4}" to="ဝ\u{103C}\u{102D}"/>
+		<transform from="၀\u{102D}\u{FDD5}" to="ဝ\u{103E}\u{102D}"/>
+		<transform from="၀\u{102D}\u{FDD6}" to="ဝ\u{103D}\u{102D}"/>
 		<transform from="၀\u{102E}" to="ဝ\u{102E}"/>
 		<transform from="၀\u{102F}" to="ဝ\u{102F}"/>
 		<transform from="၀\u{1030}" to="ဝ\u{1030}"/>
@@ -593,12 +780,7 @@
 		<transform from="၀\u{1033}" to="ဝ\u{1033}"/>
 		<transform from="၀\u{1034}" to="ဝ\u{1034}"/>
 		<transform from="၀\u{1035}" to="ဝ\u{1035}"/>
-		<transform from="၀\u{1036}" to="ဝ\u{1036}"/>
 		<transform from="၀\u{103A}" to="ဝ\u{103A}"/>
-		<transform from="၀\u{103B}" to="ဝ\u{103B}"/>
-		<transform from="၀\u{103C}" to="ဝ\u{103C}"/>
-		<transform from="၀\u{103D}" to="ဝ\u{103D}"/>
-		<transform from="၀\u{103E}" to="ဝ\u{103E}"/>
 		<transform from="၀ၚ\u{103A}" to="ဝၚ\u{103A}"/>
 		<transform before="သ\u{102D}" from="၀ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ဝ"/>
 		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၀ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ဝ"/>
@@ -612,6 +794,11 @@
 		<transform from="၀\u{1060}" to="ဝ\u{1060}"/>
 		<transform from="၀◌\u{103A}" to="ဝ◌\u{103A}"/>
 		<transform from="၀◌◌" to="ဝ\u{1039}◌"/>
+		<transform from="၀\u{FDD3}" to="ဝ\u{103B}"/>
+		<transform from="၀\u{FDD4}" to="ဝ\u{103C}"/>
+		<transform from="၀\u{FDD5}" to="ဝ\u{103E}"/>
+		<transform from="၀\u{FDD6}" to="ဝ\u{103D}"/>
+		<transform from="၀\u{FDD7}" to="ဝ\u{1036}"/>
 		<transform from="၄င\u{103A}\u{1038}" to="၎င\u{103A}\u{1038}"/>
 		<transform from="၇က\u{103A}" to="ရက\u{103A}"/>
 		<transform from="၇က◌" to="ရ\u{1039}က"/>
@@ -683,19 +870,14 @@
 		<transform from="၇အ\u{103A}" to="ရအ\u{103A}"/>
 		<transform from="၇အ◌" to="ရ\u{1039}အ"/>
 		<transform from="၇\u{102C}" to="ရ\u{102C}"/>
-		<transform from="၇\u{102D}\u{103B}" to="ရ\u{103B}\u{102D}"/>
-		<transform from="၇\u{102D}\u{103C}" to="ရ\u{103C}\u{102D}"/>
-		<transform from="၇\u{102D}\u{103D}" to="ရ\u{103D}\u{102D}"/>
-		<transform from="၇\u{102D}\u{103E}" to="ရ\u{103E}\u{102D}"/>
 		<transform from="၇\u{102D}\u{1060}" to="ရ\u{1060}\u{102D}"/>
+		<transform from="၇\u{102D}\u{FDD3}" to="ရ\u{103B}\u{102D}"/>
+		<transform from="၇\u{102D}\u{FDD4}" to="ရ\u{103C}\u{102D}"/>
+		<transform from="၇\u{102D}\u{FDD5}" to="ရ\u{103E}\u{102D}"/>
+		<transform from="၇\u{102D}\u{FDD6}" to="ရ\u{103D}\u{102D}"/>
 		<transform from="၇\u{102F}" to="ရ\u{102F}"/>
 		<transform from="၇\u{1030}" to="ရ\u{1030}"/>
-		<transform from="၇\u{1036}" to="ရ\u{1036}"/>
 		<transform from="၇\u{103A}" to="ရ\u{103A}"/>
-		<transform from="၇\u{103B}" to="ရ\u{103B}"/>
-		<transform from="၇\u{103C}" to="ရ\u{103C}"/>
-		<transform from="၇\u{103D}" to="ရ\u{103D}"/>
-		<transform from="၇\u{103E}" to="ရ\u{103E}"/>
 		<transform from="၇ၚ\u{103A}" to="ရၚ\u{103A}"/>
 		<transform before="သ\u{102D}" from="၇ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ရ"/>
 		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၇ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ရ"/>
@@ -709,6 +891,11 @@
 		<transform from="၇\u{1060}" to="ရ\u{1060}"/>
 		<transform from="၇◌\u{103A}" to="ရ◌\u{103A}"/>
 		<transform from="၇◌◌" to="ရ\u{1039}◌"/>
+		<transform from="၇\u{FDD3}" to="ရ\u{103B}"/>
+		<transform from="၇\u{FDD4}" to="ရ\u{103C}"/>
+		<transform from="၇\u{FDD5}" to="ရ\u{103E}"/>
+		<transform from="၇\u{FDD6}" to="ရ\u{103D}"/>
+		<transform from="၇\u{FDD7}" to="ရ\u{1036}"/>
 		<transform from="၈က\u{103A}" to="ဂက\u{103A}"/>
 		<transform from="၈က◌" to="ဂ\u{1039}က"/>
 		<transform from="၈ခ\u{103A}" to="ဂခ\u{103A}"/>
@@ -779,19 +966,14 @@
 		<transform from="၈အ\u{103A}" to="ဂအ\u{103A}"/>
 		<transform from="၈အ◌" to="ဂ\u{1039}အ"/>
 		<transform from="၈\u{102C}" to="ဂ\u{102C}"/>
-		<transform from="၈\u{102D}\u{103B}" to="ဂ\u{103B}\u{102D}"/>
-		<transform from="၈\u{102D}\u{103C}" to="ဂ\u{103C}\u{102D}"/>
-		<transform from="၈\u{102D}\u{103D}" to="ဂ\u{103D}\u{102D}"/>
-		<transform from="၈\u{102D}\u{103E}" to="ဂ\u{103E}\u{102D}"/>
 		<transform from="၈\u{102D}\u{1060}" to="ဂ\u{1060}\u{102D}"/>
+		<transform from="၈\u{102D}\u{FDD3}" to="ဂ\u{103B}\u{102D}"/>
+		<transform from="၈\u{102D}\u{FDD4}" to="ဂ\u{103C}\u{102D}"/>
+		<transform from="၈\u{102D}\u{FDD5}" to="ဂ\u{103E}\u{102D}"/>
+		<transform from="၈\u{102D}\u{FDD6}" to="ဂ\u{103D}\u{102D}"/>
 		<transform from="၈\u{102F}" to="ဂ\u{102F}"/>
 		<transform from="၈\u{1030}" to="ဂ\u{1030}"/>
-		<transform from="၈\u{1036}" to="ဂ\u{1036}"/>
 		<transform from="၈\u{103A}" to="ဂ\u{103A}"/>
-		<transform from="၈\u{103B}" to="ဂ\u{103B}"/>
-		<transform from="၈\u{103C}" to="ဂ\u{103C}"/>
-		<transform from="၈\u{103D}" to="ဂ\u{103D}"/>
-		<transform from="၈\u{103E}" to="ဂ\u{103E}"/>
 		<transform from="၈ၚ\u{103A}" to="ဂၚ\u{103A}"/>
 		<transform before="သ\u{102D}" from="၈ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ဂ"/>
 		<transform before="[ကခဂဃစဆဇဈဉညဋဌဍဎဏတထဒဓနပဖဗဘမယရလဝသဟဠအၚၛၜၝ◌]" from="၈ၚ\u{103A}\u{1039}" to="ၚ\u{103A}\u{1039}ဂ"/>
@@ -805,12 +987,57 @@
 		<transform from="၈\u{1060}" to="ဂ\u{1060}"/>
 		<transform from="၈◌\u{103A}" to="ဂ◌\u{103A}"/>
 		<transform from="၈◌◌" to="ဂ\u{1039}◌"/>
+		<transform from="၈\u{FDD3}" to="ဂ\u{103B}"/>
+		<transform from="၈\u{FDD4}" to="ဂ\u{103C}"/>
+		<transform from="၈\u{FDD5}" to="ဂ\u{103E}"/>
+		<transform from="၈\u{FDD6}" to="ဂ\u{103D}"/>
+		<transform from="၈\u{FDD7}" to="ဂ\u{1036}"/>
 		<transform from="ၚ◌" to="\u{1039}ၚ"/>
 		<transform from="ၛ◌" to="\u{1039}ၛ"/>
 		<transform from="ၜ◌" to="\u{1039}ၜ"/>
 		<transform from="ၝ◌" to="\u{1039}ၝ"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102D}\u{102F}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102D}\u{102F}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102D}\u{1036}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102D}\u{1036}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{1036}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102D}\u{1037}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102D}\u{1037}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}\u{1037}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102D}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{102D}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102D}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{102D}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102F}\u{102F}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102F}\u{102F}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102F}\u{1036}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102F}\u{1036}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{1036}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102F}\u{1037}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102F}\u{1037}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}\u{1037}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102F}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{102F}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1031}\u{102F}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1031}\u{102F}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1031}\u{1036}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1031}\u{1036}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{1036}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1031}\u{1037}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1031}\u{1037}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}\u{1037}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1031}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{1031}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1031}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{1031}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1032}\u{102F}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1032}\u{102F}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{102F}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1032}\u{1036}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1032}\u{1036}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{1036}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1032}\u{1037}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1032}\u{1037}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}\u{1037}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1032}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}\u{1032}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{1032}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}\u{1032}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{FDD3}" to="\u{103B}\u{1060}\u{103D}\u{103E}"/>
+		<transform from="\u{1060}\u{103D}\u{103E}\u{FDD4}" to="\u{103C}\u{1060}\u{103D}\u{103E}"/>
 		<transform from="‘‘" to="“"/>
 		<transform from="’’" to="”"/>
+		<transform from="\u{FDD2}" to="၎"/>
+		<transform from="\u{FDD3}" to="\u{103B}"/>
+		<transform from="\u{FDD4}" to="\u{103C}"/>
+		<transform from="\u{FDD5}" to="\u{103E}"/>
+		<transform from="\u{FDD6}" to="\u{103D}"/>
+		<transform from="\u{FDD7}" to="\u{1036}"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<reorders>
