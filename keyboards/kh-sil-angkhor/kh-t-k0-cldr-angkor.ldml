@@ -8,39 +8,40 @@
 	</names>
 	<keyMap modifiers="">
 		<map iso="B00" to="ឮ"/>
-		<map iso="B01" to="ឋ"/>
-		<map iso="B02" to="ខ"/>
-		<map iso="B03" to="ច"/>
-		<map iso="B04" to="វ"/>
-		<map iso="B05" to="ប"/>
-		<map iso="B06" to="ន"/>
-		<map iso="B07" to="ម"/>
-		<map iso="B08" to="\u{17BB}\u{17C6}"/>
-		<map iso="B09" to="។"/>
+		<map iso="B01" to="ឋ" longPress="ឍ ្ឋ ្ឍ"/>
+		<map iso="B02" to="ខ" longPress="ឃ ្ខ ្ឃ"/>
+		<map iso="B03" to="ច" longPress="ជ ្ច ្ជ"/>
+		<map iso="B04" to="វ" longPress="្វ"/>
+		<map iso="B05" to="ប" longPress="ព ្ប ្ព"/>
+		<map iso="B06" to="ន" longPress="ណ ្ន ្ណ"/>
+		<map iso="B07" to="ម" longPress="្ម \u{17C6}"/>
+		<map iso="B08" to="\u{17BB}\u{17C6}" longPress="\u{17BB}\u{17C7} \u{17CD} \u{17D0} \u{17CF} \u{17CC} ៑ ៝ ៎"/>
+		<map iso="B09" to="។" longPress="៕ ! ?"/>
 		<map iso="B10" to="\u{17CA}"/>
-		<map iso="C01" to="\u{17B6}"/>
-		<map iso="C02" to="ស"/>
-		<map iso="C03" to="ដ"/>
-		<map iso="C04" to="ថ"/>
-		<map iso="C05" to="ង"/>
-		<map iso="C06" to="ហ"/>
+		<map iso="C01" to="\u{17B6}" longPress="\u{17B6}\u{17C6}"/>
+		<map iso="C02" to="ស" longPress="្ស ឝ ឞ"/>
+		<map iso="C03" to="ដ" longPress="ឌ ្ដ ្ឌ"/>
+		<map iso="C04" to="ថ" longPress="ធ ្ថ ្ធ"/>
+		<map iso="C05" to="ង" longPress="អ ្ង ្អ"/>
+		<map iso="C06" to="ហ" longPress="្ហ \u{17C7} ៈ"/>
 		<map iso="C07" to="\u{17D2}"/>
-		<map iso="C08" to="ក"/>
-		<map iso="C09" to="ល"/>
+		<map iso="C08" to="ក" longPress="គ ្ក ្គ"/>
+		<map iso="C09" to="ល" longPress="ឡ ្ល ឭ ឮ"/>
 		<map iso="C10" to="\u{17BE}"/>
-		<map iso="C11" to="\u{17CB}"/>
-		<map iso="D01" to="ឆ"/>
-		<map iso="D02" to="\u{17B9}"/>
-		<map iso="D03" to="\u{17C1}"/>
-		<map iso="D04" to="រ"/>
-		<map iso="D05" to="ត"/>
-		<map iso="D06" to="យ"/>
-		<map iso="D07" to="\u{17BB}"/>
-		<map iso="D08" to="\u{17B7}"/>
-		<map iso="D09" to="\u{17C4}"/>
-		<map iso="D10" to="ផ"/>
+		<map iso="C11" to="\u{17CB}" longPress="\u{17C9} \u{17CA}"/>
+		<map iso="D01" to="ឆ" longPress="ឈ ្ឆ ្ឈ"/>
+		<map iso="D02" to="\u{17B9}" longPress="\u{17BA}"/>
+		<map iso="D03" to="\u{17C1}" longPress="\u{17C2} \u{17C3} \u{17C1}\u{17C7} ឯ ឰ"/>
+		<map iso="D04" to="រ" longPress="្រ ឫ ឬ"/>
+		<map iso="D05" to="ត" longPress="ទ ្ត ្ទ"/>
+		<map iso="D06" to="យ" longPress="្យ"/>
+		<map iso="D07" to="\u{17BB}" longPress="\u{17BC} \u{17BD} ឧ ឪ ឩ ឨ"/>
+		<map iso="D08" to="\u{17B7}" longPress="\u{17B8} ឥ ឦ"/>
+		<map iso="D09" to="\u{17C4}" longPress="\u{17C5} \u{17C0} \u{17BF} \u{17C4}\u{17C7} ឱ ឲ ឳ"/>
+		<map iso="D10" to="ផ" longPress="ភ ្ផ ្ភ"/>
 		<map iso="D11" to="\u{17C0}"/>
 		<map iso="D12" to="ឪ"/>
+		<map iso="D54" to="\u{FDD5}"/>
 		<map iso="E00" to="«"/>
 		<map iso="E01" to="១"/>
 		<map iso="E02" to="២"/>
@@ -54,47 +55,12 @@
 		<map iso="E10" to="០"/>
 		<map iso="E11" to="ឥ"/>
 		<map iso="E12" to="ឲ"/>
+		<map iso="E52" to="\u{FDDB}"/>
+		<map iso="E53" to="\u{FDD3}"/>
+		<map iso="E54" to="\u{FDD7}"/>
 		<map iso="npdot" to="\u{FDD9}"/>
-		<map iso="npminus" to="\u{FDD7}"/>
-		<map iso="npplus" to="\u{FDD5}"/>
-		<map iso="npslash" to="\u{FDDB}"/>
-		<map iso="npstar" to="\u{FDD3}"/>
-		<map iso="space" to="\u{200B}"/>
-		<map iso="t17d21780" to="\u{17D2}ក"/>
-		<map iso="t17d21781" to="\u{17D2}ខ"/>
-		<map iso="t17d21782" to="\u{17D2}គ"/>
-		<map iso="t17d21783" to="\u{17D2}ឃ"/>
-		<map iso="t17d21784" to="\u{17D2}ង"/>
-		<map iso="t17d21785" to="\u{17D2}ច"/>
-		<map iso="t17d21786" to="\u{17D2}ឆ"/>
-		<map iso="t17d21787" to="\u{17D2}ជ"/>
-		<map iso="t17d21788" to="\u{17D2}ឈ"/>
-		<map iso="t17d21789" to="\u{17D2}ញ"/>
-		<map iso="t17d2178a" to="\u{17D2}ដ"/>
-		<map iso="t17d2178b" to="\u{17D2}ឋ"/>
-		<map iso="t17d2178c" to="\u{17D2}ឌ"/>
-		<map iso="t17d2178d" to="\u{17D2}ឍ"/>
-		<map iso="t17d2178e" to="\u{17D2}ណ"/>
-		<map iso="t17d2178f" to="\u{17D2}ត"/>
-		<map iso="t17d21790" to="\u{17D2}ថ"/>
-		<map iso="t17d21791" to="\u{17D2}ទ"/>
-		<map iso="t17d21792" to="\u{17D2}ធ"/>
-		<map iso="t17d21793" to="\u{17D2}ន"/>
-		<map iso="t17d21794" to="\u{17D2}ប"/>
-		<map iso="t17d21795" to="\u{17D2}ផ"/>
-		<map iso="t17d21796" to="\u{17D2}ព"/>
-		<map iso="t17d21797" to="\u{17D2}ភ"/>
-		<map iso="t17d21798" to="\u{17D2}ម"/>
-		<map iso="t17d21799" to="\u{17D2}យ"/>
-		<map iso="t17d2179a" to="\u{17D2}រ"/>
-		<map iso="t17d2179b" to="\u{17D2}ល"/>
-		<map iso="t17d2179c" to="\u{17D2}វ"/>
-		<map iso="t17d2179d" to="\u{17D2}ឝ"/>
-		<map iso="t17d2179e" to="\u{17D2}ឞ"/>
-		<map iso="t17d2179f" to="\u{17D2}ស"/>
-		<map iso="t17d217a0" to="\u{17D2}ហ"/>
-		<map iso="t17d217a1" to="\u{17D2}ឡ"/>
-		<map iso="t17d217a2" to="\u{17D2}អ"/>
+		<map iso="space" to="\u{200B}" longPress=" "/>
+		<map iso="SK01" to="ញ" longPress="្ញ"/>
 	</keyMap>
 	<keyMap modifiers="altR">
 		<map iso="B00" to="\"/>
@@ -225,6 +191,7 @@
 		<map iso="D10" to="ភ"/>
 		<map iso="D11" to="\u{17BF}"/>
 		<map iso="D12" to="ឧ"/>
+		<map iso="D54" to="\u{FDD6}"/>
 		<map iso="E00" to="»"/>
 		<map iso="E01" to="!"/>
 		<map iso="E02" to="ៗ"/>
@@ -238,11 +205,10 @@
 		<map iso="E10" to=")"/>
 		<map iso="E11" to="\u{17CC}"/>
 		<map iso="E12" to="="/>
+		<map iso="E52" to="\u{FDDC}"/>
+		<map iso="E53" to="\u{FDD4}"/>
+		<map iso="E54" to="\u{FDD8}"/>
 		<map iso="npdot" to="\u{FDDA}"/>
-		<map iso="npminus" to="\u{FDD8}"/>
-		<map iso="npplus" to="\u{FDD6}"/>
-		<map iso="npslash" to="\u{FDDC}"/>
-		<map iso="npstar" to="\u{FDD4}"/>
 		<map iso="space" to=" "/>
 	</keyMap>
 	<transforms type="simple">
@@ -1925,5 +1891,122 @@
 		<backspace from="[\u{17B6}\u{17BB}\u{17C1}\u{17C2}\u{17C4}][\u{17C6}\u{17C7}]" to="" comment="\[any\(v_combo_n\), u'\\u17c6'\] \+ \[bksp\] &gt; \[Token\('KEYWORD', u'nul'\)\]"/>
 		<backspace from="[\u{17B7}\u{17B8}\u{17B9}]\u{17C7}" to="" comment="\[any\(v_combo_r\), u'\\u17c7'\] \+ \[bksp\] &gt; \[Token\('KEYWORD', u'nul'\)\]"/>
 	</backspaces>
+	<displayMap>
+		<display display="ឹ" mapOutput="\u{17B9}"/>
+		<display display="ឺ" mapOutput="\u{17BA}"/>
+		<display display="េ" mapOutput="\u{17C1}"/>
+		<display display="ែ" mapOutput="\u{17C2}"/>
+		<display display="ៃ" mapOutput="\u{17C3}"/>
+		<display display="េះ" mapOutput="\u{17C1}\u{17C7}"/>
+		<display display="ុ" mapOutput="\u{17BB}"/>
+		<display display="ូ" mapOutput="\u{17BC}"/>
+		<display display="ួ" mapOutput="\u{17BD}"/>
+		<display display="ិ" mapOutput="\u{17B7}"/>
+		<display display="ី" mapOutput="\u{17B8}"/>
+		<display display="ោ" mapOutput="\u{17C4}"/>
+		<display display="ៅ" mapOutput="\u{17C5}"/>
+		<display display="ៀ" mapOutput="\u{17C0}"/>
+		<display display="ឿ" mapOutput="\u{17BF}"/>
+		<display display="ោះ" mapOutput="\u{17C4}\u{17C7}"/>
+		<display display="ា" mapOutput="\u{17B6}"/>
+		<display display="ាំ" mapOutput="\u{17B6}\u{17C6}"/>
+		<display display="ះ" mapOutput="\u{17C7}"/>
+		<display display="ើ" mapOutput="\u{17BE}"/>
+		<display display="ំ" mapOutput="\u{17C6}"/>
+		<display display="ុំ" mapOutput="\u{17BB}\u{17C6}"/>
+		<display display="ុះ" mapOutput="\u{17BB}\u{17C7}"/>
+		<display display="៍" mapOutput="\u{17CD}"/>
+		<display display="័" mapOutput="\u{17D0}"/>
+		<display display="៏" mapOutput="\u{17CF}"/>
+		<display display="៌" mapOutput="\u{17CC}"/>
+		<display display="់" mapOutput="\u{17CB}"/>
+		<display display="៉" mapOutput="\u{17C9}"/>
+		<display display="៊" mapOutput="\u{17CA}"/>
+		<display display="​" mapOutput="\u{200B}"/>
+		<display display="​" mapOutput=" "/>
+	</displayMap>
+	<layer modifier="">
+		<row keys="D01 D02 D03 D04 D05 D06 D07 D08 D09 D10"/>
+		<row keys="C01 C02 C03 C04 C05 C06 SK01 C08 C09 C10"/>
+		<row keys="B01 B02 B03 B04 B05 B06 B07 B08 C11 bksp"/>
+		<row keys="numlock lopt space B09 enter"/>
+		<switch iso="numlock" layer="numeric" display="១២៣"/>
+	</layer>
+	<keyMap modifiers="numeric">
+		<map iso="SK02" to="១" longPress="1"/>
+		<map iso="SK03" to="២" longPress="2"/>
+		<map iso="SK04" to="៣" longPress="3"/>
+		<map iso="SK05" to="៤" longPress="4"/>
+		<map iso="SK06" to="៥" longPress="5"/>
+		<map iso="SK07" to="៦" longPress="6"/>
+		<map iso="SK08" to="៧" longPress="7"/>
+		<map iso="SK09" to="៨" longPress="8"/>
+		<map iso="SK10" to="៩" longPress="9"/>
+		<map iso="SK11" to="០" longPress="0 ៓"/>
+		<map iso="u0040" to="@" longPress="© ®"/>
+		<map iso="u0023" to="#" longPress="№ ~"/>
+		<map iso="u17db" to="៛" longPress="$ ฿ ¢ £ ¥"/>
+		<map iso="u0026" to="&amp;"/>
+		<map iso="u0025" to="%" longPress="‰ ‱"/>
+		<map iso="u002b" to="+" longPress="- × ÷ ±"/>
+		<map iso="u003d" to="=" longPress="_ ≠"/>
+		<map iso="u002a" to="*" longPress="^"/>
+		<map iso="u003f" to="?" longPress="¿"/>
+		<map iso="u0021" to="!" longPress="¡"/>
+		<map iso="u00ab" to="«" longPress="» ‘ ’ “ ”"/>
+		<map iso="u002f" to="/" longPress="\ | ¦"/>
+		<map iso="u0028" to="(" longPress=") [ ] { }"/>
+		<map iso="u17d9" to="៙" longPress="៚ ៜ § Ø"/>
+		<map iso="u17d7" to="ៗ"/>
+		<map iso="u003c" to="&lt;" longPress="≤ &gt; ≥"/>
+		<map iso="u17d6" to="៖" longPress=": ; …"/>
+		<map iso="SK12" to="។" longPress="៕ ! ?"/>
+	</keyMap>
+	<layer modifier="numeric">
+		<row keys="SK02 SK03 SK04 SK05 SK06 SK07 SK08 SK09 SK10 SK11"/>
+		<row keys="u0040 u0023 u17db u0026 u0025 u002b u003d u002a u003f u0021"/>
+		<row keys="symbols u00ab u002f u0028 u17d9 u17d7 u003c u17d6 bksp"/>
+		<row keys="lcontrol lopt space SK12 enter"/>
+		<switch iso="symbols" layer="lunar_date" display="᧠᧡᧢"/>
+		<switch iso="lcontrol" layer="default" display="កខគ"/>
+	</layer>
+	<keyMap modifiers="lunar_date">
+		<map iso="u17f1" to="៱"/>
+		<map iso="u17f2" to="៲"/>
+		<map iso="u17f3" to="៳"/>
+		<map iso="u17f4" to="៴"/>
+		<map iso="u17f5" to="៵"/>
+		<map iso="u17f6" to="៶"/>
+		<map iso="u17f7" to="៷"/>
+		<map iso="u17f8" to="៸"/>
+		<map iso="u17f9" to="៹"/>
+		<map iso="u17f0" to="៰"/>
+		<map iso="u19e0" to="᧠" longPress="᧰"/>
+		<map iso="u19e1" to="᧡" longPress="᧱"/>
+		<map iso="u19e2" to="᧢" longPress="᧲"/>
+		<map iso="u19e3" to="᧣" longPress="᧳"/>
+		<map iso="u19e4" to="᧤" longPress="᧴"/>
+		<map iso="u19e5" to="᧥" longPress="᧵"/>
+		<map iso="u19e6" to="᧦" longPress="᧶"/>
+		<map iso="u19e7" to="᧧" longPress="᧷"/>
+		<map iso="u19e8" to="᧨" longPress="᧸"/>
+		<map iso="u19e9" to="᧩" longPress="᧹"/>
+		<map iso="u19ea" to="᧪" longPress="᧺"/>
+		<map iso="u19eb" to="᧫" longPress="᧻"/>
+		<map iso="u19ec" to="᧬" longPress="᧼"/>
+		<map iso="u19ed" to="᧭" longPress="᧽"/>
+		<map iso="u19ee" to="᧮" longPress="᧾"/>
+		<map iso="u19ef" to="᧯" longPress="᧿"/>
+		<map iso="u17d9" to="៙" longPress="៚"/>
+		<map iso="SK13" to="។" longPress="៕ ! ?"/>
+	</keyMap>
+	<layer modifier="lunar_date">
+		<row keys="u17f1 u17f2 u17f3 u17f4 u17f5 u17f6 u17f7 u17f8 u17f9 u17f0"/>
+		<row keys="u19e0 u19e1 u19e2 u19e3 u19e4 u19e5 u19e6 u19e7 u19e8 u19e9"/>
+		<row keys="numlock u19ea u19eb u19ec u19ed u19ee u19ef u17d9 bksp"/>
+		<row keys="lcontrol lopt space SK13 enter"/>
+		<switch iso="numlock" layer="numeric" display="១២៣"/>
+		<switch iso="lcontrol" layer="default" display="កខគ"/>
+	</layer>
 	<import path="khmer_angkor_import.ldml"/>
 </keyboard>
