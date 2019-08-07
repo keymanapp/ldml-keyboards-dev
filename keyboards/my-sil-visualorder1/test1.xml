@@ -31,8 +31,8 @@
     <test-sequence id="5">
 	<event key="[C01]" output="&#x200B;&#x1031;"/>
 	<event key="[C07]" output="&#x200B;&#x103C;&#x1031;"/>
-	<event key="[D01]" output="ဆြေ"/>
-	<event key="[C02]" output="ဆျြေ"/>
+	<event key="[D01]" output="&#x1006;&#x103C;&#x1031;"/>
+	<event key="[C02]" output="&#x1006;&#x103B;&#x103C;&#x1031;"/>
     </test-sequence>
 
     <test-sequence id="6">

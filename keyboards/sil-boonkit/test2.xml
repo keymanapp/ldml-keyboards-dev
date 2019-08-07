@@ -68,12 +68,6 @@
   <test-sequence id="23">
     <event key="[E12]" output="ᨩ"/>
   </test-sequence>
-  <test-sequence id="24">
-    <event key="[shift D01]" output="᪀"/>
-  </test-sequence>
-  <test-sequence id="25">
-    <event key="[shift D02]" output="ᩴ"/>
-  </test-sequence>
   <test-sequence id="26">
     <event key="[shift D03]" output="ᩏ"/>
   </test-sequence>

@@ -78,11 +78,10 @@
 		<map iso="C10" to="ᨪ"/>
 		<map iso="C11" to="\u{1A60}ᨦ"/>
 		<map iso="D01" to="᪀"/>
-		<map iso="D02" to="\u{1A74}"/>
 		<map iso="D03" to="ᩏ"/>
 		<map iso="D04" to="ᩐ"/>
 		<map iso="D05" to="ᨵ"/>
-		<map iso="D06" to="\u{E000}"/>
+		<map iso="D06" to="\u{1A74}"/>
 		<map iso="D07" to="\u{1A55}"/>
 		<map iso="D08" to="ᨱ"/>
 		<map iso="D09" to="ᩀ"/>
@@ -156,7 +155,6 @@
 		<transform from="᪇`" to="᪗"/>
 		<transform from="᪈`" to="᪘"/>
 		<transform from="᪉`" to="᪙"/>
-		<transform from="\u{E000}" to="\u{1A74}"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<reorders>

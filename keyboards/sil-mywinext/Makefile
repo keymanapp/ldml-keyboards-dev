@@ -7,6 +7,7 @@ TESTS = test1.xml
 LOCALE = my-Mymr
 OPTIONS = -C 200B
 NAME="Myanmar Windows Extended (SIL)"
+MESSAGE="This takes a while. Have a coffee!"
 
 include ../keyboards.mk
 

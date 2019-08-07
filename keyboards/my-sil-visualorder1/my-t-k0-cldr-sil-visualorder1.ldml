@@ -258,12 +258,13 @@
         <backspace from="\u1039[\u1000-\u101C\u101E\u1020\u1021\u1050\u1051\u105A-\u105D]"/>
         <backspace from="\u102B\u103A"/>
         <!-- Handle prebases -->
-        <backspace from="[\u103A-\u103F\u105E-\u1060\u1082]\u1031" to="\u1031"/>
-        <backspace from="[\u103A-\u103B\u105E-\u105F]\u103C" to="\u103C"/>
-        <backspace from="[\u103A-\u103B\u105E-\u105F]\u103C\u1031" to="\u103C\u1031"/>
+        <backspace from="[\u103A\u103B\u103D-\u103F\u105E-\u1060\u1082]\u1031" to="\u1031"/>
+        <backspace from="[\u103A\u103B\u105E-\u105F]\u103C" to="\u103C"/>
+        <backspace from="[\u103A\u103B\u105E-\u105F]\u103C\u1031" to="\u103C\u1031"/>
         <backspace from="\u1039[\u1000-\u101C\u101E\u1020\u1021\u1050\u1051\u105A-\u105D]\u1031" to="\u1031"/>
-        <backspace from="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D]\u1031" to="\uFDD1\u1031"/>
         <backspace from="\u1039[\u1000-\u101C\u101E\u1020\u1021\u1050\u1051\u105A-\u105D]\u103C" to="\u103C"/>
+        <backspace from="\u1039[\u1000-\u101C\u101E\u1020\u1021\u1050\u1051\u105A-\u105D]\u103C\u1031" to="\u103C\u1031"/>
+        <backspace from="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D]\u1031" to="\uFDD1\u1031"/>
         <backspace from="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D]\u103C" to="\uFDD1\u103C"/>
         <backspace from="[\u1000-\u102A\u103F-\u1049\u104E\u1050-\u1055\u105A-\u105D]\u103C\u1031" to="\uFDD1\u103C\u1031"/>
         <backspace from="\uFDD1\u103C\u1031" to="\uFDD1\u1031"/>

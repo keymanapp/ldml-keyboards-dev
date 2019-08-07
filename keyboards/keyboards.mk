@@ -11,6 +11,7 @@ all: tests
 
 ifneq (,$(wildcard $(KEYMAN)))
 $(LDML): $(KEYMAN) Makefile $(REORDER) $(IMPORT)
+	$(if $(MESSAGE),- echo $(MESSAGE))
 	- keyman2ldml $(if $(HAS_REORDER)$(REORDER),-r) $(if $(REORDER),-R $(REORDER)) -k $< $(if $(BASE),-b $(BASE)) $(if $(LOCALE),-L $(LOCALE)) $(if $(NAME),-N $(NAME)) $(if $(LAYOUT),-l $(LAYOUT)) $(if $(IMPORT),-i $(IMPORT)) $(if $(debug),-z 4) $(OPTIONS) $@
 endif
 
