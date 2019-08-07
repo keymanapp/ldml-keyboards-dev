@@ -25,7 +25,7 @@
 		<map iso="C08" to="क"/>
 		<map iso="C09" to="ल"/>
 		<map iso="C10" to="\u{094D}"/>
-		<map iso="D01" to="\u{FDD2}"/>
+		<map iso="D01" to="\u{E000}"/>
 		<map iso="D02" to="व"/>
 		<map iso="D03" to="\u{0947}"/>
 		<map iso="D04" to="र"/>
@@ -51,7 +51,7 @@
 		<map iso="B06" to="ञ"/>
 		<map iso="B09" to="."/>
 		<map iso="C06" to="ऽ"/>
-		<map iso="C07" to="\u{FDD6}"/>
+		<map iso="C07" to="\u{E004}"/>
 		<map iso="C09" to="\u{0943}"/>
 		<map iso="C10" to="\u{0903}"/>
 		<map iso="D11" to="\u{093C}"/>
@@ -80,8 +80,8 @@
 		<map iso="B05" to="भ"/>
 		<map iso="B06" to="ण"/>
 		<map iso="B07" to="ङ"/>
-		<map iso="B09" to="\u{FDD5}"/>
-		<map iso="C01" to="\u{FDD4}"/>
+		<map iso="B09" to="\u{E003}"/>
+		<map iso="C01" to="\u{E002}"/>
 		<map iso="C02" to="ष"/>
 		<map iso="C03" to="ध"/>
 		<map iso="C04" to="ठ"/>
@@ -90,7 +90,7 @@
 		<map iso="C07" to="झ"/>
 		<map iso="C08" to="ख"/>
 		<map iso="C09" to="\u{094D}र"/>
-		<map iso="D01" to="\u{FDD3}"/>
+		<map iso="D01" to="\u{E001}"/>
 		<map iso="D02" to="द\u{094D}व"/>
 		<map iso="D03" to="\u{0948}"/>
 		<map iso="D05" to="थ"/>
@@ -970,84 +970,84 @@
 		<transform from="॥।" to="…"/>
 		<transform before="ह\u{094D}" from="\u{200D}" to="\u{200C}"/>
 		<transform from="–-" to="—"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{FDD2}" to="q"/>
-		<transform from="\u{FDD2}र\u{094D}\u{093F}" to="ऋ"/>
-		<transform from="\u{FDD2}\u{093E}" to="अ"/>
-		<transform from="\u{FDD2}\u{093F}" to="इ"/>
-		<transform from="\u{FDD2}\u{0940}" to="ई"/>
-		<transform from="\u{FDD2}\u{0941}" to="उ"/>
-		<transform from="\u{FDD2}\u{0942}" to="ऊ"/>
-		<transform from="\u{FDD2}\u{0943}" to="ऋ"/>
-		<transform from="\u{FDD2}\u{0947}" to="ए"/>
-		<transform from="\u{FDD2}\u{0948}" to="ऐ"/>
-		<transform from="\u{FDD2}\u{094B}" to="ओ"/>
-		<transform from="\u{FDD2}\u{094C}" to="औ"/>
-		<transform from="\u{FDD2}\u{FDD4}" to="आ"/>
-		<transform from="\u{FDD3}:" to=":"/>
-		<transform from="\u{FDD3}R" to="R"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{FDD3}" to="Q"/>
-		<transform from="\u{FDD3}\u{0901}" to="`"/>
-		<transform from="\u{FDD3}\u{0902}" to="~"/>
-		<transform from="\u{FDD3}क" to="k"/>
-		<transform from="\u{FDD3}क\u{094D}ष" to="Z"/>
-		<transform from="\u{FDD3}ख" to="K"/>
-		<transform from="\u{FDD3}ग" to="g"/>
-		<transform from="\u{FDD3}घ" to="G"/>
-		<transform from="\u{FDD3}ङ" to="M"/>
-		<transform from="\u{FDD3}च" to="c"/>
-		<transform from="\u{FDD3}छ" to="C"/>
-		<transform from="\u{FDD3}ज" to="j"/>
-		<transform from="\u{FDD3}झ" to="J"/>
-		<transform from="\u{FDD3}ट" to="f"/>
-		<transform from="\u{FDD3}ठ" to="F"/>
-		<transform from="\u{FDD3}ड" to="v"/>
-		<transform from="\u{FDD3}ढ" to="V"/>
-		<transform from="\u{FDD3}ण" to="N"/>
-		<transform from="\u{FDD3}त" to="t"/>
-		<transform from="\u{FDD3}थ" to="T"/>
-		<transform from="\u{FDD3}द" to="d"/>
-		<transform from="\u{FDD3}द\u{094D}व" to="W"/>
-		<transform from="\u{FDD3}ध" to="D"/>
-		<transform from="\u{FDD3}न" to="n"/>
-		<transform from="\u{FDD3}प" to="p"/>
-		<transform from="\u{FDD3}फ" to="P"/>
-		<transform from="\u{FDD3}ब" to="b"/>
-		<transform from="\u{FDD3}भ" to="B"/>
-		<transform from="\u{FDD3}म" to="m"/>
-		<transform from="\u{FDD3}य" to="y"/>
-		<transform from="\u{FDD3}र" to="r"/>
-		<transform from="\u{FDD3}ल" to="l"/>
-		<transform from="\u{FDD3}व" to="w"/>
-		<transform from="\u{FDD3}श" to="z"/>
-		<transform from="\u{FDD3}ष" to="S"/>
-		<transform from="\u{FDD3}स" to="s"/>
-		<transform from="\u{FDD3}ह" to="h"/>
-		<transform from="\u{FDD3}\u{093E}" to="a"/>
-		<transform from="\u{FDD3}\u{093F}" to="i"/>
-		<transform from="\u{FDD3}\u{0940}" to="I"/>
-		<transform from="\u{FDD3}\u{0941}" to="u"/>
-		<transform from="\u{FDD3}\u{0942}" to="U"/>
-		<transform from="\u{FDD3}\u{0947}" to="e"/>
-		<transform from="\u{FDD3}\u{0948}" to="E"/>
-		<transform from="\u{FDD3}\u{094B}" to="o"/>
-		<transform from="\u{FDD3}\u{094C}" to="O"/>
-		<transform from="\u{FDD3}\u{094D}" to=";"/>
-		<transform from="\u{FDD3}\u{094D}य" to="Y"/>
-		<transform from="\u{FDD3}\u{094D}र" to="L"/>
-		<transform from="\u{FDD3}\u{094D}\u{200C}" to="X"/>
-		<transform from="\u{FDD3}\u{094D}\u{200D}" to="x"/>
-		<transform from="\u{FDD3}ॐ" to="H"/>
-		<transform from="\u{FDD3}\u{FDD2}" to="q"/>
-		<transform from="\u{FDD3}\u{FDD3}" to="Q"/>
-		<transform from="\u{FDD3}\u{FDD4}" to="A"/>
-		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{FDD4}" to="A"/>
-		<transform from="\u{FDD4}" to="\u{093E}"/>
-		<transform from="\u{FDD5}" to="\u{093C}"/>
-		<transform from="\u{FDD6}" to="ज\u{094D}ञ"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{E000}" to="q"/>
+		<transform from="\u{E000}र\u{094D}\u{093F}" to="ऋ"/>
+		<transform from="\u{E000}\u{093E}" to="अ"/>
+		<transform from="\u{E000}\u{093F}" to="इ"/>
+		<transform from="\u{E000}\u{0940}" to="ई"/>
+		<transform from="\u{E000}\u{0941}" to="उ"/>
+		<transform from="\u{E000}\u{0942}" to="ऊ"/>
+		<transform from="\u{E000}\u{0943}" to="ऋ"/>
+		<transform from="\u{E000}\u{0947}" to="ए"/>
+		<transform from="\u{E000}\u{0948}" to="ऐ"/>
+		<transform from="\u{E000}\u{094B}" to="ओ"/>
+		<transform from="\u{E000}\u{094C}" to="औ"/>
+		<transform from="\u{E000}\u{E002}" to="आ"/>
+		<transform from="\u{E001}:" to=":"/>
+		<transform from="\u{E001}R" to="R"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{E001}" to="Q"/>
+		<transform from="\u{E001}\u{0901}" to="`"/>
+		<transform from="\u{E001}\u{0902}" to="~"/>
+		<transform from="\u{E001}क" to="k"/>
+		<transform from="\u{E001}क\u{094D}ष" to="Z"/>
+		<transform from="\u{E001}ख" to="K"/>
+		<transform from="\u{E001}ग" to="g"/>
+		<transform from="\u{E001}घ" to="G"/>
+		<transform from="\u{E001}ङ" to="M"/>
+		<transform from="\u{E001}च" to="c"/>
+		<transform from="\u{E001}छ" to="C"/>
+		<transform from="\u{E001}ज" to="j"/>
+		<transform from="\u{E001}झ" to="J"/>
+		<transform from="\u{E001}ट" to="f"/>
+		<transform from="\u{E001}ठ" to="F"/>
+		<transform from="\u{E001}ड" to="v"/>
+		<transform from="\u{E001}ढ" to="V"/>
+		<transform from="\u{E001}ण" to="N"/>
+		<transform from="\u{E001}त" to="t"/>
+		<transform from="\u{E001}थ" to="T"/>
+		<transform from="\u{E001}द" to="d"/>
+		<transform from="\u{E001}द\u{094D}व" to="W"/>
+		<transform from="\u{E001}ध" to="D"/>
+		<transform from="\u{E001}न" to="n"/>
+		<transform from="\u{E001}प" to="p"/>
+		<transform from="\u{E001}फ" to="P"/>
+		<transform from="\u{E001}ब" to="b"/>
+		<transform from="\u{E001}भ" to="B"/>
+		<transform from="\u{E001}म" to="m"/>
+		<transform from="\u{E001}य" to="y"/>
+		<transform from="\u{E001}र" to="r"/>
+		<transform from="\u{E001}ल" to="l"/>
+		<transform from="\u{E001}व" to="w"/>
+		<transform from="\u{E001}श" to="z"/>
+		<transform from="\u{E001}ष" to="S"/>
+		<transform from="\u{E001}स" to="s"/>
+		<transform from="\u{E001}ह" to="h"/>
+		<transform from="\u{E001}\u{093E}" to="a"/>
+		<transform from="\u{E001}\u{093F}" to="i"/>
+		<transform from="\u{E001}\u{0940}" to="I"/>
+		<transform from="\u{E001}\u{0941}" to="u"/>
+		<transform from="\u{E001}\u{0942}" to="U"/>
+		<transform from="\u{E001}\u{0947}" to="e"/>
+		<transform from="\u{E001}\u{0948}" to="E"/>
+		<transform from="\u{E001}\u{094B}" to="o"/>
+		<transform from="\u{E001}\u{094C}" to="O"/>
+		<transform from="\u{E001}\u{094D}" to=";"/>
+		<transform from="\u{E001}\u{094D}य" to="Y"/>
+		<transform from="\u{E001}\u{094D}र" to="L"/>
+		<transform from="\u{E001}\u{094D}\u{200C}" to="X"/>
+		<transform from="\u{E001}\u{094D}\u{200D}" to="x"/>
+		<transform from="\u{E001}ॐ" to="H"/>
+		<transform from="\u{E001}\u{E000}" to="q"/>
+		<transform from="\u{E001}\u{E001}" to="Q"/>
+		<transform from="\u{E001}\u{E002}" to="A"/>
+		<transform before="[:;ABCDEFGHIJKLMNOPQRSTUVWXYZ`abcdefghijklmnopqrstuvwxyz~]" from="\u{E002}" to="A"/>
+		<transform from="\u{E002}" to="\u{093E}"/>
+		<transform from="\u{E003}" to="\u{093C}"/>
+		<transform from="\u{E004}" to="ज\u{094D}ञ"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<transforms type="final">
-		<transform from="[\u{FDD2}\u{FDD3}]" to=""/>
+		<transform from="[\u{E000}\u{E001}]" to=""/>
 	</transforms>
 	<backspaces>
 		<backspace from="0" to="०"/>

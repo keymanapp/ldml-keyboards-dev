@@ -31,7 +31,7 @@
 		<map iso="D03" to="እ"/>
 		<map iso="D04" to="ረ"/>
 		<map iso="D05" to="ተ"/>
-		<map iso="D06" to="\u{FDD2}"/>
+		<map iso="D06" to="\u{E000}"/>
 		<map iso="D07" to="ኡ"/>
 		<map iso="D08" to="ኢ"/>
 		<map iso="D09" to="ኦ"/>
@@ -42,9 +42,9 @@
 		<map iso="B02" to="ዐ"/>
 		<map iso="B03" to="ጨ"/>
 		<map iso="B04" to="ፀ"/>
-		<map iso="B05" to="\u{FDD5}"/>
+		<map iso="B05" to="\u{E003}"/>
 		<map iso="B06" to="ኘ"/>
-		<map iso="B07" to="\u{FDD4}"/>
+		<map iso="B07" to="\u{E002}"/>
 		<map iso="C01" to="ዓ"/>
 		<map iso="C02" to="ሸ"/>
 		<map iso="C03" to="ዸ"/>
@@ -58,7 +58,7 @@
 		<map iso="D01" to="ቐ"/>
 		<map iso="D02" to="ኧ"/>
 		<map iso="D03" to="ዕ"/>
-		<map iso="D04" to="\u{FDD3}"/>
+		<map iso="D04" to="\u{E001}"/>
 		<map iso="D05" to="ጠ"/>
 		<map iso="D06" to="የ"/>
 		<map iso="D07" to="ዑ"/>
@@ -88,7 +88,7 @@
 		<transform from="ሀእ" to="ህ"/>
 		<transform from="ሀኦ" to="ሆ"/>
 		<transform from="ሀዖ" to="ሇ"/>
-		<transform from="ሀ\u{FDD2}" to="ሄ"/>
+		<transform from="ሀ\u{E000}" to="ሄ"/>
 		<transform from="ለኡ" to="ሉ"/>
 		<transform from="ለኢ" to="ሊ"/>
 		<transform from="ለኣ" to="ላ"/>
@@ -96,7 +96,7 @@
 		<transform from="ለኦ" to="ሎ"/>
 		<transform from="ለኧ" to="ሏ"/>
 		<transform from="ለዖ" to="ⶀ"/>
-		<transform from="ለ\u{FDD2}" to="ሌ"/>
+		<transform from="ለ\u{E000}" to="ሌ"/>
 		<transform from="ሐ\[" to="ኸ"/>
 		<transform from="ሐኡ" to="ሑ"/>
 		<transform from="ሐኢ" to="ሒ"/>
@@ -104,7 +104,7 @@
 		<transform from="ሐእ" to="ሕ"/>
 		<transform from="ሐኦ" to="ሖ"/>
 		<transform from="ሐኧ" to="ሗ"/>
-		<transform from="ሐ\u{FDD2}" to="ሔ"/>
+		<transform from="ሐ\u{E000}" to="ሔ"/>
 		<transform from="መ\)" to="\u{E496}"/>
 		<transform from="መኡ" to="ሙ"/>
 		<transform from="መኢ" to="ሚ"/>
@@ -113,19 +113,19 @@
 		<transform from="መኦ" to="ሞ"/>
 		<transform from="መኧ" to="ሟ"/>
 		<transform from="መዖ" to="ⶁ"/>
-		<transform from="መ\u{FDD2}" to="ሜ"/>
+		<transform from="መ\u{E000}" to="ሜ"/>
 		<transform from="ሟኡ" to="ᎃ"/>
 		<transform from="ሟኢ" to="ᎁ"/>
 		<transform from="ሟኦ" to="ᎀ"/>
 		<transform from="ሟዒ" to="ፙ"/>
-		<transform from="ሟ\u{FDD2}" to="ᎂ"/>
+		<transform from="ሟ\u{E000}" to="ᎂ"/>
 		<transform from="ሠኡ" to="ሡ"/>
 		<transform from="ሠኢ" to="ሢ"/>
 		<transform from="ሠኣ" to="ሣ"/>
 		<transform from="ሠእ" to="ሥ"/>
 		<transform from="ሠኦ" to="ሦ"/>
 		<transform from="ሠኧ" to="ሧ"/>
-		<transform from="ሠ\u{FDD2}" to="ሤ"/>
+		<transform from="ሠ\u{E000}" to="ሤ"/>
 		<transform from="ረኡ" to="ሩ"/>
 		<transform from="ረኢ" to="ሪ"/>
 		<transform from="ረኣ" to="ራ"/>
@@ -133,7 +133,7 @@
 		<transform from="ረኦ" to="ሮ"/>
 		<transform from="ረኧ" to="ሯ"/>
 		<transform from="ረዖ" to="ⶂ"/>
-		<transform from="ረ\u{FDD2}" to="ሬ"/>
+		<transform from="ረ\u{E000}" to="ሬ"/>
 		<transform from="ሯዒ" to="ፘ"/>
 		<transform from="ሰ=" to="\u{AB05}"/>
 		<transform from="ሰ\[" to="ሠ"/>
@@ -144,7 +144,7 @@
 		<transform from="ሰኦ" to="ሶ"/>
 		<transform from="ሰኧ" to="ሷ"/>
 		<transform from="ሰዖ" to="ⶃ"/>
-		<transform from="ሰ\u{FDD2}" to="ሴ"/>
+		<transform from="ሰ\u{E000}" to="ሴ"/>
 		<transform from="ሸ#" to="ⶠ"/>
 		<transform from="ሸኡ" to="ሹ"/>
 		<transform from="ሸኢ" to="ሺ"/>
@@ -153,7 +153,7 @@
 		<transform from="ሸኦ" to="ሾ"/>
 		<transform from="ሸኧ" to="ሿ"/>
 		<transform from="ሸዖ" to="ⶄ"/>
-		<transform from="ሸ\u{FDD2}" to="ሼ"/>
+		<transform from="ሸ\u{E000}" to="ሼ"/>
 		<transform from="ቀ#" to="ⷀ"/>
 		<transform from="ቀኡ" to="ቁ"/>
 		<transform from="ቀኢ" to="ቂ"/>
@@ -162,22 +162,22 @@
 		<transform from="ቀኦ" to="ቆ"/>
 		<transform from="ቀኧ" to="ቋ"/>
 		<transform from="ቀዖ" to="ቇ"/>
-		<transform from="ቀ\u{FDD2}" to="ቄ"/>
+		<transform from="ቀ\u{E000}" to="ቄ"/>
 		<transform from="ቋኡ" to="ቍ"/>
 		<transform from="ቋኢ" to="ቊ"/>
 		<transform from="ቋኦ" to="ቈ"/>
-		<transform from="ቋ\u{FDD2}" to="ቌ"/>
+		<transform from="ቋ\u{E000}" to="ቌ"/>
 		<transform from="ቐኡ" to="ቑ"/>
 		<transform from="ቐኢ" to="ቒ"/>
 		<transform from="ቐኣ" to="ቓ"/>
 		<transform from="ቐእ" to="ቕ"/>
 		<transform from="ቐኦ" to="ቖ"/>
 		<transform from="ቐኧ" to="ቛ"/>
-		<transform from="ቐ\u{FDD2}" to="ቔ"/>
+		<transform from="ቐ\u{E000}" to="ቔ"/>
 		<transform from="ቛኡ" to="ቝ"/>
 		<transform from="ቛኢ" to="ቚ"/>
 		<transform from="ቛኦ" to="ቘ"/>
-		<transform from="ቛ\u{FDD2}" to="ቜ"/>
+		<transform from="ቛ\u{E000}" to="ቜ"/>
 		<transform from="በኡ" to="ቡ"/>
 		<transform from="በኢ" to="ቢ"/>
 		<transform from="በኣ" to="ባ"/>
@@ -185,18 +185,18 @@
 		<transform from="በኦ" to="ቦ"/>
 		<transform from="በኧ" to="ቧ"/>
 		<transform from="በዖ" to="ⶅ"/>
-		<transform from="በ\u{FDD2}" to="ቤ"/>
+		<transform from="በ\u{E000}" to="ቤ"/>
 		<transform from="ቧኡ" to="ᎇ"/>
 		<transform from="ቧኢ" to="ᎅ"/>
 		<transform from="ቧኦ" to="ᎄ"/>
-		<transform from="ቧ\u{FDD2}" to="ᎆ"/>
+		<transform from="ቧ\u{E000}" to="ᎆ"/>
 		<transform from="ቨኡ" to="ቩ"/>
 		<transform from="ቨኢ" to="ቪ"/>
 		<transform from="ቨኣ" to="ቫ"/>
 		<transform from="ቨእ" to="ቭ"/>
 		<transform from="ቨኦ" to="ቮ"/>
 		<transform from="ቨኧ" to="ቯ"/>
-		<transform from="ቨ\u{FDD2}" to="ቬ"/>
+		<transform from="ቨ\u{E000}" to="ቬ"/>
 		<transform from="ተ\[" to="ጸ"/>
 		<transform from="ተኡ" to="ቱ"/>
 		<transform from="ተኢ" to="ቲ"/>
@@ -205,7 +205,7 @@
 		<transform from="ተኦ" to="ቶ"/>
 		<transform from="ተኧ" to="ቷ"/>
 		<transform from="ተዖ" to="ⶆ"/>
-		<transform from="ተ\u{FDD2}" to="ቴ"/>
+		<transform from="ተ\u{E000}" to="ቴ"/>
 		<transform from="ቸ#" to="ⶨ"/>
 		<transform from="ቸኡ" to="ቹ"/>
 		<transform from="ቸኢ" to="ቺ"/>
@@ -214,7 +214,7 @@
 		<transform from="ቸኦ" to="ቾ"/>
 		<transform from="ቸኧ" to="ቿ"/>
 		<transform from="ቸዖ" to="ⶇ"/>
-		<transform from="ቸ\u{FDD2}" to="ቼ"/>
+		<transform from="ቸ\u{E000}" to="ቼ"/>
 		<transform from="ኀኡ" to="ኁ"/>
 		<transform from="ኀኢ" to="ኂ"/>
 		<transform from="ኀኣ" to="ኃ"/>
@@ -222,11 +222,11 @@
 		<transform from="ኀኦ" to="ኆ"/>
 		<transform from="ኀኧ" to="ኋ"/>
 		<transform from="ኀዖ" to="ኇ"/>
-		<transform from="ኀ\u{FDD2}" to="ኄ"/>
+		<transform from="ኀ\u{E000}" to="ኄ"/>
 		<transform from="ኋኡ" to="ኍ"/>
 		<transform from="ኋኢ" to="ኊ"/>
 		<transform from="ኋኦ" to="ኈ"/>
-		<transform from="ኋ\u{FDD2}" to="ኌ"/>
+		<transform from="ኋ\u{E000}" to="ኌ"/>
 		<transform from="ነኡ" to="ኑ"/>
 		<transform from="ነኢ" to="ኒ"/>
 		<transform from="ነኣ" to="ና"/>
@@ -234,7 +234,7 @@
 		<transform from="ነኦ" to="ኖ"/>
 		<transform from="ነኧ" to="ኗ"/>
 		<transform from="ነዖ" to="ⶈ"/>
-		<transform from="ነ\u{FDD2}" to="ኔ"/>
+		<transform from="ነ\u{E000}" to="ኔ"/>
 		<transform from="ኘኡ" to="ኙ"/>
 		<transform from="ኘኢ" to="ኚ"/>
 		<transform from="ኘኣ" to="ኛ"/>
@@ -242,7 +242,7 @@
 		<transform from="ኘኦ" to="ኞ"/>
 		<transform from="ኘኧ" to="ኟ"/>
 		<transform from="ኘዖ" to="ⶉ"/>
-		<transform from="ኘ\u{FDD2}" to="ኜ"/>
+		<transform from="ኘ\u{E000}" to="ኜ"/>
 		<transform from="አኡ" to="ኡ"/>
 		<transform from="አኢ" to="ኢ"/>
 		<transform from="አኣ" to="ኣ"/>
@@ -250,9 +250,9 @@
 		<transform from="አኦ" to="ኦ"/>
 		<transform from="አኧ" to="ኧ"/>
 		<transform from="አዖ" to="ⶊ"/>
-		<transform from="አ\u{FDD2}" to="ኤ"/>
+		<transform from="አ\u{E000}" to="ኤ"/>
 		<transform before="ሯ" from="[ኡኢ]" to=""/>
-		<transform before="[ሟሯቋቛቧኋኳዃጓጟፏፗ]" from="[ኣኦዒ\u{FDD2}]" to=""/>
+		<transform before="[ሟሯቋቛቧኋኳዃጓጟፏፗ]" from="[ኣኦዒ\u{E000}]" to=""/>
 		<transform before="[\u{AB05}\u{AB0D}\u{AB15}]" from="እ" to=""/>
 		<transform before="[ሀወዐየፀⶠⶨⶰⶸⷀⷈⷐⷘ\u{AB05}\u{AB0D}\u{AB15}\u{AB20}\u{AB28}]" from="ኧ" to=""/>
 		<transform from="ከ#" to="ⷈ"/>
@@ -263,11 +263,11 @@
 		<transform from="ከኦ" to="ኮ"/>
 		<transform from="ከኧ" to="ኳ"/>
 		<transform from="ከዖ" to="ኯ"/>
-		<transform from="ከ\u{FDD2}" to="ኬ"/>
+		<transform from="ከ\u{E000}" to="ኬ"/>
 		<transform from="ኳኡ" to="ኵ"/>
 		<transform from="ኳኢ" to="ኲ"/>
 		<transform from="ኳኦ" to="ኰ"/>
-		<transform from="ኳ\u{FDD2}" to="ኴ"/>
+		<transform from="ኳ\u{E000}" to="ኴ"/>
 		<transform from="ኸ#" to="ⷐ"/>
 		<transform from="ኸኡ" to="ኹ"/>
 		<transform from="ኸኢ" to="ኺ"/>
@@ -275,24 +275,24 @@
 		<transform from="ኸእ" to="ኽ"/>
 		<transform from="ኸኦ" to="ኾ"/>
 		<transform from="ኸኧ" to="ዃ"/>
-		<transform from="ኸ\u{FDD2}" to="ኼ"/>
+		<transform from="ኸ\u{E000}" to="ኼ"/>
 		<transform from="ዃኡ" to="ዅ"/>
 		<transform from="ዃኢ" to="ዂ"/>
 		<transform from="ዃኦ" to="ዀ"/>
-		<transform from="ዃ\u{FDD2}" to="ዄ"/>
+		<transform from="ዃ\u{E000}" to="ዄ"/>
 		<transform from="ወኡ" to="ዉ"/>
 		<transform from="ወኢ" to="ዊ"/>
 		<transform from="ወኣ" to="ዋ"/>
 		<transform from="ወእ" to="ው"/>
 		<transform from="ወኦ" to="ዎ"/>
 		<transform from="ወዖ" to="ዏ"/>
-		<transform from="ወ\u{FDD2}" to="ዌ"/>
+		<transform from="ወ\u{E000}" to="ዌ"/>
 		<transform from="ዐኡ" to="ዑ"/>
 		<transform from="ዐኢ" to="ዒ"/>
 		<transform from="ዐኣ" to="ዓ"/>
 		<transform from="ዐእ" to="ዕ"/>
 		<transform from="ዐኦ" to="ዖ"/>
-		<transform from="ዐ\u{FDD2}" to="ዔ"/>
+		<transform from="ዐ\u{E000}" to="ዔ"/>
 		<transform before="[ቛቧኋኳዃጓጟፗ]" from="ዒ" to=""/>
 		<transform before="[ሐሠቐቨኸዐዠጘጸፈⶠⶨⶰⶸⷀⷈⷐⷘ\u{AB05}\u{AB0D}\u{AB15}\u{AB20}\u{AB28}]" from="ዖ" to=""/>
 		<transform from="ዘ=" to="\u{AB15}"/>
@@ -303,7 +303,7 @@
 		<transform from="ዘኦ" to="ዞ"/>
 		<transform from="ዘኧ" to="ዟ"/>
 		<transform from="ዘዖ" to="ⶋ"/>
-		<transform from="ዘ\u{FDD2}" to="ዜ"/>
+		<transform from="ዘ\u{E000}" to="ዜ"/>
 		<transform from="ዠ#" to="ⶰ"/>
 		<transform from="ዠኡ" to="ዡ"/>
 		<transform from="ዠኢ" to="ዢ"/>
@@ -311,14 +311,14 @@
 		<transform from="ዠእ" to="ዥ"/>
 		<transform from="ዠኦ" to="ዦ"/>
 		<transform from="ዠኧ" to="ዧ"/>
-		<transform from="ዠ\u{FDD2}" to="ዤ"/>
+		<transform from="ዠ\u{E000}" to="ዤ"/>
 		<transform from="የኡ" to="ዩ"/>
 		<transform from="የኢ" to="ዪ"/>
 		<transform from="የኣ" to="ያ"/>
 		<transform from="የእ" to="ይ"/>
 		<transform from="የኦ" to="ዮ"/>
 		<transform from="የዖ" to="ዯ"/>
-		<transform from="የ\u{FDD2}" to="ዬ"/>
+		<transform from="የ\u{E000}" to="ዬ"/>
 		<transform from="ደኡ" to="ዱ"/>
 		<transform from="ደኢ" to="ዲ"/>
 		<transform from="ደኣ" to="ዳ"/>
@@ -326,7 +326,7 @@
 		<transform from="ደኦ" to="ዶ"/>
 		<transform from="ደኧ" to="ዷ"/>
 		<transform from="ደዖ" to="ⶌ"/>
-		<transform from="ደ\u{FDD2}" to="ዴ"/>
+		<transform from="ደ\u{E000}" to="ዴ"/>
 		<transform from="ዸ=" to="\u{AB0D}"/>
 		<transform from="ዸኡ" to="ዹ"/>
 		<transform from="ዸኢ" to="ዺ"/>
@@ -335,7 +335,7 @@
 		<transform from="ዸኦ" to="ዾ"/>
 		<transform from="ዸኧ" to="ዿ"/>
 		<transform from="ዸዖ" to="ⶍ"/>
-		<transform from="ዸ\u{FDD2}" to="ዼ"/>
+		<transform from="ዸ\u{E000}" to="ዼ"/>
 		<transform from="ጀኡ" to="ጁ"/>
 		<transform from="ጀኢ" to="ጂ"/>
 		<transform from="ጀኣ" to="ጃ"/>
@@ -343,7 +343,7 @@
 		<transform from="ጀኦ" to="ጆ"/>
 		<transform from="ጀኧ" to="ጇ"/>
 		<transform from="ጀዖ" to="ⶎ"/>
-		<transform from="ጀ\u{FDD2}" to="ጄ"/>
+		<transform from="ጀ\u{E000}" to="ጄ"/>
 		<transform from="ገ#" to="ⷘ"/>
 		<transform from="ገኡ" to="ጉ"/>
 		<transform from="ገኢ" to="ጊ"/>
@@ -352,22 +352,22 @@
 		<transform from="ገኦ" to="ጎ"/>
 		<transform from="ገኧ" to="ጓ"/>
 		<transform from="ገዖ" to="ጏ"/>
-		<transform from="ገ\u{FDD2}" to="ጌ"/>
+		<transform from="ገ\u{E000}" to="ጌ"/>
 		<transform from="ጓኡ" to="ጕ"/>
 		<transform from="ጓኢ" to="ጒ"/>
 		<transform from="ጓኦ" to="ጐ"/>
-		<transform from="ጓ\u{FDD2}" to="ጔ"/>
+		<transform from="ጓ\u{E000}" to="ጔ"/>
 		<transform from="ጘኡ" to="ጙ"/>
 		<transform from="ጘኢ" to="ጚ"/>
 		<transform from="ጘኣ" to="ጛ"/>
 		<transform from="ጘእ" to="ጝ"/>
 		<transform from="ጘኦ" to="ጞ"/>
 		<transform from="ጘኧ" to="ጟ"/>
-		<transform from="ጘ\u{FDD2}" to="ጜ"/>
+		<transform from="ጘ\u{E000}" to="ጜ"/>
 		<transform from="ጟኡ" to="ⶖ"/>
 		<transform from="ጟኢ" to="ⶔ"/>
 		<transform from="ጟኦ" to="ⶓ"/>
-		<transform from="ጟ\u{FDD2}" to="ⶕ"/>
+		<transform from="ጟ\u{E000}" to="ⶕ"/>
 		<transform from="ጠ\[" to="ፀ"/>
 		<transform from="ጠኡ" to="ጡ"/>
 		<transform from="ጠኢ" to="ጢ"/>
@@ -376,7 +376,7 @@
 		<transform from="ጠኦ" to="ጦ"/>
 		<transform from="ጠኧ" to="ጧ"/>
 		<transform from="ጠዖ" to="ⶏ"/>
-		<transform from="ጠ\u{FDD2}" to="ጤ"/>
+		<transform from="ጠ\u{E000}" to="ጤ"/>
 		<transform from="ጨ#" to="ⶸ"/>
 		<transform from="ጨ=" to="\u{AB20}"/>
 		<transform from="ጨኡ" to="ጩ"/>
@@ -386,7 +386,7 @@
 		<transform from="ጨኦ" to="ጮ"/>
 		<transform from="ጨኧ" to="ጯ"/>
 		<transform from="ጨዖ" to="ⶐ"/>
-		<transform from="ጨ\u{FDD2}" to="ጬ"/>
+		<transform from="ጨ\u{E000}" to="ጬ"/>
 		<transform from="ጰ=" to="\u{AB28}"/>
 		<transform from="ጰኡ" to="ጱ"/>
 		<transform from="ጰኢ" to="ጲ"/>
@@ -395,33 +395,33 @@
 		<transform from="ጰኦ" to="ጶ"/>
 		<transform from="ጰኧ" to="ጷ"/>
 		<transform from="ጰዖ" to="ⶑ"/>
-		<transform from="ጰ\u{FDD2}" to="ጴ"/>
+		<transform from="ጰ\u{E000}" to="ጴ"/>
 		<transform from="ጸኡ" to="ጹ"/>
 		<transform from="ጸኢ" to="ጺ"/>
 		<transform from="ጸኣ" to="ጻ"/>
 		<transform from="ጸእ" to="ጽ"/>
 		<transform from="ጸኦ" to="ጾ"/>
 		<transform from="ጸኧ" to="ጿ"/>
-		<transform from="ጸ\u{FDD2}" to="ጼ"/>
+		<transform from="ጸ\u{E000}" to="ጼ"/>
 		<transform from="ፀኡ" to="ፁ"/>
 		<transform from="ፀኢ" to="ፂ"/>
 		<transform from="ፀኣ" to="ፃ"/>
 		<transform from="ፀእ" to="ፅ"/>
 		<transform from="ፀኦ" to="ፆ"/>
 		<transform from="ፀዖ" to="ፇ"/>
-		<transform from="ፀ\u{FDD2}" to="ፄ"/>
+		<transform from="ፀ\u{E000}" to="ፄ"/>
 		<transform from="ፈኡ" to="ፉ"/>
 		<transform from="ፈኢ" to="ፊ"/>
 		<transform from="ፈኣ" to="ፋ"/>
 		<transform from="ፈእ" to="ፍ"/>
 		<transform from="ፈኦ" to="ፎ"/>
 		<transform from="ፈኧ" to="ፏ"/>
-		<transform from="ፈ\u{FDD2}" to="ፌ"/>
+		<transform from="ፈ\u{E000}" to="ፌ"/>
 		<transform from="ፏኡ" to="ᎋ"/>
 		<transform from="ፏኢ" to="ᎉ"/>
 		<transform from="ፏኦ" to="ᎈ"/>
 		<transform from="ፏዒ" to="ፚ"/>
-		<transform from="ፏ\u{FDD2}" to="ᎊ"/>
+		<transform from="ፏ\u{E000}" to="ᎊ"/>
 		<transform from="ፐኡ" to="ፑ"/>
 		<transform from="ፐኢ" to="ፒ"/>
 		<transform from="ፐኣ" to="ፓ"/>
@@ -429,11 +429,11 @@
 		<transform from="ፐኦ" to="ፖ"/>
 		<transform from="ፐኧ" to="ፗ"/>
 		<transform from="ፐዖ" to="ⶒ"/>
-		<transform from="ፐ\u{FDD2}" to="ፔ"/>
+		<transform from="ፐ\u{E000}" to="ፔ"/>
 		<transform from="ፗኡ" to="ᎏ"/>
 		<transform from="ፗኢ" to="ᎍ"/>
 		<transform from="ፗኦ" to="ᎌ"/>
-		<transform from="ፗ\u{FDD2}" to="ᎎ"/>
+		<transform from="ፗ\u{E000}" to="ᎎ"/>
 		<transform from="፡-" to="፦"/>
 		<transform from="፡፡" to="፨"/>
 		<transform from="፡።" to="፧"/>
@@ -472,79 +472,79 @@
 		<transform from="ⶠኣ" to="ⶣ"/>
 		<transform from="ⶠእ" to="ⶥ"/>
 		<transform from="ⶠኦ" to="ⶦ"/>
-		<transform from="ⶠ\u{FDD2}" to="ⶤ"/>
+		<transform from="ⶠ\u{E000}" to="ⶤ"/>
 		<transform from="ⶨኡ" to="ⶩ"/>
 		<transform from="ⶨኢ" to="ⶪ"/>
 		<transform from="ⶨኣ" to="ⶫ"/>
 		<transform from="ⶨእ" to="ⶭ"/>
 		<transform from="ⶨኦ" to="ⶮ"/>
-		<transform from="ⶨ\u{FDD2}" to="ⶬ"/>
+		<transform from="ⶨ\u{E000}" to="ⶬ"/>
 		<transform from="ⶰኡ" to="ⶱ"/>
 		<transform from="ⶰኢ" to="ⶲ"/>
 		<transform from="ⶰኣ" to="ⶳ"/>
 		<transform from="ⶰእ" to="ⶵ"/>
 		<transform from="ⶰኦ" to="ⶶ"/>
-		<transform from="ⶰ\u{FDD2}" to="ⶴ"/>
+		<transform from="ⶰ\u{E000}" to="ⶴ"/>
 		<transform from="ⶸኡ" to="ⶹ"/>
 		<transform from="ⶸኢ" to="ⶺ"/>
 		<transform from="ⶸኣ" to="ⶻ"/>
 		<transform from="ⶸእ" to="ⶽ"/>
 		<transform from="ⶸኦ" to="ⶾ"/>
-		<transform from="ⶸ\u{FDD2}" to="ⶼ"/>
+		<transform from="ⶸ\u{E000}" to="ⶼ"/>
 		<transform from="ⷀኡ" to="ⷁ"/>
 		<transform from="ⷀኢ" to="ⷂ"/>
 		<transform from="ⷀኣ" to="ⷃ"/>
 		<transform from="ⷀእ" to="ⷅ"/>
 		<transform from="ⷀኦ" to="ⷆ"/>
-		<transform from="ⷀ\u{FDD2}" to="ⷄ"/>
+		<transform from="ⷀ\u{E000}" to="ⷄ"/>
 		<transform from="ⷈኡ" to="ⷉ"/>
 		<transform from="ⷈኢ" to="ⷊ"/>
 		<transform from="ⷈኣ" to="ⷋ"/>
 		<transform from="ⷈእ" to="ⷍ"/>
 		<transform from="ⷈኦ" to="ⷎ"/>
-		<transform from="ⷈ\u{FDD2}" to="ⷌ"/>
+		<transform from="ⷈ\u{E000}" to="ⷌ"/>
 		<transform from="ⷐኡ" to="ⷑ"/>
 		<transform from="ⷐኢ" to="ⷒ"/>
 		<transform from="ⷐኣ" to="ⷓ"/>
 		<transform from="ⷐእ" to="ⷕ"/>
 		<transform from="ⷐኦ" to="ⷖ"/>
-		<transform from="ⷐ\u{FDD2}" to="ⷔ"/>
+		<transform from="ⷐ\u{E000}" to="ⷔ"/>
 		<transform from="ⷘኡ" to="ⷙ"/>
 		<transform from="ⷘኢ" to="ⷚ"/>
 		<transform from="ⷘኣ" to="ⷛ"/>
 		<transform from="ⷘእ" to="ⷝ"/>
 		<transform from="ⷘኦ" to="ⷞ"/>
-		<transform from="ⷘ\u{FDD2}" to="ⷜ"/>
+		<transform from="ⷘ\u{E000}" to="ⷜ"/>
 		<transform from="\u{AB05}ኡ" to="\u{AB01}"/>
 		<transform from="\u{AB05}ኢ" to="\u{AB02}"/>
 		<transform from="\u{AB05}ኣ" to="\u{AB03}"/>
 		<transform from="\u{AB05}ኦ" to="\u{AB06}"/>
-		<transform from="\u{AB05}\u{FDD2}" to="\u{AB04}"/>
+		<transform from="\u{AB05}\u{E000}" to="\u{AB04}"/>
 		<transform from="\u{AB0D}ኡ" to="\u{AB09}"/>
 		<transform from="\u{AB0D}ኢ" to="\u{AB0A}"/>
 		<transform from="\u{AB0D}ኣ" to="\u{AB0B}"/>
 		<transform from="\u{AB0D}ኦ" to="\u{AB0E}"/>
-		<transform from="\u{AB0D}\u{FDD2}" to="\u{AB0C}"/>
+		<transform from="\u{AB0D}\u{E000}" to="\u{AB0C}"/>
 		<transform from="\u{AB15}ኡ" to="\u{AB11}"/>
 		<transform from="\u{AB15}ኢ" to="\u{AB12}"/>
 		<transform from="\u{AB15}ኣ" to="\u{AB13}"/>
 		<transform from="\u{AB15}ኦ" to="\u{AB16}"/>
-		<transform from="\u{AB15}\u{FDD2}" to="\u{AB14}"/>
+		<transform from="\u{AB15}\u{E000}" to="\u{AB14}"/>
 		<transform from="\u{AB20}ኡ" to="\u{AB21}"/>
 		<transform from="\u{AB20}ኢ" to="\u{AB22}"/>
 		<transform from="\u{AB20}ኣ" to="\u{AB23}"/>
 		<transform from="\u{AB20}እ" to="\u{AB25}"/>
 		<transform from="\u{AB20}ኦ" to="\u{AB26}"/>
-		<transform from="\u{AB20}\u{FDD2}" to="\u{AB24}"/>
+		<transform from="\u{AB20}\u{E000}" to="\u{AB24}"/>
 		<transform from="\u{AB28}ኡ" to="\u{AB29}"/>
 		<transform from="\u{AB28}ኢ" to="\u{AB2A}"/>
 		<transform from="\u{AB28}ኣ" to="\u{AB2B}"/>
 		<transform from="\u{AB28}እ" to="\u{AB2D}"/>
 		<transform from="\u{AB28}ኦ" to="\u{AB2E}"/>
-		<transform from="\u{AB28}\u{FDD2}" to="\u{AB2C}"/>
+		<transform from="\u{AB28}\u{E000}" to="\u{AB2C}"/>
 		<transform from="\u{E494}0" to="፼"/>
 	</transforms>
 	<transforms type="final">
-		<transform from="[\u{FDD2}\u{FDD3}\u{FDD4}\u{FDD5}]" to=""/>
+		<transform from="[\u{E000}\u{E001}\u{E002}\u{E003}]" to=""/>
 	</transforms>
 </keyboard>

@@ -6,6 +6,6 @@
             <event key="[C07]" output="\u1a20\u1a6f\u1a62\u1a75"/>
             <event key="[C08]" output="\u1a20\u1a6f\u1a62\u1a63\u1a75" skip="bksp" />
             <event key="[D09]" output="\u1a20\u1a6f\u1a62\u1a63\u1a75\u1a36"/>
-            <event key="[E00]" output="\u1a20\u1a6f\u1a62\u1a63\u1a60\u1a36\u1a75" skip="bksp" />
+            <event key="[E00]" output="\u1a20\u1a6f\u1a62\u1a63\u1a60\u1a75\u1a36" skip="bksp" />
     </test-sequence>
 </ldmlkeytests>

@@ -24,7 +24,7 @@
 		<map iso="C07" to="জ"/>
 		<map iso="C08" to="ক"/>
 		<map iso="C09" to="ল"/>
-		<map iso="D01" to="\u{FDD2}"/>
+		<map iso="D01" to="\u{E000}"/>
 		<map iso="D02" to="ৱ"/>
 		<map iso="D03" to="\u{09C7}"/>
 		<map iso="D04" to="র"/>
@@ -71,29 +71,29 @@
 		<map iso="E00" to="\u{0982}"/>
 	</keyMap>
 	<transforms type="simple">
-		<transform from="\u{FDD2}:" to="\u{0983}"/>
-		<transform from="\u{FDD2}L" to="ৡ"/>
-		<transform from="\u{FDD2}।" to="৷"/>
-		<transform from="\u{FDD2}ড" to="ড়"/>
-		<transform from="\u{FDD2}ঢ" to="ঢ়"/>
-		<transform from="\u{FDD2}ত" to="ৎ"/>
-		<transform from="\u{FDD2}য" to="য়"/>
-		<transform from="\u{FDD2}র" to="ৰ"/>
-		<transform from="\u{FDD2}ল" to="ঌ"/>
-		<transform from="\u{FDD2}\u{09BE}" to="অ"/>
-		<transform from="\u{FDD2}\u{09BF}" to="ই"/>
-		<transform from="\u{FDD2}\u{09C0}" to="ঈ"/>
-		<transform from="\u{FDD2}\u{09C1}" to="উ"/>
-		<transform from="\u{FDD2}\u{09C2}" to="ঊ"/>
-		<transform from="\u{FDD2}\u{09C3}" to="ৠ"/>
-		<transform from="\u{FDD2}\u{09C7}" to="এ"/>
-		<transform from="\u{FDD2}\u{09C8}" to="ঐ"/>
-		<transform from="\u{FDD2}\u{09CB}" to="ও"/>
-		<transform from="\u{FDD2}\u{09CC}" to="ঔ"/>
-		<transform from="\u{FDD2}\u{09D7}" to="আ"/>
+		<transform from="\u{E000}:" to="\u{0983}"/>
+		<transform from="\u{E000}L" to="ৡ"/>
+		<transform from="\u{E000}।" to="৷"/>
+		<transform from="\u{E000}ড" to="ড়"/>
+		<transform from="\u{E000}ঢ" to="ঢ়"/>
+		<transform from="\u{E000}ত" to="ৎ"/>
+		<transform from="\u{E000}য" to="য়"/>
+		<transform from="\u{E000}র" to="ৰ"/>
+		<transform from="\u{E000}ল" to="ঌ"/>
+		<transform from="\u{E000}\u{09BE}" to="অ"/>
+		<transform from="\u{E000}\u{09BF}" to="ই"/>
+		<transform from="\u{E000}\u{09C0}" to="ঈ"/>
+		<transform from="\u{E000}\u{09C1}" to="উ"/>
+		<transform from="\u{E000}\u{09C2}" to="ঊ"/>
+		<transform from="\u{E000}\u{09C3}" to="ৠ"/>
+		<transform from="\u{E000}\u{09C7}" to="এ"/>
+		<transform from="\u{E000}\u{09C8}" to="ঐ"/>
+		<transform from="\u{E000}\u{09CB}" to="ও"/>
+		<transform from="\u{E000}\u{09CC}" to="ঔ"/>
+		<transform from="\u{E000}\u{09D7}" to="আ"/>
 	</transforms>
 	<import path="shared/reorders.xml"/>
 	<transforms type="final">
-		<transform from="\u{FDD2}" to=""/>
+		<transform from="\u{E000}" to=""/>
 	</transforms>
 </keyboard>
