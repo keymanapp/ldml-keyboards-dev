@@ -52,8 +52,8 @@ class Trie(object):
         self.backwards = [Node()]
         self.singles = {}
 
-    def append(self, fr, before, after, rule, filterlist=None, normal=None):
-        frc = parse(fr, normal=normal) if fr is not None else UnicodeSetSequence()
+    def append(self, fr, before, after, rule, filterlist=None, normal=None, limit=1000000):
+        frc = parse(fr, normal=normal, keepws=True) if fr is not None else UnicodeSetSequence()
         beforec = parse(before, normal=normal) if before is not None else UnicodeSetSequence()
         afterc = parse(after, normal=normal) if after is not None else UnicodeSetSequence()
         if filterlist is not None:
@@ -81,6 +81,11 @@ class Trie(object):
         while len(self.forwards) <= len(beforec):
             self.forwards.append(Node())
         jobs = [(self.forwards[len(beforec)], None, 0)]
+        numnodes = 1
+        for cset in beforec + frc + afterc:
+            numnodes *= len(cset)
+        if numnodes > limit:
+            raise MemoryError("Too complex expression: {} < {} > {}".format(str(beforec), str(frc), str(afterc)))
         for i in range(2):
             ocount = len(beforec)
             length = len(frc)

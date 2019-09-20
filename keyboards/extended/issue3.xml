@@ -1,0 +1,49 @@
+<?xml version="1.0"?>
+<ldmlkeytests>
+    <test-sequence id="1">
+        <event key="[C11]" output="" skp="bksp"/>
+        <event key="[D03]" output="e&#x0301;" skip="bksp normal"/>
+    </test-sequence>
+    <test-sequence id="2">
+        <event key="[shift E01]" output="!"/>
+        <event key="[E06]" output="!6"/>
+    </test-sequence>
+    <test-sequence id="3">
+        <event key="[shift B05]" output="B"/>
+        <event key="[C12]" output="B\"/>
+        <event key="[C12]" output="B\\"/>
+        <event key="[C12]" output="B\\\"/>
+        <event key="[C12]" output="B\\\\"/>
+    </test-sequence>
+    <test-sequence id="4">
+        <event key="[shift C01]" output="A"/>
+        <event key="[C12]" output="A\"/>
+        <event key="[shift E11]" output="A\_"/>
+        <event key="[B09]" output="A\_."/>
+        <event key="[shift E11]" output="A\_._"/>
+        <event key="[shift C04]" output="A\_._F"/>
+    </test-sequence>
+    <test-sequence id="5">
+        <event key="[shift D05]" output="T"/>
+        <event key="[shift E11]" output="T_"/>
+        <event key="[shift C04]" output="T_F"/>
+        <event key="[shift E11]" output="T_F_"/>
+        <event key="[B09]" output="T_F_."/>
+    </test-sequence>
+    <test-sequence id="6">
+        <event key="[B02]" output="x"/>
+        <event key="[shift E11]" output="x_"/>
+        <event key="[B09]" output="x_."/>
+        <event key="[shift E11]" output="x_._"/>
+        <event key="[B09]" output="x_._."/>
+        <event key="[C12]" output="x_._.\"/>
+    </test-sequence>
+    <test-sequence id="7">
+        <event key="[B02]" output="x"/>
+        <event key="[shift E11]" output="x_"/>
+        <event key="[shift C11]" output="x_" skip="bksp"/>
+        <event key="[shift E11]" output="x_&quot;_" skip="bksp"/>
+        <event key="[B09]" output="x_&quot;_."/>
+    </test-sequence>
+
+</ldmlkeytests>

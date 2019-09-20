@@ -73,7 +73,7 @@ MatchResult = namedtuple('MatchResult', ['offset', 'length', 'rule', 'morep'])
 
 class Keyboard(object):
 
-    def __init__(self, path, imported=False):
+    def __init__(self, path, imported=False, limit=1000000):
         self.keyboards = []
         self.fallbacks = []
         self.modifiers = {}
@@ -82,11 +82,11 @@ class Keyboard(object):
         self.history = []
         self.context = ""
         self.fname = path
-        self.parse(path)
+        self.parse(path, limit=limit)
         self.tracing = False
         self.imported = imported
 
-    def _addrules(self, element, transform, onlyifin=None, context=None):
+    def _addrules(self, element, transform, limit, onlyifin=None, context=None):
         if transform not in self.transforms:
             self.transforms[transform] = Rules(transform)
         rules = self.transforms[transform]
@@ -96,9 +96,9 @@ class Keyboard(object):
             e = SyntaxError("")
         for m in element:
             em = ESyntaxError(m, "", self.xmlParser, self.fname)
-            rules.append(m, onlyifin, error=em)
+            rules.append(m, onlyifin, error=em, limit=limit)
 
-    def parse(self, fname, imported=False):
+    def parse(self, fname, imported=False, limit=1000000):
         '''Read and parse an LDML keyboard layout file'''
         self.fname = fname
         xmlParser = EXMLParser()
@@ -132,15 +132,15 @@ class Keyboard(object):
                 self.fallbacks.append(c.get('fallback', "").split(' '))
             elif c.tag == 'transforms':
                 t = c.get('type')
-                self._addrules(c, t, context=c)
+                self._addrules(c, t, limit, context=c)
             elif c.tag == 'reorders':
                 if self.keyboards:
                     testset = set(x for m in self.keyboards for v in m.values() for x in v)
                 else:
                     testset = None
-                self._addrules(c, 'reorder', onlyifin=testset, context=c)
+                self._addrules(c, 'reorder', limit, onlyifin=testset, context=c)
             elif c.tag == 'backspaces':
-                self._addrules(c, 'backspace', context=c)
+                self._addrules(c, 'backspace', limit, context=c)
             elif c.tag == 'settings' and not imported:
                 self.settings.update(c.attrib)
             elif c.tag == 'import':
@@ -199,7 +199,7 @@ class Keyboard(object):
         if isinstance(context, Context):
             ctxt = context
         elif context is not None:
-            ctxt = self._ContextFromString(ud.normalize('NFD', context+chars))
+            ctxt = self._ContextFromString(ud.normalize('NFD', context), chars)
         elif not len(self.history):
             ctxt = Context(chars, tracing=self.tracing)
         else:
@@ -245,19 +245,16 @@ class Keyboard(object):
                     return UnicodeSets.struni(self.keyboards[find][k])
         return ""
 
-    def _ContextFromString(self, s):
+    def _ContextFromString(self, s, chars):
         '''Create a new processing context from a string '''
         res = Context(tracing=self.tracing)
-        (before, changed, _) = self._unreorder(s)
-        olds = before + changed
-        for t in ('reorder', 'final'):
-            res.set_output(t, olds)
-            res.set_offset(t, len(before))
-            res.set_partial(t, len(olds) - len(before))
-        for t in ('base', 'simple'):
-            res.set_output(t, olds)
-            res.set_offset(t, len(olds))
-        res.trace("Initialise with string " + repr(s))
+        for t in ('base', 'simple', 'reorder', 'final'):
+            res.set_output(t, s)
+            res.set_offset(t, 0)
+            res.set_partial(t, len(s))
+        res.set_output('base', res.output('base') + chars)
+        res.set_offset('base', res.offset('base') + len(chars))
+        res.trace("Initialise with string " + repr(s) + " and chars " + repr(chars))
         return res
 
     def process_empty(self, context, ruleset):
@@ -275,16 +272,15 @@ class Keyboard(object):
         if handleSettings:
             partial = self.settings.get('transformPartial', "") == "hide"   # partial match
             fail = self.settings.get('transformFailure', "") == 'omit'      # unmatched sequence
-            fallback = self.settings.get('fallback', "") == 'omit'          # unmatched first char
         else:
             partial = False
             fail = False
-            fallback = False
 
         context.reset_output(ruleset)
         curr = context.offset(ruleset)
         instr = context.input(ruleset)
         ind = context.index(ruleset)
+        seen = set([instr])
         while curr < len(instr):
             r = trans.match(instr, curr)
             if r.rule is not None:
@@ -308,11 +304,15 @@ class Keyboard(object):
                     # and put back onto input.
                     if t.morep:
                         instr = context.put_back(ruleset, instr, r.length, curr, i)
-                        curr = 0
-                        break
+                        if instr not in seen:
+                            curr = 0
+                            seen.add(instr)
+                            break
+                        else:
+                            context.partial_results(ruleset, r.length, newout, rule=r.rule)
                 else:   # if nothing put back, simply advance over what we have used
                     curr += r.length
-            elif r.length == 0 and not r.morep and not fallback:     # abject failure
+            elif r.length == 0 and not r.morep:     # abject failure
                 context.results(ruleset, curr, 1, instr[curr:curr+1], comment="Fallthrough")
                 curr += 1
             elif r.morep and not partial:       # if incomplete match then store partial results
@@ -606,7 +606,7 @@ class Rules(object):
         self.type = ruletype
         self.trie = trie.Trie()
 
-    def append(self, transform, onlyifin=None, error=None):
+    def append(self, transform, onlyifin=None, error=None, limit=1000000):
         '''Insert or transform element into this set of rules'''
         f = unicode(transform.get('from'))
         if f is None and error is not None:
@@ -617,7 +617,8 @@ class Rules(object):
         if error is not None:
             r.context = (error.filename, error.lineno, error.offset)
         self.trie.append(f, transform.get('before', ''), \
-                transform.get('after', ''), r, filterlist=onlyifin, normal="NFD")
+                transform.get('after', ''), r, filterlist=onlyifin, normal="NFD", \
+                limit=limit)
 
     def match(self, s, ind=0):
         '''Finds the merged rule for the given passed in string.
@@ -818,9 +819,10 @@ def main():
     parser.add_argument('file',help='Input LDML keyboard file')
     parser.add_argument('-t','--testfile',help='File of key sequences, one per line')
     parser.add_argument('-o','--outfile',help='Where to send results')
+    parser.add_argument('-L','--limit',type=int,default=1000000,help='Maximum trie size')
     args = parser.parse_args()
 
-    kbd = Keyboard(args.file)
+    kbd = Keyboard(args.file, limit=args.limit)
     if args.outfile:
         outfile = codecs.open(args.outfile, "w", encoding="utf-8")
     else:

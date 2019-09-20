@@ -1,5 +1,6 @@
 QUIET=t
 subdirs = balochi-phonetic \
+        extended \
         easy-chakma \
         gff-tigrinya-eritrea \
         kh-sil-angkhor \

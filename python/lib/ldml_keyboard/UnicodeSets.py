@@ -194,13 +194,14 @@ def struni(s, groups=None):
     return s
 
 
-def parse(s, normal=None):
+def parse(s, normal=None, keepws=False):
     '''Returns a sequence of UnicodeSet'''
     # convert escapes
     s = hexescre.sub(lambda m:escapechar(unichr(int(m.group(m.lastindex), 16))), s)
     # don't flatten \\ escapes here since we need to differentiate with action chars {}[]
     s = hexgre.sub(lambda m:"{"+u"".join(escapechar(unichr(int(x, 16))) for x in m.group(1).split())+"}", s)
-    s = s.replace(' ', '')
+    if not keepws:
+        s = s.replace(' ', '')
     res = UnicodeSetSequence()
     i = 0
     currgroup = -1
