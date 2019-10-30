@@ -234,7 +234,10 @@ class Keyboard(object):
         '''Apply the appropriate keyMap to a keystroke to get some chars'''
         modstr = " ".join(sorted(x.lower() for x in mods))
         if modstr not in self.modifiers:
-            return ""
+            if self.settings.get('fallback', '') == "omit":
+                return ""
+            else:
+                modstr = ""
         kind = self.modifiers[modstr]
         if k in self.keyboards[kind]:
             return UnicodeSets.struni(self.keyboards[kind][k])
@@ -288,11 +291,17 @@ class Keyboard(object):
                     context.results(ruleset, curr, r.offset, instr[curr:curr+r.offset], rule=r.rule)
                     r.length -= r.offset
                     curr += r.offset
+                if context.partial(ruleset) > 0:
+                    context.partial_to_output(ruleset)
                 if getattr(r.rule, 'error', 0):
                     context.error = True
                 newout = ud.normalize('NFD', UnicodeSets.struni(getattr(r.rule, 'to', "")))
-                # output replaced string
-                context.results(ruleset, curr, r.length, newout, rule=r.rule)
+                # output replaced string, perhaps
+                if r.morep:
+                    if not partial:
+                        context.partial_results(ruleset, r.length, newout, rule=r.rule)
+                else:
+                    context.results(ruleset, curr, r.length, newout, rule=r.rule)
                 if ruleset == 'final':
                     curr += r.length
                     continue    # no reprocessing of final type transforms
@@ -548,6 +557,7 @@ class Keyboard(object):
         nslen = len(simple)
         # recalculate output as a result
         (pref, res, post) = list(self._reorder(simple, end=len(simple), ruleset='reorder'))[0]
+        res += post
         # Find the point at which a change occurred in unreordered text
         for i in range(nslen):
             if simple[i] != instr[olen + i]:
@@ -695,6 +705,10 @@ class Context(object):
     def __str__(self):
         return self.outputs[-1]
 
+    def __repr__(self):
+        return "[" + ", ".join("{}@{}+{}".format(self.outputs[i], self.offsets[i],
+                        self.partials[i]) for i in range(len(self.outputs))) + "]"
+
     def index(self, name='base'):
         return self.slotnames[name]
 
@@ -713,6 +727,9 @@ class Context(object):
         '''Returns the offset into input string that isn't in stables'''
         return self.offsets[self.slotnames[name]]
 
+    def partial(self, name='simple'):
+        return self.partials[self.index(name)]
+
     def set_output(self, name, s):
         self.outputs[self.index(name)] = s
 
@@ -725,18 +742,23 @@ class Context(object):
     def reset_output(self, name):
         '''Prepare output based on stables ready for more output to be added'''
         ind = self.index(name)
-        if self.partials[ind]:
-            self.outputs[ind] = self.outputs[ind][:-self.partials[ind]]
-            self.partials[ind] = 0
+        for i in range(ind, len(self.outputs)):
+            if self.partials[i]:
+                self.outputs[i] = self.outputs[i][:-self.partials[i]]
+                self.partials[i] = 0
         self.trace("Resetting {} by {} to {}, probably on transform entry".format(name, \
                     self.partials[ind], unicode(self.outputs[ind]).encode('unicode_escape')))
 
     def backup_to(self, name, index):
         '''Resets input and all subsequent outputs to given index'''
         ind = self.index(name)
-        diff = self.offsets[ind] - index
+        diff = self.offsets[ind] + self.partials[ind] - index
         for i in range(ind, len(self.outputs)):
-            self.offsets[i] -= diff
+            if diff > self.partials[i]:
+                self.offsets[i] -= min(diff - self.partials[i], self.offsets[i])
+                self.partials[i] = 0
+            else:
+                self.partials[i] -= diff
             self.outputs[i] = self.outputs[i][:-diff]
 
     def partial_results(self, name, length, res, rule=None, comment=None):
@@ -756,6 +778,11 @@ class Context(object):
         else:
             self.partials[ind] += len(res)
         self.trace_replacement("Consumed", length, name, res, rule=rule, comment=comment)
+
+    def partial_to_output(self, name):
+        ind = self.index(name)
+        self.offsets[ind] += self.partials[ind]
+        self.partials[ind] = 0
 
     def replace_end(self, name, backup, res, rule=None, comment=None):
         '''Backup specified number of characters and replace with given string'''

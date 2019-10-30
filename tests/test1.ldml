@@ -1,6 +1,14 @@
 <?xml version="1.0"?>
 <keyboard>
     <import path="shared/en-us-win.xml"/>
+    <transforms type="simple">
+        <!-- From issue #2 -->
+        <!--transform from="B" to="β"/--> <!-- U+03b2 GREEK SMALL LETTER BETA -->
+        <transform from="B\\" to="ʙ"/> <!-- U+0299 LATIN LETTER SMALL CAPITAL B -->
+        <transform from="B\\\\" to = "B"/>
+        <!--transform from="a~" to = "a\u0303"/--><!--to="ã"/--> <!-- U+00E3 LATIN SMALL LETTER A WITH TILDE -->
+        <transform from="A\\_._F" to="Ậ"/> <!-- U+1EAC LATIN CAPITAL LETTER A WITH CIRCUMFLEX AND DOT BELOW -->
+    </transforms>
     <reorders>
         <reorder from="x" tertiary="1"/>
         <reorder from="y" tertiary="2"/>
@@ -12,7 +20,7 @@
         <reorder from="e" order="5" prebase="true"/>
         <reorder from="h" order="7"/>
 
-        <reorder from="x" before="B" tertiary="3"/>
+        <reorder from="x" before="B" tertiary="3"/>     <!-- this breaks default backspace handling -->
         <reorder from="fG" order="6" tertiary_base="true"/>
     </reorders>
 </keyboard>

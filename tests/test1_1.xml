@@ -19,7 +19,7 @@
         <event key="[D06]" output="Byx" skip="bksp"/>
         <event key="[C04]" output="Byxf"/>
         <event key="[shift C05]" output="ByxfG" skip="bksp"/>
-        <event key="[C06]" output="ByxfGh"/>
+        <event key="[C06]" output="ByxfGh" skip="bksp"/>
         <event key="[C01]" output="ByxafGh" skip="bksp"/>
         <event key="[D06]" output="ByxafGyh" skip="bksp"/>
         <event key="[B02]" output="ByxafGxyh" skip="bksp"/>
@@ -35,5 +35,22 @@
         <event key="[shift B03]" output="C"/>
         <event key="[D03]" output="C&#x200B;e"/>
         <event key="[shift C03]" output="CDe"/>
-    </test-sequence> 
+    </test-sequence>
+
+    <test-sequence id="issue2.1">
+        <event key="[shift B05]" output="B"/>
+        <event key="[C12]" output="ʙ" skip="bksp"/>
+        <event key="[C12]" output="B" skip="bksp"/>
+        <event key="[C12]" output="ʙ" skip="bksp"/>
+        <event key="[C12]" output="B" skip="bksp"/>
+    </test-sequence>
+
+    <test-sequence id="issue2.2">
+        <event key="[shift C01]" output="A"/>
+        <event key="[C12]" output="A\"/>
+        <event key="[shift E11]" output="A\_"/>
+        <event key="[B09]" output="A\_."/>
+        <event key="[shift E11]" output="A\_._"/>
+        <event key="[shift C04]" output="Ậ" skip="bksp"/>
+    </test-sequence>
 </ldmlkeytests>
