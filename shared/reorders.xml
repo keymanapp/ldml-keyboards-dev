@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <keyboard>
     <reorders>
-        <!-- Unknowns \u0315 \u031A \u0345 \u034F \u0358 \u035C \u035D \u035E \u035F \u0360 \u0361 \u0362 \u059A \u05AD \u05AE \u0D4E \u18A9 \u1B3B \u1DCD \u1DF6 \u1DF7 \u1DF8 \u1DFC \u302B \u302C \u302D \uA926 \uA927 \uA928 \uA929 \uA92A \uA9BF \u10A3A \u111C2 \u111C3 \u1171E \u11A3A \u11A84 \u11A85 \u11A86 \u11A87 \u11A88 \u11A89 \u11D46 \u1D16D -->
+        <!-- Unknowns \u0315 \u031A \u0345 \u034F \u0358 \u035C \u035D \u035E \u035F \u0360 \u0361 \u0362 \u059A \u05AD \u05AE \u0D4E \u18A9 \u1B3B \u1DCD \u1DF6 \u1DF7 \u1DF8 \u1DFC \u302B \u302C \u302D \uA926 \uA927 \uA928 \uA929 \uA92A \uA9BF \u111C2 \u111C3 \u1171E \u11A3A \u11A84 \u11A85 \u11A86 \u11A87 \u11A88 \u11A89 \u11D46 \u1D16D -->
 
         <!-- Adlam -->
         <reorder from="\u{1E94A}" tertiary="3"/>
@@ -302,6 +302,7 @@
         <reorder from="[\uA92B-\uA92D]" order="50"/>
 
         <!-- Kharoshthi -->
+        <reorder from="\u{10A3A}" tertiary="3"/>
         <reorder from="[\u{10A38}\u{10A39}]" tertiary="2"/>
         <reorder from="\u{10A3F}[\u{10A00}\u{10A10}-\u{10A13}\u{10A15}-\u{10A17}\u{10A19}-\u{10A35}\u{10A40}-\u{10A48}]" order="10" tertiary_base="true"/>
         <reorder from="\u{10A3F}" order="120" tertiary_base="true"/>
@@ -615,9 +616,10 @@
         <!-- Tai_Le -->
 
         <!-- Tai_Tham -->
+        <reorder from="[\u1A8E\u1A8F]" tertiary="2"/>
         <reorder from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="10" tertiary_base="true"/>
-        <reorder before="[\u1A58\u1A63\u1A64\u1A6C\u1A6D]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="120 120" tertiary_base="true"/>
-        <reorder before="[\u1A58\u1A63\u1A64\u1A6C\u1A6D][\u1A75-\u1A79]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="120 120" tertiary_base="true"/>
+        <reorder before="[\u1A63\u1A64]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="120 120" tertiary_base="true"/>
+        <reorder before="[\u1A63\u1A64][\u1A75-\u1A79]" from="\u1A60[\u1A20-\u1A54\u1A80-\u1A89\u1A90-\u1A99]" order="120 120" tertiary_base="true"/>
         <reorder from="\u1A60" order="120" tertiary_base="true"/>
         <reorder from="[\u1A57\u1A5B-\u1A5E]" order="11"/>
         <reorder from="\u1A55" order="40"/>
@@ -625,12 +627,14 @@
         <reorder from="\u1A56" order="50"/>
         <reorder from="[\u1A6E-\u1A72]" order="60"/>
         <reorder from="[\u1A62\u1A65-\u1A68\u1A6B\u1A73]" order="65"/>
+        <reorder from="\u1A74" order="67"/>
         <reorder from="[\u1A69\u1A6A\u1A6C]" order="70"/>
         <reorder from="[\u1A61\u1A63\u1A64\u1A6D]" order="75"/>
-        <reorder from="\u1A74" order="85"/>
         <reorder from="[\u1A75-\u1A79]" order="100"/>
         <reorder from="[\u1A58\u1A59]" order="105"/>
-        <reorder from="[\u1A7B\u1A7C\u1A7F]" order="117"/>
+        <reorder from="[\u1A7C\u1A7F]" order="117"/>
+        <reorder from="\u1A7B" order="121"/>
+        <reorder from="\u1A74" before="[\u1A63\u1A64]" order="75"/>
 
         <!-- Tai_Viet -->
         <reorder from="[\uAAB0\uAAB2\uAAB3\uAAB7\uAAB8\uAABE\uAABF\uAAC1]" order="45"/>

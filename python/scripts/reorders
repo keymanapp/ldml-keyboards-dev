@@ -90,11 +90,15 @@ codemap = {
     0xAA7C: 95,     # VMPst rather than above
 
     # Tai Tham
+    0x1A74: 67,
     0x1A75: 100,
     0x1A76: 100,
     0x1A77: 100,
     0x1A78: 100,
     0x1A79: 100,
+    0x1A7B: 121,
+    0x1A8E: -2,
+    0x1A8F: -2,
 
     # Coming from USE exceptions list Oct/2018
     # found at: https://github.com/harfbuzz/harfbuzz/issues/1012
@@ -152,6 +156,11 @@ codemap = {
     0x11130: 71,
 }
 
+extra_chars = {
+    0x1A8E: ('Tai_Tham', -2),
+    0x1A8F: ('Tai_Tham', -2)
+}
+
 
 tertiary_bases = set([0x102B, 0x102C, 0x102F, 0x1030, 0x1036, 0x1032, 0x1056, 0x1057, 0x1058, 0x1059, 0x1062,
                       0x1063, 0x1064, 0x1067, 0x1068, 0x1069, 0x106A, 0x106B, 0x106C, 0x106D, 0x1083, 0x1086])
@@ -180,7 +189,9 @@ scriptmap = {
         r'from="[\u103D\u1082]\u103A" order="50"',
         r'from="[\u1004\u101B]\u103A\u1039" order="-1"'),
                 'vs': "\\uFE00"},
-    'Tai_Tham' : {'av': u"\u1A63\u1A64\u1A6C\u1A6D", 'avskip': ["[\\u1A75-\\u1A79]"], 'avcorder': 120},
+    'Tai_Tham' : {'av': u"\u1A63\u1A64", 'avskip': ["[\\u1A75-\\u1A79]"],
+                  'avcorder': 120, 'rules': (
+        r'from="\u1A74" before="[\u1A63\u1A64]" order="75"', )},
     'Tamil': {'av': u"\u0BBF\u0BC0\u0BC1\u0BC2\u0BC6\u0BC7\u0BCA\u0BCB"},
     'Telugu': {'av': u"\u0C3F\u0C40\u0C41\u0C42\u0C46\u0C47\u0C4A\u0C4B"},
 }
@@ -266,6 +277,8 @@ unknowns = []
 for i in xrange(0x20000):
     u = unidb[i]
     if u is None:
+        if i in extra_chars:
+            results.setdefault(extra_chars[i][0], {}).setdefault(extra_chars[i][1], []).append(i)
         continue
     c = int(u.ccc)
     s = scripts[i]

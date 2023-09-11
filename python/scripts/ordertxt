@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import argparse, sys
+import argparse, sys, os
 
 try:
     from ldml_keyboard.ldml_keyboard import Keyboard
@@ -47,10 +47,11 @@ class StringContext:
         self.outstr += s
 
 
+defreorders = os.path.join(os.path.dirname(__file__), '../../shared/reorders.xml')
 parser = argparse.ArgumentParser()
 parser.add_argument("infile", nargs="?", help="File to process")
 parser.add_argument("outfile", nargs="?", help="File to output")
-parser.add_argument("-r","--reorders", help="reorders.xml with ordering information")
+parser.add_argument("-r","--reorders", default=defreorders, help="reorders.xml with ordering information")
 parser.add_argument("-u","--unicodes", help="string of USVs as input text")
 args = parser.parse_args()
 
